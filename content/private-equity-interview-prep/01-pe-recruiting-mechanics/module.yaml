@@ -1,0 +1,10 @@
+id: pe-recruiting-mechanics
+title: PE Recruiting Mechanics & Headhunters
+description: Understand how PE recruiting works, when it happens, and how to navigate headhunters, networking, and the interview process. Build a preparation strategy aligned with the compressed PE recruiting timeline.
+order: 1
+estimated_hours: 2
+lessons:
+  - pe-recruiting-timeline-process
+  - working-with-headhunters
+  - networking-preparation-strategy
+  - interview-formats-expectations
