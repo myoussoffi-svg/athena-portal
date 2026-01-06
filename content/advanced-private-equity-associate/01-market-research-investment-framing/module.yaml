@@ -1,0 +1,11 @@
+id: market-research-investment-framing
+title: Market Research & Investment Framing
+description: Develop frameworks to assess market size, competitive dynamics, and differentiation. Learn to translate research into actionable diligence priorities and early go/no-go signals.
+order: 1
+estimated_hours: 5
+lessons:
+  - market-sizing-structure
+  - competitive-landscape-mapping
+  - differentiation-moats
+  - research-to-diligence-questions
+  - early-go-nogo-signals
