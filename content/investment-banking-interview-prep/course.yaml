@@ -1,0 +1,14 @@
+id: investment-banking-interview-prep
+title: Investment Banking Interview Prep
+description: Professional preparation for investment banking interviews. Master fit questions, accounting fundamentals, valuation concepts, and technical topics to confidently answer all standard IB interview questions.
+target_audience: Undergraduate students and early professionals recruiting for investment banking roles
+estimated_hours: 18
+prerequisites: []
+access_plans:
+  - ib-prep
+  - full-access
+modules:
+  - fit-story-behavioral
+  - accounting-foundations
+  - valuation-modeling
+  - lbos-advanced-topics

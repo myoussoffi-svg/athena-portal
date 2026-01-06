@@ -1,0 +1,14 @@
+id: valuation-modeling
+title: Valuation & Modeling Concepts
+description: Master core valuation methodologies tested in IB interviews. Understand DCF, comparable companies, precedent transactions, and M&A accretion/dilution. Build the analytical foundation to discuss valuation with confidence.
+order: 3
+estimated_hours: 6
+lessons:
+  - enterprise-value-vs-equity-value
+  - dcf-overview-and-mechanics
+  - wacc-components-and-calculation
+  - terminal-value-approaches
+  - comparable-companies-analysis
+  - precedent-transactions-analysis
+  - ma-accretion-dilution
+  - premiums-and-valuation-context

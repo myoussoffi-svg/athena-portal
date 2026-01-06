@@ -1,0 +1,14 @@
+id: accounting-foundations
+title: Accounting Foundations for Interviews
+description: Master the accounting and financial statement concepts tested in IB interviews. Understand how the three statements connect, key line items, and common adjustments. Build the foundation needed for valuation and modeling questions.
+order: 2
+estimated_hours: 5
+lessons:
+  - three-financial-statements-overview
+  - how-the-statements-link
+  - income-statement-deep-dive
+  - balance-sheet-deep-dive
+  - cash-flow-statement-deep-dive
+  - depreciation-and-amortization
+  - working-capital-and-cash-conversion
+  - goodwill-intangibles-and-writedowns
