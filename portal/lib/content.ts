@@ -1,10 +1,10 @@
-﻿import fs from "fs";
+import fs from "fs";
 import path from "path";
 import { globSync } from "glob";
 
 const contentRoot =
   process.env.CONTENT_ROOT?.trim() ||
-  path.join(process.cwd(), "..", "content");
+  path.join(__dirname, "..", "..", "content");
 export type Track = {
   id: string;
   slug: string;
