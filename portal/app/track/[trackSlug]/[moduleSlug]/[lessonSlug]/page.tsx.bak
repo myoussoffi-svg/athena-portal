@@ -1,0 +1,73 @@
+﻿import Link from "next/link";
+import { notFound } from "next/navigation";
+
+import {
+  getTracks,
+  getModulesForTrack,
+  getLessonsForModule,
+  getLessonBySlug,
+} from "@/lib/content";
+
+import { remark } from "remark";
+import html from "remark-html";
+
+type Params = { trackSlug: string; moduleSlug: string; lessonSlug: string };
+
+export default async function LessonPage({
+  params,
+}: {
+  params: Params | Promise<Params>;
+}) {
+  const { trackSlug, moduleSlug, lessonSlug } = await Promise.resolve(params);
+
+  const track = getTracks().find((t) => t.slug === trackSlug);
+  if (!track) notFound();
+
+  const module = getModulesForTrack(trackSlug).find((m) => m.slug === moduleSlug);
+  if (!module) notFound();
+
+  const lessons = getLessonsForModule(trackSlug, moduleSlug);
+  const idx = lessons.findIndex((l) => l.slug === lessonSlug);
+  if (idx === -1) notFound();
+
+  const lesson = getLessonBySlug(trackSlug, moduleSlug, lessonSlug);
+  if (!lesson) notFound();
+
+  const processed = await remark().use(html).process(lesson.content ?? "");
+  const contentHtml = processed.toString();
+
+  const prev = idx > 0 ? lessons[idx - 1] : null;
+  const next = idx < lessons.length - 1 ? lessons[idx + 1] : null;
+
+  return (
+    <main style={{ padding: 24, fontFamily: "system-ui", maxWidth: 980 }}>
+      <div style={{ marginBottom: 16, opacity: 0.8 }}>
+        <Link href={`/track/${trackSlug}/${moduleSlug}`}>← Back to {module.title}</Link>
+      </div>
+
+      <h1 style={{ margin: 0 }}>{lesson.title}</h1>
+      {lesson.description ? (
+        <p style={{ marginTop: 8, opacity: 0.85 }}>{lesson.description}</p>
+      ) : null}
+
+      <hr style={{ margin: "20px 0", opacity: 0.3 }} />
+
+      <article style={{ lineHeight: 1.65 }} dangerouslySetInnerHTML={{ __html: contentHtml }} />
+
+      <hr style={{ margin: "24px 0", opacity: 0.3 }} />
+
+      <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <div>
+          {prev ? (
+            <Link href={`/track/${trackSlug}/${moduleSlug}/${prev.slug}`}>← {prev.title}</Link>
+          ) : null}
+        </div>
+        <div>
+          {next ? (
+            <Link href={`/track/${trackSlug}/${moduleSlug}/${next.slug}`}>{next.title} →</Link>
+          ) : null}
+        </div>
+      </div>
+    </main>
+  );
+}

@@ -1,0 +1,151 @@
+import fs from "fs";
+import path from "path";
+import { globSync } from "glob";
+
+const contentRoot = "C:\\Users\\myous\\projects\\athena-portal\\content";
+
+export type Track = {
+  id: string;
+  slug: string;
+  title: string;
+  description?: string;
+};
+
+export type Module = {
+  id: string;
+  slug: string;
+  title: string;
+  description?: string;
+};
+
+export type Lesson = {
+  id: string;
+  slug: string;
+  title: string;
+  description?: string;
+  content?: string;
+  body?: string;
+};
+
+function readYamlFile(filePath: string): any {
+  const yaml = require("js-yaml");
+  const raw = fs.readFileSync(filePath, "utf8");
+  return yaml.load(raw);
+}
+
+export function getTracks(): Track[] {
+  if (!fs.existsSync(contentRoot)) {
+    throw new Error(`contentRoot does not exist: ${contentRoot}`);
+  }
+
+  const entries = fs.readdirSync(contentRoot, { withFileTypes: true });
+
+  return entries
+    .filter((e) => e.isDirectory())
+    .map((dir) => {
+      const trackSlug = dir.name;
+
+      // Optional: if track.yaml exists, use it; otherwise fallback to folder name.
+      const trackYamlPath = path.join(contentRoot, trackSlug, "track.yaml");
+      if (fs.existsSync(trackYamlPath)) {
+        const data = readYamlFile(trackYamlPath);
+        const slug = data.id ?? trackSlug;
+        return {
+          id: slug,
+          slug,
+          title: data.title ?? slug,
+          description: data.description ?? "",
+        };
+      }
+
+      // Fallback track (no track.yaml)
+      return {
+        id: trackSlug,
+        slug: trackSlug,
+        title: trackSlug,
+        description: "",
+      };
+    });
+}
+
+export function getModulesForTrack(trackSlug: string): Module[] {
+  if (!trackSlug) throw new Error("getModulesForTrack: trackSlug is required");
+
+  const pattern = path
+    .join(contentRoot, trackSlug, "*/module.yaml")
+    .replace(/\\/g, "/");
+
+  const moduleYamlPaths = globSync(pattern);
+
+  return moduleYamlPaths.map((yamlPath) => {
+    const moduleDir = path.dirname(yamlPath);
+    const slug = path.basename(moduleDir);
+    const data = readYamlFile(yamlPath);
+
+    return {
+      id: data.id ?? slug,
+      slug,
+      title: data.title ?? slug,
+      description: data.description ?? "",
+    };
+  });
+}
+
+export function getLessonsForModule(
+  trackSlug: string,
+  moduleSlug: string
+): Lesson[] {
+  if (!trackSlug || !moduleSlug) {
+    throw new Error("getLessonsForModule: trackSlug and moduleSlug are required");
+  }
+
+  const moduleDir = path.join(contentRoot, trackSlug, moduleSlug);
+  if (!fs.existsSync(moduleDir)) return [];
+
+  const lessonDirs = fs
+    .readdirSync(moduleDir, { withFileTypes: true })
+    .filter((e) => e.isDirectory());
+
+  return lessonDirs
+    .map((dir) => {
+      const lessonYamlPath = path.join(moduleDir, dir.name, "lesson.yaml");
+      if (!fs.existsSync(lessonYamlPath)) return null;
+
+      const data = readYamlFile(lessonYamlPath);
+
+      return {
+        id: data.id ?? dir.name,
+        slug: dir.name,
+        title: data.title ?? dir.name,
+        description: data.description ?? "",
+        content: data.content ?? "",
+      };
+    })
+    .filter(Boolean) as Lesson[];
+}
+
+export function getLessonBySlug(
+  trackSlug: string,
+  moduleSlug: string,
+  lessonSlug: string
+): Lesson | null {
+  const lessonYamlPath = path.join(
+    contentRoot,
+    trackSlug,
+    moduleSlug,
+    lessonSlug,
+    "lesson.yaml"
+  );
+
+  if (!fs.existsSync(lessonYamlPath)) return null;
+
+  const data = readYamlFile(lessonYamlPath);
+
+  return {
+    id: data.id ?? lessonSlug,
+    slug: lessonSlug,
+    title: data.title ?? lessonSlug,
+    description: data.description ?? "",
+    content: data.content ?? "",
+  };
+}
