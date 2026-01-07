@@ -1,11 +1,28 @@
----
-id: loi-structure-negotiation-logic
-title: LOI Structure and Negotiation Logic
-order: 1
-estimated_minutes: 30
----
-# LOI Structure and Negotiation Logic
+﻿# LOI Structure Negotiation Logic
 
+## Outcomes
+- Build a work product you could share internally.
+- Identify the decisions and risks this work supports.
+- Execute a repeatable workflow under time pressure.
+
+## Agenda
+- Define the objective and decision context.
+- Gather the minimum inputs needed.
+- Analyze and pressure-test assumptions.
+- Translate findings into implications and next steps.
+
+## Why this matters in a real deal
+This work determines whether the deal narrative survives scrutiny. Done well, it improves decision quality and surfaces risk early. Done poorly, it creates false confidence and wastes diligence time.
+
+## Deliverable
+- Produce a 1–2 page output (memo, outline, or analysis) that is decision-relevant and defensible.
+
+## Checklist
+- [ ] Scope and definitions are explicit.
+- [ ] Key assumptions are stated and testable.
+- [ ] Downside risks are identified and prioritized.
+- [ ] Findings translate into underwriting implications.
+- [ ] Next diligence actions are clear.
 ## Learning Objectives
 
 - Explain the purpose and structure of a Letter of Intent (LOI) in PE transactions
@@ -186,3 +203,12 @@ Both parties sign
 - Ensure working capital and net debt are defined clearly in the LOI to avoid disputes during closing adjustments
 - Associate reviews LOI for consistency with IC terms, completeness, and clear definitions before VP approval and sending to seller
 - Escalate material seller pushback (price reductions, short exclusivity, unmeasurable earnouts, structure conflicts) to your VP immediately
+
+## Synthesis
+- What would change your mind based on new data?
+- What breaks first in a downside case?
+- What is the single highest-leverage next diligence action?
+
+
+---
+

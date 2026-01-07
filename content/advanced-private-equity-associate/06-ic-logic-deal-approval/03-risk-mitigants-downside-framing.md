@@ -1,11 +1,28 @@
----
-id: risk-mitigants-downside-framing
-title: Risk, Mitigants, and Downside Framing
-order: 3
-estimated_minutes: 30
----
-# Risk, Mitigants, and Downside Framing
+﻿# Risk Mitigants Downside Framing
 
+## Outcomes
+- Build a work product you could share internally.
+- Identify the decisions and risks this work supports.
+- Execute a repeatable workflow under time pressure.
+
+## Agenda
+- Define the objective and decision context.
+- Gather the minimum inputs needed.
+- Analyze and pressure-test assumptions.
+- Translate findings into implications and next steps.
+
+## Why this matters in a real deal
+This work determines whether the deal narrative survives scrutiny. Done well, it improves decision quality and surfaces risk early. Done poorly, it creates false confidence and wastes diligence time.
+
+## Deliverable
+- Produce a 1–2 page output (memo, outline, or analysis) that is decision-relevant and defensible.
+
+## Checklist
+- [ ] Scope and definitions are explicit.
+- [ ] Key assumptions are stated and testable.
+- [ ] Downside risks are identified and prioritized.
+- [ ] Findings translate into underwriting implications.
+- [ ] Next diligence actions are clear.
 ## Learning Objectives
 
 - Explain how to identify, categorize, and quantify all material deal risks for IC presentation
@@ -149,3 +166,12 @@ A downside case stress-tests key assumptions.
 - Credible mitigants have specific actions, assigned ownership, funded resources, and track records—aspirational mitigants are vague, unfunded, or unproven and will be rejected by IC
 - Build downside scenarios that stress-test key assumptions (revenue growth, margins, churn) and calculate resulting returns—if downside returns meet hurdles, deal has downside protection
 - Present risks to IC with professional, fact-based, solution-oriented tone—acknowledge risks, quantify them, present mitigants, and demonstrate downside is acceptable
+
+## Synthesis
+- What would change your mind based on new data?
+- What breaks first in a downside case?
+- What is the single highest-leverage next diligence action?
+
+
+---
+

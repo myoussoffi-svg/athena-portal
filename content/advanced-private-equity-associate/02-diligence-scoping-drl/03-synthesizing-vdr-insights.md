@@ -1,11 +1,28 @@
-﻿---
-id: synthesizing-vdr-insights
-title: Synthesizing VDR Data into Insights
-order: 3
-estimated_minutes: 35
----
-# Synthesizing VDR Data into Insights
+﻿# Synthesizing VDR Insights
 
+## Outcomes
+- Build a work product you could share internally.
+- Identify the decisions and risks this work supports.
+- Execute a repeatable workflow under time pressure.
+
+## Agenda
+- Define the objective and decision context.
+- Gather the minimum inputs needed.
+- Analyze and pressure-test assumptions.
+- Translate findings into implications and next steps.
+
+## Why this matters in a real deal
+This work determines whether the deal narrative survives scrutiny. Done well, it improves decision quality and surfaces risk early. Done poorly, it creates false confidence and wastes diligence time.
+
+## Deliverable
+- Produce a 1–2 page output (memo, outline, or analysis) that is decision-relevant and defensible.
+
+## Checklist
+- [ ] Scope and definitions are explicit.
+- [ ] Key assumptions are stated and testable.
+- [ ] Downside risks are identified and prioritized.
+- [ ] Findings translate into underwriting implications.
+- [ ] Next diligence actions are clear.
 ## Learning Objectives
 
 - Explain how to extract actionable insights from disparate VDR documents rather than simply cataloging what was reviewed
@@ -197,4 +214,12 @@ This iterative approach ensures that by the time you reach IC, your synthesis is
 - Synthesize quantitative data into trends, ratios, and variance analysis that reveal operational health and inform modeling assumptions
 - Extract obligations, risks, and optionality from qualitative documents (contracts, board minutes) and categorize findings by materiality
 - Structure synthesis outputs (functional summaries, executive summaries, IC-ready memos) that communicate findings clearly and link to investment thesis or valuation impact
+
+## Synthesis
+- What would change your mind based on new data?
+- What breaks first in a downside case?
+- What is the single highest-leverage next diligence action?
+
+
+---
 

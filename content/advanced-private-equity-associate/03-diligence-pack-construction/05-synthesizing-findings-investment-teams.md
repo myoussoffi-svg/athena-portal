@@ -1,11 +1,28 @@
----
-id: synthesizing-findings-investment-teams
-title: Synthesizing Findings for Investment Teams
-order: 5
-estimated_minutes: 40
----
-# Synthesizing Findings for Investment Teams
+﻿# Synthesizing Findings Investment Teams
 
+## Outcomes
+- Build a work product you could share internally.
+- Identify the decisions and risks this work supports.
+- Execute a repeatable workflow under time pressure.
+
+## Agenda
+- Define the objective and decision context.
+- Gather the minimum inputs needed.
+- Analyze and pressure-test assumptions.
+- Translate findings into implications and next steps.
+
+## Why this matters in a real deal
+This work determines whether the deal narrative survives scrutiny. Done well, it improves decision quality and surfaces risk early. Done poorly, it creates false confidence and wastes diligence time.
+
+## Deliverable
+- Produce a 1–2 page output (memo, outline, or analysis) that is decision-relevant and defensible.
+
+## Checklist
+- [ ] Scope and definitions are explicit.
+- [ ] Key assumptions are stated and testable.
+- [ ] Downside risks are identified and prioritized.
+- [ ] Findings translate into underwriting implications.
+- [ ] Next diligence actions are clear.
 ## Learning Objectives
 
 - Explain how to synthesize disaggregated analysis (revenue, customers, KPIs, organization) into cohesive diligence outputs for different audiences
@@ -303,3 +320,12 @@ If the answer to any of these is no, refine your synthesis before submitting.
 - Quantify risks by estimating financial impact, assessing likelihood, and proposing mitigants—IC members need to understand not just that risks exist, but what they could cost
 - Link every finding to thesis validation, valuation adjustment, or value creation opportunity—diligence insights must inform investment decisions, not just describe the business
 - Conduct a final IC-readiness check: Can the exec summary stand alone? Are conclusions data-supported? Are risks quantified? Are open items flagged? Is the recommendation clear?
+
+## Synthesis
+- What would change your mind based on new data?
+- What breaks first in a downside case?
+- What is the single highest-leverage next diligence action?
+
+
+---
+

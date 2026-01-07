@@ -1,11 +1,28 @@
-﻿---
-id: vdr-navigation-document-tagging
-title: VDR Navigation and Document Tagging
-order: 2
-estimated_minutes: 30
----
-# VDR Navigation and Document Tagging
+﻿# VDR Navigation Document Tagging
 
+## Outcomes
+- Build a work product you could share internally.
+- Identify the decisions and risks this work supports.
+- Execute a repeatable workflow under time pressure.
+
+## Agenda
+- Define the objective and decision context.
+- Gather the minimum inputs needed.
+- Analyze and pressure-test assumptions.
+- Translate findings into implications and next steps.
+
+## Why this matters in a real deal
+This work determines whether the deal narrative survives scrutiny. Done well, it improves decision quality and surfaces risk early. Done poorly, it creates false confidence and wastes diligence time.
+
+## Deliverable
+- Produce a 1–2 page output (memo, outline, or analysis) that is decision-relevant and defensible.
+
+## Checklist
+- [ ] Scope and definitions are explicit.
+- [ ] Key assumptions are stated and testable.
+- [ ] Downside risks are identified and prioritized.
+- [ ] Findings translate into underwriting implications.
+- [ ] Next diligence actions are clear.
 ## Learning Objectives
 
 - Explain how to efficiently navigate virtual data rooms with inconsistent folder structures and naming conventions
@@ -181,4 +198,12 @@ If multiple people are reviewing the VDR, coordinate to avoid duplicated effort.
 - Use a tagging and annotation system to mark key findings (Positive, Risk, Model Input, Follow-Up, IC-Relevant) so you do not have to re-read documents later
 - Escalate missing Tier 1 documents within hours, not days, and track VDR updates daily to ensure you are working with the latest information
 - Maintain a local diligence repository that mirrors the VDR but adds analytical layers (summaries, model inputs, follow-up drafts) for faster access and offline work
+
+## Synthesis
+- What would change your mind based on new data?
+- What breaks first in a downside case?
+- What is the single highest-leverage next diligence action?
+
+
+---
 

@@ -1,11 +1,28 @@
----
-id: anticipating-ic-questions-objections
-title: Anticipating IC Questions and Objections
-order: 5
-estimated_minutes: 30
----
-# Anticipating IC Questions and Objections
+﻿# Anticipating IC Questions Objections
 
+## Outcomes
+- Build a work product you could share internally.
+- Identify the decisions and risks this work supports.
+- Execute a repeatable workflow under time pressure.
+
+## Agenda
+- Define the objective and decision context.
+- Gather the minimum inputs needed.
+- Analyze and pressure-test assumptions.
+- Translate findings into implications and next steps.
+
+## Why this matters in a real deal
+This work determines whether the deal narrative survives scrutiny. Done well, it improves decision quality and surfaces risk early. Done poorly, it creates false confidence and wastes diligence time.
+
+## Deliverable
+- Produce a 1–2 page output (memo, outline, or analysis) that is decision-relevant and defensible.
+
+## Checklist
+- [ ] Scope and definitions are explicit.
+- [ ] Key assumptions are stated and testable.
+- [ ] Downside risks are identified and prioritized.
+- [ ] Findings translate into underwriting implications.
+- [ ] Next diligence actions are clear.
 ## Learning Objectives
 
 - Explain how to anticipate standard and deal-specific IC questions based on thesis, risks, and diligence findings
@@ -200,3 +217,12 @@ IC may approve with follow-up items or request additional work.
 - Handle "I don't know" with honesty and offers to follow up—IC respects transparency over guessing or deflection
 - Recognize signals of skepticism (repeated questions on risks, defensive body language) vs. curiosity (clarifying questions, engagement with upside) and adjust tone accordingly
 - Track all follow-ups after IC and circulate summary within 24 hours with questions, answers, action items, owners, and timelines
+
+## Synthesis
+- What would change your mind based on new data?
+- What breaks first in a downside case?
+- What is the single highest-leverage next diligence action?
+
+
+---
+

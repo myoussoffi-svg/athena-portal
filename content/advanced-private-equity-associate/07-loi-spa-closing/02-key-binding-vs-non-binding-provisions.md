@@ -1,11 +1,28 @@
----
-id: key-binding-vs-non-binding-provisions
-title: Key Binding vs Non-Binding Provisions
-order: 2
-estimated_minutes: 25
----
-# Key Binding vs Non-Binding Provisions
+﻿# Key Binding VS Non Binding Provisions
 
+## Outcomes
+- Build a work product you could share internally.
+- Identify the decisions and risks this work supports.
+- Execute a repeatable workflow under time pressure.
+
+## Agenda
+- Define the objective and decision context.
+- Gather the minimum inputs needed.
+- Analyze and pressure-test assumptions.
+- Translate findings into implications and next steps.
+
+## Why this matters in a real deal
+This work determines whether the deal narrative survives scrutiny. Done well, it improves decision quality and surfaces risk early. Done poorly, it creates false confidence and wastes diligence time.
+
+## Deliverable
+- Produce a 1–2 page output (memo, outline, or analysis) that is decision-relevant and defensible.
+
+## Checklist
+- [ ] Scope and definitions are explicit.
+- [ ] Key assumptions are stated and testable.
+- [ ] Downside risks are identified and prioritized.
+- [ ] Findings translate into underwriting implications.
+- [ ] Next diligence actions are clear.
 ## Learning Objectives
 
 - Explain which LOI provisions are binding versus non-binding and the legal implications of each
@@ -126,3 +143,12 @@ Sometimes included as binding provision:
 - Expense allocation is typically "each party bears own costs"—resist seller requests for reimbursement unless buyer walks for non-diligence reasons
 - Negotiate narrow non-solicitation provisions (senior employees only) and ensure governing law reflects buyer's preferred jurisdiction
 - Understand enforcement mechanisms for binding provisions and escalate any potential breaches to your VP and deal counsel immediately
+
+## Synthesis
+- What would change your mind based on new data?
+- What breaks first in a downside case?
+- What is the single highest-leverage next diligence action?
+
+
+---
+

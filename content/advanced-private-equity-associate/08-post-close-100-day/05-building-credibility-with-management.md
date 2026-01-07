@@ -1,9 +1,5 @@
----
-id: building-credibility-with-management
-title: Building Credibility with Management
-order: 5
-estimated_minutes: 25
----
+﻿# Building Credibility with Management
+
 # Building Credibility with Management
 
 ## Learning Objectives
@@ -191,3 +187,4 @@ Credibility is lost quickly and rebuilt slowly. Be patient.
 - Navigate difficult conversations (underperformance, tough decisions) with firm but collaborative tone—acknowledge issues, request context, use data to inform solutions
 - Earn buy-in for difficult initiatives by understanding resistance, acknowledging valid concerns, using data to inform tradeoffs, and giving CEO agency to propose alternatives
 - Rebuild lost credibility by diagnosing issues, owning mistakes, demonstrating competence on next interaction, and rebuilding trust incrementally over time
+

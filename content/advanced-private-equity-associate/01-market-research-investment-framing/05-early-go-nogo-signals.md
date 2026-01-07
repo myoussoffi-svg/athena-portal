@@ -1,78 +1,130 @@
+﻿# Early Go / No-Go Signals
+
+## Outcomes
+- Build a structured early-screen framework: what to validate, what to ignore, and when to stop.
+- Identify common false positives and false negatives in early diligence.
+- Produce a go/no-go summary that is tight, defensible, and decision-oriented.
+
+## Agenda
+- Define the screening objective and timing (Day 1-10).
+- Establish "kill criteria" and "confirm criteria."
+- Separate evidence from narrative.
+- Draft a go/no-go memo with explicit thresholds.
+
+## Why this matters in a real deal
+Time is your scarcest resource. Premium investors know when to stop. Associates create value by surfacing disconfirming evidence early, protecting the team from confirmation bias, and forcing clarity: what must be true, what is uncertain, and what breaks the deal.
+
+## Deliverable
+- Write a 1-page "Early Go/No-Go Memo" with:
+  - 3-5 confirm criteria (what must be true to proceed)
+  - 3-5 kill criteria (what ends the deal or forces a reprice)
+  - Evidence status (confirmed / not confirmed / contradicted)
+  - Next 5 diligence actions with owners and dates
+
+## Checklist
+- [ ] Criteria include thresholds, not vague statements.
+- [ ] Evidence status is explicit (what we know vs what we think).
+- [ ] Disconfirming evidence is surfaced, not buried.
+- [ ] Downside case is articulated (what breaks first).
+- [ ] Next actions close the highest-impact uncertainties.
+
 ---
-id: early-go-nogo-signals
-title: Early Go / No-Go Signals
-order: 5
-estimated_minutes: 40
+
+## 1) Define the timeframe and decision
+Early signals are about:
+- Proceed, reprice, or stop
+- Not "learn everything"
+
+A practical frame:
+- Day 1-3: sanity checks, risk flags, thesis plausibility
+- Day 4-10: validate the two biggest value drivers and two biggest risks
+
 ---
 
-# Early Go / No-Go Signals
+## 2) Establish confirm criteria (what must be true)
+Examples (customize per deal):
+- Retention: gross churn < X% in core segment, cohorts stable
+- Pricing: realized price increases without offsetting concessions
+- Unit economics: contribution margin stable; CAC payback reasonable
+- Competitive: win rate supported by real differentiation, not one sales leader
+- TAM: growth pathway exists without heroic assumptions
 
-## Learning Objectives
+Make criteria measurable.
 
-- Identify deal-breaking risks and red flags early in diligence
-- Evaluate whether early findings justify continued investment of time and resources
-- Frame go/no-go decisions for senior team and IC
-- Balance incomplete information with the need to make timely decisions
+---
 
-## Written Guide
+## 3) Establish kill criteria (what ends the deal)
+Kill criteria examples:
+- Customer concentration: top 1-3 customers represent > Y% and are at risk
+- Churn: new cohorts show materially higher churn than legacy
+- Margin quality: EBITDA requires underinvestment or non-recurring addbacks
+- Growth: recent growth driven by one-time events, not repeatable drivers
+- Competitive: competitor consistently wins on outcomes/value, not price
 
-### Why Early Go/No-Go Matters
+Kill criteria do not have to be absolute. Some are "reprice criteria."
 
-- Time and resource constraints in competitive processes
-- Cost of continuing diligence on unviable deals
-- Opportunity cost of missing other deals
+---
 
-### Categories of Deal-Breaking Signals
+## 4) Watch for false positives (common traps)
+- "We have contracts" (but renewal is weak and concessions grow)
+- "Sticky customers" (but usage is shallow; switching is easy)
+- "Great management" (but plan is not tied to inputs and constraints)
+- "Market tailwinds" (but company is losing share)
+- "Pipeline is strong" (but win rate and cycle time disagree)
 
-- Market: structural decline, overcapacity, regulatory risk
-- Competition: irrational pricing, new entrants, commoditization
-- Company: customer concentration, margin erosion, management red flags
-- Financial: working capital drain, hidden liabilities, EBITDA quality issues
+A premium associate flags these early and asks for the evidence.
 
-### Distinguishing Red Flags from Manageable Risks
+---
 
-- Red flags: fundamental issues that undermine the thesis
-- Manageable risks: issues that can be mitigated or priced
-- Gray areas: unknowns that require deeper diligence to resolve
+## 5) A simple go/no-go evidence table
+Use this structure in your memo:
 
-### Gathering Evidence for Go/No-Go Decisions
+Confirm criteria:
+- Criterion 1 | Status (Confirmed / Unknown / Contradicted) | Evidence | Implication
+- Criterion 2 | ...
 
-- What level of evidence is sufficient to pass or kill a deal?
-- Triangulating data points to confirm or refute concerns
-- When to seek additional perspectives (experts, customers, advisors)
+Kill criteria:
+- Criterion 1 | Status | Evidence | Implication
+- Criterion 2 | ...
 
-### Framing the Go/No-Go Decision
+This forces professional clarity.
 
-- Presenting findings objectively to senior team
-- Separating facts from opinions and assumptions
-- Recommending next steps: continue, pivot scope, or pass
+---
 
-### Common Mistakes in Go/No-Go Decisions
+## 6) Translate into a decision recommendation
+Your recommendation must include:
+- Decision: proceed / pause / reprice / stop
+- Rationale: 3 bullets max
+- Remaining uncertainties: 3 bullets max
+- Next actions: 5 items with owner + timing
 
-- Continuing diligence on deals with clear red flags (sunk cost fallacy)
-- Passing too quickly on deals with manageable risks
-- Failing to escalate early concerns to senior team
-- Not documenting rationale for go/no-go decisions
+Do not hide behind "needs more diligence."
 
-## Video Placeholder
+---
 
-**Video Title**: Early Go/No-Go Signals in Deal Diligence
+## 7) Example memo skeleton (copy/paste)
+### Decision
+Proceed to full diligence / Pause pending X / Reprice / Stop
 
-**Outline**:
-- Why early go/no-go matters: time, cost, opportunity cost
-- Categories of deal-breaking signals: market, competition, company, financial
-- Distinguishing red flags (deal-breakers) from manageable risks
-- Gathering evidence: triangulation, experts, advisors
-- Framing the decision: facts vs. opinions, recommending next steps
-- Common mistakes: sunk cost fallacy, passing too quickly, not escalating
+### Confirm criteria (status)
+- ...
+- ...
 
-**Suggested Length**: 14 minutes
+### Kill criteria (status)
+- ...
+- ...
 
-## Key Takeaways
+### What changed our view
+- ...
+- ...
 
-- Early go/no-go decisions save time and resources in competitive processes
-- Deal-breaking signals: structural market decline, irrational competition, customer concentration, EBITDA quality issues
-- Distinguish red flags (undermining thesis) from manageable risks (can be mitigated or priced)
-- Gather sufficient evidence through triangulation, experts, and advisors
-- Frame decisions objectively: present facts, separate opinions, recommend next steps
-- Avoid sunk cost fallacy (continuing bad deals) and premature passing (killing good deals with manageable risks)
+### Next 5 actions (owner, date)
+1) ...
+2) ...
+
+---
+
+## Synthesis
+- What is the single datapoint that would force a stop this week?
+- Which assumption is most likely wrong in the downside case?
+- If you had 48 hours to validate only one thing, what is it and how would you validate it?

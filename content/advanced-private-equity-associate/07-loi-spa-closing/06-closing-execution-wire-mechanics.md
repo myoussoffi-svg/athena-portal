@@ -1,11 +1,28 @@
----
-id: closing-execution-wire-mechanics
-title: Closing Execution and Wire Mechanics
-order: 6
-estimated_minutes: 25
----
-# Closing Execution and Wire Mechanics
+﻿# Closing Execution Wire Mechanics
 
+## Outcomes
+- Build a work product you could share internally.
+- Identify the decisions and risks this work supports.
+- Execute a repeatable workflow under time pressure.
+
+## Agenda
+- Define the objective and decision context.
+- Gather the minimum inputs needed.
+- Analyze and pressure-test assumptions.
+- Translate findings into implications and next steps.
+
+## Why this matters in a real deal
+This work determines whether the deal narrative survives scrutiny. Done well, it improves decision quality and surfaces risk early. Done poorly, it creates false confidence and wastes diligence time.
+
+## Deliverable
+- Produce a 1–2 page output (memo, outline, or analysis) that is decision-relevant and defensible.
+
+## Checklist
+- [ ] Scope and definitions are explicit.
+- [ ] Key assumptions are stated and testable.
+- [ ] Downside risks are identified and prioritized.
+- [ ] Findings translate into underwriting implications.
+- [ ] Next diligence actions are clear.
 ## Learning Objectives
 
 - Explain the sequence of events and document execution required on closing day
@@ -172,3 +189,12 @@ Seller claims buyer breached a condition precedent; refuses to close.
 - Wire sequence must be coordinated simultaneously: Lender funds buyer, buyer wires to seller/escrow/payoffs/advisors, seller confirms receipt, documents execute
 - Initiate wires before bank cutoff (typically 2–3 PM) to avoid one-day closing delay—common issues include delayed lender funding, missing signatures, and wire errors
 - Post-closing deliverables include distributing executed documents, filing UCC statements, recording title transfers, and finalizing working capital adjustments within 60–90 days
+
+## Synthesis
+- What would change your mind based on new data?
+- What breaks first in a downside case?
+- What is the single highest-leverage next diligence action?
+
+
+---
+

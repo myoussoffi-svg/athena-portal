@@ -1,11 +1,28 @@
----
-id: deciding-whether-continue-diligence
-title: Deciding Whether to Continue Diligence
-order: 5
-estimated_minutes: 30
----
-# Deciding Whether to Continue Diligence
+﻿# Deciding Whether Continue Diligence
 
+## Outcomes
+- Build a work product you could share internally.
+- Identify the decisions and risks this work supports.
+- Execute a repeatable workflow under time pressure.
+
+## Agenda
+- Define the objective and decision context.
+- Gather the minimum inputs needed.
+- Analyze and pressure-test assumptions.
+- Translate findings into implications and next steps.
+
+## Why this matters in a real deal
+This work determines whether the deal narrative survives scrutiny. Done well, it improves decision quality and surfaces risk early. Done poorly, it creates false confidence and wastes diligence time.
+
+## Deliverable
+- Produce a 1–2 page output (memo, outline, or analysis) that is decision-relevant and defensible.
+
+## Checklist
+- [ ] Scope and definitions are explicit.
+- [ ] Key assumptions are stated and testable.
+- [ ] Downside risks are identified and prioritized.
+- [ ] Findings translate into underwriting implications.
+- [ ] Next diligence actions are clear.
 ## Learning Objectives
 
 - Explain the decision framework for determining whether to continue, pause, restructure, or abandon diligence based on findings to date
@@ -250,3 +267,12 @@ Do not wait for the formal checkpoint if the decision is obvious. Escalate to yo
 - Consider structural solutions (earnouts, escrows, rollover equity) to address quantifiable risks, but pass if risks are existential or returns do not meet hurdles even with adjustments
 - Facilitate the internal decision discussion by presenting facts neutrally, framing the decision, inviting perspectives, and documenting outcomes and conditions for proceeding
 - Pass immediately if fraud, regulatory issues, thesis invalidation, or management non-cooperation are discovered—do not wait for the formal checkpoint when the decision is obvious
+
+## Synthesis
+- What would change your mind based on new data?
+- What breaks first in a downside case?
+- What is the single highest-leverage next diligence action?
+
+
+---
+

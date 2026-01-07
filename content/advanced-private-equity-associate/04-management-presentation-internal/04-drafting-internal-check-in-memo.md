@@ -1,11 +1,28 @@
----
-id: drafting-internal-check-in-memo
-title: Drafting the Internal Check-In Memo
-order: 4
-estimated_minutes: 35
----
-# Drafting the Internal Check-In Memo
+﻿# Drafting Internal Check IN Memo
 
+## Outcomes
+- Build a work product you could share internally.
+- Identify the decisions and risks this work supports.
+- Execute a repeatable workflow under time pressure.
+
+## Agenda
+- Define the objective and decision context.
+- Gather the minimum inputs needed.
+- Analyze and pressure-test assumptions.
+- Translate findings into implications and next steps.
+
+## Why this matters in a real deal
+This work determines whether the deal narrative survives scrutiny. Done well, it improves decision quality and surfaces risk early. Done poorly, it creates false confidence and wastes diligence time.
+
+## Deliverable
+- Produce a 1–2 page output (memo, outline, or analysis) that is decision-relevant and defensible.
+
+## Checklist
+- [ ] Scope and definitions are explicit.
+- [ ] Key assumptions are stated and testable.
+- [ ] Downside risks are identified and prioritized.
+- [ ] Findings translate into underwriting implications.
+- [ ] Next diligence actions are clear.
 ## Learning Objectives
 
 - Explain the purpose and structure of an internal check-in memo as a decision gate for continuing or pausing diligence
@@ -284,3 +301,12 @@ The associate typically drafts the check-in memo, but the VP will review and edi
 - Categorize risks as high, medium, or low severity and quantify their impact wherever possible (e.g., revenue at risk, EBITDA impact)
 - Provide a clear recommendation (proceed, proceed with conditions, restructure, pause, pass) with supporting rationale and explicit next steps
 - Avoid common mistakes: being too long, burying the lede, failing to quantify risks, or leaving the recommendation ambiguous—principals need clarity to make decisions
+
+## Synthesis
+- What would change your mind based on new data?
+- What breaks first in a downside case?
+- What is the single highest-leverage next diligence action?
+
+
+---
+

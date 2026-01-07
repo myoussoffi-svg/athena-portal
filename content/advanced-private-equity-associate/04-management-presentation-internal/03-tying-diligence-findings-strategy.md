@@ -1,11 +1,28 @@
----
-id: tying-diligence-findings-strategy
-title: Tying Diligence Findings to Strategy
-order: 3
-estimated_minutes: 30
----
-# Tying Diligence Findings to Strategy
+﻿# Tying Diligence Findings Strategy
 
+## Outcomes
+- Build a work product you could share internally.
+- Identify the decisions and risks this work supports.
+- Execute a repeatable workflow under time pressure.
+
+## Agenda
+- Define the objective and decision context.
+- Gather the minimum inputs needed.
+- Analyze and pressure-test assumptions.
+- Translate findings into implications and next steps.
+
+## Why this matters in a real deal
+This work determines whether the deal narrative survives scrutiny. Done well, it improves decision quality and surfaces risk early. Done poorly, it creates false confidence and wastes diligence time.
+
+## Deliverable
+- Produce a 1–2 page output (memo, outline, or analysis) that is decision-relevant and defensible.
+
+## Checklist
+- [ ] Scope and definitions are explicit.
+- [ ] Key assumptions are stated and testable.
+- [ ] Downside risks are identified and prioritized.
+- [ ] Findings translate into underwriting implications.
+- [ ] Next diligence actions are clear.
 ## Learning Objectives
 
 - Explain how to connect quantitative diligence findings (revenue trends, margins, churn, KPIs) to management's articulated strategy and assess alignment or disconnect
@@ -236,3 +253,12 @@ Flag this misalignment in your IC memo as a cultural or strategic risk.
 - Probe strategic pivots or narrative changes to understand whether they reflect data-driven learning or lack of conviction and execution discipline
 - Link management's strategy to your firm's value creation plan and flag misalignments as cultural or strategic risks that require post-close management
 - Escalate to your VP when strategy is misaligned with diligence reality, under-resourced, or reflects blind spots that threaten value creation
+
+## Synthesis
+- What would change your mind based on new data?
+- What breaks first in a downside case?
+- What is the single highest-leverage next diligence action?
+
+
+---
+

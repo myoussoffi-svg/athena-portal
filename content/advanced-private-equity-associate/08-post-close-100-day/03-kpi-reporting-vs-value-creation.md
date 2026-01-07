@@ -1,11 +1,28 @@
----
-id: kpi-reporting-vs-value-creation
-title: KPI Reporting vs Value Creation
-order: 3
-estimated_minutes: 25
----
-# KPI Reporting vs Value Creation
+﻿# KPI Reporting VS Value Creation
 
+## Outcomes
+- Build a work product you could share internally.
+- Identify the decisions and risks this work supports.
+- Execute a repeatable workflow under time pressure.
+
+## Agenda
+- Define the objective and decision context.
+- Gather the minimum inputs needed.
+- Analyze and pressure-test assumptions.
+- Translate findings into implications and next steps.
+
+## Why this matters in a real deal
+This work determines whether the deal narrative survives scrutiny. Done well, it improves decision quality and surfaces risk early. Done poorly, it creates false confidence and wastes diligence time.
+
+## Deliverable
+- Produce a 1–2 page output (memo, outline, or analysis) that is decision-relevant and defensible.
+
+## Checklist
+- [ ] Scope and definitions are explicit.
+- [ ] Key assumptions are stated and testable.
+- [ ] Downside risks are identified and prioritized.
+- [ ] Findings translate into underwriting implications.
+- [ ] Next diligence actions are clear.
 ## Learning Objectives
 
 - Explain the difference between performance monitoring (KPI reporting) and active value creation initiatives
@@ -146,3 +163,12 @@ Each KPI ties to a specific initiative. If KPI does not improve, revisit the ini
 - Link each KPI to a specific value creation lever (e.g., new customer acquisition → hire more sales reps; churn → implement customer success program)
 - Avoid over-reporting by standardizing templates, limiting dashboards to 10–15 core metrics, and rotating deep-dives—reporting should inform decisions, not replace execution
 - Structure dashboards with executive summary, financials, commercial/operational KPIs, and value creation progress—keep concise and actionable
+
+## Synthesis
+- What would change your mind based on new data?
+- What breaks first in a downside case?
+- What is the single highest-leverage next diligence action?
+
+
+---
+

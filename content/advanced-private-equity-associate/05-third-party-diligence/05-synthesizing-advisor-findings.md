@@ -1,11 +1,28 @@
----
-id: synthesizing-advisor-findings
-title: Synthesizing Advisor Findings
-order: 5
-estimated_minutes: 30
----
-# Synthesizing Advisor Findings
+﻿# Synthesizing Advisor Findings
 
+## Outcomes
+- Build a work product you could share internally.
+- Identify the decisions and risks this work supports.
+- Execute a repeatable workflow under time pressure.
+
+## Agenda
+- Define the objective and decision context.
+- Gather the minimum inputs needed.
+- Analyze and pressure-test assumptions.
+- Translate findings into implications and next steps.
+
+## Why this matters in a real deal
+This work determines whether the deal narrative survives scrutiny. Done well, it improves decision quality and surfaces risk early. Done poorly, it creates false confidence and wastes diligence time.
+
+## Deliverable
+- Produce a 1–2 page output (memo, outline, or analysis) that is decision-relevant and defensible.
+
+## Checklist
+- [ ] Scope and definitions are explicit.
+- [ ] Key assumptions are stated and testable.
+- [ ] Downside risks are identified and prioritized.
+- [ ] Findings translate into underwriting implications.
+- [ ] Next diligence actions are clear.
 ## Learning Objectives
 
 - Explain how to distill multiple third-party advisor reports (QofE, market, legal, tax) into concise, decision-ready summaries for VPs and IC
@@ -281,3 +298,12 @@ If yes to all, your synthesis is IC-ready.
 - Watch for red flags including advisors hedging conclusions, overly positive reports with no risks, narrow scope that misses material issues, or findings that conflict with VDR data
 - Prepare IC backup slides with a cross-advisor summary table showing key findings, EBITDA/valuation impact, and risk levels for each workstream
 - Stand your ground when advisors push back on your synthesis if the characterization is fair and accurate—do not let advisors sanitize findings to avoid discomfort
+
+## Synthesis
+- What would change your mind based on new data?
+- What breaks first in a downside case?
+- What is the single highest-leverage next diligence action?
+
+
+---
+

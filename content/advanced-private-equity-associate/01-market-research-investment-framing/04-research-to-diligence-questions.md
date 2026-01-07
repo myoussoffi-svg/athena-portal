@@ -1,80 +1,146 @@
+﻿# Research to Diligence Questions
+
+## Outcomes
+- Convert market research into a short list of decision-critical diligence questions.
+- Build a diligence question bank that is structured by risk and value driver.
+- Produce a VP-ready diligence plan that prioritizes speed and signal.
+
+## Agenda
+- Identify 5-8 "IC questions" that decide the deal.
+- Translate each into diligence questions, data requests, and validation methods.
+- Prioritize by impact and uncertainty (not curiosity).
+- Create an escalation-ready structure: what you need by when.
+
+## Why this matters in a real deal
+Early diligence is about signal, not coverage. Associates lose credibility when they ask for everything, learn nothing, and cannot connect findings to underwriting. A premium diligence plan is short, prioritized, and explicitly tied to the investment decision.
+
+## Deliverable
+- Build a "Diligence Question Map" with:
+  - 5-8 IC questions
+  - For each: diligence questions, data requests, validation method, owner, timing
+  - A final 1-page "Week 1 Diligence Priorities" summary
+
+## Checklist
+- [ ] Each question ties to a value driver or a downside risk.
+- [ ] Every question has a validation method (data + people).
+- [ ] Requests are scoped (time period, granularity, segment).
+- [ ] Priorities are explicit (Week 1 vs later).
+- [ ] Outputs translate into underwriting assumptions.
+
 ---
-id: research-to-diligence-questions
-title: Translating Research into Diligence Questions
-order: 4
-estimated_minutes: 40
+
+## 1) Start with the decision, not the request
+Frame diligence around what IC needs to believe:
+
+Typical IC questions:
+- Is growth real and repeatable, or driven by one-time factors?
+- Is pricing power durable?
+- Are margins structurally sustainable?
+- What is the competitive threat and why now?
+- Is customer concentration acceptable and manageable?
+- What breaks in a downturn?
+- Is management credible and execution-ready?
+
+Do not start with: "Send the VDR index." Start with: "What must be true for our underwriting to be defensible?"
+
 ---
 
-# Translating Research into Diligence Questions
+## 2) Build a question map (impact x uncertainty)
+Rank each IC question on:
+- Impact: if wrong, does the deal fail or just reprice?
+- Uncertainty: how confident are we based on initial info?
 
-## Learning Objectives
+High impact + high uncertainty = Week 1.
 
-- Convert market and competitive research into prioritized diligence questions
-- Frame questions to test investment thesis and identify risks
-- Design questions that elicit useful, actionable answers
-- Structure diligence to address highest-priority unknowns first
+Example:
+- Pricing power is high impact. If we have no proof, it is Week 1.
+- Market size might be high impact, but if multiple sources triangulate, it may be Week 2.
 
-## Written Guide
+---
 
-### The Role of Research in Diligence Planning
+## 3) Translate IC questions into diligence mechanics
+For each IC question, define:
+- Diligence question (what we are trying to learn)
+- Data requests (what we need to measure)
+- People validation (who confirms or contradicts)
+- "Pass/fail" thresholds (what would change our mind)
 
-- Research identifies what you need to know
-- Diligence answers those questions with data and evidence
-- Good questions drive efficient, focused diligence
+### Example: Pricing power
+Diligence question:
+- Can we raise price without losing volume or increasing concessions?
 
-### From Research Insights to Diligence Questions
+Data requests:
+- Invoice-level pricing (last 24-36 months)
+- Discounting and concessions by customer/segment
+- Renewal uplift and churn by cohort
+- Competitor pricing benchmarks (where available)
 
-- Translating market sizing uncertainty into data requests
-- Turning competitive threats into customer and supplier questions
-- Converting moat hypotheses into tests and validation checks
+People validation:
+- Top 10 customers (buying behavior, switching constraints)
+- Sales leadership (deal stories, discounting pressure)
+- Competitors/industry experts
 
-### Structuring High-Quality Diligence Questions
+Pass/fail thresholds:
+- If realized price is flat while list price rose, probe concessions.
+- If churn increases after price events, elasticity is real.
 
-- Open-ended vs. closed-ended questions
-- Questions that reveal truth vs. questions that invite spin
-- Sequencing: build-up questions before critical tests
-- Framing questions to get honest, useful answers
+---
 
-### Prioritizing Questions by Impact
+## 4) Use "minimum viable diligence" (MVD)
+Ask: What is the smallest set of evidence that gives you conviction?
 
-- Which unknowns matter most for go/no-go decision?
-- Which questions test the investment thesis directly?
-- Which risks, if confirmed, would kill the deal?
-- Sequencing: high-impact questions early in diligence
+Common MVD patterns:
+- One clean cohort view + 8-10 customer calls beats 200 documents.
+- A pricing waterfall (list -> realized -> concessions) beats "pricing deck."
+- A win/loss reason code audit beats "competitive overview."
 
-### Examples of Research-Driven Questions
+---
 
-- Market: "What percentage of your revenue comes from [segment]? How has that changed over time?"
-- Competition: "Which competitors do you lose deals to most often, and why?"
-- Moats: "What would it take for a customer to switch to a competitor? Has anyone switched in the last year?"
-- Growth: "What's your sales pipeline for [new product]? What's the conversion rate?"
+## 5) Draft a Week 1 plan (tight, professional)
+Week 1 objective: confirm/kill the core thesis and surface deal-breakers.
 
-### Avoiding Common Question Pitfalls
+Template:
+### Week 1 priorities (5-7)
+1) Revenue quality and sustainability
+2) Pricing power and concessions
+3) Retention and churn by cohort
+4) Competitive threats (who wins and why)
+5) Unit economics and margin drivers
+6) Management credibility and plan realism
+7) Downside sensitivity: what breaks first
 
-- Questions that are too vague or broad
-- Questions management can easily spin or deflect
-- Questions that assume facts not yet in evidence
-- Leading questions that telegraph what you want to hear
+For each: define owner, deliverable, and date.
 
-## Video Placeholder
+---
 
-**Video Title**: Translating Research into Diligence Questions
+## 6) How to write diligence questions (quality bar)
+Weak:
+- "Provide customer list."
+- "Provide pricing."
 
-**Outline**:
-- Role of research in diligence planning
-- Converting research insights (market, competition, moats) into specific questions
-- Structuring high-quality questions: open-ended, truthful, sequenced
-- Prioritizing by impact: thesis tests, go/no-go risks
-- Examples of research-driven questions for market, competition, moats, growth
-- Avoiding pitfalls: vague, spinnable, leading, or assumptive questions
+Strong:
+- "Provide top 50 customers with revenue by month for 36 months, by product line, including start date, contract type, and renewal date."
+- "Provide invoice-level pricing for top 20 SKUs/services, including discounts/concessions, by customer and date."
 
-**Suggested Length**: 14 minutes
+Make requests:
+- Time-bounded (e.g., 36 months)
+- Segmented (customer/product/channel/geography)
+- Linked to a calculation you will perform
 
-## Key Takeaways
+---
 
-- Research identifies unknowns; diligence answers them with data and evidence
-- Translate research insights into specific, testable diligence questions
-- Structure questions to be open-ended, reveal truth, and avoid inviting spin
-- Prioritize questions by impact: thesis tests and go/no-go risks come first
-- Sequence questions: build-up context before critical tests
-- Avoid vague, spinnable, leading, or assumptive questions that yield unusable answers
+## 7) Convert findings into underwriting updates
+Every diligence workstream should end with:
+- What we learned (1-3 bullets)
+- Implication for underwriting (what assumption changes)
+- Remaining risk (what is still uncertain)
+- Next action (what closes the gap)
+
+This is what makes you sound like PE execution training, not a blog.
+
+---
+
+## Synthesis
+- What are the 3 IC questions that decide the deal within 10 days?
+- Which request, if denied or delayed, is a red flag by itself?
+- What is the most likely "false positive" signal you must avoid?

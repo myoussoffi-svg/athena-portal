@@ -1,11 +1,28 @@
----
-id: working-capital-adjustments
-title: Working Capital Adjustments
-order: 4
-estimated_minutes: 30
----
-# Working Capital Adjustments
+﻿# Working Capital Adjustments
 
+## Outcomes
+- Build a work product you could share internally.
+- Identify the decisions and risks this work supports.
+- Execute a repeatable workflow under time pressure.
+
+## Agenda
+- Define the objective and decision context.
+- Gather the minimum inputs needed.
+- Analyze and pressure-test assumptions.
+- Translate findings into implications and next steps.
+
+## Why this matters in a real deal
+This work determines whether the deal narrative survives scrutiny. Done well, it improves decision quality and surfaces risk early. Done poorly, it creates false confidence and wastes diligence time.
+
+## Deliverable
+- Produce a 1–2 page output (memo, outline, or analysis) that is decision-relevant and defensible.
+
+## Checklist
+- [ ] Scope and definitions are explicit.
+- [ ] Key assumptions are stated and testable.
+- [ ] Downside risks are identified and prioritized.
+- [ ] Findings translate into underwriting implications.
+- [ ] Next diligence actions are clear.
 ## Learning Objectives
 
 - Explain how working capital adjustments ensure the business is delivered with appropriate operating capital at closing
@@ -127,3 +144,12 @@ Buyer: "Peg should reflect full year to avoid seasonal timing manipulation."
 - Define working capital components explicitly in SPA to avoid disputes about what is included (deferred revenue, prepaid expenses, etc.)
 - Protect against seller manipulation (delayed vendor payments, accelerated collections) by excluding uncollectible AR, setting minimum component levels, and requiring ordinary course operations pre-close
 - Finalize working capital adjustments 60–90 days post-close based on closing balance sheet with SPA-defined dispute resolution (third-party accounting arbitration if disagreement)
+
+## Synthesis
+- What would change your mind based on new data?
+- What breaks first in a downside case?
+- What is the single highest-leverage next diligence action?
+
+
+---
+

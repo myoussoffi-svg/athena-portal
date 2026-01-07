@@ -1,11 +1,28 @@
----
-id: cross-workstream-risk-identification
-title: Cross-Workstream Risk Identification
-order: 4
-estimated_minutes: 25
----
-# Cross-Workstream Risk Identification
+﻿# Cross Workstream Risk Identification
 
+## Outcomes
+- Build a work product you could share internally.
+- Identify the decisions and risks this work supports.
+- Execute a repeatable workflow under time pressure.
+
+## Agenda
+- Define the objective and decision context.
+- Gather the minimum inputs needed.
+- Analyze and pressure-test assumptions.
+- Translate findings into implications and next steps.
+
+## Why this matters in a real deal
+This work determines whether the deal narrative survives scrutiny. Done well, it improves decision quality and surfaces risk early. Done poorly, it creates false confidence and wastes diligence time.
+
+## Deliverable
+- Produce a 1–2 page output (memo, outline, or analysis) that is decision-relevant and defensible.
+
+## Checklist
+- [ ] Scope and definitions are explicit.
+- [ ] Key assumptions are stated and testable.
+- [ ] Downside risks are identified and prioritized.
+- [ ] Findings translate into underwriting implications.
+- [ ] Next diligence actions are clear.
 ## Learning Objectives
 
 - Explain why risks often emerge at the intersection of multiple diligence workstreams rather than within a single advisor's scope
@@ -197,3 +214,12 @@ This matrix enables the VP and IC to see how findings connect and how risks are 
 - Probe when advisors minimize issues or claim findings are outside their scope—escalate unresolved risks to your VP and ensure they are addressed
 - Synthesize findings into integrated narratives for IC rather than presenting siloed workstream summaries—connect the dots and tell a coherent risk story
 - Build a cross-workstream risk matrix that shows how findings from different advisors interact, aggregate severity, and proposed mitigants
+
+## Synthesis
+- What would change your mind based on new data?
+- What breaks first in a downside case?
+- What is the single highest-leverage next diligence action?
+
+
+---
+

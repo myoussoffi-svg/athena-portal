@@ -1,160 +1,163 @@
-﻿---
-id: drl-structure-prioritization
-title: DRL Structure and Prioritization Framework
-order: 1
-estimated_minutes: 35
+﻿# Diligence Request List (DRL): Structure & Prioritization
+
+## Outcomes
+- Build a DRL that is scoped, prioritized, and decision-driven.
+- Separate critical diligence from noise under tight timelines.
+- Use the DRL as a management tool, not a document dump.
+
+## Agenda
+- Understand the purpose of the DRL in the deal process.
+- Structure the DRL by decision category, not data type.
+- Prioritize requests based on risk, impact, and timing.
+- Manage scope, pushback, and escalation during diligence.
+
+## Why this matters in a real deal
+A poorly constructed DRL wastes time, frustrates management, and obscures real risk. A strong DRL does the opposite: it focuses the diligence team on what actually matters, surfaces red flags early, and enables clean decision-making.
+
+IC does not care how many requests you sent. They care whether you identified the right risks, validated the thesis, and escalated issues early enough to act.
+
+## Deliverable
+- Produce a structured DRL that:
+  - Is organized by diligence objective (not function).
+  - Clearly distinguishes critical vs. confirmatory requests.
+  - Identifies timing dependencies and escalation triggers.
+- Include a short note explaining which 5–10 requests matter most and why.
+
+## Checklist
+- [ ] Requests are tied to specific risks, assumptions, or thesis components.
+- [ ] The DRL can be explained and defended in a five-minute internal walkthrough.
+- [ ] Critical-path items are clearly identified and front-loaded.
+- [ ] Low-value or duplicative requests are intentionally excluded.
+- [ ] Escalation triggers are defined for missing or concerning data.
+
 ---
-# DRL Structure and Prioritization Framework
 
-## Learning Objectives
+## 1) Understand the purpose of the DRL
+The DRL is not a comprehensive data wish list. It is a **risk management and decision tool**.
 
-- Explain how to construct a comprehensive diligence request list organized by functional area and priority tier
-- Evaluate which diligence items are critical path versus nice-to-have based on deal timeline and investment thesis
-- Diagnose gaps in initial DRLs that could surface later as IC vulnerabilities
-- Defend prioritization decisions when managing bandwidth constraints across multiple workstreams
-- Structure DRL tracking systems that enable real-time status visibility for VPs and partners
+A good DRL answers three questions:
+- What could cause us to walk away?
+- What must be true for the thesis to hold?
+- What information do we need *now* versus later?
 
-## Written Guide
+If a request does not help answer one of these, it should not be prioritized.
 
-### Why DRL Structure Matters
+---
 
-The diligence request list is not simply a document checklist. It is the operational backbone of your entire diligence process. A well-structured DRL determines what information you collect, when you collect it, and how deeply you investigate each dimension of the business.
+## 2) Structure the DRL by decision category
+Avoid organizing the DRL purely by function (finance, legal, HR). That structure mirrors internal teams, not investment decisions.
 
-Poor DRL structure creates three failure modes:
-1. **Missing critical information** that only becomes obvious during IC prep when it is too late to remedy
-2. **Redundant or unfocused requests** that waste management's time and erode relationship capital
-3. **Inability to track progress** which obscures bottlenecks until they become deal-breaking delays
+Instead, group requests by **decision area**, such as:
+- Revenue quality and sustainability
+- Customer concentration and retention
+- Margin drivers and cost structure
+- Growth opportunities and constraints
+- Operational scalability and risks
+- Legal, regulatory, and compliance exposure
 
-Associates who master DRL construction gain visibility, control deal pacing, and position themselves as organized executors who can be trusted with increasing responsibility.
+This makes it easier to:
+- assess completeness
+- identify gaps
+- explain diligence status internally
 
-### Organizing the DRL by Functional Area
+---
 
-DRLs should be organized hierarchically by functional area, not by document type or chronological receipt. This structure mirrors how diligence workstreams are staffed and how findings will eventually be presented to IC.
+## 3) Separate critical requests from confirmatory requests
+Not all diligence is equal.
 
-Standard functional areas include:
-- **Financial Performance**: Historical financials, KPI reporting, budget vs. actual tracking, working capital detail
-- **Commercial & Revenue**: Customer contracts, pricing models, pipeline/backlog data, sales force structure
-- **Operations**: Vendor agreements, cost structure detail, capacity utilization, geographic footprint
-- **Technology & Product**: Product roadmaps, R&D spend allocation, IP portfolio, tech stack documentation
-- **Legal & Compliance**: Material contracts, litigation summary, regulatory filings, insurance policies
-- **Human Capital**: Org charts, compensation benchmarking, retention/turnover data, equity ownership
-- **ESG & Risk**: Environmental assessments, cybersecurity posture, business continuity plans
-
-Within each area, requests should progress from foundational documents (required to understand the business) to deeper confirmatory materials (required to validate thesis or quantify risks).
-
-This structure enables you to:
-- Assign workstream leads (internal team or consultants) to discrete sections
-- Track completeness by area rather than by arbitrary document count
-- Identify where diligence is lagging relative to IC timeline
-- Tailor follow-up requests without re-reading the entire DRL
-
-### Prioritization Tiers: Critical Path vs. Secondary vs. Optional
-
-Not all diligence requests carry equal weight. Associates must distinguish between:
-
-**Tier 1 – Critical Path**: Information required to validate the core investment thesis or assess fundamental deal risk. Without these items, the deal cannot proceed to IC or closing.
+### Critical requests
+These test:
+- thesis validity
+- downside risk
+- deal-breakers
 
 Examples:
-- Audited financials or detailed P&L by segment if the thesis depends on unit economics in a specific geography
-- Top 20 customer contracts if customer concentration is a key risk
-- Cap table and existing investor rights if there is minority ownership complexity
+- Customer churn and cohort data
+- Contract terms for top customers
+- Unit economics by product or customer segment
+- Regulatory exposure tied to core revenue
 
-**Tier 2 – Important but Not Blocking**: Information that adds confidence, enables better modeling, or surfaces risks that are manageable but should be known.
-
-Examples:
-- Detailed marketing spend by channel (improves understanding but does not invalidate thesis)
-- Real estate lease abstracts (important for integration planning but not a deal-breaker unless there is a flagged issue)
-- Employee engagement survey results (valuable context but not determinative)
-
-**Tier 3 – Optional or Post-LOI**: Information that is useful for integration planning, value creation roadmap development, or post-close risk mitigation but does not affect the decision to invest.
+### Confirmatory requests
+These:
+- validate known information
+- reduce uncertainty
+- support documentation
 
 Examples:
-- IT disaster recovery runbooks
-- Historical M&A integration documentation from prior acquisitions
-- Detailed SKU-level profitability if the business has thousands of SKUs and the thesis is top-line growth
+- Historical financial schedules already summarized elsewhere
+- Standard policy documents
+- Supporting detail for immaterial line items
 
-Prioritization should be explicitly marked in the DRL (e.g., via a "Priority" column or color coding). This allows your VP to scan the DRL and immediately understand what is blocking progress versus what can be deferred.
+**Rule of thumb:** If a request would not change the decision, it is not critical.
 
-### Aligning DRL to Investment Thesis
+---
 
-The DRL must be thesis-driven. Generic DRLs—copied from prior deals without customization—signal that the associate does not yet understand what matters for this specific investment.
+## 4) Prioritize by risk, impact, and timing
+Each request should be evaluated across three dimensions:
 
-Before issuing the DRL, review the IC memo outline or deal thesis summary and ask:
-- What are the 2-3 assumptions that, if wrong, would break this deal?
-- What evidence do I need to validate those assumptions?
-- What risks has the partner flagged as areas of concern?
+### Risk
+- What happens if this data reveals a problem?
+- Could it materially affect valuation, structure, or go/no-go?
 
-For example:
-- If the thesis is **margin expansion through procurement savings**, the DRL should include vendor contracts, volume rebate schedules, and historical spend by supplier. Generic questions about "procurement processes" are insufficient.
-- If the thesis is **revenue growth through geographic expansion**, the DRL should request market share data by region, sales pipeline by geography, and detail on regulatory barriers in target markets.
-- If the key risk is **customer concentration**, the DRL should request customer-level revenue and churn data, not just aggregate financials.
+### Impact
+- How central is this information to the investment thesis?
+- Does it affect growth, margin, or exit assumptions?
 
-Thesis alignment also governs the depth of certain requests. If technology is not central to the thesis, requesting complete source code documentation is excessive. If technology is the moat, it becomes Tier 1.
+### Timing
+- When do we need this to make decisions?
+- Is it a gating item for later workstreams?
 
-### Common DRL Mistakes and How to Avoid Them
+High-risk, high-impact, early-timing items should be at the top of the DRL and followed up aggressively.
 
-**Mistake 1: Requesting "all contracts"**
-This is lazy and generates noise. Be specific: "Material contracts >$500K annual value" or "Top 20 customer agreements by revenue."
+---
 
-**Mistake 2: No follow-up structure**
-The initial DRL will not capture everything. Build in a "Follow-Up Requests" section where you can append targeted asks as diligence progresses. This avoids the appearance of disorganization.
+## 5) Manage scope and pushback
+Management teams will push back. This is expected.
 
-**Mistake 3: Ignoring what is already in the CIM or management presentation**
-If the CIM included three years of financials, do not re-request them. Instead, request the underlying data (e.g., "Monthly P&L detail underlying the annual figures presented in the CIM").
+Your job is not to win every request — it is to **protect decision quality**.
 
-**Mistake 4: Sending the DRL before it is reviewed**
-Always have your VP or principal review the DRL before it goes to the target or their advisor. This is a client-facing document that reflects your firm's diligence standards.
+When you get pushback:
+- Clarify the decision the request supports.
+- Offer alternatives (summary data, samples, staged delivery).
+- Escalate internally if a critical request is resisted.
 
-### Tracking and Updating the DRL
+Silently dropping a critical request is a failure.
 
-The DRL is a living document. Associates are responsible for maintaining a status tracker that shows:
-- **Document name** (as requested)
-- **Priority tier** (1/2/3)
-- **Status** (Pending / Received / Under Review / Follow-Up Required)
-- **Date requested** and **Date received**
-- **Owner** (who is responsible for reviewing this item)
-- **Notes** (any context, e.g., "Partial data only, full set requested 12/5")
+---
 
-This tracker should be updated in real time and shared with the deal team on a weekly basis (or more frequently as the deal accelerates).
+## 6) Use the DRL as a live management tool
+The DRL should evolve as diligence progresses.
 
-Your VP should be able to glance at the tracker and immediately identify:
-- How much of Tier 1 is still outstanding
-- Whether any Tier 1 items have been pending for more than 48 hours without response
-- Whether follow-up requests have been issued and tracked
+Best practices:
+- Track status, owner, and timing for each request.
+- Flag items that are late, incomplete, or concerning.
+- Update priorities as new risks emerge.
+- Use the DRL to drive weekly diligence check-ins.
 
-### Escalation and Bandwidth Management
+A static DRL signals passive diligence. An actively managed DRL signals control.
 
-You will encounter situations where:
-- Management delays providing Tier 1 materials
-- The VDR is uploaded in tranches, and key items are missing
-- Diligence consultants request access to information not yet received
+---
 
-In each case, associates must escalate intelligently:
-- If a Tier 1 item is delayed, flag it immediately to your VP with context (e.g., "CFO indicated financials will be provided by Friday; we are now at Monday with no update").
-- If a consultant is blocked, assess whether they can begin work on other sections or if the delay is truly blocking. Communicate clearly to avoid inefficiency.
-- If the VDR is disorganized or incomplete, raise this during the next management call in a diplomatic but direct manner (e.g., "We have noted that several requested items are not yet in the VDR; can we confirm the expected upload timeline?").
+## What goes into the internal walkthrough
+When briefing your deal team, be prepared to cover:
+- The top 5–10 requests and why they matter.
+- What you are waiting on and what is blocking progress.
+- Early red flags and how you are validating them.
+- What you will do if key data does not arrive.
 
-Do not wait until the weekly update meeting to surface a critical gap. Escalate as soon as the issue is identified.
+This is how associates earn trust during diligence.
+
+---
+
+## Synthesis
+- Which single request, if unanswered, would make you uncomfortable signing an LOI?
+- What information would most likely change valuation or structure?
+- What request would you escalate immediately if management resisted?
 
 ## Video Placeholder
+**Video Title**: DRL Structure and Prioritization  
+**Suggested Length**: 15–18 minutes  
+**Focus**: Structuring the DRL around decisions, prioritization under time pressure, and escalation judgment
 
-**Video Title**: Building and Prioritizing a Diligence Request List
-
-**Outline**:
-- Why DRL structure determines diligence effectiveness (0:00–2:00)
-- Walking through a sample DRL organized by functional area (2:00–6:00)
-- How to assign priority tiers and align to investment thesis (6:00–10:00)
-- Common mistakes and how to avoid them (10:00–13:00)
-- Live example: Reviewing a DRL and identifying gaps (13:00–18:00)
-
-**Suggested Length**: 18 minutes
-
-## Key Takeaways
-
-- The DRL is the operational backbone of diligence; poor structure creates blind spots, inefficiency, and last-minute IC scrambles
-- Organize by functional area, not document type, to enable clear workstream ownership and progress tracking
-- Use explicit prioritization tiers (Critical Path / Important / Optional) so the team knows what is blocking versus what can be deferred
-- Align every request to the investment thesis—generic DRLs signal lack of understanding and generate unnecessary noise
-- Maintain a real-time status tracker and escalate Tier 1 delays immediately; do not wait for weekly updates to surface critical gaps
-- Review the DRL with your VP before sending to ensure it reflects firm standards and strategic focus
+---
 

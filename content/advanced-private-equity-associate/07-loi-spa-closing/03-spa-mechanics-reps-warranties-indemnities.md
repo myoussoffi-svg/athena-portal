@@ -1,11 +1,28 @@
----
-id: spa-mechanics-reps-warranties-indemnities
-title: SPA Mechanics: Reps, Warranties, Indemnities
-order: 3
-estimated_minutes: 35
----
-# SPA Mechanics: Reps, Warranties, Indemnities
+﻿# SPA Mechanics Reps Warranties Indemnities
 
+## Outcomes
+- Build a work product you could share internally.
+- Identify the decisions and risks this work supports.
+- Execute a repeatable workflow under time pressure.
+
+## Agenda
+- Define the objective and decision context.
+- Gather the minimum inputs needed.
+- Analyze and pressure-test assumptions.
+- Translate findings into implications and next steps.
+
+## Why this matters in a real deal
+This work determines whether the deal narrative survives scrutiny. Done well, it improves decision quality and surfaces risk early. Done poorly, it creates false confidence and wastes diligence time.
+
+## Deliverable
+- Produce a 1–2 page output (memo, outline, or analysis) that is decision-relevant and defensible.
+
+## Checklist
+- [ ] Scope and definitions are explicit.
+- [ ] Key assumptions are stated and testable.
+- [ ] Downside risks are identified and prioritized.
+- [ ] Findings translate into underwriting implications.
+- [ ] Next diligence actions are clear.
 ## Learning Objectives
 
 - Explain the purpose of representations and warranties (reps and warranties) in a Stock Purchase Agreement (SPA) and how they allocate risk between buyer and seller
@@ -187,3 +204,12 @@ Buyer must incur losses exceeding the basket before seller is liable.
 - Escrows (10–20% of purchase price held for 12–18 months) provide practical remedy for indemnification claims without requiring litigation
 - Associates review disclosure schedules to ensure diligence findings are properly disclosed and specific (not vague catch-alls)
 - Coordinate with deal counsel on business-specific reps, flag discrepancies between diligence and disclosures, and track negotiation positions on baskets, caps, and survival
+
+## Synthesis
+- What would change your mind based on new data?
+- What breaks first in a downside case?
+- What is the single highest-leverage next diligence action?
+
+
+---
+

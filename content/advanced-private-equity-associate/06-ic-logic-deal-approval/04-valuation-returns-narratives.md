@@ -1,11 +1,28 @@
----
-id: valuation-returns-narratives
-title: Valuation and Returns Narratives
-order: 4
-estimated_minutes: 25
----
-# Valuation and Returns Narratives
+﻿# Valuation Returns Narratives
 
+## Outcomes
+- Build a work product you could share internally.
+- Identify the decisions and risks this work supports.
+- Execute a repeatable workflow under time pressure.
+
+## Agenda
+- Define the objective and decision context.
+- Gather the minimum inputs needed.
+- Analyze and pressure-test assumptions.
+- Translate findings into implications and next steps.
+
+## Why this matters in a real deal
+This work determines whether the deal narrative survives scrutiny. Done well, it improves decision quality and surfaces risk early. Done poorly, it creates false confidence and wastes diligence time.
+
+## Deliverable
+- Produce a 1–2 page output (memo, outline, or analysis) that is decision-relevant and defensible.
+
+## Checklist
+- [ ] Scope and definitions are explicit.
+- [ ] Key assumptions are stated and testable.
+- [ ] Downside risks are identified and prioritized.
+- [ ] Findings translate into underwriting implications.
+- [ ] Next diligence actions are clear.
 ## Learning Objectives
 
 - Explain how to construct and defend valuation using comparable company analysis, precedent transactions, and DCF methodologies
@@ -164,3 +181,12 @@ IC expects to see three cases:
 - Present three scenarios (base, upside, downside) showing returns under different assumptions—IC assesses whether base is achievable and downside meets hurdles
 - Defend valuation with data (EV/Revenue, growth vs. comps, precedent transactions) and strategic rationale (platform value, buy-and-build, professionalization)
 - If valuation cannot be defended, acknowledge it and offer to walk or renegotiate—do not force-fit justifications that IC will reject
+
+## Synthesis
+- What would change your mind based on new data?
+- What breaks first in a downside case?
+- What is the single highest-leverage next diligence action?
+
+
+---
+

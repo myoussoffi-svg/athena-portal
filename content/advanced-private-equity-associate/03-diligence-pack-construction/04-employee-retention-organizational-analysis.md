@@ -1,11 +1,28 @@
----
-id: employee-retention-organizational-analysis
-title: Employee Retention and Organizational Analysis
-order: 4
-estimated_minutes: 35
----
-# Employee Retention and Organizational Analysis
+﻿# Employee Retention Organizational Analysis
 
+## Outcomes
+- Build a work product you could share internally.
+- Identify the decisions and risks this work supports.
+- Execute a repeatable workflow under time pressure.
+
+## Agenda
+- Define the objective and decision context.
+- Gather the minimum inputs needed.
+- Analyze and pressure-test assumptions.
+- Translate findings into implications and next steps.
+
+## Why this matters in a real deal
+This work determines whether the deal narrative survives scrutiny. Done well, it improves decision quality and surfaces risk early. Done poorly, it creates false confidence and wastes diligence time.
+
+## Deliverable
+- Produce a 1–2 page output (memo, outline, or analysis) that is decision-relevant and defensible.
+
+## Checklist
+- [ ] Scope and definitions are explicit.
+- [ ] Key assumptions are stated and testable.
+- [ ] Downside risks are identified and prioritized.
+- [ ] Findings translate into underwriting implications.
+- [ ] Next diligence actions are clear.
 ## Learning Objectives
 
 - Explain how to assess organizational health through employee turnover analysis, retention rates, and tenure distribution
@@ -296,3 +313,12 @@ Your organizational section should include:
 - Analyze equity ownership and vesting schedules to understand change-of-control dynamics and whether key employees have sufficient incentive to stay post-close
 - Assess organizational capacity to scale by analyzing headcount growth, revenue per employee trends, and whether growth requires proportional hiring or can be achieved efficiently
 - Structure outputs to quantify retention risk, propose mitigation plans (retention bonuses, equity grants, hiring), and inform integration planning and value creation roadmaps
+
+## Synthesis
+- What would change your mind based on new data?
+- What breaks first in a downside case?
+- What is the single highest-leverage next diligence action?
+
+
+---
+

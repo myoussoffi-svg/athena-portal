@@ -1,11 +1,28 @@
----
-id: structuring-deal-thesis
-title: Structuring the Deal Thesis
-order: 2
-estimated_minutes: 25
----
-# Structuring the Deal Thesis
+﻿# Structuring Deal Thesis
 
+## Outcomes
+- Build a work product you could share internally.
+- Identify the decisions and risks this work supports.
+- Execute a repeatable workflow under time pressure.
+
+## Agenda
+- Define the objective and decision context.
+- Gather the minimum inputs needed.
+- Analyze and pressure-test assumptions.
+- Translate findings into implications and next steps.
+
+## Why this matters in a real deal
+This work determines whether the deal narrative survives scrutiny. Done well, it improves decision quality and surfaces risk early. Done poorly, it creates false confidence and wastes diligence time.
+
+## Deliverable
+- Produce a 1–2 page output (memo, outline, or analysis) that is decision-relevant and defensible.
+
+## Checklist
+- [ ] Scope and definitions are explicit.
+- [ ] Key assumptions are stated and testable.
+- [ ] Downside risks are identified and prioritized.
+- [ ] Findings translate into underwriting implications.
+- [ ] Next diligence actions are clear.
 ## Learning Objectives
 
 - Explain the components of a compelling PE investment thesis and how it differs from generic strategic rationale
@@ -134,3 +151,12 @@ The thesis must be supported by diligence.
 - Avoid pitfalls including descriptive statements without plans, reliance on market beta without alpha creation, and too many value creation levers without prioritization
 - Link the thesis directly to diligence findings—every value creation claim must be supported by QofE, market study, customer data, or operational benchmarks
 - If diligence contradicts the thesis, revise the thesis or pass on the deal—do not force-fit a thesis to justify a desired investment
+
+## Synthesis
+- What would change your mind based on new data?
+- What breaks first in a downside case?
+- What is the single highest-leverage next diligence action?
+
+
+---
+

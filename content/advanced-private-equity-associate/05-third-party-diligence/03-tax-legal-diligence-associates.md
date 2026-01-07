@@ -1,11 +1,28 @@
----
-id: tax-legal-diligence-associates
-title: Tax and Legal Diligence for Associates
-order: 3
-estimated_minutes: 30
----
-# Tax and Legal Diligence for Associates
+﻿# Tax Legal Diligence Associates
 
+## Outcomes
+- Build a work product you could share internally.
+- Identify the decisions and risks this work supports.
+- Execute a repeatable workflow under time pressure.
+
+## Agenda
+- Define the objective and decision context.
+- Gather the minimum inputs needed.
+- Analyze and pressure-test assumptions.
+- Translate findings into implications and next steps.
+
+## Why this matters in a real deal
+This work determines whether the deal narrative survives scrutiny. Done well, it improves decision quality and surfaces risk early. Done poorly, it creates false confidence and wastes diligence time.
+
+## Deliverable
+- Produce a 1–2 page output (memo, outline, or analysis) that is decision-relevant and defensible.
+
+## Checklist
+- [ ] Scope and definitions are explicit.
+- [ ] Key assumptions are stated and testable.
+- [ ] Downside risks are identified and prioritized.
+- [ ] Findings translate into underwriting implications.
+- [ ] Next diligence actions are clear.
 ## Learning Objectives
 
 - Explain the purpose and scope of tax and legal diligence workstreams and how they inform deal structure and risk mitigation
@@ -308,3 +325,12 @@ Tax and legal diligence advisors are separate from deal counsel, but findings mu
 - Escalate red flags including undisclosed litigation, IP ownership issues, regulatory non-compliance, sales tax exposure, or aggressive tax positions to your VP and deal counsel
 - Coordinate tax and legal findings with deal counsel to ensure material issues are addressed through reps, warranties, indemnities, escrows, or conditions to closing
 - Tax and legal diligence are not back-office tasks—they directly affect valuation, deal structure, risk allocation, and fund returns
+
+## Synthesis
+- What would change your mind based on new data?
+- What breaks first in a downside case?
+- What is the single highest-leverage next diligence action?
+
+
+---
+
