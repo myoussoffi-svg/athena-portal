@@ -10,39 +10,50 @@ Whether management’s answers materially strengthen or weaken the underwriting 
 ---
 
 ## Claims are the unit of analysis
-Answers are inputs; claims drive decisions.
+Management’s answers are inputs — underwriting claims are the decisions we need to make. After the meeting, we need to map each answer back to a claim to see how it changed our thinking.
 
 ---
 
 ## Claim state after the meeting
-Each claim must be strengthened, confirmed, weakened, or left unresolved.
+After the meeting, every claim should have a status: either strengthened, confirmed, weakened, or left unresolved. If you can’t map an answer to a claim, it’s a missed opportunity.
 
 ---
 
 ## How to map answers
-Filter answers through dependency, process, and stress-testing.
+Filter answers through the lens of:
+- **Dependency**: Does the answer rely on a key person or team?
+- **Process**: Is it a system that can be scaled or a one-off event?
+- **Stress-testing**: Can this hold up under tougher conditions?
 
 ---
 
 ## Worked examples
-Pricing power, scalability, and retention often weaken when dependency is revealed.
+- **Pricing power**: Often weakens once you reveal customer dependency.
+- **Scalability**: Can look great on paper but break when you uncover process bottlenecks.
+- **Retention**: Real retention often weakens when dependency on key accounts is exposed.
 
 ---
 
 ## Conviction scale
-High, medium, low, or invalidated — be explicit.
+For each claim, decide if it’s:
+- **High**: Fully confirmed
+- **Medium**: Some uncertainty but manageable
+- **Low**: Uncertain or doesn’t hold up
+- **Invalidated**: The claim is no longer true
 
 ---
 
 ## Common failure modes
-Mistaking eloquence for proof, not updating assumptions, and avoiding negative conclusions.
+- Mistaking eloquence for proof
+- Not updating assumptions after hearing answers
+- Avoiding negative conclusions because you want the deal to work
 
 ---
 
 ## Sharp synthesis
-1) Which claim changed most?
-2) What dependency emerged?
-3) What is now assumed?
-4) What restores conviction?
-5) What changed in the deal?
+1. Which claim changed the most after the meeting?
+2. What dependency became clear?
+3. What assumptions are now in place?
+4. What restored your conviction?
+5. What changed in the deal after the meeting?
 

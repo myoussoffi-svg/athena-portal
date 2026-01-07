@@ -10,29 +10,35 @@ Whether partners can accurately update conviction mid-process — or misread ris
 ---
 
 ## What the internal memo is
-A decision-support document that updates conviction and sets expectations.
+The internal memo is your way of updating conviction. It’s a concise document that tells the partners what’s changed, where the risks are, and what comes next.
 
 ---
 
 ## Required structure
-Executive takeaway, what changed, open risks with actions, implications, and what comes next.
+1. **Executive takeaway**: What’s the bottom line?
+2. **What changed**: What new information has come to light?
+3. **Open risks**: What issues are still unresolved, and what’s the action plan?
+4. **What’s next**: Where do we go from here?
 
 ---
 
 ## Tone and credibility
-Be concise, directional, and explicit. Confidence does not require certainty.
+Be concise and explicit. Confidence doesn’t require certainty, but it does require clarity. Don’t hedge; instead, show how you’re addressing the uncertainty.
 
 ---
 
 ## Common failure modes
-Reporting without judgment, burying the lede, over-hedging, and avoiding pricing implications.
+- Reporting without judgment
+- Burying the lede
+- Over-hedging and making the memo too cautious
+- Avoiding pricing implications or difficult conclusions
 
 ---
 
 ## Sharp synthesis
-1) What matters most right now?
-2) What changed conviction?
-3) What risk is being priced?
-4) What is assumed?
-5) What decision comes next?
+1. What matters most right now?
+2. What changed your conviction?
+3. What risk is being priced in?
+4. What assumptions are in place?
+5. What’s the next decision?
 

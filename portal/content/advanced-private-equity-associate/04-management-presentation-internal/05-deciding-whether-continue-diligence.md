@@ -5,44 +5,48 @@ lesson: 05
 ---
 
 ## The deal decision this lesson supports
-Whether it is rational to spend more time, money, or credibility on this deal — or whether the correct action is to pause, reprice, restructure, or walk.
+Whether it’s rational to spend more time, money, or credibility on this deal — or whether the correct action is to pause, reprice, restructure, or walk.
 
 ---
 
 ## Continuing diligence is a decision
-Every additional workstream increases sunk cost and bias.
+Each additional workstream adds cost and bias. Make sure continuing makes sense before you proceed.
 
 ---
 
 ## The only valid reasons to continue
-Resolve a binary uncertainty, quantify a bounded downside, or prepare to structure.
+1. Resolve a binary uncertainty (either yes or no).
+2. Quantify a bounded downside (knowable, limited risk).
+3. Prepare to structure (have a path to a good deal).
 
 ---
 
 ## Invalid reasons
-Momentum, effort already spent, or finishing the checklist.
+Momentum or effort already spent should never be the reason to keep going. Don’t finish the checklist just for the sake of it.
 
 ---
 
 ## Binary vs bounded vs unbounded risk
-Binary resolves or kills; bounded reprices; unbounded walks.
+- **Binary**: Resolve or kill
+- **Bounded**: Reprice and adjust terms
+- **Unbounded**: Walk away
 
 ---
 
 ## Pre-commitment discipline
-“If X is true, we do Y.” Write it before proceeding.
+Before diving into further workstreams, write down what conditions must be true for the deal to proceed. This makes sure you’re not just gathering more data for the sake of it.
 
 ---
 
 ## Common failure modes
-Drift, hedging, process for process’ sake, optimism disguised as diligence.
+- Drift, process for process’s sake, and optimism disguised as diligence.
 
 ---
 
 ## Sharp synthesis
-1) Best reason to stop?
-2) What must be true to proceed?
-3) Can we know in time?
-4) What if negative?
-5) Are we acting like owners?
+1. **Best reason to stop?**
+2. **What must be true to proceed?**
+3. **Can we know in time?**
+4. **What if negative?**
+5. **Are we acting like owners?**
 
