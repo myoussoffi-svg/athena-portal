@@ -5,3 +5,5 @@ content_backup_*/
 /package-lock.json
 
 .env.local
+
+.env.local
