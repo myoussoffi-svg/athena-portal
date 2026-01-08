@@ -44,6 +44,12 @@ function titleFromMarkdown(md: string, fallback: string): string {
   return (m?.[1] ?? fallback).trim();
 }
 
+function stripFrontmatter(md: string): string {
+  // Remove leading UTF-8 BOM if present, then strip YAML frontmatter
+  const clean = md.replace(/^\uFEFF/, "");
+  return clean.replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n?/, "");
+}
+
 export function getTracks(): Track[] {
   if (!fs.existsSync(contentRoot)) {
     throw new Error(`contentRoot does not exist: ${contentRoot}`);
@@ -147,7 +153,7 @@ export function getLessonsForModule(trackSlug: string, moduleSlug: string): Less
       slug,
       title: titleFromMarkdown(md, slug),
       description: "",
-      content: md,
+      content: stripFrontmatter(md),
     });
   }
 
@@ -197,7 +203,7 @@ export function getLessonBySlug(trackSlug: string, moduleSlug: string, lessonSlu
       slug: lessonSlug,
       title: titleFromMarkdown(md, lessonSlug),
       description: "",
-      content: md,
+      content: stripFrontmatter(md),
     };
   }
 
