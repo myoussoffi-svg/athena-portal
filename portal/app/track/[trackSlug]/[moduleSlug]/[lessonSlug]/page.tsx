@@ -382,15 +382,15 @@ export default async function LessonPage({
 
         <style>{`
           .athena-prose { font-size: var(--athena-text-body); line-height: var(--athena-lh-body); color: var(--athena-text-primary); }
-          .athena-prose p { margin: 14px 0; color: var(--athena-text-secondary); }
+          .athena-prose p { margin: 16px 0; color: var(--athena-text-secondary); }
           .athena-prose h1, .athena-prose h2, .athena-prose h3 { color: var(--athena-text-primary); letter-spacing: -0.2px; }
-          .athena-prose h2 { margin: 26px 0 10px; font-size: var(--athena-h2); line-height: var(--athena-lh-tight); }
-          .athena-prose h3 { margin: 20px 0 8px; font-size: var(--athena-h3); line-height: 1.4; }
-          .athena-prose ul, .athena-prose ol { margin: 12px 0 12px 22px; padding: 0; }
-          .athena-prose li { margin: 6px 0; color: var(--athena-text-secondary); }
+          .athena-prose h2 { margin: 32px 0 12px; font-size: var(--athena-h2); line-height: var(--athena-lh-tight); }
+          .athena-prose h3 { margin: 24px 0 8px; font-size: var(--athena-h3); line-height: 1.4; }
+          .athena-prose ul, .athena-prose ol { margin: 16px 0 16px 24px; padding: 0; }
+          .athena-prose li { margin: 8px 0; color: var(--athena-text-secondary); }
           .athena-prose blockquote {
-            margin: 18px 0; padding: 12px 14px;
-            border-left: 3px solid var(--athena-accent);
+            margin: 20px 0; padding: 14px 18px;
+            border-left: 4px solid var(--athena-accent);
             background: var(--athena-bg-secondary);
             border-radius: var(--radius-md);
           }
