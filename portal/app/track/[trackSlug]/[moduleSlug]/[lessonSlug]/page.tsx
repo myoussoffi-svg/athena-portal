@@ -394,8 +394,8 @@ export default async function LessonPage({
             background: var(--athena-bg-secondary);
             border-radius: var(--radius-md);
           }
-          .athena-prose code { font-size: 0.92em; background: var(--athena-bg-secondary); padding: 2px 6px; border-radius: var(--radius-sm); color: var(--athena-text-primary); }
-          .athena-prose pre { background: var(--athena-bg-secondary); padding: 14px 16px; border-radius: var(--radius-md); overflow: auto; }
+          .athena-prose code { font-size: 0.95em; background: var(--athena-bg-secondary); padding: 2px 6px; border-radius: var(--radius-sm); color: var(--athena-text-primary); }
+          .athena-prose pre { background: var(--athena-bg-secondary); padding: 16px 20px; border-radius: var(--radius-md); overflow: auto; line-height: 1.55; border: 1px solid var(--athena-border-subtle); }
           .athena-prose pre code { background: transparent; padding: 0; }
           .athena-prose hr { border: none; border-top: 1px solid var(--athena-divider); margin: 22px 0; }
           .athena-prose a { color: var(--athena-accent); text-decoration: none; }
