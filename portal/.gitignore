@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+# Claude / local artifacts
+.claude/
+**/*.bak
+**/*.txt
+nul
+tmp.lesson.page.tsx
+
+CLAUDE.md

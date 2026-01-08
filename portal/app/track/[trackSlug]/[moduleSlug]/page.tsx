@@ -28,8 +28,8 @@ export default async function ModulePage({
   if (!track) notFound();
 
   const modules = getModulesForTrack(trackSlug);
-  const module = modules.find((m) => m.slug === moduleSlug);
-  if (!module) notFound();
+  const mod = modules.find((m) => m.slug === moduleSlug);
+  if (!mod) notFound();
 
   const lessons = getLessonsForModule(trackSlug, moduleSlug);
 
@@ -43,14 +43,14 @@ export default async function ModulePage({
             items={[
               { label: "Tracks", href: "/track" },
               { label: track.title ?? trackSlug, href: `/track/${trackSlug}` },
-              { label: module.title ?? moduleSlug },
+              { label: mod.title ?? moduleSlug },
             ]}
           />
 
           <CourseHeader
             eyebrow="Module"
-            title={module.title ?? moduleSlug}
-            description={module.description ? module.description : undefined}
+            title={mod.title ?? moduleSlug}
+            description={mod.description ? mod.description : undefined}
             metaLeft={
               <>
                 <MetaPill>
@@ -125,3 +125,4 @@ export default async function ModulePage({
     </>
   );
 }
+

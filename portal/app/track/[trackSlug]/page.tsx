@@ -26,7 +26,7 @@ export default async function Page({
 
   // Load all tracks, then find the one matching the slug
   const tracks = await getTracks();
-  const track = tracks.find((t: any) => t.slug === trackSlug);
+  const track = tracks.find((t: { slug: string }) => t.slug === trackSlug);
 
   if (!track) {
     notFound();
@@ -80,7 +80,7 @@ export default async function Page({
           >
             {modules && modules.length > 0 ? (
               <Grid minColWidth={360}>
-                {modules.map((m: any) => (
+                {modules.map((m: { slug: string; title: string; description?: string }) => (
                   <Link
                     key={m.slug}
                     href={`/track/${trackSlug}/${m.slug}`}
@@ -116,3 +116,5 @@ export default async function Page({
     </>
   );
 }
+
+

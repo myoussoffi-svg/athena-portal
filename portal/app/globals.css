@@ -1,26 +1,102 @@
-@import "tailwindcss";
+﻿/* ===========================================
+   Athena Visual System v1 - Design Tokens
+   =========================================== */
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Colors (Dark, Institutional) */
+  --athena-bg-primary: #0B0F19;
+  --athena-bg-secondary: #111827;
+  --athena-bg-surface: #0F172A;
+  --athena-text-primary: #E5E7EB;
+  --athena-text-secondary: #9CA3AF;
+  --athena-text-tertiary: #6B7280;
+  --athena-border-subtle: #1F2937;
+  --athena-divider: #1E293B;
+  --athena-accent: #4F46E5;
+
+  /* Spacing (8px grid) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  /* Typography */
+  --athena-text-body: 16px;
+  --athena-text-small: 14px;
+  --athena-text-meta: 12px;
+  --athena-h1: 32px;
+  --athena-h2: 22px;
+  --athena-h3: 18px;
+  --athena-lh-body: 1.65;
+  --athena-lh-tight: 1.25;
+
+  /* Radii */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+
+  /* Max Widths */
+  --athena-shell-max: 1200px;
+  --athena-content-max: 720px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ===========================================
+   Athena Visual System v1 - Utility Classes
+   =========================================== */
+
+/* Layout */
+.athenaShell {
+  max-width: var(--athena-shell-max);
+  margin: 0 auto;
+  padding: var(--space-5) var(--space-4);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.athenaContent {
+  max-width: var(--athena-content-max);
+  margin: 0 auto;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Cards and Blocks */
+.athenaCard {
+  background: var(--athena-bg-surface);
+  border: 1px solid var(--athena-border-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
 }
+
+.athenaBlock {
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-sm);
+  background: var(--athena-bg-secondary);
+  border: 1px solid var(--athena-border-subtle);
+}
+
+/* Divider */
+.athenaDivider {
+  height: 1px;
+  background: var(--athena-divider);
+  margin: var(--space-5) 0;
+}
+
+/* Typography helpers */
+.athenaMuted {
+  color: var(--athena-text-secondary);
+}
+
+.athenaAccent {
+  color: var(--athena-accent);
+}
+
+/* Link */
+.athenaLink {
+  color: var(--athena-accent);
+  text-decoration: none;
+}
+
+.athenaLink:hover {
+  text-decoration: underline;
+}
+

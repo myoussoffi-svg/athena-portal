@@ -1,4 +1,4 @@
-import fs from "fs";
+﻿import fs from "fs";
 import path from "path";
 import { globSync } from "glob";
 import yaml from "js-yaml";
@@ -15,9 +15,9 @@ export type ModuleMeta = {
 const repoRoot = path.resolve(process.cwd(), ".."); // portal/ -> repo root
 const contentRoot = path.join(repoRoot, "content");
 
-function readYaml(filePath: string) {
+function readYaml<T = unknown>(filePath: string): T {
   const raw = fs.readFileSync(filePath, "utf8");
-  return yaml.load(raw) as any;
+  return yaml.load(raw) as T;
 }
 
 function readText(filePath: string) {
@@ -88,3 +88,4 @@ export function getLesson(trackSlug: string, moduleSlug: string, lessonSlug: str
 
   return { trackSlug, moduleSlug, lessonSlug, title, body };
 }
+

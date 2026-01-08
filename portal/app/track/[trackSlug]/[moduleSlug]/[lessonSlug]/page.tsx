@@ -8,6 +8,8 @@ import {
   getLessonBySlug,
 } from "@/lib/content";
 
+import { Shell, Content, H1 } from "@/components/ui";
+
 import { remark } from "remark";
 import html from "remark-html";
 
@@ -49,6 +51,47 @@ async function mdToHtml(md: string) {
   return processed.toString();
 }
 
+function LessonCard({
+  title,
+  variant,
+  html,
+}: {
+  title: string;
+  variant: "neutral" | "accent";
+  html: string;
+}) {
+  const isAccent = variant === "accent";
+  return (
+    <div
+      style={{
+        marginTop: 14,
+        padding: "12px 14px",
+        border: isAccent
+          ? "1px solid rgba(65,109,137,0.28)"
+          : "1px solid rgba(0,0,0,0.10)",
+        background: isAccent ? "rgba(65,109,137,0.06)" : "rgba(0,0,0,0.02)",
+        borderRadius: 12,
+      }}
+    >
+      <div
+        style={{
+          fontSize: 12,
+          letterSpacing: 0.4,
+          textTransform: "uppercase",
+          opacity: 0.78,
+        }}
+      >
+        {title}
+      </div>
+      <div
+        className="athena-prose"
+        style={{ marginTop: 6, fontSize: 14.5, lineHeight: 1.6 }}
+        dangerouslySetInnerHTML={{ __html: html }}
+      />
+    </div>
+  );
+}
+
 export default async function LessonPage({
   params,
 }: {
@@ -59,8 +102,8 @@ export default async function LessonPage({
   const track = getTracks().find((t) => t.slug === trackSlug);
   if (!track) notFound();
 
-  const module = getModulesForTrack(trackSlug).find((m) => m.slug === moduleSlug);
-  if (!module) notFound();
+  const mod = getModulesForTrack(trackSlug).find((m) => m.slug === moduleSlug);
+  if (!mod) notFound();
 
   const lessons = getLessonsForModule(trackSlug, moduleSlug);
   const idx = lessons.findIndex((l) => l.slug === lessonSlug);
@@ -130,141 +173,93 @@ export default async function LessonPage({
       ? await mdToHtml(synthesisMd)
       : "";
 
-  const Card = ({
-    title,
-    variant,
-    html,
-  }: {
-    title: string;
-    variant: "neutral" | "accent";
-    html: string;
-  }) => {
-    const isAccent = variant === "accent";
-    return (
-      <div
+  return (
+    <Shell>
+      <main
         style={{
-          marginTop: 14,
-          padding: "12px 14px",
-          border: isAccent
-            ? "1px solid rgba(65,109,137,0.28)"
-            : "1px solid rgba(0,0,0,0.10)",
-          background: isAccent ? "rgba(65,109,137,0.06)" : "rgba(0,0,0,0.02)",
-          borderRadius: 12,
+          fontFamily:
+            'Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Apple Color Emoji", "Segoe UI Emoji"',
+          color: "var(--athena-text-primary)",
+          background: "var(--athena-bg-primary)",
+          minHeight: "100vh",
+          paddingBottom: "var(--space-8)",
         }}
       >
         <div
-          style={{
-            fontSize: 12,
-            letterSpacing: 0.4,
-            textTransform: "uppercase",
-            opacity: 0.78,
-          }}
+          style={{ marginBottom: "var(--space-5)", display: "flex", alignItems: "center", gap: "var(--space-3)" }}
         >
-          {title}
+          <Link
+            href={`/track/${trackSlug}/${moduleSlug}`}
+            className="athenaLink"
+            style={{ fontSize: "var(--athena-text-small)" }}
+          >
+            Back to {mod.title}
+          </Link>
+
+          <span style={{ color: "var(--athena-text-tertiary)" }}>/</span>
+
+          <div style={{ fontSize: "var(--athena-text-meta)", color: "var(--athena-text-secondary)" }}>
+            {track.title} <span style={{ color: "var(--athena-text-tertiary)" }}>/</span> {mod.title}
+          </div>
         </div>
-        <div
-          className="athena-prose"
-          style={{ marginTop: 6, fontSize: 14.5, lineHeight: 1.6 }}
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
-      </div>
-    );
-  };
 
-  return (
-    <main
-      style={{
-        padding: "28px 20px 84px",
-        fontFamily:
-          'Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Apple Color Emoji", "Segoe UI Emoji"',
-        maxWidth: 980,
-        margin: "0 auto",
-        color: "#0B0F14",
-      }}
-    >
-      <div
-        style={{ marginBottom: 18, display: "flex", alignItems: "center", gap: 12 }}
-      >
-        <Link
-          href={`/track/${trackSlug}/${moduleSlug}`}
-          style={{ color: "#416D89", textDecoration: "none", fontSize: 14 }}
-        >
-          ← Back to {module.title}
-        </Link>
-
-        <span style={{ opacity: 0.35 }}>•</span>
-
-        <div style={{ fontSize: 13, opacity: 0.75 }}>
-          {track.title} <span style={{ opacity: 0.55 }}>/</span> {module.title}
-        </div>
-      </div>
-
-      <div style={{ borderTop: "1px solid rgba(0,0,0,0.08)", paddingTop: 22 }}>
-        <div style={{ maxWidth: 740, margin: "0 auto" }}>
-          <header style={{ marginBottom: 18 }}>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-                gap: 12,
-                marginBottom: 10,
-              }}
-            >
+        <div style={{ borderTop: "1px solid var(--athena-divider)", paddingTop: "var(--space-5)" }}>
+          <Content>
+            <header style={{ marginBottom: "var(--space-5)" }}>
               <div
                 style={{
-                  fontSize: 12,
-                  letterSpacing: 0.5,
-                  textTransform: "uppercase",
-                  opacity: 0.7,
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  gap: "var(--space-3)",
+                  marginBottom: "var(--space-3)",
                 }}
               >
-                Lesson {lessonNumber} of {totalLessons}
+                <div
+                  style={{
+                    fontSize: "var(--athena-text-meta)",
+                    letterSpacing: 0.5,
+                    textTransform: "uppercase",
+                    color: "var(--athena-text-secondary)",
+                  }}
+                >
+                  Lesson {lessonNumber} of {totalLessons}
+                </div>
+
+                <div style={{ fontSize: "var(--athena-text-meta)", color: "var(--athena-text-tertiary)" }}>{progressPct}%</div>
               </div>
 
-              <div style={{ fontSize: 12, opacity: 0.65 }}>{progressPct}%</div>
-            </div>
-
-            <div
-              style={{
-                height: 6,
-                borderRadius: 999,
-                background: "rgba(0,0,0,0.08)",
-                overflow: "hidden",
-                marginBottom: 16,
-              }}
-              aria-hidden="true"
-            >
               <div
                 style={{
-                  height: "100%",
-                  width: `${progressPct}%`,
-                  background: "#416D89",
+                  height: 6,
+                  borderRadius: 999,
+                  background: "var(--athena-border-subtle)",
+                  overflow: "hidden",
+                  marginBottom: "var(--space-4)",
                 }}
-              />
-            </div>
+                aria-hidden="true"
+              >
+                <div
+                  style={{
+                    height: "100%",
+                    width: `${progressPct}%`,
+                    background: "var(--athena-accent)",
+                  }}
+                />
+              </div>
 
-            <h1
-              style={{
-                margin: 0,
-                fontSize: 28,
-                lineHeight: 1.2,
-                letterSpacing: -0.2,
-              }}
-            >
-              {lesson.title}
-            </h1>
+              <H1>{lesson.title}</H1>
 
-            <p
-              style={{
-                margin: "10px 0 0",
-                fontSize: 15.5,
-                lineHeight: 1.65,
-                opacity: 0.9,
-              }}
-            >
-              {intentText}
-            </p>
+              <p
+                style={{
+                  margin: "var(--space-3) 0 0",
+                  fontSize: "var(--athena-text-body)",
+                  lineHeight: "var(--athena-lh-body)",
+                  color: "var(--athena-text-secondary)",
+                }}
+              >
+                {intentText}
+              </p>
 
             <div style={{ marginTop: 12, display: "flex", gap: 8, alignItems: "center", flexWrap: "wrap" }}>
               <span style={{ fontSize: 12, letterSpacing: 0.4, textTransform: "uppercase", opacity: 0.65 }}>
@@ -301,25 +296,25 @@ export default async function LessonPage({
             </div>
 
             {outcomesHtml ? (
-              <Card title="Outcomes" variant="neutral" html={outcomesHtml} />
+              <LessonCard title="Outcomes" variant="neutral" html={outcomesHtml} />
             ) : null}
 
             {agendaHtml ? (
-              <Card title="Agenda" variant="neutral" html={agendaHtml} />
+              <LessonCard title="Agenda" variant="neutral" html={agendaHtml} />
             ) : null}
 
             {whyHtml ? (
-              <Card
+              <LessonCard
                 title="Why this matters in a real deal"
                 variant="neutral"
                 html={whyHtml}
               />
             ) : null}
 
-            <Card title="Deliverable" variant="accent" html={deliverableHtml} />
+            <LessonCard title="Deliverable" variant="accent" html={deliverableHtml} />
 
             {checklistHtml ? (
-              <Card title="Checklist" variant="neutral" html={checklistHtml} />
+              <LessonCard title="Checklist" variant="neutral" html={checklistHtml} />
             ) : null}
           </header>
 
@@ -330,7 +325,7 @@ export default async function LessonPage({
 
           {synthesisHtml ? (
             <div style={{ marginTop: 22 }}>
-              <Card title="Synthesis" variant="neutral" html={synthesisHtml} />
+              <LessonCard title="Synthesis" variant="neutral" html={synthesisHtml} />
             </div>
           ) : null}
 
@@ -382,34 +377,35 @@ export default async function LessonPage({
               ) : null}
             </div>
           </div>
+          </Content>
         </div>
-      </div>
 
-      <style>{`
-        .athena-prose { font-size: 15.5px; line-height: 1.68; letter-spacing: -0.1px; }
-        .athena-prose p { margin: 14px 0; opacity: 0.94; }
-        .athena-prose h1, .athena-prose h2, .athena-prose h3 { color: #0B0F14; letter-spacing: -0.2px; }
-        .athena-prose h2 { margin: 26px 0 10px; font-size: 18px; line-height: 1.35; }
-        .athena-prose h3 { margin: 20px 0 8px; font-size: 16px; line-height: 1.4; opacity: 0.98; }
-        .athena-prose ul, .athena-prose ol { margin: 12px 0 12px 22px; padding: 0; }
-        .athena-prose li { margin: 6px 0; }
-        .athena-prose blockquote {
-          margin: 18px 0; padding: 12px 14px;
-          border-left: 3px solid rgba(65,109,137,0.55);
-          background: rgba(65,109,137,0.06);
-          border-radius: 12px;
-        }
-        .athena-prose code { font-size: 0.92em; background: rgba(0,0,0,0.06); padding: 2px 6px; border-radius: 8px; }
-        .athena-prose pre { background: rgba(0,0,0,0.06); padding: 14px 16px; border-radius: 14px; overflow: auto; }
-        .athena-prose pre code { background: transparent; padding: 0; }
-        .athena-prose hr { border: none; border-top: 1px solid rgba(0,0,0,0.10); margin: 22px 0; }
-        .athena-prose a { color: #416D89; text-decoration: none; }
-        .athena-prose a:hover { text-decoration: underline; }
+        <style>{`
+          .athena-prose { font-size: var(--athena-text-body); line-height: var(--athena-lh-body); color: var(--athena-text-primary); }
+          .athena-prose p { margin: 14px 0; color: var(--athena-text-secondary); }
+          .athena-prose h1, .athena-prose h2, .athena-prose h3 { color: var(--athena-text-primary); letter-spacing: -0.2px; }
+          .athena-prose h2 { margin: 26px 0 10px; font-size: var(--athena-h2); line-height: var(--athena-lh-tight); }
+          .athena-prose h3 { margin: 20px 0 8px; font-size: var(--athena-h3); line-height: 1.4; }
+          .athena-prose ul, .athena-prose ol { margin: 12px 0 12px 22px; padding: 0; }
+          .athena-prose li { margin: 6px 0; color: var(--athena-text-secondary); }
+          .athena-prose blockquote {
+            margin: 18px 0; padding: 12px 14px;
+            border-left: 3px solid var(--athena-accent);
+            background: var(--athena-bg-secondary);
+            border-radius: var(--radius-md);
+          }
+          .athena-prose code { font-size: 0.92em; background: var(--athena-bg-secondary); padding: 2px 6px; border-radius: var(--radius-sm); color: var(--athena-text-primary); }
+          .athena-prose pre { background: var(--athena-bg-secondary); padding: 14px 16px; border-radius: var(--radius-md); overflow: auto; }
+          .athena-prose pre code { background: transparent; padding: 0; }
+          .athena-prose hr { border: none; border-top: 1px solid var(--athena-divider); margin: 22px 0; }
+          .athena-prose a { color: var(--athena-accent); text-decoration: none; }
+          .athena-prose a:hover { text-decoration: underline; }
 
-        .athena-prose input[type="checkbox"] { transform: translateY(1px); margin-right: 8px; }
-        .athena-prose li > p { margin: 0; }
-      `}</style>
-    </main>
+          .athena-prose input[type="checkbox"] { transform: translateY(1px); margin-right: 8px; }
+          .athena-prose li > p { margin: 0; }
+        `}</style>
+      </main>
+    </Shell>
   );
 }
 

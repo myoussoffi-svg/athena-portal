@@ -602,6 +602,119 @@ export function Divider() {
   );
 }
 
+/* ===========================================
+   Athena Visual System v1 - Primitives
+   Using CSS classes from globals.css
+   =========================================== */
+
+export function Shell({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="athenaShell">
+      {children}
+    </div>
+  );
+}
+
+export function Content({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="athenaContent">
+      {children}
+    </div>
+  );
+}
+
+export function H1({ children }: { children: React.ReactNode }) {
+  return (
+    <h1
+      style={{
+        margin: 0,
+        fontSize: "var(--athena-h1)",
+        lineHeight: "var(--athena-lh-tight)",
+        color: "var(--athena-text-primary)",
+        letterSpacing: "-0.02em",
+      }}
+    >
+      {children}
+    </h1>
+  );
+}
+
+export function H2({ children }: { children: React.ReactNode }) {
+  return (
+    <h2
+      style={{
+        margin: 0,
+        fontSize: "var(--athena-h2)",
+        lineHeight: "var(--athena-lh-tight)",
+        color: "var(--athena-text-primary)",
+        letterSpacing: "-0.01em",
+      }}
+    >
+      {children}
+    </h2>
+  );
+}
+
+export function H3({ children }: { children: React.ReactNode }) {
+  return (
+    <h3
+      style={{
+        margin: 0,
+        fontSize: "var(--athena-h3)",
+        lineHeight: "var(--athena-lh-tight)",
+        color: "var(--athena-text-primary)",
+      }}
+    >
+      {children}
+    </h3>
+  );
+}
+
+export function ACard({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="athenaCard">
+      {children}
+    </div>
+  );
+}
+
+export function Block({
+  children,
+  variant = "neutral",
+}: {
+  children: React.ReactNode;
+  variant?: "neutral" | "accent";
+}) {
+  const accentStyle = variant === "accent" ? {
+    background: "rgba(79, 70, 229, 0.08)",
+    borderColor: "rgba(79, 70, 229, 0.25)",
+  } : {};
+
+  return (
+    <div className="athenaBlock" style={accentStyle}>
+      {children}
+    </div>
+  );
+}
+
+export function ADivider() {
+  return <div className="athenaDivider" role="separator" aria-hidden="true" />;
+}
+
+export function ALink({
+  href,
+  children,
+}: {
+  href: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <a className="athenaLink" href={href}>
+      {children}
+    </a>
+  );
+}
+
 
 
 

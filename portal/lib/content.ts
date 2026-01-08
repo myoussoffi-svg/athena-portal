@@ -1,6 +1,7 @@
-import fs from "fs";
+﻿import fs from "fs";
 import path from "path";
 import { globSync } from "glob";
+import yaml from "js-yaml";
 
 const contentRoot =
   process.env.CONTENT_ROOT?.trim() ||
@@ -28,10 +29,9 @@ export type Lesson = {
   body?: string;
 };
 
-function readYamlFile(filePath: string): any {
-  const yaml = require("js-yaml");
-  const raw = fs.readFileSync(filePath, "utf8");
-  return yaml.load(raw);
+function readYamlFile<T = unknown>(filePath: string): T {
+const raw = fs.readFileSync(filePath, "utf8");
+  return yaml.load(raw) as T;
 }
 
 function safeReadFile(filePath: string): string {
@@ -58,7 +58,7 @@ export function getTracks(): Track[] {
 
       const trackYamlPath = path.join(contentRoot, trackSlug, "track.yaml");
       if (fs.existsSync(trackYamlPath)) {
-        const data = readYamlFile(trackYamlPath);
+        const data = readYamlFile<{ id?: string; title?: string; description?: string }>(trackYamlPath);
         const slug = data.id ?? trackSlug;
         return {
           id: slug,
@@ -89,7 +89,7 @@ export function getModulesForTrack(trackSlug: string): Module[] {
   return moduleYamlPaths.map((yamlPath) => {
     const moduleDir = path.dirname(yamlPath);
     const slug = path.basename(moduleDir);
-    const data = readYamlFile(yamlPath);
+    const data = readYamlFile<{ id?: string; title?: string; description?: string }>(yamlPath);
 
     return {
       id: data.id ?? slug,
@@ -119,7 +119,7 @@ export function getLessonsForModule(trackSlug: string, moduleSlug: string): Less
     const lessonYamlPath = path.join(moduleDir, dir.name, "lesson.yaml");
     if (!fs.existsSync(lessonYamlPath)) continue;
 
-    const data = readYamlFile(lessonYamlPath);
+    const data = readYamlFile<{ id?: string; title?: string; description?: string; content?: string }>(lessonYamlPath);
     lessons.push({
       id: data.id ?? dir.name,
       slug: dir.name,
@@ -178,7 +178,7 @@ export function getLessonBySlug(trackSlug: string, moduleSlug: string, lessonSlu
   // A) Folder-based: <module>/<lessonSlug>/lesson.yaml
   const lessonYamlPath = path.join(contentRoot, trackSlug, moduleSlug, lessonSlug, "lesson.yaml");
   if (fs.existsSync(lessonYamlPath)) {
-    const data = readYamlFile(lessonYamlPath);
+    const data = readYamlFile<{ id?: string; title?: string; description?: string; content?: string }>(lessonYamlPath);
     return {
       id: data.id ?? lessonSlug,
       slug: lessonSlug,
@@ -203,3 +203,10 @@ export function getLessonBySlug(trackSlug: string, moduleSlug: string, lessonSlu
 
   return null;
 }
+
+
+
+
+
+
+
