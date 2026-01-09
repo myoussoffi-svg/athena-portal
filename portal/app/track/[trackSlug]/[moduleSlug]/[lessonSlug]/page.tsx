@@ -51,47 +51,6 @@ async function mdToHtml(md: string) {
   return processed.toString();
 }
 
-function LessonCard({
-  title,
-  variant,
-  html,
-}: {
-  title: string;
-  variant: "neutral" | "accent";
-  html: string;
-}) {
-  const isAccent = variant === "accent";
-  return (
-    <div
-      style={{
-        marginTop: 14,
-        padding: "12px 14px",
-        border: isAccent
-          ? "1px solid rgba(65,109,137,0.28)"
-          : "1px solid rgba(0,0,0,0.10)",
-        background: isAccent ? "rgba(65,109,137,0.06)" : "rgba(0,0,0,0.02)",
-        borderRadius: 12,
-      }}
-    >
-      <div
-        style={{
-          fontSize: 12,
-          letterSpacing: 0.4,
-          textTransform: "uppercase",
-          opacity: 0.78,
-        }}
-      >
-        {title}
-      </div>
-      <div
-        className="athena-prose"
-        style={{ marginTop: 6, fontSize: 14.5, lineHeight: 1.6 }}
-        dangerouslySetInnerHTML={{ __html: html }}
-      />
-    </div>
-  );
-}
-
 export default async function LessonPage({
   params,
 }: {
@@ -114,7 +73,7 @@ export default async function LessonPage({
 
   const rawMd = lesson.content ?? "";
 
-  // Extract structured “framing” sections in a stable order.
+  // Extract deliverable section only; strip all framing sections from body
   const outRes = extractSection(rawMd, /^##\s+Outcomes?\s*$/i);
   const agRes = extractSection(outRes.stripped, /^##\s+Agenda\s*$/i);
   const whyRes = extractSection(
@@ -125,12 +84,7 @@ export default async function LessonPage({
   const ckRes = extractSection(delRes.stripped, /^##\s+Checklist\s*$/i);
   const synRes = extractSection(ckRes.stripped, /^##\s+Synthesis\s*$/i);
 
-  const outcomesMd = outRes.extracted;
-  const agendaMd = agRes.extracted;
-  const whyMd = whyRes.extracted;
   const deliverableMd = delRes.extracted;
-  const checklistMd = ckRes.extracted;
-  const synthesisMd = synRes.extracted;
   const bodyMd = synRes.stripped;
 
   const contentHtml = await mdToHtml(bodyMd);
@@ -140,38 +94,9 @@ export default async function LessonPage({
 
   const lessonNumber = idx + 1;
   const totalLessons = Math.max(lessons.length, 1);
-  const progressPct = Math.min(
-    100,
-    Math.max(0, Math.round((lessonNumber / totalLessons) * 100))
-  );
 
-  const intentText =
-    lesson.description && lesson.description.trim().length > 0
-      ? `In this lesson, you will ${lesson.description.trim().replace(/\.$/, "")}.`
-      : "In this lesson, you will build a concrete, repeatable workflow you can apply on a live deal.";
-
-  const deliverableFallback =
-    "Produce a 1–2 page output (memo, outline, or analysis) you could forward to a VP/Principal—clear structure, crisp bullets, and explicit assumptions.";
-
-  const deliverableSource =
-    deliverableMd && deliverableMd.trim().length > 0
-      ? deliverableMd
-      : deliverableFallback;
-
-  const outcomesHtml =
-    outcomesMd && outcomesMd.trim().length > 0 ? await mdToHtml(outcomesMd) : "";
-  const agendaHtml =
-    agendaMd && agendaMd.trim().length > 0 ? await mdToHtml(agendaMd) : "";
-  const whyHtml = whyMd && whyMd.trim().length > 0 ? await mdToHtml(whyMd) : "";
-  const deliverableHtml = await mdToHtml(deliverableSource);
-  const checklistHtml =
-    checklistMd && checklistMd.trim().length > 0
-      ? await mdToHtml(checklistMd)
-      : "";
-  const synthesisHtml =
-    synthesisMd && synthesisMd.trim().length > 0
-      ? await mdToHtml(synthesisMd)
-      : "";
+  // Clean deliverable text (strip markdown formatting for inline display)
+  const deliverableText = deliverableMd?.trim() || null;
 
   return (
     <Shell>
@@ -185,198 +110,93 @@ export default async function LessonPage({
           paddingBottom: "var(--space-8)",
         }}
       >
-        <div
-          style={{ marginBottom: "var(--space-5)", display: "flex", alignItems: "center", gap: "var(--space-3)" }}
-        >
+        <nav style={{ marginBottom: "var(--space-4)" }}>
           <Link
             href={`/track/${trackSlug}/${moduleSlug}`}
-            className="athenaLink"
-            style={{ fontSize: "var(--athena-text-small)" }}
+            style={{
+              fontSize: 13,
+              color: "var(--athena-text-tertiary)",
+              textDecoration: "none",
+            }}
           >
-            Back to {mod.title}
+            ← Back to module
           </Link>
-
-          <span style={{ color: "var(--athena-text-tertiary)" }}>/</span>
-
-          <div style={{ fontSize: "var(--athena-text-meta)", color: "var(--athena-text-secondary)" }}>
-            {track.title} <span style={{ color: "var(--athena-text-tertiary)" }}>/</span> {mod.title}
-          </div>
-        </div>
+        </nav>
 
         <div style={{ borderTop: "1px solid var(--athena-divider)", paddingTop: "var(--space-5)" }}>
           <Content>
-            <header style={{ marginBottom: "var(--space-5)" }}>
+            <header style={{ marginBottom: "var(--space-6)" }}>
+              <H1>{lesson.title}</H1>
+
               <div
                 style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "space-between",
-                  gap: "var(--space-3)",
-                  marginBottom: "var(--space-3)",
+                  marginTop: "var(--space-3)",
+                  fontSize: 13,
+                  color: "var(--athena-text-tertiary)",
                 }}
               >
+                Lesson {lessonNumber} of {totalLessons}
+              </div>
+
+              {deliverableText ? (
                 <div
                   style={{
-                    fontSize: "var(--athena-text-meta)",
-                    letterSpacing: 0.5,
-                    textTransform: "uppercase",
+                    marginTop: "var(--space-3)",
+                    fontSize: 13,
                     color: "var(--athena-text-secondary)",
                   }}
                 >
-                  Lesson {lessonNumber} of {totalLessons}
+                  <span style={{ color: "var(--athena-text-tertiary)" }}>Deliverable:</span>{" "}
+                  {deliverableText}
                 </div>
+              ) : null}
+            </header>
 
-                <div style={{ fontSize: "var(--athena-text-meta)", color: "var(--athena-text-tertiary)" }}>{progressPct}%</div>
+            <article
+              className="athena-prose"
+              dangerouslySetInnerHTML={{ __html: contentHtml }}
+            />
+
+            <nav
+              style={{
+                marginTop: "var(--space-7)",
+                paddingTop: "var(--space-5)",
+                borderTop: "1px solid var(--athena-divider)",
+                display: "flex",
+                justifyContent: "space-between",
+                gap: "var(--space-4)",
+              }}
+            >
+              <div>
+                {prev ? (
+                  <Link
+                    href={`/track/${trackSlug}/${moduleSlug}/${prev.slug}`}
+                    style={{
+                      fontSize: 13,
+                      color: "var(--athena-text-tertiary)",
+                      textDecoration: "none",
+                    }}
+                  >
+                    ← Previous
+                  </Link>
+                ) : null}
               </div>
 
-              <div
-                style={{
-                  height: 6,
-                  borderRadius: 999,
-                  background: "var(--athena-border-subtle)",
-                  overflow: "hidden",
-                  marginBottom: "var(--space-4)",
-                }}
-                aria-hidden="true"
-              >
-                <div
-                  style={{
-                    height: "100%",
-                    width: `${progressPct}%`,
-                    background: "var(--athena-accent)",
-                  }}
-                />
+              <div>
+                {next ? (
+                  <Link
+                    href={`/track/${trackSlug}/${moduleSlug}/${next.slug}`}
+                    style={{
+                      fontSize: 13,
+                      color: "var(--athena-text-tertiary)",
+                      textDecoration: "none",
+                    }}
+                  >
+                    Next →
+                  </Link>
+                ) : null}
               </div>
-
-              <H1>{lesson.title}</H1>
-
-              <p
-                style={{
-                  margin: "var(--space-3) 0 0",
-                  fontSize: "var(--athena-text-body)",
-                  lineHeight: "var(--athena-lh-body)",
-                  color: "var(--athena-text-secondary)",
-                }}
-              >
-                {intentText}
-              </p>
-
-            <div style={{ marginTop: 12, display: "flex", gap: 8, alignItems: "center", flexWrap: "wrap" }}>
-              <span style={{ fontSize: 12, letterSpacing: 0.4, textTransform: "uppercase", opacity: 0.65 }}>
-                Module flow
-              </span>
-
-              {prev ? (
-                <span style={{ fontSize: 13, padding: "4px 8px", borderRadius: 999, border: "1px solid rgba(0,0,0,0.12)", background: "rgba(0,0,0,0.02)", opacity: 0.9 }}>
-                  ← {prev.title}
-                </span>
-              ) : (
-                <span style={{ fontSize: 13, padding: "4px 8px", borderRadius: 999, border: "1px solid rgba(0,0,0,0.08)", background: "rgba(0,0,0,0.01)", opacity: 0.5 }}>
-                  Start of module
-                </span>
-              )}
-
-              <span style={{ opacity: 0.35 }}>→</span>
-
-              <span style={{ fontSize: 13, padding: "4px 8px", borderRadius: 999, border: "1px solid rgba(65,109,137,0.26)", background: "rgba(65,109,137,0.06)" }}>
-                {lesson.title}
-              </span>
-
-              <span style={{ opacity: 0.35 }}>→</span>
-
-              {next ? (
-                <span style={{ fontSize: 13, padding: "4px 8px", borderRadius: 999, border: "1px solid rgba(0,0,0,0.12)", background: "rgba(0,0,0,0.02)", opacity: 0.9 }}>
-                  {next.title} →
-                </span>
-              ) : (
-                <span style={{ fontSize: 13, padding: "4px 8px", borderRadius: 999, border: "1px solid rgba(0,0,0,0.08)", background: "rgba(0,0,0,0.01)", opacity: 0.5 }}>
-                  End of module
-                </span>
-              )}
-            </div>
-
-            {outcomesHtml ? (
-              <LessonCard title="Outcomes" variant="neutral" html={outcomesHtml} />
-            ) : null}
-
-            {agendaHtml ? (
-              <LessonCard title="Agenda" variant="neutral" html={agendaHtml} />
-            ) : null}
-
-            {whyHtml ? (
-              <LessonCard
-                title="Why this matters in a real deal"
-                variant="neutral"
-                html={whyHtml}
-              />
-            ) : null}
-
-            <LessonCard title="Deliverable" variant="accent" html={deliverableHtml} />
-
-            {checklistHtml ? (
-              <LessonCard title="Checklist" variant="neutral" html={checklistHtml} />
-            ) : null}
-          </header>
-
-          <article
-            className="athena-prose"
-            dangerouslySetInnerHTML={{ __html: contentHtml }}
-          />
-
-          {synthesisHtml ? (
-            <div style={{ marginTop: 22 }}>
-              <LessonCard title="Synthesis" variant="neutral" html={synthesisHtml} />
-            </div>
-          ) : null}
-
-          <div
-            style={{
-              marginTop: 34,
-              paddingTop: 18,
-              borderTop: "1px solid rgba(0,0,0,0.08)",
-              display: "flex",
-              justifyContent: "space-between",
-              gap: 12,
-            }}
-          >
-            <div>
-              {prev ? (
-                <Link
-                  href={`/track/${trackSlug}/${moduleSlug}/${prev.slug}`}
-                  style={{
-                    display: "inline-block",
-                    padding: "10px 12px",
-                    borderRadius: 12,
-                    border: "1px solid rgba(0,0,0,0.12)",
-                    textDecoration: "none",
-                    color: "#0B0F14",
-                    fontSize: 14,
-                  }}
-                >
-                  ← {prev.title}
-                </Link>
-              ) : null}
-            </div>
-
-            <div>
-              {next ? (
-                <Link
-                  href={`/track/${trackSlug}/${moduleSlug}/${next.slug}`}
-                  style={{
-                    display: "inline-block",
-                    padding: "10px 12px",
-                    borderRadius: 12,
-                    border: "1px solid rgba(0,0,0,0.12)",
-                    textDecoration: "none",
-                    color: "#0B0F14",
-                    fontSize: 14,
-                  }}
-                >
-                  {next.title} →
-                </Link>
-              ) : null}
-            </div>
-          </div>
+            </nav>
           </Content>
         </div>
 
