@@ -8,10 +8,8 @@ import {
   CourseHeader,
   Section,
   LessonRow,
-  MetaPill,
   Stack,
   ui,
-  AthenaMark,
 } from "@/components/ui";
 
 type Params = { trackSlug: string; moduleSlug: string };
@@ -31,6 +29,9 @@ export default async function ModulePage({
   const mod = modules.find((m) => m.slug === moduleSlug);
   if (!mod) notFound();
 
+  const moduleIndex = modules.findIndex((m) => m.slug === moduleSlug);
+  const modulePosition = `Module ${moduleIndex + 1} / ${modules.length}`;
+
   const lessons = getLessonsForModule(trackSlug, moduleSlug);
 
   return (
@@ -48,26 +49,9 @@ export default async function ModulePage({
           />
 
           <CourseHeader
-            eyebrow="Module"
+            eyebrow={modulePosition}
             title={mod.title ?? moduleSlug}
             description={mod.description ? mod.description : undefined}
-            metaLeft={
-              <>
-                <MetaPill>
-                  <span style={{ fontWeight: 650 }}>{lessons.length} lessons</span>
-                </MetaPill>
-                <MetaPill>
-                  <span style={{ fontWeight: 650 }}>Deliverable-driven</span>
-                </MetaPill>
-              </>
-            }
-            metaRight={
-              <>
-                <MetaPill>
-                  <span style={{ fontWeight: 650 }}>Track → Module → Lesson</span>
-                </MetaPill>
-              </>
-            }
           />
 
           <hr style={ui.divider} />
@@ -75,7 +59,7 @@ export default async function ModulePage({
           <Stack gap={12}>
             <Section
               title="Lessons"
-              subtitle="Each lesson is a focused unit designed to be completed in one sitting."
+              subtitle={lessons.length ? `${lessons.length} lessons` : undefined}
             >
               {lessons.length ? (
                 <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
@@ -98,26 +82,21 @@ export default async function ModulePage({
 
             <div
               style={{
-                marginTop: 18,
-                paddingTop: 14,
+                marginTop: 24,
+                paddingTop: 16,
                 borderTop: "1px solid rgba(10, 10, 10, 0.08)",
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-                gap: 12,
-                flexWrap: "wrap",
               }}
             >
-              <AthenaMark size={12} tone="muted" />
-              <div style={ui.small}>
-                <span style={{ marginRight: 10 }}>Module</span>
-                <span aria-hidden="true" style={{ opacity: 0.6, marginRight: 10 }}>
-                  ·
-                </span>
-                <Link href={`/track/${trackSlug}`} className="a-link" style={{ color: ui.colors.muted }}>
-                  Back to track
-                </Link>
-              </div>
+              <Link
+                href={`/track/${trackSlug}`}
+                style={{
+                  fontSize: 13,
+                  color: "rgba(10, 10, 10, 0.55)",
+                  textDecoration: "none",
+                }}
+              >
+                ← Back to track
+              </Link>
             </div>
           </Stack>
         </div>
