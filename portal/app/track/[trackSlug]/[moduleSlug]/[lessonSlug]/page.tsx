@@ -383,11 +383,14 @@ export default async function LessonPage({
         <style>{`
           .athena-prose { font-size: var(--athena-text-body); line-height: var(--athena-lh-body); color: var(--athena-text-primary); }
           .athena-prose p { margin: 16px 0; color: var(--athena-text-secondary); }
+          .athena-prose > p:first-child { margin-top: 0; }
           .athena-prose h1, .athena-prose h2, .athena-prose h3 { color: var(--athena-text-primary); letter-spacing: -0.2px; }
-          .athena-prose h2 { margin: 32px 0 12px; font-size: var(--athena-h2); line-height: var(--athena-lh-tight); }
+          .athena-prose h2 { margin: 36px 0 12px; padding-top: 20px; border-top: 1px solid var(--athena-divider); font-size: var(--athena-h2); line-height: var(--athena-lh-tight); }
           .athena-prose h3 { margin: 24px 0 8px; font-size: var(--athena-h3); line-height: 1.4; }
           .athena-prose ul, .athena-prose ol { margin: 16px 0 16px 24px; padding: 0; }
           .athena-prose li { margin: 8px 0; color: var(--athena-text-secondary); }
+          .athena-prose li::marker { color: var(--athena-text-tertiary); }
+          .athena-prose strong { color: var(--athena-text-primary); }
           .athena-prose blockquote {
             margin: 20px 0; padding: 14px 18px;
             border-left: 4px solid var(--athena-accent);
@@ -397,7 +400,7 @@ export default async function LessonPage({
           .athena-prose code { font-size: 0.95em; background: var(--athena-bg-secondary); padding: 2px 6px; border-radius: var(--radius-sm); color: var(--athena-text-primary); }
           .athena-prose pre { background: var(--athena-bg-secondary); padding: 16px 20px; border-radius: var(--radius-md); overflow: auto; line-height: 1.55; border: 1px solid var(--athena-border-subtle); }
           .athena-prose pre code { background: transparent; padding: 0; }
-          .athena-prose hr { border: none; border-top: 1px solid var(--athena-divider); margin: 22px 0; }
+          .athena-prose hr { border: none; border-top: 1px solid var(--athena-divider); margin: 28px 0; }
           .athena-prose a { color: var(--athena-accent); text-decoration: none; }
           .athena-prose a:hover { text-decoration: underline; }
 
