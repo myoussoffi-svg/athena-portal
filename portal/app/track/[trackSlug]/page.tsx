@@ -1,17 +1,12 @@
-﻿import Link from "next/link";
-import { notFound } from "next/navigation";
+﻿import { notFound } from "next/navigation";
 
 import { getTracks, getModulesForTrack } from "@/lib/content";
 import {
   GlobalStyles,
   Breadcrumbs,
   CourseHeader,
-  MetaPill,
   Section,
-  Grid,
-  Card,
-  Stack,
-  Meta,
+  LessonRow,
   ui,
 } from "@/components/ui";
 
@@ -51,60 +46,26 @@ export default async function Page({
             eyebrow="Track"
             title={track.title ?? trackSlug}
             description={track.description ? track.description : undefined}
-            metaLeft={
-              <>
-                <MetaPill>
-                  <span style={{ fontWeight: 650 }}>
-                    {modules?.length ?? 0} modules
-                  </span>
-                </MetaPill>
-                <MetaPill>
-                  <span style={{ fontWeight: 650 }}>Track → Module → Lesson</span>
-                </MetaPill>
-              </>
-            }
-            metaRight={
-              <>
-                <MetaPill>
-                  <span style={{ fontWeight: 650 }}>Sequence-based</span>
-                </MetaPill>
-              </>
-            }
           />
 
           <hr style={ui.divider} />
 
           <Section
             title="Modules"
-            subtitle="Work top-to-bottom. Each module contains lessons with concrete deliverables."
+            subtitle={modules?.length ? `${modules.length} modules` : undefined}
           >
             {modules && modules.length > 0 ? (
-              <Grid minColWidth={360}>
-                {modules.map((m: { slug: string; title: string; description?: string }) => (
-                  <Link
+              <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+                {modules.map((m: { slug: string; title: string; description?: string }, idx: number) => (
+                  <LessonRow
                     key={m.slug}
                     href={`/track/${trackSlug}/${m.slug}`}
-                    style={ui.cardLink}
-                    className="a-link"
-                  >
-                    <div className="a-hoverCard" style={{ borderRadius: 14 }}>
-                      <Card>
-                        <Stack gap={8}>
-                          <div style={ui.cardTitle}>{m.title ?? m.slug}</div>
-                          {m.description ? (
-                            <div style={ui.cardDesc}>{m.description}</div>
-                          ) : (
-                            <div style={ui.cardDesc}>
-                              A focused set of lessons designed to be completed in sequence.
-                            </div>
-                          )}
-                          <Meta>Open module →</Meta>
-                        </Stack>
-                      </Card>
-                    </div>
-                  </Link>
+                    index={idx + 1}
+                    title={m.title ?? m.slug}
+                    description={m.description ? m.description : undefined}
+                  />
                 ))}
-              </Grid>
+              </div>
             ) : (
               <div style={{ opacity: 0.8 }}>
                 No modules found for <code>{trackSlug}</code>.
