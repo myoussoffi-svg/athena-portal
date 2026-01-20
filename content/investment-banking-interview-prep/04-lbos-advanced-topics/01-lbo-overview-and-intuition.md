@@ -18,7 +18,7 @@ estimated_minutes: 30
 
 ### What Is an LBO?
 
-A **leveraged buyout (LBO)** is the acquisition of a company using a significant amount of debt to finance the purchase. The assets and cash flows of the acquired company are typically used as collateral for the debt, and the debt is repaid over time using the company's cash flows.
+A **leveraged buyout (LBO)** is the acquisition of a company using a significant amount of debt to finance the purchase. The assets and cash flows of the acquired company are typically used as collateral for the debt, and the debt gets repaid over time using the company's cash flows.
 
 LBOs are the primary investment strategy for **private equity (PE) firms**. The PE firm buys a company, holds it for 3-7 years, improves its performance, and sells it for a profit (the "exit").
 

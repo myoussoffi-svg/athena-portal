@@ -10,7 +10,7 @@ estimated_minutes: 30
 ## Learning Objectives
 
 - Prepare for advanced or non-standard technical questions that go beyond basic accounting and valuation
-- Demonstrate deeper understanding by explaining edge cases, nuances, and exceptions
+- Show deeper understanding by explaining edge cases, nuances, and exceptions
 - Answer "what if" scenarios involving transactions, leverage, or unusual accounting treatments
 - Exhibit the ability to think through ambiguous or complex situations
 
@@ -63,7 +63,7 @@ For early-stage companies, valuation often relies on growth metrics (e.g., reven
 3. **Integration risk**: Investors are concerned about execution or cultural fit
 4. **Leverage concerns**: If financed with debt, investors worry about increased financial risk
 
-Stock price reactions reflect the market's view on value creation. Accretion ≠ value creation.
+Stock price reactions reflect the market's view on value creation. Accretion doesn't equal value creation.
 
 ---
 
@@ -102,7 +102,7 @@ Conversely, a company can have positive net income but negative cash flow (e.g.,
 
 **Q: Why would a company want to increase depreciation?**
 
-**A**: Increasing depreciation (for tax purposes) reduces taxable income, which reduces cash taxes paid. This is why companies use accelerated depreciation (e.g., MACRS) for tax filings.
+**A**: Increasing depreciation (for tax purposes) reduces taxable income, which reduces cash taxes paid. That's why companies use accelerated depreciation (e.g., MACRS) for tax filings.
 
 However, increasing depreciation for book purposes (financial reporting) reduces reported net income, which management typically avoids unless required.
 
@@ -112,8 +112,8 @@ However, increasing depreciation for book purposes (financial reporting) reduces
 
 **A**:
 
-- **Goodwill**: The residual premium paid in an acquisition above the fair value of identifiable net assets. It is **not amortized** (under U.S. GAAP) but tested for impairment.
-- **Identifiable intangibles** (e.g., patents, trademarks, customer relationships): Specific, separable assets with finite useful lives. They are **amortized** over time.
+- **Goodwill**: The residual premium paid in an acquisition above the fair value of identifiable net assets. It's **not amortized** (under U.S. GAAP) but tested for impairment.
+- **Identifiable intangibles** (e.g., patents, trademarks, customer relationships): Specific, separable assets with finite useful lives. They're **amortized** over time.
 
 Both are intangible, but the accounting treatment differs.
 
@@ -138,7 +138,7 @@ For valuation purposes, market value is theoretically correct, but book value is
 
 **A**: Two reasons:
 
-1. **Tax shield**: Interest on debt is tax-deductible, reducing the effective cost. Dividends on equity are not deductible.
+1. **Tax shield**: Interest on debt is tax-deductible, reducing the effective cost. Dividends on equity aren't deductible.
 2. **Lower risk**: Debt holders have priority over equity holders in bankruptcy and receive fixed payments, so they require a lower return.
 
 However, too much debt increases the risk of financial distress, which can raise the cost of both debt and equity.
@@ -184,7 +184,7 @@ The exact answer depends on the assumptions, but both are significant.
 
 **A**:
 
-**Income Statement**: No impact (dividends are not an expense)
+**Income Statement**: No impact (dividends aren't an expense)
 
 **Balance Sheet**:
 - Cash decreases by $100
@@ -201,7 +201,7 @@ The exact answer depends on the assumptions, but both are significant.
 
 **A**:
 
-**Income Statement**: No immediate impact (issuing debt is not revenue or expense)
+**Income Statement**: No immediate impact (issuing debt isn't revenue or expense)
 
 **Balance Sheet**:
 - Cash increases by $100 (asset)

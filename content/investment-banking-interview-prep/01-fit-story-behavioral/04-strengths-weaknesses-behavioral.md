@@ -9,8 +9,8 @@ estimated_minutes: 35
 
 ## Learning Objectives
 
-- Explain your strengths in a way that is credible, specific, and relevant to investment banking
-- Discuss weaknesses honestly while demonstrating self-awareness and a plan for improvement
+- Explain your strengths in a way that's credible, specific, and relevant to investment banking
+- Discuss weaknesses honestly while showing self-awareness and a plan for improvement
 - Structure responses to behavioral questions using a clear framework
 - Anticipate follow-up questions that probe for depth and authenticity
 
@@ -20,11 +20,11 @@ estimated_minutes: 35
 
 Behavioral questions assess how you think, how you handle situations, and whether you have the judgment and self-awareness required for a high-pressure role. Interviewers are looking for patterns: Do you take ownership of mistakes? Do you work well under pressure? Can you handle feedback?
 
-Strong candidates provide specific examples and demonstrate reflection. Weak candidates give generic answers or fail to show what they learned.
+Strong candidates provide specific examples and show reflection. Weak candidates give generic answers or fail to show what they learned.
 
 ### Strengths: How to Answer Credibly
 
-"What are your strengths?" is not an invitation to list adjectives. Interviewers want to understand what you're genuinely good at and how that applies to banking.
+"What are your strengths?" isn't an invitation to list adjectives. Interviewers want to understand what you're genuinely good at and how that applies to banking.
 
 A strong answer includes:
 
@@ -44,9 +44,9 @@ Avoid:
 - Strengths that don't matter in banking ("I'm very creative")
 - Overstating ("I'm the best analyst you'll ever hire")
 
-### Weaknesses: Demonstrating Self-Awareness
+### Weaknesses: Showing Self-Awareness
 
-"What is your greatest weakness?" is a test of honesty and self-awareness. Interviewers know you're not perfect. They want to see that you recognize your limitations and are working to improve.
+"What's your greatest weakness?" is a test of honesty and self-awareness. Interviewers know you're not perfect. They want to see that you recognize your limitations and are working to improve.
 
 A strong answer follows this structure:
 
@@ -95,7 +95,7 @@ The STAR framework helps structure your response:
 
 **Result**: "We finished the project on time, and the team member contributed effectively once we adjusted the approach. I learned that addressing issues directly and with empathy is usually more effective than letting frustration build."
 
-This answer is specific, demonstrates leadership and judgment, and shows learning.
+This answer is specific, shows leadership and judgment, and reflects learning.
 
 ### Common Behavioral Question Archetypes
 
@@ -111,7 +111,7 @@ You should have 3-5 strong examples that you can adapt to different questions.
 
 ### Common Mistakes
 
-**Being vague**: "I worked hard and it turned out fine" is not a story. Provide specifics.
+**Being vague**: "I worked hard and it turned out fine" isn't a story. Provide specifics.
 
 **Not taking ownership**: If the question is about failure, admit the mistake and explain what you learned. Blaming others is a red flag.
 
@@ -139,4 +139,4 @@ You should have 3-5 strong examples that you can adapt to different questions.
 - Avoid fake weaknesses ("I'm a perfectionist") or disqualifying ones ("I'm bad with numbers")
 - Use the STAR framework (Situation, Task, Action, Result) for all behavioral questions
 - Prepare 3-5 strong examples that cover teamwork, leadership, failure, pressure, and initiative
-- Behavioral answers should be concise (60-90 seconds), specific, and demonstrate learning
+- Behavioral answers should be concise (60-90 seconds), specific, and show learning

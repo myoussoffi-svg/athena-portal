@@ -140,7 +140,7 @@ Precedent transactions are most useful in:
 
 **Deals are historical**: Market conditions, interest rates, and valuations may have changed since the deals closed.
 
-**Limited data**: Some deals are private or terms are not disclosed, reducing the sample size.
+**Limited data**: Some deals are private or terms aren't disclosed, reducing the sample size.
 
 **No two deals are identical**: Each transaction has unique strategic rationale, synergies, competitive dynamics, and buyer motivations.
 

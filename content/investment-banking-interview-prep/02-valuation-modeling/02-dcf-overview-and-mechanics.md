@@ -9,7 +9,7 @@ estimated_minutes: 35
 
 ## Learning Objectives
 
-- Explain the conceptual foundation of a DCF and why it is considered the most theoretically sound valuation method
+- Explain the conceptual foundation of a DCF and why it's considered the most theoretically sound valuation method
 - Walk through the key steps of building a DCF model
 - Understand how to project free cash flows and discount them to present value
 - Explain the relationship between DCF output (enterprise value) and equity value
@@ -18,19 +18,19 @@ estimated_minutes: 35
 
 ### What Is a DCF?
 
-A **Discounted Cash Flow (DCF)** analysis values a company based on the present value of its projected future cash flows. It rests on the principle that a company is worth the cash it will generate for investors over time, adjusted for the time value of money and risk.
+A **Discounted Cash Flow (DCF)** analysis values a company based on the present value of its projected future cash flows. It rests on the principle that a company is worth the cash it'll generate for investors over time, adjusted for the time value of money and risk.
 
-The DCF is considered the most rigorous valuation methodology because it is based on fundamentals (cash generation) rather than market sentiment or comparable company multiples.
+The DCF is considered the most rigorous valuation methodology because it's based on fundamentals (cash generation) rather than market sentiment or comparable company multiples.
 
 ### Why DCF Is Used
 
-In investment banking, the DCF is one of the core valuation tools. It is used to:
+In investment banking, the DCF is one of the core valuation tools. It's used to:
 
 - Value a company in M&A or capital raising transactions
 - Provide a "floor" or intrinsic value estimate independent of market multiples
 - Sensitize assumptions (growth, margins, discount rate) to understand valuation drivers
 
-However, DCF is only as good as its assumptions. Small changes in growth rates or discount rates can significantly affect value.
+However, a DCF is only as good as its assumptions. Small changes in growth rates or discount rates can significantly affect value.
 
 ### The DCF Framework: From Cash Flows to Enterprise Value
 
@@ -44,7 +44,7 @@ A DCF model follows these steps:
 
 ### Step 1: Project Unlevered Free Cash Flow (UFCF)
 
-**Unlevered Free Cash Flow (UFCF)** represents cash available to all investors (debt and equity holders) before debt payments. It is calculated as:
+**Unlevered Free Cash Flow (UFCF)** represents cash available to all investors (debt and equity holders) before debt payments. It's calculated as:
 
 UFCF = EBIT × (1 - Tax Rate) + D&A - CapEx - Increase in Net Working Capital
 
@@ -56,7 +56,7 @@ Where **NOPAT** (Net Operating Profit After Tax) = EBIT × (1 - Tax Rate)
 
 **Why unlevered?** We use unlevered cash flows because we're valuing the entire business (enterprise value), not just equity. Debt and equity holders will be compensated separately.
 
-To project UFCF, you must forecast:
+To project UFCF, you need to forecast:
 
 - **Revenue growth**: Based on historical trends, market conditions, and management guidance
 - **Operating margins (EBIT margin)**: Based on historical performance and expected efficiency
@@ -138,7 +138,7 @@ Equity Value = $1,689.5M - $300M = $1,389.5M
 
 **Not understanding that DCF is sensitive to assumptions**: Small changes in terminal growth rate or WACC can swing valuation significantly. Always run sensitivities.
 
-**Confusing UFCF with cash flow from operations**: UFCF subtracts CapEx and working capital changes. CFO does not subtract CapEx.
+**Confusing UFCF with cash flow from operations**: UFCF subtracts CapEx and working capital changes. CFO doesn't subtract CapEx.
 
 ## Video Placeholder
 

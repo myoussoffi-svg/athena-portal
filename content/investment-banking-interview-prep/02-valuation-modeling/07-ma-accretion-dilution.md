@@ -34,7 +34,7 @@ Acquirer management and boards care about EPS because:
 - **Shareholder perception**: Dilutive deals can be unpopular with investors, even if they create long-term value
 - **Executive compensation**: Management incentives are often tied to EPS targets
 
-However, **accretion/dilution is not the same as value creation**. A deal can be accretive but destroy value (e.g., overpaying for a target), or dilutive but create value (e.g., a strategic acquisition that pays off over time).
+However, **accretion/dilution isn't the same as value creation**. A deal can be accretive but destroy value (e.g., overpaying for a target), or dilutive but create value (e.g., a strategic acquisition that pays off over time).
 
 ### The Accretion/Dilution Framework
 
@@ -107,7 +107,7 @@ Shares issued = Purchase Price / Acquirer Stock Price = $300M / $40 = 7.5M share
 
 **Step 2: Pro forma net income**
 
-No debt is issued, so no interest expense.
+No debt is issued, so there's no interest expense.
 
 Pro Forma Net Income = $100M + $20M = $120M
 
@@ -182,4 +182,4 @@ The answer depends on the **cost of financing**:
 - In a cash deal, account for after-tax interest expense on debt
 - In a stock deal, account for dilution from new shares issued
 - If acquirer's P/E > target's P/E, the deal is more likely to be accretive
-- Accretion ≠ value creation; a deal can be accretive but still overpay
+- Accretion doesn't equal value creation; a deal can be accretive but still overpay

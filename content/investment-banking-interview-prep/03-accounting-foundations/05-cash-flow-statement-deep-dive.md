@@ -11,7 +11,7 @@ estimated_minutes: 30
 
 - Explain the purpose and structure of the cash flow statement
 - Understand the three sections: operating, investing, and financing cash flows
-- Explain why net income does not equal cash flow and how the cash flow statement reconciles the two
+- Explain why net income doesn't equal cash flow and how the cash flow statement reconciles the two
 - Calculate free cash flow and explain why it matters for valuation
 
 ## Written Guide
@@ -36,13 +36,13 @@ The three sections—operating, investing, and financing—sum to the **net chan
 
 CFO represents cash generated (or used) by the company's core business activities. It starts with **net income** and adjusts for:
 
-1. **Non-cash expenses**: Items that reduced net income but did not involve cash, such as depreciation, amortization, and stock-based compensation. These are added back.
+1. **Non-cash expenses**: Items that reduced net income but didn't involve cash, such as depreciation, amortization, and stock-based compensation. These are added back.
 
 2. **Changes in working capital**: Differences between accrual-based income and cash flow due to timing of receivables, inventory, and payables.
 
 **Key adjustments**:
 
-- **Depreciation and Amortization (D&A)**: Added back because they are non-cash charges
+- **Depreciation and Amortization (D&A)**: Added back because they're non-cash charges
 - **Stock-Based Compensation**: Added back because it's a non-cash expense
 - **Increase in Accounts Receivable**: Subtracted (use of cash) because revenue was recognized but cash hasn't been collected
 - **Increase in Inventory**: Subtracted (use of cash) because cash was spent to purchase inventory not yet sold
@@ -89,7 +89,7 @@ Net Change in Cash = CFO + CFI + CFF
 
 This must equal the difference between the cash balance at the beginning and end of the period on the balance sheet. If it doesn't, there's an error.
 
-### Why Net Income Does Not Equal Cash Flow
+### Why Net Income Doesn't Equal Cash Flow
 
 Net income is based on accrual accounting, which recognizes revenue when earned and expenses when incurred—not when cash changes hands. The cash flow statement adjusts for:
 
@@ -105,15 +105,15 @@ For example, a company can have high net income but run out of cash if customers
 
 The most common definition is **Unlevered Free Cash Flow (UFCF)**, which is used in DCF valuation:
 
-UFCF = EBIT × (1 - Tax Rate) + D&A - CapEx - Increase in NWC
+UFCF = EBIT x (1 - Tax Rate) + D&A - CapEx - Increase in NWC
 
 Or, starting from CFO:
 
-UFCF ≈ CFO - CapEx (with adjustments for interest if starting from net income)
+UFCF = CFO - CapEx (with adjustments for interest if starting from net income)
 
 **Levered Free Cash Flow (LFCF)** is cash available to equity holders after debt payments:
 
-LFCF = UFCF - Interest Expense × (1 - Tax Rate) + Net Borrowing
+LFCF = UFCF - Interest Expense x (1 - Tax Rate) + Net Borrowing
 
 For interview purposes, focus on unlevered FCF, as it's most commonly used in valuation.
 
@@ -121,11 +121,11 @@ For interview purposes, focus on unlevered FCF, as it's most commonly used in va
 
 **Confusing CFO with free cash flow**: CFO includes cash from operations, but free cash flow subtracts CapEx.
 
-**Forgetting to add back non-cash expenses**: Depreciation, amortization, and stock-based comp reduce net income but do not reduce cash, so they must be added back.
+**Forgetting to add back non-cash expenses**: Depreciation, amortization, and stock-based comp reduce net income but don't reduce cash, so they must be added back.
 
 **Not understanding working capital changes**: An increase in receivables or inventory uses cash; an increase in payables provides cash. This trips up many candidates.
 
-**Thinking EBITDA is cash flow**: EBITDA is a proxy but does not account for working capital changes, CapEx, or taxes. Free cash flow is the true measure.
+**Thinking EBITDA is cash flow**: EBITDA is a proxy but doesn't account for working capital changes, CapEx, or taxes. Free cash flow is the true measure.
 
 ## Video Placeholder
 
@@ -136,7 +136,7 @@ For interview purposes, focus on unlevered FCF, as it's most commonly used in va
 - Cash flow from operations: adjusting for non-cash items and working capital
 - Cash flow from investing: CapEx, acquisitions, asset sales
 - Cash flow from financing: debt, equity, dividends, buybacks
-- Why net income ≠ cash flow
+- Why net income doesn't equal cash flow
 - Free cash flow: definition, calculation, and why it matters for valuation
 
 **Suggested Length**: 14 minutes
@@ -147,5 +147,5 @@ For interview purposes, focus on unlevered FCF, as it's most commonly used in va
 - CFO adjusts net income for non-cash items (D&A, stock-based comp) and working capital changes
 - CFI includes CapEx, acquisitions, and asset sales; typically negative for growing companies
 - CFF includes debt, equity, dividends, and buybacks; reflects capital structure decisions
-- Net income ≠ cash flow due to accrual accounting, non-cash expenses, and timing differences
+- Net income doesn't equal cash flow due to accrual accounting, non-cash expenses, and timing differences
 - Free cash flow (UFCF) = CFO - CapEx (simplified); it's the cash available for investors and is used in DCF valuation

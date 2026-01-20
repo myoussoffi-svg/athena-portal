@@ -18,7 +18,7 @@ estimated_minutes: 25
 
 ### What Is a Sources and Uses Table?
 
-A **sources and uses table** shows where the money comes from (sources) and where it goes (uses) in an LBO transaction. It is the foundation of any LBO model and must balance: **Total Sources = Total Uses**.
+A **sources and uses table** shows where the money comes from (sources) and where it goes (uses) in an LBO transaction. It's the foundation of any LBO model and must balance: **Total Sources = Total Uses**.
 
 The table answers two fundamental questions:
 

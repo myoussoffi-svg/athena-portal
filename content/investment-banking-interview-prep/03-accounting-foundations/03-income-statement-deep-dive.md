@@ -18,7 +18,7 @@ estimated_minutes: 30
 
 ### Why the Income Statement Matters in Interviews
 
-The income statement is central to valuation, modeling, and deal analysis. Interviewers will test whether you understand what drives profitability, how to interpret margins, and which metrics matter for valuation. You must be fluent with terms like EBIT, EBITDA, gross margin, and operating margin.
+The income statement is central to valuation, modeling, and deal analysis. Interviewers will test whether you understand what drives profitability, how to interpret margins, and which metrics matter for valuation. You need to be fluent with terms like EBIT, EBITDA, gross margin, and operating margin.
 
 ### Structure of the Income Statement
 
@@ -28,7 +28,7 @@ The income statement follows a cascading structure, starting with revenue and su
 Revenue is the total amount earned from selling goods or services during the period. For product companies, this is straightforward. For service companies or those with subscription models, revenue recognition can be more complex, but for interview purposes, revenue is the starting point.
 
 **Cost of Goods Sold (COGS)**:
-COGS represents the direct costs of producing the goods or services sold. For a manufacturer, this includes raw materials and direct labor. For a retailer, it's the cost of inventory sold. COGS does not include overhead, marketing, or administrative expenses.
+COGS represents the direct costs of producing the goods or services sold. For a manufacturer, this includes raw materials and direct labor. For a retailer, it's the cost of inventory sold. COGS doesn't include overhead, marketing, or administrative expenses.
 
 **Gross Profit**:
 Gross Profit = Revenue - COGS
@@ -36,7 +36,7 @@ Gross Profit = Revenue - COGS
 Gross profit measures how much money is left after covering direct production costs. **Gross margin** (Gross Profit / Revenue) is a key metric for assessing pricing power and production efficiency.
 
 **Operating Expenses (OpEx)**:
-Operating expenses include costs required to run the business that are not directly tied to production. Common categories:
+Operating expenses include costs required to run the business that aren't directly tied to production. Common categories:
 
 - **Selling, General, and Administrative (SG&A)**: Salaries, rent, marketing, legal, etc.
 - **Research and Development (R&D)**: Costs for developing new products or technologies (common in tech and pharma)
@@ -47,17 +47,17 @@ Operating Income (also called **EBIT**, or Earnings Before Interest and Taxes) i
 
 EBIT = Gross Profit - Operating Expenses
 
-EBIT measures profitability from core operations, before financing costs (interest) and taxes. It is a key metric because it isolates operating performance from capital structure decisions.
+EBIT measures profitability from core operations, before financing costs (interest) and taxes. It's a key metric because it isolates operating performance from capital structure decisions.
 
 **EBITDA**:
 EBITDA (Earnings Before Interest, Taxes, Depreciation, and Amortization) is:
 
 EBITDA = EBIT + Depreciation + Amortization
 
-EBITDA is widely used in valuation because it approximates cash generation from operations and is not affected by non-cash charges (D&A) or capital structure (interest). It is commonly used in EV/EBITDA multiples.
+EBITDA is widely used in valuation because it approximates cash generation from operations and isn't affected by non-cash charges (D&A) or capital structure (interest). It's commonly used in EV/EBITDA multiples.
 
 **Interest Expense**:
-Interest expense represents the cost of debt. It appears below EBIT because it is a financing cost, not an operating cost. Interest is tax-deductible, which reduces the effective cost of debt.
+Interest expense represents the cost of debt. It appears below EBIT because it's a financing cost, not an operating cost. Interest is tax-deductible, which reduces the effective cost of debt.
 
 **Earnings Before Tax (EBT or Pre-Tax Income)**:
 EBT = EBIT - Interest Expense
@@ -76,9 +76,9 @@ Net income is the "bottom line"—what's left for shareholders after all expense
 
 In many valuation contexts, EBIT or EBITDA is more useful than net income:
 
-- **EBIT** isolates operating performance and is not affected by capital structure (debt vs. equity), making it comparable across companies with different financing.
+- **EBIT** isolates operating performance and isn't affected by capital structure (debt vs. equity), making it comparable across companies with different financing.
 - **EBITDA** further removes non-cash charges (D&A), providing a proxy for cash generation.
-- **Enterprise value (EV)** multiples like EV/EBITDA or EV/EBIT are capital-structure neutral, whereas equity value multiples like P/E are not.
+- **Enterprise value (EV)** multiples like EV/EBITDA or EV/EBIT are capital-structure neutral, whereas equity value multiples like P/E aren't.
 
 Net income includes interest and taxes, which vary based on financing decisions and tax jurisdictions. When comparing companies or valuing a business on a debt-free basis, EBIT and EBITDA are more appropriate.
 
@@ -99,7 +99,7 @@ Bankers often calculate **adjusted EBITDA** or **normalized EBITDA** by removing
 
 **Not understanding the difference between EBIT and EBITDA**: EBIT includes D&A; EBITDA excludes it. Both are useful, but for different reasons.
 
-**Forgetting that EBITDA is not cash flow**: EBITDA is a proxy, but it does not account for working capital changes, CapEx, or taxes. Free cash flow is a more complete measure of cash generation.
+**Forgetting that EBITDA isn't cash flow**: EBITDA is a proxy, but it doesn't account for working capital changes, CapEx, or taxes. Free cash flow is a more complete measure of cash generation.
 
 **Ignoring non-recurring items**: If a company reports strong net income due to a one-time gain, that's not reflective of ongoing performance.
 
@@ -120,7 +120,7 @@ Bankers often calculate **adjusted EBITDA** or **normalized EBITDA** by removing
 
 - The income statement shows profitability over a period, starting with revenue and ending with net income
 - Key metrics: Gross Profit (revenue - COGS), EBIT (operating income), EBITDA (EBIT + D&A), Net Income
-- EBIT and EBITDA are preferred in valuation because they are capital-structure neutral and isolate operating performance
-- EBITDA is not the same as cash flow; it ignores working capital, CapEx, and taxes
+- EBIT and EBITDA are preferred in valuation because they're capital-structure neutral and isolate operating performance
+- EBITDA isn't the same as cash flow; it ignores working capital, CapEx, and taxes
 - Adjusted or normalized EBITDA removes one-time items to reflect sustainable profitability
 - Understand the difference between gross margin (profitability after COGS) and operating margin (profitability after OpEx)

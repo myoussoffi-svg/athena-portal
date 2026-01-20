@@ -18,7 +18,7 @@ estimated_minutes: 30
 
 ### What Is Net Working Capital?
 
-**Net Working Capital (NWC)** represents the cash tied up in a company's day-to-day operations. It is calculated as:
+**Net Working Capital (NWC)** represents the cash tied up in a company's day-to-day operations. It's calculated as:
 
 NWC = Current Assets - Current Liabilities
 
@@ -41,7 +41,7 @@ This is counterintuitive for many candidates. Here's why:
 
 **Increase in Accounts Receivable (AR)**:
 - Revenue was recognized on the income statement, but the customer hasn't paid yet
-- Cash has not been collected, so it's a **use of cash**
+- Cash hasn't been collected, so it's a **use of cash**
 - In the cash flow statement, an increase in AR is subtracted from net income
 
 **Increase in Inventory**:
@@ -55,31 +55,31 @@ This is counterintuitive for many candidates. Here's why:
 - In the cash flow statement, an increase in AP is added
 
 **Summary**:
-- ↑ AR or Inventory → Use of cash (subtract from CFO)
-- ↑ AP → Source of cash (add to CFO)
-- ↓ AR or Inventory → Source of cash (add to CFO)
-- ↓ AP → Use of cash (subtract from CFO)
+- Increase in AR or Inventory -> Use of cash (subtract from CFO)
+- Increase in AP -> Source of cash (add to CFO)
+- Decrease in AR or Inventory -> Source of cash (add to CFO)
+- Decrease in AP -> Use of cash (subtract from CFO)
 
 ### The Cash Conversion Cycle
 
-The **Cash Conversion Cycle (CCC)** measures how long it takes for a company to convert its investments in inventory and receivables back into cash. It is calculated as:
+The **Cash Conversion Cycle (CCC)** measures how long it takes for a company to convert its investments in inventory and receivables back into cash. It's calculated as:
 
 CCC = Days Inventory Outstanding (DIO) + Days Sales Outstanding (DSO) - Days Payables Outstanding (DPO)
 
 **Days Inventory Outstanding (DIO)**:
 - How long inventory sits before being sold
-- DIO = (Inventory / COGS) × 365
+- DIO = (Inventory / COGS) x 365
 - Lower is generally better (faster inventory turnover)
 
 **Days Sales Outstanding (DSO)**:
 - How long it takes to collect cash from customers after a sale
-- DSO = (Accounts Receivable / Revenue) × 365
+- DSO = (Accounts Receivable / Revenue) x 365
 - Lower is better (faster collection)
 
 **Days Payables Outstanding (DPO)**:
 - How long the company takes to pay its suppliers
-- DPO = (Accounts Payable / COGS) × 365
-- Higher can be better (延迟 payment preserves cash), but too high may strain supplier relationships
+- DPO = (Accounts Payable / COGS) x 365
+- Higher can be better (delayed payment preserves cash), but too high may strain supplier relationships
 
 A shorter CCC means the company converts its investments into cash more quickly, which is generally favorable. A negative CCC (rare, but seen in companies like Amazon or Dell historically) means the company collects cash from customers before paying suppliers, creating a cash advantage.
 
@@ -87,7 +87,7 @@ A shorter CCC means the company converts its investments into cash more quickly,
 
 In a DCF or LBO model, changes in NWC are a key component of free cash flow. The formula for unlevered free cash flow includes:
 
-UFCF = EBIT × (1 - Tax Rate) + D&A - CapEx - Increase in NWC
+UFCF = EBIT x (1 - Tax Rate) + D&A - CapEx - Increase in NWC
 
 An increase in NWC reduces free cash flow because cash is being tied up in operations. A decrease increases free cash flow.
 
@@ -119,7 +119,7 @@ As revenue grows, NWC grows, creating a cash drag. If revenue declines, NWC can 
 - No impact on liabilities or equity
 - Balance sheet balances: -$50 cash + $50 AR = $0
 
-**Key insight**: Revenue was recognized, but cash was not collected. The cash flow statement adjusts for this timing difference.
+**Key insight**: Revenue was recognized, but cash wasn't collected. The cash flow statement adjusts for this timing difference.
 
 ### Interview Question: "Why Might a Profitable Company Run Out of Cash?"
 
@@ -136,7 +136,7 @@ This is why cash flow is more important than net income for assessing financial 
 
 **Confusing the direction of working capital changes**: An increase in AR or inventory is a use of cash (not a source). An increase in AP is a source of cash.
 
-**Forgetting to adjust for working capital in free cash flow**: Free cash flow = CFO - CapEx, and CFO already includes working capital changes. If you're calculating from EBIT, you must subtract the increase in NWC.
+**Forgetting to adjust for working capital in free cash flow**: Free cash flow = CFO - CapEx, and CFO already includes working capital changes. If you're calculating from EBIT, you need to subtract the increase in NWC.
 
 **Thinking working capital is always bad**: Some working capital is necessary for operations. The question is whether it's efficient (low CCC) or inefficient (high CCC).
 
@@ -157,7 +157,7 @@ This is why cash flow is more important than net income for assessing financial 
 
 - Net working capital (NWC) = Current Assets - Current Liabilities, or (AR + Inventory) - AP
 - Increase in NWC is a use of cash; decrease is a source of cash
-- Increase in AR or inventory → subtract from CFO; increase in AP → add to CFO
+- Increase in AR or inventory -> subtract from CFO; increase in AP -> add to CFO
 - Cash conversion cycle (CCC) = DIO + DSO - DPO; shorter is generally better
 - Changes in NWC are a key component of free cash flow in valuation models
 - A profitable company can run out of cash if working capital grows too fast, CapEx is high, or debt must be repaid

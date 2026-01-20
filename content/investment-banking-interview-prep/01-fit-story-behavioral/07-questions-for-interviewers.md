@@ -9,7 +9,7 @@ estimated_minutes: 20
 
 ## Learning Objectives
 
-- Prepare thoughtful, specific questions that demonstrate research and genuine interest
+- Prepare thoughtful, specific questions that show research and genuine interest
 - Tailor questions to the interviewer's role and seniority
 - Avoid questions that signal poor preparation or misaligned priorities
 - Use the Q&A portion of the interview to gather useful information for decision-making
@@ -18,7 +18,7 @@ estimated_minutes: 20
 
 ### Why "Do You Have Any Questions for Me?" Matters
 
-At the end of most interviews, you'll be asked if you have questions. This is not a formality. It is an opportunity to demonstrate interest, gather information, and leave a strong final impression.
+At the end of most interviews, you'll be asked if you have questions. This isn't a formality. It's an opportunity to show interest, gather information, and leave a strong final impression.
 
 Weak candidates ask generic questions or say they have no questions. Strong candidates ask thoughtful, tailored questions that show they've prepared and care about the role.
 
@@ -27,7 +27,7 @@ Weak candidates ask generic questions or say they have no questions. Strong cand
 You should prepare 4-6 questions and choose 2-3 based on the interviewer's role and how much time remains. Good questions fall into a few categories:
 
 **Questions about the interviewer's experience**:
-- "What has been the most interesting deal you've worked on, and why?"
+- "What's been the most interesting deal you've worked on, and why?"
 - "What surprised you most about the transition from analyst to associate?" (for an associate or VP)
 - "How would you describe the culture of this group compared to other places you've worked?"
 
@@ -38,7 +38,7 @@ These questions are safe, show genuine interest, and give the interviewer an opp
 - "What types of deals is the group currently focused on?"
 - "How much client interaction do analysts typically have in this group?"
 
-These demonstrate that you understand the job and want to know what the day-to-day looks like.
+These show that you understand the job and want to know what the day-to-day looks like.
 
 **Questions about development and learning**:
 - "What kind of mentorship or training do junior analysts receive?"
@@ -93,14 +93,14 @@ These questions help you learn while still sounding engaged and thoughtful.
 
 **Asking questions that were already answered**: If the interviewer spent 10 minutes explaining the group's deal focus, don't ask "What kinds of deals does the group work on?"
 
-**Asking overly complex or theoretical questions**: This is not the time to debate market trends or challenge the interviewer's views. Keep questions respectful and focused on learning.
+**Asking overly complex or theoretical questions**: This isn't the time to debate market trends or challenge the interviewer's views. Keep questions respectful and focused on learning.
 
 ## Video Placeholder
 
 **Video Title**: Preparing Strong Questions for Investment Banking Interviewers
 
 **Outline**:
-- Why "Do you have questions for me?" is not a formality
+- Why "Do you have questions for me?" isn't a formality
 - Types of questions to prepare: experience, role, development, firm strategy
 - How to tailor questions based on interviewer seniority
 - What not to ask: compensation, hours, obvious research questions

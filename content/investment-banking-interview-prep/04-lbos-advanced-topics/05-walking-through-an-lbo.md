@@ -11,7 +11,7 @@ estimated_minutes: 30
 
 - Walk through a complete LBO from entry to exit in a structured, step-by-step manner
 - Explain how to calculate entry valuation, sources and uses, returns, and IRR
-- Demonstrate the ability to answer "Walk me through an LBO" in an interview setting
+- Show you can answer "Walk me through an LBO" in an interview setting
 - Understand the key assumptions and sensitivities in an LBO model
 
 ## Written Guide
@@ -24,7 +24,7 @@ estimated_minutes: 30
 - Your ability to think through a transaction step-by-step
 - Your fluency with valuation, leverage, and returns
 
-A strong answer is structured, concise, and demonstrates that you understand the inputs, process, and outputs of an LBO.
+A strong answer is structured, concise, and shows that you understand the inputs, process, and outputs of an LBO.
 
 ### The Framework: 7 Steps to Walk Through an LBO
 

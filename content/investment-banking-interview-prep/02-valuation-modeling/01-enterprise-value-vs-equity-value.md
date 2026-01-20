@@ -32,11 +32,11 @@ Equity Value = Share Price × Shares Outstanding
 
 For a public company, this is straightforward: multiply the current stock price by the fully diluted share count.
 
-Equity value belongs to **equity holders only**. It does not include debt or other claims on the company.
+Equity value belongs to **equity holders only**. It doesn't include debt or other claims on the company.
 
 ### Enterprise Value
 
-**Enterprise Value (EV)** represents the total value of the company's operations, available to all investors (both debt and equity holders). It is the theoretical takeover price: what you would pay to acquire the entire company.
+**Enterprise Value (EV)** represents the total value of the company's operations, available to all investors (both debt and equity holders). It's the theoretical takeover price: what you'd pay to acquire the entire company.
 
 **Formula (Bridge from Equity Value to EV)**:
 
@@ -56,7 +56,7 @@ Let's break down why each item is added or subtracted:
 
 **+ Minority Interest (Non-Controlling Interest)**: If the company owns a subsidiary but not 100% of it, the minority shareholders have a claim. You must account for this.
 
-**- Investments in Affiliates**: If the company owns stakes in other companies (but does not consolidate them), those investments are not part of the core operating business. They're subtracted because EV represents the value of operations.
+**- Investments in Affiliates**: If the company owns stakes in other companies (but doesn't consolidate them), those investments aren't part of the core operating business. They're subtracted because EV represents the value of operations.
 
 ### Simplified Formula
 

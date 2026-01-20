@@ -18,9 +18,9 @@ estimated_minutes: 25
 
 ### Why Interviewers Ask About Your Resume
 
-Your resume is the foundation of the interview. Interviewers use it to assess your experiences, probe for depth, and test how well you can articulate what you've done. They are looking for clarity, ownership, and the ability to connect past work to banking skills.
+Your resume is the foundation of the interview. Interviewers use it to assess your experiences, probe for depth, and test how well you can articulate what you've done. They're looking for clarity, ownership, and the ability to connect past work to banking skills.
 
-A resume walkthrough is not a summary. It is an opportunity to demonstrate that you understand what you did, why it mattered, and what you learned. Weak candidates recite bullet points. Strong candidates explain context, decisions, and results.
+A resume walkthrough isn't a summary. It's an opportunity to show that you understand what you did, why it mattered, and what you learned. Weak candidates recite bullet points. Strong candidates explain context, decisions, and results.
 
 ### How to Structure Responses to "Walk Me Through This Experience"
 
@@ -34,13 +34,13 @@ For example, if asked about a finance internship:
 
 "I worked as an analyst intern at [Firm], where I supported the M&A team on two live deals. My role involved building comparable company analyses, updating financial models, and preparing presentation materials for client meetings. One deal closed during my internship, and I learned how to work under tight deadlines and manage multiple requests from senior bankers."
 
-This is clear, specific, and emphasizes relevant skills. It avoids jargon and does not oversell.
+This is clear, specific, and emphasizes relevant skills. It avoids jargon and doesn't oversell.
 
 ### Preparing for Deep Dives
 
 Interviewers will often pick one item from your resume and probe deeply. If you list a financial model you built, expect: "Walk me through the assumptions you used." If you mention a research project, expect: "What was your methodology?"
 
-You should be able to discuss every item on your resume in detail. If you cannot explain something clearly, remove it or be prepared to admit you don't remember the specifics.
+You should be able to discuss every item on your resume in detail. If you can't explain something clearly, remove it or be prepared to admit you don't remember the specifics.
 
 Common deep-dive questions:
 
@@ -51,7 +51,7 @@ Common deep-dive questions:
 
 ### Handling Gaps, Transitions, and Red Flags
 
-If your resume includes gaps, role changes, or unconventional experiences, interviewers will ask about them. Do not be defensive. Provide a clear, honest explanation that shows intentionality or learning.
+If your resume includes gaps, role changes, or unconventional experiences, interviewers will ask about them. Don't be defensive. Provide a clear, honest explanation that shows intentionality or learning.
 
 **Gap in employment or academics**: "I took a semester off to work on a family business, where I helped restructure our financial reporting process. It gave me hands-on exposure to financial analysis outside of a classroom setting."
 
@@ -65,7 +65,7 @@ The key is to show that your path makes sense and that you've thought critically
 
 **Using vague language**: "I helped the team with various projects" tells an interviewer nothing. Be specific.
 
-**Overstating your role**: If you were an intern who updated a model, do not claim you "led the valuation analysis." Interviewers will catch exaggerations.
+**Overstating your role**: If you were an intern who updated a model, don't claim you "led the valuation analysis." Interviewers will catch exaggerations.
 
 **Failing to connect experiences to banking**: If you worked in consulting or operations, explain what transferable skills you developed—analytical thinking, client communication, working under pressure.
 
@@ -90,5 +90,5 @@ The key is to show that your path makes sense and that you've thought critically
 - Use a structured approach: context, your specific contribution, and outcome or learning
 - Avoid vague language like "helped the team" and be specific about what you did
 - Prepare for deep dives on 1-2 resume items, especially technical or finance-related experiences
-- Gaps or transitions are not disqualifying if you provide clear, honest explanations
+- Gaps or transitions aren't disqualifying if you provide clear, honest explanations
 - Connect every experience to skills relevant to banking: analysis, deadlines, client work, attention to detail

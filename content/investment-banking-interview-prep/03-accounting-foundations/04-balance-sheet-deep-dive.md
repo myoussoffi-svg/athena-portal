@@ -20,7 +20,7 @@ estimated_minutes: 30
 
 The balance sheet is essential for understanding a company's financial position, calculating enterprise value, and analyzing leverage. Interviewers will test your knowledge of balance sheet structure, your ability to interpret line items, and your understanding of how transactions flow through the balance sheet.
 
-You must also be fluent with concepts like working capital, net debt, and the distinction between enterprise value and equity value—all of which rely on the balance sheet.
+You also need to be fluent with concepts like working capital, net debt, and the distinction between enterprise value and equity value—all of which rely on the balance sheet.
 
 ### Structure of the Balance Sheet
 
@@ -32,7 +32,7 @@ This equation must always hold. The balance sheet is a snapshot at a specific po
 
 ### Assets
 
-Assets are what the company owns or controls. They are divided into current and non-current.
+Assets are what the company owns or controls. They're divided into current and non-current.
 
 **Current Assets** (expected to be converted to cash or used within one year):
 - **Cash and Cash Equivalents**: Liquid assets, including bank deposits and short-term investments
@@ -50,7 +50,7 @@ Assets are what the company owns or controls. They are divided into current and 
 
 ### Liabilities
 
-Liabilities are what the company owes. Like assets, they are divided into current and non-current.
+Liabilities are what the company owes. Like assets, they're divided into current and non-current.
 
 **Current Liabilities** (due within one year):
 - **Accounts Payable**: Money owed to suppliers for goods or services purchased on credit
@@ -130,7 +130,7 @@ If the balance sheet doesn't balance, you've made an error.
 
 ### Common Mistakes
 
-**Confusing book value with market value**: The balance sheet shows book values (historical cost less depreciation). Market values (e.g., stock price) are not on the balance sheet.
+**Confusing book value with market value**: The balance sheet shows book values (historical cost less depreciation). Market values (e.g., stock price) aren't on the balance sheet.
 
 **Forgetting that the balance sheet is cumulative**: Unlike the income statement, which resets each period, the balance sheet reflects everything since the company's inception.
 

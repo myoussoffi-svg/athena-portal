@@ -40,12 +40,12 @@ The $250 million premium is recorded as goodwill on Company A's balance sheet.
 **Intangible Assets** are non-physical assets with economic value. They include:
 
 - **Identifiable intangibles**: Patents, trademarks, customer lists, technology, trade names
-- **Goodwill**: The residual premium that cannot be attributed to specific identifiable assets
+- **Goodwill**: The residual premium that can't be attributed to specific identifiable assets
 
 The key difference:
 
 - **Identifiable intangibles** have finite useful lives and are **amortized** over time (e.g., a patent might be amortized over 10 years)
-- **Goodwill** has an indefinite life and is **not amortized** under U.S. GAAP (since 2001). Instead, it is tested annually for **impairment**.
+- **Goodwill** has an indefinite life and **isn't amortized** under U.S. GAAP (since 2001). Instead, it's tested annually for **impairment**.
 
 ### How Goodwill Is Created in an Acquisition
 
@@ -59,7 +59,7 @@ When Company A acquires Company B:
 - **Liabilities**: Assumed liabilities increase
 - **Equity or Cash**: Decreases (if paid in cash) or increases (if paid in stock)
 
-Goodwill sits on the balance sheet and does not get amortized. It remains there unless it's impaired.
+Goodwill sits on the balance sheet and doesn't get amortized. It remains there unless it's impaired.
 
 ### Goodwill Impairment
 
@@ -108,7 +108,7 @@ Identifiable intangibles like patents or customer relationships are amortized ov
 **Goodwill**: $300M - $100M = $200M
 
 **Income Statement**:
-- No immediate impact (goodwill is not amortized)
+- No immediate impact (goodwill isn't amortized)
 
 **Balance Sheet** (for Company A):
 - Cash decreases by $300M (asset)
@@ -120,7 +120,7 @@ Check the balance:
 - Assets: -$300M cash + $200M acquired assets + $200M goodwill = +$100M
 - Liabilities: +$100M
 - Equity: No change
-- Balance: +$100M assets = +$100M liabilities ✓
+- Balance: +$100M assets = +$100M liabilities
 
 **Cash Flow Statement**:
 - Cash outflow of $300M in CFI (acquisition)
@@ -128,13 +128,13 @@ Check the balance:
 
 ### Common Mistakes
 
-**Thinking goodwill is amortized**: Under U.S. GAAP, goodwill is not amortized (though it is under some international standards like IFRS, where it may be amortized in certain cases). It is tested for impairment.
+**Thinking goodwill is amortized**: Under U.S. GAAP, goodwill isn't amortized (though it is under some international standards like IFRS, where it may be amortized in certain cases). It's tested for impairment.
 
-**Confusing goodwill with other intangibles**: Identifiable intangibles (patents, trademarks) are amortized. Goodwill is not.
+**Confusing goodwill with other intangibles**: Identifiable intangibles (patents, trademarks) are amortized. Goodwill isn't.
 
-**Forgetting that impairment is non-cash**: Goodwill impairment reduces net income and the book value of assets, but it does not affect cash flow.
+**Forgetting that impairment is non-cash**: Goodwill impairment reduces net income and the book value of assets, but it doesn't affect cash flow.
 
-**Not allocating purchase price correctly in M&A questions**: You must first allocate to identifiable assets and liabilities at fair value, then the residual is goodwill.
+**Not allocating purchase price correctly in M&A questions**: You need to first allocate to identifiable assets and liabilities at fair value, then the residual is goodwill.
 
 ## Video Placeholder
 
@@ -153,7 +153,7 @@ Check the balance:
 
 - Goodwill = Purchase Price - Fair Value of Net Assets Acquired
 - Goodwill arises in M&A when a buyer pays more than the fair value of identifiable net assets
-- Goodwill is not amortized; it's tested annually for impairment
+- Goodwill isn't amortized; it's tested annually for impairment
 - Identifiable intangibles (patents, trademarks) are amortized over their useful life
 - Goodwill impairment is a non-cash charge that reduces net income and book value but not cash flow
 - In M&A questions, allocate the purchase price to identifiable assets and liabilities first, then record the residual as goodwill

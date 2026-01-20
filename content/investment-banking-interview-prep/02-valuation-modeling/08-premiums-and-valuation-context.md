@@ -48,18 +48,18 @@ Minority discounts are relevant when valuing:
 
 - Small equity stakes in private companies
 - Shares with limited voting rights
-- Situations where the buyer cannot influence decisions
+- Situations where the buyer can't influence decisions
 
 ### Illiquidity Discount
 
-An **illiquidity discount** (or **marketability discount**) reflects the reduced value of an asset that cannot be easily sold.
+An **illiquidity discount** (or **marketability discount**) reflects the reduced value of an asset that can't be easily sold.
 
 Private company equity is illiquid: there's no public market, and selling shares requires finding a buyer and negotiating terms. Because of this, private company valuations are often 20-30% lower than comparable public companies.
 
 **When does this matter?**
 
 - Valuing private companies or private equity stakes
-- Valuing restricted stock (e.g., shares that cannot be sold for a period)
+- Valuing restricted stock (e.g., shares that can't be sold for a period)
 
 Illiquidity discounts are applied to account for the risk and delay in converting the asset to cash.
 
@@ -72,13 +72,13 @@ Strategic buyers can often justify higher prices because they expect **synergies
 - **Cost synergies**: Eliminating duplicate functions (e.g., combining sales teams, closing redundant facilities)
 - **Revenue synergies**: Cross-selling, expanding into new markets, combining product lines
 
-Financial buyers (PE firms) typically do not have synergies, so their bids are based on the standalone value of the target plus operational improvements.
+Financial buyers (PE firms) typically don't have synergies, so their bids are based on the standalone value of the target plus operational improvements.
 
 ### How Different Valuation Methods Reflect Premiums
 
 **Trading Comps (Public Market Multiples)**:
 - Reflect **minority, liquid** valuations
-- Do **not** include a control premium
+- **Don't** include a control premium
 - Represent what investors would pay for a minority stake today
 
 **Precedent Transactions**:
@@ -148,7 +148,7 @@ Both methods are useful. DCF provides an intrinsic value based on cash flows; co
 
 - Control premium is the amount paid above market price to acquire control; typically 20-40%
 - Minority discount reflects the reduced value of a non-controlling stake
-- Illiquidity discount reflects the reduced value of assets that cannot be easily sold (common for private companies)
+- Illiquidity discount reflects the reduced value of assets that can't be easily sold (common for private companies)
 - Strategic premiums arise when buyers expect synergies
 - Trading comps reflect minority, liquid valuations; precedent transactions include control premiums
 - DCF can be calculated with or without synergies (standalone vs. control basis)

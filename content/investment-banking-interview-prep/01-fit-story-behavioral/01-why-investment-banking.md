@@ -9,7 +9,7 @@ estimated_minutes: 30
 
 ## Learning Objectives
 
-- Explain your interest in investment banking in a way that demonstrates research and genuine motivation
+- Explain your interest in investment banking in a way that shows research and genuine motivation
 - Construct a concise professional narrative that connects your background to banking
 - Anticipate and prepare for follow-up questions that test the depth of your interest
 - Distinguish between credible and weak responses to motivation questions
@@ -18,11 +18,11 @@ estimated_minutes: 30
 
 ### Why This Question Matters
 
-"Why investment banking?" and "Tell me about yourself" are almost universal in IB interviews. They serve multiple purposes: they allow you to set the tone, they reveal whether you understand what the job actually involves, and they give interviewers material for follow-up questions. Weak answers signal lack of preparation or unclear thinking. Strong answers demonstrate research, self-awareness, and alignment between your background and the role.
+"Why investment banking?" and "Tell me about yourself" come up in almost every IB interview. They serve multiple purposes: they let you set the tone, they reveal whether you understand what the job actually involves, and they give interviewers material for follow-up questions. Weak answers signal lack of preparation or unclear thinking. Strong answers show research, self-awareness, and alignment between your background and the role.
 
 ### Structuring "Tell Me About Yourself"
 
-This question is not an invitation to recite your entire resume. It is a request for a concise, coherent narrative—typically 60 to 90 seconds—that explains who you are professionally, what you've done, and why you're sitting in this interview.
+This question isn't an invitation to recite your entire resume. It's a request for a concise, coherent narrative—typically 60 to 90 seconds—that explains who you are professionally, what you've done, and why you're sitting in this interview.
 
 A strong structure follows this pattern:
 
@@ -35,7 +35,7 @@ Avoid starting with "I was born in..." or listing every job you've ever had. Foc
 
 ### Why Investment Banking: Building a Credible Answer
 
-Interviewers have heard every generic answer. "I like finance" or "I want to work on deals" are not sufficient. A credible response demonstrates that you understand what investment banking involves and why that aligns with your skills or interests.
+Interviewers have heard every generic answer. "I like finance" or "I want to work on deals" aren't sufficient. A credible response shows that you understand what investment banking involves and why that aligns with your skills or interests.
 
 Effective answers often reference:
 
@@ -54,7 +54,7 @@ Weak answers rely on:
 
 Interviewers will test your answer. If you say you're interested in M&A, expect: "What M&A deal have you followed recently?" If you mention learning across industries, expect: "Which industry do you want to cover, and why?"
 
-Your initial answer should be strong enough to withstand these follow-ups. If you cannot discuss a recent deal, do not claim market awareness. If you have no opinion on industry coverage, do not emphasize cross-sector learning.
+Your initial answer should be strong enough to withstand these follow-ups. If you can't discuss a recent deal, don't claim market awareness. If you have no opinion on industry coverage, don't emphasize cross-sector learning.
 
 ### Common Mistakes
 
@@ -83,7 +83,7 @@ Your initial answer should be strong enough to withstand these follow-ups. If yo
 
 - "Tell me about yourself" requires a structured 60-90 second narrative, not a resume recitation
 - "Why investment banking?" must reference specific aspects of the work, not generic career goals
-- Strong answers demonstrate research and connect your background to the role
+- Strong answers show research and connect your background to the role
 - Weak answers are vague, overly generic, or could apply to any finance job
 - Prepare for follow-up questions that test whether your interest is genuine and informed
 - Avoid overemphasizing exit opportunities or misrepresenting the role's demands

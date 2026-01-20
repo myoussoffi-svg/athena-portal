@@ -11,7 +11,7 @@ estimated_minutes: 30
 
 - Discuss a recent transaction with clarity and appropriate depth for an interview setting
 - Explain why a deal is interesting or significant without overreaching into areas beyond your knowledge
-- Demonstrate market awareness by following recent M&A, equity, or debt activity relevant to the firm or sector
+- Show market awareness by following recent M&A, equity, or debt activity relevant to the firm or sector
 - Prepare for follow-up questions that test whether your interest is genuine or superficial
 
 ## Written Guide
@@ -37,7 +37,7 @@ For each deal, you should know:
 3. **What's interesting**: Valuation multiple, premium paid, competitive dynamics, or market context
 4. **Outcome or market reaction**: Did the deal close? How did investors react?
 
-You do not need to know every detail. You are not expected to have read the merger agreement. But you should be able to discuss the deal clearly and explain why you found it interesting.
+You don't need to know every detail. You're not expected to have read the merger agreement. But you should be able to discuss the deal clearly and explain why you found it interesting.
 
 ### Structuring Your Answer
 
@@ -53,7 +53,7 @@ Keep your answer to 60-90 seconds unless the interviewer asks for more detail.
 
 "I've been following Microsoft's acquisition of Activision Blizzard, which closed in 2023 for $69 billion. It's interesting because it's one of the largest tech M&A deals in history and faced significant regulatory scrutiny in the U.S. and Europe. The strategic rationale was clear—Microsoft wanted to expand its gaming portfolio and compete with Sony and other console makers. The deal took over a year to close due to antitrust concerns, which created uncertainty around the valuation. It also highlighted how much regulatory risk has become a factor in large tech deals."
 
-This answer is clear, demonstrates understanding, and opens the door for follow-up questions without overreaching.
+This answer is clear, shows understanding, and opens the door for follow-up questions without overreaching.
 
 ### Handling Follow-Up Questions
 
@@ -64,9 +64,9 @@ Interviewers will probe to see how deeply you've thought about the deal. Common 
 - "How do you think the market reacted?"
 - "If you were advising the seller, what would you have focused on?"
 
-If you don't know the answer, say so. It is better to admit you don't have that level of detail than to guess or make something up. You can say: "I'm not sure about the exact financing structure, but based on what I read, it seemed like [reasonable inference]."
+If you don't know the answer, say so. It's better to admit you don't have that level of detail than to guess or make something up. You can say: "I'm not sure about the exact financing structure, but based on what I read, it seemed like [reasonable inference]."
 
-### Demonstrating Market Awareness Beyond Specific Deals
+### Showing Market Awareness Beyond Specific Deals
 
 In addition to discussing deals, interviewers may ask:
 
@@ -86,9 +86,9 @@ You don't need to be an economist. You need to show that you pay attention.
 
 **Choosing an irrelevant or outdated deal**: Discussing a deal from three years ago or one unrelated to the firm signals poor preparation.
 
-**Overstating your knowledge**: Do not claim to have "analyzed the deal" if you read a news article. Be honest about your level of familiarity.
+**Overstating your knowledge**: Don't claim to have "analyzed the deal" if you read a news article. Be honest about your level of familiarity.
 
-**Failing to explain why the deal is interesting**: Simply reciting facts ("Company A bought Company B for $X") is not enough. Explain what makes it notable.
+**Failing to explain why the deal is interesting**: Simply reciting facts ("Company A bought Company B for $X") isn't enough. Explain what makes it notable.
 
 **Not preparing for follow-ups**: If you mention a deal, you should expect to be asked about valuation, financing, or strategic rationale. Prepare accordingly.
 
@@ -103,7 +103,7 @@ You don't need to be an economist. You need to show that you pay attention.
 - How to choose 2-3 deals to prepare in depth
 - Structure for discussing a transaction: basics, rationale, what's interesting
 - Handling follow-ups: valuation, financing, risks, market reaction
-- Demonstrating broader market awareness beyond individual deals
+- Showing broader market awareness beyond individual deals
 
 **Suggested Length**: 12 minutes
 

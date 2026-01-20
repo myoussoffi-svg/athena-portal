@@ -26,7 +26,7 @@ Both are **non-cash expenses**. The company spent cash when it bought the asset,
 
 ### Why D&A Exists
 
-D&A exists because of the **matching principle** in accounting: expenses should be recognized in the same period as the revenue they help generate. A piece of machinery that will be used for 10 years shouldn't be fully expensed in year one. Instead, its cost is spread over its useful life.
+D&A exists because of the **matching principle** in accounting: expenses should be recognized in the same period as the revenue they help generate. A piece of machinery that'll be used for 10 years shouldn't be fully expensed in year one. Instead, its cost is spread over its useful life.
 
 For example, if a company buys a machine for $100,000 with a 10-year useful life, it might depreciate $10,000 per year ($100,000 / 10 years). This matches the cost of the asset with the revenue it helps produce each year.
 
@@ -34,7 +34,7 @@ For example, if a company buys a machine for $100,000 with a 10-year useful life
 
 **Income Statement**:
 - D&A is an operating expense that reduces EBIT and net income
-- However, because it's non-cash, it does not reduce cash flow
+- However, because it's non-cash, it doesn't reduce cash flow
 
 **Balance Sheet**:
 - Depreciation reduces the book value of PP&E (shown as "Accumulated Depreciation," a contra-asset account)
@@ -61,7 +61,7 @@ There are several methods for calculating depreciation:
 
 **1. Straight-Line Depreciation (most common for financial reporting)**:
 - Annual Depreciation = (Cost - Salvage Value) / Useful Life
-- Example: $100,000 asset, $10,000 salvage value, 10-year life → $9,000/year
+- Example: $100,000 asset, $10,000 salvage value, 10-year life -> $9,000/year
 
 **2. Accelerated Depreciation (e.g., Double Declining Balance)**:
 - Depreciation is higher in early years and lower in later years
@@ -89,7 +89,7 @@ This creates **deferred tax liabilities** on the balance sheet because the compa
 **Income Statement**:
 - D&A expense increases by $10
 - EBIT decreases by $10
-- Net income decreases by $10 (or $7 if you account for a 30% tax rate: $10 × (1 - 30%) = $7 decline)
+- Net income decreases by $10 (or $7 if you account for a 30% tax rate: $10 x (1 - 30%) = $7 decline)
 
 **Cash Flow Statement**:
 - Net income decreases by $10 (or $7 after tax)
@@ -102,7 +102,7 @@ This creates **deferred tax liabilities** on the balance sheet because the compa
 - Retained earnings decrease by $10 (or $7 after tax) due to lower net income (equity side)
 - If no tax: -$10 assets = -$10 equity. If with tax: -$10 assets, +$3 deferred tax liability, -$7 equity.
 
-**Key insight**: Higher depreciation reduces net income and the book value of assets, but it does not affect cash flow.
+**Key insight**: Higher depreciation reduces net income and the book value of assets, but it doesn't affect cash flow.
 
 ### Common Mistakes
 
@@ -133,4 +133,4 @@ This creates **deferred tax liabilities** on the balance sheet because the compa
 - D&A is a non-cash expense: it reduces net income but not cash flow
 - D&A reduces EBIT on the income statement, reduces asset book value on the balance sheet, and is added back in CFO on the cash flow statement
 - Straight-line depreciation is most common for financial reporting; accelerated depreciation is used for taxes
-- Higher depreciation reduces net income and book value of assets, but does not affect cash flow
+- Higher depreciation reduces net income and book value of assets, but doesn't affect cash flow

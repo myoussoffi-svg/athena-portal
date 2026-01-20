@@ -57,7 +57,7 @@ The perpetual growth rate should be conservative and sustainable. Common choices
 - **Inflation rate**: 2-3%
 - **Industry-specific long-term growth**: If the industry is expected to grow faster or slower than GDP
 
-**Important**: The growth rate **must be lower than WACC**. If g ≥ WACC, the formula breaks down (division by zero or negative denominator).
+**Important**: The growth rate **must be lower than WACC**. If g >= WACC, the formula breaks down (division by zero or negative denominator).
 
 **Example**:
 
@@ -127,7 +127,7 @@ Bankers typically present **sensitivity tables** showing how EV changes across a
 
 ### Common Mistakes
 
-**Using an unrealistic growth rate**: A 5% perpetual growth rate is aggressive for most companies. Long-term growth should not exceed GDP growth by much.
+**Using an unrealistic growth rate**: A 5% perpetual growth rate is aggressive for most companies. Long-term growth shouldn't exceed GDP growth by much.
 
 **Forgetting to discount terminal value**: Terminal value is calculated in Year 5 (or the final year), so it must be discounted back to present value.
 

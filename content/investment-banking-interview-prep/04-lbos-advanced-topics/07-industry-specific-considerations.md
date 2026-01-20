@@ -20,7 +20,7 @@ estimated_minutes: 25
 
 While the core valuation methods (DCF, comps, precedent transactions) apply across industries, the **specific metrics, multiples, and assumptions** vary significantly. Interviewers may test whether you understand these nuances, especially if you're recruiting for an industry-focused group (e.g., TMT, healthcare, financial institutions).
 
-Understanding industry-specific considerations demonstrates that you can adapt valuation frameworks to different business models.
+Understanding industry-specific considerations shows that you can adapt valuation frameworks to different business models.
 
 ### Technology, Media, and Telecom (TMT)
 
@@ -50,7 +50,7 @@ Understanding industry-specific considerations demonstrates that you can adapt v
 
 **Considerations**:
 - **Balance sheet-driven**: Banks and insurers are valued based on their balance sheets (assets, liabilities, equity) rather than EBITDA
-- **No EBITDA or EV/EBITDA**: Financial institutions have interest income and expense as core operations, so EBITDA and EV/EBITDA are not meaningful
+- **No EBITDA or EV/EBITDA**: Financial institutions have interest income and expense as core operations, so EBITDA and EV/EBITDA aren't meaningful
 - **Regulatory capital**: Banks must maintain minimum capital ratios, which affect their ability to grow or pay dividends
 - **Credit quality**: For banks, asset quality (loan losses, NPLs) is critical to valuation
 
@@ -61,7 +61,7 @@ Understanding industry-specific considerations demonstrates that you can adapt v
 ### Real Estate (REITs and Real Estate Companies)
 
 **Common Metrics**:
-- **P/FFO (Price-to-Funds From Operations)**: FFO is REIT equivalent of earnings
+- **P/FFO (Price-to-Funds From Operations)**: FFO is the REIT equivalent of earnings
 - **P/AFFO (Price-to-Adjusted Funds From Operations)**: Adjusts FFO for CapEx and other items
 - **Dividend Yield**: REITs are required to distribute 90% of taxable income as dividends
 - **NAV (Net Asset Value)**: Sum of property values minus debt
@@ -167,7 +167,7 @@ Understanding industry-specific considerations demonstrates that you can adapt v
 
 - Valuation approaches and multiples vary significantly across industries
 - TMT: Use EV/Revenue for growth companies, EV/EBITDA for mature tech
-- Financials: Use P/B or P/TBV; EBITDA is not applicable
+- Financials: Use P/B or P/TBV; EBITDA isn't applicable
 - Real estate: Use P/FFO, dividend yield, and NAV
 - Healthcare: Account for regulatory risk, pipeline value, and R&D intensity
 - Energy: Use EV/Reserves or EV/Production; sensitive to commodity prices

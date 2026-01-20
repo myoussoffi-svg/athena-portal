@@ -18,9 +18,9 @@ estimated_minutes: 25
 
 ### Why the Three Statements Matter in Interviews
 
-The three financial statements—the income statement, balance sheet, and cash flow statement—are foundational to investment banking. You will be asked to explain them, walk through how they link, and use them to answer valuation and modeling questions. Interviewers expect fluency with these concepts.
+The three financial statements—the income statement, balance sheet, and cash flow statement—are foundational to investment banking. You'll be asked to explain them, walk through how they link, and use them to answer valuation and modeling questions. Interviewers expect fluency with these concepts.
 
-A strong understanding of the statements demonstrates that you can read financial information, understand a company's performance, and think through how transactions affect each statement.
+A strong understanding of the statements shows that you can read financial information, understand a company's performance, and think through how transactions affect each statement.
 
 ### The Income Statement
 
@@ -52,7 +52,7 @@ The balance sheet is governed by the fundamental accounting equation:
 
 This equation must always balance. If assets increase, either liabilities must increase, equity must increase, or both.
 
-The balance sheet is cumulative. It reflects everything that has happened since the company's inception, not just activity during a single period.
+The balance sheet is cumulative. It reflects everything that's happened since the company's inception, not just activity during a single period.
 
 ### The Cash Flow Statement
 
@@ -65,7 +65,7 @@ The balance sheet is cumulative. It reflects everything that has happened since 
 
 The sum of these three sections equals the net change in cash, which ties to the cash line on the balance sheet.
 
-The cash flow statement is critical because net income does not equal cash. A company can be profitable but still run out of cash if, for example, customers are slow to pay or if the company is investing heavily in growth.
+The cash flow statement is critical because net income doesn't equal cash. A company can be profitable but still run out of cash if, for example, customers are slow to pay or if the company is investing heavily in growth.
 
 ### How the Statements Relate
 
@@ -80,7 +80,7 @@ Understanding these links is essential for interview questions like "Walk me thr
 
 ### Common Mistakes
 
-**Confusing the income statement with cash flow**: Net income is not the same as cash generated. The income statement is accrual-based; the cash flow statement shows actual cash movements.
+**Confusing the income statement with cash flow**: Net income isn't the same as cash generated. The income statement is accrual-based; the cash flow statement shows actual cash movements.
 
 **Forgetting the balance sheet balances**: Assets must always equal liabilities plus equity. If you're walking through a transaction and the balance sheet doesn't balance, you've made an error.
 

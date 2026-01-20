@@ -9,7 +9,7 @@ estimated_minutes: 25
 
 ## Learning Objectives
 
-- Explain why you are interested in a specific bank in a way that demonstrates research and genuine fit
+- Explain why you're interested in a specific bank in a way that shows research and genuine fit
 - Differentiate your answer across firms when interviewing at multiple banks
 - Avoid generic or superficial responses that apply to any bulge bracket or elite boutique
 - Prepare for follow-up questions that test the depth and sincerity of your interest
@@ -18,9 +18,9 @@ estimated_minutes: 25
 
 ### Why This Question Matters
 
-"Why this firm?" is a test of preparation and sincerity. Interviewers want to know whether you've done your research, whether you understand what makes their bank distinct, and whether you're genuinely interested or simply applying everywhere.
+"Why this firm?" is a test of preparation and sincerity. Interviewers want to know whether you've done your research, whether you understand what makes their bank distinct, and whether you're genuinely interested or just applying everywhere.
 
-A strong answer demonstrates that you've thought carefully about fit. A weak answer sounds like it could be copied and pasted into any interview.
+A strong answer shows that you've thought carefully about fit. A weak answer sounds like it could be copied and pasted into any interview.
 
 ### What Makes a Strong "Why This Firm" Answer
 
@@ -45,7 +45,7 @@ Generic statements that could apply to any bank are weak. Examples include:
 - "I've always wanted to work here" (Unclear why)
 - "Your culture is great" (Based on what?)
 
-These answers signal that you have not done meaningful research or that you are applying indiscriminately.
+These answers signal that you haven't done meaningful research or that you're applying indiscriminately.
 
 ### Differentiating Across Firms
 
@@ -64,7 +64,7 @@ Avoid recycling the same answer across firms. Interviewers compare notes, and a 
 
 Interviewers will test your answer. If you mention culture, expect: "What specifically did you learn about our culture?" If you mention a sector, expect: "Why that sector?"
 
-Your answer should be detailed enough to withstand these probes. If you cannot elaborate, do not make the claim.
+Your answer should be detailed enough to withstand these probes. If you can't elaborate, don't make the claim.
 
 Other common follow-ups:
 
@@ -72,7 +72,7 @@ Other common follow-ups:
 - "What other banks are you recruiting for, and why?"
 - "If you got offers from us and [competitor], how would you decide?"
 
-Be prepared to answer honestly. Saying "I'm only recruiting for your bank" is usually not credible unless you have a very specific reason.
+Be prepared to answer honestly. Saying "I'm only recruiting for your bank" usually isn't credible unless you have a very specific reason.
 
 ### Common Mistakes
 

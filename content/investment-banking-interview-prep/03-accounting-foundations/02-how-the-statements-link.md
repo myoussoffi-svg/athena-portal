@@ -11,7 +11,7 @@ estimated_minutes: 35
 
 - Explain how the income statement, balance sheet, and cash flow statement connect
 - Walk through the mechanics of how changes on one statement affect the others
-- Demonstrate understanding by answering "walk me through" questions involving transactions
+- Show your understanding by answering "walk me through" questions involving transactions
 - Identify the specific line items that serve as linkages between statements
 
 ## Written Guide
@@ -44,7 +44,7 @@ Dividends, if paid, reduce retained earnings. If the company pays $20 in dividen
 
 **Step 2: Income Statement to Cash Flow Statement**
 
-The cash flow statement begins with **net income** in the cash flow from operations section. However, net income is accrual-based, so we must adjust for non-cash items and changes in working capital to arrive at cash generated from operations.
+The cash flow statement begins with **net income** in the cash flow from operations section. However, net income is accrual-based, so we need to adjust for non-cash items and changes in working capital to arrive at cash generated from operations.
 
 **Step 3: Adjusting for Non-Cash Items**
 
@@ -99,12 +99,12 @@ This is a classic interview question. Here's how to walk through it:
 - Cash flow from operations increases by $100 (starting with net income of $100)
 - Net change in cash is +$100, which matches the change in cash on the balance sheet
 
-In reality, interviewers will add complexity (e.g., "What if 50% of the revenue is on credit?" or "What if there's a 30% tax rate?"), and you need to adjust accordingly.
+In reality, interviewers will add complexity (e.g., "What if 50% of the revenue is on credit?" or "What if there's a 30% tax rate?"), and you'll need to adjust accordingly.
 
 ### Example Walkthrough: Company Buys $50 of Equipment with Cash
 
 **Income Statement**:
-- No immediate impact (CapEx is not an expense; it's capitalized on the balance sheet)
+- No immediate impact (CapEx isn't an expense; it's capitalized on the balance sheet)
 
 **Balance Sheet**:
 - Cash decreases by $50 (asset)
@@ -121,7 +121,7 @@ Over time, the equipment will be depreciated, which will flow through the income
 
 **Forgetting to adjust for non-cash items**: Depreciation, stock-based compensation, and other non-cash charges must be added back in the cash flow statement.
 
-**Confusing revenue with cash**: If revenue is on credit, it increases receivables, not cash. You must adjust for the change in receivables in cash flow from operations.
+**Confusing revenue with cash**: If revenue is on credit, it increases receivables, not cash. You need to adjust for the change in receivables in cash flow from operations.
 
 **Not balancing the balance sheet**: Every transaction must keep the balance sheet in balance. If assets increase by $100, either liabilities or equity must also increase by $100 (or another asset must decrease by $100).
 

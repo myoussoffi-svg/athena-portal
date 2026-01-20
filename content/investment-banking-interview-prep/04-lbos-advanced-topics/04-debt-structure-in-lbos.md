@@ -24,7 +24,7 @@ LBOs are financed with several types of debt, each with different characteristic
 - Match debt terms to cash flow profile (some debt amortizes, some doesn't)
 - Balance cost and risk (senior debt is cheaper but more restrictive)
 
-The debt stack is layered by **seniority**: in a default or bankruptcy, senior debt is repaid first, then subordinated debt, and equity holders are last.
+The debt stack is layered by **seniority**: in a default or bankruptcy, senior debt gets repaid first, then subordinated debt, and equity holders are last.
 
 ### The Debt Stack: From Senior to Junior
 
@@ -89,7 +89,7 @@ The debt stack is layered by **seniority**: in a default or bankruptcy, senior d
 - Breach can trigger default
 
 **2. Incurrence Covenants**:
-- Restrict specific actions (e.g., cannot incur additional debt, make acquisitions, or pay dividends beyond certain limits)
+- Restrict specific actions (e.g., can't incur additional debt, make acquisitions, or pay dividends beyond certain limits)
 - Only tested if the company takes the restricted action
 - Common in high-yield bonds and covenant-lite loans
 

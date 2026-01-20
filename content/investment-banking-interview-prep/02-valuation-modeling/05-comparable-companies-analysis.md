@@ -117,7 +117,7 @@ If the target company has EBITDA of $100M, the implied EV range is:
 - Median: $100M × 10.0 = $1,000M
 - High: $100M × 12.0 = $1,200M
 
-You would then subtract net debt to arrive at equity value.
+You'd then subtract net debt to arrive at equity value.
 
 ### Advantages of Comps
 
