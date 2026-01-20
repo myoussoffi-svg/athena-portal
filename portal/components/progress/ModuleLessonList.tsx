@@ -23,7 +23,7 @@ export function ModuleLessonList({
 }: ModuleLessonListProps) {
   const { getModuleProgress, isLessonComplete, loading } = useTrackProgress(trackSlug);
 
-  const moduleProgress = getModuleProgress(moduleSlug);
+  const _moduleProgress = getModuleProgress(moduleSlug);
 
   // Calculate lesson statuses
   const lessonStatuses = lessons.map((lesson) => ({

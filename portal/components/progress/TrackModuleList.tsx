@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useTrackProgress } from '@/lib/hooks/use-progress';
-import { Check, BookOpen, Users, Calculator, TrendingUp, Clock, Trophy, Star, ArrowRight, Play } from 'lucide-react';
+import { Check, BookOpen, Users, Calculator, TrendingUp, Clock, Trophy, Star, Play } from 'lucide-react';
 
 interface Module {
   slug: string;
@@ -27,7 +27,7 @@ const moduleConfig: Record<string, { icon: typeof BookOpen; time: string; number
 const defaultConfig = { icon: BookOpen, time: '2 hrs', number: 0 };
 
 export function TrackModuleList({ trackSlug, modules }: TrackModuleListProps) {
-  const { progress, loading, getModuleProgress } = useTrackProgress(trackSlug);
+  const { loading, getModuleProgress } = useTrackProgress(trackSlug);
 
   // Calculate module completion status for journey visualization
   const moduleStatuses = modules.map((module) => {
@@ -218,7 +218,7 @@ export function TrackModuleList({ trackSlug, modules }: TrackModuleListProps) {
                   <Star size={16} style={{ color: '#f59e0b' }} />
                 </div>
                 <div className="celebration-desc">
-                  Congratulations! You've mastered all {modules.length} modules. Ready to ace your interview.
+                  Congratulations! You&apos;ve mastered all {modules.length} modules. Ready to ace your interview.
                 </div>
               </div>
             </div>

@@ -141,8 +141,8 @@ export function useTrackProgress(trackSlug: string) {
   const isLessonComplete = useCallback(
     (moduleSlug: string, lessonSlug: string) => {
       if (!progress) return false;
-      const module = progress.modules.find((m) => m.moduleSlug === moduleSlug);
-      return module?.completedLessonSlugs.includes(lessonSlug) ?? false;
+      const moduleData = progress.modules.find((m) => m.moduleSlug === moduleSlug);
+      return moduleData?.completedLessonSlugs.includes(lessonSlug) ?? false;
     },
     [progress]
   );

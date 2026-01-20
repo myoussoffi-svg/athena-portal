@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { CheckCircle, XCircle, Target, Zap, HelpCircle, RotateCcw } from 'lucide-react';
+import { XCircle, Target, Zap, HelpCircle, RotateCcw } from 'lucide-react';
 
 interface QuizProgress {
   totalQuestions: number;

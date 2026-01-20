@@ -113,7 +113,7 @@ export interface TranscriptionResult {
  */
 export async function transcribeAudio(
   videoBuffer: Buffer,
-  filename: string = 'recording.webm'
+  _filename: string = 'recording.webm'
 ): Promise<TranscriptionResult> {
   const client = getOpenAIClient();
 
