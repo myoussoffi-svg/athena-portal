@@ -6,6 +6,7 @@ const isPublicRoute = createRouteMatcher([
   '/sign-in(.*)',
   '/sign-up(.*)',
   '/track(.*)', // Course content is public for now
+  '/api/inngest(.*)', // Inngest webhook endpoint
 ]);
 
 // Define API routes that require authentication

@@ -715,6 +715,92 @@ export function ALink({
   );
 }
 
+export function ComingSoon({
+  courseName = 'This course',
+  backHref = '/track',
+  backLabel = 'Back to Tracks',
+}: {
+  courseName?: string;
+  backHref?: string;
+  backLabel?: string;
+}) {
+  return (
+    <div
+      style={{
+        minHeight: '100vh',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: 24,
+        background: 'var(--athena-bg)',
+        fontFamily: 'Inter, system-ui, -apple-system, sans-serif',
+        color: 'var(--athena-fg)',
+      }}
+    >
+      <div style={{ textAlign: 'center', maxWidth: 480 }}>
+        <div
+          style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            width: 64,
+            height: 64,
+            borderRadius: 16,
+            background: 'rgba(65, 109, 137, 0.1)',
+            marginBottom: 24,
+            fontSize: 28,
+          }}
+        >
+          ⏳
+        </div>
+
+        <h1
+          style={{
+            margin: '0 0 12px',
+            fontSize: 28,
+            fontWeight: 600,
+            letterSpacing: -0.5,
+          }}
+        >
+          Coming Soon
+        </h1>
+
+        <p
+          style={{
+            margin: '0 0 32px',
+            fontSize: 15,
+            lineHeight: 1.6,
+            color: 'var(--athena-muted)',
+          }}
+        >
+          {courseName} is currently under development.
+          We&apos;re working hard to bring you premium content.
+        </p>
+
+        <a
+          href={backHref}
+          style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: 8,
+            padding: '12px 20px',
+            borderRadius: 8,
+            background: 'var(--athena-accent)',
+            color: 'white',
+            fontSize: 14,
+            fontWeight: 500,
+            textDecoration: 'none',
+            transition: 'all 0.15s',
+          }}
+        >
+          <span>←</span>
+          <span>{backLabel}</span>
+        </a>
+      </div>
+    </div>
+  );
+}
+
 
 
 

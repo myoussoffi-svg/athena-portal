@@ -127,6 +127,40 @@ export async function deleteObject(objectKey: string): Promise<void> {
 }
 
 /**
+ * Generate a presigned URL for uploading a Word document resume to R2.
+ * The client uses this URL to PUT the .docx file directly.
+ *
+ * @param feedbackId - The resume feedback ID (used as folder name)
+ * @param fileName - Original file name for the document
+ * @param expiresInSeconds - URL expiration time (default 15 minutes)
+ * @returns Presigned PUT URL and the object key
+ */
+export async function generateResumeUploadUrl(
+  feedbackId: string,
+  fileName: string,
+  expiresInSeconds: number = 15 * 60
+): Promise<{ uploadUrl: string; objectKey: string; expiresAt: Date }> {
+  const client = getR2Client();
+  // Sanitize filename and create object key
+  const sanitizedFileName = fileName.replace(/[^a-zA-Z0-9.-]/g, '_');
+  const objectKey = `resumes/${feedbackId}/${sanitizedFileName}`;
+
+  const command = new PutObjectCommand({
+    Bucket: R2_BUCKET_NAME,
+    Key: objectKey,
+    ContentType: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+  });
+
+  const uploadUrl = await getSignedUrl(client, command, {
+    expiresIn: expiresInSeconds,
+  });
+
+  const expiresAt = new Date(Date.now() + expiresInSeconds * 1000);
+
+  return { uploadUrl, objectKey, expiresAt };
+}
+
+/**
  * Download an object from R2 as a buffer.
  * Used by the processing pipeline to send video to transcription service.
  *

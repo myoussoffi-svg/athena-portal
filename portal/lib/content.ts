@@ -20,6 +20,16 @@ export type Module = {
   description?: string;
 };
 
+export type VideoProvider = 'youtube' | 'vimeo' | 'mux' | 'cloudflare';
+
+export type LessonVideo = {
+  provider: VideoProvider;
+  id: string;
+  poster?: string;
+  duration?: number;
+  captions?: string;
+};
+
 export type Lesson = {
   id: string;
   slug: string;
@@ -27,6 +37,7 @@ export type Lesson = {
   description?: string;
   content?: string;
   body?: string;
+  video?: LessonVideo;
 };
 
 function readYamlFile<T = unknown>(filePath: string): T {
@@ -44,10 +55,50 @@ function titleFromMarkdown(md: string, fallback: string): string {
   return (m?.[1] ?? fallback).trim();
 }
 
-function stripFrontmatter(md: string): string {
-  // Remove leading UTF-8 BOM if present, then strip YAML frontmatter
+interface Frontmatter {
+  video?: {
+    provider?: string;
+    id?: string;
+    poster?: string;
+    duration?: number;
+    captions?: string;
+  };
+  [key: string]: unknown;
+}
+
+function parseFrontmatter(md: string): { frontmatter: Frontmatter; content: string } {
   const clean = md.replace(/^\uFEFF/, "");
-  return clean.replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n?/, "");
+  const match = clean.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/);
+
+  if (!match) {
+    return { frontmatter: {}, content: clean };
+  }
+
+  try {
+    const frontmatter = yaml.load(match[1]) as Frontmatter || {};
+    return { frontmatter, content: match[2] };
+  } catch {
+    return { frontmatter: {}, content: clean };
+  }
+}
+
+function parseVideoMetadata(data: { video?: { provider?: string; id?: string; poster?: string; duration?: number; captions?: string } }): LessonVideo | undefined {
+  if (!data.video || !data.video.provider || !data.video.id) {
+    return undefined;
+  }
+
+  const provider = data.video.provider as VideoProvider;
+  if (!['youtube', 'vimeo', 'mux', 'cloudflare'].includes(provider)) {
+    return undefined;
+  }
+
+  return {
+    provider,
+    id: data.video.id,
+    poster: data.video.poster,
+    duration: data.video.duration,
+    captions: data.video.captions,
+  };
 }
 
 export function getTracks(): Track[] {
@@ -62,9 +113,15 @@ export function getTracks(): Track[] {
     .map((dir) => {
       const trackSlug = dir.name;
 
+      // Try course.yaml first (preferred), then fall back to track.yaml
+      const courseYamlPath = path.join(contentRoot, trackSlug, "course.yaml");
       const trackYamlPath = path.join(contentRoot, trackSlug, "track.yaml");
-      if (fs.existsSync(trackYamlPath)) {
-        const data = readYamlFile<{ id?: string; title?: string; description?: string }>(trackYamlPath);
+
+      const yamlPath = fs.existsSync(courseYamlPath) ? courseYamlPath :
+                       fs.existsSync(trackYamlPath) ? trackYamlPath : null;
+
+      if (yamlPath) {
+        const data = readYamlFile<{ id?: string; title?: string; description?: string }>(yamlPath);
         const slug = data.id ?? trackSlug;
         return {
           id: slug,
@@ -92,7 +149,7 @@ export function getModulesForTrack(trackSlug: string): Module[] {
 
   const moduleYamlPaths = globSync(pattern);
 
-  return moduleYamlPaths.map((yamlPath) => {
+  const modules = moduleYamlPaths.map((yamlPath) => {
     const moduleDir = path.dirname(yamlPath);
     const slug = path.basename(moduleDir);
     const data = readYamlFile<{ id?: string; title?: string; description?: string }>(yamlPath);
@@ -104,6 +161,20 @@ export function getModulesForTrack(trackSlug: string): Module[] {
       description: data.description ?? "",
     };
   });
+
+  // Sort modules by their numeric prefix (01-, 02-, etc.)
+  modules.sort((a, b) => {
+    const aNum = parseInt((a.slug.match(/^(\d+)/)?.[1] ?? ""), 10);
+    const bNum = parseInt((b.slug.match(/^(\d+)/)?.[1] ?? ""), 10);
+    const aHas = Number.isFinite(aNum);
+    const bHas = Number.isFinite(bNum);
+    if (aHas && bHas) return aNum - bNum;
+    if (aHas) return -1;
+    if (bHas) return 1;
+    return a.slug.localeCompare(b.slug);
+  });
+
+  return modules;
 }
 
 export function getLessonsForModule(trackSlug: string, moduleSlug: string): Lesson[] {
@@ -125,13 +196,14 @@ export function getLessonsForModule(trackSlug: string, moduleSlug: string): Less
     const lessonYamlPath = path.join(moduleDir, dir.name, "lesson.yaml");
     if (!fs.existsSync(lessonYamlPath)) continue;
 
-    const data = readYamlFile<{ id?: string; title?: string; description?: string; content?: string }>(lessonYamlPath);
+    const data = readYamlFile<{ id?: string; title?: string; description?: string; content?: string; video?: { provider?: string; id?: string; poster?: string; duration?: number; captions?: string } }>(lessonYamlPath);
     lessons.push({
       id: data.id ?? dir.name,
       slug: dir.name,
       title: data.title ?? dir.name,
       description: data.description ?? "",
       content: data.content ?? "",
+      video: parseVideoMetadata(data),
     });
   }
 
@@ -147,13 +219,15 @@ export function getLessonsForModule(trackSlug: string, moduleSlug: string): Less
     const slug = fileName.replace(/\.md$/i, "");
     const mdPath = path.join(moduleDir, fileName);
     const md = safeReadFile(mdPath);
+    const { frontmatter, content } = parseFrontmatter(md);
 
     lessons.push({
       id: slug,
       slug,
       title: titleFromMarkdown(md, slug),
       description: "",
-      content: stripFrontmatter(md),
+      content,
+      video: parseVideoMetadata(frontmatter),
     });
   }
 
@@ -184,13 +258,14 @@ export function getLessonBySlug(trackSlug: string, moduleSlug: string, lessonSlu
   // A) Folder-based: <module>/<lessonSlug>/lesson.yaml
   const lessonYamlPath = path.join(contentRoot, trackSlug, moduleSlug, lessonSlug, "lesson.yaml");
   if (fs.existsSync(lessonYamlPath)) {
-    const data = readYamlFile<{ id?: string; title?: string; description?: string; content?: string }>(lessonYamlPath);
+    const data = readYamlFile<{ id?: string; title?: string; description?: string; content?: string; video?: { provider?: string; id?: string; poster?: string; duration?: number; captions?: string } }>(lessonYamlPath);
     return {
       id: data.id ?? lessonSlug,
       slug: lessonSlug,
       title: data.title ?? lessonSlug,
       description: data.description ?? "",
       content: data.content ?? "",
+      video: parseVideoMetadata(data),
     };
   }
 
@@ -198,12 +273,14 @@ export function getLessonBySlug(trackSlug: string, moduleSlug: string, lessonSlu
   const mdPath = path.join(contentRoot, trackSlug, moduleSlug, `${lessonSlug}.md`);
   if (fs.existsSync(mdPath)) {
     const md = safeReadFile(mdPath);
+    const { frontmatter, content } = parseFrontmatter(md);
     return {
       id: lessonSlug,
       slug: lessonSlug,
       title: titleFromMarkdown(md, lessonSlug),
       description: "",
-      content: stripFrontmatter(md),
+      content,
+      video: parseVideoMetadata(frontmatter),
     };
   }
 
