@@ -1,0 +1,1 @@
+ALTER TABLE "outreach_contacts" ADD COLUMN "linkedin_url" text;

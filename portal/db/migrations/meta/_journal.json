@@ -1,0 +1,34 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1768435557051,
+      "tag": "0000_clammy_stone_men",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1768852108379,
+      "tag": "0001_illegal_amazoness",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1768870307768,
+      "tag": "0002_dazzling_lilith",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1768871289466,
+      "tag": "0003_whole_boom_boom",
+      "breakpoints": true
+    }
+  ]
+}
