@@ -1,0 +1,1356 @@
+{
+  "module": "accounting-foundations",
+  "title": "Accounting Foundations Quiz Bank",
+  "questions": [
+    {
+      "id": "acc-001",
+      "question": "A company records $100 of depreciation expense (25% tax rate). Walk through the impact: what is the net change in cash?",
+      "options": {
+        "A": "-$100 (depreciation reduces cash)",
+        "B": "-$75 (after-tax impact)",
+        "C": "+$25 (tax shield benefit)",
+        "D": "$0 (non-cash, no impact)"
+      },
+      "correct": "C",
+      "explanation": "Depreciation is non-cash. Net Income falls by $75 ($100 × 75% after tax shield). On CFO: start with -$75 NI, add back $100 D&A = +$25. The tax shield creates a $25 cash benefit.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "three-statements"
+    },
+    {
+      "id": "acc-002",
+      "question": "A company purchases $500 of equipment with cash. In Year 1, it records $100 of depreciation (25% tax rate). What is the Year 1 net change in cash from this equipment?",
+      "options": {
+        "A": "-$500",
+        "B": "-$475",
+        "C": "-$400",
+        "D": "-$375"
+      },
+      "correct": "B",
+      "explanation": "CapEx: -$500 (CFI). Depreciation creates $25 tax shield (+$25 to CFO). Net cash impact = -$500 + $25 = -$475.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "three-statements"
+    },
+    {
+      "id": "acc-003",
+      "question": "A company sells equipment with book value of $80 for $120 cash (25% tax rate). What is the total cash impact?",
+      "options": {
+        "A": "+$120",
+        "B": "+$110",
+        "C": "+$130",
+        "D": "+$90"
+      },
+      "correct": "B",
+      "explanation": "$40 gain on sale → $10 additional tax. Proceeds: +$120. Tax on gain: -$10. Net cash = +$110. The gain is removed from CFO and the full $120 proceeds appear in CFI.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "three-statements"
+    },
+    {
+      "id": "acc-004",
+      "question": "Inventory increases by $60 (paid with cash). Accounts Payable is unchanged. What is the impact on Cash from Operations?",
+      "options": {
+        "A": "+$60",
+        "B": "-$60",
+        "C": "$0",
+        "D": "-$45"
+      },
+      "correct": "B",
+      "explanation": "Inventory is a use of working capital. When inventory increases and is paid in cash (A/P unchanged), CFO decreases by the full $60. Working capital increase = cash outflow.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "working-capital"
+    },
+    {
+      "id": "acc-005",
+      "question": "A company collects $200 of Accounts Receivable. What is the impact on each financial statement?",
+      "options": {
+        "A": "IS: +$200 revenue; BS: Cash +$200; CFS: CFO +$200",
+        "B": "IS: No impact; BS: Cash +$200, A/R -$200; CFS: CFO +$200",
+        "C": "IS: No impact; BS: Cash +$200, A/R -$200; CFS: No impact",
+        "D": "IS: +$200 revenue; BS: Cash +$200, A/R -$200; CFS: CFO +$200"
+      },
+      "correct": "B",
+      "explanation": "Collection of A/R has no IS impact (revenue was already recognized). On BS, Cash increases and A/R decreases. On CFS, the decrease in A/R is a source of cash in CFO.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "three-statements"
+    },
+    {
+      "id": "acc-006",
+      "question": "A company receives $300 cash upfront for a 12-month service contract. After 4 months, what is the impact on the Balance Sheet relative to contract signing?",
+      "options": {
+        "A": "Cash +$300, Deferred Revenue +$300",
+        "B": "Cash +$300, Deferred Revenue +$200, Retained Earnings +$75",
+        "C": "Cash +$300, Deferred Revenue +$200, Retained Earnings +$100",
+        "D": "Cash +$225, Deferred Revenue +$200, Retained Earnings +$75"
+      },
+      "correct": "B",
+      "explanation": "At signing: Cash +$300, Deferred Rev +$300. After 4 months: $100 revenue recognized (4/12 × $300), Deferred Rev down to $200. At 25% tax, Retained Earnings +$75. Cash unchanged from recognition.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "revenue-recognition"
+    },
+    {
+      "id": "acc-007",
+      "question": "A company has $50M in Deferred Tax Liabilities from accelerated depreciation. Book depreciation is $10M, tax depreciation is $15M this year. What happens to DTL (25% tax rate)?",
+      "options": {
+        "A": "DTL increases by $1.25M",
+        "B": "DTL decreases by $1.25M",
+        "C": "DTL increases by $5M",
+        "D": "DTL is unchanged"
+      },
+      "correct": "A",
+      "explanation": "Tax depreciation exceeds book by $5M, meaning $5M more deduction now, $5M less later. This timing difference creates additional DTL of $5M × 25% = $1.25M.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "deferred-taxes"
+    },
+    {
+      "id": "acc-008",
+      "question": "A company writes down $200 of goodwill (25% tax rate). Goodwill impairment is NOT tax-deductible. What is the cash impact?",
+      "options": {
+        "A": "+$50 (tax shield)",
+        "B": "-$50 (tax payment)",
+        "C": "$0 (non-cash and no tax benefit)",
+        "D": "-$200 (write-down amount)"
+      },
+      "correct": "C",
+      "explanation": "Goodwill impairment is non-cash and typically not tax-deductible for book/tax purposes (tax goodwill amortizes separately). No tax shield, no cash impact. Net Income falls by full $200.",
+      "difficulty": "hard",
+      "type": "edge-case",
+      "topic": "goodwill"
+    },
+    {
+      "id": "acc-009",
+      "question": "PIK interest of $50 is recorded (25% tax rate). What is the impact on: (1) Net Income, (2) Cash, (3) Debt?",
+      "options": {
+        "A": "NI: -$50; Cash: -$50; Debt: unchanged",
+        "B": "NI: -$37.50; Cash: +$12.50; Debt: +$50",
+        "C": "NI: -$37.50; Cash: unchanged; Debt: +$50",
+        "D": "NI: -$50; Cash: unchanged; Debt: +$50"
+      },
+      "correct": "B",
+      "explanation": "PIK interest: expense on IS (-$50 pre-tax, -$37.50 after-tax NI). Non-cash, so added back on CFO. Tax shield of $12.50. Debt increases by $50 (interest paid in kind). Cash +$12.50.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "debt"
+    },
+    {
+      "id": "acc-010",
+      "question": "Stock-based compensation of $80 is recorded (25% tax rate). What is the net change in total shareholders' equity?",
+      "options": {
+        "A": "-$80",
+        "B": "-$60",
+        "C": "+$20",
+        "D": "$0"
+      },
+      "correct": "C",
+      "explanation": "SBC: Expense reduces Retained Earnings by $60 (after-tax). But SBC also increases APIC by $80. Net equity change: -$60 + $80 = +$20. (Note: actual tax treatment of SBC is complex.)",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "equity"
+    },
+    {
+      "id": "acc-011",
+      "question": "A company has Net Income of $100M, D&A of $30M, CapEx of $40M, and working capital increased by $15M. What is Free Cash Flow?",
+      "options": {
+        "A": "$75M",
+        "B": "$90M",
+        "C": "$105M",
+        "D": "$115M"
+      },
+      "correct": "A",
+      "explanation": "FCF = Net Income + D&A - CapEx - ΔWC = $100M + $30M - $40M - $15M = $75M. Working capital increase is a use of cash.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "cash-flow"
+    },
+    {
+      "id": "acc-012",
+      "question": "DSO is 45 days, DIO is 60 days, DPO is 30 days. What is the Cash Conversion Cycle, and what does it mean?",
+      "options": {
+        "A": "135 days - cash is tied up for 135 days",
+        "B": "75 days - cash is tied up for 75 days",
+        "C": "15 days - cash is received 15 days before payment",
+        "D": "75 days - cash is received 75 days after sale"
+      },
+      "correct": "B",
+      "explanation": "CCC = DSO + DIO - DPO = 45 + 60 - 30 = 75 days. This means cash is tied up in operations for 75 days from paying for inventory to collecting from customers.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "working-capital"
+    },
+    {
+      "id": "acc-013",
+      "question": "A company has Revenue of $500M and Accounts Receivable of $68.5M. What is DSO?",
+      "options": {
+        "A": "50 days",
+        "B": "45 days",
+        "C": "60 days",
+        "D": "55 days"
+      },
+      "correct": "A",
+      "explanation": "DSO = (A/R / Revenue) × 365 = ($68.5M / $500M) × 365 = 0.137 × 365 = 50 days.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "working-capital"
+    },
+    {
+      "id": "acc-014",
+      "question": "EBITDA is $100M, D&A is $20M, Interest is $15M, Tax rate is 25%. What is Net Income?",
+      "options": {
+        "A": "$48.75M",
+        "B": "$65M",
+        "C": "$52.50M",
+        "D": "$56.25M"
+      },
+      "correct": "A",
+      "explanation": "EBIT = EBITDA - D&A = $100M - $20M = $80M. EBT = EBIT - Interest = $80M - $15M = $65M. Net Income = EBT × (1 - 25%) = $65M × 0.75 = $48.75M.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "profitability"
+    },
+    {
+      "id": "acc-015",
+      "question": "A company has Total Debt of $400M, Cash of $50M, and EBITDA of $100M. What is Net Debt / EBITDA?",
+      "options": {
+        "A": "4.0x",
+        "B": "3.5x",
+        "C": "4.5x",
+        "D": "3.0x"
+      },
+      "correct": "B",
+      "explanation": "Net Debt = Total Debt - Cash = $400M - $50M = $350M. Net Debt / EBITDA = $350M / $100M = 3.5x.",
+      "difficulty": "easy",
+      "type": "formulaic",
+      "topic": "credit-metrics"
+    },
+    {
+      "id": "acc-016",
+      "question": "A company pays down $100 of debt principal. What is the impact on each financial statement?",
+      "options": {
+        "A": "IS: -$100 expense; BS: Cash -$100, Debt -$100; CFS: CFO -$100",
+        "B": "IS: No impact; BS: Cash -$100, Debt -$100; CFS: CFF -$100",
+        "C": "IS: -$75 after-tax; BS: Cash -$100, Debt -$100; CFS: CFO -$75, CFF -$25",
+        "D": "IS: No impact; BS: Cash -$100, Debt -$100; CFS: CFO -$100"
+      },
+      "correct": "B",
+      "explanation": "Principal repayment is NOT an expense (only interest is). No IS impact. Cash and Debt both decrease by $100. The payment appears in CFF, not CFO.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "three-statements"
+    },
+    {
+      "id": "acc-017",
+      "question": "A company issues $200 of stock and uses the proceeds to pay down debt. What is the net impact on Enterprise Value?",
+      "options": {
+        "A": "EV increases by $200",
+        "B": "EV decreases by $200",
+        "C": "EV is unchanged",
+        "D": "EV increases by $400"
+      },
+      "correct": "C",
+      "explanation": "EV = Equity Value + Net Debt. Equity Value increases by $200 (new shares). Net Debt decreases by $200 (debt paydown). Net EV change: +$200 - $200 = $0.",
+      "difficulty": "hard",
+      "type": "conceptual",
+      "topic": "valuation-basics"
+    },
+    {
+      "id": "acc-018",
+      "question": "Operating lease expense is $50 (25% tax rate). Under the old accounting (pre-ASC 842), what was the cash impact?",
+      "options": {
+        "A": "-$50",
+        "B": "-$37.50",
+        "C": "+$12.50",
+        "D": "$0"
+      },
+      "correct": "A",
+      "explanation": "Under old rules, operating leases were fully expensed as rent. Cash decreased by the full $50 payment. The $12.50 tax shield was embedded in lower tax payments, but gross cash outflow was $50.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "leases"
+    },
+    {
+      "id": "acc-019",
+      "question": "Which of the following would INCREASE free cash flow without affecting Net Income?",
+      "options": {
+        "A": "Accelerating revenue recognition",
+        "B": "Extending payment terms with suppliers (increasing DPO)",
+        "C": "Reducing depreciation expense",
+        "D": "Issuing new equity"
+      },
+      "correct": "B",
+      "explanation": "Extending supplier payment terms increases A/P, which is a source of cash (reduces working capital needs). This increases FCF without affecting Net Income. Revenue acceleration affects NI; depreciation affects NI; equity issuance is financing.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "working-capital"
+    },
+    {
+      "id": "acc-020",
+      "question": "A company's A/R increased from $40M to $55M, Inventory decreased from $30M to $25M, and A/P increased from $20M to $28M. What is the working capital impact on CFO?",
+      "options": {
+        "A": "-$2M",
+        "B": "+$2M",
+        "C": "-$7M",
+        "D": "+$7M"
+      },
+      "correct": "A",
+      "explanation": "ΔA/R: -$15M (use). ΔInventory: +$5M (source). ΔA/P: +$8M (source). Net WC impact on CFO = -$15M + $5M + $8M = -$2M.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "working-capital"
+    },
+    {
+      "id": "acc-021",
+      "question": "A company acquires another for $500M. Target has $300M of identifiable net assets at fair value. How much goodwill is created?",
+      "options": {
+        "A": "$500M",
+        "B": "$300M",
+        "C": "$200M",
+        "D": "$800M"
+      },
+      "correct": "C",
+      "explanation": "Goodwill = Purchase Price - Fair Value of Net Identifiable Assets = $500M - $300M = $200M. This represents the premium paid for synergies, brand, workforce, etc.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "goodwill"
+    },
+    {
+      "id": "acc-022",
+      "question": "Restructuring charges of $75M are recorded (25% tax rate). These are one-time, non-cash accruals for future severance. What is the Year 1 cash impact?",
+      "options": {
+        "A": "-$75M",
+        "B": "-$56.25M",
+        "C": "+$18.75M",
+        "D": "$0"
+      },
+      "correct": "C",
+      "explanation": "Non-cash accrual: NI down $56.25M (after tax). Added back on CFO as non-cash. Tax shield of $18.75M is realized. Actual cash severance paid in future years.",
+      "difficulty": "hard",
+      "type": "edge-case",
+      "topic": "three-statements"
+    },
+    {
+      "id": "acc-023",
+      "question": "A company has $80M EBIT, $20M interest expense, 25% tax rate, $30M D&A, $25M CapEx. What is unlevered free cash flow?",
+      "options": {
+        "A": "$60M",
+        "B": "$65M",
+        "C": "$70M",
+        "D": "$55M"
+      },
+      "correct": "B",
+      "explanation": "UFCF = EBIT × (1-T) + D&A - CapEx = $80M × 0.75 + $30M - $25M = $60M + $30M - $25M = $65M. UFCF excludes the interest tax shield.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "cash-flow"
+    },
+    {
+      "id": "acc-024",
+      "question": "Which scenario would create a Deferred Tax Asset?",
+      "options": {
+        "A": "Using accelerated depreciation for tax purposes",
+        "B": "Recording warranty expense that is not yet tax-deductible",
+        "C": "Receiving cash for services not yet performed",
+        "D": "Recording gain on sale of assets"
+      },
+      "correct": "B",
+      "explanation": "DTAs arise when you pay MORE tax now than book expense, or have future tax benefits. Warranty accruals reduce book income but aren't deductible until paid - you pay more tax now, less later = DTA.",
+      "difficulty": "hard",
+      "type": "conceptual",
+      "topic": "deferred-taxes"
+    },
+    {
+      "id": "acc-025",
+      "question": "ROE is 15%, Asset Turnover is 1.5x, Financial Leverage (Assets/Equity) is 2.0x. What is the Net Profit Margin?",
+      "options": {
+        "A": "5%",
+        "B": "10%",
+        "C": "7.5%",
+        "D": "4.5%"
+      },
+      "correct": "A",
+      "explanation": "DuPont: ROE = Margin × Turnover × Leverage. 15% = Margin × 1.5 × 2.0 = Margin × 3.0. Margin = 15% / 3.0 = 5%.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "profitability"
+    },
+    {
+      "id": "acc-026",
+      "question": "A company prepays $120 for 12 months of insurance. After 3 months, what is the cumulative impact on Net Income (25% tax rate)?",
+      "options": {
+        "A": "-$120",
+        "B": "-$30",
+        "C": "-$22.50",
+        "D": "$0"
+      },
+      "correct": "C",
+      "explanation": "Prepaid expense: $120 to Prepaid Insurance (asset). After 3 months, $30 expensed (3/12 × $120). After-tax NI impact = -$30 × 0.75 = -$22.50.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "prepaid-expenses"
+    },
+    {
+      "id": "acc-027",
+      "question": "EBITDA margin is 25%, Revenue is $400M, D&A is $40M. What is EBIT?",
+      "options": {
+        "A": "$60M",
+        "B": "$100M",
+        "C": "$140M",
+        "D": "$80M"
+      },
+      "correct": "A",
+      "explanation": "EBITDA = 25% × $400M = $100M. EBIT = EBITDA - D&A = $100M - $40M = $60M.",
+      "difficulty": "easy",
+      "type": "formulaic",
+      "topic": "profitability"
+    },
+    {
+      "id": "acc-028",
+      "question": "A company has negative retained earnings of -$50M but positive shareholders' equity of $100M. How is this possible?",
+      "options": {
+        "A": "It's not possible - this is an accounting error",
+        "B": "The company has significant APIC from equity issuances",
+        "C": "The company has large deferred tax assets",
+        "D": "The company recently wrote off goodwill"
+      },
+      "correct": "B",
+      "explanation": "Total Equity = Common Stock + APIC + Retained Earnings - Treasury Stock. A company can have negative RE (accumulated losses) but positive equity if APIC from stock issuances exceeds the losses.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "equity"
+    },
+    {
+      "id": "acc-029",
+      "question": "A company declares a $50 dividend on Dec 15, payable Jan 15 to shareholders of record Dec 31. What is the Dec 31 balance sheet impact?",
+      "options": {
+        "A": "Cash -$50, Retained Earnings -$50",
+        "B": "Dividends Payable +$50, Retained Earnings -$50",
+        "C": "No impact until payment",
+        "D": "APIC -$50, Dividends Payable +$50"
+      },
+      "correct": "B",
+      "explanation": "On declaration date, Retained Earnings is reduced and Dividends Payable (liability) is created. Cash doesn't change until payment date. RE is reduced when declared, not when paid.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "equity"
+    },
+    {
+      "id": "acc-030",
+      "question": "Interest Coverage Ratio is 3.0x, EBITDA is $150M, D&A is $30M. What is the Interest Expense?",
+      "options": {
+        "A": "$50M",
+        "B": "$40M",
+        "C": "$60M",
+        "D": "$45M"
+      },
+      "correct": "B",
+      "explanation": "EBIT = EBITDA - D&A = $150M - $30M = $120M. Interest Coverage = EBIT / Interest = 3.0x. Interest = EBIT / 3.0 = $120M / 3.0 = $40M.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "credit-metrics"
+    },
+    {
+      "id": "acc-031",
+      "question": "A company expenses $100 of costs that should have been capitalized (5-year life, 25% tax rate). What is the Year 1 overstatement/understatement of Net Income?",
+      "options": {
+        "A": "Understated by $60",
+        "B": "Understated by $80",
+        "C": "Overstated by $60",
+        "D": "Understated by $75"
+      },
+      "correct": "A",
+      "explanation": "Expensing: $100 expense, NI reduced by $75 after-tax. Correct treatment: $20 depreciation (100/5), NI reduced by $15 after-tax. Difference: $75 - $15 = $60 understatement.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "capitalization"
+    },
+    {
+      "id": "acc-032",
+      "question": "Why might two companies with identical operations have different Net Income under GAAP vs IFRS?",
+      "options": {
+        "A": "IFRS allows revenue recognition before delivery",
+        "B": "IFRS allows LIFO inventory accounting",
+        "C": "IFRS allows capitalization of development costs; GAAP requires expensing",
+        "D": "GAAP requires more conservative depreciation methods"
+      },
+      "correct": "C",
+      "explanation": "IFRS allows capitalization of development costs meeting certain criteria; GAAP generally requires R&D to be expensed. This can result in higher IFRS Net Income in R&D-heavy companies.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "gaap-ifrs"
+    },
+    {
+      "id": "acc-033",
+      "question": "A company has $200M revenue, 40% gross margin, 15% EBITDA margin. What are COGS and Operating Expenses (excluding D&A)?",
+      "options": {
+        "A": "COGS: $120M, OpEx: $50M",
+        "B": "COGS: $80M, OpEx: $90M",
+        "C": "COGS: $120M, OpEx: $80M",
+        "D": "COGS: $80M, OpEx: $50M"
+      },
+      "correct": "A",
+      "explanation": "COGS = Revenue × (1 - Gross Margin) = $200M × 60% = $120M. Gross Profit = $80M. EBITDA = $200M × 15% = $30M. OpEx = Gross Profit - EBITDA = $80M - $30M = $50M.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "profitability"
+    },
+    {
+      "id": "acc-034",
+      "question": "Accounts Receivable turnover is 8x. What is DSO?",
+      "options": {
+        "A": "45.6 days",
+        "B": "52.1 days",
+        "C": "40.0 days",
+        "D": "36.5 days"
+      },
+      "correct": "A",
+      "explanation": "A/R Turnover = Revenue / A/R = 8x. DSO = 365 / A/R Turnover = 365 / 8 = 45.6 days.",
+      "difficulty": "easy",
+      "type": "formulaic",
+      "topic": "working-capital"
+    },
+    {
+      "id": "acc-035",
+      "question": "A company writes off $40 of uncollectible A/R against an existing $50 allowance for doubtful accounts. What is the impact on Net Income and Total Assets?",
+      "options": {
+        "A": "NI: -$40; Assets: -$40",
+        "B": "NI: $0; Assets: $0",
+        "C": "NI: -$40; Assets: $0",
+        "D": "NI: $0; Assets: -$40"
+      },
+      "correct": "B",
+      "explanation": "Writing off against existing allowance: Gross A/R decreases by $40, Allowance (contra-asset) decreases by $40. Net A/R unchanged. No P&L impact - the expense was recognized when allowance was created.",
+      "difficulty": "hard",
+      "type": "edge-case",
+      "topic": "bad-debt"
+    },
+    {
+      "id": "acc-036",
+      "question": "A company capitalizes $60M of software development costs over 3 years (straight-line). In Year 2, what is the carrying value and Year 2 amortization expense?",
+      "options": {
+        "A": "Carrying Value: $40M, Amortization: $20M",
+        "B": "Carrying Value: $20M, Amortization: $20M",
+        "C": "Carrying Value: $30M, Amortization: $30M",
+        "D": "Carrying Value: $40M, Amortization: $10M"
+      },
+      "correct": "B",
+      "explanation": "Annual amortization = $60M / 3 = $20M. After Year 1: $40M. After Year 2: $20M carrying value. Year 2 amortization: $20M.",
+      "difficulty": "easy",
+      "type": "formulaic",
+      "topic": "intangibles"
+    },
+    {
+      "id": "acc-037",
+      "question": "Total Debt / EBITDA is 4.5x, Interest Coverage is 2.5x. If EBITDA is $80M, what is the average interest rate on debt?",
+      "options": {
+        "A": "8.9%",
+        "B": "7.1%",
+        "C": "6.2%",
+        "D": "9.5%"
+      },
+      "correct": "A",
+      "explanation": "Debt = 4.5 × $80M = $360M. EBIT = Interest Coverage × Interest, and EBIT ≈ EBITDA for this calc. Interest = EBITDA / 2.5 = $32M. Rate = $32M / $360M = 8.9%.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "credit-metrics"
+    },
+    {
+      "id": "acc-038",
+      "question": "A company has $100M of NOLs and generates $30M of taxable income (25% tax rate). What is the cash tax payment and the change in DTA?",
+      "options": {
+        "A": "Cash tax: $7.5M; DTA: -$7.5M",
+        "B": "Cash tax: $0; DTA: -$7.5M",
+        "C": "Cash tax: $0; DTA: -$25M",
+        "D": "Cash tax: $7.5M; DTA: -$25M"
+      },
+      "correct": "B",
+      "explanation": "NOLs offset taxable income: $30M used, $70M remaining. Cash tax = $0 (fully shielded). DTA reduction = $30M × 25% = $7.5M. Book tax expense still recorded, offset by DTA utilization.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "deferred-taxes"
+    },
+    {
+      "id": "acc-039",
+      "question": "A company's fixed asset gross value is $500M, accumulated depreciation is $200M, and annual depreciation is $50M. What is the average remaining useful life?",
+      "options": {
+        "A": "6 years",
+        "B": "4 years",
+        "C": "10 years",
+        "D": "3 years"
+      },
+      "correct": "A",
+      "explanation": "Net PP&E = $500M - $200M = $300M. Average remaining life = Net PP&E / Annual Depreciation = $300M / $50M = 6 years.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "ppe"
+    },
+    {
+      "id": "acc-040",
+      "question": "Revenue is $1B, NWC as % of revenue historically runs at 15%. If revenue grows to $1.2B, what is the working capital investment needed?",
+      "options": {
+        "A": "$180M",
+        "B": "$30M",
+        "C": "$150M",
+        "D": "$200M"
+      },
+      "correct": "B",
+      "explanation": "NWC at $1B revenue = 15% × $1B = $150M. NWC at $1.2B = 15% × $1.2B = $180M. Investment needed = $180M - $150M = $30M.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "working-capital"
+    },
+    {
+      "id": "acc-041",
+      "question": "A foreign subsidiary has €100M of assets. EUR/USD moves from 1.10 to 1.05. What is the translation adjustment (reported in OCI)?",
+      "options": {
+        "A": "+$5M gain",
+        "B": "-$5M loss",
+        "C": "+$4.5M gain",
+        "D": "-$4.8M loss"
+      },
+      "correct": "B",
+      "explanation": "Assets at old rate: €100M × 1.10 = $110M. At new rate: €100M × 1.05 = $105M. Translation loss = -$5M, recorded in OCI (not Net Income).",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "forex"
+    },
+    {
+      "id": "acc-042",
+      "question": "Which of the following is NOT a typical adjustment when calculating Adjusted EBITDA?",
+      "options": {
+        "A": "Adding back stock-based compensation",
+        "B": "Adding back one-time restructuring charges",
+        "C": "Adding back interest expense",
+        "D": "Adding back non-recurring litigation costs"
+      },
+      "correct": "C",
+      "explanation": "Interest is already excluded from EBITDA by definition (the 'I' in EBITDA). SBC, restructuring, and litigation are common add-backs to get 'Adjusted' EBITDA. Adding back interest would be double-counting.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "profitability"
+    },
+    {
+      "id": "acc-043",
+      "question": "Gross margin improved from 35% to 38% on $500M revenue. Assuming no change in units sold, what drove the improvement?",
+      "options": {
+        "A": "Higher selling prices or lower unit costs",
+        "B": "Lower operating expenses",
+        "C": "Reduced interest expense",
+        "D": "Lower tax rate"
+      },
+      "correct": "A",
+      "explanation": "Gross Margin = (Revenue - COGS) / Revenue. Improvement comes from either higher prices (more revenue per unit) or lower COGS (reduced production/procurement costs). OpEx, interest, and taxes are below gross profit.",
+      "difficulty": "easy",
+      "type": "judgmental",
+      "topic": "profitability"
+    },
+    {
+      "id": "acc-044",
+      "question": "A company records $25M of asset retirement obligation (ARO) upon acquiring a mining property. What is the initial journal entry?",
+      "options": {
+        "A": "DR: Expense $25M; CR: ARO Liability $25M",
+        "B": "DR: PP&E $25M; CR: ARO Liability $25M",
+        "C": "DR: ARO Liability $25M; CR: Cash $25M",
+        "D": "DR: Goodwill $25M; CR: ARO Liability $25M"
+      },
+      "correct": "B",
+      "explanation": "ARO is capitalized as part of the asset cost (added to PP&E) with an offsetting liability. The asset is depreciated over its life, and the liability accretes (interest expense) to the settlement amount.",
+      "difficulty": "hard",
+      "type": "conceptual",
+      "topic": "ppe"
+    },
+    {
+      "id": "acc-045",
+      "question": "A company has a 10% minority interest in a consolidated subsidiary with $50M Net Income. The subsidiary contributes $20M to consolidated NI. What is the non-controlling interest charge?",
+      "options": {
+        "A": "$5M",
+        "B": "$2M",
+        "C": "$3M",
+        "D": "$18M"
+      },
+      "correct": "B",
+      "explanation": "Non-controlling interest (NCI) = Subsidiary NI × NCI % = $20M × 10% = $2M. This is deducted from consolidated NI to arrive at NI attributable to parent.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "consolidation"
+    },
+    {
+      "id": "acc-046",
+      "question": "Which ratio most directly measures a company's ability to pay near-term obligations with its most liquid assets?",
+      "options": {
+        "A": "Current Ratio",
+        "B": "Quick Ratio",
+        "C": "Cash Ratio",
+        "D": "Net Debt / EBITDA"
+      },
+      "correct": "C",
+      "explanation": "Cash Ratio = Cash / Current Liabilities. It's the most conservative liquidity measure, using only cash. Quick Ratio adds A/R; Current Ratio adds inventory. Net Debt/EBITDA is leverage, not liquidity.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "liquidity"
+    },
+    {
+      "id": "acc-047",
+      "question": "A company has Quick Ratio of 0.8 and Current Ratio of 1.3. Current Liabilities are $100M. What is Inventory?",
+      "options": {
+        "A": "$50M",
+        "B": "$30M",
+        "C": "$80M",
+        "D": "$130M"
+      },
+      "correct": "A",
+      "explanation": "Current Assets = Current Ratio × CL = 1.3 × $100M = $130M. Quick Assets = Quick Ratio × CL = 0.8 × $100M = $80M. Inventory = Current Assets - Quick Assets = $130M - $80M = $50M.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "liquidity"
+    },
+    {
+      "id": "acc-048",
+      "question": "A $200M acquisition is 60% stock, 40% cash. Buyer has 100M shares at $20/share. How many new shares are issued?",
+      "options": {
+        "A": "6M shares",
+        "B": "5M shares",
+        "C": "10M shares",
+        "D": "4M shares"
+      },
+      "correct": "A",
+      "explanation": "Stock consideration = 60% × $200M = $120M. Shares issued = $120M / $20 per share = 6M new shares.",
+      "difficulty": "easy",
+      "type": "formulaic",
+      "topic": "ma-basics"
+    },
+    {
+      "id": "acc-049",
+      "question": "Under percentage-of-completion accounting, a $100M contract is 40% complete. Estimated total costs are $70M, with $28M incurred to date. What revenue is recognized?",
+      "options": {
+        "A": "$28M",
+        "B": "$40M",
+        "C": "$70M",
+        "D": "$100M"
+      },
+      "correct": "B",
+      "explanation": "Revenue recognized = Total Contract Value × % Complete = $100M × 40% = $40M. Costs incurred = $28M. Gross profit recognized = $12M.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "revenue-recognition"
+    },
+    {
+      "id": "acc-050",
+      "question": "A company's book value per share is $25, market price is $40, and ROE is 18%. What does this imply about the company?",
+      "options": {
+        "A": "Market expects ROE to decline",
+        "B": "Market expects growth and values earnings power above book value",
+        "C": "The stock is overvalued",
+        "D": "Book value is misstated"
+      },
+      "correct": "B",
+      "explanation": "P/B ratio of 1.6x (40/25) with 18% ROE suggests market values the company's earnings power and growth prospects above its net asset value. High ROE companies typically trade above book.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "valuation-basics"
+    },
+    {
+      "id": "acc-051",
+      "question": "A company issues a $100 bond at par with a 5% coupon. After Year 1, market rates rise to 7%. What is the bond's approximate market value?",
+      "options": {
+        "A": "$100 (unchanged)",
+        "B": "Below $100",
+        "C": "Above $100",
+        "D": "$105"
+      },
+      "correct": "B",
+      "explanation": "When market rates rise above the coupon rate, existing bonds become less attractive and trade below par. Investors can get 7% elsewhere, so they won't pay $100 for a 5% coupon.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "debt"
+    },
+    {
+      "id": "acc-052",
+      "question": "Which of the following increases both EBITDA and Free Cash Flow?",
+      "options": {
+        "A": "Increasing depreciation expense",
+        "B": "Reducing SG&A expenses",
+        "C": "Paying down debt",
+        "D": "Issuing equity"
+      },
+      "correct": "B",
+      "explanation": "Lower SG&A increases operating income (and EBITDA) and flows through to higher FCF. Depreciation doesn't affect EBITDA. Debt paydown and equity issuance are financing activities.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "profitability"
+    },
+    {
+      "id": "acc-053",
+      "question": "A company has $100M cash, $400M debt, $600M equity market cap. What is Enterprise Value?",
+      "options": {
+        "A": "$1,100M",
+        "B": "$900M",
+        "C": "$1,000M",
+        "D": "$500M"
+      },
+      "correct": "B",
+      "explanation": "EV = Equity Value + Debt - Cash = $600M + $400M - $100M = $900M.",
+      "difficulty": "easy",
+      "type": "formulaic",
+      "topic": "valuation-basics"
+    },
+    {
+      "id": "acc-054",
+      "question": "A company switches from FIFO to LIFO in a rising price environment. What happens to the LIFO reserve?",
+      "options": {
+        "A": "LIFO reserve is created/increases",
+        "B": "LIFO reserve decreases",
+        "C": "LIFO reserve is eliminated",
+        "D": "No change - LIFO reserve only applies to specific industries"
+      },
+      "correct": "A",
+      "explanation": "LIFO Reserve = FIFO Inventory - LIFO Inventory. In rising prices, LIFO values inventory lower (older costs remain). The difference creates/increases the LIFO reserve.",
+      "difficulty": "hard",
+      "type": "conceptual",
+      "topic": "inventory"
+    },
+    {
+      "id": "acc-055",
+      "question": "Operating cash flow is $80M, CapEx is $30M, debt repayment is $20M, dividends are $10M. What is Free Cash Flow to Equity (FCFE)?",
+      "options": {
+        "A": "$50M",
+        "B": "$30M",
+        "C": "$20M",
+        "D": "$40M"
+      },
+      "correct": "C",
+      "explanation": "FCFE = CFO - CapEx - Debt Repayment + New Debt. Here: $80M - $30M - $20M + $0 = $30M. But if FCFE accounts for debt service: $80M - $30M - $20M = $30M. Dividends are distribution of FCFE, not a deduction from it. Standard FCFE = CFO - CapEx + Net Borrowing = $80M - $30M - $20M = $30M. Note: There may be different conventions. If question means 'cash available after all obligations': $80M - $30M - $20M - $10M = $20M.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "cash-flow"
+    },
+    {
+      "id": "acc-056",
+      "question": "A company has $50M of capitalized leases on its balance sheet (pre-ASC 842). An analyst wants to compare it to a competitor using operating leases. How should they adjust?",
+      "options": {
+        "A": "Remove the lease liability from debt",
+        "B": "Capitalize the competitor's operating leases by multiplying rent by ~8x",
+        "C": "Add back depreciation on the capitalized lease",
+        "D": "No adjustment needed - GAAP already provides comparability"
+      },
+      "correct": "B",
+      "explanation": "To compare apples-to-apples (pre-ASC 842), analysts capitalize operating leases using a multiple of rent expense (typically 6-8x) and add to debt. This adjusts for different lease accounting choices.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "leases"
+    },
+    {
+      "id": "acc-057",
+      "question": "What is the impact of a 2-for-1 stock split on: (1) Share price, (2) Market cap, (3) EPS?",
+      "options": {
+        "A": "Price: halved; Market cap: unchanged; EPS: halved",
+        "B": "Price: unchanged; Market cap: doubled; EPS: unchanged",
+        "C": "Price: halved; Market cap: halved; EPS: unchanged",
+        "D": "Price: halved; Market cap: unchanged; EPS: doubled"
+      },
+      "correct": "A",
+      "explanation": "Stock split: Shares double, price halves. Market cap unchanged (same total value). EPS halves (same earnings, twice the shares). It's a cosmetic change with no economic impact.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "equity"
+    },
+    {
+      "id": "acc-058",
+      "question": "A company has $10M of OCI losses from pension adjustments. Where does this appear on the financial statements?",
+      "options": {
+        "A": "Income Statement as pension expense",
+        "B": "Cash Flow Statement as pension contribution",
+        "C": "Balance Sheet in Accumulated Other Comprehensive Income (equity)",
+        "D": "Income Statement below Net Income"
+      },
+      "correct": "C",
+      "explanation": "OCI items bypass the income statement and go directly to equity (AOCI). Pension adjustments from actuarial gains/losses are reported in OCI, not Net Income.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "equity"
+    },
+    {
+      "id": "acc-059",
+      "question": "Revenue is recognized over time for a 3-year contract worth $90M. Year 1 costs are $20M of $60M total expected costs. Using cost-to-cost method, Year 1 revenue is:",
+      "options": {
+        "A": "$30M",
+        "B": "$20M",
+        "C": "$33.3M",
+        "D": "$60M"
+      },
+      "correct": "A",
+      "explanation": "% complete = Costs incurred / Total estimated costs = $20M / $60M = 33.3%. Revenue = 33.3% × $90M = $30M.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "revenue-recognition"
+    },
+    {
+      "id": "acc-060",
+      "question": "A company's effective tax rate is 22% but statutory rate is 25%. Which is most likely the cause?",
+      "options": {
+        "A": "Large non-deductible expenses",
+        "B": "R&D tax credits or other tax incentives",
+        "C": "Goodwill impairment",
+        "D": "Stock-based compensation"
+      },
+      "correct": "B",
+      "explanation": "Effective rate below statutory suggests tax benefits: R&D credits, foreign income taxed at lower rates, or other incentives. Non-deductible expenses and goodwill impairment would increase effective rate.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "deferred-taxes"
+    },
+    {
+      "id": "acc-061",
+      "question": "A company incurs $15M of transaction costs in an acquisition. Under GAAP, how are these treated?",
+      "options": {
+        "A": "Capitalized as part of goodwill",
+        "B": "Expensed immediately",
+        "C": "Amortized over 5 years",
+        "D": "Deducted from the purchase price"
+      },
+      "correct": "B",
+      "explanation": "Under ASC 805, acquisition-related costs (legal, advisory, due diligence) are expensed as incurred. They are NOT capitalized into goodwill or the purchase price allocation.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "ma-basics"
+    },
+    {
+      "id": "acc-062",
+      "question": "Book depreciation is $100M (straight-line over 10 years). Tax depreciation is $200M (accelerated, Year 1). What is the Year 1 deferred tax impact at 25%?",
+      "options": {
+        "A": "DTA of $25M created",
+        "B": "DTL of $25M created",
+        "C": "DTA of $100M created",
+        "D": "DTL of $100M created"
+      },
+      "correct": "B",
+      "explanation": "Tax depreciation > Book depreciation by $100M. You're paying less tax now than book expense suggests. This creates a DTL of $100M × 25% = $25M (taxes owed in future).",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "deferred-taxes"
+    },
+    {
+      "id": "acc-063",
+      "question": "A company has positive Net Income but negative Cash from Operations. Which is the most likely explanation?",
+      "options": {
+        "A": "High depreciation expense",
+        "B": "Rapid revenue growth requiring working capital investment",
+        "C": "Large debt repayment",
+        "D": "Stock buyback program"
+      },
+      "correct": "B",
+      "explanation": "Rapid growth consumes working capital (A/R and inventory increase faster than A/P). NI is positive from accrual accounting, but cash is consumed funding growth. D&A would help CFO; debt/buybacks are in CFF.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "cash-flow"
+    },
+    {
+      "id": "acc-064",
+      "question": "Return on Invested Capital (ROIC) equals:",
+      "options": {
+        "A": "Net Income / Total Assets",
+        "B": "EBIT × (1-T) / (Debt + Equity - Cash)",
+        "C": "EBITDA / Enterprise Value",
+        "D": "Net Income / Shareholders' Equity"
+      },
+      "correct": "B",
+      "explanation": "ROIC = NOPAT / Invested Capital = EBIT × (1-T) / (Debt + Equity - Cash). It measures return on capital from all providers, regardless of capital structure.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "profitability"
+    },
+    {
+      "id": "acc-065",
+      "question": "A company reports EPS of $2.00 on 100M shares. It issues 20M shares at the end of Q3. What is the weighted average share count?",
+      "options": {
+        "A": "120M",
+        "B": "100M",
+        "C": "105M",
+        "D": "110M"
+      },
+      "correct": "C",
+      "explanation": "Weighted average = 100M × (9/12) + 120M × (3/12) = 75M + 30M = 105M shares. New shares are weighted for the portion of year outstanding.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "equity"
+    },
+    {
+      "id": "acc-066",
+      "question": "In the indirect method Cash Flow Statement, an increase in Deferred Revenue is:",
+      "options": {
+        "A": "Subtracted from Net Income",
+        "B": "Added to Net Income",
+        "C": "Shown in CFI",
+        "D": "Shown in CFF"
+      },
+      "correct": "B",
+      "explanation": "Deferred Revenue increase = cash received but not yet earned. Revenue was not in Net Income, but cash was received. Add back to convert NI to cash basis.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "cash-flow"
+    },
+    {
+      "id": "acc-067",
+      "question": "A company has negative EBITDA but positive gross profit. What does this indicate?",
+      "options": {
+        "A": "COGS exceeds revenue",
+        "B": "Operating expenses (SG&A) exceed gross profit",
+        "C": "Interest expense is too high",
+        "D": "Depreciation is overstated"
+      },
+      "correct": "B",
+      "explanation": "Positive gross profit means Revenue > COGS. Negative EBITDA means Gross Profit < Operating Expenses (SG&A, R&D, etc.). The company is profitable at the unit level but operating costs exceed gross profit.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "profitability"
+    },
+    {
+      "id": "acc-068",
+      "question": "A company has Total Debt of $500M, Interest Expense of $35M. What is the average cost of debt?",
+      "options": {
+        "A": "7.0%",
+        "B": "5.0%",
+        "C": "6.5%",
+        "D": "8.0%"
+      },
+      "correct": "A",
+      "explanation": "Average cost of debt = Interest Expense / Total Debt = $35M / $500M = 7.0%.",
+      "difficulty": "easy",
+      "type": "formulaic",
+      "topic": "credit-metrics"
+    },
+    {
+      "id": "acc-069",
+      "question": "Which would NOT be considered in calculating diluted EPS?",
+      "options": {
+        "A": "In-the-money stock options",
+        "B": "Convertible preferred stock",
+        "C": "Out-of-the-money warrants",
+        "D": "Convertible bonds"
+      },
+      "correct": "C",
+      "explanation": "Out-of-the-money options/warrants are not dilutive because holders wouldn't exercise. Only in-the-money (exercise price below market) securities are included in diluted share count.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "equity"
+    },
+    {
+      "id": "acc-070",
+      "question": "A company has $20M cash, $80M A/R, $50M inventory, $30M prepaid expenses, and $100M current liabilities. What is the Quick Ratio?",
+      "options": {
+        "A": "1.8x",
+        "B": "1.5x",
+        "C": "1.0x",
+        "D": "1.3x"
+      },
+      "correct": "C",
+      "explanation": "Quick Ratio = (Cash + A/R) / Current Liabilities = ($20M + $80M) / $100M = 1.0x. Inventory and prepaids are excluded as they're less liquid.",
+      "difficulty": "easy",
+      "type": "formulaic",
+      "topic": "liquidity"
+    },
+    {
+      "id": "acc-071",
+      "question": "Inventory write-down of $40M (25% tax rate). Separately, inventory is sold for cost. What is the combined cash impact?",
+      "options": {
+        "A": "-$30M",
+        "B": "$0",
+        "C": "+$10M",
+        "D": "-$40M"
+      },
+      "correct": "C",
+      "explanation": "Write-down: non-cash, $10M tax shield (+$10M cash). Sale at cost: Cash in = COGS out, no NI impact, no cash impact. Combined: +$10M from tax shield only.",
+      "difficulty": "hard",
+      "type": "edge-case",
+      "topic": "inventory"
+    },
+    {
+      "id": "acc-072",
+      "question": "A company has Asset Turnover of 0.8x, EBIT margin of 15%, and assets of $500M. What is EBIT?",
+      "options": {
+        "A": "$60M",
+        "B": "$75M",
+        "C": "$80M",
+        "D": "$100M"
+      },
+      "correct": "A",
+      "explanation": "Revenue = Asset Turnover × Assets = 0.8 × $500M = $400M. EBIT = EBIT Margin × Revenue = 15% × $400M = $60M.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "profitability"
+    },
+    {
+      "id": "acc-073",
+      "question": "A company grants 1M stock options with $20 strike price when stock is $25. Using Black-Scholes, fair value is $8/option. What is Year 1 SBC expense if options vest over 4 years?",
+      "options": {
+        "A": "$8M",
+        "B": "$2M",
+        "C": "$5M",
+        "D": "$1.25M"
+      },
+      "correct": "B",
+      "explanation": "Total SBC = 1M options × $8 = $8M. Vesting over 4 years = $8M / 4 = $2M per year. Expense recognized ratably over vesting period.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "equity"
+    },
+    {
+      "id": "acc-074",
+      "question": "Which transaction affects all three financial statements in the period it occurs?",
+      "options": {
+        "A": "Issuing common stock",
+        "B": "Collecting accounts receivable",
+        "C": "Recording revenue on credit",
+        "D": "Paying down debt principal"
+      },
+      "correct": "C",
+      "explanation": "Revenue on credit: IS (revenue, NI), BS (A/R up, RE up), CFS (NI, then A/R working capital adjustment). Stock issuance and debt paydown skip IS. A/R collection skips IS.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "three-statements"
+    },
+    {
+      "id": "acc-075",
+      "question": "A company's pension plan is underfunded by $100M. Where does this appear?",
+      "options": {
+        "A": "Liability of $100M on Balance Sheet",
+        "B": "Expense of $100M on Income Statement",
+        "C": "Cash outflow of $100M on Cash Flow Statement",
+        "D": "Reduction in Goodwill of $100M"
+      },
+      "correct": "A",
+      "explanation": "Underfunded pension (PBO > Plan Assets) appears as a liability on the balance sheet. The full underfunding is recognized. Expense is separate (service cost + interest - expected return).",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "pensions"
+    },
+    {
+      "id": "acc-076",
+      "question": "Fixed Charge Coverage Ratio is 1.5x, EBITDA is $100M, Interest is $30M. What are the fixed charges being covered (rent/lease payments)?",
+      "options": {
+        "A": "$10M",
+        "B": "$20M",
+        "C": "$36.67M",
+        "D": "$40M"
+      },
+      "correct": "C",
+      "explanation": "FCCR = (EBITDA + Rent) / (Interest + Rent) = 1.5x. Let R = rent. (100 + R) / (30 + R) = 1.5. 100 + R = 45 + 1.5R. 55 = 0.5R. R = $110M... Let me recalc: If FCCR = EBITDA / (Interest + Rent) = 1.5x, then 100 / (30 + R) = 1.5, so 30 + R = 66.67, R = $36.67M.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "credit-metrics"
+    },
+    {
+      "id": "acc-077",
+      "question": "A company capitalizes $30M of interest during construction of a new facility. What is the impact vs. expensing?",
+      "options": {
+        "A": "NI higher by $30M; Assets higher by $30M",
+        "B": "NI higher by $22.5M; Assets higher by $30M (at 25% tax)",
+        "C": "NI unchanged; Assets higher by $30M",
+        "D": "NI higher by $30M; Cash higher by $30M"
+      },
+      "correct": "B",
+      "explanation": "Capitalizing vs. expensing: Interest goes to asset instead of expense. Pre-tax NI higher by $30M, after-tax by $22.5M. Assets (PP&E) higher by $30M. Cash unchanged.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "capitalization"
+    },
+    {
+      "id": "acc-078",
+      "question": "Purchase price allocation assigns $80M to customer relationships (10-year life) and $40M to technology (5-year life). Year 1 amortization is:",
+      "options": {
+        "A": "$12M",
+        "B": "$16M",
+        "C": "$24M",
+        "D": "$8M"
+      },
+      "correct": "B",
+      "explanation": "Customer relationships: $80M / 10 = $8M. Technology: $40M / 5 = $8M. Total Year 1 amortization = $8M + $8M = $16M.",
+      "difficulty": "easy",
+      "type": "formulaic",
+      "topic": "intangibles"
+    },
+    {
+      "id": "acc-079",
+      "question": "A company has $30M of restricted cash for debt service. How does this affect Enterprise Value vs. standard cash?",
+      "options": {
+        "A": "No difference - all cash is subtracted",
+        "B": "Restricted cash is NOT subtracted from EV",
+        "C": "Restricted cash is added to EV",
+        "D": "Restricted cash reduces debt, not EV"
+      },
+      "correct": "B",
+      "explanation": "Restricted cash is not available for general use, so it's typically NOT subtracted when calculating EV. Only unrestricted, excess cash is deducted. EV = Equity + Debt - Unrestricted Cash.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "valuation-basics"
+    },
+    {
+      "id": "acc-080",
+      "question": "Days Payable Outstanding (DPO) formula is:",
+      "options": {
+        "A": "(A/P / Revenue) × 365",
+        "B": "(A/P / COGS) × 365",
+        "C": "(COGS / A/P) × 365",
+        "D": "(A/P / Purchases) × 365"
+      },
+      "correct": "B",
+      "explanation": "DPO = (Accounts Payable / COGS) × 365. COGS is used because A/P relates to purchasing inventory/materials, which flows through COGS. Some use Purchases if available.",
+      "difficulty": "easy",
+      "type": "formulaic",
+      "topic": "working-capital"
+    },
+    {
+      "id": "acc-081",
+      "question": "A company's PP&E has a net book value of $200M. Fair value is estimated at $280M. Under GAAP, what adjustment is made?",
+      "options": {
+        "A": "Write up PP&E by $80M",
+        "B": "No adjustment - GAAP uses historical cost",
+        "C": "Record $80M gain in OCI",
+        "D": "Disclose fair value in footnotes but adjust balance sheet"
+      },
+      "correct": "B",
+      "explanation": "GAAP uses historical cost for PP&E. Assets are not written up for appreciation. Fair value may be disclosed, but no balance sheet adjustment unless impairment (write-down) is needed.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "ppe"
+    },
+    {
+      "id": "acc-082",
+      "question": "An equity method investment generates $20M of income for the investor. The investee pays $8M dividend. What is the impact on the investor's financials?",
+      "options": {
+        "A": "NI: +$20M; Investment asset: +$20M; Cash: +$8M",
+        "B": "NI: +$20M; Investment asset: +$12M; Cash: +$8M",
+        "C": "NI: +$8M; Investment asset: unchanged; Cash: +$8M",
+        "D": "NI: +$20M; Investment asset: +$20M; Cash: unchanged"
+      },
+      "correct": "B",
+      "explanation": "Equity method: Record share of NI (+$20M to investment and NI). Dividend reduces investment asset (-$8M) and provides cash (+$8M). Net investment change: +$12M.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "investments"
+    },
+    {
+      "id": "acc-083",
+      "question": "Which working capital item typically has the LARGEST impact on cash conversion cycle for a retailer?",
+      "options": {
+        "A": "Accounts Receivable (most retailers have minimal A/R)",
+        "B": "Inventory (significant investment for retailers)",
+        "C": "Prepaid Expenses",
+        "D": "Accounts Payable (offsets inventory investment)"
+      },
+      "correct": "B",
+      "explanation": "Retailers carry significant inventory (high DIO). A/R is minimal (customers pay immediately). Inventory management is critical to cash cycle. A/P helps but inventory is the largest component.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "working-capital"
+    },
+    {
+      "id": "acc-084",
+      "question": "A company has EBIT of $100M, Net Income of $60M, Tax rate of 25%. What is Interest Expense?",
+      "options": {
+        "A": "$20M",
+        "B": "$40M",
+        "C": "$15M",
+        "D": "$10M"
+      },
+      "correct": "A",
+      "explanation": "EBT = Net Income / (1 - Tax Rate) = $60M / 0.75 = $80M. Interest = EBIT - EBT = $100M - $80M = $20M.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "profitability"
+    },
+    {
+      "id": "acc-085",
+      "question": "Under ASC 842, a company has a 5-year operating lease with $10M annual payments. At inception, what is recorded on the Balance Sheet (assume 5% discount rate)?",
+      "options": {
+        "A": "Nothing - operating leases are off-balance sheet",
+        "B": "Right-of-use asset and lease liability, both ~$43M",
+        "C": "Prepaid rent of $50M",
+        "D": "Deferred rent liability of $50M"
+      },
+      "correct": "B",
+      "explanation": "ASC 842 requires operating leases on balance sheet. ROU asset and lease liability = PV of payments = $10M × ~4.33 (PV factor for 5 years at 5%) ≈ $43M.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "leases"
+    },
+    {
+      "id": "acc-086",
+      "question": "A company has $50M in treasury stock. It reissues $20M of these shares to employees at $5M below market value. What is the impact on Total Equity?",
+      "options": {
+        "A": "Equity increases by $15M",
+        "B": "Equity increases by $20M",
+        "C": "Equity increases by $5M",
+        "D": "Equity is unchanged"
+      },
+      "correct": "A",
+      "explanation": "Treasury stock reduced by $20M (equity increases). Cash received = $15M ($20M value - $5M discount). But wait: If reissued at $5M below market for $15M cash: Treasury -$20M (at cost), Cash +$15M, APIC -$5M. Net equity: +$15M (cash in) or complicated by APIC. Simpler: Equity up by cash received = +$15M.",
+      "difficulty": "hard",
+      "type": "edge-case",
+      "topic": "equity"
+    },
+    {
+      "id": "acc-087",
+      "question": "Net Debt / EBITDA is 3.0x. The company wants to reduce leverage to 2.0x with $100M EBITDA. How much debt paydown is needed (assuming no other changes)?",
+      "options": {
+        "A": "$50M",
+        "B": "$100M",
+        "C": "$150M",
+        "D": "$200M"
+      },
+      "correct": "B",
+      "explanation": "Current Net Debt = 3.0 × $100M = $300M. Target Net Debt = 2.0 × $100M = $200M. Paydown needed = $300M - $200M = $100M.",
+      "difficulty": "easy",
+      "type": "formulaic",
+      "topic": "credit-metrics"
+    },
+    {
+      "id": "acc-088",
+      "question": "A company sells a division for $150M. The division had $100M of assets and $30M of allocated liabilities on the books. What gain/loss is recorded?",
+      "options": {
+        "A": "$50M gain",
+        "B": "$80M gain",
+        "C": "$20M gain",
+        "D": "$150M gain"
+      },
+      "correct": "B",
+      "explanation": "Net book value = Assets - Liabilities = $100M - $30M = $70M. Gain = Proceeds - Net Book Value = $150M - $70M = $80M.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "divestitures"
+    },
+    {
+      "id": "acc-089",
+      "question": "A company has $200M of convertible debt (converts at $50/share). Stock price is $60. What is the diluted share count impact (4M shares outstanding)?",
+      "options": {
+        "A": "No impact - convert debt would reduce debt",
+        "B": "+4M shares (full dilution)",
+        "C": "+0.67M shares (treasury stock method)",
+        "D": "+2M shares (if-converted method)"
+      },
+      "correct": "B",
+      "explanation": "Convertible debt uses if-converted method. At $50 conversion: $200M / $50 = 4M potential shares. Since in-the-money ($60 > $50), include full 4M shares in diluted count. Interest add-back to NI for diluted EPS.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "equity"
+    },
+    {
+      "id": "acc-090",
+      "question": "Gross Margin is 40%, Operating Margin is 15%, Net Margin is 9%. What can you infer about this company?",
+      "options": {
+        "A": "High interest expense relative to operating income",
+        "B": "Operating expenses are 25% of revenue",
+        "C": "Tax rate is approximately 40%",
+        "D": "Both B and C"
+      },
+      "correct": "D",
+      "explanation": "OpEx = Gross Margin - Operating Margin = 40% - 15% = 25% of revenue. Tax/Interest takes Op Margin from 15% to 9%. If minimal interest, Tax = (15% - 9%) / 15% ≈ 40%. Both B and C are reasonable inferences.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "profitability"
+    }
+  ]
+}

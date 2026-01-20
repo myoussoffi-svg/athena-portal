@@ -1,13 +1,7 @@
-import { Inngest } from 'inngest';
-
-// Create Inngest client
-export const inngest = new Inngest({
-  id: 'athena-portal',
-  // Event types for type safety
-});
+import { Inngest, EventSchemas } from 'inngest';
 
 // Event type definitions
-export type InterviewEvents = {
+type Events = {
   'interview/submitted': {
     data: {
       attemptId: string;
@@ -22,4 +16,22 @@ export type InterviewEvents = {
       };
     };
   };
+  'resume/submitted': {
+    data: {
+      feedbackId: string;
+      userId: string;
+      trackSlug: string;
+      resumeObjectKey: string;
+      resumeFileName: string;
+    };
+  };
 };
+
+// Create Inngest client
+export const inngest = new Inngest({
+  id: 'athena-portal',
+  schemas: new EventSchemas().fromRecord<Events>(),
+});
+
+// Re-export for backward compatibility
+export type InterviewEvents = Pick<Events, 'interview/submitted' | 'interview/processing-failed'>;

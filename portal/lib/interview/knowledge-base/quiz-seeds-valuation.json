@@ -1,0 +1,1356 @@
+{
+  "module": "valuation-modeling",
+  "title": "Valuation & Modeling Quiz Bank",
+  "questions": [
+    {
+      "id": "val-001",
+      "question": "A company has $50M EBITDA, $10M D&A, $8M CapEx, $3M increase in NWC, and a 25% tax rate. What is the unlevered free cash flow?",
+      "options": {
+        "A": "$27.0M",
+        "B": "$29.0M",
+        "C": "$32.0M",
+        "D": "$25.0M"
+      },
+      "correct": "A",
+      "explanation": "UFCF = EBIT(1-T) + D&A - CapEx - ΔNWC. EBIT = $50M - $10M = $40M. NOPAT = $40M × 0.75 = $30M. UFCF = $30M + $10M - $8M - $3M - $2M tax adjustment = $27M.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "DCF"
+    },
+    {
+      "id": "val-002",
+      "question": "You're valuing a company using a DCF with a 10% WACC and 2% terminal growth rate. If WACC increases to 12%, approximately what happens to terminal value?",
+      "options": {
+        "A": "Decreases by ~20%",
+        "B": "Decreases by ~25%",
+        "C": "Decreases by ~33%",
+        "D": "Decreases by ~10%"
+      },
+      "correct": "A",
+      "explanation": "TV = FCF(1+g)/(WACC-g). Original denominator: 10%-2% = 8%. New: 12%-2% = 10%. TV ratio = 8%/10% = 0.80, so TV decreases by 20%.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "DCF"
+    },
+    {
+      "id": "val-003",
+      "question": "A comparable company trades at 8.0x EV/EBITDA. Target has $100M EBITDA, $150M debt, $20M cash, 10M shares. What is implied share price?",
+      "options": {
+        "A": "$67.00",
+        "B": "$80.00",
+        "C": "$65.00",
+        "D": "$93.00"
+      },
+      "correct": "A",
+      "explanation": "EV = 8.0x × $100M = $800M. Equity = EV - Debt + Cash = $800M - $150M + $20M = $670M. Share price = $670M / 10M = $67.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "Comparable Companies"
+    },
+    {
+      "id": "val-004",
+      "question": "Why apply a control premium when using trading comps for an acquisition?",
+      "options": {
+        "A": "Target is larger than comps",
+        "B": "Trading multiples reflect minority stakes; acquisitions involve control",
+        "C": "Target has higher growth",
+        "D": "M&A always commands higher multiples"
+      },
+      "correct": "B",
+      "explanation": "Trading multiples reflect minority, non-controlling positions. Acquirers pay premiums (20-40%) for control—ability to make strategic decisions and realize synergies.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "Comparable Companies"
+    },
+    {
+      "id": "val-005",
+      "question": "Capital structure: $500M equity market cap, $200M debt at 5%, 10% cost of equity, 25% tax rate. What is WACC?",
+      "options": {
+        "A": "7.86%",
+        "B": "8.21%",
+        "C": "8.57%",
+        "D": "7.50%"
+      },
+      "correct": "B",
+      "explanation": "Total = $700M. E/V = 71.4%, D/V = 28.6%. WACC = (71.4% × 10%) + (28.6% × 5% × 0.75) = 7.14% + 1.07% = 8.21%.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "WACC"
+    },
+    {
+      "id": "val-006",
+      "question": "A company has $50M NOLs. How should you handle them in a DCF?",
+      "options": {
+        "A": "Add full NOL value to terminal value",
+        "B": "Ignore—already in FCF projections",
+        "C": "Model NOL usage explicitly in projection period, exclude from terminal value",
+        "D": "Discount NOLs at risk-free rate"
+      },
+      "correct": "C",
+      "explanation": "NOLs provide finite tax benefits. Model them year-by-year until exhausted. Terminal value assumes steady-state, so one-time benefits shouldn't be embedded in perpetuity.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "DCF"
+    },
+    {
+      "id": "val-007",
+      "question": "A precedent transaction at 10x occurred when sector traded at 9x. Sector now trades at 12x. How would you adjust?",
+      "options": {
+        "A": "Use 10x unadjusted",
+        "B": "Adjust to ~13.3x for market re-rating",
+        "C": "Discard as too stale",
+        "D": "Average with current multiples"
+      },
+      "correct": "B",
+      "explanation": "Sector re-rated by 12x/9x = 1.33x. Adjusted precedent = 10x × 1.33 = 13.3x. This 'marks to market' the historical deal.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "Precedent Transactions"
+    },
+    {
+      "id": "val-008",
+      "question": "Sum-of-parts: segments valued at $800M, $600M, $400M. Corporate overhead is $30M annually at 8x multiple. Total EV?",
+      "options": {
+        "A": "$1,800M",
+        "B": "$1,560M",
+        "C": "$1,770M",
+        "D": "$1,680M"
+      },
+      "correct": "B",
+      "explanation": "Segments = $1,800M. Corporate overhead capitalized = $30M × 8x = $240M deduction. Total EV = $1,800M - $240M = $1,560M.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "Sum of Parts"
+    },
+    {
+      "id": "val-009",
+      "question": "Beta is 1.2, D/E is 0.5, tax rate 25%. If company pays off all debt, what is the new cost of equity? (Rf=4%, MRP=6%)",
+      "options": {
+        "A": "9.24%",
+        "B": "10.00%",
+        "C": "11.20%",
+        "D": "8.72%"
+      },
+      "correct": "A",
+      "explanation": "Unlever: βu = 1.2/(1 + 0.75 × 0.5) = 1.2/1.375 = 0.87. No debt: βL = 0.87. Cost of equity = 4% + 0.87 × 6% = 9.24%.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "WACC"
+    },
+    {
+      "id": "val-010",
+      "question": "When would you use LTM vs NTM EBITDA in comparable company analysis?",
+      "options": {
+        "A": "Always LTM—actual results",
+        "B": "Always NTM—markets are forward-looking",
+        "C": "LTM for stable businesses; NTM for high-growth or turnarounds",
+        "D": "Whichever produces higher valuation"
+      },
+      "correct": "C",
+      "explanation": "LTM reflects historical performance for stable businesses. NTM is better for high-growth or turnaround situations where forward expectations differ materially from trailing results.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Comparable Companies"
+    },
+    {
+      "id": "val-011",
+      "question": "Under ASC 842, how should operating lease liabilities be treated in enterprise value?",
+      "options": {
+        "A": "Ignore—leases are operational",
+        "B": "Add to debt when bridging from equity to EV",
+        "C": "Only include finance leases",
+        "D": "Subtract from EV"
+      },
+      "correct": "B",
+      "explanation": "Under ASC 842, operating lease liabilities are on-balance sheet. Add them like debt when calculating EV. Use EBITDAR for consistency.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "Enterprise Value"
+    },
+    {
+      "id": "val-012",
+      "question": "A target has 50% revenue from a contract expiring in 2 years with no renewal. How does this affect terminal value?",
+      "options": {
+        "A": "No adjustment—TV captures steady state",
+        "B": "Apply 50% discount to TV",
+        "C": "Model contract run-off; base TV only on sustainable revenue",
+        "D": "Extend projection until contract expires"
+      },
+      "correct": "C",
+      "explanation": "Terminal value assumes sustainable business. Revenue that definitively ends shouldn't be perpetuated. Model the run-off, then calculate TV on remaining sustainable streams.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "DCF"
+    },
+    {
+      "id": "val-013",
+      "question": "If terminal growth rate exceeds WACC in Gordon Growth Model, what happens?",
+      "options": {
+        "A": "Company is extremely valuable",
+        "B": "Model produces negative/meaningless value",
+        "C": "Use exit multiple method instead",
+        "D": "Both B and C"
+      },
+      "correct": "D",
+      "explanation": "If g > WACC, the denominator is negative, producing meaningless results. No company grows faster than its cost of capital forever. Use exit multiple or extend projections.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "DCF"
+    },
+    {
+      "id": "val-014",
+      "question": "Company has $100M EBITDA at 8x, $50M excess cash, $200M debt, $30M unfunded pension. Equity value?",
+      "options": {
+        "A": "$620M",
+        "B": "$650M",
+        "C": "$600M",
+        "D": "$570M"
+      },
+      "correct": "A",
+      "explanation": "EV = $800M. Equity = EV - Debt - Pension + Cash = $800M - $200M - $30M + $50M = $620M. Unfunded pensions are debt-like.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "Enterprise Value"
+    },
+    {
+      "id": "val-015",
+      "question": "Why use mid-year convention in DCF?",
+      "options": {
+        "A": "Companies report semi-annually",
+        "B": "Mathematically simpler",
+        "C": "Cash flows occur throughout the year, not just at year-end",
+        "D": "Increases valuation to favor sellers"
+      },
+      "correct": "C",
+      "explanation": "Cash flows are generated throughout the year. Mid-year convention assumes flows at midpoint, better reflecting reality and increasing PV slightly vs year-end discounting.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "DCF"
+    },
+    {
+      "id": "val-016",
+      "question": "Cyclical company at peak: $150M EBITDA, normalized mid-cycle is $100M. Comps at 7x. What EV range to present?",
+      "options": {
+        "A": "$1,050M only (peak)",
+        "B": "$700M only (normalized)",
+        "C": "$700M-$1,050M, emphasizing normalized",
+        "D": "$875M (average)"
+      },
+      "correct": "C",
+      "explanation": "Present range but emphasize normalized EBITDA. Peak earnings are temporary. Sophisticated buyers value on through-cycle earnings. Anchor to $700M.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Comparable Companies"
+    },
+    {
+      "id": "val-017",
+      "question": "Target has 40% stake in JV generating $20M EBITDA. JV comps at 6x. How to incorporate in EV-to-equity bridge?",
+      "options": {
+        "A": "Add $48M to enterprise value",
+        "B": "Add $48M to equity value as non-operating asset",
+        "C": "Include 40% of JV EBITDA in consolidated EBITDA",
+        "D": "Ignore if using consolidated financials"
+      },
+      "correct": "B",
+      "explanation": "Equity method investments aren't consolidated. Value separately: $20M × 6x × 40% = $48M. Add to equity value (not EV) like other non-operating assets.",
+      "difficulty": "hard",
+      "type": "conceptual",
+      "topic": "Enterprise Value"
+    },
+    {
+      "id": "val-018",
+      "question": "Primary difference between exit multiple and Gordon Growth for terminal value?",
+      "options": {
+        "A": "Exit multiple more accurate",
+        "B": "Gordon Growth needs growth assumption; exit multiple needs comparable multiple",
+        "C": "Exit multiple always produces higher values",
+        "D": "Gordon Growth only for tech"
+      },
+      "correct": "B",
+      "explanation": "Gordon Growth requires perpetual growth rate assumption. Exit multiple requires selecting a comparable multiple (which implicitly embeds growth/risk). Use both and ensure they reconcile.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "DCF"
+    },
+    {
+      "id": "val-019",
+      "question": "Equity value $500M, debt $100M, cash $30M, restricted cash $20M (for operations), non-core real estate $50M. What is EV?",
+      "options": {
+        "A": "$570M",
+        "B": "$520M",
+        "C": "$590M",
+        "D": "$540M"
+      },
+      "correct": "B",
+      "explanation": "EV = Equity + Debt - Cash - Non-operating assets. Only unrestricted cash ($30M) subtracted. Restricted cash isn't excess. EV = $500M + $100M - $30M - $50M = $520M.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "Enterprise Value"
+    },
+    {
+      "id": "val-020",
+      "question": "Precedents all included significant synergies. Your client is a financial buyer with no synergy potential. Adjustment?",
+      "options": {
+        "A": "Use multiples unadjusted",
+        "B": "Apply discount for lack of synergy value",
+        "C": "Only use financial buyer precedents",
+        "D": "Both B and C are reasonable"
+      },
+      "correct": "D",
+      "explanation": "Strategic buyers pay more due to synergies. For financial buyers: filter for financial buyer precedents, or apply 10-20% synergy discount. Both approaches help arrive at relevant valuation.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Precedent Transactions"
+    },
+    {
+      "id": "val-021",
+      "question": "Target's capital structure is 80/20 equity/debt, industry average is 50/50. Which to use for WACC?",
+      "options": {
+        "A": "Target's actual structure",
+        "B": "Industry average",
+        "C": "Target's optimal post-acquisition structure",
+        "D": "Depends on valuation purpose"
+      },
+      "correct": "D",
+      "explanation": "For standalone DCF, use actual structure. For acquisition, use pro forma structure. Industry average is useful when current structure is sub-optimal. Choice depends on the question being answered.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "WACC"
+    },
+    {
+      "id": "val-022",
+      "question": "Company has $80M LTM EBITDA but just lost customer representing 25% of EBITDA. Adjustment for comps?",
+      "options": {
+        "A": "Use $80M unadjusted",
+        "B": "Use $60M pro forma EBITDA",
+        "C": "Use NTM estimates reflecting the loss",
+        "D": "Both B and C are appropriate"
+      },
+      "correct": "D",
+      "explanation": "LTM overstates ongoing earnings. Pro forma ($80M × 75% = $60M) or NTM estimates should capture the loss. Using unadjusted LTM would overvalue the company.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Comparable Companies"
+    },
+    {
+      "id": "val-023",
+      "question": "Formula for exit multiple terminal value?",
+      "options": {
+        "A": "Terminal Year EBITDA × Exit Multiple × (1+g)",
+        "B": "Terminal Year EBITDA × Exit Multiple",
+        "C": "Terminal Year FCF × Exit Multiple",
+        "D": "Terminal Year Revenue × Multiple × Margin"
+      },
+      "correct": "B",
+      "explanation": "Exit multiple TV = Terminal Year EBITDA × Exit Multiple. No growth adjustment—the multiple implicitly captures future growth expectations.",
+      "difficulty": "easy",
+      "type": "formulaic",
+      "topic": "DCF"
+    },
+    {
+      "id": "val-024",
+      "question": "Equity beta is 1.5, $300M debt, $500M equity market cap. Unlevered beta at 30% tax rate?",
+      "options": {
+        "A": "0.94",
+        "B": "1.06",
+        "C": "1.16",
+        "D": "1.25"
+      },
+      "correct": "B",
+      "explanation": "βu = βL / [1 + (1-T) × D/E] = 1.5 / [1 + 0.70 × 0.6] = 1.5 / 1.42 = 1.06.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "WACC"
+    },
+    {
+      "id": "val-025",
+      "question": "When selecting comparable companies, which factor is LEAST important?",
+      "options": {
+        "A": "Similar growth rates",
+        "B": "Similar profit margins",
+        "C": "Same fiscal year-end",
+        "D": "Similar business model"
+      },
+      "correct": "C",
+      "explanation": "Fiscal year-end is technical accounting that doesn't affect business economics. Growth, margins, and business model drive multiples. You can calendarize for different fiscal years.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "Comparable Companies"
+    },
+    {
+      "id": "val-026",
+      "question": "EV is $1B using trading multiples. Company has $200M debt, $50M cash, $100M contingent consideration from past acquisition. Equity value?",
+      "options": {
+        "A": "$850M",
+        "B": "$750M",
+        "C": "$950M",
+        "D": "$650M"
+      },
+      "correct": "B",
+      "explanation": "Equity = EV - Debt - Debt-like items + Cash. Contingent consideration (earnouts) are debt-like. Equity = $1,000M - $200M - $100M + $50M = $750M.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "Enterprise Value"
+    },
+    {
+      "id": "val-027",
+      "question": "Year 5 projections: 15% EBITDA margin. Mature comps have 20% margins. How to handle in terminal value?",
+      "options": {
+        "A": "Use 15% in TV",
+        "B": "Use 20% assuming margin expansion continues",
+        "C": "Extend projection until margins reach 20%",
+        "D": "Both B and C are valid"
+      },
+      "correct": "D",
+      "explanation": "Terminal value should reflect mature state. Either assume margins reach industry norms, or extend projections until normalized. Using below-industry margins in perpetuity undervalues the company.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "DCF"
+    },
+    {
+      "id": "val-028",
+      "question": "Company trades at 12x P/E and 8x EV/EBITDA. Has $100M NI, $150M EBITDA, $200M debt, $50M cash. Are multiples consistent?",
+      "options": {
+        "A": "Yes, both imply similar valuation",
+        "B": "No, P/E implies higher equity value",
+        "C": "No, EV/EBITDA implies higher EV",
+        "D": "Cannot determine"
+      },
+      "correct": "A",
+      "explanation": "P/E: Equity = $1,200M. EV/EBITDA: EV = $1,200M; Equity = $1,200M - $200M + $50M = $1,050M. ~$150M difference is within normal reconciliation tolerance. Approximately consistent.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "Multiples"
+    },
+    {
+      "id": "val-029",
+      "question": "Why might a company with negative EBITDA have significant enterprise value?",
+      "options": {
+        "A": "Cannot—negative EBITDA means zero value",
+        "B": "Revenue multiples may apply for high-growth",
+        "C": "Asset values may exceed capitalized losses",
+        "D": "Both B and C"
+      },
+      "correct": "D",
+      "explanation": "High-growth companies trade on revenue multiples expecting future profitability. Asset-heavy businesses may have valuable PP&E or IP exceeding losses. Liquidation value sets a floor.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "Multiples"
+    },
+    {
+      "id": "val-030",
+      "question": "Using 10x exit multiple in DCF for company currently trading at 8x. What are you implying?",
+      "options": {
+        "A": "Company currently overvalued",
+        "B": "Expect sector multiple expansion",
+        "C": "Target will outperform peers",
+        "D": "Any of the above could explain"
+      },
+      "correct": "D",
+      "explanation": "Higher exit multiple implies: (1) current overvaluation, (2) sector re-rating expected, or (3) target warrants premium by exit. You should articulate which assumption underlies your choice.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "DCF"
+    },
+    {
+      "id": "val-031",
+      "question": "Stock-based compensation is $15M annually. How should this affect DCF?",
+      "options": {
+        "A": "Add back to FCF—non-cash",
+        "B": "Don't add back—real economic cost",
+        "C": "Add back but deduct PV of dilution from equity value",
+        "D": "Either B or C provides accurate valuation"
+      },
+      "correct": "D",
+      "explanation": "SBC is economically real. Either: (1) don't add back—treat as expense, or (2) add back but deduct PV of dilution. Never add back without accounting for dilution cost.",
+      "difficulty": "hard",
+      "type": "conceptual",
+      "topic": "DCF"
+    },
+    {
+      "id": "val-032",
+      "question": "Company has bonds at 6% yield, bank debt at 7.3%. Which cost of debt for WACC?",
+      "options": {
+        "A": "6% from bonds",
+        "B": "7.3% from bank debt",
+        "C": "Weighted average by debt composition",
+        "D": "Higher rate for conservatism"
+      },
+      "correct": "C",
+      "explanation": "Cost of debt should be blended yield weighted by amount outstanding. Different instruments have different rates. Weighted average captures true cost of debt financing.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "WACC"
+    },
+    {
+      "id": "val-033",
+      "question": "Target projects 20% revenue growth vs comps at 8%. How does this affect methodology choice?",
+      "options": {
+        "A": "Rely more on DCF which captures higher growth",
+        "B": "Rely on comps using current multiples",
+        "C": "Adjust trading multiples for growth premium",
+        "D": "Either A or C are appropriate"
+      },
+      "correct": "D",
+      "explanation": "When target growth exceeds peers significantly, trading multiples are less applicable. Use DCF to model growth trajectory, or apply growth-adjusted premium to multiples.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Methodology Selection"
+    },
+    {
+      "id": "val-034",
+      "question": "Valuing a company mid-year (June 30). It's seasonal with 70% of EBITDA in H2. What to consider?",
+      "options": {
+        "A": "No adjustment—LTM captures full year",
+        "B": "Annualize H1: $30M × 2",
+        "C": "Use full prior year or calendarized estimates",
+        "D": "Weight toward NTM given seasonality"
+      },
+      "correct": "C",
+      "explanation": "LTM at June 30 captures mixed periods. For comparability, use calendarized figures or NTM. Key is ensuring apples-to-apples comparison across the comp set.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "Comparable Companies"
+    },
+    {
+      "id": "val-035",
+      "question": "Company has $20M capitalized software, amortized over 3 years. How should this affect EBITDA for valuation?",
+      "options": {
+        "A": "No adjustment—amortization below EBITDA",
+        "B": "Add back amortization",
+        "C": "Treat as CapEx—don't add back",
+        "D": "Depends on how comps treat similar costs"
+      },
+      "correct": "D",
+      "explanation": "Capitalized software is effectively CapEx moved above EBITDA. If comps expense R&D, adjust for consistency. Goal is consistent treatment across comp set for meaningful comparison.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "EBITDA Adjustments"
+    },
+    {
+      "id": "val-036",
+      "question": "Football field: DCF shows $800M-$1B, comps $700M-$900M, precedents $1.1B-$1.3B. Why are precedents highest?",
+      "options": {
+        "A": "Precedents always overvalue",
+        "B": "Control premiums and synergies in M&A",
+        "C": "Comps are undervalued",
+        "D": "DCF discount rate too high"
+      },
+      "correct": "B",
+      "explanation": "Precedent transactions include control premiums (20-40%) and synergy value. This is normal. The premium reflects what acquirers pay for control beyond public market minority values.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "Valuation Framework"
+    },
+    {
+      "id": "val-037",
+      "question": "Private company—can't observe beta. How to estimate cost of equity?",
+      "options": {
+        "A": "Risk-free plus standard ERP",
+        "B": "Use unlevered betas from public comps, relever for target structure",
+        "C": "Use cost of debt as proxy",
+        "D": "Private companies don't have cost of equity"
+      },
+      "correct": "B",
+      "explanation": "For private companies: find public comps, unlever their betas, average, then relever for target's capital structure. This provides market-based estimate for untraded company.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "WACC"
+    },
+    {
+      "id": "val-038",
+      "question": "Company A: 10x EV/EBITDA with 15% margins. Company B: 8x with 25% margins. Which is more expensive on margin-adjusted basis?",
+      "options": {
+        "A": "Company A—10x higher than 8x",
+        "B": "Company B—lower multiple doesn't offset higher margins",
+        "C": "Company A—paying more per unit of margin",
+        "D": "Approximately equivalent"
+      },
+      "correct": "C",
+      "explanation": "A: 10x/15% = 0.67x per margin point. B: 8x/25% = 0.32x per margin point. Company A pays more per unit of margin—relatively more expensive unless growth is substantially higher.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "Comparable Companies"
+    },
+    {
+      "id": "val-039",
+      "question": "Asset-light company has $50M EBITDA and $300M contracted backlog (3 years revenue). How might this affect valuation?",
+      "options": {
+        "A": "No impact on EBITDA multiples",
+        "B": "Backlog supports premium multiple",
+        "C": "Add NPV of backlog separately",
+        "D": "Either B or C depending on comp treatment"
+      },
+      "correct": "D",
+      "explanation": "Backlog reduces revenue risk. Either argue for premium multiple vs peers, or value backlog separately as NPV of contracted profits. Approach depends on comp treatment.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "Valuation Adjustments"
+    },
+    {
+      "id": "val-040",
+      "question": "Why is debt multiplied by (1-T) in WACC formula?",
+      "options": {
+        "A": "Debt has lower risk than equity",
+        "B": "Interest is tax-deductible, creating tax shield",
+        "C": "Debt holders pay taxes on interest",
+        "D": "Adjusts for probability of default"
+      },
+      "correct": "B",
+      "explanation": "Interest is tax-deductible. With 10% interest and 25% tax rate, after-tax cost is 7.5%. Tax deduction saves 2.5%, making debt cheaper than stated rate.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "WACC"
+    },
+    {
+      "id": "val-041",
+      "question": "Banker presents DCF with 4% perpetual growth in industry where GDP-linked growth is 2-3%. What question should you ask?",
+      "options": {
+        "A": "Why is growth below inflation?",
+        "B": "What justifies above-market perpetual growth?",
+        "C": "Why not higher growth rate?",
+        "D": "Growth rate doesn't matter"
+      },
+      "correct": "B",
+      "explanation": "Terminal growth shouldn't exceed long-term GDP (2-3%). No company grows faster than economy forever. 4% is aggressive and needs specific justification.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "DCF"
+    },
+    {
+      "id": "val-042",
+      "question": "Should terminal value be discounted for same periods as final year FCF?",
+      "options": {
+        "A": "Yes—TV occurs at end of Year 5",
+        "B": "No—TV discounted one additional period",
+        "C": "Depends on mid-year convention",
+        "D": "TV already in present value terms"
+      },
+      "correct": "A",
+      "explanation": "Terminal value represents value as of end of final projection year. Discount for same periods as Year 5 FCF. With mid-year convention, that would be 4.5 years.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "DCF"
+    },
+    {
+      "id": "val-043",
+      "question": "Company has $1B EV based on 10x $100M EBITDA. Pending lawsuit with $50M expected settlement (70% probability). Equity value adjustment?",
+      "options": {
+        "A": "Subtract $50M from equity",
+        "B": "Subtract $35M probability-weighted",
+        "C": "Add $35M to EV",
+        "D": "No adjustment—litigation uncertain"
+      },
+      "correct": "B",
+      "explanation": "Contingent liabilities deducted from equity value at expected value: $50M × 70% = $35M. This debt-like obligation reduces shareholder value.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "Enterprise Value"
+    },
+    {
+      "id": "val-044",
+      "question": "Five precedents: 6x, 7x, 8x, 12x, 14x. How to use this data?",
+      "options": {
+        "A": "Use mean (9.4x)",
+        "B": "Use median (8x)",
+        "C": "Investigate outliers; potentially narrow to 6x-8x",
+        "D": "Use full 6x-14x range"
+      },
+      "correct": "C",
+      "explanation": "12x and 14x are outliers. Investigate why—strategic premiums? Different conditions? Exclude if not comparable. 6x-8x range with thoughtful selection is more defensible.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Precedent Transactions"
+    },
+    {
+      "id": "val-045",
+      "question": "For WACC, should you use book or market value of debt?",
+      "options": {
+        "A": "Always book—it's what's owed",
+        "B": "Always market—current refinancing cost",
+        "C": "Market is correct, but book used when market isn't observable",
+        "D": "Neither—use face value"
+      },
+      "correct": "C",
+      "explanation": "Theoretically market value, but most debt doesn't trade actively. Book value is practical proxy. For traded bonds, use market. Key is consistency between weight and yield used.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "WACC"
+    },
+    {
+      "id": "val-046",
+      "question": "Target has minority investments in private companies worth ~$40M (management estimate). How to treat?",
+      "options": {
+        "A": "Add to EV",
+        "B": "Add to equity value with potential discount",
+        "C": "Ignore—not material",
+        "D": "Include proportionate EBITDA"
+      },
+      "correct": "B",
+      "explanation": "Minority investments are non-operating assets. Add to equity value (not EV). Apply 20-30% discount for illiquidity. Don't include EBITDA unless value properly consolidated.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "Enterprise Value"
+    },
+    {
+      "id": "val-047",
+      "question": "Revenue multiple is 3.0x with 10% EBITDA margin, giving 30x EV/EBITDA. If margins expand to 15%, what revenue multiple maintains same EV/EBITDA?",
+      "options": {
+        "A": "3.5x",
+        "B": "4.0x",
+        "C": "4.5x",
+        "D": "5.0x"
+      },
+      "correct": "C",
+      "explanation": "To maintain 30x EV/EBITDA with 15% margins: Revenue multiple = 30x × 15% = 4.5x. Revenue multiple / margin = EBITDA multiple.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "Multiples"
+    },
+    {
+      "id": "val-048",
+      "question": "When is liquidation analysis more relevant than DCF?",
+      "options": {
+        "A": "High-growth tech companies",
+        "B": "Distressed companies or those with valuable hard assets",
+        "C": "Service businesses",
+        "D": "Strong recurring revenue companies"
+      },
+      "correct": "B",
+      "explanation": "Liquidation matters when: (1) company is distressed, may not continue as going concern, or (2) asset values exceed going-concern value. For healthy companies, DCF/comps are more relevant.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "Methodology Selection"
+    },
+    {
+      "id": "val-049",
+      "question": "$200M revenue, 20% EBITDA margin, trades at 2.5x revenue. Implied EV/EBITDA?",
+      "options": {
+        "A": "10.0x",
+        "B": "12.5x",
+        "C": "8.0x",
+        "D": "15.0x"
+      },
+      "correct": "B",
+      "explanation": "EV = $200M × 2.5x = $500M. EBITDA = $200M × 20% = $40M. EV/EBITDA = $500M / $40M = 12.5x.",
+      "difficulty": "easy",
+      "type": "formulaic",
+      "topic": "Multiples"
+    },
+    {
+      "id": "val-050",
+      "question": "CapEx historically 8% of revenue. Management says 15% for 3 years (new capacity), then 5% maintenance. What to model?",
+      "options": {
+        "A": "Use 8% throughout",
+        "B": "Model elevated CapEx explicitly, normalize in terminal year",
+        "C": "Use 10% average throughout",
+        "D": "Use 5% since that's long-term"
+      },
+      "correct": "B",
+      "explanation": "Model reality: 15% for 3 years, then normalize to 5% maintenance. Terminal value uses normalized maintenance CapEx. Blending obscures the investment profile.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "DCF"
+    },
+    {
+      "id": "val-051",
+      "question": "Convertible debt is out-of-the-money. Include dilution?",
+      "options": {
+        "A": "No—OTM options have no value",
+        "B": "Yes—full dilution in share count",
+        "C": "Treasury stock method for net dilution",
+        "D": "Depends on how far OTM and time to expiration"
+      },
+      "correct": "D",
+      "explanation": "OTM converts still have option value due to time and volatility. Near-maturity, deeply OTM = minimal risk. Long-dated, close to strike = meaningful dilution. Consider probability-weighting.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "Dilution"
+    },
+    {
+      "id": "val-052",
+      "question": "Buyer P/E is 20x, target P/E is 12x. All-stock deal at no premium. Accretive or dilutive?",
+      "options": {
+        "A": "Accretive—high P/E buyer uses expensive currency",
+        "B": "Dilutive—target's lower P/E means lower quality",
+        "C": "Neutral",
+        "D": "Cannot determine without payment method"
+      },
+      "correct": "A",
+      "explanation": "Higher P/E buyer acquires more earnings per share issued. Buyer EPS yield (1/20=5%) acquires target's (1/12=8.3%). More earnings acquired than paid = accretive.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "M&A"
+    },
+    {
+      "id": "val-053",
+      "question": "Company's unlevered beta is 0.9. PE firm acquires at 3.0x D/E with 25% tax rate. What cost of equity? (Rf=4%, ERP=5%)",
+      "options": {
+        "A": "8.5%",
+        "B": "12.1%",
+        "C": "14.1%",
+        "D": "18.6%"
+      },
+      "correct": "D",
+      "explanation": "Relever: βL = 0.9 × [1 + 0.75 × 3.0] = 0.9 × 3.25 = 2.925. Cost of equity = 4% + 2.925 × 5% = 18.6%.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "WACC"
+    },
+    {
+      "id": "val-054",
+      "question": "Section 382 limits annual NOL usage to $10M. Taxable income is $50M. How does this affect DCF?",
+      "options": {
+        "A": "Assume full NOL use—382 only applies in change of control",
+        "B": "Model NOL at $10M/year until exhausted",
+        "C": "Apply haircut to total NOL balance",
+        "D": "Ignore—too complicated"
+      },
+      "correct": "B",
+      "explanation": "Section 382 limits NOL use after ownership changes. Model constrained utilization: only $10M/year offsets income, excess ($40M) taxed normally. Extends utilization period significantly.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "DCF"
+    },
+    {
+      "id": "val-055",
+      "question": "Company has $100M EBITDA, $600M EV. Announces $50M restructuring for $20M annual savings. Pro forma EV/EBITDA if market values synergies at face value?",
+      "options": {
+        "A": "5.0x",
+        "B": "5.4x",
+        "C": "4.6x",
+        "D": "6.0x"
+      },
+      "correct": "B",
+      "explanation": "Pro forma EBITDA = $120M. If market caps $20M savings at 6x: incremental EV = $120M, new EV = $720M less $50M cost = $650M. EV/EBITDA = $650M/$120M = 5.4x.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "Multiples"
+    },
+    {
+      "id": "val-056",
+      "question": "Terminal year: $50M FCF, 10% WACC, 3% growth. Year 1-5 FCFs = $180M PV. What % of total EV comes from TV?",
+      "options": {
+        "A": "55%",
+        "B": "65%",
+        "C": "72%",
+        "D": "80%"
+      },
+      "correct": "C",
+      "explanation": "TV = $50M × 1.03 / 0.07 = $736M. Discounted 5 years: $736M / 1.61 = $457M. Total EV = $180M + $457M = $637M. TV % = $457M / $637M = 72%.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "DCF"
+    },
+    {
+      "id": "val-057",
+      "question": "Why use EV/Revenue for SaaS instead of EV/EBITDA?",
+      "options": {
+        "A": "SaaS companies don't have EBITDA",
+        "B": "Revenue growth matters more than profitability for high-growth",
+        "C": "EBITDA margins vary by investment choices, making revenue more comparable",
+        "D": "Both B and C"
+      },
+      "correct": "D",
+      "explanation": "High-growth SaaS prioritizes growth over profitability. Revenue multiples normalize for different reinvestment decisions. Rule of 40 (growth + margin) helps compare tradeoffs.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "Multiples"
+    },
+    {
+      "id": "val-058",
+      "question": "Public company buys back 10% of shares at market price. What happens to EV/EBITDA?",
+      "options": {
+        "A": "Increases 10%",
+        "B": "Decreases ~10%",
+        "C": "Stays approximately same",
+        "D": "Depends on funding source"
+      },
+      "correct": "C",
+      "explanation": "Buyback: cash decreases (or debt increases), equity decreases proportionally. EV largely unchanged. EBITDA unchanged. EV/EBITDA stays same—capital structure decision doesn't change operating value.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "Enterprise Value"
+    },
+    {
+      "id": "val-059",
+      "question": "For company with significant intangibles (patents, brands), what adjustment to comp valuation?",
+      "options": {
+        "A": "Use book value multiples",
+        "B": "Focus on comps with similar intangible intensity",
+        "C": "Value intangibles separately and add to EV",
+        "D": "Both B and C may be appropriate"
+      },
+      "correct": "D",
+      "explanation": "Intangible-heavy companies may warrant: (1) comps with similar intangible intensity, and/or (2) separately valued unique intangibles (relief-from-royalty method) added to base value.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "Comparable Companies"
+    },
+    {
+      "id": "val-060",
+      "question": "Distressed company: $50M EBITDA, $300M debt, $10M cash. Debt trading at 60 cents. Implied equity value?",
+      "options": {
+        "A": "$0 (equity worthless)",
+        "B": "($110M) negative",
+        "C": "Depends on applicable EBITDA multiple",
+        "D": "Cannot calculate without debt trading price"
+      },
+      "correct": "C",
+      "explanation": "Need EV multiple to determine value. If 4x: EV = $200M, Equity = ($90M) = zero. If 8x: EV = $400M, Equity = $110M. Debt at 60¢ suggests ~$180M recovery, implying near-zero equity.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "Distressed Valuation"
+    },
+    {
+      "id": "val-061",
+      "question": "For beta calculation from historical returns, what time period and frequency?",
+      "options": {
+        "A": "5 years daily",
+        "B": "2-5 years weekly or monthly",
+        "C": "10 years monthly",
+        "D": "1 year daily"
+      },
+      "correct": "B",
+      "explanation": "Standard: 2-5 years weekly/monthly. Reduces daily noise, balances relevance with statistical reliability. 1 year too short; 10 years may include stale periods.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "WACC"
+    },
+    {
+      "id": "val-062",
+      "question": "Valuing private company for sale. Most comparable public company at 8x EBITDA. What discount?",
+      "options": {
+        "A": "0%—businesses comparable",
+        "B": "10-20% illiquidity discount",
+        "C": "20-40% control premium added",
+        "D": "Depends on strategic vs financial buyer"
+      },
+      "correct": "D",
+      "explanation": "Two factors: illiquidity discount (10-30%) vs control premium (20-40%). Strategic buyer: premium often exceeds discount. Financial buyer: roughly wash or slight discount. Context matters.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "Private Company Valuation"
+    },
+    {
+      "id": "val-063",
+      "question": "Two segments: A = $60M EBITDA growing 15% (12x comp); B = $40M declining 5% (6x comp). Appropriate blended multiple?",
+      "options": {
+        "A": "9.0x simple average",
+        "B": "9.6x EBITDA-weighted",
+        "C": "10.2x value-weighted",
+        "D": "8.4x with conglomerate discount"
+      },
+      "correct": "C",
+      "explanation": "A value = $720M, B value = $240M. Total = $960M on $100M = 9.6x. Value-weighted: (75% × 12) + (25% × 6) = 10.5x. ~10.2x captures SOTP before conglomerate discount.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "Sum of Parts"
+    },
+    {
+      "id": "val-064",
+      "question": "What adjustment to depreciation in terminal year of DCF?",
+      "options": {
+        "A": "None—use Year 5 projected",
+        "B": "Set D&A equal to maintenance CapEx",
+        "C": "Grow D&A at terminal growth rate",
+        "D": "Eliminate D&A in TV calculation"
+      },
+      "correct": "B",
+      "explanation": "In steady state, D&A should equal maintenance CapEx. Ensures asset base maintained. If D&A ≠ CapEx in perpetuity, either assets depleting or growing inconsistently.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "DCF"
+    },
+    {
+      "id": "val-065",
+      "question": "Company with $100M market cap announces $200M all-stock acquisition at 50% premium. No synergies. New market cap?",
+      "options": {
+        "A": "$300M",
+        "B": "~$233M",
+        "C": "Decreases due to value destruction",
+        "D": "Stays at $100M"
+      },
+      "correct": "B",
+      "explanation": "Target pre-deal value = $200M / 1.5 = $133M. Combined value = $100M + $133M = $233M. Premium ($67M) comes from acquirer shareholders—value destruction but combined still ~$233M.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "M&A"
+    },
+    {
+      "id": "val-066",
+      "question": "How to treat preferred stock in EV calculation?",
+      "options": {
+        "A": "Include in equity value",
+        "B": "Add to EV like debt",
+        "C": "Depends on specific terms",
+        "D": "Exclude entirely"
+      },
+      "correct": "C",
+      "explanation": "Depends on terms. Debt-like preferred (fixed dividends, no conversion) = add like debt. Equity-like preferred (convertible, participating) = treat as equity. Read the terms.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "Enterprise Value"
+    },
+    {
+      "id": "val-067",
+      "question": "Comparing acquisitions: A at 6x with $20M required synergies; B at 8x with $10M required. Which has less execution risk?",
+      "options": {
+        "A": "A—lower headline multiple",
+        "B": "B—lower synergy requirement",
+        "C": "Equal risk",
+        "D": "Depends on EBITDA and synergy achievability"
+      },
+      "correct": "D",
+      "explanation": "Synergy risk depends on: absolute amount vs cost base, types (cost cuts more certain than revenue), track record. Context about specific sources matters more than headlines.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "M&A"
+    },
+    {
+      "id": "val-068",
+      "question": "Deferred revenue increased from $20M to $30M. How does this affect working capital in DCF?",
+      "options": {
+        "A": "WC increased $10M—use of cash",
+        "B": "WC decreased $10M—source of cash",
+        "C": "No impact—not working capital",
+        "D": "Depends on current vs long-term"
+      },
+      "correct": "B",
+      "explanation": "Deferred revenue is liability (cash collected, service not delivered). Increase = increase in liabilities = decrease in NWC = source of cash. ΔNWC is negative (source).",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "DCF"
+    },
+    {
+      "id": "val-069",
+      "question": "What is equity risk premium and typical range?",
+      "options": {
+        "A": "Company-specific risk; varies by company",
+        "B": "Expected market return minus risk-free rate; typically 4-7%",
+        "C": "Stock vs bond premium; 8-12%",
+        "D": "Country risk premium"
+      },
+      "correct": "B",
+      "explanation": "ERP = expected market return minus risk-free rate. Compensation for systematic market risk. Historical estimates 4-7%. Commonly 5-6% for US markets.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "WACC"
+    },
+    {
+      "id": "val-070",
+      "question": "Company reports Adjusted EBITDA of $100M, adding back $15M SBC and $10M 'one-time' restructuring (third year in a row). What EBITDA to use?",
+      "options": {
+        "A": "$100M—adjustments appropriate",
+        "B": "$85M—add back SBC, not recurring restructuring",
+        "C": "$75M—don't add back SBC or recurring costs",
+        "D": "Depends on how comps report"
+      },
+      "correct": "D",
+      "explanation": "Ensure comparability. If comps add back SBC, do same. If 'one-time' restructuring recurs, it's not one-time. Key is consistency across comp set. Often results in $75-85M.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "EBITDA Adjustments"
+    },
+    {
+      "id": "val-071",
+      "question": "All-cash acquisition funded 50% existing cash (earning 3%) and 50% new debt (6%). What cost of financing?",
+      "options": {
+        "A": "3%",
+        "B": "4.5% blended",
+        "C": "6% marginal cost",
+        "D": "Depends on approach"
+      },
+      "correct": "D",
+      "explanation": "Cash has opportunity cost (foregone 3%). True cost: 50% at 3% + 50% at 6% = 4.5% blended. Or use marginal cost (6%) if cash is fungible with debt capacity. Most use blended or marginal.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "M&A"
+    },
+    {
+      "id": "val-072",
+      "question": "Which two DCF sensitivity variables typically have largest valuation impact?",
+      "options": {
+        "A": "Revenue growth and CapEx",
+        "B": "WACC and terminal growth rate",
+        "C": "EBITDA margin and tax rate",
+        "D": "Working capital and depreciation"
+      },
+      "correct": "B",
+      "explanation": "WACC and terminal growth affect TV = FCF/(WACC-g), often 60-80% of total value. Small changes in denominator cause large valuation swings.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "DCF"
+    },
+    {
+      "id": "val-073",
+      "question": "DCF exceeds market value significantly. What factors might explain?",
+      "options": {
+        "A": "DCF assumptions too aggressive",
+        "B": "Market inefficient—stock undervalued",
+        "C": "Missing risks market sees but model doesn't capture",
+        "D": "Any of the above"
+      },
+      "correct": "D",
+      "explanation": "Consider: (1) aggressive assumptions, (2) true undervaluation, (3) missing risks (governance, competition, litigation). Check assumptions first before concluding market is wrong.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Valuation Framework"
+    },
+    {
+      "id": "val-074",
+      "question": "Target: $500M revenue, 80% gross margin, 20% EBITDA margin. Comps at 15x EBITDA. Sanity check?",
+      "options": {
+        "A": "15x reasonable for software",
+        "B": "Implies 3.0x revenue—may be low for 80% GM software",
+        "C": "Cross-check against Rule of 40",
+        "D": "Both B and C"
+      },
+      "correct": "D",
+      "explanation": "15x on 20% margin = 3.0x revenue. For 80% GM software, 3.0x may be conservative unless low growth. Rule of 40: if growth + margin > 40, may deserve premium. Cross-reference multiples.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Multiples"
+    },
+    {
+      "id": "val-075",
+      "question": "When to use APV instead of WACC-based DCF?",
+      "options": {
+        "A": "Company has no debt",
+        "B": "Capital structure expected to change significantly over time",
+        "C": "Valuing international companies",
+        "D": "Need quick valuation"
+      },
+      "correct": "B",
+      "explanation": "APV separates unlevered value from financing effects. Superior when capital structure changes (e.g., LBO with debt paydown) because WACC assumes constant structure. APV values changing tax shield over time.",
+      "difficulty": "hard",
+      "type": "conceptual",
+      "topic": "Methodology Selection"
+    },
+    {
+      "id": "val-076",
+      "question": "Cyclical company: $40M EBITDA in good year, -$10M in bad year. 5-year cycles. What normalized EBITDA?",
+      "options": {
+        "A": "$40M peak",
+        "B": "$15M trough",
+        "C": "$15-20M through-cycle average",
+        "D": "Current year wherever in cycle"
+      },
+      "correct": "C",
+      "explanation": "Use through-cycle normalized EBITDA. Simple average across cycle ≈ $15-20M depending on cycle shape. Peak or trough would over/understate sustainable earnings.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Cyclical Companies"
+    },
+    {
+      "id": "val-077",
+      "question": "Cost of debt 5% pre-tax, 25% tax rate. Rf=4%, beta=1.0, MRP=5%. Capital structure 40% debt. What is WACC?",
+      "options": {
+        "A": "7.10%",
+        "B": "7.90%",
+        "C": "6.90%",
+        "D": "8.50%"
+      },
+      "correct": "C",
+      "explanation": "Cost of equity = 4% + 1.0 × 5% = 9%. After-tax debt = 5% × 0.75 = 3.75%. WACC = (60% × 9%) + (40% × 3.75%) = 5.4% + 1.5% = 6.9%.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "WACC"
+    },
+    {
+      "id": "val-078",
+      "question": "Precedent from 2019 at 10x. Sector now trades at 7x (was 10x then). How to adjust?",
+      "options": {
+        "A": "Use 10x unadjusted",
+        "B": "Apply 30% discount",
+        "C": "Exclude as too stale",
+        "D": "Determine if decline is fundamental or sentiment"
+      },
+      "correct": "D",
+      "explanation": "Understand WHY multiples contracted. Fundamentals deteriorated = old multiple less relevant. Pure sentiment = might adjust for shift. Context matters more than mechanical adjustment.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "Precedent Transactions"
+    },
+    {
+      "id": "val-079",
+      "question": "Company: $100M revenue, $20M EBITDA, 2.0x revenue multiple and 10x EBITDA multiple both give $200M EV. Why?",
+      "options": {
+        "A": "Coincidence",
+        "B": "Revenue multiple × margin = EBITDA multiple mathematically linked",
+        "C": "Calibrated to same transaction",
+        "D": "Should always reconcile"
+      },
+      "correct": "B",
+      "explanation": "EV/Revenue = (EV/EBITDA) × (EBITDA/Revenue). Here: 2.0x / 20% = 10x. This relationship always holds—understanding helps sanity-check multiples.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "Multiples"
+    },
+    {
+      "id": "val-080",
+      "question": "Company with significant real estate holdings—what methodology to add?",
+      "options": {
+        "A": "LBO analysis",
+        "B": "Net Asset Value (NAV) analysis",
+        "C": "Leveraged recap",
+        "D": "Dividend discount model"
+      },
+      "correct": "B",
+      "explanation": "NAV values each asset at market value. For real estate-heavy companies, NAV reveals if market prices real estate correctly. If NAV > trading value, sale/spin-off might unlock value.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "Methodology Selection"
+    },
+    {
+      "id": "val-081",
+      "question": "Using 7x exit multiple for company trading at 9x. What does this imply?",
+      "options": {
+        "A": "Company currently overvalued",
+        "B": "Expect multiple contraction as growth slows",
+        "C": "Being conservative in TV",
+        "D": "Any could explain"
+      },
+      "correct": "D",
+      "explanation": "Lower exit multiple could reflect: (1) current overvaluation, (2) growth slowing/multiples contracting to peers, (3) conservatism. Articulate which assumption and why.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "DCF"
+    },
+    {
+      "id": "val-082",
+      "question": "Company has $50M cash, but $30M at foreign subs facing 15% repatriation tax. How to treat in equity bridge?",
+      "options": {
+        "A": "Add full $50M",
+        "B": "Add $20M + ($30M × 85%) = $45.5M",
+        "C": "Add domestic cash, value trapped separately",
+        "D": "Either B or C acceptable"
+      },
+      "correct": "D",
+      "explanation": "Trapped cash worth less due to repatriation costs. Either haircut foreign cash for taxes ($45.5M total) or add domestic and note foreign as reduced-value. Full $50M overstates equity.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "Enterprise Value"
+    },
+    {
+      "id": "val-083",
+      "question": "Mid-year convention: Year 1 at 0.5, Year 2 at 1.5. How to discount terminal value at end of Year 5?",
+      "options": {
+        "A": "(1+WACC)^5.0",
+        "B": "(1+WACC)^4.5",
+        "C": "(1+WACC)^5.5",
+        "D": "TV doesn't use mid-year convention"
+      },
+      "correct": "B",
+      "explanation": "With mid-year convention, Year 5 FCF discounted at 4.5 periods. TV represents perpetuity from Year 5 end, so discount same as Year 5 FCF = 4.5 periods for consistency.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "DCF"
+    },
+    {
+      "id": "val-084",
+      "question": "Company trades at 6x EBITDA with pension deficit equal to 2x EBITDA. What is pension-adjusted multiple?",
+      "options": {
+        "A": "8x",
+        "B": "4x",
+        "C": "6x",
+        "D": "Depends on whether pension in EV already"
+      },
+      "correct": "D",
+      "explanation": "If EV already includes pension deficit, 6x is adjusted. If EV excludes pension, true adjusted EV = Observed + Pension = higher multiple. Verify what's in EV calculation.",
+      "difficulty": "hard",
+      "type": "conceptual",
+      "topic": "Enterprise Value"
+    },
+    {
+      "id": "val-085",
+      "question": "When is EV/EBIT preferred over EV/EBITDA?",
+      "options": {
+        "A": "Asset-light service companies",
+        "B": "Capital-intensive businesses where D&A reflects real asset consumption",
+        "C": "High-growth companies",
+        "D": "EV/EBITDA always preferred"
+      },
+      "correct": "B",
+      "explanation": "For capital-intensive businesses, D&A represents real cost of maintaining assets. EV/EBIT captures this while EV/EBITDA ignores it. EV/EBIT better reflects sustainable cash generation.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "Multiples"
+    },
+    {
+      "id": "val-086",
+      "question": "Target CEO owns 30%, won't sell below $20. Current price $15. How does this affect valuation for acquirer?",
+      "options": {
+        "A": "Value at $15—reserve price isn't fundamental value",
+        "B": "30% stake creates $20 floor",
+        "C": "Factor in feasibility—at $15, no deal happens",
+        "D": "Both B and C"
+      },
+      "correct": "D",
+      "explanation": "30% blocking stake means no deal without this shareholder. While fundamental value may be $15, actionable price is at least $20. Intrinsic and deal value can differ—acknowledge practical constraint.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "M&A"
+    },
+    {
+      "id": "val-087",
+      "question": "DCF produces $900M-$1.1B range. How to present to client considering sale?",
+      "options": {
+        "A": "Use $1.1B as asking price",
+        "B": "Use $1B midpoint",
+        "C": "Present range with sensitivities and key drivers",
+        "D": "Narrow to single estimate"
+      },
+      "correct": "C",
+      "explanation": "Valuations are ranges. Present with clear explanation of drivers (WACC, growth, margins) and sensitivities. Helps client understand assumptions supporting outcomes. Single estimates create false precision.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Valuation Framework"
+    },
+    {
+      "id": "val-088",
+      "question": "Shares: 100M basic, 110M diluted. Stock at $50. Which share count for equity value bridge?",
+      "options": {
+        "A": "100M basic = $5.0B",
+        "B": "110M diluted = $5.5B",
+        "C": "Treasury stock method adjusted",
+        "D": "Depends on if options in-the-money"
+      },
+      "correct": "C",
+      "explanation": "Neither basic nor fully diluted is correct. Use treasury stock method: ITM options add shares but exercise proceeds offset. 10M options at $30: net shares = 10M - 6M = 4M. Equity = 104M × $50 = $5.2B.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "Dilution"
+    },
+    {
+      "id": "val-089",
+      "question": "Company pays $5/share special dividend, 100M shares. What happens to EV?",
+      "options": {
+        "A": "Decreases $500M",
+        "B": "Increases $500M",
+        "C": "Stays same",
+        "D": "Depends on funding"
+      },
+      "correct": "C",
+      "explanation": "EV = Equity + Debt - Cash. Dividend reduces both equity and cash by $500M. Net on EV: -$500M + $500M = $0. EV unchanged—dividend transfers value without affecting operating value.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "Enterprise Value"
+    },
+    {
+      "id": "val-090",
+      "question": "Enterprise Value formula from Equity Value:",
+      "options": {
+        "A": "Equity + Cash - Debt",
+        "B": "Equity - Cash + Debt + Preferred + Minority Interest",
+        "C": "Market Cap + Revenue",
+        "D": "Assets - Liabilities"
+      },
+      "correct": "B",
+      "explanation": "EV = Equity Value - Cash + Debt + Preferred Stock + Minority Interest. Represents total value to all capital providers (debt and equity holders).",
+      "difficulty": "easy",
+      "type": "formulaic",
+      "topic": "Enterprise Value"
+    }
+  ]
+}

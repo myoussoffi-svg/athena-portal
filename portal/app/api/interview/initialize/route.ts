@@ -159,12 +159,13 @@ export async function POST() {
     }
 
     // Handle Postgres unique constraint violation (active attempt exists)
-    if (
-      error &&
-      typeof error === 'object' &&
-      'code' in error &&
-      error.code === '23505'
-    ) {
+    // The error code can be on the error itself or nested in error.cause
+    const pgErrorCode =
+      (error && typeof error === 'object' && 'code' in error && error.code) ||
+      (error && typeof error === 'object' && 'cause' in error &&
+       error.cause && typeof error.cause === 'object' && 'code' in error.cause && error.cause.code);
+
+    if (pgErrorCode === '23505') {
       // Find the existing active attempt
       const existing = await db.query.interviewAttempts.findFirst({
         where: and(

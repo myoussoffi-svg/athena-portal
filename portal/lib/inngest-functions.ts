@@ -1,9 +1,22 @@
 import { inngest } from './inngest';
 import { db } from '@/db';
-import { interviewAttempts, candidateLockouts } from '@/db/schema';
-import { eq, and, lt, inArray, isNotNull } from 'drizzle-orm';
+import {
+  interviewAttempts,
+  candidateLockouts,
+  promptVersions,
+  evaluatorVersions,
+  resumeFeedback,
+} from '@/db/schema';
+import { eq, and, lt, isNotNull, ne, count } from 'drizzle-orm';
 import { sql } from 'drizzle-orm';
-import { deleteObject } from './r2';
+import { deleteObject, downloadObject } from './r2';
+import { transcribeAudio, alignTranscriptToSegments } from './openai-client';
+import { evaluateInterview } from './anthropic-client';
+import type { Prompt } from './interview/types';
+import { extractDocText, validateDocMetadata } from './resume/doc-extractor';
+import { analyzeResume, getFormattingIssues } from './resume/pre-analyzer';
+import { evaluateResume } from './resume/evaluator';
+import { RESUME_QUOTA_LIMIT } from './resume/schemas';
 
 /**
  * Detect and mark abandoned attempts.
@@ -131,18 +144,60 @@ export const cleanupExpiredVideos = inngest.createFunction(
  * Process interview submission.
  * Triggered when a candidate submits their interview.
  * Handles transcription, segmentation, and evaluation.
- *
- * NOTE: Full implementation requires OpenAI Whisper and Anthropic Claude APIs.
- * This is a skeleton that updates status through the pipeline.
  */
 export const processInterviewSubmission = inngest.createFunction(
-  { id: 'process-interview-submission' },
+  { id: 'process-interview-submission', retries: 2 },
   { event: 'interview/submitted' },
   async ({ event, step }) => {
     const { attemptId } = event.data;
 
-    // Step 1: Update to transcribing
-    await step.run('start-transcription', async () => {
+    // Step 1: Fetch attempt and related data
+    const attemptData = await step.run('fetch-attempt-data', async () => {
+      const attempt = await db.query.interviewAttempts.findFirst({
+        where: eq(interviewAttempts.id, attemptId),
+      });
+
+      if (!attempt) {
+        throw new Error(`Attempt ${attemptId} not found`);
+      }
+
+      if (!attempt.videoObjectKey) {
+        throw new Error(`Attempt ${attemptId} has no video object key`);
+      }
+
+      // Fetch prompt version
+      const promptVersion = await db.query.promptVersions.findFirst({
+        where: eq(promptVersions.id, attempt.promptVersionId),
+      });
+
+      if (!promptVersion) {
+        throw new Error(`Prompt version ${attempt.promptVersionId} not found`);
+      }
+
+      // Fetch evaluator version
+      const evaluatorVersion = await db.query.evaluatorVersions.findFirst({
+        where: eq(evaluatorVersions.id, attempt.evaluatorVersionId),
+      });
+
+      if (!evaluatorVersion) {
+        throw new Error(`Evaluator version ${attempt.evaluatorVersionId} not found`);
+      }
+
+      return {
+        attempt,
+        prompts: promptVersion.prompts as Prompt[],
+        systemPrompt: evaluatorVersion.systemPrompt,
+        segmentBoundaries: (attempt.segments || []) as Array<{
+          promptId: number;
+          startTimeSeconds: number;
+          endTimeSeconds: number;
+          transcriptText: string | null;
+        }>,
+      };
+    });
+
+    // Step 2: Download video and transcribe with Whisper
+    const transcription = await step.run('transcribe-video', async () => {
       await db
         .update(interviewAttempts)
         .set({
@@ -152,16 +207,17 @@ export const processInterviewSubmission = inngest.createFunction(
         })
         .where(eq(interviewAttempts.id, attemptId));
 
-      // TODO: Implement actual Whisper transcription
-      // const attempt = await db.query.interviewAttempts.findFirst({
-      //   where: eq(interviewAttempts.id, attemptId),
-      // });
-      // const videoBuffer = await downloadObject(attempt.videoObjectKey);
-      // const transcript = await whisper.transcribe(videoBuffer);
+      // Download video from R2
+      const videoBuffer = await downloadObject(attemptData.attempt.videoObjectKey!);
+
+      // Transcribe with Whisper
+      const result = await transcribeAudio(videoBuffer, 'recording.webm');
+
+      return result;
     });
 
-    // Step 2: Segment transcript
-    await step.run('segment-transcript', async () => {
+    // Step 3: Align transcript to segment boundaries
+    const alignedSegments = await step.run('align-segments', async () => {
       await db
         .update(interviewAttempts)
         .set({
@@ -171,12 +227,26 @@ export const processInterviewSubmission = inngest.createFunction(
         })
         .where(eq(interviewAttempts.id, attemptId));
 
-      // TODO: Implement segment alignment
-      // Map Whisper segments to prompt boundaries
+      // Align transcript words to segment boundaries
+      const aligned = alignTranscriptToSegments(
+        transcription,
+        attemptData.segmentBoundaries
+      );
+
+      // Update segments in database with transcript text
+      await db
+        .update(interviewAttempts)
+        .set({
+          segments: aligned,
+          updatedAt: new Date(),
+        })
+        .where(eq(interviewAttempts.id, attemptId));
+
+      return aligned;
     });
 
-    // Step 3: Evaluate with Claude
-    await step.run('evaluate-transcript', async () => {
+    // Step 4: Evaluate with Claude
+    const feedback = await step.run('evaluate-with-claude', async () => {
       await db
         .update(interviewAttempts)
         .set({
@@ -186,12 +256,17 @@ export const processInterviewSubmission = inngest.createFunction(
         })
         .where(eq(interviewAttempts.id, attemptId));
 
-      // TODO: Implement Claude evaluation
-      // Send transcript + prompts to Claude with evaluator system prompt
-      // Parse structured JSON response
+      // Evaluate interview with Claude
+      const result = await evaluateInterview(
+        alignedSegments,
+        attemptData.prompts,
+        attemptData.systemPrompt
+      );
+
+      return result;
     });
 
-    // Step 4: Finalize
+    // Step 5: Finalize and store feedback
     await step.run('finalize', async () => {
       await db
         .update(interviewAttempts)
@@ -202,17 +277,14 @@ export const processInterviewSubmission = inngest.createFunction(
         })
         .where(eq(interviewAttempts.id, attemptId));
 
-      // For now, mark as complete with placeholder feedback
-      // TODO: Replace with actual feedback from Claude
+      // Store feedback and mark as complete
       await db
         .update(interviewAttempts)
         .set({
           status: 'complete',
           completedAt: new Date(),
-          feedbackJson: {
-            message: 'Processing pipeline complete. Full evaluation pending API integration.',
-          },
-          hireInclination: 'borderline',
+          feedbackJson: feedback as unknown as Record<string, unknown>,
+          hireInclination: feedback.hireInclination,
           updatedAt: new Date(),
         })
         .where(eq(interviewAttempts.id, attemptId));
@@ -222,9 +294,163 @@ export const processInterviewSubmission = inngest.createFunction(
   }
 );
 
+/**
+ * Process resume submission.
+ * Triggered when a user submits their resume for feedback.
+ * Handles Word document extraction, pre-analysis, and Claude evaluation.
+ */
+export const processResumeSubmission = inngest.createFunction(
+  { id: 'process-resume-submission', retries: 2 },
+  { event: 'resume/submitted' },
+  async ({ event, step }) => {
+    const { feedbackId, userId, resumeObjectKey } = event.data;
+
+    // Helper to update status and handle failures
+    const updateStatus = async (
+      status: 'extracting' | 'analyzing' | 'complete' | 'failed',
+      extra?: Partial<{
+        errorMessage: string;
+        pageCount: number;
+        wordCount: number;
+        overallScore10: number;
+        scoreFormat: number;
+        scoreEducation: number;
+        scoreExperience: number;
+        scoreSkills: number;
+        scoreWriting: number;
+        feedbackJson: Record<string, unknown>;
+        completedAt: Date;
+        r2DeletedAt: Date;
+      }>
+    ) => {
+      await db
+        .update(resumeFeedback)
+        .set({
+          status,
+          updatedAt: new Date(),
+          ...extra,
+        })
+        .where(eq(resumeFeedback.id, feedbackId));
+    };
+
+    try {
+      // Step 1: Defensive quota check (in case of race condition)
+      await step.run('verify-quota', async () => {
+        const [quotaResult] = await db
+          .select({ count: count() })
+          .from(resumeFeedback)
+          .where(
+            and(
+              eq(resumeFeedback.userId, userId),
+              ne(resumeFeedback.status, 'failed'),
+              ne(resumeFeedback.id, feedbackId)
+            )
+          );
+
+        const used = quotaResult?.count ?? 0;
+
+        if (used >= RESUME_QUOTA_LIMIT) {
+          throw new Error('QUOTA_EXCEEDED');
+        }
+      });
+
+      // Step 2: Download Word document and extract text
+      const extractionResult = await step.run('extract-doc', async () => {
+        await updateStatus('extracting');
+
+        // Download Word document from R2
+        const docBuffer = await downloadObject(resumeObjectKey);
+
+        // Extract text and metadata
+        const extracted = await extractDocText(docBuffer);
+
+        // Validate metadata
+        const validation = validateDocMetadata(extracted);
+        if (!validation.valid) {
+          throw new Error(validation.error);
+        }
+
+        return extracted;
+      });
+
+      // Step 3: Update with metadata
+      await step.run('store-metadata', async () => {
+        await db
+          .update(resumeFeedback)
+          .set({
+            wordCount: extractionResult.wordCount,
+            updatedAt: new Date(),
+          })
+          .where(eq(resumeFeedback.id, feedbackId));
+      });
+
+      // Step 4: Pre-analyze with heuristics
+      const preAnalysis = await step.run('pre-analyze', async () => {
+        return analyzeResume(extractionResult.text);
+      });
+
+      // Step 5: Evaluate with Claude
+      const feedback = await step.run('evaluate-with-claude', async () => {
+        await updateStatus('analyzing');
+
+        const result = await evaluateResume(extractionResult.text, preAnalysis);
+
+        // Merge in formatting issues from pre-analysis
+        const heuristicIssues = getFormattingIssues(preAnalysis);
+        result.flags.formattingIssues = [
+          ...result.flags.formattingIssues,
+          ...heuristicIssues,
+        ];
+
+        return result;
+      });
+
+      // Step 6: Store feedback and cleanup
+      await step.run('finalize', async () => {
+        // Delete Word document from R2 (privacy - don't store resume text)
+        try {
+          await deleteObject(resumeObjectKey);
+        } catch (deleteError) {
+          console.error('Failed to delete resume from R2:', deleteError);
+          // Continue anyway - not critical
+        }
+
+        // Store feedback and mark complete
+        await updateStatus('complete', {
+          overallScore10: feedback.overallScore10,
+          scoreFormat: feedback.categoryScores.format,
+          scoreEducation: feedback.categoryScores.education,
+          scoreExperience: feedback.categoryScores.experience,
+          scoreSkills: feedback.categoryScores.skills,
+          scoreWriting: feedback.categoryScores.writing,
+          feedbackJson: feedback as unknown as Record<string, unknown>,
+          completedAt: new Date(),
+          r2DeletedAt: new Date(),
+        });
+      });
+
+      return { success: true, feedbackId, score: feedback.overallScore10 };
+    } catch (error) {
+      const errorMessage =
+        error instanceof Error ? error.message : 'Unknown error';
+
+      console.error(`Resume processing failed for ${feedbackId}:`, error);
+
+      // Mark as failed (doesn't count against quota)
+      await updateStatus('failed', { errorMessage });
+
+      // Don't delete the R2 file on failure - retain for debugging (7 days)
+      // A separate cleanup job can handle this
+
+      throw error; // Re-throw for Inngest retry logic
+    }
+  }
+);
+
 // Export all functions for the Inngest serve handler
 export const functions = [
   detectAbandonedAttempts,
   cleanupExpiredVideos,
   processInterviewSubmission,
+  processResumeSubmission,
 ];
