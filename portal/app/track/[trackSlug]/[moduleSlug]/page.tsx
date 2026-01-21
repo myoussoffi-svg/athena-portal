@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-import { getTracks, getModulesForTrack, getLessonsForModule } from "@/lib/content";
+import { getTracks, getModulesForTrack, getLessonsForModule, getCaseStudiesForModule } from "@/lib/content";
 import { GlobalStyles } from "@/components/ui";
 import { ModuleLessonList } from "@/components/progress";
 import { QuizLauncher } from "@/components/quiz";
+import { CaseStudiesLauncher } from "@/components/case-studies";
 
 type Params = { trackSlug: string; moduleSlug: string };
 
@@ -18,6 +19,9 @@ const moduleIcons: Record<string, string> = {
 
 // Modules with quiz banks
 const modulesWithQuiz = ['02-valuation-modeling', '03-accounting-foundations', '04-lbos-advanced-topics'];
+
+// Modules with case studies
+const modulesWithCaseStudies = ['02-valuation-modeling', '03-accounting-foundations', '04-lbos-advanced-topics'];
 
 export default async function ModulePage({
   params,
@@ -38,7 +42,9 @@ export default async function ModulePage({
   const moduleNumber = moduleIndex + 1;
 
   const lessons = getLessonsForModule(trackSlug, moduleSlug);
+  const caseStudies = getCaseStudiesForModule(trackSlug, moduleSlug);
   const hasQuiz = modulesWithQuiz.includes(moduleSlug);
+  const hasCaseStudies = modulesWithCaseStudies.includes(moduleSlug) && caseStudies.length > 0;
   const moduleIcon = moduleIcons[moduleSlug] || '📚';
 
   // Estimate reading time (~5 min per lesson)
@@ -289,6 +295,12 @@ export default async function ModulePage({
                   <span>Quiz Available</span>
                 </div>
               )}
+              {hasCaseStudies && (
+                <div className="module-stat">
+                  <span className="module-stat-icon">📋</span>
+                  <span>{caseStudies.length} Case {caseStudies.length === 1 ? 'Study' : 'Studies'}</span>
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -338,6 +350,30 @@ export default async function ModulePage({
                 <span className="module-section-subtitle">Test your knowledge</span>
               </div>
               <QuizLauncher trackSlug={trackSlug} moduleSlug={moduleSlug} />
+            </section>
+          )}
+
+          {/* Section Divider - for case studies */}
+          {hasCaseStudies && (
+            <div className="section-divider">
+              <div className="section-divider-line" />
+              <div className="section-divider-icon">📋</div>
+              <div className="section-divider-line reverse" />
+            </div>
+          )}
+
+          {/* Case Studies Section */}
+          {hasCaseStudies && (
+            <section className="module-section">
+              <div className="module-section-header">
+                <h2 className="module-section-title">Case Studies</h2>
+                <span className="module-section-subtitle">Interactive exercises</span>
+              </div>
+              <CaseStudiesLauncher
+                trackSlug={trackSlug}
+                moduleSlug={moduleSlug}
+                caseStudies={caseStudies}
+              />
             </section>
           )}
 

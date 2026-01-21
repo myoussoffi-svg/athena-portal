@@ -4,11 +4,14 @@ description: Master the accounting and financial statement concepts tested in IB
 order: 2
 estimated_hours: 5
 lessons:
-  - three-financial-statements-overview
-  - how-the-statements-link
-  - income-statement-deep-dive
-  - balance-sheet-deep-dive
-  - cash-flow-statement-deep-dive
-  - depreciation-and-amortization
-  - working-capital-and-cash-conversion
-  - goodwill-intangibles-and-writedowns
+  - 01-three-financial-statements-overview
+  - 02-how-the-statements-link
+  - 03-income-statement-deep-dive
+  - 04-balance-sheet-deep-dive
+  - 05-cash-flow-statement-deep-dive
+  - 06-depreciation-and-amortization
+  - 07-working-capital-and-cash-conversion
+  - 08-goodwill-intangibles-and-writedowns
+
+case_studies:
+  - 09-accounting-scenarios-case-study

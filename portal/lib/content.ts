@@ -40,6 +40,13 @@ export type Lesson = {
   video?: LessonVideo;
 };
 
+export type CaseStudy = {
+  slug: string;
+  title: string;
+  subtitle?: string;
+  content?: string;
+};
+
 function readYamlFile<T = unknown>(filePath: string): T {
 const raw = fs.readFileSync(filePath, "utf8");
   return yaml.load(raw) as T;
@@ -185,6 +192,16 @@ export function getLessonsForModule(trackSlug: string, moduleSlug: string): Less
   const moduleDir = path.join(contentRoot, trackSlug, moduleSlug);
   if (!fs.existsSync(moduleDir)) return [];
 
+  // Read module.yaml to get the explicit lessons list (if defined)
+  const moduleYamlPath = path.join(moduleDir, "module.yaml");
+  let allowedLessons: Set<string> | null = null;
+  if (fs.existsSync(moduleYamlPath)) {
+    const moduleData = readYamlFile<{ lessons?: string[] }>(moduleYamlPath);
+    if (moduleData.lessons && Array.isArray(moduleData.lessons)) {
+      allowedLessons = new Set(moduleData.lessons);
+    }
+  }
+
   const lessons: Lesson[] = [];
 
   // A) Folder-based lessons: <module>/<lessonSlug>/lesson.yaml
@@ -193,6 +210,9 @@ export function getLessonsForModule(trackSlug: string, moduleSlug: string): Less
     .filter((e) => e.isDirectory());
 
   for (const dir of lessonDirs) {
+    // Skip if module.yaml has a lessons array and this isn't in it
+    if (allowedLessons && !allowedLessons.has(dir.name)) continue;
+
     const lessonYamlPath = path.join(moduleDir, dir.name, "lesson.yaml");
     if (!fs.existsSync(lessonYamlPath)) continue;
 
@@ -213,10 +233,14 @@ export function getLessonsForModule(trackSlug: string, moduleSlug: string): Less
     .readdirSync(moduleDir, { withFileTypes: true })
     .filter((e) => e.isFile() && e.name.toLowerCase().endsWith(".md"))
     .map((e) => e.name)
-    .filter((name) => name.toLowerCase() !== "readme.md"); // optional
+    .filter((name) => name.toLowerCase() !== "readme.md");
 
   for (const fileName of mdFiles) {
     const slug = fileName.replace(/\.md$/i, "");
+
+    // Skip if module.yaml has a lessons array and this slug isn't in it
+    if (allowedLessons && !allowedLessons.has(slug)) continue;
+
     const mdPath = path.join(moduleDir, fileName);
     const md = safeReadFile(mdPath);
     const { frontmatter, content } = parseFrontmatter(md);
@@ -287,9 +311,59 @@ export function getLessonBySlug(trackSlug: string, moduleSlug: string, lessonSlu
   return null;
 }
 
+export function getCaseStudiesForModule(trackSlug: string, moduleSlug: string): CaseStudy[] {
+  if (!trackSlug || !moduleSlug) {
+    throw new Error("getCaseStudiesForModule: trackSlug and moduleSlug are required");
+  }
 
+  const moduleDir = path.join(contentRoot, trackSlug, moduleSlug);
+  const moduleYamlPath = path.join(moduleDir, "module.yaml");
 
+  if (!fs.existsSync(moduleYamlPath)) return [];
 
+  const moduleData = readYamlFile<{ case_studies?: string[] }>(moduleYamlPath);
+  const caseStudySlugs = moduleData.case_studies ?? [];
+
+  const caseStudies: CaseStudy[] = [];
+
+  for (const slug of caseStudySlugs) {
+    const mdPath = path.join(moduleDir, `${slug}.md`);
+    if (fs.existsSync(mdPath)) {
+      const md = safeReadFile(mdPath);
+      const { frontmatter } = parseFrontmatter(md);
+
+      caseStudies.push({
+        slug,
+        title: (frontmatter.title as string) ?? titleFromMarkdown(md, slug),
+        subtitle: frontmatter.subtitle as string | undefined,
+      });
+    }
+  }
+
+  return caseStudies;
+}
+
+export function getCaseStudyBySlug(
+  trackSlug: string,
+  moduleSlug: string,
+  caseStudySlug: string
+): CaseStudy | null {
+  if (!trackSlug || !moduleSlug || !caseStudySlug) return null;
+
+  const mdPath = path.join(contentRoot, trackSlug, moduleSlug, `${caseStudySlug}.md`);
+
+  if (!fs.existsSync(mdPath)) return null;
+
+  const md = safeReadFile(mdPath);
+  const { frontmatter, content } = parseFrontmatter(md);
+
+  return {
+    slug: caseStudySlug,
+    title: (frontmatter.title as string) ?? titleFromMarkdown(md, caseStudySlug),
+    subtitle: frontmatter.subtitle as string | undefined,
+    content,
+  };
+}
 
 
 

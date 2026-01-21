@@ -4,10 +4,10 @@ description: Master the practical execution of networking and outreach for IB re
 order: 5
 estimated_hours: 3
 lessons:
-  - why-outreach-matters
-  - who-to-reach-out-to
-  - cold-email-anatomy
-  - follow-up-strategy
-  - converting-to-calls-referrals
-  - scaling-outreach
-  - finding-verifying-emails
+  - 01-why-outreach-matters
+  - 02-who-to-reach-out-to
+  - 03-cold-email-anatomy
+  - 04-follow-up-strategy
+  - 05-converting-to-calls-referrals
+  - 06-scaling-outreach
+  - 07-finding-verifying-emails
