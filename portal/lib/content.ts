@@ -1,4 +1,4 @@
-﻿import fs from "fs";
+import fs from "fs";
 import path from "path";
 import { globSync } from "glob";
 import yaml from "js-yaml";

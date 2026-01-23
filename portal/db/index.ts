@@ -1,14 +1,19 @@
-import { config } from "dotenv";
-import * as path from "path";
-
-// Load .env.local for local scripts (tsx/db:seed, etc.)
-config({ path: path.join(process.cwd(), ".env.local") });
-
 import { drizzle } from "drizzle-orm/postgres-js";
 import postgres from "postgres";
 import * as schema from "./schema";
 
-// Connection string from environment
+/**
+ * Runtime database client — no side effects.
+ *
+ * NOTE: This module does NOT load dotenv. Environment variables must be
+ * provided by the runtime (Vercel, etc.) or loaded by scripts before import:
+ *
+ *   // In scripts:
+ *   import { config } from "dotenv";
+ *   config({ path: ".env.local" });
+ *   import { db } from "./index";  // Now DATABASE_URL is available
+ */
+
 const connectionString = process.env.DATABASE_URL;
 
 if (!connectionString) {
@@ -16,9 +21,10 @@ if (!connectionString) {
 }
 
 // Create postgres client
-// For serverless environments (Vercel), use connection pooling
+// max: 1 is intentional — Neon's connection pooler handles multiplexing.
+// For non-pooled Postgres, increase this value.
 const client = postgres(connectionString, {
-  max: 1, // Serverless: limit connections
+  max: 1,
   idle_timeout: 20,
   connect_timeout: 10,
 });

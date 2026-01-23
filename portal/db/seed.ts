@@ -7,10 +7,13 @@
  */
 
 import { config } from 'dotenv';
+import { promptVersions, evaluatorVersions, activeVersions } from './schema';
+
+// Load environment variables before importing db (which reads DATABASE_URL)
 config({ path: '.env.local' });
 
-import { db } from './index';
-import { promptVersions, evaluatorVersions, activeVersions } from './schema';
+// Dynamic import to ensure env vars are loaded first
+const { db } = await import('./index');
 
 const PROMPT_VERSION_ID = '2025-01-v1';
 const EVALUATOR_VERSION_ID = '2025-01-v1';

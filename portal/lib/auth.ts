@@ -3,28 +3,73 @@ import { db, interviewViewers } from '@/db';
 import { eq, and } from 'drizzle-orm';
 
 /**
- * API Error class for consistent error responses
+ * Standardized API error envelope.
+ * All API errors return: { error: { code, message, details? } }
+ */
+export interface ApiErrorResponse {
+  error: {
+    code: string;
+    message: string;
+    details?: Record<string, unknown>;
+  };
+}
+
+/**
+ * API Error class for consistent error responses.
+ *
+ * Usage:
+ *   throw new ApiError(400, 'INVALID_FILE_TYPE', 'Only Word documents are allowed');
+ *   throw new ApiError(403, 'QUOTA_EXCEEDED', 'Resume limit reached', { used: 10, limit: 10 });
  */
 export class ApiError extends Error {
   constructor(
     public statusCode: number,
     public code: string,
+    message?: string,
     public details?: Record<string, unknown>
   ) {
-    super(code);
+    super(message || code);
     this.name = 'ApiError';
   }
 
-  toResponse() {
-    return Response.json(
-      {
-        error: this.code,
-        ...this.details,
+  toResponse(): Response {
+    const body: ApiErrorResponse = {
+      error: {
+        code: this.code,
+        message: this.message,
+        ...(this.details && { details: this.details }),
       },
-      { status: this.statusCode }
-    );
+    };
+    return Response.json(body, { status: this.statusCode });
   }
 }
+
+// Common error factory functions for consistency
+export const Errors = {
+  unauthorized: (message = 'Authentication required') =>
+    new ApiError(401, 'UNAUTHORIZED', message),
+
+  forbidden: (message = 'Access denied') =>
+    new ApiError(403, 'FORBIDDEN', message),
+
+  notFound: (resource = 'Resource') =>
+    new ApiError(404, 'NOT_FOUND', `${resource} not found`),
+
+  badRequest: (message: string, details?: Record<string, unknown>) =>
+    new ApiError(400, 'BAD_REQUEST', message, details),
+
+  validationError: (message: string, issues?: unknown[]) =>
+    new ApiError(400, 'VALIDATION_ERROR', message, issues ? { issues } : undefined),
+
+  conflict: (message: string, details?: Record<string, unknown>) =>
+    new ApiError(409, 'CONFLICT', message, details),
+
+  quotaExceeded: (message: string, details?: Record<string, unknown>) =>
+    new ApiError(403, 'QUOTA_EXCEEDED', message, details),
+
+  internal: (message = 'An unexpected error occurred') =>
+    new ApiError(500, 'INTERNAL_ERROR', message),
+};
 
 /**
  * Require authentication and return the user ID.
@@ -34,7 +79,7 @@ export async function requireAuth(): Promise<string> {
   const { userId } = await auth();
 
   if (!userId) {
-    throw new ApiError(401, 'UNAUTHORIZED');
+    throw Errors.unauthorized();
   }
 
   return userId;
@@ -56,9 +101,7 @@ export async function requireAdmin(): Promise<string> {
   });
 
   if (!viewer) {
-    throw new ApiError(403, 'FORBIDDEN', {
-      message: 'Admin access required',
-    });
+    throw Errors.forbidden('Admin access required');
   }
 
   return userId;
@@ -80,9 +123,7 @@ export async function requireViewer(): Promise<{
   });
 
   if (!viewer) {
-    throw new ApiError(403, 'FORBIDDEN', {
-      message: 'Viewer access required',
-    });
+    throw Errors.forbidden('Viewer access required');
   }
 
   return { userId, role: viewer.role };
@@ -111,7 +152,14 @@ export async function isAdmin(): Promise<boolean> {
 }
 
 /**
- * Wrapper for API route handlers with error handling.
+ * Wrapper for API route handlers with consistent error handling.
+ *
+ * Usage:
+ *   export const POST = withErrorHandling(async (request) => {
+ *     const userId = await requireAuth();
+ *     // ... handler logic
+ *     return Response.json({ data });
+ *   });
  */
 export function withErrorHandling(
   handler: (request: Request) => Promise<Response>
@@ -120,15 +168,16 @@ export function withErrorHandling(
     try {
       return await handler(request);
     } catch (error) {
+      // Known API errors - return structured response
       if (error instanceof ApiError) {
         return error.toResponse();
       }
 
+      // Log unexpected errors for debugging
       console.error('Unhandled API error:', error);
-      return Response.json(
-        { error: 'INTERNAL_SERVER_ERROR' },
-        { status: 500 }
-      );
+
+      // Return generic error to client (don't leak internals)
+      return Errors.internal().toResponse();
     }
   };
 }

@@ -111,6 +111,92 @@ export async function objectExists(objectKey: string): Promise<boolean> {
 }
 
 /**
+ * Verification result from verifyUpload
+ */
+export interface UploadVerification {
+  exists: boolean;
+  contentLength?: number;
+  contentType?: string;
+  error?: string;
+}
+
+/**
+ * Verify an uploaded object meets requirements.
+ * Performs HEAD request to check existence, size, and content type.
+ *
+ * @param objectKey - The R2 object key
+ * @param options - Verification options
+ * @returns Verification result with metadata
+ */
+export async function verifyUpload(
+  objectKey: string,
+  options: {
+    maxSizeBytes?: number;
+    minSizeBytes?: number;
+    allowedContentTypes?: string[];
+  } = {}
+): Promise<UploadVerification> {
+  const client = getR2Client();
+
+  try {
+    const response = await client.send(
+      new HeadObjectCommand({
+        Bucket: R2_BUCKET_NAME,
+        Key: objectKey,
+      })
+    );
+
+    const contentLength = response.ContentLength;
+    const contentType = response.ContentType;
+
+    // Check minimum size
+    if (options.minSizeBytes && contentLength && contentLength < options.minSizeBytes) {
+      return {
+        exists: true,
+        contentLength,
+        contentType,
+        error: `File too small: ${contentLength} bytes (minimum: ${options.minSizeBytes} bytes)`,
+      };
+    }
+
+    // Check maximum size
+    if (options.maxSizeBytes && contentLength && contentLength > options.maxSizeBytes) {
+      return {
+        exists: true,
+        contentLength,
+        contentType,
+        error: `File too large: ${contentLength} bytes (maximum: ${options.maxSizeBytes} bytes)`,
+      };
+    }
+
+    // Check content type
+    if (options.allowedContentTypes && contentType) {
+      const normalizedType = contentType.toLowerCase().split(';')[0].trim();
+      const allowed = options.allowedContentTypes.map(t => t.toLowerCase());
+      if (!allowed.includes(normalizedType)) {
+        return {
+          exists: true,
+          contentLength,
+          contentType,
+          error: `Invalid content type: ${contentType} (allowed: ${options.allowedContentTypes.join(', ')})`,
+        };
+      }
+    }
+
+    return {
+      exists: true,
+      contentLength,
+      contentType,
+    };
+  } catch (error: unknown) {
+    if (error && typeof error === 'object' && 'name' in error && error.name === 'NotFound') {
+      return { exists: false, error: 'File not found in storage' };
+    }
+    throw error;
+  }
+}
+
+/**
  * Delete an object from R2.
  *
  * @param objectKey - The R2 object key

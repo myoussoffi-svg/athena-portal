@@ -1,5 +1,3 @@
-import { NextResponse } from 'next/server';
-import { auth } from '@clerk/nextjs/server';
 import { db } from '@/db';
 import {
   interviewAttempts,
@@ -9,86 +7,83 @@ import {
 } from '@/db/schema';
 import { eq, and, inArray, sql } from 'drizzle-orm';
 import { generateUploadUrl } from '@/lib/r2';
+import { withErrorHandling, requireAuth, ApiError, Errors } from '@/lib/auth';
 
-export async function POST() {
-  try {
-    // 1. Require authentication - candidateId from Clerk session
-    const { userId } = await auth();
-    if (!userId) {
-      return NextResponse.json({ error: 'UNAUTHORIZED' }, { status: 401 });
+export const POST = withErrorHandling(async () => {
+  const userId = await requireAuth();
+
+  // Run initialization in a transaction
+  const result = await db.transaction(async (tx) => {
+    // Check lockout status
+    const lockout = await tx.query.candidateLockouts.findFirst({
+      where: eq(candidateLockouts.candidateId, userId),
+    });
+
+    if (lockout?.isLocked) {
+      // Check if cooldown expired
+      if (
+        lockout.lockReason === 'cooldown' &&
+        lockout.lockedUntil &&
+        new Date() > lockout.lockedUntil
+      ) {
+        // Cooldown expired, unlock
+        await tx
+          .update(candidateLockouts)
+          .set({
+            isLocked: false,
+            lockReason: null,
+            lockedUntil: null,
+            updatedAt: new Date(),
+          })
+          .where(eq(candidateLockouts.candidateId, userId));
+      } else {
+        // Still locked
+        const unlockRequestAllowed =
+          lockout.lockReason === 'abandoned' ||
+          lockout.lockReason === 'admin_hold';
+        const requestPending = lockout.unlockDecision === 'pending';
+
+        throw new ApiError(403, 'LOCKED', 'Account is locked', {
+          reason: lockout.lockReason,
+          unlockRequestAllowed: unlockRequestAllowed && !requestPending,
+          requestPending,
+        });
+      }
     }
 
-    // 2. Run initialization in a transaction
-    const result = await db.transaction(async (tx) => {
-      // Check lockout status
-      const lockout = await tx.query.candidateLockouts.findFirst({
-        where: eq(candidateLockouts.candidateId, userId),
-      });
+    // Get or create lockout record and increment attempt counter (row-level lock)
+    await tx
+      .insert(candidateLockouts)
+      .values({
+        candidateId: userId,
+        totalAttempts: 0,
+        abandonedAttempts: 0,
+      })
+      .onConflictDoNothing();
 
-      if (lockout?.isLocked) {
-        // Check if cooldown expired
-        if (
-          lockout.lockReason === 'cooldown' &&
-          lockout.lockedUntil &&
-          new Date() > lockout.lockedUntil
-        ) {
-          // Cooldown expired, unlock
-          await tx
-            .update(candidateLockouts)
-            .set({
-              isLocked: false,
-              lockReason: null,
-              lockedUntil: null,
-              updatedAt: new Date(),
-            })
-            .where(eq(candidateLockouts.candidateId, userId));
-        } else {
-          // Still locked
-          const unlockRequestAllowed =
-            lockout.lockReason === 'abandoned' ||
-            lockout.lockReason === 'admin_hold';
-          const requestPending = lockout.unlockDecision === 'pending';
+    const [updatedLockout] = await tx
+      .update(candidateLockouts)
+      .set({
+        totalAttempts: sql`total_attempts + 1`,
+        updatedAt: new Date(),
+      })
+      .where(eq(candidateLockouts.candidateId, userId))
+      .returning();
 
-          throw {
-            type: 'LOCKED',
-            reason: lockout.lockReason,
-            unlockRequestAllowed: unlockRequestAllowed && !requestPending,
-            requestPending,
-          };
-        }
-      }
+    const attemptNumber = updatedLockout.totalAttempts;
 
-      // Get or create lockout record and increment attempt counter (row-level lock)
-      await tx
-        .insert(candidateLockouts)
-        .values({
-          candidateId: userId,
-          totalAttempts: 0,
-          abandonedAttempts: 0,
-        })
-        .onConflictDoNothing();
+    // Get active versions
+    const [versions] = await tx.select().from(activeVersions).limit(1);
 
-      const [updatedLockout] = await tx
-        .update(candidateLockouts)
-        .set({
-          totalAttempts: sql`total_attempts + 1`,
-          updatedAt: new Date(),
-        })
-        .where(eq(candidateLockouts.candidateId, userId))
-        .returning();
+    if (!versions) {
+      throw Errors.internal('No active versions configured');
+    }
 
-      const attemptNumber = updatedLockout.totalAttempts;
-
-      // Get active versions
-      const [versions] = await tx.select().from(activeVersions).limit(1);
-
-      if (!versions) {
-        throw { type: 'CONFIG_ERROR', message: 'No active versions configured' };
-      }
-
-      // Create attempt record
-      // Partial unique index will reject if active attempt already exists
-      const [attempt] = await tx
+    // Create attempt record
+    // Partial unique index will reject if active attempt already exists
+    let attempt;
+    try {
+      [attempt] = await tx
         .insert(interviewAttempts)
         .values({
           candidateId: userId,
@@ -101,92 +96,57 @@ export async function POST() {
           startedAt: new Date(),
         })
         .returning();
+    } catch (insertError: unknown) {
+      // Handle Postgres unique constraint violation (active attempt exists)
+      const pgErrorCode =
+        (insertError && typeof insertError === 'object' && 'code' in insertError && insertError.code) ||
+        (insertError && typeof insertError === 'object' && 'cause' in insertError &&
+         insertError.cause && typeof insertError.cause === 'object' && 'code' in insertError.cause && insertError.cause.code);
 
-      // Get prompts for client
-      const promptVersion = await tx.query.promptVersions.findFirst({
-        where: eq(promptVersions.id, versions.activePromptVersionId),
-      });
+      if (pgErrorCode === '23505') {
+        // Find the existing active attempt
+        const existing = await db.query.interviewAttempts.findFirst({
+          where: and(
+            eq(interviewAttempts.candidateId, userId),
+            inArray(interviewAttempts.status, ['in_progress', 'processing'])
+          ),
+        });
 
-      if (!promptVersion) {
-        throw { type: 'CONFIG_ERROR', message: 'Prompt version not found' };
+        throw new ApiError(409, 'IN_PROGRESS', 'An interview attempt is already in progress', {
+          existingAttemptId: existing?.id,
+        });
       }
+      throw insertError;
+    }
 
-      // Generate presigned upload URL
-      const { uploadUrl, objectKey, expiresAt } = await generateUploadUrl(attempt.id);
-
-      // Store the object key on the attempt
-      await tx
-        .update(interviewAttempts)
-        .set({ videoObjectKey: objectKey })
-        .where(eq(interviewAttempts.id, attempt.id));
-
-      return {
-        attemptId: attempt.id,
-        attemptNumber,
-        uploadUrl,
-        uploadUrlExpiresAt: expiresAt.toISOString(),
-        prompts: promptVersion.prompts,
-        promptVersionId: versions.activePromptVersionId,
-        evaluatorVersionId: versions.activeEvaluatorVersionId,
-      };
+    // Get prompts for client
+    const promptVersion = await tx.query.promptVersions.findFirst({
+      where: eq(promptVersions.id, versions.activePromptVersionId),
     });
 
-    return NextResponse.json(result);
-  } catch (error: unknown) {
-    // Handle known error types
-    if (error && typeof error === 'object' && 'type' in error) {
-      const err = error as { type: string; [key: string]: unknown };
-
-      if (err.type === 'LOCKED') {
-        return NextResponse.json(
-          {
-            error: 'LOCKED',
-            reason: err.reason,
-            unlockRequestAllowed: err.unlockRequestAllowed,
-            requestPending: err.requestPending,
-          },
-          { status: 403 }
-        );
-      }
-
-      if (err.type === 'CONFIG_ERROR') {
-        console.error('Configuration error:', err.message);
-        return NextResponse.json(
-          { error: 'INTERNAL_SERVER_ERROR' },
-          { status: 500 }
-        );
-      }
+    if (!promptVersion) {
+      throw Errors.internal('Prompt version not found');
     }
 
-    // Handle Postgres unique constraint violation (active attempt exists)
-    // The error code can be on the error itself or nested in error.cause
-    const pgErrorCode =
-      (error && typeof error === 'object' && 'code' in error && error.code) ||
-      (error && typeof error === 'object' && 'cause' in error &&
-       error.cause && typeof error.cause === 'object' && 'code' in error.cause && error.cause.code);
+    // Generate presigned upload URL
+    const { uploadUrl, objectKey, expiresAt } = await generateUploadUrl(attempt.id);
 
-    if (pgErrorCode === '23505') {
-      // Find the existing active attempt
-      const existing = await db.query.interviewAttempts.findFirst({
-        where: and(
-          eq(interviewAttempts.candidateId, (await auth()).userId!),
-          inArray(interviewAttempts.status, ['in_progress', 'processing'])
-        ),
-      });
+    // Store the object key on the attempt
+    await tx
+      .update(interviewAttempts)
+      .set({ videoObjectKey: objectKey })
+      .where(eq(interviewAttempts.id, attempt.id));
 
-      return NextResponse.json(
-        {
-          error: 'IN_PROGRESS',
-          existingAttemptId: existing?.id,
-        },
-        { status: 409 }
-      );
-    }
+    return {
+      attemptId: attempt.id,
+      attemptNumber,
+      uploadUrl,
+      uploadUrlExpiresAt: expiresAt.toISOString(),
+      prompts: promptVersion.prompts,
+      promptVersionId: versions.activePromptVersionId,
+      evaluatorVersionId: versions.activeEvaluatorVersionId,
+    };
+  });
 
-    console.error('Initialize error:', error);
-    return NextResponse.json(
-      { error: 'INTERNAL_SERVER_ERROR' },
-      { status: 500 }
-    );
-  }
-}
+  return Response.json(result);
+});
