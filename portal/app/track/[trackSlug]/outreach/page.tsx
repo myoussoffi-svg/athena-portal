@@ -25,9 +25,24 @@ export default async function OutreachPage({
         <div style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center" }}>
           <div style={{ textAlign: "center", padding: 24 }}>
             <h2 style={{ fontSize: 24, marginBottom: 12 }}>Sign in required</h2>
-            <p style={{ color: "rgba(10, 10, 10, 0.6)" }}>
+            <p style={{ color: "rgba(10, 10, 10, 0.6)", marginBottom: 20 }}>
               Please sign in to access the Outreach Tracker.
             </p>
+            <Link
+              href="/sign-in"
+              style={{
+                display: "inline-block",
+                padding: "12px 24px",
+                background: "#416D89",
+                color: "white",
+                borderRadius: 8,
+                textDecoration: "none",
+                fontWeight: 500,
+                fontSize: 14,
+              }}
+            >
+              Sign In
+            </Link>
           </div>
         </div>
       </>
