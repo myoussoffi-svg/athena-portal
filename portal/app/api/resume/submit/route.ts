@@ -105,21 +105,35 @@ export async function POST(request: NextRequest) {
       })
       .where(eq(resumeFeedback.id, feedbackRecord.id));
 
-    // Trigger Inngest processing job
-    await inngest.send({
-      name: 'resume/submitted',
-      data: {
-        feedbackId: feedbackRecord.id,
-        userId,
-        trackSlug,
-        resumeObjectKey,
-        resumeFileName,
-      },
-    });
+    // Trigger Inngest processing job (if configured)
+    const inngestEventKey = process.env.INNGEST_EVENT_KEY;
+    if (inngestEventKey) {
+      await inngest.send({
+        name: 'resume/submitted',
+        data: {
+          feedbackId: feedbackRecord.id,
+          userId,
+          trackSlug,
+          resumeObjectKey,
+          resumeFileName,
+        },
+      });
+    } else {
+      console.warn('[resume/submit] Inngest not configured - resume processing skipped');
+      // Mark as failed since we can't process without Inngest
+      await db
+        .update(resumeFeedback)
+        .set({
+          status: 'failed',
+          errorMessage: 'Resume processing is not configured. Please contact support.',
+          updatedAt: new Date(),
+        })
+        .where(eq(resumeFeedback.id, feedbackRecord.id));
+    }
 
     return NextResponse.json({
       feedbackId: feedbackRecord.id,
-      status: 'pending',
+      status: inngestEventKey ? 'pending' : 'failed',
     });
   } catch (error) {
     console.error('Resume submit error:', error);

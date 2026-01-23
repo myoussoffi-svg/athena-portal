@@ -29,31 +29,39 @@ Your task is to provide detailed, actionable feedback that will help the candida
 
 ## Evaluation Categories (Score 0-100 each)
 
-### 1. Writing Quality (35% weight) - MOST IMPORTANT
+### 1. Writing Quality (40% weight) - MOST IMPORTANT
 - No spelling errors (critical - check very carefully)
 - No grammar issues
 - Concise, impactful language
 - Professional tone
 - No first-person pronouns (I, my, me)
 
-### 2. Experience Section (30% weight)
+### 2. Experience Section (40% weight) - MOST IMPORTANT
 - Strong action verbs (Built, Analyzed, Spearheaded, Conducted, Led, Managed)
-- Quantified achievements with specific numbers ($, %, #)
+- Quantified achievements with specific numbers ($, %, #) WHERE NATURAL
 - Specific rather than vague descriptions - concrete examples matter
 - Each bullet should demonstrate impact and results
 - Avoid weak verbs (helped, assisted, worked on, was responsible for)
 
-### 3. Format & Structure (25% weight)
-- Clean, professional layout
-- Consistent formatting (fonts, spacing, alignment, date formats)
-- Clear section headers (Education, Experience, etc.)
+IMPORTANT - Do NOT over-emphasize quantification:
+- If a bullet already has specific technical content (e.g., "performed DCF and SOTP valuations across 15+ companies"), do NOT suggest adding timeframes like "over 6-month period"
+- Only suggest quantification when a bullet is genuinely vague (e.g., "helped with various projects")
+- A bullet with specific methods, tools, or outcomes is GOOD even without a timeframe
+- Do NOT manufacture unnecessary metrics - quality over quantity of numbers
+
+### 3. Format & Structure (15% weight) - MINOR
+- Only penalize MAJOR, OBVIOUS formatting issues
+- Minor spacing variations are NOT an issue - do not mention them
+- Only flag formatting if it would be immediately noticeable to a reader at first glance
+- Consistent date formats matter (e.g., mixing "Jan 2024" and "January 2024")
 - Consistent bullet punctuation (either all with periods or all without)
+- Do NOT nitpick: slight spacing differences, minor alignment variations, or subtle inconsistencies should be IGNORED
 - NOTE: Do NOT comment on page length - we cannot determine this from text extraction
 
-### 4. Education Section (5% weight) - MINOR
-- University name and expected graduation date
-- Major/minor clearly stated
-- NOTE: Do NOT penalize for GPA - whether displayed or not, GPA should not affect the score
+### 4. Education Section (0% weight) - NOT SCORED
+- Education section is informational only and does NOT affect the score
+- Do NOT penalize or comment on: GPA, school name/ranking, major choice, or graduation date
+- Only mention education if there's a critical error (like a typo in the school name)
 
 ### 5. Skills & Other (5% weight) - MINOR
 - NOTE: Technical skills section is a minor factor - do not prioritize as a fix
@@ -65,20 +73,26 @@ When suggesting priorityFixes, focus on:
 1. Spelling/grammar errors (highest priority)
 2. Vague bullets that need specific details or quantification
 3. Weak verbs that should be replaced with strong action verbs
-4. Formatting inconsistencies
+4. MAJOR formatting inconsistencies only (not minor spacing)
 
 Do NOT include as priority fixes:
 - Adding LinkedIn URL
 - Adding technical skills section
 - GPA-related suggestions
 - Page length concerns
+- Education-related suggestions (school, major, dates)
+- Minor formatting issues (slight spacing, subtle alignment differences)
+- Date formatting unless it's obviously inconsistent (e.g., "Jan 2024" vs "January 2024")
 
 ## Scoring Guidelines
-- 90-100: Excellent descriptive content, no errors, consistent formatting
-- 75-89: Strong content, minor improvements to specificity needed
-- 60-74: Good foundation but bullets need more concrete details
-- 45-59: Multiple vague bullets, formatting issues, or writing errors
-- 0-44: Major gaps in content specificity or numerous errors
+Focus on CONTENT QUALITY (writing + experience) - these are 80% of the score.
+- 90-100: Excellent descriptive content with specific details and quantification, no spelling/grammar errors
+- 75-89: Strong content with good specificity, minor improvements possible
+- 60-74: Good foundation but some bullets could be more specific or quantified
+- 45-59: Multiple vague bullets or notable writing errors
+- 0-44: Major gaps in content specificity or numerous spelling/grammar errors
+
+Be GENEROUS with formatting scores unless there are obvious, glaring issues.
 
 ## Response Format
 Respond ONLY with valid JSON matching the exact schema provided. Do not include any text before or after the JSON.
@@ -117,15 +131,22 @@ IMPORTANT: This resume was uploaded as a Word document. We cannot determine page
 ## Resume Content
 ${resumeText}
 
+## SCORING WEIGHTS (use these exact weights)
+- Writing: 40%
+- Experience: 40%
+- Format: 15%
+- Skills: 5%
+- Education: 0% (NOT SCORED - always give 100)
+
 ## Required JSON Response Schema
 {
   "overallScore10": number (1-10, will be calculated from category scores),
   "categoryScores": {
-    "format": number (0-100),
-    "education": number (0-100),
-    "experience": number (0-100),
-    "skills": number (0-100),
-    "writing": number (0-100)
+    "format": number (0-100, weight: 15%),
+    "education": 100 (ALWAYS 100 - education is not scored),
+    "experience": number (0-100, weight: 40%),
+    "skills": number (0-100, weight: 5%),
+    "writing": number (0-100, weight: 40%)
   },
   "hireReadiness": "ready" | "almost" | "needs_work",
   "priorityFixes": [
@@ -159,6 +180,12 @@ ${resumeText}
   "topStrengths": string[] (2-3 items),
   "summary": string (2-3 sentence overview)
 }
+
+CRITICAL REMINDERS:
+1. Education score must ALWAYS be 100 (it has 0% weight)
+2. Do NOT suggest adding timeframes to bullets that already have specific content
+3. Only suggest quantification for genuinely vague bullets
+4. Format score should be 85+ unless there are OBVIOUS issues
 
 Respond with ONLY the JSON object, no other text.`;
 }

@@ -290,11 +290,10 @@ export function ResumeFeedbackDisplay({ feedback, scores }: ResumeFeedbackDispla
         <h3 style={{ fontSize: 16, fontWeight: 700, color: 'rgba(10, 10, 10, 0.9)', marginBottom: 20 }}>
           Category Breakdown
         </h3>
+        <CategoryBar label="Writing" score={scores.writing} weight={40} />
         <CategoryBar label="Experience" score={scores.experience} weight={40} />
-        <CategoryBar label="Format" score={scores.format} weight={20} />
-        <CategoryBar label="Education" score={scores.education} weight={15} />
-        <CategoryBar label="Writing" score={scores.writing} weight={15} />
-        <CategoryBar label="Skills" score={scores.skills} weight={10} />
+        <CategoryBar label="Format" score={scores.format} weight={15} />
+        <CategoryBar label="Skills" score={scores.skills} weight={5} />
       </div>
 
       {/* Next Score Plan */}

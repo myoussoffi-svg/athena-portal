@@ -1,13 +1,13 @@
 import type { CategoryScores } from './schemas';
 
 // Category weights (must sum to 100)
-// Heavy emphasis on writing quality and formatting
+// Focus on content quality and writing - not formatting minutiae
 const WEIGHTS = {
-  format: 25,      // Consistent formatting is important
-  education: 5,    // GPA/school name minimally weighted
-  experience: 30,  // Descriptive content + specific examples
+  format: 15,      // Only major formatting issues matter (reduced from 25)
+  education: 0,    // Education section not scored - school/GPA shouldn't affect score
+  experience: 40,  // Descriptive content + specific examples (increased)
   skills: 5,       // Technical skills section is minor
-  writing: 35,     // Spelling, grammar, professional tone - most important
+  writing: 40,     // Spelling, grammar, professional tone - most important
 } as const;
 
 // Verify weights sum to 100 at compile time
