@@ -69,7 +69,7 @@ const rewrittenBulletSchema = z.object({
   before: z.string().min(1),
   after: z.string().min(1),
   why: z.string().min(1),
-  patternTag: z.enum(['weak_verb', 'no_quantification', 'vague', 'too_long', 'grammar', 'other']),
+  patternTag: z.enum(['weak_verb', 'no_quantification', 'vague', 'too_long', 'grammar', 'sparse_section', 'other']),
 });
 
 const spellingIssueSchema = z.object({
@@ -95,11 +95,18 @@ const quantificationOpportunitySchema = z.object({
   suggestion: z.string(),
 });
 
+const sparseRoleSchema = z.object({
+  company: z.string(),
+  bulletCount: z.number(),
+  recommendation: z.string(),
+});
+
 const flagsSchema = z.object({
   spellingIssues: z.array(spellingIssueSchema),
   grammarIssues: z.array(grammarIssueSchema),
   formattingIssues: z.array(formattingIssueSchema),
   quantificationOpportunities: z.array(quantificationOpportunitySchema),
+  sparseRoles: z.array(sparseRoleSchema).optional(),
 });
 
 const nextScorePlanSchema = z.object({

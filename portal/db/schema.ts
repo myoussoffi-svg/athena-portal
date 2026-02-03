@@ -108,6 +108,19 @@ export const connectionTypeEnum = pgEnum('connection_type', [
   'other',
 ]);
 
+export const purchaseStatusEnum = pgEnum('purchase_status', [
+  'active',       // Paid and has access
+  'refunded',     // Admin issued refund, access revoked
+  'disputed',     // Chargeback filed, access revoked
+]);
+
+export const adminActionTypeEnum = pgEnum('admin_action_type', [
+  'grant_access',    // Manually granted access (e.g., free access, comp)
+  'revoke_access',   // Manually revoked access
+  'issue_refund',    // Processed refund via Stripe
+  'resolve_dispute', // Resolved a chargeback
+]);
+
 export const contactRoleEnum = pgEnum('contact_role', [
   'analyst',
   'associate',
@@ -438,6 +451,10 @@ export const resumeFeedback = pgTable(
     // Feedback (contains only analyzed bullets, not full resume text)
     feedbackJson: jsonb('feedback_json'),
 
+    // Screenshot for visual formatting analysis (optional)
+    screenshotObjectKey: text('screenshot_object_key'),
+    screenshotContentType: text('screenshot_content_type'),
+
     // Timestamps
     submittedAt: timestamp('submitted_at', { withTimezone: true }),
     completedAt: timestamp('completed_at', { withTimezone: true }),
@@ -526,6 +543,127 @@ export const outreachSettings = pgTable(
 );
 
 // ─────────────────────────────────────────────────────────────
+// PRODUCTS (Course catalog)
+// ─────────────────────────────────────────────────────────────
+
+export const products = pgTable(
+  'products',
+  {
+    id: uuid('id').primaryKey().defaultRandom(),
+
+    // Product identifier (matches course/track slug)
+    slug: text('slug').notNull().unique(), // 'ib-interview-prep', 'pe-interview-prep'
+    name: text('name').notNull(),          // 'Investment Banking Interview Prep'
+    description: text('description'),
+
+    // Pricing
+    priceUsdCents: integer('price_usd_cents').notNull(), // 28500 = $285.00
+
+    // Stripe references
+    stripeProductId: text('stripe_product_id'),
+    stripePriceId: text('stripe_price_id'),
+
+    // State
+    isActive: boolean('is_active').notNull().default(true),
+
+    // What this product grants access to (track slugs)
+    // For bundles, this can contain multiple slugs
+    grantedTrackSlugs: jsonb('granted_track_slugs').notNull().default(sql`'[]'::jsonb`),
+
+    createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
+    updatedAt: timestamp('updated_at', { withTimezone: true }).notNull().defaultNow(),
+  },
+  (table) => [
+    index('idx_products_active').on(table.isActive),
+  ]
+);
+
+// ─────────────────────────────────────────────────────────────
+// PURCHASES (User entitlements)
+// ─────────────────────────────────────────────────────────────
+
+export const purchases = pgTable(
+  'purchases',
+  {
+    id: uuid('id').primaryKey().defaultRandom(),
+
+    // User reference (Clerk user ID)
+    userId: text('user_id').notNull(),
+
+    // Product reference
+    productId: uuid('product_id').notNull().references(() => products.id),
+
+    // Stripe references
+    stripeCustomerId: text('stripe_customer_id'),
+    stripePaymentIntentId: text('stripe_payment_intent_id'),
+    stripeCheckoutSessionId: text('stripe_checkout_session_id'),
+
+    // Amount paid (for refund reference)
+    amountPaidCents: integer('amount_paid_cents').notNull(),
+
+    // Status
+    status: purchaseStatusEnum('status').notNull().default('active'),
+
+    // Timestamps
+    purchasedAt: timestamp('purchased_at', { withTimezone: true }).notNull().defaultNow(),
+    refundedAt: timestamp('refunded_at', { withTimezone: true }),
+    disputedAt: timestamp('disputed_at', { withTimezone: true }),
+
+    // For future use: expiring access
+    expiresAt: timestamp('expires_at', { withTimezone: true }), // null = lifetime
+
+    createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
+    updatedAt: timestamp('updated_at', { withTimezone: true }).notNull().defaultNow(),
+  },
+  (table) => [
+    // Index for checking user access
+    index('idx_purchases_user').on(table.userId),
+    index('idx_purchases_user_status').on(table.userId, table.status),
+    // Index for Stripe webhook lookups
+    index('idx_purchases_checkout_session').on(table.stripeCheckoutSessionId),
+    index('idx_purchases_payment_intent').on(table.stripePaymentIntentId),
+  ]
+);
+
+// ─────────────────────────────────────────────────────────────
+// ADMIN ACTIONS LOG (Audit trail)
+// ─────────────────────────────────────────────────────────────
+
+export const adminActions = pgTable(
+  'admin_actions',
+  {
+    id: uuid('id').primaryKey().defaultRandom(),
+
+    // Who performed the action
+    adminUserId: text('admin_user_id').notNull(),
+
+    // What action
+    actionType: adminActionTypeEnum('action_type').notNull(),
+
+    // Target user
+    targetUserId: text('target_user_id').notNull(),
+
+    // Related purchase (if applicable)
+    purchaseId: uuid('purchase_id').references(() => purchases.id),
+
+    // Details
+    reason: text('reason'), // Why the action was taken
+    notes: text('notes'),   // Additional context
+
+    // Stripe refund reference (if applicable)
+    stripeRefundId: text('stripe_refund_id'),
+    refundAmountCents: integer('refund_amount_cents'),
+
+    createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
+  },
+  (table) => [
+    index('idx_admin_actions_target').on(table.targetUserId),
+    index('idx_admin_actions_admin').on(table.adminUserId),
+    index('idx_admin_actions_purchase').on(table.purchaseId),
+  ]
+);
+
+// ─────────────────────────────────────────────────────────────
 // TYPE EXPORTS
 // ─────────────────────────────────────────────────────────────
 
@@ -557,3 +695,12 @@ export type NewOutreachContact = typeof outreachContacts.$inferInsert;
 
 export type OutreachSettings = typeof outreachSettings.$inferSelect;
 export type NewOutreachSettings = typeof outreachSettings.$inferInsert;
+
+export type Product = typeof products.$inferSelect;
+export type NewProduct = typeof products.$inferInsert;
+
+export type Purchase = typeof purchases.$inferSelect;
+export type NewPurchase = typeof purchases.$inferInsert;
+
+export type AdminAction = typeof adminActions.$inferSelect;
+export type NewAdminAction = typeof adminActions.$inferInsert;

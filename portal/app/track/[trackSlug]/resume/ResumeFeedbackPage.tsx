@@ -2,12 +2,13 @@
 
 import { useState, useCallback } from 'react';
 import Link from 'next/link';
-import { ArrowLeft, FileText, HelpCircle } from 'lucide-react';
+import { ArrowLeft, FileText, HelpCircle, ArrowRight, Sparkles } from 'lucide-react';
 import {
   ResumeUploader,
   ResumeQuotaStatus,
   ResumeProcessingStatus,
   ResumeFeedbackDisplay,
+  ScreenshotUploader,
 } from '@/components/resume';
 import type { ResumeFeedbackJson } from '@/lib/resume/schemas';
 
@@ -15,7 +16,7 @@ interface ResumeFeedbackPageProps {
   trackSlug: string;
 }
 
-type PageState = 'upload' | 'processing' | 'results' | 'error';
+type PageState = 'upload' | 'screenshot' | 'processing' | 'results' | 'error';
 
 interface QuotaData {
   used: number;
@@ -45,10 +46,19 @@ export function ResumeFeedbackPage({ trackSlug }: ResumeFeedbackPageProps) {
   const handleUploadComplete = useCallback(
     (data: { feedbackId: string }) => {
       setFeedbackId(data.feedbackId);
-      setPageState('processing');
+      setPageState('screenshot'); // Go to screenshot step instead of processing
     },
     []
   );
+
+  const handleSkipScreenshot = useCallback(() => {
+    setPageState('processing');
+  }, []);
+
+  const handleScreenshotComplete = useCallback(() => {
+    // Screenshot uploaded, continue to processing
+    setPageState('processing');
+  }, []);
 
   const handleUploadError = useCallback((errorMsg: string) => {
     setError(errorMsg);
@@ -201,6 +211,132 @@ export function ResumeFeedbackPage({ trackSlug }: ResumeFeedbackPageProps) {
                 </p>
               </div>
             )}
+          </div>
+        )}
+
+        {pageState === 'screenshot' && feedbackId && (
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
+            {/* Success message */}
+            <div
+              style={{
+                padding: 20,
+                background: 'rgba(34, 197, 94, 0.05)',
+                border: '1px solid rgba(34, 197, 94, 0.2)',
+                borderRadius: 12,
+                display: 'flex',
+                alignItems: 'center',
+                gap: 16,
+              }}
+            >
+              <div
+                style={{
+                  width: 48,
+                  height: 48,
+                  borderRadius: 12,
+                  background: 'rgba(34, 197, 94, 0.1)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  color: 'rgb(34, 197, 94)',
+                }}
+              >
+                <FileText size={24} />
+              </div>
+              <div>
+                <div style={{ fontSize: 16, fontWeight: 600, color: 'rgba(10, 10, 10, 0.9)', marginBottom: 4 }}>
+                  Resume Uploaded Successfully
+                </div>
+                <div style={{ fontSize: 14, color: 'rgba(10, 10, 10, 0.5)' }}>
+                  Your Word document is ready for analysis
+                </div>
+              </div>
+            </div>
+
+            {/* Screenshot uploader */}
+            <div
+              style={{
+                padding: 24,
+                background: 'white',
+                border: '1px solid rgba(10, 10, 10, 0.1)',
+                borderRadius: 16,
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 20 }}>
+                <Sparkles size={20} style={{ color: 'rgb(139, 92, 246)' }} />
+                <h2 style={{ fontSize: 18, fontWeight: 700, color: 'rgba(10, 10, 10, 0.9)', margin: 0 }}>
+                  Want Better Formatting Feedback?
+                </h2>
+              </div>
+
+              <p style={{ fontSize: 14, color: 'rgba(10, 10, 10, 0.6)', marginBottom: 20, lineHeight: 1.6 }}>
+                Upload a <strong>screenshot</strong> of your resume to get AI-powered visual analysis of:
+              </p>
+
+              <ul style={{
+                margin: '0 0 24px',
+                paddingLeft: 20,
+                color: 'rgba(10, 10, 10, 0.7)',
+                fontSize: 14,
+                lineHeight: 1.8,
+              }}>
+                <li>Header formatting (name, contact info centering)</li>
+                <li>Section headers (ALL CAPS, bold, underline)</li>
+                <li>Font choice and consistency</li>
+                <li>Margins and whitespace balance</li>
+                <li>Content density per role</li>
+              </ul>
+
+              <ScreenshotUploader
+                feedbackId={feedbackId}
+                onUploadComplete={handleScreenshotComplete}
+              />
+            </div>
+
+            {/* Continue button */}
+            <div style={{ display: 'flex', gap: 12 }}>
+              <button
+                onClick={handleSkipScreenshot}
+                style={{
+                  flex: 1,
+                  padding: '14px 24px',
+                  background: 'white',
+                  border: '1px solid rgba(10, 10, 10, 0.15)',
+                  borderRadius: 12,
+                  fontSize: 15,
+                  fontWeight: 500,
+                  color: 'rgba(10, 10, 10, 0.7)',
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: 8,
+                }}
+              >
+                Skip, Analyze Text Only
+              </button>
+              <button
+                onClick={handleSkipScreenshot}
+                style={{
+                  flex: 1,
+                  padding: '14px 24px',
+                  background: 'linear-gradient(135deg, #416D89 0%, #4a7a96 100%)',
+                  border: 'none',
+                  borderRadius: 12,
+                  fontSize: 15,
+                  fontWeight: 600,
+                  color: 'white',
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: 8,
+                  boxShadow: '0 4px 12px rgba(65, 109, 137, 0.3)',
+                }}
+              >
+                Continue to Analysis
+                <ArrowRight size={18} />
+              </button>
+            </div>
           </div>
         )}
 

@@ -3,6 +3,9 @@ id: lbo-overview-and-intuition
 title: LBO Overview and Intuition
 order: 1
 estimated_minutes: 30
+video:
+  provider: youtube
+  id: pm19_7lto7E
 ---
 
 # LBO Overview and Intuition
@@ -123,19 +126,6 @@ The goal is to generate an **IRR (internal rate of return)** of 20-30%+, though 
 **Overemphasizing multiple expansion**: Multiple expansion is uncertain and market-dependent. EBITDA growth and debt paydown are more controllable.
 
 **Not understanding that LBOs require cash flow**: Companies that don't generate cash (e.g., high-growth, unprofitable startups) are poor LBO candidates.
-
-## Video Placeholder
-
-**Video Title**: LBO Overview: How Private Equity Uses Leverage to Amplify Returns
-
-**Outline**:
-- What an LBO is and how it works
-- Why leverage amplifies returns: example with and without leverage
-- The four drivers of LBO returns: leverage, EBITDA growth, multiple expansion, equity contribution
-- What makes a good LBO candidate: cash flow, low CapEx, market position, improvement opportunities
-- Typical LBO structure and investment horizon
-
-**Suggested Length**: 12 minutes
 
 ## Key Takeaways
 

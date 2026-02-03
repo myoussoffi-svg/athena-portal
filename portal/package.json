@@ -28,6 +28,7 @@
     "inngest": "^3.49.1",
     "isomorphic-dompurify": "^2.35.0",
     "js-yaml": "^4.1.1",
+    "jszip": "^3.10.1",
     "lucide-react": "^0.562.0",
     "mammoth": "^1.11.0",
     "next": "16.1.1",
@@ -46,6 +47,8 @@
     "remark-directive": "^4.0.0",
     "remark-gfm": "^4.0.1",
     "remark-html": "^16.0.1",
+    "resend": "^6.8.0",
+    "stripe": "^20.2.0",
     "yaml": "^2.8.2",
     "zod": "^4.3.5"
   },

@@ -16,6 +16,7 @@ import type { Prompt } from './interview/types';
 import { extractDocText, validateDocMetadata } from './resume/doc-extractor';
 import { analyzeResume, getFormattingIssues } from './resume/pre-analyzer';
 import { evaluateResume } from './resume/evaluator';
+import { analyzeResumeWithVision } from './resume/vision-analyzer';
 import { RESUME_QUOTA_LIMIT } from './resume/schemas';
 
 /**
@@ -389,11 +390,44 @@ export const processResumeSubmission = inngest.createFunction(
         return analyzeResume(extractionResult.text);
       });
 
-      // Step 5: Evaluate with Claude
+      // Step 4.5: Check for screenshot and run vision analysis if available
+      const visionAnalysis = await step.run('vision-analyze', async () => {
+        // Fetch the latest feedback record to check for screenshot
+        const record = await db.query.resumeFeedback.findFirst({
+          where: eq(resumeFeedback.id, feedbackId),
+        });
+
+        if (!record?.screenshotObjectKey || !record?.screenshotContentType) {
+          return null; // No screenshot, skip vision analysis
+        }
+
+        try {
+          // Download screenshot from R2
+          const screenshotBuffer = await downloadObject(record.screenshotObjectKey);
+          const base64 = screenshotBuffer.toString('base64');
+
+          // Determine media type
+          const mediaType = record.screenshotContentType as 'image/png' | 'image/jpeg' | 'image/webp' | 'image/gif';
+
+          // Run vision analysis
+          const analysis = await analyzeResumeWithVision(base64, mediaType);
+
+          return analysis;
+        } catch (error) {
+          console.error('Vision analysis failed:', error);
+          return null; // Continue without vision analysis
+        }
+      });
+
+      // Step 5: Evaluate with Claude (include vision analysis if available)
       const feedback = await step.run('evaluate-with-claude', async () => {
         await updateStatus('analyzing');
 
-        const result = await evaluateResume(extractionResult.text, preAnalysis);
+        const result = await evaluateResume(
+          extractionResult.text,
+          preAnalysis,
+          visionAnalysis ?? undefined
+        );
 
         // Merge in formatting issues from pre-analysis
         const heuristicIssues = getFormattingIssues(preAnalysis);
@@ -401,6 +435,28 @@ export const processResumeSubmission = inngest.createFunction(
           ...result.flags.formattingIssues,
           ...heuristicIssues,
         ];
+
+        // If vision analysis found sparse roles, add them to the flags
+        if (visionAnalysis?.density.experienceSectionsSparse.length) {
+          const sparseFromVision = visionAnalysis.density.experienceSectionsSparse.map(
+            (company) => ({
+              company,
+              bulletCount: 1, // Estimated - vision doesn't count exactly
+              recommendation: `Add 3-5 detailed bullets describing your work at ${company}`,
+            })
+          );
+
+          // Merge with any existing sparse roles (avoid duplicates)
+          const existingSparse = result.flags.sparseRoles || [];
+          const existingCompanies = new Set(existingSparse.map((r) => r.company.toLowerCase()));
+
+          result.flags.sparseRoles = [
+            ...existingSparse,
+            ...sparseFromVision.filter(
+              (r) => !existingCompanies.has(r.company.toLowerCase())
+            ),
+          ];
+        }
 
         return result;
       });

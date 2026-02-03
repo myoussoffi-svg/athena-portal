@@ -26,8 +26,9 @@ export type LessonVideo = {
   provider: VideoProvider;
   id: string;
   poster?: string;
-  duration?: number;
-  captions?: string;
+  duration?: number;       // in seconds, for UI display
+  startTime?: number;      // in seconds, to start video at specific point
+  captions?: string;       // URL to captions file
 };
 
 export type Lesson = {
@@ -68,6 +69,7 @@ interface Frontmatter {
     id?: string;
     poster?: string;
     duration?: number;
+    startTime?: number;
     captions?: string;
   };
   [key: string]: unknown;
@@ -89,7 +91,7 @@ function parseFrontmatter(md: string): { frontmatter: Frontmatter; content: stri
   }
 }
 
-function parseVideoMetadata(data: { video?: { provider?: string; id?: string; poster?: string; duration?: number; captions?: string } }): LessonVideo | undefined {
+function parseVideoMetadata(data: { video?: { provider?: string; id?: string; poster?: string; duration?: number; startTime?: number; captions?: string } }): LessonVideo | undefined {
   if (!data.video || !data.video.provider || !data.video.id) {
     return undefined;
   }
@@ -104,6 +106,7 @@ function parseVideoMetadata(data: { video?: { provider?: string; id?: string; po
     id: data.video.id,
     poster: data.video.poster,
     duration: data.video.duration,
+    startTime: data.video.startTime,
     captions: data.video.captions,
   };
 }
@@ -216,7 +219,7 @@ export function getLessonsForModule(trackSlug: string, moduleSlug: string): Less
     const lessonYamlPath = path.join(moduleDir, dir.name, "lesson.yaml");
     if (!fs.existsSync(lessonYamlPath)) continue;
 
-    const data = readYamlFile<{ id?: string; title?: string; description?: string; content?: string; video?: { provider?: string; id?: string; poster?: string; duration?: number; captions?: string } }>(lessonYamlPath);
+    const data = readYamlFile<{ id?: string; title?: string; description?: string; content?: string; video?: { provider?: string; id?: string; poster?: string; duration?: number; startTime?: number; captions?: string } }>(lessonYamlPath);
     lessons.push({
       id: data.id ?? dir.name,
       slug: dir.name,
@@ -282,7 +285,7 @@ export function getLessonBySlug(trackSlug: string, moduleSlug: string, lessonSlu
   // A) Folder-based: <module>/<lessonSlug>/lesson.yaml
   const lessonYamlPath = path.join(contentRoot, trackSlug, moduleSlug, lessonSlug, "lesson.yaml");
   if (fs.existsSync(lessonYamlPath)) {
-    const data = readYamlFile<{ id?: string; title?: string; description?: string; content?: string; video?: { provider?: string; id?: string; poster?: string; duration?: number; captions?: string } }>(lessonYamlPath);
+    const data = readYamlFile<{ id?: string; title?: string; description?: string; content?: string; video?: { provider?: string; id?: string; poster?: string; duration?: number; startTime?: number; captions?: string } }>(lessonYamlPath);
     return {
       id: data.id ?? lessonSlug,
       slug: lessonSlug,

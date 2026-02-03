@@ -20,11 +20,18 @@ function formatDuration(seconds: number): string {
 }
 
 function getEmbedUrl(video: LessonVideoType): string {
+  const startTime = video.startTime ? `#t=${video.startTime}s` : '';
+
   switch (video.provider) {
-    case 'youtube':
-      return `https://www.youtube.com/embed/${video.id}?rel=0&modestbranding=1`;
+    case 'youtube': {
+      const ytStart = video.startTime ? `&start=${video.startTime}` : '';
+      return `https://www.youtube.com/embed/${video.id}?rel=0&modestbranding=1${ytStart}`;
+    }
     case 'vimeo':
-      return `https://player.vimeo.com/video/${video.id}?byline=0&portrait=0`;
+      // dnt=1 = do not track (privacy)
+      // byline=0, portrait=0 = hide uploader info
+      // Domain restriction is set in Vimeo dashboard, not here
+      return `https://player.vimeo.com/video/${video.id}?dnt=1&byline=0&portrait=0&title=0${startTime}`;
     case 'mux':
       return `https://stream.mux.com/${video.id}.m3u8`;
     case 'cloudflare':

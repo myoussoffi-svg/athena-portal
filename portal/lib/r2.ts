@@ -275,3 +275,28 @@ export async function downloadObject(objectKey: string): Promise<Buffer> {
 
   return Buffer.concat(chunks);
 }
+
+/**
+ * Upload a buffer directly to R2.
+ * Used for server-side uploads (e.g., screenshots).
+ *
+ * @param objectKey - The R2 object key
+ * @param data - Buffer containing the file data
+ * @param contentType - MIME type of the content
+ */
+export async function uploadToR2(
+  objectKey: string,
+  data: Buffer,
+  contentType: string
+): Promise<void> {
+  const client = getR2Client();
+
+  await client.send(
+    new PutObjectCommand({
+      Bucket: R2_BUCKET_NAME,
+      Key: objectKey,
+      Body: data,
+      ContentType: contentType,
+    })
+  );
+}
