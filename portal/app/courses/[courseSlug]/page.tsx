@@ -12,7 +12,7 @@ const COURSE_VISIBILITY: Record<string, boolean> = {
   'advanced-private-equity-associate': false,
 };
 
-// Course data (could be fetched from DB, but keeping simple for now)
+// Course data
 const COURSES: Record<string, {
   name: string;
   description: string;
@@ -22,23 +22,23 @@ const COURSES: Record<string, {
 }> = {
   'investment-banking-interview-prep': {
     name: 'Investment Banking Interview Prep',
-    description: 'Comprehensive preparation for investment banking analyst interviews. Master technical concepts, behavioral questions, and practice with our AI-powered mock interviews.',
+    description: 'Master valuation, financial modeling, and behavioral interviews. Covers DCF and LBO fundamentals, interactive case studies, and quiz banks to solidify technicals. Includes a resume feedback tool, outreach tracker for networking emails, and an AI-powered mock interview simulator.',
     price: 265,
     features: [
       'Complete technical curriculum (accounting, valuation, LBOs, M&A)',
-      'Behavioral interview preparation',
+      'Interactive case studies with real deal scenarios',
+      'Quiz banks to master technical concepts',
       'AI-powered mock interview simulator',
-      'Resume feedback tool',
-      'Lifetime access to all content',
-      'Future content updates included',
+      'Resume feedback tool with actionable insights',
+      'Outreach tracker for networking emails',
+      'Behavioral interview preparation',
+      'Lifetime access with future updates',
     ],
     modules: [
+      'Fit, Story & Behavioral',
       'Accounting Foundations',
       'Valuation Modeling',
-      'Leveraged Buyouts (LBOs)',
-      'Mergers & Acquisitions',
-      'Behavioral Interview Prep',
-      'Mock Interview Practice',
+      'LBOs & Advanced Topics',
     ],
   },
   'private-equity-interview-prep': {
@@ -95,6 +95,7 @@ export default function CoursePage() {
         alignItems: 'center',
         justifyContent: 'center',
         padding: '48px 24px',
+        background: '#FAFAFA',
       }}>
         <div style={{ maxWidth: 500, textAlign: 'center' }}>
           <div style={{
@@ -134,13 +135,6 @@ export default function CoursePage() {
           }}>
             {course.description}
           </p>
-          <p style={{
-            fontSize: 14,
-            color: 'rgba(10, 10, 10, 0.5)',
-            marginBottom: 32,
-          }}>
-            This course is currently in development. Check back soon for updates.
-          </p>
           <Link
             href="/"
             style={{
@@ -165,7 +159,6 @@ export default function CoursePage() {
 
   const handlePurchase = async () => {
     if (!isSignedIn) {
-      // Redirect to sign in with return URL
       router.push(`/sign-in?redirect_url=/courses/${courseSlug}`);
       return;
     }
@@ -184,14 +177,12 @@ export default function CoursePage() {
 
       if (!response.ok) {
         if (response.status === 409) {
-          // User already owns this course, redirect to track
           router.push(`/track/${courseSlug}`);
           return;
         }
         throw new Error(data.error || 'Failed to create checkout session');
       }
 
-      // Redirect to Stripe Checkout
       window.location.href = data.url;
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Something went wrong');
@@ -200,171 +191,379 @@ export default function CoursePage() {
   };
 
   return (
-    <div style={{ maxWidth: 900, margin: '0 auto', padding: '48px 24px' }}>
-      {/* Header */}
-      <div style={{ marginBottom: 48 }}>
-        <h1 style={{ fontSize: 36, fontWeight: 600, marginBottom: 16 }}>
-          {course.name}
-        </h1>
-        <p style={{ fontSize: 18, color: '#666', lineHeight: 1.6, maxWidth: 700 }}>
-          {course.description}
-        </p>
-      </div>
+    <>
+      <style>{`
+        .course-page {
+          min-height: 100vh;
+          background: #FAFAFA;
+          font-family: Inter, system-ui, sans-serif;
+        }
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 360px', gap: 48 }}>
-        {/* Left column - Course details */}
-        <div>
-          {/* Features */}
-          <section style={{ marginBottom: 40 }}>
-            <h2 style={{ fontSize: 20, fontWeight: 600, marginBottom: 16 }}>
-              What&apos;s Included
-            </h2>
-            <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-              {course.features.map((feature, i) => (
-                <li
-                  key={i}
-                  style={{
-                    display: 'flex',
-                    alignItems: 'flex-start',
-                    gap: 12,
-                    padding: '12px 0',
-                    borderBottom: '1px solid #eee',
-                  }}
-                >
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="#10b981"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    style={{ flexShrink: 0, marginTop: 2 }}
-                  >
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                  <span>{feature}</span>
-                </li>
-              ))}
-            </ul>
-          </section>
+        /* Hero Section */
+        .course-hero {
+          background: #0A0A0A;
+          color: white;
+          padding: 60px 24px 100px;
+          position: relative;
+          overflow: hidden;
+        }
+        .course-hero::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: radial-gradient(ellipse at top right, rgba(65, 109, 137, 0.15) 0%, transparent 60%);
+          pointer-events: none;
+        }
+        .course-hero-inner {
+          max-width: 900px;
+          margin: 0 auto;
+          position: relative;
+          z-index: 1;
+        }
+        .course-logo {
+          font-family: Inter, system-ui, sans-serif;
+          font-weight: 600;
+          font-size: 14px;
+          letter-spacing: 0.42em;
+          text-transform: uppercase;
+          color: rgba(255, 255, 255, 0.6);
+          margin-bottom: 24px;
+        }
+        .course-title {
+          margin: 0 0 20px;
+          font-size: 42px;
+          font-weight: 700;
+          letter-spacing: -0.03em;
+          line-height: 1.15;
+        }
+        .course-desc {
+          margin: 0;
+          max-width: 600px;
+          font-size: 17px;
+          line-height: 1.7;
+          color: rgba(255, 255, 255, 0.7);
+        }
 
-          {/* Curriculum */}
-          <section>
-            <h2 style={{ fontSize: 20, fontWeight: 600, marginBottom: 16 }}>
-              Curriculum
-            </h2>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-              {course.modules.map((module, i) => (
-                <div
-                  key={i}
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: 12,
-                    padding: 16,
-                    background: '#f8f9fa',
-                    borderRadius: 8,
-                  }}
-                >
-                  <span style={{
-                    width: 28,
-                    height: 28,
-                    borderRadius: '50%',
-                    background: '#1a1a1a',
-                    color: 'white',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    fontSize: 13,
-                    fontWeight: 500,
-                  }}>
-                    {i + 1}
-                  </span>
-                  <span style={{ fontWeight: 500 }}>{module}</span>
-                </div>
-              ))}
-            </div>
-          </section>
+        /* Content Section */
+        .course-content {
+          max-width: 900px;
+          margin: -50px auto 0;
+          padding: 0 24px 80px;
+          position: relative;
+          z-index: 2;
+        }
+        .course-grid {
+          display: grid;
+          grid-template-columns: 1fr 340px;
+          gap: 32px;
+        }
+
+        /* Main Card */
+        .course-main-card {
+          background: #FFFFFF;
+          border-radius: 16px;
+          box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+          padding: 32px;
+        }
+        .section-title {
+          font-size: 13px;
+          font-weight: 600;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          color: rgba(10, 10, 10, 0.4);
+          margin: 0 0 20px;
+        }
+        .feature-list {
+          list-style: none;
+          padding: 0;
+          margin: 0 0 32px;
+        }
+        .feature-item {
+          display: flex;
+          align-items: flex-start;
+          gap: 14px;
+          padding: 14px 0;
+          border-bottom: 1px solid rgba(10, 10, 10, 0.06);
+        }
+        .feature-item:last-child {
+          border-bottom: none;
+        }
+        .feature-check {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background: rgba(65, 109, 137, 0.1);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-shrink: 0;
+          margin-top: 1px;
+        }
+        .feature-check svg {
+          width: 12px;
+          height: 12px;
+          stroke: #416D89;
+          stroke-width: 2.5;
+          fill: none;
+        }
+        .feature-text {
+          font-size: 15px;
+          line-height: 1.5;
+          color: rgba(10, 10, 10, 0.8);
+        }
+
+        /* Modules */
+        .module-list {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+        .module-item {
+          display: flex;
+          align-items: center;
+          gap: 14px;
+          padding: 16px 18px;
+          background: rgba(10, 10, 10, 0.02);
+          border-radius: 10px;
+          border: 1px solid rgba(10, 10, 10, 0.04);
+        }
+        .module-number {
+          width: 28px;
+          height: 28px;
+          border-radius: 8px;
+          background: linear-gradient(135deg, #416D89 0%, #2d4a5e 100%);
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 13px;
+          font-weight: 600;
+          flex-shrink: 0;
+        }
+        .module-name {
+          font-size: 15px;
+          font-weight: 500;
+          color: #0A0A0A;
+        }
+
+        /* Purchase Card */
+        .purchase-card {
+          position: sticky;
+          top: 24px;
+          background: #FFFFFF;
+          border-radius: 16px;
+          box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+          padding: 28px;
+          height: fit-content;
+        }
+        .price-row {
+          display: flex;
+          align-items: baseline;
+          gap: 8px;
+          margin-bottom: 6px;
+        }
+        .price {
+          font-size: 40px;
+          font-weight: 700;
+          color: #0A0A0A;
+          letter-spacing: -0.02em;
+        }
+        .price-note {
+          font-size: 15px;
+          color: rgba(10, 10, 10, 0.5);
+        }
+        .price-subtitle {
+          font-size: 14px;
+          color: rgba(10, 10, 10, 0.5);
+          margin-bottom: 24px;
+        }
+        .enroll-btn {
+          width: 100%;
+          padding: 16px 24px;
+          font-size: 16px;
+          font-weight: 600;
+          background: #0A0A0A;
+          color: white;
+          border: none;
+          border-radius: 10px;
+          cursor: pointer;
+          transition: all 0.2s ease;
+          margin-bottom: 20px;
+        }
+        .enroll-btn:hover {
+          background: #416D89;
+        }
+        .enroll-btn:disabled {
+          background: #999;
+          cursor: not-allowed;
+        }
+        .error-msg {
+          color: #dc2626;
+          font-size: 14px;
+          margin-bottom: 16px;
+          padding: 12px;
+          background: rgba(220, 38, 38, 0.05);
+          border-radius: 8px;
+        }
+        .purchase-info {
+          font-size: 13px;
+          color: rgba(10, 10, 10, 0.5);
+          line-height: 1.7;
+        }
+        .purchase-info p {
+          margin: 0 0 8px;
+        }
+        .purchase-info a {
+          color: #416D89;
+          text-decoration: none;
+        }
+        .purchase-info a:hover {
+          text-decoration: underline;
+        }
+
+        /* Footer */
+        .course-footer {
+          max-width: 900px;
+          margin: 0 auto;
+          padding: 0 24px 48px;
+        }
+        .footer-links {
+          display: flex;
+          gap: 24px;
+          font-size: 13px;
+        }
+        .footer-links a {
+          color: rgba(10, 10, 10, 0.4);
+          text-decoration: none;
+        }
+        .footer-links a:hover {
+          color: #416D89;
+        }
+
+        /* Back link */
+        .back-link {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          color: rgba(255, 255, 255, 0.5);
+          text-decoration: none;
+          font-size: 14px;
+          margin-bottom: 20px;
+          transition: color 0.2s;
+        }
+        .back-link:hover {
+          color: rgba(255, 255, 255, 0.8);
+        }
+
+        @media (max-width: 800px) {
+          .course-hero {
+            padding: 48px 20px 80px;
+          }
+          .course-title {
+            font-size: 32px;
+          }
+          .course-content {
+            padding: 0 16px 60px;
+            margin-top: -40px;
+          }
+          .course-grid {
+            grid-template-columns: 1fr;
+          }
+          .purchase-card {
+            position: static;
+          }
+          .course-footer {
+            padding: 0 16px 40px;
+          }
+        }
+      `}</style>
+
+      <div className="course-page">
+        {/* Hero */}
+        <div className="course-hero">
+          <div className="course-hero-inner">
+            <Link href="/" className="back-link">
+              ← Back to courses
+            </Link>
+            <div className="course-logo">ATHENA</div>
+            <h1 className="course-title">{course.name}</h1>
+            <p className="course-desc">{course.description}</p>
+          </div>
         </div>
 
-        {/* Right column - Purchase card */}
-        <div>
-          <div style={{
-            position: 'sticky',
-            top: 24,
-            background: 'white',
-            border: '1px solid #e5e5e5',
-            borderRadius: 12,
-            padding: 24,
-            boxShadow: '0 4px 12px rgba(0,0,0,0.05)',
-          }}>
-            <div style={{ marginBottom: 24 }}>
-              <span style={{ fontSize: 36, fontWeight: 600 }}>
-                ${course.price}
-              </span>
-              <span style={{ color: '#666', marginLeft: 8 }}>
-                one-time
-              </span>
+        {/* Content */}
+        <div className="course-content">
+          <div className="course-grid">
+            {/* Main Card */}
+            <div className="course-main-card">
+              <h2 className="section-title">What&apos;s Included</h2>
+              <ul className="feature-list">
+                {course.features.map((feature, i) => (
+                  <li key={i} className="feature-item">
+                    <span className="feature-check">
+                      <svg viewBox="0 0 24 24">
+                        <polyline points="20 6 9 17 4 12" />
+                      </svg>
+                    </span>
+                    <span className="feature-text">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <h2 className="section-title">Curriculum</h2>
+              <div className="module-list">
+                {course.modules.map((module, i) => (
+                  <div key={i} className="module-item">
+                    <span className="module-number">{i + 1}</span>
+                    <span className="module-name">{module}</span>
+                  </div>
+                ))}
+              </div>
             </div>
 
-            <button
-              onClick={handlePurchase}
-              disabled={isLoading || !isLoaded}
-              style={{
-                width: '100%',
-                padding: '14px 24px',
-                fontSize: 16,
-                fontWeight: 500,
-                background: isLoading ? '#999' : '#1a1a1a',
-                color: 'white',
-                border: 'none',
-                borderRadius: 8,
-                cursor: isLoading ? 'not-allowed' : 'pointer',
-                marginBottom: 16,
-              }}
-            >
-              {isLoading ? 'Loading...' : isSignedIn ? 'Enroll Now' : 'Sign In to Enroll'}
-            </button>
+            {/* Purchase Card */}
+            <div className="purchase-card">
+              <div className="price-row">
+                <span className="price">${course.price}</span>
+                <span className="price-note">USD</span>
+              </div>
+              <p className="price-subtitle">One-time payment, lifetime access</p>
 
-            {error && (
-              <p style={{ color: '#dc2626', fontSize: 14, marginBottom: 16 }}>
-                {error}
-              </p>
-            )}
+              <button
+                onClick={handlePurchase}
+                disabled={isLoading || !isLoaded}
+                className="enroll-btn"
+              >
+                {isLoading ? 'Loading...' : isSignedIn ? 'Enroll Now' : 'Sign In to Enroll'}
+              </button>
 
-            <div style={{ fontSize: 14, color: '#666' }}>
-              <p style={{ marginBottom: 8 }}>
-                <strong>Lifetime access</strong> - learn at your own pace
-              </p>
-              <p style={{ marginBottom: 8 }}>
-                <strong>No refunds</strong> - please review before purchasing
-              </p>
-              <p>
-                <Link href="/refund-policy" style={{ color: '#666', textDecoration: 'underline' }}>
-                  View refund policy
-                </Link>
-              </p>
+              {error && (
+                <p className="error-msg">{error}</p>
+              )}
+
+              <div className="purchase-info">
+                <p>Instant access after purchase</p>
+                <p>Learn at your own pace</p>
+                <p>
+                  <Link href="/refund-policy">View refund policy</Link>
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Footer links */}
-      <div style={{
-        marginTop: 64,
-        paddingTop: 24,
-        borderTop: '1px solid #eee',
-        display: 'flex',
-        gap: 24,
-        fontSize: 14,
-        color: '#666',
-      }}>
-        <Link href="/terms" style={{ color: '#666' }}>Terms of Service</Link>
-        <Link href="/privacy" style={{ color: '#666' }}>Privacy Policy</Link>
-        <Link href="/refund-policy" style={{ color: '#666' }}>Refund Policy</Link>
+        {/* Footer */}
+        <div className="course-footer">
+          <div className="footer-links">
+            <Link href="/terms">Terms of Service</Link>
+            <Link href="/privacy">Privacy Policy</Link>
+            <Link href="/refund-policy">Refund Policy</Link>
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
