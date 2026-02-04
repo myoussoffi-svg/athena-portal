@@ -1,194 +1,75 @@
-'use client';
-
-import { useState } from 'react';
-import { useUser } from '@clerk/nextjs';
-import { useParams, useRouter } from 'next/navigation';
+import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import { db } from '@/db';
+import { products } from '@/db/schema';
+import { eq, and } from 'drizzle-orm';
+import { isTrackVisible } from '@/lib/feature-flags';
+import { PurchaseButton } from './PurchaseButton';
 
-// Track slug to visibility mapping (must match feature-flags.ts)
-const COURSE_VISIBILITY: Record<string, boolean> = {
-  'investment-banking-interview-prep': true,
-  'private-equity-interview-prep': false,
-  'advanced-private-equity-associate': false,
+// Module data (static - not in database)
+const MODULE_DATA: Record<string, string[]> = {
+  'investment-banking-interview-prep': [
+    'Fit, Story & Behavioral',
+    'Accounting Foundations',
+    'Valuation Modeling',
+    'LBOs & Advanced Topics',
+  ],
+  'private-equity-interview-prep': [
+    'PE Fundamentals',
+    'Advanced LBO Modeling',
+    'Case Studies',
+    'Deal Discussions',
+  ],
 };
 
-// Course data
-const COURSES: Record<string, {
-  name: string;
-  description: string;
-  price: number;
-  features: string[];
-  modules: string[];
-}> = {
-  'investment-banking-interview-prep': {
-    name: 'Investment Banking Interview Prep',
-    description: 'Master valuation, financial modeling, and behavioral interviews. Covers DCF and LBO fundamentals, interactive case studies, and quiz banks to solidify technicals. Includes a resume feedback tool, outreach tracker for networking emails, and an AI-powered mock interview simulator.',
-    price: 265,
-    features: [
-      'Complete technical curriculum (accounting, valuation, LBOs, M&A)',
-      'Interactive case studies with real deal scenarios',
-      'Quiz banks to master technical concepts',
-      'AI-powered mock interview simulator',
-      'Resume feedback tool with actionable insights',
-      'Outreach tracker for networking emails',
-      'Behavioral interview preparation',
-      'Lifetime access with future updates',
-    ],
-    modules: [
-      'Fit, Story & Behavioral',
-      'Accounting Foundations',
-      'Valuation Modeling',
-      'LBOs & Advanced Topics',
-    ],
-  },
-  'private-equity-interview-prep': {
-    name: 'Private Equity Interview Prep',
-    description: 'Complete preparation for private equity associate interviews. Deep dive into LBO modeling, case studies, and portfolio company discussions.',
-    price: 345,
-    features: [
-      'Advanced LBO modeling',
-      'Case study walkthroughs',
-      'Deal discussion preparation',
-      'Portfolio company analysis',
-      'Lifetime access',
-    ],
-    modules: [
-      'PE Fundamentals',
-      'Advanced LBO Modeling',
-      'Case Studies',
-      'Deal Discussions',
-    ],
-  },
+// Feature list (static - could move to database later)
+const FEATURE_DATA: Record<string, string[]> = {
+  'investment-banking-interview-prep': [
+    'Complete technical curriculum (accounting, valuation, LBOs, M&A)',
+    'Interactive case studies with real deal scenarios',
+    'Quiz banks to master technical concepts',
+    'AI-powered mock interview simulator',
+    'Resume feedback tool with actionable insights',
+    'Outreach tracker for networking emails',
+    'Behavioral interview preparation',
+    'Lifetime access with future updates',
+  ],
+  'private-equity-interview-prep': [
+    'Advanced LBO modeling',
+    'Case study walkthroughs',
+    'Deal discussion preparation',
+    'Portfolio company analysis',
+    'Lifetime access',
+  ],
 };
 
-export default function CoursePage() {
-  const params = useParams();
-  const router = useRouter();
-  const { isSignedIn, isLoaded } = useUser();
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
+interface CoursePageProps {
+  params: Promise<{ courseSlug: string }>;
+}
 
-  const courseSlug = params.courseSlug as string;
-  const course = COURSES[courseSlug];
-  const isVisible = COURSE_VISIBILITY[courseSlug] ?? false;
+export default async function CoursePage({ params }: CoursePageProps) {
+  const { courseSlug } = await params;
 
-  if (!course) {
-    return (
-      <div style={{ maxWidth: 600, margin: '80px auto', padding: '0 24px', textAlign: 'center' }}>
-        <h1 style={{ fontSize: 24, marginBottom: 16 }}>Course Not Found</h1>
-        <p style={{ color: '#666', marginBottom: 24 }}>
-          The course you&apos;re looking for doesn&apos;t exist.
-        </p>
-        <Link href="/" style={{ color: '#1a1a1a', textDecoration: 'underline' }}>
-          Return Home
-        </Link>
-      </div>
-    );
+  // Check feature flag - show Coming Soon for hidden courses
+  if (!isTrackVisible(courseSlug)) {
+    return <ComingSoonPage courseSlug={courseSlug} />;
   }
 
-  // Coming Soon page for hidden courses
-  if (!isVisible) {
-    return (
-      <div style={{
-        minHeight: '80vh',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        padding: '48px 24px',
-        background: '#FAFAFA',
-      }}>
-        <div style={{ maxWidth: 500, textAlign: 'center' }}>
-          <div style={{
-            width: 80,
-            height: 80,
-            background: 'linear-gradient(135deg, #416D89 0%, #2d4a5e 100%)',
-            borderRadius: 20,
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            margin: '0 auto 32px',
-            fontSize: 36,
-          }}>
-            🔒
-          </div>
-          <h1 style={{
-            fontSize: 32,
-            fontWeight: 700,
-            marginBottom: 16,
-            color: '#0A0A0A',
-          }}>
-            Coming Soon
-          </h1>
-          <h2 style={{
-            fontSize: 20,
-            fontWeight: 600,
-            marginBottom: 16,
-            color: '#416D89',
-          }}>
-            {course.name}
-          </h2>
-          <p style={{
-            fontSize: 16,
-            lineHeight: 1.7,
-            color: 'rgba(10, 10, 10, 0.6)',
-            marginBottom: 32,
-          }}>
-            {course.description}
-          </p>
-          <Link
-            href="/"
-            style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: 8,
-              background: '#0A0A0A',
-              color: 'white',
-              padding: '14px 28px',
-              borderRadius: 8,
-              fontSize: 15,
-              fontWeight: 600,
-              textDecoration: 'none',
-            }}
-          >
-            ← Browse Available Courses
-          </Link>
-        </div>
-      </div>
-    );
+  // Fetch product from database
+  const product = await db.query.products.findFirst({
+    where: and(
+      eq(products.slug, courseSlug),
+      eq(products.isActive, true)
+    ),
+  });
+
+  if (!product) {
+    notFound();
   }
 
-  const handlePurchase = async () => {
-    if (!isSignedIn) {
-      router.push(`/sign-in?redirect_url=/courses/${courseSlug}`);
-      return;
-    }
-
-    setIsLoading(true);
-    setError(null);
-
-    try {
-      const response = await fetch('/api/stripe/checkout', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ productSlug: courseSlug }),
-      });
-
-      const data = await response.json();
-
-      if (!response.ok) {
-        if (response.status === 409) {
-          router.push(`/track/${courseSlug}`);
-          return;
-        }
-        throw new Error(data.error || 'Failed to create checkout session');
-      }
-
-      window.location.href = data.url;
-    } catch (err) {
-      setError(err instanceof Error ? err.message : 'Something went wrong');
-      setIsLoading(false);
-    }
-  };
+  const modules = MODULE_DATA[courseSlug] || [];
+  const features = FEATURE_DATA[courseSlug] || [];
+  const priceUsd = product.priceUsdCents / 100;
 
   return (
     <>
@@ -380,34 +261,6 @@ export default function CoursePage() {
           color: rgba(10, 10, 10, 0.5);
           margin-bottom: 24px;
         }
-        .enroll-btn {
-          width: 100%;
-          padding: 16px 24px;
-          font-size: 16px;
-          font-weight: 600;
-          background: #0A0A0A;
-          color: white;
-          border: none;
-          border-radius: 10px;
-          cursor: pointer;
-          transition: all 0.2s ease;
-          margin-bottom: 20px;
-        }
-        .enroll-btn:hover {
-          background: #416D89;
-        }
-        .enroll-btn:disabled {
-          background: #999;
-          cursor: not-allowed;
-        }
-        .error-msg {
-          color: #dc2626;
-          font-size: 14px;
-          margin-bottom: 16px;
-          padding: 12px;
-          background: rgba(220, 38, 38, 0.05);
-          border-radius: 8px;
-        }
         .purchase-info {
           font-size: 13px;
           color: rgba(10, 10, 10, 0.5);
@@ -489,8 +342,8 @@ export default function CoursePage() {
               ← Back to courses
             </Link>
             <div className="course-logo">ATHENA</div>
-            <h1 className="course-title">{course.name}</h1>
-            <p className="course-desc">{course.description}</p>
+            <h1 className="course-title">{product.name}</h1>
+            <p className="course-desc">{product.description}</p>
           </div>
         </div>
 
@@ -501,7 +354,7 @@ export default function CoursePage() {
             <div className="course-main-card">
               <h2 className="section-title">What&apos;s Included</h2>
               <ul className="feature-list">
-                {course.features.map((feature, i) => (
+                {features.map((feature, i) => (
                   <li key={i} className="feature-item">
                     <span className="feature-check">
                       <svg viewBox="0 0 24 24">
@@ -513,36 +366,30 @@ export default function CoursePage() {
                 ))}
               </ul>
 
-              <h2 className="section-title">Curriculum</h2>
-              <div className="module-list">
-                {course.modules.map((module, i) => (
-                  <div key={i} className="module-item">
-                    <span className="module-number">{i + 1}</span>
-                    <span className="module-name">{module}</span>
+              {modules.length > 0 && (
+                <>
+                  <h2 className="section-title">Curriculum</h2>
+                  <div className="module-list">
+                    {modules.map((module, i) => (
+                      <div key={i} className="module-item">
+                        <span className="module-number">{i + 1}</span>
+                        <span className="module-name">{module}</span>
+                      </div>
+                    ))}
                   </div>
-                ))}
-              </div>
+                </>
+              )}
             </div>
 
             {/* Purchase Card */}
             <div className="purchase-card">
               <div className="price-row">
-                <span className="price">${course.price}</span>
+                <span className="price">${priceUsd}</span>
                 <span className="price-note">USD</span>
               </div>
               <p className="price-subtitle">One-time payment, lifetime access</p>
 
-              <button
-                onClick={handlePurchase}
-                disabled={isLoading || !isLoaded}
-                className="enroll-btn"
-              >
-                {isLoading ? 'Loading...' : isSignedIn ? 'Enroll Now' : 'Sign In to Enroll'}
-              </button>
-
-              {error && (
-                <p className="error-msg">{error}</p>
-              )}
+              <PurchaseButton courseSlug={courseSlug} />
 
               <div className="purchase-info">
                 <p>Instant access after purchase</p>
@@ -565,5 +412,84 @@ export default function CoursePage() {
         </div>
       </div>
     </>
+  );
+}
+
+// Coming Soon page for hidden courses
+async function ComingSoonPage({ courseSlug }: { courseSlug: string }) {
+  // Try to get product info even if hidden (for name/description)
+  const product = await db.query.products.findFirst({
+    where: eq(products.slug, courseSlug),
+  });
+
+  const name = product?.name || 'Course';
+  const description = product?.description || 'This course is coming soon.';
+
+  return (
+    <div style={{
+      minHeight: '80vh',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: '48px 24px',
+      background: '#FAFAFA',
+    }}>
+      <div style={{ maxWidth: 500, textAlign: 'center' }}>
+        <div style={{
+          width: 80,
+          height: 80,
+          background: 'linear-gradient(135deg, #416D89 0%, #2d4a5e 100%)',
+          borderRadius: 20,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          margin: '0 auto 32px',
+          fontSize: 36,
+        }}>
+          🔒
+        </div>
+        <h1 style={{
+          fontSize: 32,
+          fontWeight: 700,
+          marginBottom: 16,
+          color: '#0A0A0A',
+        }}>
+          Coming Soon
+        </h1>
+        <h2 style={{
+          fontSize: 20,
+          fontWeight: 600,
+          marginBottom: 16,
+          color: '#416D89',
+        }}>
+          {name}
+        </h2>
+        <p style={{
+          fontSize: 16,
+          lineHeight: 1.7,
+          color: 'rgba(10, 10, 10, 0.6)',
+          marginBottom: 32,
+        }}>
+          {description}
+        </p>
+        <Link
+          href="/"
+          style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: 8,
+            background: '#0A0A0A',
+            color: 'white',
+            padding: '14px 28px',
+            borderRadius: 8,
+            fontSize: 15,
+            fontWeight: 600,
+            textDecoration: 'none',
+          }}
+        >
+          ← Browse Available Courses
+        </Link>
+      </div>
+    </div>
   );
 }
