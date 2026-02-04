@@ -3,13 +3,35 @@ import { getTracks } from "@/lib/content";
 import { isTrackVisible } from "@/lib/feature-flags";
 import { GlobalStyles } from "@/components/ui";
 
+// Course metadata for display
+const courseInfo: Record<string, { description: string; stats: { lessons: string; modules: string } }> = {
+  'investment-banking-interview-prep': {
+    description: 'Master valuation, financial modeling, and behavioral interviews. This course covers everything from DCF and LBO fundamentals to advanced deal analysis and case study walkthroughs.',
+    stats: { lessons: '30+', modules: '4' }
+  },
+  'private-equity-interview-prep': {
+    description: 'Prepare for PE interviews with a focus on LBO modeling, deal evaluation, and portfolio company analysis. Learn what top PE firms look for in candidates.',
+    stats: { lessons: '25+', modules: '4' }
+  },
+  'advanced-private-equity-associate': {
+    description: 'Advanced training for PE associates featuring an interactive Deal Simulator. Work through realistic deal scenarios from sourcing to close.',
+    stats: { lessons: '20+', modules: '3' }
+  }
+};
+
 export default function TrackIndexPage() {
   const allTracks = getTracks();
-  const tracks = allTracks.filter((t) => isTrackVisible(t.slug));
 
-  // Get the primary course (IB) for featured display
-  const primaryTrack = tracks.find(t => t.slug === 'investment-banking-interview-prep');
-  const otherTracks = tracks.filter(t => t.slug !== 'investment-banking-interview-prep');
+  // Get the primary course (IB) - always available
+  const primaryTrack = allTracks.find(t => t.slug === 'investment-banking-interview-prep');
+
+  // Get other tracks with their visibility status
+  const otherTracks = allTracks
+    .filter(t => t.slug !== 'investment-banking-interview-prep')
+    .map(t => ({
+      ...t,
+      isAvailable: isTrackVisible(t.slug)
+    }));
 
   return (
     <>
@@ -191,7 +213,7 @@ export default function TrackIndexPage() {
           color: rgba(10, 10, 10, 0.5);
         }
 
-        /* Other Tracks Grid (for future) */
+        /* Other Tracks Grid */
         .other-tracks {
           max-width: 900px;
           margin: 0 auto;
@@ -221,9 +243,13 @@ export default function TrackIndexPage() {
           color: inherit;
           transition: all 0.2s ease;
         }
-        .other-track-card:hover {
+        .other-track-card.available:hover {
           border-color: rgba(65, 109, 137, 0.3);
           box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+        }
+        .other-track-card.locked {
+          cursor: default;
+          opacity: 0.85;
         }
         .other-track-icon {
           width: 48px;
@@ -236,14 +262,36 @@ export default function TrackIndexPage() {
           font-size: 20px;
           flex-shrink: 0;
         }
+        .other-track-card.locked .other-track-icon {
+          background: rgba(10, 10, 10, 0.05);
+        }
         .other-track-content {
           flex: 1;
         }
+        .other-track-header {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          margin-bottom: 4px;
+        }
         .other-track-title {
-          margin: 0 0 4px;
+          margin: 0;
           font-size: 16px;
           font-weight: 600;
           color: #0A0A0A;
+        }
+        .other-track-card.locked .other-track-title {
+          color: rgba(10, 10, 10, 0.6);
+        }
+        .coming-soon-badge {
+          font-size: 10px;
+          font-weight: 700;
+          letter-spacing: 0.5px;
+          text-transform: uppercase;
+          background: rgba(65, 109, 137, 0.1);
+          color: #416D89;
+          padding: 3px 8px;
+          border-radius: 4px;
         }
         .other-track-desc {
           margin: 0;
@@ -256,9 +304,13 @@ export default function TrackIndexPage() {
           opacity: 0;
           transition: all 0.2s ease;
         }
-        .other-track-card:hover .other-track-arrow {
+        .other-track-card.available:hover .other-track-arrow {
           opacity: 1;
           transform: translateX(4px);
+        }
+        .other-track-lock {
+          color: rgba(10, 10, 10, 0.3);
+          font-size: 18px;
         }
 
         @media (max-width: 768px) {
@@ -354,27 +406,55 @@ export default function TrackIndexPage() {
           </div>
         ) : null}
 
-        {/* Other Tracks (if any besides primary) */}
+        {/* Other Tracks - Course Library */}
         {otherTracks.length > 0 && (
           <div className="other-tracks">
             <h3 className="other-tracks-title">More Courses</h3>
             <div className="other-tracks-grid">
-              {otherTracks.map((t) => (
-                <Link
-                  key={t.slug}
-                  href={`/track/${t.slug}`}
-                  className="other-track-card"
-                >
-                  <div className="other-track-icon">📊</div>
-                  <div className="other-track-content">
-                    <h4 className="other-track-title">{t.title}</h4>
-                    <p className="other-track-desc">
-                      {t.description || "Comprehensive interview preparation"}
-                    </p>
+              {otherTracks.map((t) => {
+                const info = courseInfo[t.slug];
+
+                if (t.isAvailable) {
+                  return (
+                    <Link
+                      key={t.slug}
+                      href={`/track/${t.slug}`}
+                      className="other-track-card available"
+                    >
+                      <div className="other-track-icon">📊</div>
+                      <div className="other-track-content">
+                        <div className="other-track-header">
+                          <h4 className="other-track-title">{t.title}</h4>
+                        </div>
+                        <p className="other-track-desc">
+                          {info?.description || t.description || "Comprehensive interview preparation"}
+                        </p>
+                      </div>
+                      <span className="other-track-arrow">→</span>
+                    </Link>
+                  );
+                }
+
+                // Locked/Coming Soon course
+                return (
+                  <div
+                    key={t.slug}
+                    className="other-track-card locked"
+                  >
+                    <div className="other-track-icon">🔒</div>
+                    <div className="other-track-content">
+                      <div className="other-track-header">
+                        <h4 className="other-track-title">{t.title}</h4>
+                        <span className="coming-soon-badge">Coming Soon</span>
+                      </div>
+                      <p className="other-track-desc">
+                        {info?.description || t.description || "Comprehensive interview preparation"}
+                      </p>
+                    </div>
+                    <span className="other-track-lock">🔒</span>
                   </div>
-                  <span className="other-track-arrow">→</span>
-                </Link>
-              ))}
+                );
+              })}
             </div>
           </div>
         )}

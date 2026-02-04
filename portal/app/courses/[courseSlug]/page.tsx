@@ -5,6 +5,13 @@ import { useUser } from '@clerk/nextjs';
 import { useParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
 
+// Track slug to visibility mapping (must match feature-flags.ts)
+const COURSE_VISIBILITY: Record<string, boolean> = {
+  'investment-banking-interview-prep': true,
+  'private-equity-interview-prep': false,
+  'advanced-private-equity-associate': false,
+};
+
 // Course data (could be fetched from DB, but keeping simple for now)
 const COURSES: Record<string, {
   name: string;
@@ -63,6 +70,7 @@ export default function CoursePage() {
 
   const courseSlug = params.courseSlug as string;
   const course = COURSES[courseSlug];
+  const isVisible = COURSE_VISIBILITY[courseSlug] ?? false;
 
   if (!course) {
     return (
@@ -74,6 +82,83 @@ export default function CoursePage() {
         <Link href="/" style={{ color: '#1a1a1a', textDecoration: 'underline' }}>
           Return Home
         </Link>
+      </div>
+    );
+  }
+
+  // Coming Soon page for hidden courses
+  if (!isVisible) {
+    return (
+      <div style={{
+        minHeight: '80vh',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: '48px 24px',
+      }}>
+        <div style={{ maxWidth: 500, textAlign: 'center' }}>
+          <div style={{
+            width: 80,
+            height: 80,
+            background: 'linear-gradient(135deg, #416D89 0%, #2d4a5e 100%)',
+            borderRadius: 20,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            margin: '0 auto 32px',
+            fontSize: 36,
+          }}>
+            🔒
+          </div>
+          <h1 style={{
+            fontSize: 32,
+            fontWeight: 700,
+            marginBottom: 16,
+            color: '#0A0A0A',
+          }}>
+            Coming Soon
+          </h1>
+          <h2 style={{
+            fontSize: 20,
+            fontWeight: 600,
+            marginBottom: 16,
+            color: '#416D89',
+          }}>
+            {course.name}
+          </h2>
+          <p style={{
+            fontSize: 16,
+            lineHeight: 1.7,
+            color: 'rgba(10, 10, 10, 0.6)',
+            marginBottom: 32,
+          }}>
+            {course.description}
+          </p>
+          <p style={{
+            fontSize: 14,
+            color: 'rgba(10, 10, 10, 0.5)',
+            marginBottom: 32,
+          }}>
+            This course is currently in development. Check back soon for updates.
+          </p>
+          <Link
+            href="/"
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: 8,
+              background: '#0A0A0A',
+              color: 'white',
+              padding: '14px 28px',
+              borderRadius: 8,
+              fontSize: 15,
+              fontWeight: 600,
+              textDecoration: 'none',
+            }}
+          >
+            ← Browse Available Courses
+          </Link>
+        </div>
       </div>
     );
   }
