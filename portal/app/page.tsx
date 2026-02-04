@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { getTracks } from "@/lib/content";
 import { isTrackVisible } from "@/lib/feature-flags";
-import { GlobalStyles } from "@/components/ui";
+import { GlobalStyles, AthenaMark } from "@/components/ui";
 
 // Course metadata for display
 const courseInfo: Record<string, { description: string; stats: { lessons: string; modules: string } }> = {
@@ -69,10 +69,6 @@ export default function HomePage() {
           z-index: 1;
         }
         .tracks-logo {
-          font-size: 24px;
-          font-weight: 600;
-          letter-spacing: 0.5px;
-          color: #FFFFFF;
           margin-bottom: 32px;
         }
         .tracks-title {
@@ -339,7 +335,9 @@ export default function HomePage() {
         {/* Hero Section */}
         <div className="tracks-hero">
           <div className="tracks-hero-inner">
-            <div className="tracks-logo">Athena</div>
+            <div className="tracks-logo">
+              <AthenaMark size={18} tone="white" align="center" />
+            </div>
             <h1 className="tracks-title">Master Your Finance Interview</h1>
             <p className="tracks-subtitle">
               Comprehensive preparation designed by industry professionals.
