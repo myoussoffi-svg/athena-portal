@@ -2,7 +2,7 @@
 id: ma-accretion-dilution
 title: M&A Accretion/Dilution Analysis
 order: 7
-estimated_minutes: 35
+estimated_minutes: 50
 ---
 
 # M&A Accretion/Dilution Analysis
@@ -12,6 +12,9 @@ estimated_minutes: 35
 - Explain what accretion and dilution mean in the context of an M&A transaction
 - Calculate pro forma EPS to determine whether a deal is accretive or dilutive
 - Understand the factors that drive accretion or dilution (P/E, cost of financing, synergies)
+- Calculate synergies needed to break even on a dilutive deal
+- Perform contribution analysis to assess deal fairness
+- Construct a pro forma balance sheet with purchase accounting adjustments
 - Answer interview questions involving accretion/dilution scenarios
 
 ## Written Guide
@@ -142,6 +145,84 @@ If the acquirer's P/E is **lower** than the target's, the deal is more likely to
 
 Cost synergies (reducing combined expenses) or revenue synergies (increasing combined revenue) improve pro forma earnings and increase accretion.
 
+### Synergies Needed to Break Even
+
+A key interview question is: "How much in synergies would be needed for this deal to break even?" This asks what level of synergies would make a dilutive deal neutral (pro forma EPS = standalone EPS).
+
+**Calculation**:
+
+Synergies Needed = Dilution Amount × Shares Outstanding / (1 - Tax Rate)
+
+**Example**:
+- Deal is dilutive by $0.10 per share
+- Acquirer has 50M shares outstanding
+- Tax rate: 25%
+
+Total after-tax dilution = $0.10 × 50M = $5M
+
+Pre-tax synergies needed = $5M / (1 - 0.25) = $6.67M
+
+The deal needs $6.67M in annual pre-tax synergies (cost savings or revenue improvements) to break even on EPS.
+
+**Why This Matters**: Management often presents synergy estimates to justify a dilutive deal. Analysts test whether those synergies are realistic by calculating the breakeven threshold.
+
+### Contribution Analysis
+
+**Contribution analysis** examines what percentage each company contributes to the combined entity across various metrics. It helps assess whether the deal terms (ownership split) are fair.
+
+**Key Metrics to Compare**:
+- Revenue contribution
+- EBITDA contribution
+- Net income contribution
+- Enterprise value contribution
+
+**Example**:
+
+| Metric | Acquirer | Target | Acquirer % | Target % |
+|--------|----------|--------|------------|----------|
+| Revenue | $500M | $200M | 71% | 29% |
+| EBITDA | $100M | $50M | 67% | 33% |
+| Net Income | $60M | $25M | 71% | 29% |
+
+If the target's shareholders receive 25% of the combined company's equity but contribute 29-33% of earnings, they may be "undervalued" in the deal terms. This analysis supports negotiation on exchange ratios.
+
+**Interview Application**: "The target contributes 30% of combined EBITDA but is receiving 20% ownership—this suggests the target's shareholders are getting a below-fair deal, or the acquirer is paying a low premium."
+
+### Pro Forma Balance Sheet
+
+In a full merger model, you construct a **pro forma balance sheet** showing the combined company immediately after the transaction closes. This is critical for understanding the new capital structure and any leverage constraints.
+
+**Pro Forma Balance Sheet Construction**:
+
+1. **Start with both companies' balance sheets** at fair value
+2. **Add deal adjustments**:
+   - Cash used for purchase (reduces acquirer's cash)
+   - New debt raised (increases liabilities)
+   - New shares issued (increases equity)
+   - Transaction fees (reduce cash or retained earnings)
+3. **Purchase price allocation**:
+   - Write up/down target's assets to fair value
+   - Record identifiable intangibles
+   - Record goodwill (residual)
+4. **Eliminate target's equity** (replaced by purchase price)
+5. **Add Non-Controlling Interest** if partial acquisition
+
+**Example Pro Forma Adjustments**:
+
+| Item | Acquirer | Target | Adjustments | Pro Forma |
+|------|----------|--------|-------------|-----------|
+| Cash | $200M | $50M | ($300M) deal, +$200M debt | $150M |
+| PP&E | $400M | $100M | +$20M FV adj | $520M |
+| Goodwill | $50M | $0 | +$180M | $230M |
+| Total Assets | $650M | $150M | | $900M |
+| Debt | $100M | $50M | +$200M new | $350M |
+| Equity | $550M | $100M | ($100M) + $100M stock | $550M |
+
+**Why It Matters**:
+- **Leverage ratios**: Lenders and rating agencies assess Debt/EBITDA on the pro forma balance sheet
+- **Financing constraints**: Some deals are constrained by how much debt the combined company can support
+- **Balance sheet strength**: Acquirers want to ensure sufficient liquidity and manageable debt post-close
+
 ### Interview Question: "Is a Deal More Likely to Be Accretive with Cash or Stock?"
 
 The answer depends on the **cost of financing**:
@@ -183,3 +264,6 @@ The answer depends on the **cost of financing**:
 - In a stock deal, account for dilution from new shares issued
 - If acquirer's P/E > target's P/E, the deal is more likely to be accretive
 - Accretion doesn't equal value creation; a deal can be accretive but still overpay
+- Synergies needed to break even = Dilution × Shares / (1 - Tax Rate)
+- Contribution analysis compares each company's share of revenue, EBITDA, and earnings to ownership split
+- Pro forma balance sheet shows the combined company post-close with all purchase accounting adjustments

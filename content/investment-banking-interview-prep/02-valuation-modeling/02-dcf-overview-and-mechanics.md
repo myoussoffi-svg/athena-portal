@@ -2,7 +2,7 @@
 id: dcf-overview-and-mechanics
 title: DCF Overview and Mechanics
 order: 2
-estimated_minutes: 35
+estimated_minutes: 45
 ---
 
 # DCF Overview and Mechanics
@@ -12,6 +12,7 @@ estimated_minutes: 35
 - Explain the conceptual foundation of a DCF and why it's considered the most theoretically sound valuation method
 - Walk through the key steps of building a DCF model
 - Understand how to project free cash flows and discount them to present value
+- Apply the mid-year convention for more accurate discounting
 - Explain the relationship between DCF output (enterprise value) and equity value
 
 ## Written Guide
@@ -84,6 +85,37 @@ Cash flows in the future are worth less than cash flows today due to the time va
 PV = Cash Flow / (1 + WACC)^N
 
 We discount each year's UFCF and the terminal value back to today (Year 0).
+
+### The Mid-Year Convention
+
+In practice, cash flows don't arrive in a lump sum at year-end. A company generates cash throughout the year. The **mid-year convention** adjusts for this by assuming cash flows arrive at the midpoint of each period rather than at the end.
+
+**Why It Matters**: Using year-end discounting understates present value because it assumes cash arrives later than it actually does. The mid-year convention provides a more accurate valuation.
+
+**Standard (Year-End) Discounting**:
+- Year 1 cash flow discounted by (1 + WACC)^1
+- Year 2 cash flow discounted by (1 + WACC)^2
+- And so on...
+
+**Mid-Year Convention Discounting**:
+- Year 1 cash flow discounted by (1 + WACC)^0.5
+- Year 2 cash flow discounted by (1 + WACC)^1.5
+- Year 3 cash flow discounted by (1 + WACC)^2.5
+- And so on...
+
+**Example**:
+
+Year 1 cash flow = $100M, WACC = 10%
+
+Year-End: PV = $100M / (1.10)^1 = $90.9M
+
+Mid-Year: PV = $100M / (1.10)^0.5 = $95.3M
+
+The mid-year convention increases present value by approximately (1 + WACC)^0.5, or about 4-5% in this example.
+
+**Terminal Value and Mid-Year**: When applying mid-year convention to terminal value, the discount period is typically N - 0.5 (if terminal value is calculated at end of year N based on year N+1 cash flow) or the standard convention for exit multiples.
+
+**When to Use**: Most investment banking DCF models use the mid-year convention. However, be consistent—if you use mid-year for projected cash flows, apply the same logic to terminal value discounting.
 
 ### Step 4: Sum to Get Enterprise Value
 
@@ -160,4 +192,5 @@ Equity Value = $1,689.5M - $300M = $1,389.5M
 - UFCF = EBIT × (1 - Tax Rate) + D&A - CapEx - Increase in NWC
 - Terminal value represents cash flows beyond the projection period and is a large component of total value
 - Discount cash flows and terminal value using WACC to arrive at EV
+- The mid-year convention assumes cash flows arrive mid-period, increasing present value by ~(1+WACC)^0.5
 - Subtract net debt from EV to get equity value and divide by shares outstanding for implied price

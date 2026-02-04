@@ -2,7 +2,7 @@
 id: debt-structure-in-lbos
 title: Debt Structure in LBOs
 order: 4
-estimated_minutes: 25
+estimated_minutes: 40
 ---
 
 # Debt Structure in LBOs
@@ -13,6 +13,8 @@ estimated_minutes: 25
 - Understand the seniority structure: secured vs. unsecured, senior vs. subordinated
 - Describe typical debt terms: interest rates, maturity, covenants, amortization
 - Evaluate why LBOs use multiple layers of debt (the "debt stack")
+- Understand PIK interest mechanics and when it's used
+- Calculate mezzanine returns including equity kickers
 
 ## Written Guide
 
@@ -64,6 +66,52 @@ The debt stack is layered by **seniority**: in a default or bankruptcy, senior d
 - May include equity kickers (warrants or equity participation)
 - Used to bridge the gap between senior debt and equity
 - Less common in recent years due to availability of covenant-lite TLBs
+
+### PIK Interest (Payment-in-Kind)
+
+**PIK interest** is a form of interest payment where instead of paying cash, the borrower "pays" by adding the interest amount to the principal balance. This preserves cash in the early years when the company may need it for operations or growth.
+
+**How PIK Works**:
+- Year 1: $100M loan at 10% PIK → No cash interest paid, but principal grows to $110M
+- Year 2: $110M × 10% = $11M added → Principal becomes $121M
+- The interest compounds, increasing total debt over time
+
+**PIK vs. Cash Interest**:
+| Feature | Cash Interest | PIK Interest |
+|---------|--------------|--------------|
+| Cash outflow | Yes, each period | No (deferred) |
+| Debt balance | Stays constant | Grows over time |
+| Total interest cost | Lower | Higher (due to compounding) |
+| When used | Strong cash flow | Cash-constrained, high-growth |
+
+**PIK Toggle**: Some instruments have a "PIK toggle" allowing the borrower to choose between paying cash interest or PIK in any given period, providing flexibility.
+
+**Where PIK Appears**: Common in mezzanine debt, subordinated notes, and holdco debt (debt at the sponsor level, not the operating company).
+
+### Mezzanine Returns and Equity Kickers
+
+Mezzanine lenders accept higher risk than senior lenders but lower risk than equity. To compensate, they receive:
+
+1. **High cash interest rate** (8-12%)
+2. **PIK component** (additional 2-4%)
+3. **Equity participation** (warrants or co-invest rights)
+
+**Typical Mezzanine Structure**:
+- Cash coupon: 10%
+- PIK coupon: 4%
+- Warrants for 2-5% of equity
+
+**Mezzanine Returns Calculation**:
+
+If a mezzanine lender invests $50M with 10% cash + 4% PIK + warrants worth $10M at exit over 5 years:
+
+- Cash interest: $50M × 10% × 5 years = $25M
+- PIK (compounded): Principal grows from $50M to ~$61M
+- Warrant value at exit: $10M
+- Total return: $25M cash + $61M principal + $10M = $96M on $50M invested
+- MOIC: 1.9×, IRR: ~14%
+
+This blended return (between debt and equity) is why mezzanine is called "mezz"—it sits in the middle of the capital structure.
 
 ### Secured vs. Unsecured
 
@@ -164,3 +212,5 @@ Total Equity: $300M (30%)
 - Unsecured debt (high-yield bonds, subordinated debt) has higher interest rates and no collateral
 - Covenants restrict borrower actions; covenant-lite loans have fewer restrictions
 - Some debt amortizes (TLA); most is bullet repayment (TLB, bonds)
+- PIK interest adds to principal instead of paying cash, preserving near-term cash flow
+- Mezzanine returns blend high coupons (cash + PIK) with equity upside through warrants

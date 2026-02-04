@@ -2,7 +2,7 @@
 id: walking-through-an-lbo
 title: Walking Through an LBO
 order: 5
-estimated_minutes: 30
+estimated_minutes: 40
 ---
 
 # Walking Through an LBO
@@ -13,6 +13,7 @@ estimated_minutes: 30
 - Explain how to calculate entry valuation, sources and uses, returns, and IRR
 - Show you can answer "Walk me through an LBO" in an interview setting
 - Understand the key assumptions and sensitivities in an LBO model
+- Monitor credit ratios (Debt/EBITDA, Interest Coverage) and understand covenant implications
 
 ## Written Guide
 
@@ -104,6 +105,35 @@ Use free cash flow to pay down debt over the hold period.
 - Assume $40M/year in free cash flow available for debt paydown
 - After 5 years: Debt paid down = $40M × 5 = $200M
 - Ending Debt = $700M - $200M = $500M
+
+### Credit Ratios and Covenant Compliance
+
+Lenders require the company to maintain certain **credit ratios** throughout the hold period. These are tested quarterly (maintenance covenants) or when taking specific actions (incurrence covenants). Key ratios include:
+
+**Leverage Ratios**:
+- **Total Debt / EBITDA**: Measures overall leverage. LBOs often start at 5-7× and must decline over time.
+- **Senior Debt / EBITDA**: Measures senior leverage only. Typically 3-4× at entry.
+- **Net Debt / EBITDA**: Adjusts for cash on hand.
+
+**Coverage Ratios**:
+- **Interest Coverage (EBITDA / Interest Expense)**: Measures ability to pay interest. Minimum typically 2.0-3.0×.
+- **Fixed Charge Coverage ((EBITDA - CapEx) / (Interest + Debt Amortization))**: More stringent, includes mandatory debt payments.
+- **Debt Service Coverage (EBITDA / (Interest + Principal))**: Comprehensive measure of debt service ability.
+
+**Example Credit Ratio Trajectory**:
+
+| Year | EBITDA | Total Debt | Debt/EBITDA | Interest | Coverage |
+|------|--------|------------|-------------|----------|----------|
+| 0 | $100M | $700M | 7.0× | $42M | 2.4× |
+| 1 | $108M | $660M | 6.1× | $40M | 2.7× |
+| 3 | $125M | $580M | 4.6× | $35M | 3.6× |
+| 5 | $147M | $500M | 3.4× | $30M | 4.9× |
+
+**Why Credit Ratios Matter**:
+- **Covenant breach** can trigger default, allowing lenders to accelerate repayment
+- **Refinancing**: Better ratios enable the company to refinance at lower rates
+- **Dividend recaps**: PE sponsors often can't take dividends until leverage falls below a threshold (e.g., 4.5× Debt/EBITDA)
+- **Exit valuation**: Buyers will underwrite to similar leverage levels, so improving credit metrics can signal a healthy, de-risked business
 
 ### Step 5: Determine Exit Valuation
 

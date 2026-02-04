@@ -2,7 +2,7 @@
 id: wacc-components-and-calculation
 title: WACC Components and Calculation
 order: 3
-estimated_minutes: 30
+estimated_minutes: 40
 ---
 
 # WACC Components and Calculation
@@ -13,6 +13,7 @@ estimated_minutes: 30
 - Calculate WACC given the cost of equity, cost of debt, and capital structure
 - Understand the components: cost of equity (CAPM), cost of debt, and weights
 - Explain why debt is tax-advantaged and how the tax shield is reflected in WACC
+- De-lever and re-lever beta to adjust for differences in capital structure across comparable companies
 
 ## Written Guide
 
@@ -124,6 +125,42 @@ This is why we multiply the cost of debt by **(1 - Tax Rate)** in the WACC formu
 
 Equity, by contrast, has no tax shield. Dividends are paid with after-tax dollars.
 
+### De-Levering and Re-Levering Beta
+
+When using comparable companies to estimate beta, you need to account for differences in capital structure. A company's **observed (levered) beta** reflects both its business risk and financial risk from leverage. To isolate business risk, we **de-lever** the beta, then **re-lever** it for the target company's capital structure.
+
+**Why This Matters**: If your comparable companies have different debt levels than your target, using their levered betas directly would be incorrect. A highly leveraged company has a higher beta due to financial risk, not necessarily higher business risk.
+
+**De-Levering Formula (Hamada)**:
+
+Unlevered Beta = Levered Beta / [1 + (1 - Tax Rate) × (Debt / Equity)]
+
+**Re-Levering Formula**:
+
+Levered Beta = Unlevered Beta × [1 + (1 - Tax Rate) × (Debt / Equity)]
+
+**Step-by-Step Process**:
+
+1. **Gather levered betas** from comparable companies
+2. **De-lever each beta** using each company's D/E ratio and tax rate to get unlevered (asset) betas
+3. **Calculate the median or average** unlevered beta
+4. **Re-lever** using your target company's capital structure to get the appropriate levered beta for WACC
+
+**Example**:
+
+Comparable company has:
+- Levered beta = 1.4
+- Debt/Equity = 0.5
+- Tax rate = 25%
+
+Unlevered Beta = 1.4 / [1 + (1 - 0.25) × 0.5] = 1.4 / 1.375 = 1.02
+
+Now re-lever for your target company with D/E = 0.3:
+
+Levered Beta = 1.02 × [1 + (1 - 0.25) × 0.3] = 1.02 × 1.225 = 1.25
+
+Use 1.25 as the beta in your CAPM calculation, not the original 1.4.
+
 ### Common Mistakes
 
 **Using book values instead of market values**: WACC weights should be based on market values of debt and equity, not book values.
@@ -133,6 +170,8 @@ Equity, by contrast, has no tax shield. Dividends are paid with after-tax dollar
 **Using the wrong risk-free rate**: Use the current yield on a long-term government bond (e.g., 10-year Treasury), not short-term rates.
 
 **Confusing cost of equity with cost of capital**: Cost of equity is the return required by equity holders. WACC is the blended cost of all capital.
+
+**Using levered betas without adjusting for capital structure**: When using comparable company betas, de-lever and re-lever to account for differences in leverage.
 
 ## Video Placeholder
 
@@ -156,3 +195,4 @@ Equity, by contrast, has no tax shield. Dividends are paid with after-tax dollar
 - Cost of Debt is adjusted for the tax shield: Cost of Debt × (1 - Tax Rate)
 - Weights are based on market values of equity and debt, not book values
 - Debt is cheaper than equity due to the tax deductibility of interest
+- When using comparable company betas, de-lever to remove financial risk, then re-lever for the target's capital structure

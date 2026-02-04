@@ -2,7 +2,7 @@
 id: goodwill-intangibles-and-writedowns
 title: Goodwill, Intangibles, and Writedowns
 order: 8
-estimated_minutes: 25
+estimated_minutes: 40
 ---
 
 # Goodwill, Intangibles, and Writedowns
@@ -13,6 +13,8 @@ estimated_minutes: 25
 - Distinguish between goodwill and other intangible assets
 - Understand how impairment and writedowns affect the three financial statements
 - Answer interview questions involving M&A transactions and the treatment of goodwill
+- Explain full consolidation accounting and when it applies
+- Understand Non-Controlling Interest (NCI) and its treatment on the balance sheet and income statement
 
 ## Written Guide
 
@@ -60,6 +62,62 @@ When Company A acquires Company B:
 - **Equity or Cash**: Decreases (if paid in cash) or increases (if paid in stock)
 
 Goodwill sits on the balance sheet and doesn't get amortized. It remains there unless it's impaired.
+
+### Full Consolidation Accounting
+
+When an acquirer gains **control** (typically >50% ownership) of a target, the acquirer must **fully consolidate** the target's financial statements. This means combining 100% of the target's assets, liabilities, revenues, and expenses with the acquirer's, regardless of ownership percentage.
+
+**Consolidation Process**:
+1. Add 100% of the target's assets and liabilities to the acquirer's balance sheet
+2. Add 100% of the target's revenues and expenses to the income statement
+3. Eliminate intercompany transactions (e.g., if the parent sells to the subsidiary)
+4. Record goodwill for the excess of purchase price over fair value of net assets
+5. If ownership is less than 100%, record **Non-Controlling Interest (NCI)**
+
+**Example**: Company A acquires 80% of Company B for $400M. Company B has net assets with fair value of $300M.
+
+- Goodwill = $400M - (80% × $300M) = $400M - $240M = $160M
+- NCI = 20% × $300M = $60M (recorded in equity section)
+- Full $300M of net assets are consolidated (not just 80%)
+
+### Non-Controlling Interest (NCI) / Minority Interest
+
+When the acquirer owns less than 100% of a subsidiary, the portion owned by outside shareholders is called **Non-Controlling Interest (NCI)** or **Minority Interest**.
+
+**Balance Sheet Treatment**:
+- NCI appears in the **equity section**, separate from parent shareholders' equity
+- Represents the minority shareholders' claim on the subsidiary's net assets
+
+**Income Statement Treatment**:
+- 100% of the subsidiary's revenues and expenses are included in the consolidated income statement
+- At the bottom, **Net Income Attributable to NCI** is subtracted to show what belongs to minority shareholders
+- The remaining amount is **Net Income Attributable to Parent**
+
+**Example**:
+| Line Item | Amount |
+|-----------|--------|
+| Revenue | $1,000M |
+| Operating Expenses | ($700M) |
+| Net Income (Consolidated) | $300M |
+| Less: NCI portion (20%) | ($60M) |
+| Net Income to Parent | $240M |
+
+**EPS Calculation**: Only Net Income Attributable to Parent is used for EPS.
+
+### Associates and Equity Method (vs. Consolidation)
+
+If ownership is **20-50%** (significant influence but not control), the investment is accounted for using the **equity method**, not full consolidation.
+
+**Equity Method**:
+- The investment is recorded as a single line item on the balance sheet
+- The investor's share of the investee's net income flows through as a single line item on the income statement
+- No line-by-line consolidation of assets, liabilities, revenues, or expenses
+
+| Ownership % | Accounting Method |
+|-------------|-------------------|
+| < 20% | Fair value (financial asset) |
+| 20-50% | Equity method |
+| > 50% | Full consolidation |
 
 ### Goodwill Impairment
 
@@ -157,3 +215,5 @@ Check the balance:
 - Identifiable intangibles (patents, trademarks) are amortized over their useful life
 - Goodwill impairment is a non-cash charge that reduces net income and book value but not cash flow
 - In M&A questions, allocate the purchase price to identifiable assets and liabilities first, then record the residual as goodwill
+- Full consolidation (>50% ownership) requires adding 100% of target's assets, liabilities, revenues, and expenses
+- Non-Controlling Interest (NCI) represents minority shareholders' claim; appears in equity and reduces parent's net income
