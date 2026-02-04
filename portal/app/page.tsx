@@ -69,25 +69,11 @@ export default function HomePage() {
           z-index: 1;
         }
         .tracks-logo {
-          display: inline-flex;
-          align-items: center;
-          gap: 10px;
-          font-size: 14px;
+          font-size: 24px;
           font-weight: 600;
-          letter-spacing: 2px;
-          text-transform: uppercase;
-          color: #416D89;
+          letter-spacing: 0.5px;
+          color: #FFFFFF;
           margin-bottom: 32px;
-        }
-        .tracks-logo-icon {
-          width: 32px;
-          height: 32px;
-          background: linear-gradient(135deg, #416D89 0%, #2d4a5e 100%);
-          border-radius: 8px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 16px;
         }
         .tracks-title {
           margin: 0 0 24px;
@@ -353,10 +339,7 @@ export default function HomePage() {
         {/* Hero Section */}
         <div className="tracks-hero">
           <div className="tracks-hero-inner">
-            <div className="tracks-logo">
-              <span className="tracks-logo-icon">A</span>
-              <span>Athena</span>
-            </div>
+            <div className="tracks-logo">Athena</div>
             <h1 className="tracks-title">Master Your Finance Interview</h1>
             <p className="tracks-subtitle">
               Comprehensive preparation designed by industry professionals.
@@ -376,8 +359,9 @@ export default function HomePage() {
               <div className="featured-body">
                 <p className="featured-desc">
                   Master valuation, financial modeling, and behavioral interviews.
-                  This course covers everything from DCF and LBO fundamentals to
-                  advanced deal analysis and case study walkthroughs.
+                  Covers DCF and LBO fundamentals, interactive case studies, and quiz banks
+                  to solidify technicals. Includes a resume feedback tool, outreach tracker
+                  for networking emails, and an AI-powered mock interview simulator.
                 </p>
                 <div className="featured-stats">
                   <div className="featured-stat">
