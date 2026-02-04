@@ -1,0 +1,11 @@
+id: management-presentation-internal
+title: Management Presentation & Internal Check-In
+description: Design and execute management presentations that extract critical information, tie findings to strategy, and enable informed go/no-go decisions. Learn to synthesize diligence into internal check-in memos that drive decision-making.
+order: 4
+estimated_hours: 5
+lessons:
+  - designing-management-presentation-agenda
+  - question-sequencing-information-extraction
+  - tying-diligence-findings-strategy
+  - drafting-internal-check-in-memo
+  - deciding-whether-continue-diligence

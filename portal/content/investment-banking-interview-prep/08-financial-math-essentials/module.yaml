@@ -1,0 +1,9 @@
+id: financial-math-essentials
+title: Financial Math Essentials
+description: Master the quantitative foundations underlying finance. Understand time value of money, bond pricing, annuities, and statistical concepts tested in technical interviews. Build computational fluency for modeling and valuation.
+order: 6
+estimated_hours: 3
+lessons:
+  - 01-time-value-of-money
+  - 02-annuities-perpetuities-bond-math
+  - 03-statistics-for-finance

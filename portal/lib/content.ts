@@ -5,7 +5,7 @@ import yaml from "js-yaml";
 
 const contentRoot =
   process.env.CONTENT_ROOT?.trim() ||
-  path.join(__dirname, "..", "..", "content");
+  path.join(process.cwd(), "content");
 export type Track = {
   id: string;
   slug: string;

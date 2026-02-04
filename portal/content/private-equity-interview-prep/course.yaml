@@ -1,0 +1,15 @@
+id: private-equity-interview-prep
+title: Private Equity Interview Prep
+description: Rigorous preparation for private equity recruiting. Master LBO modeling under pressure, case study frameworks, investment judgment, and deal walkthroughs to pass PE interviews at top firms.
+target_audience: Investment banking analysts recruiting for private equity roles
+estimated_hours: 16
+prerequisites:
+  - investment-banking-interview-prep
+access_plans:
+  - pe-prep
+  - full-access
+modules:
+  - pe-recruiting-mechanics
+  - lbo-modeling-mastery
+  - case-studies-judgment
+  - deal-walkthroughs-fit
