@@ -13,7 +13,7 @@ config({ path: '.env.local' });
 
 const STRIPE_IDS = {
   'investment-banking-interview-prep': {
-    stripePriceId: 'price_1Sv2CsJyd4dNOvqA2cGXM22E',
+    stripePriceId: 'price_1SxEHJJyd4dNOvqAqtrVll1R',
     priceUsdCents: 26500, // $265.00
   },
 };
