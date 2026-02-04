@@ -268,7 +268,7 @@ export const processInterviewSubmission = inngest.createFunction(
     });
 
     // Step 5: Finalize and store feedback
-    await step.run('finalize', async () => {
+    const candidateId = await step.run('finalize', async () => {
       await db
         .update(interviewAttempts)
         .set({
@@ -279,7 +279,7 @@ export const processInterviewSubmission = inngest.createFunction(
         .where(eq(interviewAttempts.id, attemptId));
 
       // Store feedback and mark as complete
-      await db
+      const [updatedAttempt] = await db
         .update(interviewAttempts)
         .set({
           status: 'complete',
@@ -288,7 +288,33 @@ export const processInterviewSubmission = inngest.createFunction(
           hireInclination: feedback.hireInclination,
           updatedAt: new Date(),
         })
-        .where(eq(interviewAttempts.id, attemptId));
+        .where(eq(interviewAttempts.id, attemptId))
+        .returning({ candidateId: interviewAttempts.candidateId });
+
+      return updatedAttempt?.candidateId;
+    });
+
+    // Step 6: Apply cooldown lock (24 hours between attempts)
+    await step.run('apply-cooldown', async () => {
+      if (!candidateId) return;
+
+      const cooldownHours = 24;
+      const lockedUntil = new Date(Date.now() + cooldownHours * 60 * 60 * 1000);
+
+      await db
+        .update(candidateLockouts)
+        .set({
+          isLocked: true,
+          lockReason: 'cooldown',
+          lockedAt: new Date(),
+          lockedUntil,
+          // Clear any previous unlock state
+          unlockDecision: null,
+          unlockRequestText: null,
+          unlockRequestedAt: null,
+          updatedAt: new Date(),
+        })
+        .where(eq(candidateLockouts.candidateId, candidateId));
     });
 
     return { success: true, attemptId };

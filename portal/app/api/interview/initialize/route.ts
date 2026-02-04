@@ -47,6 +47,7 @@ export const POST = withErrorHandling(async () => {
           reason: lockout.lockReason,
           unlockRequestAllowed: unlockRequestAllowed && !requestPending,
           requestPending,
+          lockedUntil: lockout.lockedUntil?.toISOString(),
         });
       }
     }

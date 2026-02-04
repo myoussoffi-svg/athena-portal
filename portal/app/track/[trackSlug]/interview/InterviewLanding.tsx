@@ -35,6 +35,8 @@ export function InterviewLanding({ trackSlug }: InterviewLandingProps) {
   const [lockoutData, setLockoutData] = useState<LockedError | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [existingAttemptId, setExistingAttemptId] = useState<string | null>(null);
+  const [unlockSuccess, setUnlockSuccess] = useState(false);
+  const [unlockError, setUnlockError] = useState<string | null>(null);
 
   const { stream, error: mediaError, requestPermissions, releaseStream } = useMediaRecorder();
 
@@ -131,9 +133,26 @@ export function InterviewLanding({ trackSlug }: InterviewLandingProps) {
   };
 
   // Request unlock
-  const handleRequestUnlock = async () => {
-    // TODO: Implement unlock request API
-    alert('Unlock request submitted. Please wait for admin review.');
+  const handleRequestUnlock = async (reason: string) => {
+    setUnlockError(null);
+
+    try {
+      const response = await fetch('/api/interview/unlock-request', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ reason }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to submit unlock request');
+      }
+
+      setUnlockSuccess(true);
+    } catch (err) {
+      setUnlockError(err instanceof Error ? err.message : 'Failed to submit unlock request');
+    }
   };
 
   return (
@@ -350,7 +369,10 @@ export function InterviewLanding({ trackSlug }: InterviewLandingProps) {
           reason={lockoutData.reason}
           unlockRequestAllowed={lockoutData.unlockRequestAllowed}
           requestPending={lockoutData.requestPending}
+          lockedUntil={lockoutData.lockedUntil}
           onRequestUnlock={handleRequestUnlock}
+          unlockSuccess={unlockSuccess}
+          error={unlockError}
         />
       )}
 

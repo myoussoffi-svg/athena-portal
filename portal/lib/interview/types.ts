@@ -29,6 +29,7 @@ export interface LockedError {
   reason: 'cooldown' | 'abandoned' | 'admin_hold';
   unlockRequestAllowed: boolean;
   requestPending: boolean;
+  lockedUntil?: string; // ISO-8601 timestamp for cooldown expiration
 }
 
 export interface InProgressError {
