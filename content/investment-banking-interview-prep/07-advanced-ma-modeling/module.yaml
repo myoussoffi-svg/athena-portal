@@ -1,0 +1,12 @@
+id: advanced-ma-modeling
+title: Advanced M&A Modeling
+description: Build comprehensive three-statement merger models. Master purchase price allocation, consolidation mechanics, synergy modeling, and value creation analysis. Go beyond basic accretion/dilution to full integration models used in live deals.
+order: 7
+estimated_hours: 5
+lessons:
+  - 01-three-statement-merger-overview
+  - 02-standalone-preparation-deal-inputs
+  - 03-purchase-price-allocation-goodwill
+  - 04-consolidating-financial-statements
+  - 05-synergy-modeling-contribution-analysis
+  - 06-roic-avp-value-creation

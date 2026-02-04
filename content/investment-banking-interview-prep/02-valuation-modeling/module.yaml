@@ -1,7 +1,7 @@
 id: valuation-modeling
 title: Valuation & Modeling Concepts
 description: Master core valuation methodologies tested in IB interviews. Understand DCF, comparable companies, precedent transactions, and M&A accretion/dilution. Build the analytical foundation to discuss valuation with confidence.
-order: 3
+order: 4
 estimated_hours: 6
 lessons:
   - 01-enterprise-value-vs-equity-value

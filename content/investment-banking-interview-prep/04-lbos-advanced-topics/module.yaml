@@ -1,7 +1,7 @@
 id: lbos-advanced-topics
 title: LBOs, Advanced Topics & Edge Cases
 description: Master leveraged buyout mechanics, returns analysis, and advanced technical topics tested in IB interviews. Prepare for edge case questions and demonstrate depth beyond standard technical knowledge.
-order: 4
+order: 5
 estimated_hours: 3
 lessons:
   - 01-lbo-overview-and-intuition

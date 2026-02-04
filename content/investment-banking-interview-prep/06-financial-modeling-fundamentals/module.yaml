@@ -1,0 +1,13 @@
+id: financial-modeling-fundamentals
+title: Financial Modeling Fundamentals
+description: Learn how to build integrated three-statement financial models from scratch. Master forecasting techniques, linking statements, handling circularity, and stress testing models. The essential bridge between accounting knowledge and valuation work.
+order: 3
+estimated_hours: 5
+lessons:
+  - 01-modeling-overview-best-practices
+  - 02-forecasting-revenue-and-costs
+  - 03-forecasting-the-balance-sheet
+  - 04-building-cash-flow-from-forecasts
+  - 05-debt-schedules-and-circularity
+  - 06-cash-sweep-mechanics
+  - 07-model-checks-and-stress-testing
