@@ -9,6 +9,8 @@ const nextConfig: NextConfig = {
     '/track/[trackSlug]/[moduleSlug]/[lessonSlug]': ['./content/**/*'],
     '/api/(.*)': ['./content/**/*'],
   },
+  // Handle jsdom ESM compatibility issues
+  serverExternalPackages: ['jsdom', 'isomorphic-dompurify'],
 };
 
 export default nextConfig;
