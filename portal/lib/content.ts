@@ -5,20 +5,41 @@ import yaml from "js-yaml";
 
 // Resolve content path - works both locally and on Vercel
 const contentRoot = (() => {
+  const cwdPath = path.join(process.cwd(), "content");
+
   if (process.env.CONTENT_ROOT?.trim()) {
+    console.log(`[content] Using CONTENT_ROOT env: ${process.env.CONTENT_ROOT}`);
     return process.env.CONTENT_ROOT.trim();
   }
-  // Try process.cwd() first (standard for Vercel)
-  const cwdPath = path.join(process.cwd(), "content");
+
+  // Log debugging info
+  console.log(`[content] process.cwd(): ${process.cwd()}`);
+  console.log(`[content] __dirname: ${__dirname}`);
+  console.log(`[content] Checking cwdPath: ${cwdPath}`);
+
   if (fs.existsSync(cwdPath)) {
+    console.log(`[content] Found content at cwdPath`);
     return cwdPath;
   }
+
   // Fallback to __dirname-relative path
   const dirnamePath = path.join(__dirname, "..", "content");
+  console.log(`[content] Checking dirnamePath: ${dirnamePath}`);
+
   if (fs.existsSync(dirnamePath)) {
+    console.log(`[content] Found content at dirnamePath`);
     return dirnamePath;
   }
-  // Last resort - return cwd path and let it fail with clear error
+
+  // Log what directories exist at cwd
+  try {
+    const cwdContents = fs.readdirSync(process.cwd());
+    console.log(`[content] Contents of cwd: ${cwdContents.join(', ')}`);
+  } catch (e) {
+    console.log(`[content] Could not read cwd: ${e}`);
+  }
+
+  console.log(`[content] WARNING: No content folder found, using ${cwdPath}`);
   return cwdPath;
 })();
 export type Track = {
@@ -127,11 +148,15 @@ function parseVideoMetadata(data: { video?: { provider?: string; id?: string; po
 }
 
 export function getTracks(): Track[] {
+  console.log(`[getTracks] contentRoot: ${contentRoot}`);
+
   if (!fs.existsSync(contentRoot)) {
+    console.error(`[getTracks] ERROR: contentRoot does not exist: ${contentRoot}`);
     throw new Error(`contentRoot does not exist: ${contentRoot}`);
   }
 
   const entries = fs.readdirSync(contentRoot, { withFileTypes: true });
+  console.log(`[getTracks] Found ${entries.length} entries in contentRoot`);
 
   return entries
     .filter((e) => e.isDirectory())
