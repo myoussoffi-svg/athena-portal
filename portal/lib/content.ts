@@ -4,34 +4,11 @@ import { globSync } from "glob";
 import yaml from "js-yaml";
 
 // Resolve content path - works both locally and on Vercel
-// Use path.resolve() to ensure absolute paths
 const contentRoot = (() => {
   if (process.env.CONTENT_ROOT?.trim()) {
-    const envPath = path.resolve(process.env.CONTENT_ROOT.trim());
-    console.log(`[content] Using CONTENT_ROOT env: ${envPath}`);
-    return envPath;
+    return path.resolve(process.env.CONTENT_ROOT.trim());
   }
-
-  // Try process.cwd()/content first (standard for Vercel)
-  const cwdPath = path.resolve(process.cwd(), "content");
-  console.log(`[content] Trying cwdPath: ${cwdPath}`);
-
-  if (fs.existsSync(cwdPath)) {
-    console.log(`[content] Found content at cwdPath`);
-    return cwdPath;
-  }
-
-  // Log what's in cwd to debug
-  try {
-    const cwdContents = fs.readdirSync(process.cwd());
-    console.log(`[content] CWD contents: ${cwdContents.slice(0, 20).join(', ')}`);
-  } catch (e) {
-    console.log(`[content] Could not read CWD: ${e}`);
-  }
-
-  // Return cwdPath anyway - the error will be clearer
-  console.log(`[content] WARNING: content folder not found at ${cwdPath}`);
-  return cwdPath;
+  return path.resolve(process.cwd(), "content");
 })();
 export type Track = {
   id: string;
@@ -139,15 +116,11 @@ function parseVideoMetadata(data: { video?: { provider?: string; id?: string; po
 }
 
 export function getTracks(): Track[] {
-  console.log(`[getTracks] contentRoot: ${contentRoot}`);
-
   if (!fs.existsSync(contentRoot)) {
-    console.error(`[getTracks] ERROR: contentRoot does not exist: ${contentRoot}`);
     throw new Error(`contentRoot does not exist: ${contentRoot}`);
   }
 
   const entries = fs.readdirSync(contentRoot, { withFileTypes: true });
-  console.log(`[getTracks] Found ${entries.length} entries in contentRoot`);
 
   return entries
     .filter((e) => e.isDirectory())
