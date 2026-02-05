@@ -482,8 +482,8 @@ function estimateRolesWithBullets(lines: string[]): Array<{ role: string; bullet
 }
 
 /**
- * Get formatting issues from pre-analysis
- * Returns detailed, actionable formatting feedback
+ * Get content quality issues from pre-analysis
+ * Focused on actionable improvements for bullet content, not formatting
  */
 export function getFormattingIssues(analysis: PreAnalysisResult): Array<{
   issue: string;
@@ -492,96 +492,21 @@ export function getFormattingIssues(analysis: PreAnalysisResult): Array<{
 }> {
   const issues: Array<{ issue: string; location: string; fix: string }> = [];
 
-  // === HEADER/CONTACT FORMATTING ===
-
-  if (!analysis.hasEmail) {
-    issues.push({
-      issue: 'Missing email address',
-      location: 'Header/Contact Info',
-      fix: 'Add your professional email address',
-    });
-  }
-
-  if (!analysis.contactOnSingleLine && (analysis.hasEmail || analysis.hasPhone)) {
-    issues.push({
-      issue: 'Contact information should be on a single line',
-      location: 'Header',
-      fix: 'Format contact as: City, State ZIP | (XXX) XXX-XXXX | email@domain.com',
-    });
-  }
-
-  // === SECTION HEADER FORMATTING ===
-  // Only check if key sections exist - don't enforce ALL CAPS as formatting varies
-
-  // Check for missing key sections
-  const requiredSections = ['education', 'experience'];
-  const missingSections = requiredSections.filter(
-    (s) => !analysis.sectionHeaders.some((h) => h.includes(s))
-  );
-  if (missingSections.length > 0) {
-    issues.push({
-      issue: `Missing standard section headers: ${missingSections.map(s => s.toUpperCase()).join(', ')}`,
-      location: 'Document Structure',
-      fix: 'Add clearly labeled section headers for Education and Work Experience',
-    });
-  }
-
-  // NOTE: Date format checking removed - too often gives false positives based on text extraction
-
-  // === BULLET FORMATTING ===
-
-  if (analysis.bulletPunctuation.inconsistent) {
-    issues.push({
-      issue: `Inconsistent bullet punctuation (${analysis.bulletPunctuation.withPeriod} with periods, ${analysis.bulletPunctuation.withoutPeriod} without)`,
-      location: 'Experience bullets',
-      fix: 'Choose one style: either end ALL bullets with periods or NONE',
-    });
-  }
-
-  if (!analysis.hasSubBullets && analysis.bulletCount > 5) {
-    issues.push({
-      issue: 'No sub-bullets detected for nested details',
-      location: 'Experience section',
-      fix: 'Use sub-bullets (○) to add detail under main accomplishments. Example: main bullet describes project, sub-bullets describe specific contributions/results',
-    });
-  }
-
-  // === CONTENT SUGGESTIONS ===
-
-  const sparseRoles = analysis.estimatedRolesWithBulletCounts.filter((r) => r.bulletCount < 3);
-  if (sparseRoles.length > 0) {
-    for (const role of sparseRoles) {
-      issues.push({
-        issue: `"${role.role}" could use more detail (currently ${role.bulletCount} bullet${role.bulletCount === 1 ? '' : 's'})`,
-        location: 'Experience section',
-        fix: `Consider adding a bullet or two to fill space and give interviewers more insight into your contributions at this role`,
-      });
-    }
-  }
-
-  // === WRITING STYLE ISSUES ===
-
-  if (analysis.firstPersonPronouns.length > 0) {
-    issues.push({
-      issue: `First-person pronouns found: ${analysis.firstPersonPronouns.join(', ')}`,
-      location: 'Throughout resume',
-      fix: 'Remove all first-person pronouns (I, my, me) - use implied subject. Example: "Led team..." not "I led team..."',
-    });
-  }
+  // === WRITING QUALITY (most valuable feedback) ===
 
   if (analysis.weakVerbs.length > 0) {
     issues.push({
-      issue: `Weak action verbs found: ${analysis.weakVerbs.slice(0, 5).join(', ')}${analysis.weakVerbs.length > 5 ? '...' : ''}`,
+      issue: `Consider stronger action verbs to replace: ${analysis.weakVerbs.slice(0, 4).join(', ')}`,
       location: 'Experience bullets',
-      fix: 'Replace with strong IB verbs: Built, Analyzed, Conducted, Created, Developed, Led, Managed, Modeled, Structured',
+      fix: 'Try: Built, Analyzed, Developed, Led, Created, Modeled, Structured, Executed',
     });
   }
 
-  if (analysis.vaguePhrases.length > 0) {
+  if (analysis.firstPersonPronouns.length > 0) {
     issues.push({
-      issue: `Vague language detected: ${analysis.vaguePhrases.slice(0, 4).join(', ')}${analysis.vaguePhrases.length > 4 ? '...' : ''}`,
-      location: 'Experience bullets',
-      fix: 'Replace vague terms with specific details. Instead of "various projects", name the specific project types or deals',
+      issue: `First-person pronouns found (${analysis.firstPersonPronouns.join(', ')})`,
+      location: 'Throughout resume',
+      fix: 'Use implied subject: "Led team..." instead of "I led team..."',
     });
   }
 
@@ -589,54 +514,26 @@ export function getFormattingIssues(analysis: PreAnalysisResult): Array<{
 
   if (analysis.bulletCount > 0) {
     const quantificationRate = analysis.quantifiedBullets / analysis.bulletCount;
-    if (quantificationRate < 0.3) {
+    if (quantificationRate < 0.25) {
       issues.push({
-        issue: `Low quantification: only ${analysis.quantifiedBullets} of ${analysis.bulletCount} bullets have metrics`,
+        issue: `Opportunity to add more metrics (${analysis.quantifiedBullets} of ${analysis.bulletCount} bullets quantified)`,
         location: 'Experience bullets',
-        fix: 'Add specific numbers where possible: deal sizes ($), multiples (6x EBITDA), percentages (35% IRR), counts (15+ companies)',
+        fix: 'Add numbers where possible: deal sizes ($), percentages, counts, or time saved',
       });
     }
   }
 
-  // === BULLET STRUCTURE/VERBOSITY ===
+  // === BULLET STRUCTURE (only flag severe cases) ===
 
-  if (analysis.verboseBullets.length > 0) {
-    const runOnBullets = analysis.verboseBullets.filter(b => b.issueType === 'run_on');
-    const tooLongBullets = analysis.verboseBullets.filter(b => b.issueType === 'too_long');
-    const multiIdeaBullets = analysis.verboseBullets.filter(b => b.issueType === 'multiple_ideas');
-
-    if (runOnBullets.length > 0) {
+  if (analysis.verboseBullets.length >= 2) {
+    const runOnBullets = analysis.verboseBullets.filter(b => b.issueType === 'run_on' || b.issueType === 'too_long');
+    if (runOnBullets.length >= 2) {
       issues.push({
-        issue: `${runOnBullets.length} bullet(s) are run-on sentences with multiple ideas packed together`,
+        issue: `${runOnBullets.length} bullets could be more concise`,
         location: 'Experience bullets',
-        fix: 'Break run-on bullets into separate points. Use main bullet for the key achievement, then sub-bullets (○) for supporting details. Each bullet should communicate ONE clear idea.',
+        fix: 'Consider breaking long bullets into focused points (one idea per bullet)',
       });
     }
-
-    if (tooLongBullets.length > 0) {
-      issues.push({
-        issue: `${tooLongBullets.length} bullet(s) are too verbose (40+ words)`,
-        location: 'Experience bullets',
-        fix: 'Condense to 15-25 words per bullet. Remove filler words. Split complex accomplishments into main bullet + sub-bullets.',
-      });
-    }
-
-    if (multiIdeaBullets.length > 0 && runOnBullets.length === 0) {
-      issues.push({
-        issue: `${multiIdeaBullets.length} bullet(s) contain multiple distinct accomplishments`,
-        location: 'Experience bullets',
-        fix: 'Separate into individual bullets. Each bullet should highlight one specific achievement or responsibility.',
-      });
-    }
-  }
-
-  // Flag if average bullet length is too high
-  if (analysis.avgBulletLength > 30 && analysis.bulletCount >= 5) {
-    issues.push({
-      issue: `Bullets are too long on average (${Math.round(analysis.avgBulletLength)} words vs recommended 15-25)`,
-      location: 'Experience section',
-      fix: 'Tighten language across all bullets. Lead with strong verb, state the action, show the result. Cut unnecessary words.',
-    });
   }
 
   return issues;

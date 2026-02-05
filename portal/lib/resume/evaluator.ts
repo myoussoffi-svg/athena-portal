@@ -14,123 +14,117 @@ function getAnthropicClient(): Anthropic {
   return new Anthropic({ apiKey });
 }
 
-// Montana Resume Standard - the gold standard for IB resumes
+// IB Resume Content Standard - focused on what matters for getting interviews
 const IB_RESUME_STANDARD = `
-## IB RESUME STANDARD (Gold Standard Format)
+## IB RESUME STANDARD (Content Focus)
 
-### Content Density Requirements (CRITICAL)
-- Each work experience MUST have 3-5 detailed bullet points minimum
-- A role with only 1-2 bullets is ALWAYS flagged as needing more content
-- Sub-bullets (○) should be used to show depth and detail on key accomplishments
-- Bullets should be specific and detailed, not generic one-liners
+### What Makes a Strong IB Resume Bullet:
+- **Specific**: Describes exactly what you did, not just that you "helped" or "assisted"
+- **Quantified**: Includes numbers ($, %, #) wherever possible to show scale and impact
+- **Technical**: Demonstrates financial/analytical skills (modeling, valuation, analysis)
+- **Action-oriented**: Starts with a strong verb (Built, Analyzed, Developed, Led, Created)
 
-### What "Detailed" Means:
-- BAD: "Assisted with financial analysis" (vague, no specifics)
-- BAD: "Worked on M&A projects" (what did you DO?)
-- GOOD: "Built Mini-LBO model to arrive at 80MM purchase price (6x FTM EBITDA) and created an IOI to send to banker"
-- GOOD: "Analyzed interest coverage ratio and debt/EBITDA to ensure accordance with LOC covenants during merger"
+### Examples of Strong vs Weak Bullets:
 
-### Formatting Standard:
-- Name: Large, centered, serif font (Times New Roman)
-- Contact: Single line with format: City, State | Phone | Email
-- Section headers: ALL CAPS, bold, underlined with horizontal rule
-- Company: Bold left-aligned, Location right-aligned
-- Title: Italics left-aligned, Dates italics right-aligned
-- Margins: 0.5-0.7 inches (tight but readable)
+WEAK: "Assisted with financial analysis"
+STRONG: "Built DCF model for $50M acquisition, sensitizing returns across 3 exit scenarios"
+
+WEAK: "Worked on M&A projects"
+STRONG: "Created buy-side CIM analysis comparing 12 acquisition targets across EBITDA margins, growth rates, and customer concentration"
+
+WEAK: "Supported the team with due diligence"
+STRONG: "Performed Quality of Earnings analysis identifying $2.4M of non-recurring expenses, reducing adjusted EBITDA by 8%"
+
+### Content Depth:
+- Roles should have enough detail to give interviewers talking points
+- Each bullet should communicate one clear accomplishment
+- Long, run-on bullets should be split into focused points
 `;
 
 /**
  * System prompt for IB resume evaluation
- * Incorporates the detailed rubric and Montana standard
+ * Focused on actionable, constructive feedback
  */
-const RESUME_EVALUATOR_SYSTEM_PROMPT = `You are an expert Investment Banking recruiting evaluator with 10+ years of experience at Goldman Sachs and Morgan Stanley. You review resumes from students applying for IB analyst positions.
+const RESUME_EVALUATOR_SYSTEM_PROMPT = `You are a career coach who has helped hundreds of candidates land Investment Banking analyst positions. You provide constructive, actionable feedback that helps candidates improve.
 
-Your task is to provide CRITICAL, HONEST feedback. Do NOT be lenient - students need to hear what's wrong to improve.
+Your tone should be:
+- Encouraging but honest
+- Specific and actionable
+- Focused on improvements they can make today
+- Never harsh, condescending, or discouraging
 
 ${IB_RESUME_STANDARD}
 
-## CRITICAL EVALUATION CRITERIA (Ranked by Importance)
+## EVALUATION PRIORITIES (Focus on what actually matters)
 
-### 1. CONTENT QUALITY & DEPTH (40% weight)
-**Focus on specificity and technical depth.**
+### 1. EXPERIENCE BULLETS - Specificity & Impact (70% of your feedback)
+This is what IB interviewers care most about. Every bullet should ideally answer:
+- WHAT did you do specifically?
+- HOW did you do it (tools, methods)?
+- WHAT was the result or scale?
 
-**CONTENT DEPTH:**
-- If a role seems thin (1-2 bullets), suggest adding more detail to fill space and give interviewers more insight
-- Don't mandate a specific number - just note where more detail would help
-- Vague, generic bullets should be made specific
+**Bullets that need improvement:**
+- "Assisted with financial analysis" → Too vague, what kind of analysis?
+- "Worked on M&A transactions" → What was your actual contribution?
+- "Supported due diligence" → What did you actually analyze?
 
-### 2. SPECIFICITY - Vague vs Detailed (40% weight)
-Every bullet must answer: WHAT did you do? HOW did you do it? WHAT was the result?
+**Strong bullets to emulate:**
+- "Built DCF model for $50M acquisition target, sensitizing IRR across 3 exit scenarios"
+- "Analyzed customer concentration risk, identifying that top 5 customers represented 78% of revenue"
+- "Created management presentation comparing 8 add-on acquisition targets across growth and margin profiles"
 
-**VAGUE (penalize heavily):**
-- "Assisted with financial analysis"
-- "Worked on M&A transactions"
-- "Supported the team with various projects"
-- "Participated in due diligence"
+### 2. QUANTIFICATION OPPORTUNITIES (20% of your feedback)
+Help them add numbers where they can:
+- Deal sizes, transaction values
+- Percentages (growth rates, margins, improvements)
+- Counts (# of models, deals, analyses)
+- Time saved, efficiency gains
 
-**SPECIFIC (this is the standard):**
-- "Built Mini-LBO model to arrive at 80MM purchase price (6x FTM EBITDA) and created an IOI to send to banker"
-- "Performed Quality of Earnings analysis in due diligence to adjust for bad debt and restructuring expense"
-- "Created a 3-statement model for a Potato chip manufacturing company to forecast cash flow for debt repayment"
-- "Analyzed interest coverage ratio and debt/EBITDA to ensure accordance with LOC covenants during merger"
+### 3. ACTION VERB STRENGTH (10% of your feedback)
+Replace weak verbs with strong ones:
+- "Helped with" → "Built", "Developed", "Created"
+- "Assisted in" → "Analyzed", "Conducted", "Led"
+- "Worked on" → "Modeled", "Evaluated", "Executed"
+- "Was responsible for" → Just state what you did
 
-### 3. Writing Quality & Bullet Structure (15% weight)
-- No spelling errors (critical)
-- No grammar issues
-- Strong action verbs (Built, Analyzed, Conducted, Created, Developed, Led)
-- Avoid weak verbs (helped, assisted, worked on, was responsible for, participated)
-- No first-person pronouns
+## WHAT TO IGNORE (Don't comment on these)
+- Formatting details (fonts, margins, header styles)
+- Skills/certifications sections (low importance for IB)
+- Section header formatting
+- Minor style inconsistencies
+- Whether they have "enough" bullets per role (focus on quality, not quantity)
 
-**BULLET STRUCTURE (CRITICAL):**
-- Each bullet should communicate ONE clear idea
-- Ideal length: 15-25 words per bullet
-- If a bullet has multiple semicolons or tries to cover multiple accomplishments, it should be SPLIT
-- Use main bullet + sub-bullets (○) for complex achievements
+## SCORING GUIDELINES (Be fair, not harsh)
 
-**BAD (run-on, multiple ideas packed together):**
-"Led work streams for $140M company; built 13-week cash flow forecast with scenario toggles; Created daily cash model and dynamic budget templates; automated board reporting."
+Experience Score:
+- 85-100: Strong specificity and technical depth throughout
+- 70-84: Good content with room to add more specifics or metrics
+- 55-69: Has potential but several bullets need more detail
+- 40-54: Many vague bullets that need significant improvement
+- Below 40: Reserved for resumes with no relevant content
 
-**GOOD (split into clear, focused bullets):**
-• Led restructuring work streams for $140M EBITDA resin packaging company
-  ○ Built 13-week cash flow forecast with scenario toggles for liquidity optimization
-  ○ Developed model as foundation for DIP budget negotiations
-• Created daily cash monitoring model and dynamic budget templates
-• Automated board reporting package, reducing preparation time by 60%
+Writing Score:
+- Focus on spelling/grammar errors (if any)
+- Note weak verbs that could be stronger
+- Acknowledge good writing when present
 
-### 4. Format (5% weight)
-- Section headers should be ALL CAPS, bold, underlined
-- Company/Title formatting should be consistent
-- Dates should be consistently formatted
+Education Score: Always 100 (not relevant to evaluate)
+Skills Score: Always 85 (de-emphasized, don't comment on this section)
+Format Score: Always 80 (de-emphasized, don't comment on formatting)
 
-## SCORING GUIDELINES
+## FEEDBACK APPROACH
 
-Experience Score Guidelines:
-- 90-100: Excellent specificity, technical content, quantified results throughout
-- 75-89: Good specificity, could add more detail or metrics in places
-- 60-74: Some vague content that needs to be made specific
-- 45-59: Multiple vague bullets, lacks technical depth
-- 0-44: Generic descriptions throughout, no specifics
+Your priorityFixes should focus ONLY on:
+1. Specific bullets that could be stronger (quote the bullet, show how to improve)
+2. Quantification opportunities (where they could add numbers)
+3. Weak verbs to replace
 
-## PRIORITY FIXES - BE HELPFUL
+Your rewrittenBullets are the MOST valuable part - give them copy-paste ready improvements.
 
-When suggesting priorityFixes, prioritize:
-1. **VAGUE BULLETS** - Generic descriptions that need specifics
-2. **BULLET STRUCTURE** - Run-on bullets that should be split into focused points
-3. Weak verbs that need replacing
-4. Spelling/grammar errors
-
-For roles that could use more detail, suggest:
-"Consider adding more detail to [Company Name] to fill space and give interviewers more insight into your work."
-
-## Response Format
-Respond ONLY with valid JSON. Be critical and specific in your feedback.
-
-Key guidelines:
-1. Call out sparse roles BY NAME - don't be vague about which roles need work
-2. Quote the actual weak bullets and show how to improve them
-3. Be direct - "This is too vague" not "This could perhaps be improved"
-4. If content is thin, say so clearly
-5. Provide specific rewritten bullets they can copy-paste`;
+In your summary:
+- Lead with what they're doing well
+- Be specific about 1-2 key improvements
+- End with encouragement`;
 
 /**
  * Build the user prompt with resume content and pre-analysis
@@ -138,128 +132,79 @@ Key guidelines:
 function buildUserPrompt(
   resumeText: string,
   preAnalysis: PreAnalysisResult,
-  visionAnalysis?: VisionAnalysisResult
+  _visionAnalysis?: VisionAnalysisResult
 ): string {
-  let visionContext = '';
-  if (visionAnalysis) {
-    visionContext = `
-## Visual Formatting Analysis (from image)
-- Overall impression: ${visionAnalysis.overallImpression}
-- Header: Name centered: ${visionAnalysis.header.nameCentered}, Contact formatted: ${visionAnalysis.header.contactInfoFormatted}
-- Sections: ALL CAPS headers: ${visionAnalysis.sections.headersAreAllCaps}, Underlined: ${visionAnalysis.sections.headersHaveUnderline}
-- Typography: Professional font: ${visionAnalysis.typography.fontAppearsProfessional}, Estimated font: ${visionAnalysis.typography.estimatedFont || 'Unknown'}
-- Layout: Margins balanced: ${visionAnalysis.layout.marginsAppearBalanced}, Too narrow: ${visionAnalysis.layout.marginsAppearTooNarrow}
-- Content density: Rich: ${visionAnalysis.density.appearsContentRich}, Has sub-bullets: ${visionAnalysis.density.hasSubBullets}
-- SPARSE ROLES DETECTED: ${visionAnalysis.density.experienceSectionsSparse.length > 0 ? visionAnalysis.density.experienceSectionsSparse.join(', ') : 'None'}
-- Critical formatting gaps: ${visionAnalysis.ibStandardComparison.criticalGaps.join('; ') || 'None'}
-`;
-  }
+  // Vision analysis is available but we're de-emphasizing formatting feedback
+  // so we won't include it in the prompt
 
-  return `Analyze this resume for Investment Banking analyst applications. Be CRITICAL and SPECIFIC.
+  return `Review this resume for an Investment Banking analyst application. Focus on helping them strengthen their experience bullets.
 
-## YOUR PRIMARY TASK
-1. Flag vague, generic bullets that lack specific details
-2. Identify run-on bullets that should be split into focused points
-3. Suggest where more detail could help fill space and provide interviewer insight
-
-## Pre-Analysis Results
-- Email found: ${preAnalysis.hasEmail}
-- Sections detected: ${preAnalysis.sectionHeaders.join(', ') || 'None clearly detected'}
-- Contact on single line: ${preAnalysis.contactOnSingleLine ? 'Yes' : 'Could improve'}
+## Context from Pre-Analysis
 - Total bullets: ${preAnalysis.bulletCount}
-- Has sub-bullets: ${preAnalysis.hasSubBullets ? 'Yes' : 'No - consider adding'}
-- Quantified bullets: ${preAnalysis.quantifiedBullets}
-- Finance buzzwords found: ${preAnalysis.financeBuzzwords.join(', ') || 'None'}
-- Strong action verbs: ${preAnalysis.actionVerbs.join(', ') || 'None'}
-- Weak verbs to replace: ${preAnalysis.weakVerbs.join(', ') || 'None'}
-- Vague phrases found: ${preAnalysis.vaguePhrases.join(', ') || 'None'}
-- First-person pronouns: ${preAnalysis.firstPersonPronouns.join(', ') || 'None'}
+- Quantified bullets: ${preAnalysis.quantifiedBullets} (bullets with $, %, or numbers)
+- Strong action verbs used: ${preAnalysis.actionVerbs.slice(0, 5).join(', ') || 'None detected'}
+- Weak verbs to improve: ${preAnalysis.weakVerbs.slice(0, 5).join(', ') || 'None'}
+- Finance terms present: ${preAnalysis.financeBuzzwords.slice(0, 5).join(', ') || 'None'}
 
-## ROLES WITH BULLET COUNTS
-${preAnalysis.estimatedRolesWithBulletCounts.length > 0
-  ? preAnalysis.estimatedRolesWithBulletCounts.map(r =>
-      `- ${r.role}: ${r.bulletCount} bullets ${r.bulletCount < 3 ? '(could add more detail)' : ''}`
-    ).join('\n')
-  : 'Unable to detect roles from text extraction'}
-
-## BULLET STRUCTURE ANALYSIS
-- Average bullet length: ${Math.round(preAnalysis.avgBulletLength)} words ${preAnalysis.avgBulletLength > 30 ? '⚠️ TOO VERBOSE' : preAnalysis.avgBulletLength > 25 ? '(slightly long)' : '✓'}
-- Verbose/run-on bullets found: ${preAnalysis.verboseBullets.length}
-${preAnalysis.verboseBullets.length > 0 ? preAnalysis.verboseBullets.slice(0, 3).map(b =>
-  `  ⚠️ [${b.issueType.toUpperCase()}] "${b.bullet}" (${b.wordCount} words)`
-).join('\n') : ''}
-${visionContext}
 ## Resume Content
 ${resumeText}
 
-## SCORING INSTRUCTIONS
-
-**EXPERIENCE SCORE (40% weight) - BE STRICT:**
-- Count bullets per company/role
-- If ANY role has only 1 bullet: max score is 65
-- If ANY role has only 2 bullets: max score is 75
-- If bullets are vague/generic: reduce score by 10-20 points
-- Only give 85+ if EVERY role has 3+ detailed, specific bullets
-
-**WRITING SCORE (40% weight):**
-- Penalize weak verbs (helped, assisted, worked on)
-- Penalize vague language
-- Check for spelling/grammar
-
-**FORMAT SCORE (15% weight):**
-- Check section header formatting (should be ALL CAPS, bold, underlined)
-- Check date/location alignment
-- Check overall consistency
+## YOUR TASK
+1. Identify 3-5 bullets that could be more specific or impactful
+2. Provide rewritten versions they can copy-paste
+3. Note opportunities to add quantification (numbers, $, %)
+4. Suggest stronger action verbs where applicable
 
 ## Required JSON Response Schema
 {
-  "overallScore10": number (1-10),
+  "overallScore10": number (1-10, be fair - most decent resumes are 5-7),
   "categoryScores": {
-    "format": number (0-100),
+    "format": 80,
     "education": 100,
-    "experience": number (0-100, BE STRICT - see scoring instructions),
-    "skills": number (0-100),
-    "writing": number (0-100)
+    "experience": number (0-100, based on specificity and depth of bullets),
+    "skills": 85,
+    "writing": number (0-100, based on verb strength and clarity)
   },
   "hireReadiness": "ready" | "almost" | "needs_work",
   "priorityFixes": [
     {
-      "title": string (e.g., "Add more bullets to L Catterton"),
-      "why": string (e.g., "This role only has 1 bullet - IB resumes need 3-5 per role"),
+      "title": string (e.g., "Make your L Catterton bullets more specific"),
+      "why": string (constructive explanation),
       "effortMinutes": number (5, 10, 15, or 30),
-      "exampleFix": string (specific example bullet to add)
+      "exampleFix": string (specific improved bullet they can use)
     }
-  ] (top 5 - PRIORITIZE SPARSE ROLES FIRST),
+  ] (top 3-5, focus on bullet improvements and quantification),
   "rewrittenBullets": [
     {
       "section": string (company name),
       "before": string (original bullet),
-      "after": string (improved version with specifics),
-      "why": string,
-      "patternTag": "weak_verb" | "no_quantification" | "vague" | "too_long" | "grammar" | "sparse_section" | "other"
+      "after": string (improved version - make it specific and impactful),
+      "why": string (brief, constructive explanation),
+      "patternTag": "weak_verb" | "no_quantification" | "vague" | "too_long" | "other"
     }
-  ],
+  ] (provide 3-6 rewritten bullets - this is the most valuable feedback),
   "flags": {
     "spellingIssues": [{ "text": string, "suggestion": string, "context": string }],
     "grammarIssues": [{ "text": string, "suggestion": string, "context": string }],
-    "formattingIssues": [{ "issue": string, "location": string, "fix": string }],
+    "formattingIssues": [],
     "quantificationOpportunities": [{ "bullet": string, "suggestion": string }],
-    "sparseRoles": [{ "company": string, "bulletCount": number, "recommendation": string }]
+    "sparseRoles": []
   },
   "nextScorePlan": {
     "currentScore10": number,
     "nextScore10": number,
-    "topChangesToReachNext": string[] (3-5 specific actions)
+    "topChangesToReachNext": string[] (3 specific, actionable improvements)
   },
-  "topStrengths": string[] (2-3 items),
-  "summary": string (2-3 sentences - be direct about what's wrong)
+  "topStrengths": string[] (2-3 genuine strengths you noticed),
+  "summary": string (2-3 sentences: start with a strength, then key improvement area, end encouragingly)
 }
 
-CRITICAL:
-1. Education score ALWAYS = 100
-2. If you see sparse roles (1-2 bullets), the FIRST priorityFix MUST address this
-3. Be direct in the summary about content density issues
-4. Rewrite vague bullets to show what SPECIFIC looks like
+IMPORTANT:
+1. Format, education, and skills scores are fixed (80, 100, 85) - don't comment on these areas
+2. formattingIssues and sparseRoles arrays should be empty
+3. Focus your feedback entirely on making experience bullets stronger
+4. Be encouraging in tone - they're trying to improve
+5. The rewrittenBullets are the most valuable part - make them specific and actionable
 
 Respond with ONLY the JSON object.`;
 }
