@@ -26,7 +26,6 @@
     "fluent-ffmpeg": "^2.1.3",
     "glob": "^13.0.0",
     "inngest": "^3.49.1",
-    "isomorphic-dompurify": "^2.35.0",
     "js-yaml": "^4.1.1",
     "jszip": "^3.10.1",
     "lucide-react": "^0.562.0",

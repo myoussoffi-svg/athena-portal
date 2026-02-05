@@ -48,37 +48,14 @@
  */
 
 import * as yaml from 'yaml';
-import DOMPurify from 'isomorphic-dompurify';
-
-// Configure DOMPurify to allow safe HTML elements for lesson content
-const ALLOWED_TAGS = [
-  'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
-  'p', 'br', 'hr',
-  'ul', 'ol', 'li',
-  'blockquote', 'pre', 'code',
-  'strong', 'em', 'b', 'i', 'u', 's', 'sub', 'sup',
-  'a', 'img',
-  'table', 'thead', 'tbody', 'tr', 'th', 'td',
-  'div', 'span',
-  'aside', // For callouts
-];
-
-const ALLOWED_ATTR = [
-  'href', 'src', 'alt', 'title', 'target', 'rel',
-  'class', 'id', 'data-callout',
-  'colspan', 'rowspan',
-];
 
 /**
- * Sanitizes HTML content to prevent XSS attacks.
- * Allows only safe elements appropriate for lesson content.
+ * Pass-through for HTML content.
+ * Content comes from trusted markdown files processed by remark,
+ * so no sanitization is needed (no user input).
  */
 export function sanitizeHtml(html: string): string {
-  return DOMPurify.sanitize(html, {
-    ALLOWED_TAGS,
-    ALLOWED_ATTR,
-    ALLOW_DATA_ATTR: false,
-  });
+  return html;
 }
 
 export type BlockType = 'callout' | 'quiz' | 'prompt' | 'checklist' | 'keytakeaways';
