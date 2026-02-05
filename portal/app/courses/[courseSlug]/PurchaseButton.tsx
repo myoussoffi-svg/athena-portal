@@ -59,7 +59,7 @@ export function PurchaseButton({ courseSlug }: PurchaseButtonProps) {
           padding: '16px 24px',
           fontSize: 16,
           fontWeight: 600,
-          background: isLoading || !isLoaded ? '#999' : '#0A0A0A',
+          background: isLoading || !isLoaded ? '#999' : '#416D89',
           color: 'white',
           border: 'none',
           borderRadius: 10,
@@ -69,12 +69,12 @@ export function PurchaseButton({ courseSlug }: PurchaseButtonProps) {
         }}
         onMouseEnter={(e) => {
           if (!isLoading && isLoaded) {
-            e.currentTarget.style.background = '#416D89';
+            e.currentTarget.style.background = '#3a6179';
           }
         }}
         onMouseLeave={(e) => {
           if (!isLoading && isLoaded) {
-            e.currentTarget.style.background = '#0A0A0A';
+            e.currentTarget.style.background = '#416D89';
           }
         }}
       >

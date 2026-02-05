@@ -82,21 +82,11 @@ export default async function CoursePage({ params }: CoursePageProps) {
 
         /* Hero Section */
         .course-hero {
-          background: #0A0A0A;
+          background: radial-gradient(112% 82% at 84.7% 18%, #429cd4 0%, #416d89 100%);
           color: white;
           padding: 60px 24px 100px;
           position: relative;
           overflow: hidden;
-        }
-        .course-hero::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background: radial-gradient(ellipse at top right, rgba(65, 109, 137, 0.15) 0%, transparent 60%);
-          pointer-events: none;
         }
         .course-hero-inner {
           max-width: 900px;
@@ -478,7 +468,7 @@ async function ComingSoonPage({ courseSlug }: { courseSlug: string }) {
             display: 'inline-flex',
             alignItems: 'center',
             gap: 8,
-            background: '#0A0A0A',
+            background: '#416D89',
             color: 'white',
             padding: '14px 28px',
             borderRadius: 8,
