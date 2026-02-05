@@ -4,42 +4,33 @@ import { globSync } from "glob";
 import yaml from "js-yaml";
 
 // Resolve content path - works both locally and on Vercel
+// Use path.resolve() to ensure absolute paths
 const contentRoot = (() => {
-  const cwdPath = path.join(process.cwd(), "content");
-
   if (process.env.CONTENT_ROOT?.trim()) {
-    console.log(`[content] Using CONTENT_ROOT env: ${process.env.CONTENT_ROOT}`);
-    return process.env.CONTENT_ROOT.trim();
+    const envPath = path.resolve(process.env.CONTENT_ROOT.trim());
+    console.log(`[content] Using CONTENT_ROOT env: ${envPath}`);
+    return envPath;
   }
 
-  // Log debugging info
-  console.log(`[content] process.cwd(): ${process.cwd()}`);
-  console.log(`[content] __dirname: ${__dirname}`);
-  console.log(`[content] Checking cwdPath: ${cwdPath}`);
+  // Try process.cwd()/content first (standard for Vercel)
+  const cwdPath = path.resolve(process.cwd(), "content");
+  console.log(`[content] Trying cwdPath: ${cwdPath}`);
 
   if (fs.existsSync(cwdPath)) {
     console.log(`[content] Found content at cwdPath`);
     return cwdPath;
   }
 
-  // Fallback to __dirname-relative path
-  const dirnamePath = path.join(__dirname, "..", "content");
-  console.log(`[content] Checking dirnamePath: ${dirnamePath}`);
-
-  if (fs.existsSync(dirnamePath)) {
-    console.log(`[content] Found content at dirnamePath`);
-    return dirnamePath;
-  }
-
-  // Log what directories exist at cwd
+  // Log what's in cwd to debug
   try {
     const cwdContents = fs.readdirSync(process.cwd());
-    console.log(`[content] Contents of cwd: ${cwdContents.join(', ')}`);
+    console.log(`[content] CWD contents: ${cwdContents.slice(0, 20).join(', ')}`);
   } catch (e) {
-    console.log(`[content] Could not read cwd: ${e}`);
+    console.log(`[content] Could not read CWD: ${e}`);
   }
 
-  console.log(`[content] WARNING: No content folder found, using ${cwdPath}`);
+  // Return cwdPath anyway - the error will be clearer
+  console.log(`[content] WARNING: content folder not found at ${cwdPath}`);
   return cwdPath;
 })();
 export type Track = {
