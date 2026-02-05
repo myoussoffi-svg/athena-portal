@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useUser } from '@clerk/nextjs';
+import Link from 'next/link';
 
 export default function AdminPage() {
   const { user, isLoaded } = useUser();
@@ -112,14 +113,14 @@ export default function AdminPage() {
         <h2 style={{ fontSize: 18, fontWeight: 600, marginBottom: 16 }}>Quick Links</h2>
         <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
           <li style={{ marginBottom: 8 }}>
-            <a href="/track/investment-banking-interview-prep" style={{ color: '#1a1a1a' }}>
+            <Link href="/track/investment-banking-interview-prep" style={{ color: '#1a1a1a' }}>
               → Go to IB Course
-            </a>
+            </Link>
           </li>
           <li style={{ marginBottom: 8 }}>
-            <a href="/courses/investment-banking-interview-prep" style={{ color: '#1a1a1a' }}>
+            <Link href="/courses/investment-banking-interview-prep" style={{ color: '#1a1a1a' }}>
               → IB Course Purchase Page
-            </a>
+            </Link>
           </li>
         </ul>
       </section>
