@@ -6,6 +6,7 @@ import { Quiz } from './Quiz';
 import { Prompt } from './Prompt';
 import { Checklist } from './Checklist';
 import { KeyTakeaways } from './KeyTakeaways';
+import { Calculation } from './Calculation';
 
 interface LessonContentProps {
   segments: ContentSegment[];
@@ -83,6 +84,17 @@ function BlockRenderer({ block }: BlockRendererProps) {
         <KeyTakeaways
           title={block.title}
           items={block.items}
+        />
+      );
+
+    case 'calculation':
+      return (
+        <Calculation
+          title={block.title}
+          given={block.given}
+          steps={block.steps}
+          result={block.result}
+          note={block.note}
         />
       );
 

@@ -45,6 +45,19 @@
  *   - Consider multiple scenarios
  *   - Document your reasoning
  * ```
+ *
+ * ```calculation
+ * title: Present Value of Uneven Cash Flows
+ * given:
+ *   - Cash flows: $100, $150, $200 over 3 years
+ *   - Discount rate: 8%
+ * steps:
+ *   - "Year 1: $100 ÷ (1.08)¹ = $92.59"
+ *   - "Year 2: $150 ÷ (1.08)² = $128.60"
+ *   - "Year 3: $200 ÷ (1.08)³ = $158.77"
+ * result: "Total NPV = $379.96"
+ * note: Optional additional context or explanation
+ * ```
  */
 
 import * as yaml from 'yaml';
@@ -58,7 +71,7 @@ export function sanitizeHtml(html: string): string {
   return html;
 }
 
-export type BlockType = 'callout' | 'quiz' | 'prompt' | 'checklist' | 'keytakeaways';
+export type BlockType = 'callout' | 'quiz' | 'prompt' | 'checklist' | 'keytakeaways' | 'calculation';
 
 export interface CalloutBlock {
   type: 'callout';
@@ -106,7 +119,16 @@ export interface KeyTakeawaysBlock {
   items: string[];
 }
 
-export type Block = CalloutBlock | QuizBlock | PromptBlock | ChecklistBlock | KeyTakeawaysBlock;
+export interface CalculationBlock {
+  type: 'calculation';
+  title: string;
+  given?: string[];
+  steps: string[];
+  result: string;
+  note?: string;
+}
+
+export type Block = CalloutBlock | QuizBlock | PromptBlock | ChecklistBlock | KeyTakeawaysBlock | CalculationBlock;
 
 export interface ContentSegment {
   type: 'html' | 'block';
@@ -123,7 +145,7 @@ export function extractBlocks(markdown: string): { cleanMarkdown: string; blocks
   let blockIndex = 0;
 
   // Match code blocks with special block types
-  const blockPattern = /```(callout(?::\w+)?|quiz|prompt|checklist|keytakeaways)\n([\s\S]*?)```/g;
+  const blockPattern = /```(callout(?::\w+)?|quiz|prompt|checklist|keytakeaways|calculation)\n([\s\S]*?)```/g;
 
   const cleanMarkdown = markdown.replace(blockPattern, (match, blockType: string, content: string) => {
     const block = parseBlock(blockType, content.trim());
@@ -158,6 +180,8 @@ function parseBlock(blockType: string, content: string): Block | null {
         return parseChecklist(data);
       case 'keytakeaways':
         return parseKeyTakeaways(data);
+      case 'calculation':
+        return parseCalculation(data);
       default:
         return null;
     }
@@ -240,6 +264,17 @@ function parseKeyTakeaways(data: Record<string, unknown>): KeyTakeawaysBlock {
     type: 'keytakeaways',
     title: data.title ? String(data.title) : undefined,
     items: Array.isArray(data.items) ? data.items.map(String) : [],
+  };
+}
+
+function parseCalculation(data: Record<string, unknown>): CalculationBlock {
+  return {
+    type: 'calculation',
+    title: String(data.title || 'Calculation'),
+    given: Array.isArray(data.given) ? data.given.map(String) : undefined,
+    steps: Array.isArray(data.steps) ? data.steps.map(String) : [],
+    result: String(data.result || ''),
+    note: data.note ? String(data.note) : undefined,
   };
 }
 
