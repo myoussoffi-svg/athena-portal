@@ -3,9 +3,24 @@ import path from "path";
 import { globSync } from "glob";
 import yaml from "js-yaml";
 
-const contentRoot =
-  process.env.CONTENT_ROOT?.trim() ||
-  path.join(process.cwd(), "content");
+// Resolve content path - works both locally and on Vercel
+const contentRoot = (() => {
+  if (process.env.CONTENT_ROOT?.trim()) {
+    return process.env.CONTENT_ROOT.trim();
+  }
+  // Try process.cwd() first (standard for Vercel)
+  const cwdPath = path.join(process.cwd(), "content");
+  if (fs.existsSync(cwdPath)) {
+    return cwdPath;
+  }
+  // Fallback to __dirname-relative path
+  const dirnamePath = path.join(__dirname, "..", "content");
+  if (fs.existsSync(dirnamePath)) {
+    return dirnamePath;
+  }
+  // Last resort - return cwd path and let it fail with clear error
+  return cwdPath;
+})();
 export type Track = {
   id: string;
   slug: string;
