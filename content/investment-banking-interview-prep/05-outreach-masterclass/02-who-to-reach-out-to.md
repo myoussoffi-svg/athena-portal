@@ -89,9 +89,21 @@ Don't cold email MDs unless you have a direct connection. Their time is extremel
 
 Create a spreadsheet with these columns:
 
-| Name | Bank | Title | Connection Type | Email | Status | Last Contact | Notes |
-|------|------|-------|-----------------|-------|--------|--------------|-------|
-| Jane Smith | Goldman Sachs | Analyst | Alumni (Class of 2023) | jsmith@gs.com | Emailed 10/15 | 10/15 | TMT group, from Chicago |
+```calculation
+title: Contact Tracking Spreadsheet Template
+given:
+  - "Columns: Name, Bank, Title, Connection Type, Email, Status, Last Contact, Notes"
+steps:
+  - "Name: Jane Smith"
+  - "Bank: Goldman Sachs"
+  - "Title: Analyst"
+  - "Connection Type: Alumni (Class of 2023)"
+  - "Email: jsmith@gs.com"
+  - "Status: Emailed 10/15"
+  - "Last Contact: 10/15"
+  - "Notes: TMT group, from Chicago"
+result: "Track all contacts in one place with status, dates, and notes for each person"
+```
 
 For each target bank, aim to identify:
 - 5-10 potential contacts before you start outreach

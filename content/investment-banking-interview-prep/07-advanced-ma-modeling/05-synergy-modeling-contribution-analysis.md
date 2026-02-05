@@ -44,10 +44,16 @@ Synergies don't appear immediately. Model realistic ramp-up:
 
 **Typical Phase-In Schedule**:
 
-| Synergy Type | Year 1 | Year 2 | Year 3+ |
-|--------------|--------|--------|---------|
-| Cost Synergies | 25-50% | 75-100% | 100% |
-| Revenue Synergies | 0-25% | 25-50% | 75-100% |
+```calculation
+title: Typical Synergy Phase-In Schedule
+given:
+  - "Cost Synergies: Year 1 25-50%, Year 2 75-100%, Year 3+ 100%"
+  - "Revenue Synergies: Year 1 0-25%, Year 2 25-50%, Year 3+ 75-100%"
+steps:
+  - "Cost synergies can be actioned quickly (layoffs, facility closures)"
+  - "Revenue synergies require integration, sales training, and customer adoption"
+result: "Cost synergies ramp faster than revenue synergies"
+```
 
 **Why the Difference?**
 
@@ -57,36 +63,54 @@ Cost synergies can be actioned quickly (layoffs, facility closures). Revenue syn
 
 **Step 1: Identify Sources**
 
-| Category | Target | Acquirer | Combined | Synergy |
-|----------|--------|----------|----------|---------|
-| Corporate overhead | $50M | $80M | $100M | $30M |
-| Sales force | $100M | $150M | $200M | $50M |
-| Facilities | $40M | $60M | $70M | $30M |
-| Procurement | $200M | $400M | $540M | $60M |
-| IT systems | $30M | $50M | $60M | $20M |
-| **Total** | | | | **$190M** |
+```calculation
+title: Cost Synergy Sources
+given:
+  - "Corporate overhead: Target $50M, Acquirer $80M"
+  - "Sales force: Target $100M, Acquirer $150M"
+  - "Facilities: Target $40M, Acquirer $60M"
+  - "Procurement: Target $200M, Acquirer $400M"
+  - "IT systems: Target $30M, Acquirer $50M"
+steps:
+  - "Corporate overhead: Combined $100M vs. $130M standalone = $30M synergy"
+  - "Sales force: Combined $200M vs. $250M standalone = $50M synergy"
+  - "Facilities: Combined $70M vs. $100M standalone = $30M synergy"
+  - "Procurement: Combined $540M vs. $600M standalone = $60M synergy"
+  - "IT systems: Combined $60M vs. $80M standalone = $20M synergy"
+result: "Total Cost Synergies: $30M + $50M + $30M + $60M + $20M = $190M"
+```
 
 **Step 2: Apply Phase-In**
 
-| | Year 1 | Year 2 | Year 3 |
-|---|---|---|---|
-| Full Run-Rate Synergies | $190M | $190M | $190M |
-| Phase-In % | 40% | 80% | 100% |
-| **Realized Synergies** | **$76M** | **$152M** | **$190M** |
+```calculation
+title: Cost Synergy Phase-In
+given:
+  - "Full Run-Rate Synergies: $190M"
+  - "Phase-In: 40% Year 1, 80% Year 2, 100% Year 3"
+steps:
+  - "Year 1 Realized Synergies: $190M x 40% = $76M"
+  - "Year 2 Realized Synergies: $190M x 80% = $152M"
+  - "Year 3 Realized Synergies: $190M x 100% = $190M"
+result: "Full run-rate of $190M achieved by Year 3"
+```
 
 **Step 3: Account for Integration Costs**
 
 Achieving synergies requires investment:
 
-| Cost | Amount | Timing |
-|------|--------|--------|
-| Severance | $40M | Year 1 |
-| Facility closure costs | $20M | Year 1 |
-| Systems integration | $30M | Years 1-2 |
-| Rebranding | $10M | Year 1 |
-| **Total Integration Costs** | **$100M** | |
-
-**Rule of Thumb**: Integration costs often equal 50-100% of Year 1 run-rate synergies.
+```calculation
+title: Integration Costs
+given:
+  - "Severance: $40M (Year 1)"
+  - "Facility closure costs: $20M (Year 1)"
+  - "Systems integration: $30M (Years 1-2)"
+  - "Rebranding: $10M (Year 1)"
+steps:
+  - "Year 1 costs: $40M + $20M + $15M + $10M = $85M"
+  - "Year 2 costs: $15M (remaining systems integration)"
+result: "Total Integration Costs: $100M"
+note: "Rule of thumb - Integration costs often equal 50-100% of Year 1 run-rate synergies"
+```
 
 ### Modeling Revenue Synergies
 
@@ -94,12 +118,18 @@ Revenue synergies are harder to quantify. Build from specific initiatives:
 
 **Cross-Selling Analysis**:
 
-| Initiative | Logic | Annual Revenue |
-|------------|-------|----------------|
-| Sell Target products to Acquirer customers | 5% of Acquirer customers adopt, $10K avg | $25M |
-| Sell Acquirer products to Target customers | 3% of Target customers adopt, $15K avg | $15M |
-| Combined solution premium | 2% price increase on 50% of combined | $20M |
-| **Total Revenue Synergies** | | **$60M** |
+```calculation
+title: Revenue Synergy Cross-Selling Analysis
+given:
+  - "Sell Target products to Acquirer customers: 5% adoption, $10K avg"
+  - "Sell Acquirer products to Target customers: 3% adoption, $15K avg"
+  - "Combined solution premium: 2% price increase on 50% of combined revenue"
+steps:
+  - "Target products to Acquirer customers: 5% adoption x $10K avg = $25M"
+  - "Acquirer products to Target customers: 3% adoption x $15K avg = $15M"
+  - "Combined solution premium: 2% price increase on 50% of combined = $20M"
+result: "Total Revenue Synergies: $25M + $15M + $20M = $60M"
+```
 
 Apply margin to get EBIT impact:
 - If margin on incremental revenue is 30%
@@ -144,22 +174,38 @@ If management claims $150M of synergies, and you only need $52M to break even, t
 
 **Key Metrics to Compare**:
 
-| Metric | Acquirer | Target | Acq % | Target % |
-|--------|----------|--------|-------|----------|
-| Revenue | $5,000M | $1,000M | 83% | 17% |
-| EBITDA | $1,200M | $200M | 86% | 14% |
-| Net Income | $713M | $90M | 89% | 11% |
-| Enterprise Value* | $12,000M | $5,000M | 71% | 29% |
-
-*Pre-deal standalone values
+```calculation
+title: Contribution Analysis - Key Metrics
+given:
+  - "Acquirer Revenue: $5,000M"
+  - "Target Revenue: $1,000M"
+  - "Acquirer EBITDA: $1,200M"
+  - "Target EBITDA: $200M"
+  - "Acquirer Net Income: $713M"
+  - "Target Net Income: $90M"
+  - "Acquirer Enterprise Value (pre-deal standalone): $12,000M"
+  - "Target Enterprise Value (pre-deal standalone): $5,000M"
+steps:
+  - "Revenue Contribution: Acquirer 83%, Target 17%"
+  - "EBITDA Contribution: Acquirer 86%, Target 14%"
+  - "Net Income Contribution: Acquirer 89%, Target 11%"
+  - "Enterprise Value Contribution: Acquirer 71%, Target 29%"
+result: "Target contributes 11-29% across metrics depending on measure used"
+```
 
 **Ownership Analysis**:
 
-| Shareholders | Shares | Ownership |
-|--------------|--------|-----------|
-| Acquirer shareholders | 200M | 77% |
-| Target shareholders | 60M | 23% |
-| **Total** | **260M** | **100%** |
+```calculation
+title: Pro Forma Ownership Analysis
+given:
+  - "Acquirer shareholders: 200M shares"
+  - "Target shareholders: 60M shares (new shares from exchange ratio)"
+steps:
+  - "Total pro forma shares: 200M + 60M = 260M"
+  - "Acquirer ownership: 200M / 260M = 77%"
+  - "Target ownership: 60M / 260M = 23%"
+result: "Acquirer shareholders own 77%, Target shareholders own 23%"
+```
 
 **Interpretation**:
 
@@ -201,27 +247,38 @@ Who "owns" the synergies? This affects fairness analysis.
 
 $150M of synergies valued at 6× = $900M synergy value
 
-| | Standalone Value | Synergy Share* | Total | % of Total |
-|---|---|---|---|---|
-| Acquirer | $12,000M | $675M | $12,675M | 74% |
-| Target | $5,000M | $225M | $5,225M | 26% |
-
-*Attributed 75%/25% based on EBITDA contribution
-
-Target contributes 26% of value including synergies but receives 23% ownership—slightly favorable to acquirer.
+```calculation
+title: Synergy Attribution Analysis
+given:
+  - "Acquirer Standalone Value: $12,000M"
+  - "Target Standalone Value: $5,000M"
+  - "Total Synergy Value: $900M ($150M x 6x multiple)"
+  - "Synergy Attribution: 75% Acquirer / 25% Target (based on EBITDA contribution)"
+steps:
+  - "Acquirer Synergy Share: $900M x 75% = $675M"
+  - "Target Synergy Share: $900M x 25% = $225M"
+  - "Acquirer Total Value: $12,000M + $675M = $12,675M (74% of total)"
+  - "Target Total Value: $5,000M + $225M = $5,225M (26% of total)"
+result: "Target contributes 26% of value including synergies but receives 23% ownership - slightly favorable to acquirer"
+```
 
 ### Sensitivity: Synergies vs. Accretion
 
 Build a sensitivity table showing how synergies affect accretion:
 
-| Synergies | Year 1 Accretion | Year 2 Accretion | Year 3 Accretion |
-|-----------|------------------|------------------|------------------|
-| $0 | (20%) | (18%) | (16%) |
-| $75M | (12%) | (8%) | (5%) |
-| $150M | (4%) | 2% | 6% |
-| $225M | 4% | 12% | 18% |
-
-This shows management and boards how sensitive the deal is to synergy delivery.
+```calculation
+title: "Sensitivity: Synergies vs. Accretion"
+given:
+  - "Synergy levels tested: $0, $75M, $150M, $225M"
+  - "Years analyzed: Year 1, Year 2, Year 3"
+steps:
+  - "$0 Synergies: (20%) Year 1, (18%) Year 2, (16%) Year 3"
+  - "$75M Synergies: (12%) Year 1, (8%) Year 2, (5%) Year 3"
+  - "$150M Synergies: (4%) Year 1, 2% Year 2, 6% Year 3"
+  - "$225M Synergies: 4% Year 1, 12% Year 2, 18% Year 3"
+result: "Deal becomes accretive by Year 2 with $150M+ in synergies"
+note: "This shows management and boards how sensitive the deal is to synergy delivery"
+```
 
 ### Validating Synergy Estimates
 

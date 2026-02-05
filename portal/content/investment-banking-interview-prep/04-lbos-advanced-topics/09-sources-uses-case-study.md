@@ -57,13 +57,17 @@ hint: Uses include: Enterprise Value (purchase price), debt refinancing, and all
 solution: |
   **Uses of Funds:**
 
-  | Use | Calculation | Amount |
-  |-----|-------------|--------|
-  | Purchase Enterprise Value | Given | $500.0M |
-  | Refinance Existing Debt | Given | $75.0M |
-  | M&A Advisory Fee | 1% × $500M | $5.0M |
-  | Other Transaction Expenses | Given | $3.0M |
-  | Financing Fees | 2% × Total Debt | TBD |
+  ```calculation
+  title: "Uses of Funds (Preliminary)"
+  given:
+    - "Purchase Enterprise Value: $500.0M (given)"
+    - "Refinance Existing Debt: $75.0M (given)"
+    - "Other Transaction Expenses: $3.0M (given)"
+  steps:
+    - "M&A Advisory Fee: 1% x $500M = $5.0M"
+    - "Financing Fees: 2% x Total Debt = TBD (calculated after debt is determined)"
+  result: "Financing fees will be calculated after determining total debt in the next step"
+  ```
 
   We'll calculate financing fees after we determine total debt in the next step.
 
@@ -147,23 +151,21 @@ hint: The target's $25M cash can be shown as reducing Uses (most common) or as a
 solution: |
   **Complete Uses Table:**
 
-  | Use | Amount |
-  |-----|--------|
-  | Purchase Enterprise Value | $500.0M |
-  | Refinance Existing Debt | $75.0M |
-  | Financing Fees | $7.2M |
-  | M&A Advisory Fee | $5.0M |
-  | Other Transaction Expenses | $3.0M |
-  | **Total Uses (Gross)** | **$590.2M** |
-  | Less: Cash Acquired | ($25.0M) |
-  | **Net Uses** | **$565.2M** |
-
-  **Two ways to handle target cash:**
-
-  1. **Reduce Uses:** Show cash as a reduction to total uses (as above)
-  2. **Increase Sources:** Show cash as a source of funds
-
-  Both are correct and arrive at the same equity check. Method 1 is more common.
+  ```calculation
+  title: "Complete Uses of Funds"
+  given:
+    - "Purchase Enterprise Value: $500.0M"
+    - "Refinance Existing Debt: $75.0M"
+    - "Cash on Balance Sheet: $25.0M"
+  steps:
+    - "Financing Fees: $7.2M"
+    - "M&A Advisory Fee: $5.0M"
+    - "Other Transaction Expenses: $3.0M"
+    - "Total Uses (Gross): $500.0M + $75.0M + $7.2M + $5.0M + $3.0M = $590.2M"
+    - "Less: Cash Acquired = ($25.0M)"
+  result: "Net Uses = $590.2M - $25.0M = $565.2M"
+  note: "Two ways to handle target cash: (1) Reduce Uses (shown above, more common) or (2) Show cash as a Source. Both arrive at the same equity check."
+  ```
 ```
 
 ```accordion-step
@@ -218,35 +220,53 @@ hint: Calculate percentages as each line item divided by Total Sources (or Total
 solution: |
   **Sources & Uses Table:**
 
-  | **Sources** | **Amount** | **%** |
-  |-------------|------------|-------|
-  | Senior Term Loan (3.0x) | $240.0M | 42.5% |
-  | Subordinated Notes (1.5x) | $120.0M | 21.2% |
-  | Sponsor Equity | $205.2M | 36.3% |
-  | **Total Sources** | **$565.2M** | **100%** |
+  ```calculation
+  title: "Sources of Funds"
+  given:
+    - "LTM EBITDA: $80M"
+    - "Total Net Uses to fund: $565.2M"
+  steps:
+    - "Senior Term Loan (3.0x): $240.0M (42.5%)"
+    - "Subordinated Notes (1.5x): $120.0M (21.2%)"
+    - "Sponsor Equity: $205.2M (36.3%)"
+  result: "Total Sources = $565.2M (100%)"
+  ```
 
-  | **Uses** | **Amount** | **%** |
-  |----------|------------|-------|
-  | Purchase Enterprise Value | $500.0M | 88.5% |
-  | Refinance Existing Debt | $75.0M | 13.3% |
-  | Financing Fees | $7.2M | 1.3% |
-  | M&A Advisory Fee | $5.0M | 0.9% |
-  | Other Expenses | $3.0M | 0.5% |
-  | Less: Cash Acquired | ($25.0M) | (4.4%) |
-  | **Total Uses** | **$565.2M** | **100%** |
+  ```calculation
+  title: "Uses of Funds"
+  given:
+    - "Purchase Enterprise Value: $500.0M"
+    - "Target cash on balance sheet: $25.0M"
+  steps:
+    - "Purchase Enterprise Value: $500.0M (88.5%)"
+    - "Refinance Existing Debt: $75.0M (13.3%)"
+    - "Financing Fees: $7.2M (1.3%)"
+    - "M&A Advisory Fee: $5.0M (0.9%)"
+    - "Other Expenses: $3.0M (0.5%)"
+    - "Less: Cash Acquired = ($25.0M) (-4.4%)"
+  result: "Total Uses = $565.2M (100%)"
+  note: "Sources = Uses confirmed"
+  ```
 
   **Sources = Uses ✓**
 
   **Key Deal Metrics:**
 
-  | Metric | Calculation | Value |
-  |--------|-------------|-------|
-  | **Total Leverage** | Total Debt / EBITDA | 4.5x |
-  | **Equity Contribution** | Equity / (EV + Fees) | 36.3% |
-  | **Debt / Total Cap** | Debt / (Debt + Equity) | 63.7% |
-  | **Purchase Multiple** | EV / EBITDA | 6.25x |
-
-  **Sanity check:** Sponsors typically target 30-50% equity contribution. 36% is reasonable for a middle-market deal.
+  ```calculation
+  title: "Key Deal Metrics"
+  given:
+    - "Total Debt: $360M"
+    - "LTM EBITDA: $80M"
+    - "Sponsor Equity: $205.2M"
+    - "Enterprise Value: $500M"
+  steps:
+    - "Total Leverage: Total Debt / EBITDA = $360M / $80M = 4.5x"
+    - "Equity Contribution: Equity / (EV + Fees) = $205.2M / $565.2M = 36.3%"
+    - "Debt / Total Cap: Debt / (Debt + Equity) = $360M / $565.2M = 63.7%"
+    - "Purchase Multiple: EV / EBITDA = $500M / $80M = 6.25x"
+  result: "4.5x leverage with 36.3% equity contribution"
+  note: "Sponsors typically target 30-50% equity contribution. 36% is reasonable for a middle-market deal."
+  ```
 ```
 
 ---
@@ -327,15 +347,19 @@ solution: |
 
   **Updated Sources:**
 
-  | Source | Amount |
-  |--------|--------|
-  | Senior Term Loan | $240.0M |
-  | Subordinated Notes | $120.0M |
-  | **Rollover Equity** | **$20.0M** |
-  | Sponsor Equity | $185.2M |
-  | **Total** | **$565.2M** |
-
-  Rollover equity reduces the sponsor's check but dilutes their ownership stake. If management rolls $20M, they own $20M / $205.2M = ~10% of the equity.
+  ```calculation
+  title: "Updated Sources with Management Rollover"
+  given:
+    - "Total Sources needed: $565.2M"
+    - "Management rollover: $20.0M of existing equity"
+  steps:
+    - "Senior Term Loan: $240.0M"
+    - "Subordinated Notes: $120.0M"
+    - "Rollover Equity: $20.0M"
+    - "Sponsor Equity: $565.2M - $240.0M - $120.0M - $20.0M = $185.2M"
+  result: "Total Sources = $565.2M"
+  note: "Rollover equity reduces the sponsor's check but dilutes their ownership. Management owns $20M / $205.2M = ~10% of the equity."
+  ```
 ```
 
 ```accordion-step
@@ -423,13 +447,18 @@ solution: |
 
 ### 1. Transaction Fees: Capitalized vs. Expensed
 
-| Fee Type | Treatment |
-|----------|-----------|
-| **Financing fees** | Capitalized on B/S, amortized over debt term |
-| **M&A advisory fees** | Expensed immediately (hits P&L) |
-| **Other transaction costs** | Usually expensed |
-
-This matters for the opening balance sheet and Year 1 P&L, but doesn't change the Sources & Uses cash math.
+```calculation
+title: "Transaction Fee Treatment"
+given:
+  - "Financing fees: Capitalized on balance sheet"
+  - "M&A advisory fees: Expensed immediately"
+  - "Other transaction costs: Usually expensed"
+steps:
+  - "Financing fees: Capitalized on B/S, amortized over debt term"
+  - "M&A advisory fees: Expensed immediately (hits P&L)"
+  - "Other transaction costs: Usually expensed"
+result: "Fee treatment matters for opening balance sheet and Year 1 P&L, but does not change the Sources & Uses cash math"
+```
 
 ### 2. Excess Cash
 

@@ -47,11 +47,17 @@ This is similar to unlevered free cash flow, but with specific adjustments per t
 
 Not all excess cash flow goes to debt repayment. The **sweep percentage** varies based on leverage:
 
-| Leverage (Debt / EBITDA) | Sweep % |
-|--------------------------|---------|
-| > 4.5× | 75% |
-| 3.5× - 4.5× | 50% |
-| < 3.5× | 25% or 0% |
+```calculation
+title: Cash Sweep Percentage by Leverage Level
+given:
+  - "Sweep % is determined by current Debt / EBITDA ratio"
+steps:
+  - "Leverage > 4.5x: Sweep % = 75%"
+  - "Leverage 3.5x - 4.5x: Sweep % = 50%"
+  - "Leverage < 3.5x: Sweep % = 25% or 0%"
+result: "Higher leverage = higher sweep percentage"
+note: "As leverage decreases, a smaller portion of ECF goes to debt paydown"
+```
 
 As leverage decreases, a smaller portion of ECF goes to debt paydown. This rewards equity sponsors for improving the company's credit profile.
 
@@ -132,11 +138,19 @@ Sweep Amount = $15M × 75% = $11.25M
 
 **Allocate Through Waterfall**:
 
-| Tranche | Beginning Balance | Sweep Allocation | Ending Balance |
-|---------|------------------|------------------|----------------|
-| Revolver | $20M | $11.25M | $8.75M |
-| Term Loan A | $100M | $0 | $100M |
-| Term Loan B | $200M | $0 | $200M |
+```calculation
+title: Cash Sweep Waterfall Allocation
+given:
+  - "Revolver Beginning Balance: $20M"
+  - "Term Loan A Beginning Balance: $100M"
+  - "Term Loan B Beginning Balance: $200M"
+  - "Sweep Amount Available: $11.25M"
+steps:
+  - "Revolver: Beginning $20M - Sweep $11.25M = Ending $8.75M"
+  - "Term Loan A: Beginning $100M - Sweep $0 = Ending $100M"
+  - "Term Loan B: Beginning $200M - Sweep $0 = Ending $200M"
+result: "Entire $11.25M sweep applied to Revolver (balance exceeded sweep amount)"
+```
 
 The entire sweep goes to the revolver since its balance exceeded the sweep amount.
 
@@ -178,13 +192,17 @@ Here's how the formulas work in practice:
 
 The cash sweep amounts flow into each debt tranche's schedule as optional prepayments:
 
-| | Year 1 | Year 2 | Year 3 |
-|---|---|---|---|
-| **Term Loan A** | | | |
-| Beginning Balance | $100M | $85M | $65M |
-| Mandatory Amortization | ($5M) | ($5M) | ($5M) |
-| Cash Sweep Prepayment | ($10M) | ($15M) | ($12M) |
-| Ending Balance | $85M | $65M | $48M |
+```calculation
+title: Term Loan A Debt Schedule with Cash Sweep
+given:
+  - "Beginning Balance (Year 1): $100M"
+  - "Mandatory Amortization: ($5M) per year"
+steps:
+  - "Year 1: Beginning $100M, Mandatory Amort ($5M), Sweep Prepayment ($10M) = Ending $85M"
+  - "Year 2: Beginning $85M, Mandatory Amort ($5M), Sweep Prepayment ($15M) = Ending $65M"
+  - "Year 3: Beginning $65M, Mandatory Amort ($5M), Sweep Prepayment ($12M) = Ending $48M"
+result: "Sweep accelerates paydown by $37M over three years (vs. $85M ending balance without sweep)"
+```
 
 Without the cash sweep, Year 3 ending balance would be $85M. The sweep accelerates paydown by $37M over three years.
 
@@ -203,16 +221,30 @@ Cash sweeps and dividend recaps represent opposite uses of cash:
 Cash sweeps improve credit metrics over time:
 
 **Without Sweep**:
-| Year | Debt | EBITDA | Debt/EBITDA |
-|------|------|--------|-------------|
-| 0 | $400M | $80M | 5.0× |
-| 3 | $370M | $95M | 3.9× |
+```calculation
+title: Credit Metrics Without Cash Sweep
+given:
+  - "Starting Debt: $400M"
+  - "Starting EBITDA: $80M"
+steps:
+  - "Year 0: Debt $400M / EBITDA $80M = 5.0x"
+  - "Year 3: Debt $370M / EBITDA $95M = 3.9x"
+result: "Leverage declines from 5.0x to 3.9x (1.1x reduction)"
+```
 
 **With 50% Sweep**:
-| Year | Debt | EBITDA | Debt/EBITDA |
-|------|------|--------|-------------|
-| 0 | $400M | $80M | 5.0× |
-| 3 | $320M | $95M | 3.4× |
+```calculation
+title: Credit Metrics With 50% Cash Sweep
+given:
+  - "Starting Debt: $400M"
+  - "Starting EBITDA: $80M"
+  - "Cash Sweep: 50% of Excess Cash Flow"
+steps:
+  - "Year 0: Debt $400M / EBITDA $80M = 5.0x"
+  - "Year 3: Debt $320M / EBITDA $95M = 3.4x"
+result: "Leverage declines from 5.0x to 3.4x (1.6x reduction)"
+note: "The sweep reduces leverage 0.5x faster, potentially unlocking refinancing or dividend opportunities earlier"
+```
 
 The sweep reduces leverage by 0.5× faster, potentially unlocking refinancing or dividend opportunities earlier.
 

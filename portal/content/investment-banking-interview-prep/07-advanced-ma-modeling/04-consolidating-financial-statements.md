@@ -40,66 +40,82 @@ Pro Forma Equity = Acquirer Equity + Deal Adjustments (target equity eliminated)
 ### Balance Sheet Adjustments
 
 **Cash Adjustments**:
-| Adjustment | Impact on Cash |
-|------------|----------------|
-| Cash used to fund deal | (Decrease) |
-| New debt proceeds | Increase |
-| Transaction fees paid | (Decrease) |
-| Target's cash acquired | No change (already on combined BS) |
+
+```calculation
+title: "Cash Adjustments in Consolidation"
+given:
+  - "Cash used to fund deal: (Decrease)"
+  - "New debt proceeds: Increase"
+steps:
+  - "Transaction fees paid: (Decrease)"
+  - "Target's cash acquired: No change (already on combined BS)"
+result: "Net cash impact depends on deal funding mix"
+```
 
 **Debt Adjustments**:
-| Adjustment | Impact |
-|------------|--------|
-| New acquisition debt | Increase |
-| Target debt assumed | Already included |
-| Target debt refinanced | Remove old, add new |
-| Debt issuance costs | Asset (amortized over debt life) |
+
+```calculation
+title: "Debt Adjustments in Consolidation"
+given:
+  - "New acquisition debt: Increase"
+  - "Target debt assumed: Already included"
+steps:
+  - "Target debt refinanced: Remove old, add new"
+  - "Debt issuance costs: Asset (amortized over debt life)"
+result: "Total debt reflects new acquisition financing plus assumed obligations"
+```
 
 **Equity Adjustments**:
-| Adjustment | Impact |
-|------------|--------|
-| Eliminate target's equity | Remove entirely |
-| New shares issued | Increase common stock/APIC |
-| Transaction fees (expensed) | Reduce retained earnings |
+
+```calculation
+title: "Equity Adjustments in Consolidation"
+given:
+  - "Eliminate target's equity: Remove entirely"
+steps:
+  - "New shares issued: Increase common stock/APIC"
+  - "Transaction fees (expensed): Reduce retained earnings"
+result: "Pro forma equity reflects acquirer equity plus new shares minus target equity elimination"
+```
 
 **PPA Adjustments**:
-| Adjustment | Impact |
-|------------|--------|
-| Asset write-ups | Increase assets |
-| Identified intangibles | Increase assets |
-| Goodwill | Increase assets |
-| Deferred tax liability | Increase liabilities |
+
+```calculation
+title: "PPA Adjustments in Consolidation"
+given:
+  - "Asset write-ups: Increase assets"
+  - "Identified intangibles: Increase assets"
+steps:
+  - "Goodwill: Increase assets"
+  - "Deferred tax liability: Increase liabilities"
+result: "PPA adjustments add new intangibles, goodwill, and DTL to the combined balance sheet"
+```
 
 ### Pro Forma Balance Sheet Example
 
-| Line Item | Acquirer | Target (Book) | FV Adj | Deal Adj | Pro Forma |
-|-----------|----------|---------------|--------|----------|-----------|
-| **Assets** | | | | | |
-| Cash | $500M | $50M | — | ($2,200M)* | ($1,650M)** |
-| Receivables | $800M | $200M | — | — | $1,000M |
-| Inventory | $400M | $100M | +$15M | — | $515M |
-| PP&E | $1,500M | $200M | +$50M | — | $1,750M |
-| Intangibles | $100M | $0 | +$575M | — | $675M |
-| Goodwill | $200M | $0 | — | +$4,075M | $4,275M |
-| **Total Assets** | $3,500M | $550M | +$640M | +$1,875M | $6,565M |
-| | | | | | |
-| **Liabilities** | | | | | |
-| Payables | $300M | $75M | — | — | $375M |
-| Debt | $800M | $500M | — | +$2,000M | $3,300M |
-| Deferred Tax | $150M | $0 | +$160M | — | $310M |
-| **Total Liabilities** | $1,250M | $575M | +$160M | +$2,000M | $3,985M |
-| | | | | | |
-| **Equity** | | | | | |
-| Common Stock/APIC | $1,000M | $200M | — | +$2,050M*** | $3,050M |
-| Retained Earnings | $1,250M | ($225M) | +$480M | ($125M)**** | $1,530M |
-| **Total Equity** | $2,250M | ($25M) | +$480M | +$1,925M | $2,580M |
-| | | | | | |
-| **Total L+E** | $3,500M | $550M | +$640M | +$1,875M | $6,565M |
-
-*Cash used: $2,250M cash consideration - $50M target cash acquired + $50M fees
-**Would draw on revolver or show negative; adjusted via financing
-***New shares issued ($2,250M) - eliminate target equity ($200M)
-****Eliminate target RE ($225M) - transaction fees expensed ($100M) + FV adj
+```calculation
+title: "Pro Forma Balance Sheet at Close"
+given:
+  - "ASSETS:"
+  - "  Cash — Acquirer: $500M | Target (Book): $50M | FV Adj: — | Deal Adj: ($2,200M)* | Pro Forma: ($1,650M)**"
+  - "  Receivables — Acquirer: $800M | Target (Book): $200M | FV Adj: — | Deal Adj: — | Pro Forma: $1,000M"
+  - "  Inventory — Acquirer: $400M | Target (Book): $100M | FV Adj: +$15M | Deal Adj: — | Pro Forma: $515M"
+  - "  PP&E — Acquirer: $1,500M | Target (Book): $200M | FV Adj: +$50M | Deal Adj: — | Pro Forma: $1,750M"
+  - "  Intangibles — Acquirer: $100M | Target (Book): $0 | FV Adj: +$575M | Deal Adj: — | Pro Forma: $675M"
+  - "  Goodwill — Acquirer: $200M | Target (Book): $0 | FV Adj: — | Deal Adj: +$4,075M | Pro Forma: $4,275M"
+  - "  Total Assets — Acquirer: $3,500M | Target (Book): $550M | FV Adj: +$640M | Deal Adj: +$1,875M | Pro Forma: $6,565M"
+steps:
+  - "LIABILITIES:"
+  - "  Payables — Acquirer: $300M | Target (Book): $75M | FV Adj: — | Deal Adj: — | Pro Forma: $375M"
+  - "  Debt — Acquirer: $800M | Target (Book): $500M | FV Adj: — | Deal Adj: +$2,000M | Pro Forma: $3,300M"
+  - "  Deferred Tax — Acquirer: $150M | Target (Book): $0 | FV Adj: +$160M | Deal Adj: — | Pro Forma: $310M"
+  - "  Total Liabilities — Acquirer: $1,250M | Target (Book): $575M | FV Adj: +$160M | Deal Adj: +$2,000M | Pro Forma: $3,985M"
+  - "EQUITY:"
+  - "  Common Stock/APIC — Acquirer: $1,000M | Target (Book): $200M | FV Adj: — | Deal Adj: +$2,050M*** | Pro Forma: $3,050M"
+  - "  Retained Earnings — Acquirer: $1,250M | Target (Book): ($225M) | FV Adj: +$480M | Deal Adj: ($125M)**** | Pro Forma: $1,530M"
+  - "  Total Equity — Acquirer: $2,250M | Target (Book): ($25M) | FV Adj: +$480M | Deal Adj: +$1,925M | Pro Forma: $2,580M"
+result: "Total L+E — Acquirer: $3,500M | Target (Book): $550M | FV Adj: +$640M | Deal Adj: +$1,875M | Pro Forma: $6,565M"
+note: "*Cash used: $2,250M cash consideration - $50M target cash acquired + $50M fees. **Would draw on revolver or show negative; adjusted via financing. ***New shares issued ($2,250M) - eliminate target equity ($200M). ****Eliminate target RE ($225M) - transaction fees expensed ($100M) + FV adj."
+```
 
 ### Target Equity Elimination
 
@@ -171,51 +187,58 @@ Phase in over time (often 50% Year 1, 100% Year 2+)
 
 **New Expenses from Deal**:
 
-| Expense | Description | Duration |
-|---------|-------------|----------|
-| Intangible amortization | From PPA | Ongoing (by useful life) |
-| Additional depreciation | From PP&E step-up | Ongoing |
-| Inventory step-up | One-time COGS hit | Year 1 only |
-| Interest expense | On new debt | Ongoing |
-| Integration costs | One-time charges | Year 1 |
-| D&A of debt issuance costs | Amortize financing fees | Ongoing |
-
-**Foregone Interest Income**:
-Cash used for the deal was previously earning interest. Account for lost interest income.
+```calculation
+title: "New Expenses from Deal Structure"
+given:
+  - "Intangible amortization: From PPA (Ongoing, by useful life)"
+  - "Additional depreciation: From PP&E step-up (Ongoing)"
+  - "Inventory step-up: One-time COGS hit (Year 1 only)"
+steps:
+  - "Interest expense: On new debt (Ongoing)"
+  - "Integration costs: One-time charges (Year 1)"
+  - "D&A of debt issuance costs: Amortize financing fees (Ongoing)"
+result: "Total new expenses reduce pro forma earnings but some are non-cash and/or non-recurring"
+note: "Foregone interest income on cash used for the deal should also be accounted for"
+```
 
 ### Pro Forma Income Statement Example
 
-| Line Item | Acquirer | Target | Synergies | Deal Adj | Pro Forma |
-|-----------|----------|--------|-----------|----------|-----------|
-| Revenue | $5,000M | $1,000M | +$50M | — | $6,050M |
-| COGS | ($3,000M) | ($600M) | +$50M | ($15M)* | ($3,565M) |
-| **Gross Profit** | $2,000M | $400M | +$100M | ($15M) | $2,485M |
-| SG&A | ($800M) | ($200M) | +$100M | — | ($900M) |
-| D&A | ($200M) | ($50M) | — | ($48M)** | ($298M) |
-| **EBIT** | $1,000M | $150M | +$200M | ($63M) | $1,287M |
-| Interest Expense | ($50M) | ($30M) | — | ($140M)*** | ($220M) |
-| **Pre-Tax Income** | $950M | $120M | +$200M | ($203M) | $1,067M |
-| Tax (25%) | ($238M) | ($30M) | ($50M) | +$51M | ($267M) |
-| **Net Income** | $713M | $90M | +$150M | ($152M) | $800M |
-
-*Inventory step-up (Year 1 only)
-**Intangible amort ($43M) + additional PP&E depreciation ($5M)
-***Interest on $2B new debt at 7%
+```calculation
+title: "Pro Forma Consolidated Income Statement"
+given:
+  - "Revenue — Acquirer: $5,000M | Target: $1,000M | Synergies: +$50M | Deal Adj: — | Pro Forma: $6,050M"
+  - "COGS — Acquirer: ($3,000M) | Target: ($600M) | Synergies: +$50M | Deal Adj: ($15M)* | Pro Forma: ($3,565M)"
+  - "Gross Profit — Acquirer: $2,000M | Target: $400M | Synergies: +$100M | Deal Adj: ($15M) | Pro Forma: $2,485M"
+  - "SG&A — Acquirer: ($800M) | Target: ($200M) | Synergies: +$100M | Deal Adj: — | Pro Forma: ($900M)"
+  - "D&A — Acquirer: ($200M) | Target: ($50M) | Synergies: — | Deal Adj: ($48M)** | Pro Forma: ($298M)"
+steps:
+  - "EBIT — Acquirer: $1,000M | Target: $150M | Synergies: +$200M | Deal Adj: ($63M) | Pro Forma: $1,287M"
+  - "Interest Expense — Acquirer: ($50M) | Target: ($30M) | Synergies: — | Deal Adj: ($140M)*** | Pro Forma: ($220M)"
+  - "Pre-Tax Income — Acquirer: $950M | Target: $120M | Synergies: +$200M | Deal Adj: ($203M) | Pro Forma: $1,067M"
+  - "Tax (25%) — Acquirer: ($238M) | Target: ($30M) | Synergies: ($50M) | Deal Adj: +$51M | Pro Forma: ($267M)"
+result: "Net Income — Acquirer: $713M | Target: $90M | Synergies: +$150M | Deal Adj: ($152M) | Pro Forma: $800M"
+note: "*Inventory step-up (Year 1 only). **Intangible amort ($43M) + additional PP&E depreciation ($5M). ***Interest on $2B new debt at 7%."
+```
 
 ### Accretion/Dilution from Consolidated IS
 
 Once you have pro forma net income, calculate EPS:
 
-| Metric | Standalone | Pro Forma |
-|--------|------------|-----------|
-| Net Income | $713M | $800M |
-| Shares Outstanding | 200M | 260M* |
-| EPS | $3.57 | $3.08 |
-| **Accretion/(Dilution)** | | **(13.7%)** |
-
-*200M original + 60M new shares issued
-
-In this example, despite $150M of net synergies, the deal is dilutive due to shares issued and new interest expense.
+```calculation
+title: "Accretion/Dilution Analysis"
+given:
+  - "Standalone Net Income: $713M"
+  - "Pro Forma Net Income: $800M"
+  - "Original Shares Outstanding: 200M"
+  - "New shares issued: 60M"
+steps:
+  - "Standalone EPS = $713M / 200M = $3.57"
+  - "Pro Forma Shares = 200M + 60M = 260M"
+  - "Pro Forma EPS = $800M / 260M = $3.08"
+  - "Accretion/(Dilution) = ($3.08 - $3.57) / $3.57"
+result: "Accretion/(Dilution) = (13.7%) — Deal is dilutive"
+note: "Despite $150M of net synergies, the deal is dilutive due to shares issued and new interest expense"
+```
 
 ### Consolidating Cash Flow Statement
 
@@ -244,13 +267,16 @@ If acquiring less than 100%, Non-Controlling Interest (NCI) applies:
 
 **Example**: Acquire 80% of target
 
-| Line | Amount |
-|------|--------|
-| Consolidated Net Income | $100M |
-| Less: NCI (20%) | ($20M) |
-| Net Income to Parent | $80M |
-
-Use $80M for EPS calculation.
+```calculation
+title: "Non-Controlling Interest (NCI) Example"
+given:
+  - "Ownership acquired: 80%"
+  - "Consolidated Net Income: $100M"
+steps:
+  - "NCI share (20%): ($20M)"
+  - "Net Income to Parent = $100M - $20M"
+result: "Net Income to Parent = $80M (use this for EPS calculation)"
+```
 
 ### Balance Check
 

@@ -77,12 +77,19 @@ The debt stack is layered by **seniority**: in a default or bankruptcy, senior d
 - The interest compounds, increasing total debt over time
 
 **PIK vs. Cash Interest**:
-| Feature | Cash Interest | PIK Interest |
-|---------|--------------|--------------|
-| Cash outflow | Yes, each period | No (deferred) |
-| Debt balance | Stays constant | Grows over time |
-| Total interest cost | Lower | Higher (due to compounding) |
-| When used | Strong cash flow | Cash-constrained, high-growth |
+
+```calculation
+title: "PIK vs. Cash Interest Comparison"
+given:
+  - "Cash Interest: Cash outflow each period, debt balance stays constant"
+  - "PIK Interest: No cash outflow (deferred), debt balance grows over time"
+steps:
+  - "Cash Interest total cost: Lower (no compounding effect)"
+  - "PIK Interest total cost: Higher (due to compounding on growing balance)"
+  - "Cash Interest used when: Strong cash flow available"
+  - "PIK Interest used when: Cash-constrained or high-growth situations"
+result: "PIK preserves near-term cash flow but increases total debt and interest cost over time"
+```
 
 **PIK Toggle**: Some instruments have a "PIK toggle" allowing the borrower to choose between paying cash interest or PIK in any given period, providing flexibility.
 

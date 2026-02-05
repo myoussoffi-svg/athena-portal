@@ -40,14 +40,19 @@ ECM helps companies issue shares to raise equity capital.
 
 **Main Products**:
 
-| Product | Description |
-|---------|-------------|
-| IPO | Initial Public Offering—first sale of shares to public |
-| Follow-On | Additional share sale by already-public company |
-| Convertible | Bond that converts to equity under certain conditions |
-| Block Trade | Large secondary sale, often overnight |
-| SPAC | Special Purpose Acquisition Company (blank-check IPO) |
-| Rights Offering | Existing shareholders can buy new shares pro-rata |
+```calculation
+title: "ECM Main Products"
+given:
+  - "Category: Product and Description"
+steps:
+  - "IPO: Initial Public Offering — first sale of shares to public"
+  - "Follow-On: Additional share sale by already-public company"
+  - "Convertible: Bond that converts to equity under certain conditions"
+  - "Block Trade: Large secondary sale, often overnight"
+  - "SPAC: Special Purpose Acquisition Company (blank-check IPO)"
+  - "Rights Offering: Existing shareholders can buy new shares pro-rata"
+result: "ECM products range from IPOs for new public companies to block trades for secondary sales"
+```
 
 ### The IPO Process
 
@@ -98,14 +103,19 @@ DCM helps companies issue bonds and other debt.
 
 **Main Products**:
 
-| Product | Description | Typical Issuer |
-|---------|-------------|----------------|
-| Investment-Grade Bonds | High credit quality (BBB- or above) | Large corporations |
-| High-Yield Bonds | Below investment grade (BB+ or below) | Leveraged companies, LBOs |
-| Leveraged Loans | Bank debt for leveraged borrowers | PE portfolio companies |
-| Commercial Paper | Short-term unsecured debt | Large corps for working capital |
-| Municipal Bonds | Debt issued by governments | Cities, states, agencies |
-| Structured Products | ABS, MBS, CLOs | Financial institutions |
+```calculation
+title: "DCM Main Products"
+given:
+  - "Category: Product, Description, Typical Issuer"
+steps:
+  - "Investment-Grade Bonds: High credit quality (BBB- or above) — Large corporations"
+  - "High-Yield Bonds: Below investment grade (BB+ or below) — Leveraged companies, LBOs"
+  - "Leveraged Loans: Bank debt for leveraged borrowers — PE portfolio companies"
+  - "Commercial Paper: Short-term unsecured debt — Large corps for working capital"
+  - "Municipal Bonds: Debt issued by governments — Cities, states, agencies"
+  - "Structured Products: ABS, MBS, CLOs — Financial institutions"
+result: "DCM products span from investment-grade bonds to structured products, serving diverse issuer needs"
+```
 
 ### The Bond Issuance Process
 
@@ -139,14 +149,19 @@ DCM helps companies issue bonds and other debt.
 
 **Key Differences from Investment Grade**:
 
-| Aspect | Investment Grade | Leveraged Finance |
-|--------|------------------|-------------------|
-| Credit Rating | BBB- or above | BB+ or below |
-| Spread | Low (100-200 bps) | High (300-600+ bps) |
-| Covenants | Minimal | Extensive |
-| Marketing | Quick | Full roadshow |
-| Investor Base | Insurance, pensions | CLOs, hedge funds |
-| Bank Commitment | Rarely hold | Often syndicate |
+```calculation
+title: "Investment Grade vs. Leveraged Finance"
+given:
+  - "Comparing Investment Grade and Leveraged Finance across key dimensions"
+steps:
+  - "Credit Rating: IG = BBB- or above | LevFin = BB+ or below"
+  - "Spread: IG = Low (100-200 bps) | LevFin = High (300-600+ bps)"
+  - "Covenants: IG = Minimal | LevFin = Extensive"
+  - "Marketing: IG = Quick | LevFin = Full roadshow"
+  - "Investor Base: IG = Insurance, pensions | LevFin = CLOs, hedge funds"
+  - "Bank Commitment: IG = Rarely hold | LevFin = Often syndicate"
+result: "Leveraged finance carries higher spreads, more covenants, and requires more extensive marketing than investment grade"
+```
 
 ### Origination
 
@@ -188,21 +203,31 @@ In some banks, origination sits in capital markets. In others, **industry covera
 ### Economics: Capital Markets Fees
 
 **ECM Fees** (as % of proceeds):
-| Transaction Type | Typical Fee |
-|------------------|-------------|
-| IPO | 5-7% |
-| Follow-On | 2-4% |
-| Block Trade | 1-2% |
-| Convertible | 2-3% |
+
+```calculation
+title: "ECM Fee Structure"
+given:
+  - "Fees expressed as percentage of proceeds"
+steps:
+  - "IPO: 5-7%"
+  - "Follow-On: 2-4%"
+  - "Block Trade: 1-2%"
+  - "Convertible: 2-3%"
+result: "IPOs command the highest ECM fees at 5-7% of proceeds"
+```
 
 **DCM Fees** (as % of proceeds):
-| Transaction Type | Typical Fee |
-|------------------|-------------|
-| Investment-Grade Bond | 0.2-0.5% |
-| High-Yield Bond | 1.5-2.5% |
-| Leveraged Loan | 1-2% |
 
-DCM fees are lower per dollar but volumes are much higher.
+```calculation
+title: "DCM Fee Structure"
+given:
+  - "Fees expressed as percentage of proceeds"
+steps:
+  - "Investment-Grade Bond: 0.2-0.5%"
+  - "High-Yield Bond: 1.5-2.5%"
+  - "Leveraged Loan: 1-2%"
+result: "DCM fees are lower per dollar but volumes are much higher"
+```
 
 ### Relationship with Other Divisions
 

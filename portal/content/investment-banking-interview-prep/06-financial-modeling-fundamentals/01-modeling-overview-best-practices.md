@@ -89,12 +89,17 @@ Investment banks use standardized formatting to make models readable. While conv
 
 **Color Coding**:
 
-| Color | Use |
-|-------|-----|
-| Blue | Hardcoded inputs (numbers you type) |
-| Black | Formulas (calculated values) |
-| Green | Links to other tabs or external files |
-| Red | Warning or check cells |
+```calculation
+title: Model Color Coding Conventions
+given:
+  - "Color coding helps distinguish cell types at a glance"
+steps:
+  - "Blue: Hardcoded inputs (numbers you type)"
+  - "Black: Formulas (calculated values)"
+  - "Green: Links to other tabs or external files"
+  - "Red: Warning or check cells"
+result: "Use consistent color coding to make models readable and auditable"
+```
 
 **Why Colors Matter**: When reviewing a model, you need to instantly identify which cells are assumptions (can be changed) versus calculations (driven by other cells). Blue means "this is an input I can modify." Black means "this is calculated—find the driver elsewhere."
 

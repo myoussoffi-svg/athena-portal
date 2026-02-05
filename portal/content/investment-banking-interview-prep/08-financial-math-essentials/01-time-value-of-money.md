@@ -86,12 +86,18 @@ Higher risk = higher discount rate = lower present value
 
 **Example**: Same $1,000 in 5 years, different discount rates:
 
-| Discount Rate | Present Value |
-|---------------|---------------|
-| 5% | $783.53 |
-| 10% | $620.92 |
-| 15% | $497.18 |
-| 20% | $401.88 |
+```calculation
+title: "PV of $1,000 in 5 Years at Different Discount Rates"
+given:
+  - "Future Value: $1,000"
+  - "Time Horizon: 5 years"
+steps:
+  - "Discount Rate 5%: PV = $1,000 / (1.05)^5 = $783.53"
+  - "Discount Rate 10%: PV = $1,000 / (1.10)^5 = $620.92"
+  - "Discount Rate 15%: PV = $1,000 / (1.15)^5 = $497.18"
+  - "Discount Rate 20%: PV = $1,000 / (1.20)^5 = $401.88"
+result: "As the discount rate increases, present value decreases"
+```
 
 As the discount rate increases, present value decreases.
 
@@ -105,12 +111,19 @@ PV = CF₁/(1+r)¹ + CF₂/(1+r)² + CF₃/(1+r)³ + ... + CFₙ/(1+r)ⁿ
 
 **Example**: Cash flows of $100, $150, $200 over 3 years at 8%:
 
-| Year | Cash Flow | Discount Factor | Present Value |
-|------|-----------|-----------------|---------------|
-| 1 | $100 | 1/(1.08)¹ = 0.926 | $92.59 |
-| 2 | $150 | 1/(1.08)² = 0.857 | $128.60 |
-| 3 | $200 | 1/(1.08)³ = 0.794 | $158.77 |
-| **Total** | | | **$379.96** |
+```calculation
+title: "PV of Multiple Cash Flows at 8% Discount Rate"
+given:
+  - "Year 1 Cash Flow: $100"
+  - "Year 2 Cash Flow: $150"
+  - "Year 3 Cash Flow: $200"
+  - "Discount Rate: 8%"
+steps:
+  - "Year 1: $100 x 1/(1.08)^1 = $100 x 0.926 = $92.59"
+  - "Year 2: $150 x 1/(1.08)^2 = $150 x 0.857 = $128.60"
+  - "Year 3: $200 x 1/(1.08)^3 = $200 x 0.794 = $158.77"
+result: "Total Present Value = $379.96"
+```
 
 ### Net Present Value (NPV)
 
@@ -127,14 +140,20 @@ NPV = -Initial Investment + PV of Future Cash Flows
 
 **Example**: Invest $500 today to receive $100, $150, $200, $250 over 4 years at 10%:
 
-| Year | Cash Flow | PV |
-|------|-----------|-----|
-| 0 | ($500) | ($500.00) |
-| 1 | $100 | $90.91 |
-| 2 | $150 | $123.97 |
-| 3 | $200 | $150.26 |
-| 4 | $250 | $170.75 |
-| **NPV** | | **$35.89** |
+```calculation
+title: "NPV of Investment at 10% Discount Rate"
+given:
+  - "Initial Investment: $500"
+  - "Discount Rate: 10%"
+steps:
+  - "Year 0: ($500) -> PV = ($500.00)"
+  - "Year 1: $100 -> PV = $90.91"
+  - "Year 2: $150 -> PV = $123.97"
+  - "Year 3: $200 -> PV = $150.26"
+  - "Year 4: $250 -> PV = $170.75"
+result: "NPV = $35.89"
+note: "NPV is positive, so the project creates value and should be accepted"
+```
 
 NPV is positive, so the project creates $35.89 of value and should be accepted.
 
@@ -142,14 +161,19 @@ NPV is positive, so the project creates $35.89 of value and should be accepted.
 
 Interest can compound at different frequencies:
 
-| Frequency | Periods per Year (m) |
-|-----------|---------------------|
-| Annual | 1 |
-| Semi-annual | 2 |
-| Quarterly | 4 |
-| Monthly | 12 |
-| Daily | 365 |
-| Continuous | ∞ |
+```calculation
+title: "Compounding Frequency Reference"
+given:
+  - "Interest can compound at various intervals within a year"
+steps:
+  - "Annual: 1 period per year"
+  - "Semi-annual: 2 periods per year"
+  - "Quarterly: 4 periods per year"
+  - "Monthly: 12 periods per year"
+  - "Daily: 365 periods per year"
+  - "Continuous: infinite periods per year"
+result: "More frequent compounding increases effective return"
+```
 
 **Periodic Compounding**:
 ```
@@ -163,12 +187,19 @@ Where:
 
 **Example**: $1,000 at 12% for 1 year:
 
-| Compounding | Calculation | FV |
-|-------------|-------------|-----|
-| Annual | $1,000 × (1.12)^1 | $1,120.00 |
-| Semi-annual | $1,000 × (1.06)^2 | $1,123.60 |
-| Quarterly | $1,000 × (1.03)^4 | $1,125.51 |
-| Monthly | $1,000 × (1.01)^12 | $1,126.83 |
+```calculation
+title: "$1,000 at 12% for 1 Year Under Different Compounding Frequencies"
+given:
+  - "Principal (PV): $1,000"
+  - "Annual Rate: 12%"
+  - "Time: 1 year"
+steps:
+  - "Annual: $1,000 x (1.12)^1 = $1,120.00"
+  - "Semi-annual: $1,000 x (1.06)^2 = $1,123.60"
+  - "Quarterly: $1,000 x (1.03)^4 = $1,125.51"
+  - "Monthly: $1,000 x (1.01)^12 = $1,126.83"
+result: "More frequent compounding = higher future value"
+```
 
 More frequent compounding = higher future value.
 

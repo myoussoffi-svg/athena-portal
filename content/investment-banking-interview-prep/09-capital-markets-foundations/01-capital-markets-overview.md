@@ -52,32 +52,47 @@ In the secondary market, proceeds go to selling investors (not the company).
 
 **Issuers** — Entities that raise capital
 
-| Type | Examples | Securities Issued |
-|------|----------|-------------------|
-| Corporations | Apple, ExxonMobil, Startups | Stocks, Bonds |
-| Governments | US Treasury, Municipalities | Treasury Bonds, Munis |
-| Financial Institutions | Banks, Insurance Companies | Bank Debt, Preferred Stock |
-| SPVs/Structured Vehicles | Mortgage pools, CLOs | Asset-Backed Securities |
+```calculation
+title: "Issuers: Entities That Raise Capital"
+given:
+  - "Category: Type, Examples, Securities Issued"
+steps:
+  - "Corporations: Apple, ExxonMobil, Startups — Stocks, Bonds"
+  - "Governments: US Treasury, Municipalities — Treasury Bonds, Munis"
+  - "Financial Institutions: Banks, Insurance Companies — Bank Debt, Preferred Stock"
+  - "SPVs/Structured Vehicles: Mortgage pools, CLOs — Asset-Backed Securities"
+result: "Issuers range from corporations to governments to structured vehicles, each issuing distinct security types"
+```
 
 **Investors** — Entities that provide capital
 
-| Type | Characteristics | Focus |
-|------|-----------------|-------|
-| Institutional Investors | Large pools of capital, professional management | Pension funds, mutual funds, insurance companies |
-| Asset Managers | Manage money for clients | Fidelity, BlackRock, hedge funds |
-| Sovereign Wealth Funds | Government-owned investment pools | Norway SWF, Singapore GIC |
-| Retail Investors | Individual investors | 401(k) participants, day traders |
-| Banks | Both investors and intermediaries | Hold bonds, make loans |
+```calculation
+title: "Investors: Entities That Provide Capital"
+given:
+  - "Category: Type, Characteristics, Focus"
+steps:
+  - "Institutional Investors: Large pools of capital, professional management — Pension funds, mutual funds, insurance companies"
+  - "Asset Managers: Manage money for clients — Fidelity, BlackRock, hedge funds"
+  - "Sovereign Wealth Funds: Government-owned investment pools — Norway SWF, Singapore GIC"
+  - "Retail Investors: Individual investors — 401(k) participants, day traders"
+  - "Banks: Both investors and intermediaries — Hold bonds, make loans"
+result: "Investor base spans from large institutional pools to individual retail participants"
+```
 
 **Intermediaries** — Facilitate transactions
 
-| Type | Role |
-|------|------|
-| Investment Banks | Underwrite securities, advise issuers |
-| Brokers | Execute trades for clients |
-| Dealers/Market Makers | Buy/sell securities from own inventory, provide liquidity |
-| Exchanges | Provide trading venues and price discovery |
-| Clearing Houses | Settle trades, manage counterparty risk |
+```calculation
+title: "Intermediaries: Facilitate Transactions"
+given:
+  - "Category: Type, Role"
+steps:
+  - "Investment Banks: Underwrite securities, advise issuers"
+  - "Brokers: Execute trades for clients"
+  - "Dealers/Market Makers: Buy/sell securities from own inventory, provide liquidity"
+  - "Exchanges: Provide trading venues and price discovery"
+  - "Clearing Houses: Settle trades, manage counterparty risk"
+result: "Intermediaries connect issuers and investors through underwriting, trading, and settlement"
+```
 
 ### Types of Capital Market Instruments
 
@@ -156,13 +171,18 @@ Investment banks serve as the critical link between issuers and investors:
 
 Both are core investment banking activities, but they differ:
 
-| Aspect | Capital Markets | M&A |
-|--------|-----------------|-----|
-| Product | Securities (stocks, bonds) | Deals (mergers, acquisitions) |
-| Client Need | Raise money | Buy/sell companies |
-| Revenue Model | Underwriting fees (% of deal) | Advisory fees |
-| Repeat Business | Companies raise capital regularly | Deals are episodic |
-| Market Dependency | Very sensitive to market conditions | Less sensitive |
+```calculation
+title: "Capital Markets vs. M&A Comparison"
+given:
+  - "Comparing two core investment banking activities"
+steps:
+  - "Product: Capital Markets = Securities (stocks, bonds) | M&A = Deals (mergers, acquisitions)"
+  - "Client Need: Capital Markets = Raise money | M&A = Buy/sell companies"
+  - "Revenue Model: Capital Markets = Underwriting fees (% of deal) | M&A = Advisory fees"
+  - "Repeat Business: Capital Markets = Companies raise capital regularly | M&A = Deals are episodic"
+  - "Market Dependency: Capital Markets = Very sensitive to market conditions | M&A = Less sensitive"
+result: "Capital Markets focuses on recurring securities issuance; M&A focuses on episodic deal advisory"
+```
 
 Many deals involve both: an M&A transaction might require debt financing from DCM and equity from ECM.
 

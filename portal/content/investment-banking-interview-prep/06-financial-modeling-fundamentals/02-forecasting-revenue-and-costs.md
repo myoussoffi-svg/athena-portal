@@ -96,10 +96,18 @@ Create a row for each revenue line item. Apply growth rates or driver calculatio
 
 **Example**:
 
-| | Year 1 (Actual) | Year 2 (Actual) | Year 3 | Year 4 | Year 5 |
-|---|---|---|---|---|---|
-| Revenue Growth | — | 8.0% | 6.0% | 5.0% | 4.0% |
-| Revenue | $500M | $540M | $572M | $601M | $625M |
+```calculation
+title: Revenue Forecast with Decelerating Growth
+given:
+  - "Year 1 (Actual) Revenue: $500M"
+  - "Year 2 (Actual) Revenue: $540M (8.0% growth)"
+steps:
+  - "Year 3 Revenue: $540M x 1.06 = $572M (6.0% growth)"
+  - "Year 4 Revenue: $572M x 1.05 = $601M (5.0% growth)"
+  - "Year 5 Revenue: $601M x 1.04 = $625M (4.0% growth)"
+result: "Year 5 Revenue = $625M"
+note: "Growth decelerates over time—common for maturing businesses."
+```
 
 Notice growth decelerates over time—common for maturing businesses.
 
@@ -144,12 +152,19 @@ COGS = Revenue - Gross Profit
 
 **Projection Approach**: Often hold gross margin constant or adjust slightly based on expected trends.
 
-| | Year 1 | Year 2 | Year 3 | Year 4 | Year 5 |
-|---|---|---|---|---|---|
-| Revenue | $500M | $540M | $572M | $601M | $625M |
-| Gross Margin | 40.0% | 40.5% | 41.0% | 41.0% | 41.0% |
-| Gross Profit | $200M | $219M | $235M | $246M | $256M |
-| COGS | $300M | $321M | $338M | $355M | $369M |
+```calculation
+title: COGS and Gross Profit Projection
+given:
+  - "Revenue: $500M (Y1), $540M (Y2), $572M (Y3), $601M (Y4), $625M (Y5)"
+  - "Gross Margin: 40.0% (Y1), 40.5% (Y2), 41.0% (Y3-Y5)"
+steps:
+  - "Year 1: Gross Profit = $500M x 40.0% = $200M, COGS = $300M"
+  - "Year 2: Gross Profit = $540M x 40.5% = $219M, COGS = $321M"
+  - "Year 3: Gross Profit = $572M x 41.0% = $235M, COGS = $338M"
+  - "Year 4: Gross Profit = $601M x 41.0% = $246M, COGS = $355M"
+  - "Year 5: Gross Profit = $625M x 41.0% = $256M, COGS = $369M"
+result: "Gross Margin expands from 40.0% to 41.0% over the forecast period"
+```
 
 **Operating Expenses (OpEx)**
 
@@ -163,13 +178,18 @@ Operating expenses include SG&A (selling, general & administrative), R&D, and ot
 
 **Example with Operating Leverage**:
 
-| | Year 1 | Year 2 | Year 3 |
-|---|---|---|---|
-| Revenue | $100M | $120M | $140M |
-| Fixed Costs | $30M | $30M | $30M |
-| Variable Costs (20% of Rev) | $20M | $24M | $28M |
-| Total OpEx | $50M | $54M | $58M |
-| OpEx as % of Revenue | 50.0% | 45.0% | 41.4% |
+```calculation
+title: Operating Leverage Example
+given:
+  - "Fixed Costs: $30M per year (constant)"
+  - "Variable Costs: 20% of Revenue"
+steps:
+  - "Year 1: Revenue = $100M, Fixed = $30M, Variable = $20M, Total OpEx = $50M (50.0% of Rev)"
+  - "Year 2: Revenue = $120M, Fixed = $30M, Variable = $24M, Total OpEx = $54M (45.0% of Rev)"
+  - "Year 3: Revenue = $140M, Fixed = $30M, Variable = $28M, Total OpEx = $58M (41.4% of Rev)"
+result: "OpEx as % of Revenue declines from 50.0% to 41.4%"
+note: "The OpEx percentage declines as revenue scales over the fixed cost base."
+```
 
 The OpEx percentage declines as revenue scales over the fixed cost base.
 
@@ -209,22 +229,31 @@ Use the statutory rate (e.g., 21% federal + state in the US) or the company's hi
 
 ### Putting It All Together: Projected Income Statement
 
-| | Year 1 | Year 2 | Year 3 | Year 4 | Year 5 |
-|---|---|---|---|---|---|
-| **Revenue** | $500M | $540M | $572M | $601M | $625M |
-| Growth % | — | 8.0% | 6.0% | 5.0% | 4.0% |
-| **COGS** | $300M | $321M | $338M | $355M | $369M |
-| Gross Margin | 40.0% | 40.5% | 41.0% | 41.0% | 41.0% |
-| **Gross Profit** | $200M | $219M | $235M | $246M | $256M |
-| **SG&A** | $100M | $105M | $109M | $113M | $116M |
-| % of Revenue | 20.0% | 19.4% | 19.1% | 18.8% | 18.6% |
-| **EBIT** | $100M | $114M | $126M | $133M | $140M |
-| EBIT Margin | 20.0% | 21.1% | 22.0% | 22.1% | 22.4% |
-| **Interest Expense** | ($10M) | ($10M) | ($9M) | ($8M) | ($7M) |
-| **Pre-Tax Income** | $90M | $104M | $117M | $125M | $133M |
-| **Tax Expense** | ($23M) | ($26M) | ($29M) | ($31M) | ($33M) |
-| Tax Rate | 25.0% | 25.0% | 25.0% | 25.0% | 25.0% |
-| **Net Income** | $68M | $78M | $88M | $94M | $100M |
+```calculation
+title: Projected Income Statement (5-Year Forecast)
+given:
+  - "Base Revenue (Year 1): $500M"
+  - "Revenue Growth: 8.0% (Y2), 6.0% (Y3), 5.0% (Y4), 4.0% (Y5)"
+  - "Gross Margin: 40.0% (Y1), 40.5% (Y2), 41.0% (Y3-Y5)"
+  - "Tax Rate: 25.0% across all years"
+steps:
+  - "Year 1: Revenue = $500M, COGS = $300M, Gross Profit = $200M"
+  - "Year 1: SG&A = $100M (20.0% of Rev), EBIT = $100M (20.0% margin)"
+  - "Year 1: Interest Expense = ($10M), Pre-Tax Income = $90M, Tax = ($23M), Net Income = $68M"
+  - "Year 2: Revenue = $540M, COGS = $321M, Gross Profit = $219M"
+  - "Year 2: SG&A = $105M (19.4% of Rev), EBIT = $114M (21.1% margin)"
+  - "Year 2: Interest Expense = ($10M), Pre-Tax Income = $104M, Tax = ($26M), Net Income = $78M"
+  - "Year 3: Revenue = $572M, COGS = $338M, Gross Profit = $235M"
+  - "Year 3: SG&A = $109M (19.1% of Rev), EBIT = $126M (22.0% margin)"
+  - "Year 3: Interest Expense = ($9M), Pre-Tax Income = $117M, Tax = ($29M), Net Income = $88M"
+  - "Year 4: Revenue = $601M, COGS = $355M, Gross Profit = $246M"
+  - "Year 4: SG&A = $113M (18.8% of Rev), EBIT = $133M (22.1% margin)"
+  - "Year 4: Interest Expense = ($8M), Pre-Tax Income = $125M, Tax = ($31M), Net Income = $94M"
+  - "Year 5: Revenue = $625M, COGS = $369M, Gross Profit = $256M"
+  - "Year 5: SG&A = $116M (18.6% of Rev), EBIT = $140M (22.4% margin)"
+  - "Year 5: Interest Expense = ($7M), Pre-Tax Income = $133M, Tax = ($33M), Net Income = $100M"
+result: "Net Income grows from $68M to $100M; EBIT Margin expands from 20.0% to 22.4%"
+```
 
 ### Common Forecasting Mistakes
 

@@ -57,14 +57,18 @@ Where:
 
 **Example**:
 
-| Metric | Value |
-|--------|-------|
-| Purchase Price | $4,500M |
-| Target NOPAT | $120M |
-| After-Tax Synergies | $113M |
-| Lost Interest Income (after-tax) | ($15M) |
-| **Incremental NOPAT** | **$218M** |
-| **Acquisition ROIC** | **4.8%** |
+```calculation
+title: Acquisition ROIC Calculation
+given:
+  - "Purchase Price: $4,500M"
+  - "Target NOPAT: $120M"
+  - "After-Tax Synergies: $113M"
+  - "Lost Interest Income (after-tax): ($15M)"
+steps:
+  - "Incremental NOPAT: $120M + $113M - $15M = $218M"
+  - "Acquisition ROIC: $218M / $4,500M = 4.8%"
+result: "Acquisition ROIC = 4.8%"
+```
 
 If the acquirer's WACC is 8%, the deal destroys value (4.8% < 8%).
 
@@ -74,14 +78,23 @@ If WACC is 4%, the deal creates value (4.8% > 4%).
 
 Year 1 ROIC is often low due to integration costs. Model ROIC improvement:
 
-| | Year 1 | Year 2 | Year 3 | Year 4 | Year 5 |
-|---|---|---|---|---|---|
-| Target NOPAT | $120M | $130M | $140M | $150M | $160M |
-| Synergies (AT) | $38M | $95M | $113M | $113M | $113M |
-| Integration Costs | ($75M) | ($25M) | $0 | $0 | $0 |
-| Lost Interest | ($15M) | ($15M) | ($15M) | ($15M) | ($15M) |
-| **Incremental NOPAT** | $68M | $185M | $238M | $248M | $258M |
-| **ROIC** | 1.5% | 4.1% | 5.3% | 5.5% | 5.7% |
+```calculation
+title: ROIC Build-Up Over Time
+given:
+  - "Purchase Price: $4,500M"
+  - "Target NOPAT grows from $120M (Y1) to $160M (Y5)"
+  - "After-Tax Synergies ramp from $38M (Y1) to $113M (Y3+)"
+  - "Integration Costs: ($75M) in Y1, ($25M) in Y2, $0 thereafter"
+  - "Lost Interest: ($15M) per year"
+steps:
+  - "Year 1: NOPAT $120M + Synergies $38M - Integration ($75M) - Interest ($15M) = $68M -> ROIC 1.5%"
+  - "Year 2: NOPAT $130M + Synergies $95M - Integration ($25M) - Interest ($15M) = $185M -> ROIC 4.1%"
+  - "Year 3: NOPAT $140M + Synergies $113M - Integration $0 - Interest ($15M) = $238M -> ROIC 5.3%"
+  - "Year 4: NOPAT $150M + Synergies $113M - Integration $0 - Interest ($15M) = $248M -> ROIC 5.5%"
+  - "Year 5: NOPAT $160M + Synergies $113M - Integration $0 - Interest ($15M) = $258M -> ROIC 5.7%"
+result: "ROIC improves from 1.5% (Year 1) to 5.7% (Year 5)"
+note: "ROIC improves as synergies ramp and integration costs fade"
+```
 
 ROIC improves as synergies ramp and integration costs fade.
 
@@ -99,17 +112,20 @@ Premium = $4,500M - $3,600M = $900M
 
 Present value of all future synergies discounted at WACC:
 
-| Year | Pre-Tax Synergies | After-Tax | PV Factor (8%) | PV |
-|------|-------------------|-----------|----------------|-----|
-| 1 | $76M | $57M | 0.926 | $53M |
-| 2 | $152M | $114M | 0.857 | $98M |
-| 3 | $190M | $143M | 0.794 | $113M |
-| 4 | $190M | $143M | 0.735 | $105M |
-| 5 | $190M | $143M | 0.681 | $97M |
-| TV* | | | | $1,220M |
-| **Total NPV** | | | | **$1,686M** |
-
-*Terminal Value = Year 5 Synergies / (WACC - g) = $143M / (0.08 - 0.02) = $2,383M; PV = $1,220M
+```calculation
+title: NPV of Synergies
+given:
+  - "Discount Rate (WACC): 8%"
+  - "Growth Rate for Terminal Value: 2%"
+steps:
+  - "Year 1: Pre-Tax $76M -> After-Tax $57M x PV Factor 0.926 = $53M"
+  - "Year 2: Pre-Tax $152M -> After-Tax $114M x PV Factor 0.857 = $98M"
+  - "Year 3: Pre-Tax $190M -> After-Tax $143M x PV Factor 0.794 = $113M"
+  - "Year 4: Pre-Tax $190M -> After-Tax $143M x PV Factor 0.735 = $105M"
+  - "Year 5: Pre-Tax $190M -> After-Tax $143M x PV Factor 0.681 = $97M"
+  - "Terminal Value: $143M / (0.08 - 0.02) = $2,383M; PV = $1,220M"
+result: "Total NPV of Synergies = $1,686M"
+```
 
 **Value Creation Analysis**:
 
@@ -129,22 +145,20 @@ The acquirer captures $786M of value (synergies exceed premium).
 
 **AVP Table Structure**:
 
-| Offer Price | $40 | $42 | $44 | $46 | $48 | $50 |
-|-------------|-----|-----|-----|-----|-----|-----|
-| **Premium** | 11% | 17% | 22% | 28% | 33% | 39% |
-| **Equity Value** | $4.0B | $4.2B | $4.4B | $4.6B | $4.8B | $5.0B |
-| **Enterprise Value** | $4.5B | $4.7B | $4.9B | $5.1B | $5.3B | $5.5B |
-| | | | | | | |
-| **EV/EBITDA** | 22.5× | 23.5× | 24.5× | 25.5× | 26.5× | 27.5× |
-| **P/E (Target)** | 44.4× | 46.7× | 48.9× | 51.1× | 53.3× | 55.6× |
-| | | | | | | |
-| **Accretion Y1** | 2% | (1%) | (4%) | (7%) | (10%) | (13%) |
-| **Accretion Y2** | 8% | 5% | 2% | (1%) | (4%) | (7%) |
-| **Accretion Y3** | 12% | 9% | 6% | 3% | 0% | (3%) |
-| | | | | | | |
-| **ROIC Y3** | 6.2% | 5.8% | 5.5% | 5.2% | 4.9% | 4.6% |
-| | | | | | | |
-| **Debt/EBITDA** | 2.8× | 2.9× | 3.0× | 3.1× | 3.2× | 3.3× |
+```calculation
+title: Analysis at Various Prices (AVP)
+given:
+  - "Offer Prices Evaluated: $40, $42, $44, $46, $48, $50"
+steps:
+  - "At $40: Premium 11%, Equity Value $4.0B, EV $4.5B, EV/EBITDA 22.5x, P/E 44.4x, Accretion Y1 2% / Y2 8% / Y3 12%, ROIC Y3 6.2%, Debt/EBITDA 2.8x"
+  - "At $42: Premium 17%, Equity Value $4.2B, EV $4.7B, EV/EBITDA 23.5x, P/E 46.7x, Accretion Y1 (1%) / Y2 5% / Y3 9%, ROIC Y3 5.8%, Debt/EBITDA 2.9x"
+  - "At $44: Premium 22%, Equity Value $4.4B, EV $4.9B, EV/EBITDA 24.5x, P/E 48.9x, Accretion Y1 (4%) / Y2 2% / Y3 6%, ROIC Y3 5.5%, Debt/EBITDA 3.0x"
+  - "At $46: Premium 28%, Equity Value $4.6B, EV $5.1B, EV/EBITDA 25.5x, P/E 51.1x, Accretion Y1 (7%) / Y2 (1%) / Y3 3%, ROIC Y3 5.2%, Debt/EBITDA 3.1x"
+  - "At $48: Premium 33%, Equity Value $4.8B, EV $5.3B, EV/EBITDA 26.5x, P/E 53.3x, Accretion Y1 (10%) / Y2 (4%) / Y3 0%, ROIC Y3 4.9%, Debt/EBITDA 3.2x"
+  - "At $50: Premium 39%, Equity Value $5.0B, EV $5.5B, EV/EBITDA 27.5x, P/E 55.6x, Accretion Y1 (13%) / Y2 (7%) / Y3 (3%), ROIC Y3 4.6%, Debt/EBITDA 3.3x"
+result: "Break-even accretion (Year 3) at ~$48 per share"
+note: "Higher offer prices reduce accretion, ROIC, and increase leverage"
+```
 
 ### Using AVP in Negotiations
 
@@ -210,11 +224,18 @@ Chart showing ROIC crossing above WACC in Year 2 or 3.
 
 **3. Sensitivity Matrix**
 
-| | **No Synergies** | **$100M Synergies** | **$150M Synergies** | **$200M Synergies** |
-|---|---|---|---|---|
-| **$40 Price** | Destroys | Creates | Creates | Creates |
-| **$45 Price** | Destroys | Neutral | Creates | Creates |
-| **$50 Price** | Destroys | Destroys | Neutral | Creates |
+```calculation
+title: Value Creation Sensitivity Matrix (Price vs. Synergies)
+given:
+  - "Prices Evaluated: $40, $45, $50"
+  - "Synergy Scenarios: No Synergies, $100M, $150M, $200M"
+steps:
+  - "At $40 Price: No Synergies -> Destroys | $100M -> Creates | $150M -> Creates | $200M -> Creates"
+  - "At $45 Price: No Synergies -> Destroys | $100M -> Neutral | $150M -> Creates | $200M -> Creates"
+  - "At $50 Price: No Synergies -> Destroys | $100M -> Destroys | $150M -> Neutral | $200M -> Creates"
+result: "Value creation requires sufficient synergies to offset the premium paid"
+note: "Shows which price/synergy combinations create value"
+```
 
 Shows which combinations create value.
 

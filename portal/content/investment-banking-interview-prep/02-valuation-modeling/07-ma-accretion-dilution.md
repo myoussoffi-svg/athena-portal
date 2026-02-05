@@ -178,11 +178,19 @@ The deal needs $6.67M in annual pre-tax synergies (cost savings or revenue impro
 
 **Example**:
 
-| Metric | Acquirer | Target | Acquirer % | Target % |
-|--------|----------|--------|------------|----------|
-| Revenue | $500M | $200M | 71% | 29% |
-| EBITDA | $100M | $50M | 67% | 33% |
-| Net Income | $60M | $25M | 71% | 29% |
+```calculation
+title: "Contribution Analysis: Acquirer vs. Target"
+given:
+  - "Revenue: Acquirer $500M, Target $200M"
+  - "EBITDA: Acquirer $100M, Target $50M"
+  - "Net Income: Acquirer $60M, Target $25M"
+steps:
+  - "Revenue Contribution: Acquirer 71%, Target 29%"
+  - "EBITDA Contribution: Acquirer 67%, Target 33%"
+  - "Net Income Contribution: Acquirer 71%, Target 29%"
+result: "Target contributes 29-33% of combined earnings across key metrics"
+note: "If target shareholders receive 25% ownership but contribute 29-33% of earnings, they may be undervalued in the deal terms"
+```
 
 If the target's shareholders receive 25% of the combined company's equity but contribute 29-33% of earnings, they may be "undervalued" in the deal terms. This analysis supports negotiation on exchange ratios.
 
@@ -209,14 +217,24 @@ In a full merger model, you construct a **pro forma balance sheet** showing the 
 
 **Example Pro Forma Adjustments**:
 
-| Item | Acquirer | Target | Adjustments | Pro Forma |
-|------|----------|--------|-------------|-----------|
-| Cash | $200M | $50M | ($300M) deal, +$200M debt | $150M |
-| PP&E | $400M | $100M | +$20M FV adj | $520M |
-| Goodwill | $50M | $0 | +$180M | $230M |
-| Total Assets | $650M | $150M | | $900M |
-| Debt | $100M | $50M | +$200M new | $350M |
-| Equity | $550M | $100M | ($100M) + $100M stock | $550M |
+```calculation
+title: "Pro Forma Balance Sheet Adjustments"
+given:
+  - "Acquirer Cash: $200M"
+  - "Target Cash: $50M"
+  - "Deal Price: $300M (funded with $200M new debt + $100M stock)"
+  - "Fair Value Adjustment on PP&E: +$20M"
+  - "Goodwill Created: $180M"
+steps:
+  - "Cash: Acquirer $200M + Target $50M - $300M deal + $200M debt = $150M"
+  - "PP&E: Acquirer $400M + Target $100M + $20M FV adj = $520M"
+  - "Goodwill: Acquirer $50M + Target $0 + $180M new = $230M"
+  - "Total Assets: $900M"
+  - "Debt: Acquirer $100M + Target $50M + $200M new = $350M"
+  - "Equity: Acquirer $550M + Target ($100M eliminated) + $100M stock issued = $550M"
+result: "Pro Forma Total Assets = $900M, Debt = $350M, Equity = $550M"
+note: "Leverage ratios, financing constraints, and balance sheet strength must be assessed on the pro forma balance sheet"
+```
 
 **Why It Matters**:
 - **Leverage ratios**: Lenders and rating agencies assess Debt/EBITDA on the pro forma balance sheet

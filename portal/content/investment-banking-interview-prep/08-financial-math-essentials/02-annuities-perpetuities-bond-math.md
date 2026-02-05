@@ -131,14 +131,21 @@ Bond Price = PV of Coupons + PV of Principal
 
 **Example**: 5-year bond, $1,000 face value, 6% coupon (annual), 5% market rate:
 
-| Year | Cash Flow | PV Factor | Present Value |
-|------|-----------|-----------|---------------|
-| 1 | $60 | 0.952 | $57.14 |
-| 2 | $60 | 0.907 | $54.42 |
-| 3 | $60 | 0.864 | $51.83 |
-| 4 | $60 | 0.823 | $49.36 |
-| 5 | $60 + $1,000 | 0.784 | $831.05 |
-| **Total** | | | **$1,043.80** |
+```calculation
+title: "Bond Pricing: 5-Year, 6% Coupon, 5% Market Rate"
+given:
+  - "Face Value: $1,000"
+  - "Coupon Rate: 6% (annual)"
+  - "Market Rate: 5%"
+steps:
+  - "Year 1: Cash Flow = $60, PV Factor = 0.952, Present Value = $57.14"
+  - "Year 2: Cash Flow = $60, PV Factor = 0.907, Present Value = $54.42"
+  - "Year 3: Cash Flow = $60, PV Factor = 0.864, Present Value = $51.83"
+  - "Year 4: Cash Flow = $60, PV Factor = 0.823, Present Value = $49.36"
+  - "Year 5: Cash Flow = $60 + $1,000, PV Factor = 0.784, Present Value = $831.05"
+result: "Total Bond Price = $1,043.80"
+note: "Bond trades at a premium ($1,043.80 > $1,000) because coupon rate (6%) exceeds market rate (5%)"
+```
 
 The bond trades at a **premium** ($1,043.80 > $1,000) because its coupon rate (6%) exceeds the market rate (5%).
 
@@ -181,11 +188,16 @@ Bond prices and yields move inversely:
 
 ### Premium, Par, and Discount Bonds
 
-| Coupon vs. Yield | Price vs. Face Value | Term |
-|------------------|---------------------|------|
-| Coupon > Yield | Price > Face | Premium |
-| Coupon = Yield | Price = Face | Par |
-| Coupon < Yield | Price < Face | Discount |
+```calculation
+title: "Premium, Par, and Discount Bonds"
+given:
+  - "Bond classification depends on coupon rate relative to market yield"
+steps:
+  - "Coupon > Yield: Price > Face Value = Premium Bond"
+  - "Coupon = Yield: Price = Face Value = Par Bond"
+  - "Coupon < Yield: Price < Face Value = Discount Bond"
+result: "Coupon rate vs. yield determines whether a bond trades at a premium, par, or discount"
+```
 
 **Premium bonds** have attractive coupons (above market), so investors pay more.
 **Discount bonds** have unattractive coupons (below market), so they sell for less.

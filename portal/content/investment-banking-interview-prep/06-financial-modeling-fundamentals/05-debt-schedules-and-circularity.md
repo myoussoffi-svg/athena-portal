@@ -31,15 +31,18 @@ Without a proper debt schedule, your model can't accurately capture how a compan
 
 For each debt instrument, track:
 
-| Row | Description |
-|-----|-------------|
-| Beginning Balance | Prior period's ending balance |
-| (+) Draws | New borrowings (if applicable) |
-| (-) Mandatory Amortization | Scheduled principal repayments |
-| (-) Optional Prepayment | Discretionary repayments from excess cash |
-| (=) Ending Balance | Remaining debt at period end |
-| Interest Rate | The rate used to calculate interest |
-| Interest Expense | Calculated from average balance × rate |
+```calculation
+title: "Debt Schedule Row Structure"
+given:
+  - "Beginning Balance: Prior period's ending balance"
+  - "(+) Draws: New borrowings (if applicable)"
+steps:
+  - "(-) Mandatory Amortization: Scheduled principal repayments"
+  - "(-) Optional Prepayment: Discretionary repayments from excess cash"
+  - "(=) Ending Balance: Remaining debt at period end"
+  - "Interest Rate: The rate used to calculate interest"
+result: "Interest Expense: Calculated from average balance x rate"
+```
 
 ### Interest Expense Calculation
 
@@ -120,14 +123,21 @@ Let's build a schedule for a term loan with mandatory amortization:
 - Mandatory Amortization: $10M per year
 - Term: 10 years
 
-| | Year 1 | Year 2 | Year 3 | Year 4 | Year 5 |
-|---|---|---|---|---|---|
-| Beginning Balance | $100M | $90M | $80M | $70M | $60M |
-| Mandatory Amortization | ($10M) | ($10M) | ($10M) | ($10M) | ($10M) |
-| Ending Balance | $90M | $80M | $70M | $60M | $50M |
-| Average Balance | $95M | $85M | $75M | $65M | $55M |
-| Interest Rate | 5.0% | 5.0% | 5.0% | 5.0% | 5.0% |
-| **Interest Expense** | **$4.75M** | **$4.25M** | **$3.75M** | **$3.25M** | **$2.75M** |
+```calculation
+title: "Term Loan Debt Schedule (Years 1-5)"
+given:
+  - "Beginning Balance: $100M"
+  - "Interest Rate: 5.0%"
+  - "Mandatory Amortization: $10M per year"
+steps:
+  - "Year 1: Beginning Balance = $100M, Amortization = ($10M), Ending Balance = $90M, Average Balance = $95M, Interest Expense = $4.75M"
+  - "Year 2: Beginning Balance = $90M, Amortization = ($10M), Ending Balance = $80M, Average Balance = $85M, Interest Expense = $4.25M"
+  - "Year 3: Beginning Balance = $80M, Amortization = ($10M), Ending Balance = $70M, Average Balance = $75M, Interest Expense = $3.75M"
+  - "Year 4: Beginning Balance = $70M, Amortization = ($10M), Ending Balance = $60M, Average Balance = $65M, Interest Expense = $3.25M"
+  - "Year 5: Beginning Balance = $60M, Amortization = ($10M), Ending Balance = $50M, Average Balance = $55M, Interest Expense = $2.75M"
+result: "Interest expense declines each year as the debt is paid down"
+note: "Interest Expense = Average Balance x Interest Rate"
+```
 
 Interest expense declines as the debt is paid down.
 
@@ -155,16 +165,19 @@ If Cash Available < 0:
 
 **Revolver Schedule Example**:
 
-| | Year 1 | Year 2 | Year 3 |
-|---|---|---|---|
-| Revolver Capacity | $50M | $50M | $50M |
-| Beginning Balance | $20M | $15M | $5M |
-| Draw / (Paydown) | ($5M) | ($10M) | ($5M) |
-| Ending Balance | $15M | $5M | $0M |
-| Average Balance | $17.5M | $10M | $2.5M |
-| Interest Rate | 6.0% | 6.0% | 6.0% |
-| Interest Expense | $1.05M | $0.6M | $0.15M |
-| Commitment Fee (on unused) | $0.10M | $0.12M | $0.15M |
+```calculation
+title: "Revolving Credit Facility Schedule (Years 1-3)"
+given:
+  - "Revolver Capacity: $50M"
+  - "Interest Rate: 6.0%"
+  - "Beginning Balance (Year 1): $20M"
+steps:
+  - "Year 1: Beginning Balance = $20M, Draw / (Paydown) = ($5M), Ending Balance = $15M, Average Balance = $17.5M, Interest Expense = $1.05M, Commitment Fee (on unused) = $0.10M"
+  - "Year 2: Beginning Balance = $15M, Draw / (Paydown) = ($10M), Ending Balance = $5M, Average Balance = $10M, Interest Expense = $0.6M, Commitment Fee (on unused) = $0.12M"
+  - "Year 3: Beginning Balance = $5M, Draw / (Paydown) = ($5M), Ending Balance = $0M, Average Balance = $2.5M, Interest Expense = $0.15M, Commitment Fee (on unused) = $0.15M"
+result: "Revolver is fully repaid by Year 3 as excess cash pays down the balance"
+note: "Commitment Fee is charged on the unused portion (Capacity - Average Balance) at 0.25-0.50%"
+```
 
 **Commitment Fee**: Revolvers often charge a fee (0.25-0.50%) on the unused portion.
 
@@ -175,12 +188,17 @@ Commitment Fee = Unused × Fee Rate
 
 LBO and M&A models often have multiple debt tranches with different terms:
 
-| Tranche | Amount | Rate | Amortization | Maturity |
-|---------|--------|------|--------------|----------|
-| Revolver | $50M | L + 300 | None | 5 years |
-| Term Loan A | $100M | L + 275 | 5% annual | 5 years |
-| Term Loan B | $200M | L + 350 | 1% annual | 7 years |
-| Senior Notes | $150M | 8.0% fixed | None (bullet) | 8 years |
+```calculation
+title: "Debt Tranche Summary"
+given:
+  - "Revolver: Amount = $50M, Rate = L + 300, Amortization = None, Maturity = 5 years"
+  - "Term Loan A: Amount = $100M, Rate = L + 275, Amortization = 5% annual, Maturity = 5 years"
+steps:
+  - "Term Loan B: Amount = $200M, Rate = L + 350, Amortization = 1% annual, Maturity = 7 years"
+  - "Senior Notes: Amount = $150M, Rate = 8.0% fixed, Amortization = None (bullet), Maturity = 8 years"
+result: "Total Debt = $500M across four tranches with varying terms"
+note: "Each tranche needs its own schedule. Total interest expense is the sum across all tranches."
+```
 
 Each tranche needs its own schedule. Total interest expense is the sum across all tranches.
 

@@ -133,8 +133,23 @@ Without a system, you'll make mistakes: following up too soon, forgetting to fol
 
 **Minimum tracking fields:**
 
-| Name | Bank | Group | Email | Date Sent | Follow-up 1 | Follow-up 2 | Call Scheduled | Call Complete | Notes |
-|------|------|-------|-------|-----------|-------------|-------------|----------------|---------------|-------|
+```calculation
+title: Outreach Tracking Spreadsheet Fields
+given:
+  - "Category: Minimum fields to track for each contact"
+steps:
+  - "Name: Contact's full name"
+  - "Bank: Target bank name"
+  - "Group: Coverage or product group"
+  - "Email: Verified email address"
+  - "Date Sent: Date of initial outreach email"
+  - "Follow-up 1: Date of first follow-up"
+  - "Follow-up 2: Date of second follow-up"
+  - "Call Scheduled: Date/time of scheduled call"
+  - "Call Complete: Whether the call happened"
+  - "Notes: Key details and next steps"
+result: "Track all 10 fields for every contact to avoid mistakes and stay organized"
+```
 
 **Review your tracker:**
 - Daily: Check who needs follow-ups
@@ -149,14 +164,19 @@ Without a system, you'll make mistakes: following up too soon, forgetting to fol
 
 ### Timing Rules Summary
 
-| Action | Timing |
-|--------|--------|
-| Initial email | Tuesday-Thursday, 7-9 AM or 5-7 PM |
-| First follow-up | 5-7 business days after initial |
-| Second follow-up | 7-10 business days after first |
-| Maximum follow-ups | 2 (stop after that) |
-| Thank-you email | Within 24 hours of conversation |
-| Update email | Every 6-8 weeks during recruiting |
+```calculation
+title: Outreach Timing Rules
+given:
+  - "Category: Key timing guidelines for all outreach activities"
+steps:
+  - "Initial email: Tuesday-Thursday, 7-9 AM or 5-7 PM"
+  - "First follow-up: 5-7 business days after initial"
+  - "Second follow-up: 7-10 business days after first"
+  - "Maximum follow-ups: 2 (stop after that)"
+  - "Thank-you email: Within 24 hours of conversation"
+  - "Update email: Every 6-8 weeks during recruiting"
+result: "Follow these timing rules consistently to maximize response rates without being pushy"
+```
 
 ## Key Takeaways
 

@@ -48,37 +48,46 @@ hint: Depreciation is a non-cash expense that reduces pre-tax income. Less pre-t
 solution: |
   **Income Statement:**
 
-  | Line Item | Impact |
-  |-----------|--------|
-  | Depreciation Expense | +$10 |
-  | Operating Income (EBIT) | −$10 |
-  | Pre-Tax Income | −$10 |
-  | Taxes (25%) | −$2.50 (tax savings) |
-  | **Net Income** | **−$7.50** |
+  ```calculation
+  title: "Depreciation Increase - Income Statement Impact"
+  given:
+    - "Depreciation Expense: +$10"
+  steps:
+    - "Operating Income (EBIT): -$10"
+    - "Pre-Tax Income: -$10"
+    - "Taxes (25%): -$2.50 (tax savings)"
+  result: "Net Income = -$7.50"
+  ```
 
   Depreciation is an expense, so it reduces pre-tax income by $10. But you pay less taxes ($10 × 25% = $2.50 savings), so net income only falls by $7.50.
 
   **Cash Flow Statement:**
 
-  | Section | Line Item | Impact |
-  |---------|-----------|--------|
-  | Operating | Net Income | −$7.50 |
-  | Operating | Add: Depreciation | +$10 |
-  | **Net Change in Cash** | | **+$2.50** |
+  ```calculation
+  title: "Depreciation Increase - Cash Flow Impact"
+  given:
+    - "Section: Operating Activities"
+  steps:
+    - "Net Income: -$7.50"
+    - "Add: Depreciation: +$10"
+  result: "Net Change in Cash = +$2.50"
+  ```
 
   Depreciation is a non-cash expense, so we add it back. The net effect is cash increases by $2.50 (the tax savings).
 
   **Balance Sheet:**
 
-  | Line Item | Impact |
-  |-----------|--------|
-  | **Assets** | |
-  | Cash | +$2.50 |
-  | PP&E (net of accumulated depreciation) | −$10 |
-  | **Total Assets** | **−$7.50** |
-  | **Liabilities & Equity** | |
-  | Retained Earnings (via Net Income) | −$7.50 |
-  | **Total L + E** | **−$7.50** |
+  ```calculation
+  title: "Depreciation Increase - Balance Sheet Impact"
+  given:
+    - "Assets side"
+  steps:
+    - "Cash: +$2.50"
+    - "PP&E (net of accumulated depreciation): -$10"
+    - "Total Assets: -$7.50"
+  result: "Liabilities & Equity: Retained Earnings (via Net Income) -$7.50, Total L + E = -$7.50"
+  note: "Balance check: Assets down $7.50, Equity down $7.50."
+  ```
 
   **Balance check:** Assets down $7.50, Equity down $7.50. ✓
 
@@ -101,34 +110,43 @@ hint: Like depreciation, this is a non-cash expense (no cash leaves the building
 solution: |
   **Income Statement:**
 
-  | Line Item | Impact |
-  |-----------|--------|
-  | COGS or Write-Down Expense | +$10 |
-  | Pre-Tax Income | −$10 |
-  | Taxes (25%) | −$2.50 |
-  | **Net Income** | **−$7.50** |
+  ```calculation
+  title: "Inventory Write-Down - Income Statement Impact"
+  given:
+    - "COGS or Write-Down Expense: +$10"
+  steps:
+    - "Pre-Tax Income: -$10"
+    - "Taxes (25%): -$2.50"
+  result: "Net Income = -$7.50"
+  ```
 
   **Cash Flow Statement:**
 
-  | Section | Line Item | Impact |
-  |---------|-----------|--------|
-  | Operating | Net Income | −$7.50 |
-  | Operating | Add: Inventory Write-Down (non-cash) | +$10 |
-  | **Net Change in Cash** | | **+$2.50** |
+  ```calculation
+  title: "Inventory Write-Down - Cash Flow Impact"
+  given:
+    - "Section: Operating Activities"
+  steps:
+    - "Net Income: -$7.50"
+    - "Add: Inventory Write-Down (non-cash): +$10"
+  result: "Net Change in Cash = +$2.50"
+  ```
 
   The write-down is non-cash (no money left the building), so we add it back.
 
   **Balance Sheet:**
 
-  | Line Item | Impact |
-  |-----------|--------|
-  | **Assets** | |
-  | Cash | +$2.50 |
-  | Inventory | −$10 |
-  | **Total Assets** | **−$7.50** |
-  | **Liabilities & Equity** | |
-  | Retained Earnings | −$7.50 |
-  | **Total L + E** | **−$7.50** |
+  ```calculation
+  title: "Inventory Write-Down - Balance Sheet Impact"
+  given:
+    - "Assets side"
+  steps:
+    - "Cash: +$2.50"
+    - "Inventory: -$10"
+    - "Total Assets: -$7.50"
+  result: "Liabilities & Equity: Retained Earnings -$7.50, Total L + E = -$7.50"
+  note: "Balance check: Assets down $7.50, Equity down $7.50."
+  ```
 
   **Balance check:** Assets down $7.50, Equity down $7.50. ✓
 
@@ -149,33 +167,44 @@ hint: Cash came in, but you haven't earned the revenue yet. What liability do yo
 solution: |
   **Income Statement:**
 
-  | Line Item | Impact |
-  |-----------|--------|
-  | Revenue | $0 |
-  | **Net Income** | **$0** |
+  ```calculation
+  title: "Customer Prepayment - Income Statement Impact"
+  given:
+    - "Revenue: $0"
+  steps:
+    - "No revenue recognized until service is delivered"
+  result: "Net Income = $0"
+  note: "No revenue is recognized until the service is delivered. This is a key GAAP principle."
+  ```
 
   No revenue is recognized until the service is delivered. This is a key GAAP principle.
 
   **Cash Flow Statement:**
 
-  | Section | Line Item | Impact |
-  |---------|-----------|--------|
-  | Operating | Net Income | $0 |
-  | Operating | Increase in Deferred Revenue | +$100 |
-  | **Net Change in Cash** | | **+$100** |
+  ```calculation
+  title: "Customer Prepayment - Cash Flow Impact"
+  given:
+    - "Section: Operating Activities"
+  steps:
+    - "Net Income: $0"
+    - "Increase in Deferred Revenue: +$100"
+  result: "Net Change in Cash = +$100"
+  ```
 
   Cash came in the door, but it's not revenue yet. The increase in deferred revenue (a liability) is a source of cash.
 
   **Balance Sheet:**
 
-  | Line Item | Impact |
-  |-----------|--------|
-  | **Assets** | |
-  | Cash | +$100 |
-  | **Total Assets** | **+$100** |
-  | **Liabilities & Equity** | |
-  | Deferred Revenue (liability) | +$100 |
-  | **Total L + E** | **+$100** |
+  ```calculation
+  title: "Customer Prepayment - Balance Sheet Impact"
+  given:
+    - "Assets side"
+  steps:
+    - "Cash: +$100"
+    - "Total Assets: +$100"
+  result: "Liabilities & Equity: Deferred Revenue (liability) +$100, Total L + E = +$100"
+  note: "Balance check: Assets up $100, Liabilities up $100."
+  ```
 
   **Balance check:** Assets up $100, Liabilities up $100. ✓
 
@@ -198,34 +227,44 @@ hint: This is a financing activity (borrowing) and an investing activity (buying
 solution: |
   **Income Statement:**
 
-  | Line Item | Impact |
-  |-----------|--------|
-  | **Net Income** | **$0** |
+  ```calculation
+  title: "Debt-Funded Equipment Purchase - Income Statement Impact"
+  given:
+    - "No revenue or expense at time of transaction"
+  steps:
+    - "No P&L impact at the time of transaction"
+  result: "Net Income = $0"
+  ```
 
   No P&L impact at the time of transaction—no revenue, no expense yet.
 
   **Cash Flow Statement:**
 
-  | Section | Line Item | Impact |
-  |---------|-----------|--------|
-  | Operating | Net Income | $0 |
-  | Investing | Purchase of Equipment (CapEx) | −$50 |
-  | Financing | Proceeds from Debt Issuance | +$50 |
-  | **Net Change in Cash** | | **$0** |
+  ```calculation
+  title: "Debt-Funded Equipment Purchase - Cash Flow Impact"
+  given:
+    - "Operating: Net Income = $0"
+  steps:
+    - "Investing: Purchase of Equipment (CapEx) = -$50"
+    - "Financing: Proceeds from Debt Issuance = +$50"
+  result: "Net Change in Cash = $0"
+  ```
 
   Cash comes in from financing, goes out for investing. Net cash unchanged.
 
   **Balance Sheet:**
 
-  | Line Item | Impact |
-  |-----------|--------|
-  | **Assets** | |
-  | Cash | $0 |
-  | PP&E | +$50 |
-  | **Total Assets** | **+$50** |
-  | **Liabilities & Equity** | |
-  | Debt | +$50 |
-  | **Total L + E** | **+$50** |
+  ```calculation
+  title: "Debt-Funded Equipment Purchase - Balance Sheet Impact"
+  given:
+    - "Assets side"
+  steps:
+    - "Cash: $0"
+    - "PP&E: +$50"
+    - "Total Assets: +$50"
+  result: "Liabilities & Equity: Debt +$50, Total L + E = +$50"
+  note: "Balance check: Assets up $50, Liabilities up $50."
+  ```
 
   **Balance check:** Assets up $50, Liabilities up $50. ✓
 
@@ -252,34 +291,43 @@ hint: The A/R was never going to become cash. Writing it off is a non-cash expen
 solution: |
   **Income Statement:**
 
-  | Line Item | Impact |
-  |-----------|--------|
-  | Bad Debt Expense | +$20 |
-  | Pre-Tax Income | −$20 |
-  | Taxes (25%) | −$5 |
-  | **Net Income** | **−$15** |
+  ```calculation
+  title: "Bad Debt Write-Off - Income Statement Impact"
+  given:
+    - "Bad Debt Expense: +$20"
+  steps:
+    - "Pre-Tax Income: -$20"
+    - "Taxes (25%): -$5"
+  result: "Net Income = -$15"
+  ```
 
   **Cash Flow Statement:**
 
-  | Section | Line Item | Impact |
-  |---------|-----------|--------|
-  | Operating | Net Income | −$15 |
-  | Operating | Decrease in A/R (write-off) | +$20 |
-  | **Net Change in Cash** | | **+$5** |
+  ```calculation
+  title: "Bad Debt Write-Off - Cash Flow Impact"
+  given:
+    - "Section: Operating Activities"
+  steps:
+    - "Net Income: -$15"
+    - "Decrease in A/R (write-off): +$20"
+  result: "Net Change in Cash = +$5"
+  ```
 
   The A/R was never going to become cash, so writing it off doesn't cost cash today. The decrease in A/R is a "source" of operating cash flow (less cash tied up in receivables).
 
   **Balance Sheet:**
 
-  | Line Item | Impact |
-  |-----------|--------|
-  | **Assets** | |
-  | Cash | +$5 |
-  | Accounts Receivable | −$20 |
-  | **Total Assets** | **−$15** |
-  | **Liabilities & Equity** | |
-  | Retained Earnings | −$15 |
-  | **Total L + E** | **−$15** |
+  ```calculation
+  title: "Bad Debt Write-Off - Balance Sheet Impact"
+  given:
+    - "Assets side"
+  steps:
+    - "Cash: +$5"
+    - "Accounts Receivable: -$20"
+    - "Total Assets: -$15"
+  result: "Liabilities & Equity: Retained Earnings -$15, Total L + E = -$15"
+  note: "Balance check: Assets down $15, Equity down $15."
+  ```
 
   **Balance check:** Assets down $15, Equity down $15. ✓
 
@@ -300,35 +348,42 @@ hint: No cash leaves the company when you grant options or RSUs. But equity does
 solution: |
   **Income Statement:**
 
-  | Line Item | Impact |
-  |-----------|--------|
-  | SBC Expense (usually in SG&A or COGS) | +$15 |
-  | Pre-Tax Income | −$15 |
-  | Taxes (25%) | −$3.75 |
-  | **Net Income** | **−$11.25** |
+  ```calculation
+  title: "Stock-Based Compensation - Income Statement Impact"
+  given:
+    - "SBC Expense (usually in SG&A or COGS): +$15"
+  steps:
+    - "Pre-Tax Income: -$15"
+    - "Taxes (25%): -$3.75"
+  result: "Net Income = -$11.25"
+  ```
 
   **Cash Flow Statement:**
 
-  | Section | Line Item | Impact |
-  |---------|-----------|--------|
-  | Operating | Net Income | −$11.25 |
-  | Operating | Add: Stock-Based Compensation | +$15 |
-  | **Net Change in Cash** | | **+$3.75** |
+  ```calculation
+  title: "Stock-Based Compensation - Cash Flow Impact"
+  given:
+    - "Section: Operating Activities"
+  steps:
+    - "Net Income: -$11.25"
+    - "Add: Stock-Based Compensation: +$15"
+  result: "Net Change in Cash = +$3.75"
+  ```
 
   SBC is non-cash—no money leaves the company when you grant options or RSUs. Add it back.
 
   **Balance Sheet:**
 
-  | Line Item | Impact |
-  |-----------|--------|
-  | **Assets** | |
-  | Cash | +$3.75 |
-  | **Total Assets** | **+$3.75** |
-  | **Liabilities & Equity** | |
-  | Common Stock / APIC | +$15 |
-  | Retained Earnings | −$11.25 |
-  | **Total Equity** | **+$3.75** |
-  | **Total L + E** | **+$3.75** |
+  ```calculation
+  title: "Stock-Based Compensation - Balance Sheet Impact"
+  given:
+    - "Assets side"
+  steps:
+    - "Cash: +$3.75"
+    - "Total Assets: +$3.75"
+  result: "Liabilities & Equity: Common Stock / APIC +$15, Retained Earnings -$11.25, Total Equity = +$3.75, Total L + E = +$3.75"
+  note: "Balance check: Assets up $3.75, Equity up $3.75."
+  ```
 
   **Balance check:** Assets up $3.75, Equity up $3.75. ✓
 
@@ -339,14 +394,19 @@ solution: |
 
 ## Quick Reference: The Patterns
 
-| Scenario | Net Income | Cash | Key Insight |
-|----------|------------|------|-------------|
-| Depreciation ↑$10 | −$7.50 | +$2.50 | Non-cash expense, tax shield |
-| Inventory write-down $10 | −$7.50 | +$2.50 | Non-cash expense, tax shield |
-| Customer prepays $100 | $0 | +$100 | Deferred revenue, not yet earned |
-| Issue debt $50, buy equipment | $0 | $0 | Financing in, investing out |
-| Bad debt write-off $20 | −$15 | +$5 | A/R wasn't real cash anyway |
-| SBC expense $15 | −$11.25 | +$3.75 | Non-cash expense, dilution cost |
+```calculation
+title: "Quick Reference - All Scenario Patterns"
+given:
+  - "Tax Rate: 25% for all scenarios"
+steps:
+  - "Depreciation +$10: Net Income -$7.50, Cash +$2.50 (Non-cash expense, tax shield)"
+  - "Inventory write-down $10: Net Income -$7.50, Cash +$2.50 (Non-cash expense, tax shield)"
+  - "Customer prepays $100: Net Income $0, Cash +$100 (Deferred revenue, not yet earned)"
+  - "Issue debt $50, buy equipment: Net Income $0, Cash $0 (Financing in, investing out)"
+  - "Bad debt write-off $20: Net Income -$15, Cash +$5 (A/R wasn't real cash anyway)"
+  - "SBC expense $15: Net Income -$11.25, Cash +$3.75 (Non-cash expense, dilution cost)"
+result: "Pattern: Non-cash expenses follow Net Income = -Expense x (1 - Tax Rate), Cash = +Expense x Tax Rate"
+```
 
 **Pattern recognition:** Most non-cash expenses follow the same formula:
 - Net Income impact: −Expense × (1 − Tax Rate)

@@ -53,13 +53,20 @@ The **median** is often preferred when data has outliers:
 
 **Comparable Company Multiples**:
 
-| Company | EV/EBITDA |
-|---------|-----------|
-| A | 8.0× |
-| B | 8.5× |
-| C | 9.0× |
-| D | 9.5× |
-| E | 25.0× (outlier) |
+```calculation
+title: "Comparable Company EV/EBITDA Multiples"
+given:
+  - "Company A: 8.0x"
+  - "Company B: 8.5x"
+  - "Company C: 9.0x"
+  - "Company D: 9.5x"
+  - "Company E: 25.0x (outlier)"
+steps:
+  - "Mean = (8.0 + 8.5 + 9.0 + 9.5 + 25.0) / 5 = 12.0x"
+  - "Median = 9.0x (middle value)"
+result: "Median (9.0x) better represents the typical multiple"
+note: "Company E might be distorted by one-time factors"
+```
 
 Mean = 12.0×
 Median = 9.0×
@@ -87,14 +94,20 @@ Where:
 
 **Example**: Returns of 5%, 8%, 3%, 12%, 7% (mean = 7%)
 
-| Return | Deviation | Squared |
-|--------|-----------|---------|
-| 5% | -2% | 4 |
-| 8% | +1% | 1 |
-| 3% | -4% | 16 |
-| 12% | +5% | 25 |
-| 7% | 0% | 0 |
-| **Sum** | | **46** |
+```calculation
+title: "Variance Calculation for Returns"
+given:
+  - "Returns: 5%, 8%, 3%, 12%, 7%"
+  - "Mean: 7%"
+steps:
+  - "5% return: Deviation = -2%, Squared = 4"
+  - "8% return: Deviation = +1%, Squared = 1"
+  - "3% return: Deviation = -4%, Squared = 16"
+  - "12% return: Deviation = +5%, Squared = 25"
+  - "7% return: Deviation = 0%, Squared = 0"
+  - "Sum of squared deviations = 46"
+result: "Variance = 46 / 5 = 9.2"
+```
 
 Variance = 46 / 5 = 9.2
 
@@ -119,10 +132,15 @@ In finance, standard deviation of returns measures **volatility** or **risk**:
 
 **Example**: Two stocks with 10% average return:
 
-| Stock | Returns | Std Dev |
-|-------|---------|---------|
-| A | 8%, 10%, 12%, 10%, 10% | 1.4% |
-| B | -5%, 25%, 10%, 15%, 5% | 10.5% |
+```calculation
+title: "Risk Comparison: Stock A vs. Stock B"
+given:
+  - "Both stocks have 10% average return"
+steps:
+  - "Stock A: Returns = 8%, 10%, 12%, 10%, 10% -> Std Dev = 1.4%"
+  - "Stock B: Returns = -5%, 25%, 10%, 15%, 5% -> Std Dev = 10.5%"
+result: "Stock B is much riskier (10.5% vs. 1.4% standard deviation) despite the same average return"
+```
 
 Both average 10%, but Stock B is much riskier (more volatile).
 
@@ -160,15 +178,20 @@ Cov(X,Y) = Σ[(xᵢ - μₓ)(yᵢ - μᵧ)] / n
 Correlation (ρ) = Cov(X,Y) / (σₓ × σᵧ)
 ```
 
-| Correlation | Interpretation |
-|-------------|----------------|
-| +1.0 | Perfect positive relationship |
-| +0.5 to +1.0 | Strong positive |
-| 0 to +0.5 | Weak positive |
-| 0 | No linear relationship |
-| -0.5 to 0 | Weak negative |
-| -1.0 to -0.5 | Strong negative |
-| -1.0 | Perfect negative relationship |
+```calculation
+title: "Correlation Interpretation Scale"
+given:
+  - "Correlation ranges from -1.0 to +1.0"
+steps:
+  - "+1.0: Perfect positive relationship"
+  - "+0.5 to +1.0: Strong positive"
+  - "0 to +0.5: Weak positive"
+  - "0: No linear relationship"
+  - "-0.5 to 0: Weak negative"
+  - "-1.0 to -0.5: Strong negative"
+  - "-1.0: Perfect negative relationship"
+result: "Correlation closer to 0 means weaker relationship; closer to +/-1 means stronger"
+```
 
 ### Application: Portfolio Diversification
 
@@ -198,12 +221,17 @@ When ρ < 1, portfolio variance is less than weighted average of individual vari
 β = Cov(Asset, Market) / Var(Market)
 ```
 
-| Beta | Interpretation |
-|------|----------------|
-| β = 1.0 | Moves with the market |
-| β > 1.0 | More volatile than market |
-| β < 1.0 | Less volatile than market |
-| β < 0 | Moves opposite to market |
+```calculation
+title: "Beta Interpretation"
+given:
+  - "Beta measures sensitivity to market movements"
+steps:
+  - "Beta = 1.0: Moves with the market"
+  - "Beta > 1.0: More volatile than market"
+  - "Beta < 1.0: Less volatile than market"
+  - "Beta < 0: Moves opposite to market"
+result: "Higher absolute beta = greater sensitivity to market movements"
+```
 
 **Example**: Stock with β = 1.5
 - If market rises 10%, stock expected to rise 15%

@@ -102,19 +102,30 @@ The cash conversion cycle measures how long cash is tied up in operations. A low
 
 ### Working Capital Forecast Example
 
-| Metric | Historical | Projection Assumption |
-|--------|------------|----------------------|
-| DSO | 42 days | 42 days (hold constant) |
-| DIO | 60 days | 58 days (slight improvement) |
-| DPO | 35 days | 36 days (slight increase) |
+```calculation
+title: Working Capital Assumptions
+given:
+  - "DSO (Historical): 42 days"
+  - "DIO (Historical): 60 days"
+  - "DPO (Historical): 35 days"
+steps:
+  - "DSO (Projection): 42 days (hold constant)"
+  - "DIO (Projection): 58 days (slight improvement)"
+  - "DPO (Projection): 36 days (slight increase)"
+result: "Days metrics used to project working capital accounts"
+```
 
-| | Year 1 | Year 2 | Year 3 |
-|---|---|---|---|
-| Revenue | $500M | $540M | $572M |
-| COGS | $300M | $321M | $338M |
-| **Accounts Receivable** | $57.5M | $62.1M | $65.8M |
-| **Inventory** | $49.3M | $51.0M | $53.7M |
-| **Accounts Payable** | $28.8M | $31.7M | $33.3M |
+```calculation
+title: Working Capital Forecast (Year 1 - Year 3)
+given:
+  - "Revenue: Year 1 = $500M, Year 2 = $540M, Year 3 = $572M"
+  - "COGS: Year 1 = $300M, Year 2 = $321M, Year 3 = $338M"
+steps:
+  - "Accounts Receivable: Year 1 = $57.5M, Year 2 = $62.1M, Year 3 = $65.8M"
+  - "Inventory: Year 1 = $49.3M, Year 2 = $51.0M, Year 3 = $53.7M"
+  - "Accounts Payable: Year 1 = $28.8M, Year 2 = $31.7M, Year 3 = $33.3M"
+result: "Working capital accounts projected using DSO, DIO, and DPO assumptions"
+```
 
 **Net Working Capital** = Current Assets - Current Liabilities
 
@@ -149,12 +160,17 @@ Ending PP&E = Beginning PP&E + CapEx - Depreciation
 
 **Example PP&E Rollforward**:
 
-| | Year 1 | Year 2 | Year 3 |
-|---|---|---|---|
-| Beginning PP&E | $200M | $210M | $222M |
-| + CapEx | $30M | $32M | $34M |
-| - Depreciation | ($20M) | ($20M) | ($21M) |
-| Ending PP&E | $210M | $222M | $235M |
+```calculation
+title: PP&E Rollforward (Year 1 - Year 3)
+given:
+  - "CapEx: 6% of revenue"
+  - "Depreciation: 10% of beginning PP&E"
+steps:
+  - "Beginning PP&E: Year 1 = $200M, Year 2 = $210M, Year 3 = $222M"
+  - "+ CapEx: Year 1 = $30M, Year 2 = $32M, Year 3 = $34M"
+  - "- Depreciation: Year 1 = ($20M), Year 2 = ($20M), Year 3 = ($21M)"
+result: "Ending PP&E: Year 1 = $210M, Year 2 = $222M, Year 3 = $235M"
+```
 
 Where:
 - CapEx = 6% of revenue
@@ -239,32 +255,32 @@ Color this cell red if non-zero so errors are immediately visible.
 
 ### Example Projected Balance Sheet
 
-| | Year 1 | Year 2 | Year 3 |
-|---|---|---|---|
-| **Assets** | | | |
-| Cash | $50M | $65M | $82M |
-| Accounts Receivable | $58M | $62M | $66M |
-| Inventory | $49M | $51M | $54M |
-| **Total Current Assets** | $157M | $178M | $202M |
-| PP&E, net | $210M | $222M | $235M |
-| Goodwill | $100M | $100M | $100M |
-| **Total Assets** | $467M | $500M | $537M |
-| | | | |
-| **Liabilities** | | | |
-| Accounts Payable | $29M | $32M | $33M |
-| Accrued Expenses | $15M | $16M | $17M |
-| Current Portion of Debt | $10M | $10M | $10M |
-| **Total Current Liabilities** | $54M | $58M | $60M |
-| Long-Term Debt | $100M | $90M | $80M |
-| **Total Liabilities** | $154M | $148M | $140M |
-| | | | |
-| **Equity** | | | |
-| Common Stock | $50M | $50M | $50M |
-| Retained Earnings | $263M | $302M | $347M |
-| **Total Equity** | $313M | $352M | $397M |
-| | | | |
-| **Total Liab + Equity** | $467M | $500M | $537M |
-| **Balance Check** | $0 | $0 | $0 |
+```calculation
+title: Projected Balance Sheet (Year 1 - Year 3)
+given:
+  - "Assets"
+  - "Cash: Year 1 = $50M, Year 2 = $65M, Year 3 = $82M"
+  - "Accounts Receivable: Year 1 = $58M, Year 2 = $62M, Year 3 = $66M"
+  - "Inventory: Year 1 = $49M, Year 2 = $51M, Year 3 = $54M"
+  - "Total Current Assets: Year 1 = $157M, Year 2 = $178M, Year 3 = $202M"
+  - "PP&E, net: Year 1 = $210M, Year 2 = $222M, Year 3 = $235M"
+  - "Goodwill: Year 1 = $100M, Year 2 = $100M, Year 3 = $100M"
+  - "Total Assets: Year 1 = $467M, Year 2 = $500M, Year 3 = $537M"
+steps:
+  - "Liabilities"
+  - "Accounts Payable: Year 1 = $29M, Year 2 = $32M, Year 3 = $33M"
+  - "Accrued Expenses: Year 1 = $15M, Year 2 = $16M, Year 3 = $17M"
+  - "Current Portion of Debt: Year 1 = $10M, Year 2 = $10M, Year 3 = $10M"
+  - "Total Current Liabilities: Year 1 = $54M, Year 2 = $58M, Year 3 = $60M"
+  - "Long-Term Debt: Year 1 = $100M, Year 2 = $90M, Year 3 = $80M"
+  - "Total Liabilities: Year 1 = $154M, Year 2 = $148M, Year 3 = $140M"
+  - "Equity"
+  - "Common Stock: Year 1 = $50M, Year 2 = $50M, Year 3 = $50M"
+  - "Retained Earnings: Year 1 = $263M, Year 2 = $302M, Year 3 = $347M"
+  - "Total Equity: Year 1 = $313M, Year 2 = $352M, Year 3 = $397M"
+result: "Total Liab + Equity: Year 1 = $467M, Year 2 = $500M, Year 3 = $537M"
+note: "Balance Check: $0 across all years (Assets = Liabilities + Equity)"
+```
 
 ### Common Balance Sheet Forecasting Mistakes
 

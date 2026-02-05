@@ -31,23 +31,33 @@ Understanding both issuer and investor perspectives helps you think through corp
 
 **Advantages of Debt**:
 
-| Benefit | Explanation |
-|---------|-------------|
-| Tax Shield | Interest is tax-deductible; dividends are not |
-| No Dilution | Existing shareholders maintain ownership |
-| Lower Cost | Debt is cheaper than equity (lower required return) |
-| Discipline | Mandatory payments force operational efficiency |
-| Finite Term | Debt matures and can be refinanced |
+```calculation
+title: "Advantages of Debt for Issuers"
+given:
+  - "Category: Benefit and Explanation"
+steps:
+  - "Tax Shield: Interest is tax-deductible; dividends are not"
+  - "No Dilution: Existing shareholders maintain ownership"
+  - "Lower Cost: Debt is cheaper than equity (lower required return)"
+  - "Discipline: Mandatory payments force operational efficiency"
+  - "Finite Term: Debt matures and can be refinanced"
+result: "Debt offers tax advantages, preserves ownership, and costs less than equity"
+```
 
 **Disadvantages of Debt**:
 
-| Drawback | Explanation |
-|----------|-------------|
-| Mandatory Payments | Must pay interest regardless of performance |
-| Covenants | Restrictions on operations, dividends, further borrowing |
-| Bankruptcy Risk | Failure to pay can trigger default |
-| Limited Flexibility | Fixed obligations reduce strategic options |
-| Refinancing Risk | May not be able to refinance at maturity |
+```calculation
+title: "Disadvantages of Debt for Issuers"
+given:
+  - "Category: Drawback and Explanation"
+steps:
+  - "Mandatory Payments: Must pay interest regardless of performance"
+  - "Covenants: Restrictions on operations, dividends, further borrowing"
+  - "Bankruptcy Risk: Failure to pay can trigger default"
+  - "Limited Flexibility: Fixed obligations reduce strategic options"
+  - "Refinancing Risk: May not be able to refinance at maturity"
+result: "Debt introduces fixed obligations, covenants, and default risk"
+```
 
 **Best Situations for Debt**:
 - Stable, predictable cash flows
@@ -60,23 +70,33 @@ Understanding both issuer and investor perspectives helps you think through corp
 
 **Advantages of Equity**:
 
-| Benefit | Explanation |
-|---------|-------------|
-| No Mandatory Payments | Dividends are discretionary |
-| No Maturity | Equity is permanent capital |
-| No Covenants | More operational freedom |
-| Lower Risk | Can't default on equity |
-| Strategic Investors | May bring expertise, relationships |
+```calculation
+title: "Advantages of Equity for Issuers"
+given:
+  - "Category: Benefit and Explanation"
+steps:
+  - "No Mandatory Payments: Dividends are discretionary"
+  - "No Maturity: Equity is permanent capital"
+  - "No Covenants: More operational freedom"
+  - "Lower Risk: Can't default on equity"
+  - "Strategic Investors: May bring expertise, relationships"
+result: "Equity provides flexibility, permanent capital, and no default risk"
+```
 
 **Disadvantages of Equity**:
 
-| Drawback | Explanation |
-|----------|-------------|
-| Dilution | Existing shareholders own less |
-| Higher Cost | Investors demand higher returns |
-| No Tax Shield | Dividends paid from after-tax income |
-| Signaling | May signal overvaluation |
-| Loss of Control | New shareholders have voting rights |
+```calculation
+title: "Disadvantages of Equity for Issuers"
+given:
+  - "Category: Drawback and Explanation"
+steps:
+  - "Dilution: Existing shareholders own less"
+  - "Higher Cost: Investors demand higher returns"
+  - "No Tax Shield: Dividends paid from after-tax income"
+  - "Signaling: May signal overvaluation"
+  - "Loss of Control: New shareholders have voting rights"
+result: "Equity is more expensive, dilutive, and may signal overvaluation"
+```
 
 **Best Situations for Equity**:
 - Early-stage or high-growth companies
@@ -108,23 +128,33 @@ After-Tax Cost of Debt = Pre-Tax Cost × (1 - Tax Rate) = 6% × 0.75 = 4.5%
 
 **Why Invest in Debt**:
 
-| Motivation | Details |
-|------------|---------|
-| Predictable Income | Fixed coupon payments |
-| Capital Preservation | Principal returned at maturity |
-| Seniority | Paid before equity in bankruptcy |
-| Lower Volatility | Prices less volatile than equity |
-| Diversification | Low correlation with stocks |
+```calculation
+title: "Why Investors Choose Debt"
+given:
+  - "Category: Motivation and Details"
+steps:
+  - "Predictable Income: Fixed coupon payments"
+  - "Capital Preservation: Principal returned at maturity"
+  - "Seniority: Paid before equity in bankruptcy"
+  - "Lower Volatility: Prices less volatile than equity"
+  - "Diversification: Low correlation with stocks"
+result: "Debt appeals to investors seeking predictable income, capital preservation, and lower risk"
+```
 
 **Risks of Debt Investment**:
 
-| Risk | Description |
-|------|-------------|
-| Credit Risk | Issuer may default |
-| Interest Rate Risk | Rising rates reduce bond prices |
-| Inflation Risk | Fixed payments lose purchasing power |
-| Reinvestment Risk | Coupons reinvested at lower rates |
-| Liquidity Risk | Some bonds trade infrequently |
+```calculation
+title: "Risks of Debt Investment"
+given:
+  - "Category: Risk and Description"
+steps:
+  - "Credit Risk: Issuer may default"
+  - "Interest Rate Risk: Rising rates reduce bond prices"
+  - "Inflation Risk: Fixed payments lose purchasing power"
+  - "Reinvestment Risk: Coupons reinvested at lower rates"
+  - "Liquidity Risk: Some bonds trade infrequently"
+result: "Debt investors face credit, interest rate, inflation, reinvestment, and liquidity risks"
+```
 
 **Who Invests in Debt**:
 - Pension funds (matching liabilities)
@@ -136,23 +166,33 @@ After-Tax Cost of Debt = Pre-Tax Cost × (1 - Tax Rate) = 6% × 0.75 = 4.5%
 
 **Why Invest in Equity**:
 
-| Motivation | Details |
-|------------|---------|
-| Growth Potential | Unlimited upside |
-| Ownership | Share in company's success |
-| Dividend Income | Some stocks pay dividends |
-| Inflation Hedge | Earnings and dividends can grow |
-| Liquidity | Major stocks trade easily |
+```calculation
+title: "Why Investors Choose Equity"
+given:
+  - "Category: Motivation and Details"
+steps:
+  - "Growth Potential: Unlimited upside"
+  - "Ownership: Share in company's success"
+  - "Dividend Income: Some stocks pay dividends"
+  - "Inflation Hedge: Earnings and dividends can grow"
+  - "Liquidity: Major stocks trade easily"
+result: "Equity appeals to investors seeking growth, ownership, and inflation protection"
+```
 
 **Risks of Equity Investment**:
 
-| Risk | Description |
-|------|-------------|
-| Market Risk | Prices can decline significantly |
-| Business Risk | Company may underperform |
-| Volatility | Prices fluctuate more than debt |
-| Last in Line | Wiped out in bankruptcy |
-| No Guaranteed Return | Dividends can be cut |
+```calculation
+title: "Risks of Equity Investment"
+given:
+  - "Category: Risk and Description"
+steps:
+  - "Market Risk: Prices can decline significantly"
+  - "Business Risk: Company may underperform"
+  - "Volatility: Prices fluctuate more than debt"
+  - "Last in Line: Wiped out in bankruptcy"
+  - "No Guaranteed Return: Dividends can be cut"
+result: "Equity investors face market, business, volatility, and total loss risk"
+```
 
 **Who Invests in Equity**:
 - Growth-oriented investors
@@ -164,15 +204,18 @@ After-Tax Cost of Debt = Pre-Tax Cost × (1 - Tax Rate) = 6% × 0.75 = 4.5%
 
 Capital sources exist on a risk-return spectrum:
 
-| Instrument | Risk to Investor | Expected Return |
-|------------|------------------|-----------------|
-| Senior Secured Debt | Lowest | 4-6% |
-| Senior Unsecured Debt | Low | 5-7% |
-| Subordinated Debt | Medium | 7-10% |
-| Mezzanine/Preferred | Medium-High | 10-15% |
-| Common Equity | Highest | 15-25%+ |
-
-Higher risk demands higher return. This is why equity is "more expensive" than debt from the issuer's perspective.
+```calculation
+title: "Risk-Return Spectrum Across Capital Sources"
+given:
+  - "Category: Instrument, Risk to Investor, Expected Return"
+steps:
+  - "Senior Secured Debt: Lowest risk — 4-6% return"
+  - "Senior Unsecured Debt: Low risk — 5-7% return"
+  - "Subordinated Debt: Medium risk — 7-10% return"
+  - "Mezzanine/Preferred: Medium-High risk — 10-15% return"
+  - "Common Equity: Highest risk — 15-25%+ return"
+result: "Higher risk demands higher return — equity is 'more expensive' than debt from the issuer's perspective"
+```
 
 ### The Pecking Order Theory
 

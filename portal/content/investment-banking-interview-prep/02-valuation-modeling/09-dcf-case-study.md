@@ -56,12 +56,27 @@ challenge: |
   What is the Year 5 revenue and EBITDA?
 hint: For Year 5 revenue, calculate $200M × 1.10 × 1.08 × 1.06³
 solution: |
-  | Metric | LTM | Year 1 | Year 2 | Year 3 | Year 4 | Year 5 |
-  |--------|-----|--------|--------|--------|--------|--------|
-  | Revenue Growth | — | 10% | 8% | 6% | 6% | 6% |
-  | **Revenue** | $200M | $220M | $238M | $252M | $267M | $283M |
-  | EBITDA Margin | 20% | 20% | 20% | 20% | 20% | 20% |
-  | **EBITDA** | $40M | $44M | $48M | $50M | $53M | $57M |
+  ```calculation
+  title: Revenue and EBITDA Projection
+  given:
+    - "LTM Revenue: $200M"
+    - "LTM EBITDA: $40M (20% margin)"
+    - "Revenue Growth: 10% Year 1, 8% Year 2, 6% Years 3-5"
+    - "EBITDA Margin: 20% (stable)"
+  steps:
+    - "Year 1 Revenue: $200M x 1.10 = $220M"
+    - "Year 1 EBITDA: $220M x 20% = $44M"
+    - "Year 2 Revenue: $220M x 1.08 = $238M"
+    - "Year 2 EBITDA: $238M x 20% = $48M"
+    - "Year 3 Revenue: $238M x 1.06 = $252M"
+    - "Year 3 EBITDA: $252M x 20% = $50M"
+    - "Year 4 Revenue: $252M x 1.06 = $267M"
+    - "Year 4 EBITDA: $267M x 20% = $53M"
+    - "Year 5 Revenue: $267M x 1.06 = $283M"
+    - "Year 5 EBITDA: $283M x 20% = $57M"
+  result: "Year 5 Revenue = $283M, Year 5 EBITDA = $57M"
+  note: "Quick math tip: For Year 5 revenue, $200M x 1.10 x 1.08 x 1.06^3 ~ $283M. In an interview, rounding to $280-285M is fine."
+  ```
 
   **Quick math tip:** For Year 5 revenue, $200M × 1.10 × 1.08 × 1.06³ ≈ $283M. In an interview, rounding to $280-285M is fine.
 ```
@@ -85,13 +100,22 @@ solution: |
   Since D&A equals CapEx and working capital is negligible, this simplifies to:
   **UFCF = EBIT × (1 − Tax Rate)**
 
-  | Metric | Year 1 | Year 2 | Year 3 | Year 4 | Year 5 |
-  |--------|--------|--------|--------|--------|--------|
-  | EBITDA | $44M | $48M | $50M | $53M | $57M |
-  | Less: D&A (5% of Rev) | ($11M) | ($12M) | ($13M) | ($13M) | ($14M) |
-  | **EBIT** | $33M | $36M | $37M | $40M | $43M |
-  | Less: Taxes (25%) | ($8M) | ($9M) | ($9M) | ($10M) | ($11M) |
-  | **UFCF** | **$25M** | **$27M** | **$28M** | **$30M** | **$32M** |
+  ```calculation
+  title: Unlevered Free Cash Flow Calculation
+  given:
+    - "EBITDA: $44M (Y1), $48M (Y2), $50M (Y3), $53M (Y4), $57M (Y5)"
+    - "D&A: 5% of Revenue"
+    - "Tax Rate: 25%"
+    - "D&A = CapEx, Working Capital change = $0"
+  steps:
+    - "Year 1: EBITDA $44M - D&A ($11M) = EBIT $33M, Taxes ($8M), UFCF = $25M"
+    - "Year 2: EBITDA $48M - D&A ($12M) = EBIT $36M, Taxes ($9M), UFCF = $27M"
+    - "Year 3: EBITDA $50M - D&A ($13M) = EBIT $37M, Taxes ($9M), UFCF = $28M"
+    - "Year 4: EBITDA $53M - D&A ($13M) = EBIT $40M, Taxes ($10M), UFCF = $30M"
+    - "Year 5: EBITDA $57M - D&A ($14M) = EBIT $43M, Taxes ($11M), UFCF = $32M"
+  result: "UFCF Year 1 = $25M, UFCF Year 5 = $32M"
+  note: "Since D&A equals CapEx and working capital is stable, UFCF simplifies to EBIT after-tax."
+  ```
 
   **Interview shortcut:** State this assumption to save time: "Since D&A equals CapEx and working capital is stable, I'll calculate UFCF as EBIT after-tax."
 ```
@@ -160,14 +184,22 @@ hint: Year 5 discount factor = 1 / 1.11^5 ≈ 0.593. Sum the PV of all cash flow
 solution: |
   Using WACC = 11%:
 
-  | Year | UFCF | Discount Factor | Present Value |
-  |------|------|-----------------|---------------|
-  | 1 | $25M | 1 / 1.11¹ = 0.901 | $22.5M |
-  | 2 | $27M | 1 / 1.11² = 0.812 | $21.9M |
-  | 3 | $28M | 1 / 1.11³ = 0.731 | $20.5M |
-  | 4 | $30M | 1 / 1.11⁴ = 0.659 | $19.8M |
-  | 5 | $32M | 1 / 1.11⁵ = 0.593 | $19.0M |
-  | **Terminal Value** | $412.5M | 0.593 | $244.6M |
+  ```calculation
+  title: Present Value of Cash Flows
+  given:
+    - "WACC: 11%"
+    - "Discount Factor Formula: 1 / (1 + WACC)^n"
+  steps:
+    - "Year 1: UFCF $25M x (1 / 1.11^1 = 0.901) = PV $22.5M"
+    - "Year 2: UFCF $27M x (1 / 1.11^2 = 0.812) = PV $21.9M"
+    - "Year 3: UFCF $28M x (1 / 1.11^3 = 0.731) = PV $20.5M"
+    - "Year 4: UFCF $30M x (1 / 1.11^4 = 0.659) = PV $19.8M"
+    - "Year 5: UFCF $32M x (1 / 1.11^5 = 0.593) = PV $19.0M"
+    - "Terminal Value: $412.5M x 0.593 = PV $244.6M"
+    - "Sum of PV of Cash Flows: $22.5 + $21.9 + $20.5 + $19.8 + $19.0 = $103.7M"
+    - "PV of Terminal Value: $244.6M"
+  result: "Enterprise Value = $103.7M + $244.6M = $348.3M"
+  ```
 
   **Sum of PV of Cash Flows:** $22.5 + $21.9 + $20.5 + $19.8 + $19.0 = **$103.7M**
 
@@ -216,13 +248,20 @@ A DCF is only as good as its assumptions. Interviewers expect you to understand 
 
 ### WACC vs. Terminal Growth Sensitivity
 
-| | **2.0% TGR** | **2.5% TGR** | **3.0% TGR** | **3.5% TGR** |
-|---|---|---|---|---|
-| **10.0% WACC** | $362M | $387M | $418M | $456M |
-| **10.5% WACC** | $340M | $362M | $388M | $420M |
-| **11.0% WACC** | $320M | $338M | $361M | $388M |
-| **11.5% WACC** | $302M | $318M | $338M | $361M |
-| **12.0% WACC** | $286M | $300M | $318M | $338M |
+```calculation
+title: WACC vs. Terminal Growth Rate Sensitivity (Enterprise Value)
+given:
+  - "WACC Range: 10.0% to 12.0%"
+  - "Terminal Growth Rate (TGR) Range: 2.0% to 3.5%"
+steps:
+  - "10.0% WACC: $362M (2.0% TGR), $387M (2.5% TGR), $418M (3.0% TGR), $456M (3.5% TGR)"
+  - "10.5% WACC: $340M (2.0% TGR), $362M (2.5% TGR), $388M (3.0% TGR), $420M (3.5% TGR)"
+  - "11.0% WACC: $320M (2.0% TGR), $338M (2.5% TGR), $361M (3.0% TGR), $388M (3.5% TGR)"
+  - "11.5% WACC: $302M (2.0% TGR), $318M (2.5% TGR), $338M (3.0% TGR), $361M (3.5% TGR)"
+  - "12.0% WACC: $286M (2.0% TGR), $300M (2.5% TGR), $318M (3.0% TGR), $338M (3.5% TGR)"
+result: "Valuation range from $286M (12.0% WACC, 2.0% TGR) to $456M (10.0% WACC, 3.5% TGR)"
+note: "A 1% change in WACC or terminal growth can swing value by 15-20%. This is why bankers present DCF valuations as ranges, not point estimates."
+```
 
 **Key insight:** A 1% change in WACC or terminal growth can swing value by 15-20%. This is why bankers present DCF valuations as ranges, not point estimates.
 

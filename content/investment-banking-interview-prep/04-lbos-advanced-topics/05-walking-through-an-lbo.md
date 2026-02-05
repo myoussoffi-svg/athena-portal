@@ -122,12 +122,20 @@ Lenders require the company to maintain certain **credit ratios** throughout the
 
 **Example Credit Ratio Trajectory**:
 
-| Year | EBITDA | Total Debt | Debt/EBITDA | Interest | Coverage |
-|------|--------|------------|-------------|----------|----------|
-| 0 | $100M | $700M | 7.0× | $42M | 2.4× |
-| 1 | $108M | $660M | 6.1× | $40M | 2.7× |
-| 3 | $125M | $580M | 4.6× | $35M | 3.6× |
-| 5 | $147M | $500M | 3.4× | $30M | 4.9× |
+```calculation
+title: "Credit Ratio Trajectory Over Hold Period"
+given:
+  - "Entry EBITDA: $100M, growing ~8% annually"
+  - "Starting Total Debt: $700M"
+  - "Debt paydown: ~$40M per year from free cash flow"
+steps:
+  - "Year 0: EBITDA $100M, Debt $700M, Debt/EBITDA 7.0x, Interest $42M, Coverage 2.4x"
+  - "Year 1: EBITDA $108M, Debt $660M, Debt/EBITDA 6.1x, Interest $40M, Coverage 2.7x"
+  - "Year 3: EBITDA $125M, Debt $580M, Debt/EBITDA 4.6x, Interest $35M, Coverage 3.6x"
+  - "Year 5: EBITDA $147M, Debt $500M, Debt/EBITDA 3.4x, Interest $30M, Coverage 4.9x"
+result: "Leverage declines from 7.0x to 3.4x; coverage improves from 2.4x to 4.9x over 5 years"
+note: "Both EBITDA growth and debt paydown contribute to improving credit ratios over the hold period"
+```
 
 **Why Credit Ratios Matter**:
 - **Covenant breach** can trigger default, allowing lenders to accelerate repayment

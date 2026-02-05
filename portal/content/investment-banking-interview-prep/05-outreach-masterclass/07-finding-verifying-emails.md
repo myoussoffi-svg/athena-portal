@@ -27,50 +27,66 @@ Some banks also use variations like `firstlast@` (no period) or legacy formats f
 
 **Bulge Bracket Banks** (all use first.last@)
 
-| Bank | Example for "John Smith" |
-|------|--------------------------|
-| Goldman Sachs | john.smith@gs.com |
-| Morgan Stanley | john.smith@morganstanley.com |
-| JPMorgan | john.smith@jpmorgan.com |
-| Bank of America | john.smith@bofa.com |
-| Citi | john.smith@citi.com |
-| Barclays | john.smith@barclays.com |
-| Deutsche Bank | john.smith@db.com |
-| UBS | john.smith@ubs.com |
-
-*Note: JPMorgan sometimes uses middle initials (john.x.smith@jpmorgan.com) for employees who started 5+ years ago.*
+```calculation
+title: Bulge Bracket Bank Email Formats
+given:
+  - "Format: first.last@domain (all bulge brackets use this format)"
+  - "Example name: John Smith"
+steps:
+  - "Goldman Sachs: john.smith@gs.com"
+  - "Morgan Stanley: john.smith@morganstanley.com"
+  - "JPMorgan: john.smith@jpmorgan.com"
+  - "Bank of America: john.smith@bofa.com"
+  - "Citi: john.smith@citi.com"
+  - "Barclays: john.smith@barclays.com"
+  - "Deutsche Bank: john.smith@db.com"
+  - "UBS: john.smith@ubs.com"
+result: "All bulge bracket banks use first.last@domain format"
+note: "JPMorgan sometimes uses middle initials (john.x.smith@jpmorgan.com) for employees who started 5+ years ago."
+```
 
 **Elite Boutiques** (mixed formats)
 
-| Bank | Format | Example |
-|------|--------|---------|
-| Evercore | first.last@ | john.smith@evercore.com |
-| Lazard | first.last@ | john.smith@lazard.com |
-| Moelis | first.last@ | john.smith@moelis.com |
-| PJT Partners | first.last@ | john.smith@pjtpartners.com |
-| Qatalyst | first.last@ | john.smith@qatalyst.com |
-| Guggenheim | first.last@ | john.smith@guggenheimpartners.com |
-| Greenhill | first.last@ | john.smith@greenhill.com |
-| Centerview | firstinitiallast@ | jsmith@centerview.com |
-| Perella Weinberg | firstinitiallast@ | jsmith@pwpartners.com |
-| LionTree | firstinitiallast@ | jsmith@liontree.com |
+```calculation
+title: Elite Boutique Bank Email Formats
+given:
+  - "Format varies by bank: first.last@ or firstinitiallast@"
+  - "Example name: John Smith"
+steps:
+  - "Evercore: first.last@ = john.smith@evercore.com"
+  - "Lazard: first.last@ = john.smith@lazard.com"
+  - "Moelis: first.last@ = john.smith@moelis.com"
+  - "PJT Partners: first.last@ = john.smith@pjtpartners.com"
+  - "Qatalyst: first.last@ = john.smith@qatalyst.com"
+  - "Guggenheim: first.last@ = john.smith@guggenheimpartners.com"
+  - "Greenhill: first.last@ = john.smith@greenhill.com"
+  - "Centerview: firstinitiallast@ = jsmith@centerview.com"
+  - "Perella Weinberg: firstinitiallast@ = jsmith@pwpartners.com"
+  - "LionTree: firstinitiallast@ = jsmith@liontree.com"
+result: "Most elite boutiques use first.last@, but Centerview, Perella Weinberg, and LionTree use firstinitiallast@"
+```
 
 **Middle Market Banks** (many use firstinitiallast@)
 
-| Bank | Format | Example |
-|------|--------|---------|
-| William Blair | firstinitiallast@ | jsmith@williamblair.com |
-| Jefferies | firstinitiallast@ | jsmith@jefferies.com |
-| Houlihan Lokey | firstinitiallast@ | jsmith@hl.com |
-| Baird | firstinitiallast@ | jsmith@rwbaird.com |
-| Harris Williams | firstinitiallast@ | jsmith@harriswilliams.com |
-| Lincoln International | firstinitiallast@ | jsmith@lincolninternational.com |
-| Piper Sandler | first.last@ | john.smith@psc.com |
-| Raymond James | first.last@ | john.smith@raymondjames.com |
-| Rothschild | first.last@ | john.smith@rothschildandco.com |
-| Macquarie | first.last@ | john.smith@macquarie.com |
-
-*Note: Formats can change over time and may vary by office. If your first attempt bounces, try the other format.*
+```calculation
+title: Middle Market Bank Email Formats
+given:
+  - "Format varies by bank: firstinitiallast@ or first.last@"
+  - "Example name: John Smith"
+steps:
+  - "William Blair: firstinitiallast@ = jsmith@williamblair.com"
+  - "Jefferies: firstinitiallast@ = jsmith@jefferies.com"
+  - "Houlihan Lokey: firstinitiallast@ = jsmith@hl.com"
+  - "Baird: firstinitiallast@ = jsmith@rwbaird.com"
+  - "Harris Williams: firstinitiallast@ = jsmith@harriswilliams.com"
+  - "Lincoln International: firstinitiallast@ = jsmith@lincolninternational.com"
+  - "Piper Sandler: first.last@ = john.smith@psc.com"
+  - "Raymond James: first.last@ = john.smith@raymondjames.com"
+  - "Rothschild: first.last@ = john.smith@rothschildandco.com"
+  - "Macquarie: first.last@ = john.smith@macquarie.com"
+result: "Most middle market banks use firstinitiallast@, but Piper Sandler, Raymond James, Rothschild, and Macquarie use first.last@"
+note: "Formats can change over time and may vary by office. If your first attempt bounces, try the other format."
+```
 
 ### Handling Name Variations
 

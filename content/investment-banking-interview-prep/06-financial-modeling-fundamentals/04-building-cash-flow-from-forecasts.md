@@ -106,16 +106,19 @@ On the cash flow statement, subtract the change in NWC:
 
 **Example CFO Calculation**:
 
-| | Year 2 |
-|---|---|
-| Net Income | $78M |
-| + Depreciation | $20M |
-| + Stock-Based Compensation | $5M |
-| - Increase in Accounts Receivable | ($4.6M) |
-| - Increase in Inventory | ($1.7M) |
-| + Increase in Accounts Payable | $2.9M |
-| + Increase in Accrued Expenses | $1.0M |
-| **Cash Flow from Operations** | **$100.6M** |
+```calculation
+title: "Cash Flow from Operations (Year 2)"
+given:
+  - "Net Income: $78M"
+steps:
+  - "+ Depreciation: $20M"
+  - "+ Stock-Based Compensation: $5M"
+  - "- Increase in Accounts Receivable: ($4.6M)"
+  - "- Increase in Inventory: ($1.7M)"
+  - "+ Increase in Accounts Payable: $2.9M"
+  - "+ Increase in Accrued Expenses: $1.0M"
+result: "Cash Flow from Operations = $100.6M"
+```
 
 ### Step 5: Cash Flow from Investing
 
@@ -131,11 +134,13 @@ Or simply pull from your CapEx assumption in the balance sheet forecast.
 
 **Example CFI**:
 
-| | Year 2 |
-|---|---|
-| Capital Expenditures | ($32M) |
-| Acquisitions | $0 |
-| **Cash Flow from Investing** | **($32M)** |
+```calculation
+title: "Cash Flow from Investing (Year 2)"
+given:
+  - "Capital Expenditures: ($32M)"
+  - "Acquisitions: $0"
+result: "Cash Flow from Investing = ($32M)"
+```
 
 ### Step 6: Cash Flow from Financing
 
@@ -152,13 +157,15 @@ Or simply pull from your CapEx assumption in the balance sheet forecast.
 
 **Example CFF**:
 
-| | Year 2 |
-|---|---|
-| Debt Issuance | $0 |
-| Debt Repayment | ($10M) |
-| Dividends Paid | ($39M) |
-| Share Repurchases | $0 |
-| **Cash Flow from Financing** | **($49M)** |
+```calculation
+title: "Cash Flow from Financing (Year 2)"
+given:
+  - "Debt Issuance: $0"
+  - "Debt Repayment: ($10M)"
+  - "Dividends Paid: ($39M)"
+  - "Share Repurchases: $0"
+result: "Cash Flow from Financing = ($49M)"
+```
 
 ### Step 7: Calculate Net Change in Cash
 
@@ -178,30 +185,30 @@ This ending cash **must match** the cash line on your balance sheet. If it doesn
 
 ### Complete Cash Flow Statement Example
 
-| | Year 1 | Year 2 | Year 3 |
-|---|---|---|---|
-| **Operating Activities** | | | |
-| Net Income | $68M | $78M | $88M |
-| Depreciation & Amortization | $20M | $20M | $21M |
-| Stock-Based Compensation | $4M | $5M | $5M |
-| Change in Accounts Receivable | ($3M) | ($5M) | ($4M) |
-| Change in Inventory | ($2M) | ($2M) | ($3M) |
-| Change in Accounts Payable | $2M | $3M | $2M |
-| Change in Accrued Expenses | $1M | $1M | $1M |
-| **Cash from Operations** | **$90M** | **$100M** | **$110M** |
-| | | | |
-| **Investing Activities** | | | |
-| Capital Expenditures | ($30M) | ($32M) | ($34M) |
-| **Cash from Investing** | **($30M)** | **($32M)** | **($34M)** |
-| | | | |
-| **Financing Activities** | | | |
-| Debt Repayment | ($10M) | ($10M) | ($10M) |
-| Dividends Paid | ($34M) | ($39M) | ($44M) |
-| **Cash from Financing** | **($44M)** | **($49M)** | **($54M)** |
-| | | | |
-| **Net Change in Cash** | $16M | $19M | $22M |
-| Beginning Cash | $34M | $50M | $69M |
-| **Ending Cash** | **$50M** | **$69M** | **$91M** |
+```calculation
+title: "Complete Cash Flow Statement (Year 1 / Year 2 / Year 3)"
+given:
+  - "Operating Activities"
+  - "Net Income: $68M / $78M / $88M"
+  - "Depreciation & Amortization: $20M / $20M / $21M"
+  - "Stock-Based Compensation: $4M / $5M / $5M"
+steps:
+  - "Change in Accounts Receivable: ($3M) / ($5M) / ($4M)"
+  - "Change in Inventory: ($2M) / ($2M) / ($3M)"
+  - "Change in Accounts Payable: $2M / $3M / $2M"
+  - "Change in Accrued Expenses: $1M / $1M / $1M"
+  - "Cash from Operations: $90M / $100M / $110M"
+  - "Investing Activities"
+  - "Capital Expenditures: ($30M) / ($32M) / ($34M)"
+  - "Cash from Investing: ($30M) / ($32M) / ($34M)"
+  - "Financing Activities"
+  - "Debt Repayment: ($10M) / ($10M) / ($10M)"
+  - "Dividends Paid: ($34M) / ($39M) / ($44M)"
+  - "Cash from Financing: ($44M) / ($49M) / ($54M)"
+  - "Net Change in Cash: $16M / $19M / $22M"
+  - "Beginning Cash: $34M / $50M / $69M"
+result: "Ending Cash = $50M / $69M / $91M"
+```
 
 ### The Cash Reconciliation Check
 

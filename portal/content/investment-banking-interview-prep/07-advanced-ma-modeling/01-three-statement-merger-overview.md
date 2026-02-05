@@ -153,14 +153,18 @@ Build accretion/dilution, credit metrics, and sensitivity tables.
 
 ### Key Differences from Simple Accretion/Dilution
 
-| Aspect | Simple Analysis | Full Merger Model |
-|--------|-----------------|-------------------|
-| Statements | Income statement only | All three statements |
-| Balance sheet | Ignored | Fully integrated |
-| Debt capacity | Assumed | Calculated from cash flows |
-| Credit metrics | Not modeled | Debt/EBITDA, Coverage |
-| Synergies | Single estimate | Phased over time |
-| Time horizon | Year 1 only | Multi-year projection |
+```calculation
+title: "Key Differences: Simple Analysis vs. Full Merger Model"
+given:
+  - "Aspect: Statements — Simple Analysis: Income statement only | Full Merger Model: All three statements"
+  - "Aspect: Balance sheet — Simple Analysis: Ignored | Full Merger Model: Fully integrated"
+  - "Aspect: Debt capacity — Simple Analysis: Assumed | Full Merger Model: Calculated from cash flows"
+steps:
+  - "Aspect: Credit metrics — Simple Analysis: Not modeled | Full Merger Model: Debt/EBITDA, Coverage"
+  - "Aspect: Synergies — Simple Analysis: Single estimate | Full Merger Model: Phased over time"
+  - "Aspect: Time horizon — Simple Analysis: Year 1 only | Full Merger Model: Multi-year projection"
+result: "Full merger models provide comprehensive deal analysis across all financial dimensions"
+```
 
 ### What Makes a Good Merger Model?
 

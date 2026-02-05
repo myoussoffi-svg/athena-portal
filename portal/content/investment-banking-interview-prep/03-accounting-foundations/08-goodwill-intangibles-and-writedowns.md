@@ -94,13 +94,17 @@ When the acquirer owns less than 100% of a subsidiary, the portion owned by outs
 - The remaining amount is **Net Income Attributable to Parent**
 
 **Example**:
-| Line Item | Amount |
-|-----------|--------|
-| Revenue | $1,000M |
-| Operating Expenses | ($700M) |
-| Net Income (Consolidated) | $300M |
-| Less: NCI portion (20%) | ($60M) |
-| Net Income to Parent | $240M |
+
+```calculation
+title: "NCI Income Statement Example"
+given:
+  - "Revenue: $1,000M"
+  - "Operating Expenses: ($700M)"
+steps:
+  - "Net Income (Consolidated): $1,000M - $700M = $300M"
+  - "Less: NCI portion (20%): ($60M)"
+result: "Net Income to Parent = $240M"
+```
 
 **EPS Calculation**: Only Net Income Attributable to Parent is used for EPS.
 
@@ -113,11 +117,16 @@ If ownership is **20-50%** (significant influence but not control), the investme
 - The investor's share of the investee's net income flows through as a single line item on the income statement
 - No line-by-line consolidation of assets, liabilities, revenues, or expenses
 
-| Ownership % | Accounting Method |
-|-------------|-------------------|
-| < 20% | Fair value (financial asset) |
-| 20-50% | Equity method |
-| > 50% | Full consolidation |
+```calculation
+title: "Ownership % and Accounting Method"
+given:
+  - "Three levels of ownership determine accounting treatment"
+steps:
+  - "< 20% ownership: Fair value (financial asset)"
+  - "20-50% ownership: Equity method"
+  - "> 50% ownership: Full consolidation"
+result: "Control threshold (>50%) triggers full consolidation"
+```
 
 ### Goodwill Impairment
 

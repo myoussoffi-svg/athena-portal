@@ -111,22 +111,37 @@ As debt increases:
 Leverage amplifies returns (good and bad):
 
 **Unlevered Company**:
-| Scenario | EBIT | Net Income | ROE |
-|----------|------|------------|-----|
-| Good | $150M | $113M | 11.3% |
-| Expected | $100M | $75M | 7.5% |
-| Bad | $50M | $38M | 3.8% |
 
-*Assumes $1B equity, 25% tax rate*
+```calculation
+title: "Unlevered Company Returns"
+given:
+  - "Equity: $1B"
+  - "Debt: $0"
+  - "Tax Rate: 25%"
+steps:
+  - "Good Scenario: EBIT = $150M, Net Income = $113M, ROE = 11.3%"
+  - "Expected Scenario: EBIT = $100M, Net Income = $75M, ROE = 7.5%"
+  - "Bad Scenario: EBIT = $50M, Net Income = $38M, ROE = 3.8%"
+result: "ROE ranges from 3.8% to 11.3% with no leverage"
+note: "Assumes $1B equity, 25% tax rate"
+```
 
 **Levered Company** (50% debt at 6%):
-| Scenario | EBIT | Interest | Pre-Tax | Net Income | ROE |
-|----------|------|----------|---------|------------|-----|
-| Good | $150M | $30M | $120M | $90M | 18.0% |
-| Expected | $100M | $30M | $70M | $53M | 10.5% |
-| Bad | $50M | $30M | $20M | $15M | 3.0% |
 
-*Assumes $500M equity, $500M debt*
+```calculation
+title: "Levered Company Returns (50% Debt at 6%)"
+given:
+  - "Equity: $500M"
+  - "Debt: $500M at 6%"
+  - "Interest Expense: $30M"
+  - "Tax Rate: 25%"
+steps:
+  - "Good Scenario: EBIT = $150M, Interest = $30M, Pre-Tax = $120M, Net Income = $90M, ROE = 18.0%"
+  - "Expected Scenario: EBIT = $100M, Interest = $30M, Pre-Tax = $70M, Net Income = $53M, ROE = 10.5%"
+  - "Bad Scenario: EBIT = $50M, Interest = $30M, Pre-Tax = $20M, Net Income = $15M, ROE = 3.0%"
+result: "ROE ranges from 3.0% to 18.0% — leverage amplifies both upside and downside"
+note: "Assumes $500M equity, $500M debt"
+```
 
 **Observations**:
 - Expected ROE higher with leverage (10.5% vs. 7.5%)
@@ -138,20 +153,32 @@ Leverage amplifies returns (good and bad):
 ### Factors Affecting Optimal Capital Structure
 
 **Industry Characteristics**:
-| Factor | Implication for Debt |
-|--------|----------------------|
-| Stable cash flows | Can support more debt |
-| Tangible assets | Better collateral, more debt |
-| High growth | Need flexibility, less debt |
-| Cyclical industry | More volatility, less debt |
+
+```calculation
+title: "Industry Characteristics and Debt Capacity"
+given:
+  - "Category: Factor and Implication for Debt"
+steps:
+  - "Stable cash flows: Can support more debt"
+  - "Tangible assets: Better collateral, more debt"
+  - "High growth: Need flexibility, less debt"
+  - "Cyclical industry: More volatility, less debt"
+result: "Stable cash flows and tangible assets increase debt capacity; growth and cyclicality reduce it"
+```
 
 **Company-Specific Factors**:
-| Factor | Implication |
-|--------|-------------|
-| Profitability | Profitable = tax shield valuable |
-| Asset tangibility | More tangible = more debt capacity |
-| Growth opportunities | High growth = less debt (flexibility needed) |
-| Management attitude | Conservative vs. aggressive |
+
+```calculation
+title: "Company-Specific Factors Affecting Capital Structure"
+given:
+  - "Category: Factor and Implication"
+steps:
+  - "Profitability: Profitable = tax shield valuable"
+  - "Asset tangibility: More tangible = more debt capacity"
+  - "Growth opportunities: High growth = less debt (flexibility needed)"
+  - "Management attitude: Conservative vs. aggressive"
+result: "Company-specific factors like profitability, assets, growth, and management style shape optimal leverage"
+```
 
 **Market Conditions**:
 - Low interest rates → debt more attractive
@@ -162,26 +189,36 @@ Leverage amplifies returns (good and bad):
 
 Capital structure varies significantly by industry:
 
-| Industry | Typical D/E | Rationale |
-|----------|-------------|-----------|
-| Utilities | 1.0-1.5× | Stable cash flows, regulated |
-| REITs | 0.5-1.0× | Hard assets, predictable income |
-| Industrials | 0.3-0.6× | Cyclical, moderate leverage |
-| Technology | 0-0.2× | High growth, intangible assets |
-| Pharmaceuticals | 0.1-0.3× | R&D intensive, uncertain outcomes |
+```calculation
+title: "Industry Capital Structure Norms"
+given:
+  - "Category: Industry, Typical D/E, Rationale"
+steps:
+  - "Utilities: 1.0-1.5x D/E — Stable cash flows, regulated"
+  - "REITs: 0.5-1.0x D/E — Hard assets, predictable income"
+  - "Industrials: 0.3-0.6x D/E — Cyclical, moderate leverage"
+  - "Technology: 0-0.2x D/E — High growth, intangible assets"
+  - "Pharmaceuticals: 0.1-0.3x D/E — R&D intensive, uncertain outcomes"
+result: "Utilities carry the most debt; technology the least — driven by cash flow stability and asset tangibility"
+```
 
 ### Credit Ratings and Capital Structure
 
 **Credit ratings** constrain capital structure choices:
 
-| Rating | D/EBITDA | Description |
-|--------|----------|-------------|
-| AAA/AA | <1.0× | Minimal debt, maximum flexibility |
-| A | 1.0-2.0× | Low leverage, strong credit |
-| BBB | 2.0-3.5× | Investment grade floor |
-| BB | 3.5-5.0× | High yield, higher cost |
-| B | 5.0-7.0× | Leveraged, significant risk |
-| CCC | >7.0× | Distressed |
+```calculation
+title: "Credit Ratings and Leverage Levels"
+given:
+  - "Category: Rating, D/EBITDA, Description"
+steps:
+  - "AAA/AA: <1.0x D/EBITDA — Minimal debt, maximum flexibility"
+  - "A: 1.0-2.0x D/EBITDA — Low leverage, strong credit"
+  - "BBB: 2.0-3.5x D/EBITDA — Investment grade floor"
+  - "BB: 3.5-5.0x D/EBITDA — High yield, higher cost"
+  - "B: 5.0-7.0x D/EBITDA — Leveraged, significant risk"
+  - "CCC: >7.0x D/EBITDA — Distressed"
+result: "Companies often target BBB rating (2.0-3.5x D/EBITDA) as the investment grade floor"
+```
 
 Companies often target a specific rating (commonly BBB) and set leverage to maintain it.
 

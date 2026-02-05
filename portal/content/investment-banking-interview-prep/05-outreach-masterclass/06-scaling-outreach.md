@@ -118,13 +118,18 @@ When your outreach starts working, you'll have multiple calls per week and many 
 
 **Maintain a relationship status field:**
 
-| Status | Definition |
-|--------|------------|
-| Contacted | Email sent, no response yet |
-| Engaged | Responded positively, call pending |
-| Spoke | Had a call, relationship established |
-| Advocate | Agreed to refer or has actively helped |
-| Cold | No response after 2 follow-ups |
+```calculation
+title: Relationship Status Definitions
+given:
+  - "Category: Status labels for tracking contact relationships"
+steps:
+  - "Contacted: Email sent, no response yet"
+  - "Engaged: Responded positively, call pending"
+  - "Spoke: Had a call, relationship established"
+  - "Advocate: Agreed to refer or has actively helped"
+  - "Cold: No response after 2 follow-ups"
+result: "Assign one of these five statuses to every contact in your tracker"
+```
 
 ### Avoiding Common Scale Mistakes
 
@@ -170,16 +175,19 @@ After 2-3 weeks of outreach, review your data:
 
 ### Sample Weekly Schedule
 
-| Day | Activity | Time |
-|-----|----------|------|
-| Monday | Batch research for the week | 45 min |
-| Tuesday | Send 5 new emails, follow-ups | 30 min |
-| Wednesday | Send 5 new emails, follow-ups, 1-2 calls | 60 min |
-| Thursday | Send 5 new emails, follow-ups | 30 min |
-| Friday | Calls as scheduled, weekly review | 45 min |
-| Weekend | Light catch-up if needed | 15 min |
-
-Total: ~4 hours/week during active recruiting season
+```calculation
+title: Sample Weekly Outreach Schedule
+given:
+  - "Category: Recommended daily activities and time allocation"
+steps:
+  - "Monday: Batch research for the week = 45 min"
+  - "Tuesday: Send 5 new emails, follow-ups = 30 min"
+  - "Wednesday: Send 5 new emails, follow-ups, 1-2 calls = 60 min"
+  - "Thursday: Send 5 new emails, follow-ups = 30 min"
+  - "Friday: Calls as scheduled, weekly review = 45 min"
+  - "Weekend: Light catch-up if needed = 15 min"
+result: "Total = ~4 hours/week during active recruiting season"
+```
 
 ### Long-Term Sustainability
 

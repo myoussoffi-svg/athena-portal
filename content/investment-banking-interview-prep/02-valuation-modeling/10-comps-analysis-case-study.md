@@ -30,14 +30,19 @@ You're an analyst on a sell-side M&A deal. The client is considering selling the
 
 **Available Public Comps (you've screened these):**
 
-| Company | Revenue | EBITDA | Margin | Growth | EV |
-|---------|---------|--------|--------|--------|-----|
-| Cognizant | $19.4B | $3.5B | 18% | 3% | $35B |
-| EPAM Systems | $4.8B | $720M | 15% | 12% | $11B |
-| Globant | $2.1B | $315M | 15% | 18% | $7.5B |
-| Perficient | $920M | $165M | 18% | 10% | $2.8B |
-| Grid Dynamics | $320M | $45M | 14% | 15% | $850M |
-| CBIZ | $1.6B | $240M | 15% | 9% | $3.2B |
+```calculation
+title: "Screened Public Comparable Companies"
+given:
+  - "TargetCo: $150M revenue, $30M EBITDA, 20% margin, 8% growth"
+steps:
+  - "Cognizant: Revenue $19.4B, EBITDA $3.5B, Margin 18%, Growth 3%, EV $35B"
+  - "EPAM Systems: Revenue $4.8B, EBITDA $720M, Margin 15%, Growth 12%, EV $11B"
+  - "Globant: Revenue $2.1B, EBITDA $315M, Margin 15%, Growth 18%, EV $7.5B"
+  - "Perficient: Revenue $920M, EBITDA $165M, Margin 18%, Growth 10%, EV $2.8B"
+  - "Grid Dynamics: Revenue $320M, EBITDA $45M, Margin 14%, Growth 15%, EV $850M"
+  - "CBIZ: Revenue $1.6B, EBITDA $240M, Margin 15%, Growth 9%, EV $3.2B"
+result: "Six public IT services companies identified as potential peers"
+```
 
 Work through each step yourself before revealing the solutions.
 
@@ -64,26 +69,35 @@ hint: Think about size differential. If a company is 100x larger than your targe
 solution: |
   **Selection Criteria:**
 
-  | Factor | Why It Matters |
-  |--------|----------------|
-  | Business model | Same services? Same customer type? |
-  | Size | Larger companies often trade at premiums (liquidity, diversification) |
-  | Growth rate | High-growth companies trade at higher multiples |
-  | Margins | Profitability signals business quality |
-  | Geography | Different markets have different dynamics |
+  ```calculation
+  title: "Peer Selection Criteria"
+  given:
+    - "Business model: Same services? Same customer type?"
+    - "Size: Larger companies often trade at premiums (liquidity, diversification)"
+    - "Growth rate: High-growth companies trade at higher multiples"
+    - "Margins: Profitability signals business quality"
+    - "Geography: Different markets have different dynamics"
+  steps:
+    - "Each factor affects comparability and multiple relevance"
+  result: "All five factors must be evaluated for each potential peer"
+  ```
 
   **Evaluating Each Company:**
 
-  | Company | Include? | Reasoning |
-  |---------|----------|-----------|
-  | Cognizant | Borderline | Too large ($19B vs. $150M), but relevant industry |
-  | EPAM Systems | Yes | IT services, reasonable size differential, good growth |
-  | Globant | Yes | Digital services, high growth, relevant business |
-  | Perficient | **Best comp** | Mid-market IT services, similar size and margins |
-  | Grid Dynamics | Yes | Closest in size, IT services focus |
-  | CBIZ | Borderline | More diversified (accounting, insurance), less pure-play IT |
-
-  **Selected Peer Set:** EPAM, Globant, Perficient, Grid Dynamics
+  ```calculation
+  title: "Peer Universe Evaluation"
+  given:
+    - "TargetCo: $150M revenue, 20% margin, 8% growth"
+  steps:
+    - "Cognizant: Borderline — Too large ($19B vs. $150M), but relevant industry"
+    - "EPAM Systems: Include — IT services, reasonable size differential, good growth"
+    - "Globant: Include — Digital services, high growth, relevant business"
+    - "Perficient: Best comp — Mid-market IT services, similar size and margins"
+    - "Grid Dynamics: Include — Closest in size, IT services focus"
+    - "CBIZ: Borderline — More diversified (accounting, insurance), less pure-play IT"
+  result: "Selected Peer Set: EPAM, Globant, Perficient, Grid Dynamics"
+  note: "Exclude Cognizant (too large, distorts averages) and CBIZ (different business mix)"
+  ```
 
   We exclude Cognizant (too large, distorts averages) and CBIZ (different business mix). In practice, you might include them in a broader set and show both.
 
@@ -104,21 +118,33 @@ hint: EV/Revenue = Enterprise Value / Revenue. EV/EBITDA = Enterprise Value / EB
 solution: |
   **Comps Table:**
 
-  | Company | EV | Revenue | EBITDA | EV/Revenue | EV/EBITDA | Growth |
-  |---------|-----|---------|--------|------------|-----------|--------|
-  | EPAM Systems | $11.0B | $4.8B | $720M | 2.3x | 15.3x | 12% |
-  | Globant | $7.5B | $2.1B | $315M | 3.6x | 23.8x | 18% |
-  | Perficient | $2.8B | $920M | $165M | 3.0x | 17.0x | 10% |
-  | Grid Dynamics | $850M | $320M | $45M | 2.7x | 18.9x | 15% |
+  ```calculation
+  title: "Trading Multiples for Selected Peers"
+  given:
+    - "EPAM Systems: EV $11.0B, Revenue $4.8B, EBITDA $720M, Growth 12%"
+    - "Globant: EV $7.5B, Revenue $2.1B, EBITDA $315M, Growth 18%"
+    - "Perficient: EV $2.8B, Revenue $920M, EBITDA $165M, Growth 10%"
+    - "Grid Dynamics: EV $850M, Revenue $320M, EBITDA $45M, Growth 15%"
+  steps:
+    - "EPAM Systems: EV/Revenue = 2.3x, EV/EBITDA = 15.3x"
+    - "Globant: EV/Revenue = 3.6x, EV/EBITDA = 23.8x"
+    - "Perficient: EV/Revenue = 3.0x, EV/EBITDA = 17.0x"
+    - "Grid Dynamics: EV/Revenue = 2.7x, EV/EBITDA = 18.9x"
+  result: "Multiples range from 2.3x-3.6x Revenue and 15.3x-23.8x EBITDA"
+  ```
 
   **Summary Statistics:**
 
-  | Metric | EV/Revenue | EV/EBITDA |
-  |--------|------------|-----------|
-  | Mean | 2.9x | 18.8x |
-  | Median | 2.9x | 18.0x |
-  | Low | 2.3x | 15.3x |
-  | High | 3.6x | 23.8x |
+  ```calculation
+  title: "Comps Summary Statistics"
+  given:
+    - "EV/Revenue multiples: 2.3x, 2.7x, 3.0x, 3.6x"
+    - "EV/EBITDA multiples: 15.3x, 17.0x, 18.9x, 23.8x"
+  steps:
+    - "EV/Revenue — Mean: 2.9x, Median: 2.9x, Low: 2.3x, High: 3.6x"
+    - "EV/EBITDA — Mean: 18.8x, Median: 18.0x, Low: 15.3x, High: 23.8x"
+  result: "Median EV/Revenue = 2.9x, Median EV/EBITDA = 18.0x"
+  ```
 
   **Key observation:** There's meaningful dispersion in the multiples. Globant trades at nearly 24x EBITDA while EPAM trades at just over 15x. Understanding why is critical for applying the right multiple to TargetCo.
 ```
@@ -173,13 +199,29 @@ hint: Use the low, median, and high multiples from your comps. For EV/EBITDA: Lo
 solution: |
   **Valuation Matrix:**
 
-  | Multiple | Low (15x) | Median (18x) | High (22x) |
-  |----------|-----------|--------------|------------|
-  | **EV/EBITDA** | $450M | $540M | $660M |
+  ```calculation
+  title: "EV/EBITDA Valuation Range"
+  given:
+    - "TargetCo EBITDA: $30M"
+    - "Peer multiples: Low 15x, Median 18x, High 22x"
+  steps:
+    - "Low (15x): $30M x 15 = $450M"
+    - "Median (18x): $30M x 18 = $540M"
+    - "High (22x): $30M x 22 = $660M"
+  result: "EV/EBITDA implied range: $450M - $660M"
+  ```
 
-  | Multiple | Low (2.3x) | Median (2.9x) | High (3.5x) |
-  |----------|------------|---------------|-------------|
-  | **EV/Revenue** | $345M | $435M | $525M |
+  ```calculation
+  title: "EV/Revenue Valuation Range"
+  given:
+    - "TargetCo Revenue: $150M"
+    - "Peer multiples: Low 2.3x, Median 2.9x, High 3.5x"
+  steps:
+    - "Low (2.3x): $150M x 2.3 = $345M"
+    - "Median (2.9x): $150M x 2.9 = $435M"
+    - "High (3.5x): $150M x 3.5 = $525M"
+  result: "EV/Revenue implied range: $345M - $525M"
+  ```
 
   **Triangulating the Range:**
 
@@ -246,12 +288,19 @@ Where:
 
 **Example: Perficient**
 
-| Component | Amount |
-|-----------|--------|
-| Market Cap (35M shares × $65) | $2,275M |
-| Plus: Total Debt | $580M |
-| Less: Cash | ($55M) |
-| **Enterprise Value** | **$2,800M** |
+```calculation
+title: "Enterprise Value Calculation: Perficient"
+given:
+  - "Share Price: $65"
+  - "Shares Outstanding: 35M"
+  - "Total Debt: $580M"
+  - "Cash: $55M"
+steps:
+  - "Market Cap: 35M shares x $65 = $2,275M"
+  - "Plus: Total Debt = $580M"
+  - "Less: Cash = ($55M)"
+result: "Enterprise Value = $2,800M"
+```
 
 ### Calendarization
 
@@ -267,14 +316,18 @@ If companies have different fiscal year ends, you need to calendarize to a commo
 
 Reported EBITDA often needs adjustments for comparability:
 
-| Adjustment | When to Apply |
-|------------|---------------|
-| Stock-based comp | Add back if peers don't (controversial) |
-| One-time charges | Restructuring, litigation, etc. |
-| M&A costs | Transaction-related expenses |
-| Rent expense | If comparing with companies that lease vs. own |
-
-Be consistent across all companies in your peer set.
+```calculation
+title: "Common EBITDA Adjustments"
+given:
+  - "Reported EBITDA may include non-recurring or non-comparable items"
+steps:
+  - "Stock-based comp: Add back if peers don't (controversial)"
+  - "One-time charges: Restructuring, litigation, etc."
+  - "M&A costs: Transaction-related expenses"
+  - "Rent expense: If comparing with companies that lease vs. own"
+result: "Adjusted EBITDA should be calculated consistently across all peer companies"
+note: "Be consistent across all companies in your peer set"
+```
 
 ---
 

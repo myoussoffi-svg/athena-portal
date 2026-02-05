@@ -49,12 +49,17 @@ Goodwill = Purchase Price - Fair Value of Net Identifiable Assets
 
 The purchase price is the total consideration transferred:
 
-| Component | Amount |
-|-----------|--------|
-| Cash paid | $2,250M |
-| Fair value of stock issued | $2,250M |
-| Contingent consideration (at fair value) | $0 |
-| **Total Purchase Price** | **$4,500M** |
+```calculation
+title: "Total Purchase Price Determination"
+given:
+  - "Cash paid: $2,250M"
+  - "Fair value of stock issued: $2,250M"
+  - "Contingent consideration (at fair value): $0"
+steps:
+  - "Total Purchase Price = Cash paid + Stock issued + Contingent consideration"
+  - "Total Purchase Price = $2,250M + $2,250M + $0"
+result: "Total Purchase Price = $4,500M"
+```
 
 If the acquirer assumes target debt:
 ```
@@ -88,17 +93,18 @@ The target's book values often differ from fair values. Common adjustments:
 
 PPA requires separate recognition of identifiable intangibles:
 
-| Intangible | Fair Value | Useful Life |
-|------------|------------|-------------|
-| Customer relationships | $300M | 15 years |
-| Trade names/brands | $150M | Indefinite |
-| Developed technology | $100M | 7 years |
-| Non-compete agreements | $25M | 3 years |
-| **Total Intangibles** | **$575M** | |
-
-**Recognition Criteria**: An intangible is identifiable if it:
-- Arises from contractual or legal rights, OR
-- Is separable (can be sold or licensed separately)
+```calculation
+title: "Identifiable Intangible Assets"
+given:
+  - "Customer relationships: $300M (15 years useful life)"
+  - "Trade names/brands: $150M (Indefinite useful life)"
+  - "Developed technology: $100M (7 years useful life)"
+  - "Non-compete agreements: $25M (3 years useful life)"
+steps:
+  - "Total = $300M + $150M + $100M + $25M"
+result: "Total Intangibles = $575M"
+note: "An intangible is identifiable if it arises from contractual/legal rights OR is separable (can be sold or licensed separately)"
+```
 
 **Key Point**: These intangibles didn't appear on the target's balance sheet (internally developed). PPA creates them.
 
@@ -108,26 +114,29 @@ Goodwill is the plug—what's left after allocating to identifiable assets:
 
 **PPA Summary**
 
-| Item | Book Value | Fair Value Adj | Fair Value |
-|------|------------|----------------|------------|
-| Cash | $50M | — | $50M |
-| Receivables | $200M | — | $200M |
-| Inventory | $100M | +$15M | $115M |
-| PP&E | $200M | +$50M | $250M |
-| Intangibles | $0 | +$575M | $575M |
-| **Total Assets** | **$550M** | | **$1,190M** |
-| | | | |
-| Payables | ($75M) | — | ($75M) |
-| Debt | ($500M) | — | ($500M) |
-| Deferred Revenue | ($50M) | +$10M | ($40M) |
-| Deferred Tax Liability | $0 | ($150M) | ($150M) |
-| **Total Liabilities** | **($625M)** | | **($765M)** |
-| | | | |
-| **Net Identifiable Assets** | | | **$425M** |
-| | | | |
-| Purchase Price | | | $4,500M |
-| Less: Net Identifiable Assets | | | ($425M) |
-| **Goodwill** | | | **$4,075M** |
+```calculation
+title: "Purchase Price Allocation Summary"
+given:
+  - "Assets at Book Value:"
+  - "  Cash: $50M (FV Adj: none) -> Fair Value: $50M"
+  - "  Receivables: $200M (FV Adj: none) -> Fair Value: $200M"
+  - "  Inventory: $100M (FV Adj: +$15M) -> Fair Value: $115M"
+  - "  PP&E: $200M (FV Adj: +$50M) -> Fair Value: $250M"
+  - "  Intangibles: $0 (FV Adj: +$575M) -> Fair Value: $575M"
+  - "  Total Assets: $550M -> Fair Value: $1,190M"
+  - "Liabilities at Book Value:"
+  - "  Payables: ($75M) (FV Adj: none) -> Fair Value: ($75M)"
+  - "  Debt: ($500M) (FV Adj: none) -> Fair Value: ($500M)"
+  - "  Deferred Revenue: ($50M) (FV Adj: +$10M) -> Fair Value: ($40M)"
+  - "  Deferred Tax Liability: $0 (FV Adj: ($150M)) -> Fair Value: ($150M)"
+  - "  Total Liabilities: ($625M) -> Fair Value: ($765M)"
+steps:
+  - "Net Identifiable Assets = Total Assets (FV) + Total Liabilities (FV)"
+  - "Net Identifiable Assets = $1,190M - $765M = $425M"
+  - "Goodwill = Purchase Price - Net Identifiable Assets"
+  - "Goodwill = $4,500M - $425M"
+result: "Goodwill = $4,075M"
+```
 
 ### Deferred Taxes in PPA
 
@@ -147,15 +156,18 @@ DTL = Temporary Difference × Tax Rate = $50M × 25% = $12.5M
 
 **Total DTL from PPA**:
 
-| Write-up | Amount | Tax Rate | DTL |
-|----------|--------|----------|-----|
-| Inventory | $15M | 25% | $3.75M |
-| PP&E | $50M | 25% | $12.50M |
-| Intangibles | $575M | 25% | $143.75M |
-| Deferred Revenue write-down | ($10M) | 25% | ($2.50M) |
-| **Total DTL** | | | **$157.50M** |
-
-Note: DTL is a liability, which reduces net assets and increases goodwill.
+```calculation
+title: "Total Deferred Tax Liability from PPA"
+given:
+  - "Tax Rate: 25%"
+steps:
+  - "Inventory write-up: $15M x 25% = $3.75M DTL"
+  - "PP&E write-up: $50M x 25% = $12.50M DTL"
+  - "Intangibles write-up: $575M x 25% = $143.75M DTL"
+  - "Deferred Revenue write-down: ($10M) x 25% = ($2.50M) DTL"
+result: "Total DTL = $157.50M"
+note: "DTL is a liability, which reduces net assets and increases goodwill"
+```
 
 ### Goodwill: What Does It Represent?
 
@@ -170,12 +182,16 @@ Goodwill often represents 50-80% of purchase price in acquisitions, reflecting t
 
 ### Goodwill vs. Other Intangibles
 
-| Goodwill | Identifiable Intangibles |
-|----------|-------------------------|
-| Not amortized | Amortized over useful life |
-| Tested annually for impairment | Amortized + tested for impairment |
-| Cannot be sold separately | Can be sold or licensed |
-| Residual calculation | Specifically identified and valued |
+```calculation
+title: "Goodwill vs. Identifiable Intangibles Comparison"
+given:
+  - "Goodwill: Not amortized | Identifiable Intangibles: Amortized over useful life"
+  - "Goodwill: Tested annually for impairment | Identifiable Intangibles: Amortized + tested for impairment"
+steps:
+  - "Goodwill: Cannot be sold separately | Identifiable Intangibles: Can be sold or licensed"
+  - "Goodwill: Residual calculation | Identifiable Intangibles: Specifically identified and valued"
+result: "Goodwill is the residual plug; identifiable intangibles are specifically valued and amortized"
+```
 
 ### Impact on Future Financials
 
@@ -183,14 +199,19 @@ Goodwill often represents 50-80% of purchase price in acquisitions, reflecting t
 
 Identified intangibles with finite lives are amortized:
 
-| Intangible | Value | Life | Annual Amort |
-|------------|-------|------|--------------|
-| Customer relationships | $300M | 15 yrs | $20M |
-| Developed technology | $100M | 7 yrs | $14.3M |
-| Non-compete | $25M | 3 yrs | $8.3M |
-| **Total** | | | **$42.6M** |
-
-This amortization expense reduces GAAP net income but is non-cash.
+```calculation
+title: "Annual Intangible Amortization Schedule"
+given:
+  - "Customer relationships: $300M over 15 years"
+  - "Developed technology: $100M over 7 years"
+  - "Non-compete agreements: $25M over 3 years"
+steps:
+  - "Customer relationships: $300M / 15 yrs = $20M per year"
+  - "Developed technology: $100M / 7 yrs = $14.3M per year"
+  - "Non-compete: $25M / 3 yrs = $8.3M per year"
+result: "Total Annual Amortization = $42.6M"
+note: "This amortization expense reduces GAAP net income but is non-cash"
+```
 
 **Inventory Step-Up**
 

@@ -81,14 +81,19 @@ Margins should be within logical ranges.
 
 Consolidate all checks on a summary tab or section:
 
-| Check | Status |
-|-------|--------|
-| Balance Sheet Balances | OK |
-| Cash Reconciliation | OK |
-| Revolver Not Exceeded | OK |
-| No Negative Debt | OK |
-| Circularity Converged | OK |
-| **Overall Status** | **ALL CLEAR** |
+```calculation
+title: Model Check Summary Dashboard
+given:
+  - "All individual checks feed into a consolidated summary"
+steps:
+  - "Balance Sheet Balances: OK"
+  - "Cash Reconciliation: OK"
+  - "Revolver Not Exceeded: OK"
+  - "No Negative Debt: OK"
+  - "Circularity Converged: OK"
+result: "Overall Status = ALL CLEAR"
+note: "Use conditional formatting: Green = OK, Red = ERROR, Yellow = CHECK (review needed)"
+```
 
 Use conditional formatting:
 - Green = OK
@@ -109,21 +114,37 @@ Sensitivity analysis shows how outputs change when you vary one or two inputs. T
 
 Shows output values across a range of one input:
 
-| Revenue Growth | 2% | 4% | 6% | 8% | 10% |
-|----------------|----|----|----|----|-----|
-| **Implied Share Price** | $18 | $22 | $26 | $30 | $34 |
+```calculation
+title: One-Way Sensitivity - Revenue Growth vs. Implied Share Price
+given:
+  - "Input varied: Revenue Growth"
+  - "Output measured: Implied Share Price"
+steps:
+  - "Revenue Growth 2%: Implied Share Price = $18"
+  - "Revenue Growth 4%: Implied Share Price = $22"
+  - "Revenue Growth 6%: Implied Share Price = $26"
+  - "Revenue Growth 8%: Implied Share Price = $30"
+  - "Revenue Growth 10%: Implied Share Price = $34"
+result: "Share price ranges from $18 to $34 across revenue growth assumptions"
+```
 
 **Two-Way Sensitivity Table**
 
 Shows outputs across two inputs simultaneously:
 
-| | **WACC** |
-| **Terminal Growth** | 8% | 9% | 10% | 11% | 12% |
-|---------------------|----|----|-----|-----|-----|
-| 1.5% | $32 | $29 | $26 | $24 | $22 |
-| 2.0% | $35 | $31 | $28 | $25 | $23 |
-| 2.5% | $38 | $34 | $30 | $27 | $24 |
-| 3.0% | $42 | $37 | $32 | $29 | $26 |
+```calculation
+title: Two-Way Sensitivity - WACC vs. Terminal Growth Rate (Implied Share Price)
+given:
+  - "Row input: Terminal Growth Rate (1.5% to 3.0%)"
+  - "Column input: WACC (8% to 12%)"
+  - "Output: Implied Share Price ($)"
+steps:
+  - "Terminal Growth 1.5%: WACC 8% = $32 | 9% = $29 | 10% = $26 | 11% = $24 | 12% = $22"
+  - "Terminal Growth 2.0%: WACC 8% = $35 | 9% = $31 | 10% = $28 | 11% = $25 | 12% = $23"
+  - "Terminal Growth 2.5%: WACC 8% = $38 | 9% = $34 | 10% = $30 | 11% = $27 | 12% = $24"
+  - "Terminal Growth 3.0%: WACC 8% = $42 | 9% = $37 | 10% = $32 | 11% = $29 | 12% = $26"
+result: "DCF value ranges from $22 (high WACC, low growth) to $42 (low WACC, high growth)"
+```
 
 This shows how DCF value changes with different WACC and terminal growth combinations.
 
@@ -165,20 +186,30 @@ While sensitivity tables vary one or two inputs, **scenario analysis** changes m
 
 **Common Scenarios**:
 
-| Assumption | Base Case | Upside | Downside |
-|------------|-----------|--------|----------|
-| Revenue Growth | 5% | 8% | 2% |
-| EBITDA Margin | 20% | 22% | 17% |
-| CapEx % of Revenue | 4% | 4% | 5% |
-| Exit Multiple | 8.0× | 9.0× | 7.0× |
+```calculation
+title: Scenario Analysis - Key Assumptions
+given:
+  - "Three scenarios modeled: Base Case, Upside, and Downside"
+steps:
+  - "Revenue Growth: Base = 5% | Upside = 8% | Downside = 2%"
+  - "EBITDA Margin: Base = 20% | Upside = 22% | Downside = 17%"
+  - "CapEx % of Revenue: Base = 4% | Upside = 4% | Downside = 5%"
+  - "Exit Multiple: Base = 8.0x | Upside = 9.0x | Downside = 7.0x"
+result: "Upside assumes stronger growth and margins; Downside assumes weaker growth with higher CapEx intensity"
+```
 
 **Outputs by Scenario**:
 
-| Metric | Base | Upside | Downside |
-|--------|------|--------|----------|
-| Exit Equity Value | $500M | $680M | $320M |
-| IRR | 22% | 28% | 14% |
-| MOIC | 2.5× | 3.2× | 1.8× |
+```calculation
+title: Scenario Analysis - Output Comparison
+given:
+  - "Scenarios: Base, Upside, Downside"
+steps:
+  - "Exit Equity Value: Base = $500M | Upside = $680M | Downside = $320M"
+  - "IRR: Base = 22% | Upside = 28% | Downside = 14%"
+  - "MOIC: Base = 2.5x | Upside = 3.2x | Downside = 1.8x"
+result: "IRR ranges from 14% (Downside) to 28% (Upside) with a Base Case of 22%"
+```
 
 ### Building a Scenario Toggle
 
@@ -186,10 +217,15 @@ Create a scenario selector that changes multiple assumptions at once:
 
 **Step 1**: Set up a scenario table with all assumptions:
 
-| Assumption | Base | Upside | Downside |
-|------------|------|--------|----------|
-| Rev Growth | 5% | 8% | 2% |
-| EBITDA Margin | 20% | 22% | 17% |
+```calculation
+title: Scenario Toggle - Assumptions Setup
+given:
+  - "Scenarios: Base, Upside, Downside"
+steps:
+  - "Rev Growth: Base = 5% | Upside = 8% | Downside = 2%"
+  - "EBITDA Margin: Base = 20% | Upside = 22% | Downside = 17%"
+result: "Each assumption has a value defined for every scenario"
+```
 
 **Step 2**: Create a selector cell (dropdown with "Base", "Upside", "Downside")
 
@@ -216,12 +252,17 @@ Stress tests push the model to extremes to understand breaking points:
 
 If the debt covenant requires Debt/EBITDA < 5.0×:
 
-| EBITDA Decline | Debt/EBITDA | Covenant Status |
-|----------------|-------------|-----------------|
-| 0% | 4.0× | OK |
-| 10% | 4.4× | OK |
-| 20% | 5.0× | At Limit |
-| 25% | 5.3× | BREACH |
+```calculation
+title: Stress Test - Covenant Breach Analysis
+given:
+  - "Debt Covenant Requirement: Debt/EBITDA < 5.0x"
+steps:
+  - "EBITDA Decline 0%: Debt/EBITDA = 4.0x -> Covenant Status: OK"
+  - "EBITDA Decline 10%: Debt/EBITDA = 4.4x -> Covenant Status: OK"
+  - "EBITDA Decline 20%: Debt/EBITDA = 5.0x -> Covenant Status: At Limit"
+  - "EBITDA Decline 25%: Debt/EBITDA = 5.3x -> Covenant Status: BREACH"
+result: "The company can sustain up to a 20% EBITDA decline before breaching covenants"
+```
 
 The company can sustain a 20% EBITDA decline before breaching covenants.
 
