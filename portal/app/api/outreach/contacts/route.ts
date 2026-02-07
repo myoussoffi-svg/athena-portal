@@ -13,6 +13,7 @@ import {
   daysSinceDate,
   MAX_CONTACTS_PER_USER,
 } from '@/lib/outreach/status-machine';
+import { logActivity } from '@/lib/outreach/activity-logger';
 
 // GET /api/outreach/contacts - List all contacts for the user
 export async function GET() {
@@ -48,6 +49,11 @@ export async function GET() {
       updatedAt: c.updatedAt.toISOString(),
       isFollowUpDue: isFollowUpDue(c.followUpDue),
       daysSinceContact: daysSinceDate(c.lastContactDate),
+      firstName: c.firstName,
+      lastName: c.lastName,
+      emailGenerated: c.emailGenerated,
+      emailVerified: c.emailVerified,
+      importBatchId: c.importBatchId,
     }));
 
     const followUpsDue = contactsWithMeta.filter((c) => c.isFollowUpDue).length;
@@ -120,6 +126,9 @@ export async function POST(request: NextRequest) {
         status: 'identified',
       })
       .returning();
+
+    // Log activity for gamification
+    await logActivity(userId, 'contact_added', contact.id);
 
     return NextResponse.json(contact, { status: 201 });
   } catch (error) {

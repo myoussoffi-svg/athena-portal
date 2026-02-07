@@ -7,9 +7,11 @@ interface ContactListProps {
   contacts: ContactWithMeta[];
   onEdit: (contact: ContactWithMeta) => void;
   onGenerateEmail: (contact: ContactWithMeta) => void;
+  onQuickCopy?: (contact: ContactWithMeta) => void;
+  onMarkAsSent?: (contact: ContactWithMeta) => Promise<void>;
 }
 
-export function ContactList({ contacts, onEdit, onGenerateEmail }: ContactListProps) {
+export function ContactList({ contacts, onEdit, onGenerateEmail, onQuickCopy, onMarkAsSent }: ContactListProps) {
   if (contacts.length === 0) {
     return (
       <div
@@ -38,6 +40,8 @@ export function ContactList({ contacts, onEdit, onGenerateEmail }: ContactListPr
           contact={contact}
           onEdit={onEdit}
           onGenerateEmail={onGenerateEmail}
+          onQuickCopy={onQuickCopy}
+          onMarkAsSent={onMarkAsSent}
         />
       ))}
     </div>

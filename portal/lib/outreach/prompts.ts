@@ -42,6 +42,19 @@ USING LINKEDIN DATA (when provided):
 - Use their career path to inform your angle (e.g., if they were non-traditional, you can mention your own path)
 - Never mention that you "looked at their LinkedIn" - just reference the content naturally
 
+CRITICAL - NEVER GUESS GROUPS/PRACTICES/DIVISIONS:
+- NEVER guess or infer specific groups, practices, divisions, or coverage areas
+  - Do NOT assume someone is in "restructuring", "M&A", "healthcare", "TMT", "sponsors", etc. unless EXPLICITLY stated
+  - Even if a bank is known for a particular practice (e.g., Houlihan Lokey for restructuring), do NOT assume the contact works in that practice
+- If the group/practice/division is NOT explicitly provided:
+  - Use generic language: "investment banking", "your team", "your group"
+  - Or omit the group reference entirely
+  - NEVER fill in with a guess based on the bank's reputation
+- Only mention specific groups/practices when:
+  - It appears explicitly in their LinkedIn title (e.g., "Analyst, M&A Group")
+  - It's explicitly stated in the contact details or connection notes
+- Getting the group wrong is WORSE than being generic - it shows you didn't do proper research
+
 OUTPUT FORMAT:
 You MUST return a valid JSON object with exactly this structure:
 {
@@ -66,6 +79,8 @@ export function buildUserPrompt(params: {
     year: string | null;
     major: string | null;
     interest: string | null;
+    previousExperience: string | null;
+    hometown: string | null;
   };
   additionalContext?: string;
   linkedinProfile?: string; // Formatted LinkedIn profile data
@@ -95,12 +110,15 @@ ${linkedinProfile}
 
 IMPORTANT:
 - Use the EXACT job title shown in their profile (e.g., if they are an "Analyst", do NOT call them an "Associate")
+- NEVER guess their group, practice, division, or coverage area unless EXPLICITLY stated in their profile
+  - Do NOT assume someone is in "restructuring", "M&A", "healthcare", etc. based on the bank's reputation
+  - If no group is specified, use generic terms like "investment banking" or "your team"
 - Use ONE specific detail from their LinkedIn profile to personalize the email
 - Pick something relevant like:
   - A specific role or company from their experience (using their EXACT title)
   - Their educational background if it relates to yours
   - A career transition or interesting path
-  - Industry or deal experience
+  - Industry or deal experience (only if explicitly mentioned)
 - Make the reference feel natural, not forced.`;
   }
 
@@ -112,8 +130,35 @@ SENDER DETAILS:
 - Year: ${user.year || '[Year]'}
 - Major: ${user.major || '[Major]'}
 - Interest: ${user.interest || 'investment banking'}
+${user.previousExperience ? `- Previous Experience: ${user.previousExperience}` : ''}
+${user.hometown ? `- Hometown: ${user.hometown}` : ''}
 
 ${additionalContext ? `ADDITIONAL CONTEXT:\n${additionalContext}` : ''}
+
+${linkedinProfile && (user.previousExperience || user.hometown || user.school) ? `FINDING COMMONALITIES:
+Look for genuine, noteworthy connections between the sender and contact. Only mention if BOTH sides explicitly support it.
+
+WORTH MENTIONING:
+- Same school (exact match) - e.g., "As a Michigan alum..."
+- Same city/hometown (exact city match only, NOT same state) - e.g., both from "Dallas" specifically
+- Same previous employer - e.g., sender interned at Deloitte, contact worked at Deloitte
+- Non-traditional major (Biology, Engineering, Art History, etc.) - shows similar unconventional path
+  Example: "I noticed you studied biology before transitioning to banking - I'm navigating a similar path..."
+- Same fraternity/sorority - mention naturally, NOT "as a fellow brother/sister" (too cheesy)
+  Example: "I saw you were in Sigma Chi at USC - I'm in the Michigan chapter..."
+
+DO NOT MENTION (too generic/expected):
+- Traditional finance majors (Economics, Finance, Business, Accounting) - expected in banking, not noteworthy
+- Same state but different cities - "fellow Texan" is too vague
+- Same club at different schools - "Finance Club" at different schools is not a real connection
+- Both interested in "investment banking" or "M&A" - obviously, that's why they're reaching out
+- Both studied "business" - too generic
+
+RULES:
+- Only mention ONE commonality - pick the strongest, most specific one
+- If no genuine commonality exists, skip this entirely and focus on interest in the firm/role
+- When in doubt, leave it out - a wrong assumption is worse than being generic
+` : ''}
 
 Generate the email now. Remember:
 - Subject line should be specific and include the school name
@@ -121,6 +166,7 @@ Generate the email now. Remember:
 - Use the sender's actual details where provided, use bracketed placeholders where not
 - Sound natural and human, not robotic
 ${linkedinProfile ? '- Reference ONE specific detail from their LinkedIn naturally' : ''}
+- NEVER guess groups/practices/divisions - if not explicitly provided, use generic language or omit
 - Return ONLY the JSON object, no other text`;
 
   return prompt;

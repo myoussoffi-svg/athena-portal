@@ -16,6 +16,9 @@ import { AddContactModal } from './AddContactModal';
 import { EditContactModal } from './EditContactModal';
 import { EmailGenerator } from './EmailGenerator';
 import { ActionNeededPanel } from './ActionNeededPanel';
+import { BulkImportModal } from './BulkImportModal';
+import { GamificationDashboard } from './GamificationDashboard';
+import { ProfileSettingsModal } from './ProfileSettingsModal';
 
 type FilterStatus = OutreachStatus | 'all' | 'follow-up-due';
 
@@ -36,6 +39,8 @@ export function OutreachDashboard() {
   const [error, setError] = useState<string | null>(null);
 
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
+  const [isImportModalOpen, setIsImportModalOpen] = useState(false);
+  const [isSettingsModalOpen, setIsSettingsModalOpen] = useState(false);
   const [editingContact, setEditingContact] = useState<ContactWithMeta | null>(null);
   const [emailGenContact, setEmailGenContact] = useState<ContactWithMeta | null>(null);
   const [generationsRemaining, setGenerationsRemaining] = useState(MAX_EMAIL_GENERATIONS_PER_DAY);
@@ -137,6 +142,14 @@ export function OutreachDashboard() {
     return data;
   };
 
+  // Mark contact as sent (quick action)
+  const handleMarkAsSent = async (contact: ContactWithMeta) => {
+    await handleUpdateContact(contact.id, {
+      status: 'contacted',
+      lastContactDate: new Date().toISOString(),
+    });
+  };
+
   // Status filter options
   const statusFilters: { value: FilterStatus; label: string }[] = [
     { value: 'all', label: 'All' },
@@ -176,26 +189,70 @@ export function OutreachDashboard() {
               )}
             </p>
           </div>
-          <button
-            onClick={() => setIsAddModalOpen(true)}
-            disabled={total >= MAX_CONTACTS_PER_USER}
-            style={{
-              padding: '10px 16px',
-              borderRadius: 8,
-              border: 'none',
-              background: '#416D89',
-              color: '#fff',
-              fontSize: 14,
-              fontWeight: 500,
-              cursor: total >= MAX_CONTACTS_PER_USER ? 'not-allowed' : 'pointer',
-              opacity: total >= MAX_CONTACTS_PER_USER ? 0.6 : 1,
-              whiteSpace: 'nowrap',
-            }}
-          >
-            + Add Contact
-          </button>
+          <div style={{ display: 'flex', gap: 8 }}>
+            <button
+              onClick={() => setIsSettingsModalOpen(true)}
+              title="Profile Settings"
+              style={{
+                padding: '10px 12px',
+                borderRadius: 8,
+                border: '1px solid rgba(10, 10, 10, 0.15)',
+                background: 'transparent',
+                color: 'rgba(10, 10, 10, 0.6)',
+                fontSize: 14,
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="3" />
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
+              </svg>
+            </button>
+            <button
+              onClick={() => setIsImportModalOpen(true)}
+              disabled={total >= MAX_CONTACTS_PER_USER}
+              style={{
+                padding: '10px 16px',
+                borderRadius: 8,
+                border: '1px solid rgba(65, 109, 137, 0.3)',
+                background: 'transparent',
+                color: '#416D89',
+                fontSize: 14,
+                fontWeight: 500,
+                cursor: total >= MAX_CONTACTS_PER_USER ? 'not-allowed' : 'pointer',
+                opacity: total >= MAX_CONTACTS_PER_USER ? 0.6 : 1,
+                whiteSpace: 'nowrap',
+              }}
+            >
+              Import Contacts
+            </button>
+            <button
+              onClick={() => setIsAddModalOpen(true)}
+              disabled={total >= MAX_CONTACTS_PER_USER}
+              style={{
+                padding: '10px 16px',
+                borderRadius: 8,
+                border: 'none',
+                background: '#416D89',
+                color: '#fff',
+                fontSize: 14,
+                fontWeight: 500,
+                cursor: total >= MAX_CONTACTS_PER_USER ? 'not-allowed' : 'pointer',
+                opacity: total >= MAX_CONTACTS_PER_USER ? 0.6 : 1,
+                whiteSpace: 'nowrap',
+              }}
+            >
+              + Add Contact
+            </button>
+          </div>
         </div>
       </div>
+
+      {/* Gamification Dashboard */}
+      <GamificationDashboard />
 
       {error && (
         <div
@@ -273,6 +330,7 @@ export function OutreachDashboard() {
         contacts={filteredContacts}
         onEdit={setEditingContact}
         onGenerateEmail={setEmailGenContact}
+        onMarkAsSent={handleMarkAsSent}
       />
 
       {/* Modals */}
@@ -294,6 +352,17 @@ export function OutreachDashboard() {
         onClose={() => setEmailGenContact(null)}
         generationsRemaining={generationsRemaining}
         onGenerate={handleGenerateEmail}
+      />
+
+      <BulkImportModal
+        isOpen={isImportModalOpen}
+        onClose={() => setIsImportModalOpen(false)}
+        onImportComplete={fetchContacts}
+      />
+
+      <ProfileSettingsModal
+        isOpen={isSettingsModalOpen}
+        onClose={() => setIsSettingsModalOpen(false)}
       />
     </div>
   );

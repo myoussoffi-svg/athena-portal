@@ -8,6 +8,8 @@ interface ContactCardProps {
   contact: ContactWithMeta;
   onEdit: (contact: ContactWithMeta) => void;
   onGenerateEmail: (contact: ContactWithMeta) => void;
+  onQuickCopy?: (contact: ContactWithMeta) => void;
+  onMarkAsSent?: (contact: ContactWithMeta) => Promise<void>;
 }
 
 function getDaysOverdue(followUpDue: string | null): number {
@@ -32,8 +34,36 @@ function getUrgencyStyle(daysOverdue: number): { bg: string; color: string; text
   return { bg: 'rgba(220, 38, 38, 0.1)', color: '#dc2626', text: 'Due today' };
 }
 
-export function ContactCard({ contact, onEdit, onGenerateEmail }: ContactCardProps) {
+export function ContactCard({ contact, onEdit, onGenerateEmail, onQuickCopy, onMarkAsSent }: ContactCardProps) {
   const [isHovered, setIsHovered] = useState(false);
+  const [copied, setCopied] = useState(false);
+  const [markingAsSent, setMarkingAsSent] = useState(false);
+
+  const handleCopyEmail = async (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (!contact.email) return;
+
+    try {
+      await navigator.clipboard.writeText(contact.email);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+      onQuickCopy?.(contact);
+    } catch (err) {
+      console.error('Failed to copy:', err);
+    }
+  };
+
+  const handleMarkAsSent = async (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (markingAsSent || contact.status !== 'identified') return;
+
+    setMarkingAsSent(true);
+    try {
+      await onMarkAsSent?.(contact);
+    } finally {
+      setMarkingAsSent(false);
+    }
+  };
 
   const roleLabels: Record<string, string> = {
     analyst: 'Analyst',
@@ -132,10 +162,58 @@ export function ContactCard({ contact, onEdit, onGenerateEmail }: ContactCardPro
           borderTop: '1px solid rgba(10, 10, 10, 0.06)',
           display: 'flex',
           gap: 8,
+          flexWrap: 'wrap',
           opacity: isHovered ? 1 : 0,
           transition: 'opacity 150ms ease',
         }}
       >
+        {/* Quick copy email button */}
+        {contact.email && (
+          <button
+            onClick={handleCopyEmail}
+            style={{
+              padding: '6px 12px',
+              borderRadius: 6,
+              border: copied
+                ? '1px solid rgba(34, 197, 94, 0.5)'
+                : '1px solid rgba(65, 109, 137, 0.3)',
+              background: copied
+                ? 'rgba(34, 197, 94, 0.1)'
+                : 'rgba(65, 109, 137, 0.08)',
+              color: copied ? '#16a34a' : '#416D89',
+              fontSize: 12,
+              fontWeight: 500,
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              gap: 4,
+            }}
+          >
+            {copied ? 'Copied!' : 'Copy Email'}
+          </button>
+        )}
+
+        {/* Mark as sent button - only show for 'identified' status */}
+        {contact.status === 'identified' && onMarkAsSent && (
+          <button
+            onClick={handleMarkAsSent}
+            disabled={markingAsSent}
+            style={{
+              padding: '6px 12px',
+              borderRadius: 6,
+              border: '1px solid rgba(34, 197, 94, 0.3)',
+              background: 'rgba(34, 197, 94, 0.08)',
+              color: '#16a34a',
+              fontSize: 12,
+              fontWeight: 500,
+              cursor: markingAsSent ? 'not-allowed' : 'pointer',
+              opacity: markingAsSent ? 0.6 : 1,
+            }}
+          >
+            {markingAsSent ? 'Updating...' : 'Mark as Sent'}
+          </button>
+        )}
+
         <button
           onClick={(e) => {
             e.stopPropagation();

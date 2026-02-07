@@ -130,6 +130,136 @@ export const contactRoleEnum = pgEnum('contact_role', [
   'other',
 ]);
 
+export const emailFormatTypeEnum = pgEnum('email_format_type', [
+  'first.last',     // john.doe@bank.com
+  'flast',          // jdoe@bank.com
+  'firstlast',      // johndoe@bank.com
+  'first_last',     // john_doe@bank.com
+  'lastf',          // doej@bank.com
+  'first',          // john@bank.com
+]);
+
+export const outreachActivityTypeEnum = pgEnum('outreach_activity_type', [
+  'contact_added',
+  'email_sent',
+  'response_received',
+  'call_scheduled',
+  'call_completed',
+  'became_advocate',
+]);
+
+export const achievementTypeEnum = pgEnum('achievement_type', [
+  // Milestones
+  'first_contact',
+  'first_10_emails',
+  'contacts_50',
+  'emails_100',
+  // Consistency
+  'streak_2_weeks',
+  'streak_4_weeks',
+  'streak_8_weeks',
+  'streak_12_weeks',
+  // Volume
+  'contacts_10',
+  'contacts_25',
+  'contacts_100',
+  'emails_25',
+  'emails_50',
+  'emails_200',
+]);
+
+// ─────────────────────────────────────────────────────────────
+// BANK EMAIL FORMATS
+// ─────────────────────────────────────────────────────────────
+
+export const bankEmailFormats = pgTable(
+  'bank_email_formats',
+  {
+    id: uuid('id').primaryKey().defaultRandom(),
+    bankName: text('bank_name').notNull(),
+    bankNameNormalized: text('bank_name_normalized').notNull(), // lowercase, no spaces
+    emailFormat: emailFormatTypeEnum('email_format').notNull(),
+    domain: text('domain').notNull(), // e.g., gs.com, morganstanley.com
+    aliases: jsonb('aliases').default(sql`'[]'::jsonb`), // alternate bank names
+    isVerified: boolean('is_verified').notNull().default(false),
+    createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
+    updatedAt: timestamp('updated_at', { withTimezone: true }).notNull().defaultNow(),
+  },
+  (table) => [
+    uniqueIndex('idx_bank_email_formats_normalized').on(table.bankNameNormalized),
+    index('idx_bank_email_formats_domain').on(table.domain),
+  ]
+);
+
+// ─────────────────────────────────────────────────────────────
+// OUTREACH ACTIVITY LOG (for gamification)
+// ─────────────────────────────────────────────────────────────
+
+export const outreachActivityLog = pgTable(
+  'outreach_activity_log',
+  {
+    id: uuid('id').primaryKey().defaultRandom(),
+    userId: text('user_id').notNull(),
+    activityType: outreachActivityTypeEnum('activity_type').notNull(),
+    contactId: uuid('contact_id').references(() => outreachContacts.id, { onDelete: 'set null' }),
+    pointsEarned: integer('points_earned').notNull().default(0),
+    occurredAt: timestamp('occurred_at', { withTimezone: true }).notNull().defaultNow(),
+    weekId: text('week_id').notNull(), // ISO week format: '2024-W05'
+  },
+  (table) => [
+    index('idx_activity_log_user').on(table.userId),
+    index('idx_activity_log_week').on(table.userId, table.weekId),
+    index('idx_activity_log_occurred').on(table.userId, table.occurredAt),
+  ]
+);
+
+// ─────────────────────────────────────────────────────────────
+// USER ACHIEVEMENTS
+// ─────────────────────────────────────────────────────────────
+
+export const userAchievements = pgTable(
+  'user_achievements',
+  {
+    id: uuid('id').primaryKey().defaultRandom(),
+    userId: text('user_id').notNull(),
+    achievementType: achievementTypeEnum('achievement_type').notNull(),
+    earnedAt: timestamp('earned_at', { withTimezone: true }).notNull().defaultNow(),
+    rewardUnlocked: text('reward_unlocked'), // Optional reward description
+    celebrationShown: boolean('celebration_shown').notNull().default(false),
+  },
+  (table) => [
+    uniqueIndex('idx_user_achievements_unique').on(table.userId, table.achievementType),
+    index('idx_user_achievements_user').on(table.userId),
+  ]
+);
+
+// ─────────────────────────────────────────────────────────────
+// OUTREACH WEEKLY STATS (aggregation for performance)
+// ─────────────────────────────────────────────────────────────
+
+export const outreachWeeklyStats = pgTable(
+  'outreach_weekly_stats',
+  {
+    id: uuid('id').primaryKey().defaultRandom(),
+    userId: text('user_id').notNull(),
+    weekId: text('week_id').notNull(), // ISO week format: '2024-W05'
+    contactsAdded: integer('contacts_added').notNull().default(0),
+    emailsSent: integer('emails_sent').notNull().default(0),
+    responsesReceived: integer('responses_received').notNull().default(0),
+    callsScheduled: integer('calls_scheduled').notNull().default(0),
+    callsCompleted: integer('calls_completed').notNull().default(0),
+    advocatesGained: integer('advocates_gained').notNull().default(0),
+    totalPoints: integer('total_points').notNull().default(0),
+    activeDays: jsonb('active_days').default(sql`'[]'::jsonb`), // Array of day numbers (0-6)
+    createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
+    updatedAt: timestamp('updated_at', { withTimezone: true }).notNull().defaultNow(),
+  },
+  (table) => [
+    uniqueIndex('idx_weekly_stats_user_week').on(table.userId, table.weekId),
+    index('idx_weekly_stats_user').on(table.userId),
+  ]
+);
+
 // ─────────────────────────────────────────────────────────────
 // INTERVIEW ATTEMPTS
 // ─────────────────────────────────────────────────────────────
@@ -489,6 +619,17 @@ export const outreachContacts = pgTable(
     email: text('email'), // Optional - user may not have it yet
     linkedinUrl: text('linkedin_url'), // LinkedIn profile URL for fetching context
 
+    // New: Parsed name fields for email generation
+    firstName: text('first_name'),
+    lastName: text('last_name'),
+
+    // New: Email generation tracking
+    emailGenerated: boolean('email_generated').notNull().default(false), // Was email auto-generated?
+    emailVerified: boolean('email_verified').notNull().default(false), // Has user verified/corrected email?
+
+    // New: Import batch tracking
+    importBatchId: uuid('import_batch_id'), // Links contacts from same import
+
     // Connection context
     connectionType: connectionTypeEnum('connection_type'),
     connectionNote: text('connection_note'), // "Met at GS info session", "Referred by John"
@@ -510,6 +651,7 @@ export const outreachContacts = pgTable(
     index('idx_outreach_contacts_user').on(table.userId),
     index('idx_outreach_contacts_follow_up').on(table.userId, table.followUpDue),
     index('idx_outreach_contacts_status').on(table.userId, table.status),
+    index('idx_outreach_contacts_import_batch').on(table.importBatchId),
   ]
 );
 
@@ -529,6 +671,8 @@ export const outreachSettings = pgTable(
     userYear: text('user_year'), // "Junior", "Senior", etc.
     userMajor: text('user_major'),
     userInterest: text('user_interest'), // "Tech coverage", "Healthcare M&A", etc.
+    userPreviousExperience: text('user_previous_experience'), // "Goldman Sachs SA '24, Deloitte intern '23"
+    userHometown: text('user_hometown'), // "Dallas, TX" for regional connections
 
     // Rate limiting
     emailGenerationsToday: integer('email_generations_today').notNull().default(0),
@@ -704,3 +848,15 @@ export type NewPurchase = typeof purchases.$inferInsert;
 
 export type AdminAction = typeof adminActions.$inferSelect;
 export type NewAdminAction = typeof adminActions.$inferInsert;
+
+export type BankEmailFormat = typeof bankEmailFormats.$inferSelect;
+export type NewBankEmailFormat = typeof bankEmailFormats.$inferInsert;
+
+export type OutreachActivityLog = typeof outreachActivityLog.$inferSelect;
+export type NewOutreachActivityLog = typeof outreachActivityLog.$inferInsert;
+
+export type UserAchievement = typeof userAchievements.$inferSelect;
+export type NewUserAchievement = typeof userAchievements.$inferInsert;
+
+export type OutreachWeeklyStats = typeof outreachWeeklyStats.$inferSelect;
+export type NewOutreachWeeklyStats = typeof outreachWeeklyStats.$inferInsert;

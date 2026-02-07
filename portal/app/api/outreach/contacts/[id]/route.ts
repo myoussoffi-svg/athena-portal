@@ -9,6 +9,7 @@ import {
   calculateFollowUpDue,
   type OutreachStatus,
 } from '@/lib/outreach/status-machine';
+import { logActivity } from '@/lib/outreach/activity-logger';
 
 type RouteParams = { params: Promise<{ id: string }> };
 
@@ -135,6 +136,27 @@ export async function PATCH(request: NextRequest, { params }: RouteParams) {
         and(eq(outreachContacts.id, id), eq(outreachContacts.userId, userId))
       )
       .returning();
+
+    // Log activity for gamification based on status change
+    if (data.status && data.status !== existing.status) {
+      switch (data.status) {
+        case 'contacted':
+          await logActivity(userId, 'email_sent', id);
+          break;
+        case 'responded':
+          await logActivity(userId, 'response_received', id);
+          break;
+        case 'scheduled':
+          await logActivity(userId, 'call_scheduled', id);
+          break;
+        case 'spoke':
+          await logActivity(userId, 'call_completed', id);
+          break;
+        case 'advocate':
+          await logActivity(userId, 'became_advocate', id);
+          break;
+      }
+    }
 
     return NextResponse.json(updated);
   } catch (error) {

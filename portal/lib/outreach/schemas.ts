@@ -90,6 +90,8 @@ export const updateSettingsSchema = z.object({
   userYear: z.string().max(50).optional(),
   userMajor: z.string().max(100).optional(),
   userInterest: z.string().max(200).optional(),
+  userPreviousExperience: z.string().max(500).optional(), // "Goldman Sachs SA '24, Deloitte intern '23"
+  userHometown: z.string().max(100).optional(), // "Dallas, TX"
 });
 
 export type UpdateSettingsInput = z.infer<typeof updateSettingsSchema>;
@@ -153,4 +155,160 @@ export interface ContactWithMeta {
   updatedAt: string;
   isFollowUpDue: boolean;
   daysSinceContact: number | null;
+  // New fields for bulk import
+  firstName: string | null;
+  lastName: string | null;
+  emailGenerated: boolean;
+  emailVerified: boolean;
+  importBatchId: string | null;
+}
+
+// ─────────────────────────────────────────────────────────────
+// BULK IMPORT SCHEMAS
+// ─────────────────────────────────────────────────────────────
+
+export const importContactRowSchema = z.object({
+  firstName: z.string().min(1),
+  lastName: z.string().min(1),
+  bank: z.string().min(1),
+  role: z.string().optional(),
+  email: z.string().email().optional().or(z.literal('')),
+  linkedinUrl: z.string().url().optional().or(z.literal('')),
+  connectionType: z.string().optional(),
+  notes: z.string().optional(),
+});
+
+export type ImportContactRow = z.infer<typeof importContactRowSchema>;
+
+export interface ImportPreviewRow extends ImportContactRow {
+  rowNumber: number;
+  generatedEmail: string | null;
+  emailConfidence: 'high' | 'medium' | 'low';
+  bankMatched: boolean;
+  errors: string[];
+  warnings: string[];
+}
+
+export interface ImportPreviewResponse {
+  rows: ImportPreviewRow[];
+  totalRows: number;
+  validRows: number;
+  errorRows: number;
+  banksMatched: number;
+  banksUnmatched: string[];
+}
+
+export const confirmImportSchema = z.object({
+  rows: z.array(z.object({
+    firstName: z.string(),
+    lastName: z.string(),
+    bank: z.string(),
+    email: z.string().optional(),
+    role: z.string().optional(),
+    linkedinUrl: z.string().optional(),
+    connectionType: z.string().optional(),
+    notes: z.string().optional(),
+    useGeneratedEmail: z.boolean().default(true),
+  })),
+});
+
+export type ConfirmImportInput = z.infer<typeof confirmImportSchema>;
+
+// ─────────────────────────────────────────────────────────────
+// GAMIFICATION SCHEMAS
+// ─────────────────────────────────────────────────────────────
+
+export const outreachActivityTypes = [
+  'contact_added',
+  'email_sent',
+  'response_received',
+  'call_scheduled',
+  'call_completed',
+  'became_advocate',
+] as const;
+
+export type OutreachActivityType = typeof outreachActivityTypes[number];
+
+export const achievementTypes = [
+  // Milestones
+  'first_contact',
+  'first_10_emails',
+  'contacts_50',
+  'emails_100',
+  // Consistency
+  'streak_2_weeks',
+  'streak_4_weeks',
+  'streak_8_weeks',
+  'streak_12_weeks',
+  // Volume
+  'contacts_10',
+  'contacts_25',
+  'contacts_100',
+  'emails_25',
+  'emails_50',
+  'emails_200',
+] as const;
+
+export type AchievementType = typeof achievementTypes[number];
+
+export interface GamificationStats {
+  totalPoints: number;
+  currentWeekPoints: number;
+  currentStreak: number; // Consecutive active weeks
+  longestStreak: number;
+  totalContactsAdded: number;
+  totalEmailsSent: number;
+  totalResponses: number;
+  totalCalls: number;
+  achievements: Achievement[];
+  nextMilestone: NextMilestone | null;
+  weeklyActivity: WeeklyActivity[];
+  uncelebratedAchievements?: Achievement[]; // Achievements that need celebration modal
+}
+
+export interface Achievement {
+  type: AchievementType;
+  earnedAt: string;
+  celebrationShown: boolean;
+  title: string;
+  description: string;
+  icon: string;
+}
+
+export interface NextMilestone {
+  type: AchievementType;
+  title: string;
+  description: string;
+  currentProgress: number;
+  targetProgress: number;
+  percentComplete: number;
+}
+
+export interface WeeklyActivity {
+  weekId: string;
+  weekLabel: string; // "Jan 15 - 21"
+  contactsAdded: number;
+  emailsSent: number;
+  points: number;
+  activeDays: number[];
+}
+
+export interface LeaderboardEntry {
+  rank: number;
+  userId: string;
+  displayName: string; // Anonymized or real name based on opt-in
+  totalPoints: number;
+  currentStreak: number;
+  isCurrentUser: boolean;
+}
+
+export interface LeaderboardResponse {
+  allTime: LeaderboardEntry[];
+  thisMonth: LeaderboardEntry[];
+  streaks: LeaderboardEntry[];
+  userRank: {
+    allTime: number | null;
+    thisMonth: number | null;
+    streaks: number | null;
+  };
 }

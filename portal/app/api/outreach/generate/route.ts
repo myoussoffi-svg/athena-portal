@@ -123,6 +123,8 @@ export async function POST(request: NextRequest) {
         year: settings?.userYear ?? null,
         major: settings?.userMajor ?? null,
         interest: settings?.userInterest ?? null,
+        previousExperience: settings?.userPreviousExperience ?? null,
+        hometown: settings?.userHometown ?? null,
       },
       additionalContext,
       linkedinProfile,

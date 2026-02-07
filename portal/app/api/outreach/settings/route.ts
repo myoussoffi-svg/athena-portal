@@ -26,6 +26,8 @@ export async function GET() {
         userYear: null,
         userMajor: null,
         userInterest: null,
+        userPreviousExperience: null,
+        userHometown: null,
       });
     }
 
@@ -35,6 +37,8 @@ export async function GET() {
       userYear: settings.userYear,
       userMajor: settings.userMajor,
       userInterest: settings.userInterest,
+      userPreviousExperience: settings.userPreviousExperience,
+      userHometown: settings.userHometown,
     });
   } catch (error) {
     console.error('Error fetching settings:', error);
@@ -75,6 +79,8 @@ export async function PATCH(request: NextRequest) {
         userYear: data.userYear ?? null,
         userMajor: data.userMajor ?? null,
         userInterest: data.userInterest ?? null,
+        userPreviousExperience: data.userPreviousExperience ?? null,
+        userHometown: data.userHometown ?? null,
       })
       .onConflictDoUpdate({
         target: outreachSettings.userId,
@@ -84,6 +90,8 @@ export async function PATCH(request: NextRequest) {
           userYear: data.userYear ?? undefined,
           userMajor: data.userMajor ?? undefined,
           userInterest: data.userInterest ?? undefined,
+          userPreviousExperience: data.userPreviousExperience ?? undefined,
+          userHometown: data.userHometown ?? undefined,
           updatedAt: new Date(),
         },
       })
@@ -95,6 +103,8 @@ export async function PATCH(request: NextRequest) {
       userYear: settings.userYear,
       userMajor: settings.userMajor,
       userInterest: settings.userInterest,
+      userPreviousExperience: settings.userPreviousExperience,
+      userHometown: settings.userHometown,
     });
   } catch (error) {
     console.error('Error updating settings:', error);
