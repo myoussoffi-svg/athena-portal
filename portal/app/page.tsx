@@ -96,11 +96,6 @@ export default function HomePage() {
           text-decoration: none;
           color: inherit;
           display: block;
-          transition: all 0.3s ease;
-        }
-        .featured-card:hover {
-          transform: translateY(-4px);
-          box-shadow: 0 30px 80px rgba(0, 0, 0, 0.15);
         }
         .featured-header {
           background: linear-gradient(135deg, #416D89 0%, #2d4a5e 100%);
@@ -156,6 +151,11 @@ export default function HomePage() {
           text-transform: uppercase;
           letter-spacing: 0.5px;
         }
+        .featured-ctas {
+          display: flex;
+          gap: 12px;
+          flex-wrap: wrap;
+        }
         .featured-cta {
           display: inline-flex;
           align-items: center;
@@ -167,14 +167,24 @@ export default function HomePage() {
           font-size: 15px;
           font-weight: 600;
           transition: all 0.2s ease;
+          text-decoration: none;
         }
-        .featured-card:hover .featured-cta {
+        .featured-cta:hover {
           background: #3a6179;
+        }
+        .featured-cta.secondary {
+          background: transparent;
+          border: 2px solid rgba(65, 109, 137, 0.3);
+          color: #416D89;
+        }
+        .featured-cta.secondary:hover {
+          border-color: #416D89;
+          background: rgba(65, 109, 137, 0.05);
         }
         .featured-cta-arrow {
           transition: transform 0.2s ease;
         }
-        .featured-card:hover .featured-cta-arrow {
+        .featured-cta:hover .featured-cta-arrow {
           transform: translateX(4px);
         }
 
@@ -339,7 +349,7 @@ export default function HomePage() {
         {/* Featured Course */}
         {primaryTrack ? (
           <div className="featured-section">
-            <Link href={`/track/${primaryTrack.slug}`} className="featured-card">
+            <div className="featured-card">
               <div className="featured-header">
                 <span className="featured-badge">Featured Course</span>
                 <h2 className="featured-title">{primaryTrack.title}</h2>
@@ -365,12 +375,17 @@ export default function HomePage() {
                     <span className="featured-stat-label">Interview Sim</span>
                   </div>
                 </div>
-                <span className="featured-cta">
-                  Start Learning
-                  <span className="featured-cta-arrow">→</span>
-                </span>
+                <div className="featured-ctas">
+                  <Link href="/preview/ib" className="featured-cta">
+                    Learn More
+                    <span className="featured-cta-arrow">→</span>
+                  </Link>
+                  <Link href="/courses/investment-banking-interview-prep" className="featured-cta secondary">
+                    Enroll Now — $250
+                  </Link>
+                </div>
               </div>
-            </Link>
+            </div>
           </div>
         ) : (
           <div className="empty-state">

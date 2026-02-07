@@ -1926,7 +1926,7 @@ export default function PreviewPage() {
           {/* CTA Section */}
           <section className="cta-section">
             <div className="cta-price-note">One-time payment</div>
-            <div className="cta-price">$265</div>
+            <div className="cta-price">$250</div>
             <p className="cta-subtitle">Lifetime access. No subscriptions. All future updates included.</p>
 
             <Link href="/courses/investment-banking-interview-prep" className="cta-button">
