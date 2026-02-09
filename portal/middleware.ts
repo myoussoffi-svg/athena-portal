@@ -1,42 +1,44 @@
-import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server';
+import { clerkMiddleware } from '@clerk/nextjs/server';
 
-// Define public routes that don't require authentication
-const isPublicRoute = createRouteMatcher([
-  '/',
-  '/sign-in(.*)',
-  '/sign-up(.*)',
-  '/preview(.*)',   // Course preview pages for prospective buyers
-  '/courses(.*)',   // Course purchase pages
-  '/track(.*)',     // Course content is public for now
-  '/api/inngest(.*)',
-  '/api/stripe/webhook(.*)',
-  '/terms',
-  '/privacy',
-  '/refund-policy',
-]);
+// Simple function to check if a route is public
+function isPublicRoute(pathname: string): boolean {
+  // Exact matches
+  const exactPublic = ['/', '/terms', '/privacy', '/refund-policy'];
+  if (exactPublic.includes(pathname)) return true;
 
-// Define API routes that require authentication
-const isProtectedApiRoute = createRouteMatcher([
-  '/api/interview(.*)',
-  '/api/admin(.*)',
-]);
+  // Prefix matches
+  const prefixPublic = ['/sign-in', '/sign-up', '/preview', '/courses', '/track', '/api/inngest', '/api/stripe/webhook'];
+  for (const prefix of prefixPublic) {
+    if (pathname.startsWith(prefix)) return true;
+  }
+
+  return false;
+}
+
+// Protected API routes
+function isProtectedApiRoute(pathname: string): boolean {
+  return pathname.startsWith('/api/interview') || pathname.startsWith('/api/admin');
+}
 
 export default clerkMiddleware(async (auth, request) => {
-  // Protect API routes
-  if (isProtectedApiRoute(request)) {
+  const pathname = request.nextUrl.pathname;
+
+  // Protect API routes that require auth
+  if (isProtectedApiRoute(pathname)) {
     await auth.protect();
+    return;
   }
 
   // For non-public routes, require auth
-  if (!isPublicRoute(request)) {
+  if (!isPublicRoute(pathname)) {
     await auth.protect();
   }
 });
 
 export const config = {
   matcher: [
-    // Skip Next.js internals, static files, and public marketing pages
-    '/((?!_next|preview|courses|[^?]*\\.(?:html?|css|js(?!on)|jpe?g|webp|png|gif|svg|ttf|woff2?|ico|csv|docx?|xlsx?|zip|webmanifest)).*)',
+    // Skip Next.js internals and static files
+    '/((?!_next|[^?]*\\.(?:html?|css|js(?!on)|jpe?g|webp|png|gif|svg|ttf|woff2?|ico|csv|docx?|xlsx?|zip|webmanifest)).*)',
     // Always run for API routes
     '/(api|trpc)(.*)',
   ],
