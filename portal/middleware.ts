@@ -13,6 +13,7 @@ const isPublicRoute = createRouteMatcher([
   '/refund-policy',
   '/api/inngest(.*)',
   '/api/stripe/webhook(.*)',
+  '/api/clerk/webhook(.*)',
 ]);
 
 // Protected API routes that always require authentication
