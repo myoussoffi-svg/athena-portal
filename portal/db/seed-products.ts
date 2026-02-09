@@ -19,7 +19,7 @@ const PRODUCTS = [
     slug: 'investment-banking-interview-prep',
     name: 'Investment Banking Interview Prep',
     description: 'Comprehensive preparation for investment banking analyst interviews. Includes technical questions, behavioral prep, resume feedback, and mock interview practice.',
-    priceUsdCents: 26500, // $265.00
+    priceUsdCents: 25000, // $250.00
     grantedTrackSlugs: ['investment-banking-interview-prep'], // Track slug that this product grants access to
     isActive: true,
   },

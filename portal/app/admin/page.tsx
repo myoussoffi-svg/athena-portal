@@ -75,7 +75,7 @@ export default function AdminPage() {
               textAlign: 'left',
             }}
           >
-            Grant: Investment Banking Interview Prep ($265)
+            Grant: Investment Banking Interview Prep ($250)
           </button>
 
           <button

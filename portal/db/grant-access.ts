@@ -49,7 +49,7 @@ async function grant() {
   const [newPurchase] = await db.insert(purchases).values({
     userId: userId,
     productId: product.id,
-    amountPaidCents: 26500,
+    amountPaidCents: 25000,
     status: 'active',
     purchasedAt: new Date(),
   }).returning();
