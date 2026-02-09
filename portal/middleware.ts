@@ -1,36 +1,36 @@
-import { clerkMiddleware } from '@clerk/nextjs/server';
+import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server';
 
-// Simple function to check if a route is public
-function isPublicRoute(pathname: string): boolean {
-  // Exact matches
-  const exactPublic = ['/', '/terms', '/privacy', '/refund-policy'];
-  if (exactPublic.includes(pathname)) return true;
+// Public routes that don't require authentication
+const isPublicRoute = createRouteMatcher([
+  '/',
+  '/sign-in(.*)',
+  '/sign-up(.*)',
+  '/preview(.*)',
+  '/courses(.*)',
+  '/track(.*)',
+  '/terms',
+  '/privacy',
+  '/refund-policy',
+  '/api/inngest(.*)',
+  '/api/stripe/webhook(.*)',
+]);
 
-  // Prefix matches
-  const prefixPublic = ['/sign-in', '/sign-up', '/preview', '/courses', '/track', '/api/inngest', '/api/stripe/webhook'];
-  for (const prefix of prefixPublic) {
-    if (pathname.startsWith(prefix)) return true;
-  }
-
-  return false;
-}
-
-// Protected API routes
-function isProtectedApiRoute(pathname: string): boolean {
-  return pathname.startsWith('/api/interview') || pathname.startsWith('/api/admin');
-}
+// Protected API routes that always require authentication
+const isProtectedRoute = createRouteMatcher([
+  '/api/interview(.*)',
+  '/api/admin(.*)',
+  '/admin(.*)',
+]);
 
 export default clerkMiddleware(async (auth, request) => {
-  const pathname = request.nextUrl.pathname;
-
-  // Protect API routes that require auth
-  if (isProtectedApiRoute(pathname)) {
+  // Always protect these routes
+  if (isProtectedRoute(request)) {
     await auth.protect();
     return;
   }
 
-  // For non-public routes, require auth
-  if (!isPublicRoute(pathname)) {
+  // Protect non-public routes
+  if (!isPublicRoute(request)) {
     await auth.protect();
   }
 });
