@@ -5,6 +5,8 @@ const isPublicRoute = createRouteMatcher([
   '/',
   '/sign-in(.*)',
   '/sign-up(.*)',
+  '/preview(.*)', // Course preview pages for prospective buyers
+  '/courses(.*)', // Course purchase pages
   '/track(.*)', // Course content is public for now
   '/api/inngest(.*)', // Inngest webhook endpoint
   '/api/stripe/webhook(.*)', // Stripe webhook endpoint
