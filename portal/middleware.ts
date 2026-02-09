@@ -5,15 +5,11 @@ const isPublicRoute = createRouteMatcher([
   '/',
   '/sign-in(.*)',
   '/sign-up(.*)',
-  '/preview/(.*)', // Course preview pages for prospective buyers
-  '/preview',
-  '/courses/(.*)', // Course purchase pages
-  '/courses',
-  '/track/(.*)', // Course content is public for now
-  '/track',
-  '/api/inngest(.*)', // Inngest webhook endpoint
-  '/api/stripe/webhook(.*)', // Stripe webhook endpoint
-  // Legal pages
+  '/preview(.*)',   // Course preview pages for prospective buyers
+  '/courses(.*)',   // Course purchase pages
+  '/track(.*)',     // Course content is public for now
+  '/api/inngest(.*)',
+  '/api/stripe/webhook(.*)',
   '/terms',
   '/privacy',
   '/refund-policy',
@@ -39,8 +35,8 @@ export default clerkMiddleware(async (auth, request) => {
 
 export const config = {
   matcher: [
-    // Skip Next.js internals and static files
-    '/((?!_next|[^?]*\\.(?:html?|css|js(?!on)|jpe?g|webp|png|gif|svg|ttf|woff2?|ico|csv|docx?|xlsx?|zip|webmanifest)).*)',
+    // Skip Next.js internals, static files, and public marketing pages
+    '/((?!_next|preview|courses|[^?]*\\.(?:html?|css|js(?!on)|jpe?g|webp|png|gif|svg|ttf|woff2?|ico|csv|docx?|xlsx?|zip|webmanifest)).*)',
     // Always run for API routes
     '/(api|trpc)(.*)',
   ],
