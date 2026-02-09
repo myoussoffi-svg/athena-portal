@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SignedIn, SignedOut } from "@clerk/nextjs";
 import { getTracks } from "@/lib/content";
 import { isTrackVisible } from "@/lib/feature-flags";
 import { GlobalStyles, AthenaMark } from "@/components/ui";
@@ -41,6 +42,38 @@ export default function HomePage() {
           min-height: 100vh;
           background: #FAFAFA;
           font-family: Inter, system-ui, sans-serif;
+        }
+
+        /* Top Nav */
+        .top-nav {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          display: flex;
+          justify-content: flex-end;
+          padding: 20px 24px;
+          z-index: 10;
+        }
+        .nav-link {
+          color: rgba(255, 255, 255, 0.8);
+          text-decoration: none;
+          font-size: 14px;
+          font-weight: 500;
+          padding: 8px 16px;
+          border-radius: 6px;
+          transition: all 0.2s ease;
+        }
+        .nav-link:hover {
+          color: white;
+          background: rgba(255, 255, 255, 0.1);
+        }
+        .nav-link.primary {
+          background: rgba(255, 255, 255, 0.15);
+          border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .nav-link.primary:hover {
+          background: rgba(255, 255, 255, 0.25);
         }
 
         /* Hero Section */
@@ -334,6 +367,20 @@ export default function HomePage() {
       <div className="tracks-page">
         {/* Hero Section */}
         <div className="tracks-hero">
+          {/* Top Navigation */}
+          <div className="top-nav">
+            <SignedOut>
+              <Link href="/sign-in" className="nav-link primary">
+                Sign In
+              </Link>
+            </SignedOut>
+            <SignedIn>
+              <Link href="/track/investment-banking-interview-prep" className="nav-link primary">
+                Go to Course
+              </Link>
+            </SignedIn>
+          </div>
+
           <div className="tracks-hero-inner">
             <div className="tracks-logo">
               <AthenaMark size={18} tone="white" align="center" />
