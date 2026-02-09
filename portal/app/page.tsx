@@ -1,8 +1,12 @@
 import Link from "next/link";
-import { SignedIn, SignedOut } from "@clerk/nextjs";
+import { auth } from "@clerk/nextjs/server";
 import { getTracks } from "@/lib/content";
 import { isTrackVisible } from "@/lib/feature-flags";
+import { checkTrackAccess } from "@/lib/access-control";
 import { GlobalStyles, AthenaMark } from "@/components/ui";
+
+// Force dynamic rendering since we check auth
+export const dynamic = 'force-dynamic';
 
 // Course metadata for display
 const courseInfo: Record<string, { description: string; stats: { lessons: string; modules: string } }> = {
@@ -20,8 +24,17 @@ const courseInfo: Record<string, { description: string; stats: { lessons: string
   }
 };
 
-export default function HomePage() {
+export default async function HomePage() {
   const allTracks = getTracks();
+
+  // Check if user is authenticated and has course access
+  const { userId } = await auth();
+  let hasAccess = false;
+
+  if (userId) {
+    const accessResult = await checkTrackAccess(userId, 'investment-banking-interview-prep');
+    hasAccess = accessResult.hasAccess;
+  }
 
   // Get the primary course (IB) - always available
   const primaryTrack = allTracks.find(t => t.slug === 'investment-banking-interview-prep');
@@ -369,16 +382,19 @@ export default function HomePage() {
         <div className="tracks-hero">
           {/* Top Navigation */}
           <div className="top-nav">
-            <SignedOut>
+            {!userId ? (
               <Link href="/sign-in" className="nav-link primary">
                 Sign In
               </Link>
-            </SignedOut>
-            <SignedIn>
+            ) : hasAccess ? (
               <Link href="/track/investment-banking-interview-prep" className="nav-link primary">
                 Go to Course
               </Link>
-            </SignedIn>
+            ) : (
+              <Link href="/sign-in" className="nav-link">
+                My Account
+              </Link>
+            )}
           </div>
 
           <div className="tracks-hero-inner">
