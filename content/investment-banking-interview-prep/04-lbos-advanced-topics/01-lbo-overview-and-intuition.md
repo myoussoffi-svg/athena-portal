@@ -5,7 +5,7 @@ order: 1
 estimated_minutes: 30
 video:
   provider: youtube
-  id: pm19_7lto7E
+  id: 1830Bmi3Ovk
 ---
 
 # LBO Overview and Intuition
