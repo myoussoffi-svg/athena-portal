@@ -28,12 +28,21 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Athena",
     url: 'https://learn.athena.pe',
+    images: [
+      {
+        url: '/api/og',
+        width: 1200,
+        height: 630,
+        alt: 'Athena - Master Your Finance Interview',
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Athena - Master Your Finance Interview",
     description:
       "Master investment banking interviews with structured preparation, AI-powered mock interviews, and realistic practice.",
+    images: ['/api/og'],
   },
   robots: {
     index: true,
