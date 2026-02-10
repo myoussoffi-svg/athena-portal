@@ -14,24 +14,26 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://learn.athena.pe'),
   title: {
-    default: "Athena Portal",
-    template: "%s | Athena Portal",
+    default: "Athena - Master Your Finance Interview",
+    template: "%s | Athena",
   },
   description:
-    "Master investment banking and private equity interviews with structured preparation, AI-powered feedback, and realistic practice.",
+    "Master investment banking interviews with structured preparation, AI-powered mock interviews, and realistic practice. Built by finance professionals.",
   openGraph: {
-    title: "Athena Portal",
+    title: "Athena - Master Your Finance Interview",
     description:
-      "Master investment banking and private equity interviews with structured preparation, AI-powered feedback, and realistic practice.",
+      "Master investment banking interviews with structured preparation, AI-powered mock interviews, and realistic practice.",
     type: "website",
-    siteName: "Athena Portal",
+    siteName: "Athena",
+    url: 'https://learn.athena.pe',
   },
   twitter: {
     card: "summary_large_image",
-    title: "Athena Portal",
+    title: "Athena - Master Your Finance Interview",
     description:
-      "Master investment banking and private equity interviews with structured preparation, AI-powered feedback, and realistic practice.",
+      "Master investment banking interviews with structured preparation, AI-powered mock interviews, and realistic practice.",
   },
   robots: {
     index: true,
