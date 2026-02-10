@@ -21,6 +21,10 @@ export const metadata: Metadata = {
   },
   description:
     "Master investment banking interviews with structured preparation, AI-powered mock interviews, and realistic practice. Built by finance professionals.",
+  icons: {
+    icon: '/api/icon',
+    apple: '/api/icon',
+  },
   openGraph: {
     title: "Athena - Master Your Finance Interview",
     description:
