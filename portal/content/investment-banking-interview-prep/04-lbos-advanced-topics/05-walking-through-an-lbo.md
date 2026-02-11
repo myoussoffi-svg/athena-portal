@@ -3,6 +3,9 @@ id: walking-through-an-lbo
 title: Walking Through an LBO
 order: 5
 estimated_minutes: 40
+video:
+  provider: youtube
+  id: hy-tLe2mE6M
 ---
 
 # Walking Through an LBO
