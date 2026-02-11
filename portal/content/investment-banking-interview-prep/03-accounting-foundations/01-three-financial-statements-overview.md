@@ -3,6 +3,9 @@ id: three-financial-statements-overview
 title: The Three Financial Statements Overview
 order: 1
 estimated_minutes: 25
+video:
+  provider: youtube
+  id: Rl7XSqcwKvE
 ---
 
 # The Three Financial Statements Overview
