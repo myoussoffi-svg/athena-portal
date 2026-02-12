@@ -8,7 +8,12 @@ const contentRoot = (() => {
   if (process.env.CONTENT_ROOT?.trim()) {
     return path.resolve(process.env.CONTENT_ROOT.trim());
   }
-  return path.resolve(process.cwd(), "content");
+  // Try ./content first (local dev), then ../content (Vercel with portal/ as root)
+  const localPath = path.resolve(process.cwd(), "content");
+  if (fs.existsSync(localPath)) {
+    return localPath;
+  }
+  return path.resolve(process.cwd(), "../content");
 })();
 export type Track = {
   id: string;
