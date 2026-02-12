@@ -3,6 +3,9 @@ id: lbo-returns-mechanics
 title: LBO Returns Mechanics and Calculation
 order: 2
 estimated_minutes: 30
+video:
+  provider: vimeo
+  id: "1164207537"
 ---
 
 # LBO Returns Mechanics and Calculation

@@ -3,6 +3,9 @@ id: sources-and-uses
 title: Sources and Uses in an LBO
 order: 3
 estimated_minutes: 25
+video:
+  provider: vimeo
+  id: "1164443005"
 ---
 
 # Sources and Uses in an LBO
