@@ -529,10 +529,76 @@ export const processResumeSubmission = inngest.createFunction(
   }
 );
 
+/**
+ * Clean up old resume files from R2.
+ * Runs daily at 4 AM.
+ * Deletes resume files and screenshots older than 7 days.
+ * This ensures compliance with our privacy policy retention period.
+ */
+export const cleanupOldResumes = inngest.createFunction(
+  { id: 'cleanup-old-resumes' },
+  { cron: '0 4 * * *' },
+  async ({ step }) => {
+    const sevenDaysAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);
+
+    // Find resume records older than 7 days that still have R2 files
+    const oldResumes = await step.run('find-old-resumes', async () => {
+      return db.query.resumeFeedback.findMany({
+        where: and(
+          lt(resumeFeedback.createdAt, sevenDaysAgo),
+          isNotNull(resumeFeedback.resumeObjectKey),
+          // Only get ones not yet deleted
+          sql`${resumeFeedback.r2DeletedAt} IS NULL`
+        ),
+      });
+    });
+
+    let deletedCount = 0;
+
+    for (const resume of oldResumes) {
+      await step.run(`delete-resume-${resume.id}`, async () => {
+        // Delete resume file from R2
+        if (resume.resumeObjectKey) {
+          try {
+            await deleteObject(resume.resumeObjectKey);
+          } catch (error) {
+            console.error(`Failed to delete resume ${resume.resumeObjectKey}:`, error);
+          }
+        }
+
+        // Delete screenshot from R2 if exists
+        if (resume.screenshotObjectKey) {
+          try {
+            await deleteObject(resume.screenshotObjectKey);
+          } catch (error) {
+            console.error(`Failed to delete screenshot ${resume.screenshotObjectKey}:`, error);
+          }
+        }
+
+        // Mark as deleted in DB
+        await db
+          .update(resumeFeedback)
+          .set({
+            resumeObjectKey: null,
+            screenshotObjectKey: null,
+            r2DeletedAt: new Date(),
+            updatedAt: new Date(),
+          })
+          .where(eq(resumeFeedback.id, resume.id));
+
+        deletedCount++;
+      });
+    }
+
+    return { deleted: deletedCount };
+  }
+);
+
 // Export all functions for the Inngest serve handler
 export const functions = [
   detectAbandonedAttempts,
   cleanupExpiredVideos,
+  cleanupOldResumes,
   processInterviewSubmission,
   processResumeSubmission,
 ];

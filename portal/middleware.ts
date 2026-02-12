@@ -10,6 +10,7 @@ const isPublicRoute = createRouteMatcher([
   '/track(.*)',
   '/terms',
   '/privacy',
+  '/security',
   '/refund-policy',
   '/api/inngest(.*)',
   '/api/stripe/webhook(.*)',
