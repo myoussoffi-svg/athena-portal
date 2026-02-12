@@ -14,40 +14,34 @@ export default function SecurityPage() {
       <div style={{ lineHeight: 1.7 }}>
         <section style={{ marginBottom: 32 }}>
           <h2 style={{ fontSize: 20, fontWeight: 600, marginBottom: 12 }}>Data Protection</h2>
+          <p style={{ marginBottom: 16 }}>
+            We implement industry-standard security measures to protect your information:
+          </p>
           <ul style={{ marginLeft: 24 }}>
-            <li><strong>Encryption in Transit:</strong> All data is transmitted over HTTPS/TLS</li>
-            <li><strong>Encryption at Rest:</strong> Database and file storage use AES-256 encryption</li>
-            <li><strong>Secure Authentication:</strong> Powered by Clerk with support for multi-factor authentication</li>
-            <li><strong>Payment Security:</strong> Handled by Stripe (PCI-DSS Level 1 compliant) - we never see your card details</li>
+            <li><strong>Encryption:</strong> All data is encrypted in transit (TLS) and at rest (AES-256)</li>
+            <li><strong>Authentication:</strong> Secure login with support for multi-factor authentication</li>
+            <li><strong>Payment Security:</strong> Payment processing is PCI-DSS Level 1 compliant - we never store card details</li>
           </ul>
         </section>
 
         <section style={{ marginBottom: 32 }}>
           <h2 style={{ fontSize: 20, fontWeight: 600, marginBottom: 12 }}>Data Minimization</h2>
+          <p style={{ marginBottom: 16 }}>
+            We only collect data necessary to provide our services, and we don&apos;t keep it longer than needed:
+          </p>
           <ul style={{ marginLeft: 24 }}>
-            <li><strong>Resume Files:</strong> Automatically deleted within 7 days of processing</li>
-            <li><strong>Interview Videos:</strong> Automatically deleted within 30 days</li>
-            <li><strong>No Unnecessary Data:</strong> We only collect information required to provide our services</li>
+            <li>Uploaded files are automatically deleted after processing</li>
+            <li>We retain only the feedback and scores you need for your preparation</li>
+            <li>You can request deletion of your data at any time</li>
           </ul>
         </section>
 
         <section style={{ marginBottom: 32 }}>
           <h2 style={{ fontSize: 20, fontWeight: 600, marginBottom: 12 }}>Infrastructure</h2>
-          <ul style={{ marginLeft: 24 }}>
-            <li><strong>Hosting:</strong> Vercel (SOC 2 Type II compliant)</li>
-            <li><strong>Database:</strong> Neon PostgreSQL (SOC 2 Type II compliant)</li>
-            <li><strong>File Storage:</strong> Cloudflare R2 with presigned URLs (no public access)</li>
-            <li><strong>AI Processing:</strong> Anthropic Claude (data not used for training)</li>
-          </ul>
-        </section>
-
-        <section style={{ marginBottom: 32 }}>
-          <h2 style={{ fontSize: 20, fontWeight: 600, marginBottom: 12 }}>Access Controls</h2>
-          <ul style={{ marginLeft: 24 }}>
-            <li><strong>Session Limits:</strong> Maximum 2 concurrent sessions per account</li>
-            <li><strong>Role-Based Access:</strong> Admin functions require explicit authorization</li>
-            <li><strong>Audit Logging:</strong> Administrative actions are logged for accountability</li>
-          </ul>
+          <p>
+            Our infrastructure is hosted on SOC 2 Type II compliant platforms with automatic
+            backups, DDoS protection, and 24/7 monitoring.
+          </p>
         </section>
 
         <section style={{ marginBottom: 32 }}>
