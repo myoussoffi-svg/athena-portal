@@ -19,6 +19,7 @@ import { ActionNeededPanel } from './ActionNeededPanel';
 import { BulkImportModal } from './BulkImportModal';
 import { GamificationDashboard } from './GamificationDashboard';
 import { ProfileSettingsModal } from './ProfileSettingsModal';
+import { ProfileCompletionPrompt } from './ProfileCompletionPrompt';
 
 type FilterStatus = OutreachStatus | 'all' | 'follow-up-due';
 
@@ -250,6 +251,9 @@ export function OutreachDashboard() {
           </div>
         </div>
       </div>
+
+      {/* Profile Completion Prompt */}
+      <ProfileCompletionPrompt onOpenSettings={() => setIsSettingsModalOpen(true)} />
 
       {/* Gamification Dashboard */}
       <GamificationDashboard />

@@ -7,6 +7,8 @@ export { AddContactModal } from './AddContactModal';
 export { EditContactModal } from './EditContactModal';
 export { EmailGenerator } from './EmailGenerator';
 export { OutreachDashboard } from './OutreachDashboard';
+export { ProfileSettingsModal } from './ProfileSettingsModal';
+export { ProfileCompletionPrompt } from './ProfileCompletionPrompt';
 
 // Bulk Import
 export { BulkImportModal } from './BulkImportModal';

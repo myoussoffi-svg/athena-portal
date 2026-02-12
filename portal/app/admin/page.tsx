@@ -109,6 +109,25 @@ export default function AdminPage() {
         )}
       </section>
 
+      <section style={{ marginBottom: 32 }}>
+        <h2 style={{ fontSize: 18, fontWeight: 600, marginBottom: 16 }}>User Management</h2>
+        <Link
+          href="/admin/users"
+          style={{
+            display: 'block',
+            padding: '12px 20px',
+            background: '#f5f5f5',
+            color: '#1a1a1a',
+            border: '1px solid #e5e5e5',
+            borderRadius: 8,
+            textDecoration: 'none',
+            fontSize: 14,
+          }}
+        >
+          View User Profiles & Outreach Data →
+        </Link>
+      </section>
+
       <section>
         <h2 style={{ fontSize: 18, fontWeight: 600, marginBottom: 16 }}>Quick Links</h2>
         <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>

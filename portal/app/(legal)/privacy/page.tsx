@@ -9,7 +9,7 @@ export default function PrivacyPolicyPage() {
   return (
     <div style={{ maxWidth: 720, margin: '0 auto', padding: '48px 24px' }}>
       <h1 style={{ fontSize: 32, fontWeight: 600, marginBottom: 8 }}>Privacy Policy</h1>
-      <p style={{ color: '#666', marginBottom: 32 }}>Last updated: January 2025</p>
+      <p style={{ color: '#666', marginBottom: 32 }}>Last updated: February 2025</p>
 
       <div style={{ lineHeight: 1.7 }}>
         <section style={{ marginBottom: 32 }}>
@@ -30,9 +30,11 @@ export default function PrivacyPolicyPage() {
           </h3>
           <ul style={{ marginLeft: 24, marginBottom: 16 }}>
             <li><strong>Account Information:</strong> Name, email address, and password when you create an account</li>
+            <li><strong>Profile Information:</strong> School, major, graduation year, career interests, experience level, hometown, and outreach preferences you provide to personalize your experience</li>
             <li><strong>Payment Information:</strong> Billing address and payment details (processed securely by Stripe)</li>
             <li><strong>Resume Data:</strong> Resumes you upload for feedback (processed and then deleted; we do not store resume text)</li>
             <li><strong>Interview Recordings:</strong> Video/audio from interview practice sessions</li>
+            <li><strong>Outreach Activity:</strong> Contacts you add and emails you generate using the outreach tracker</li>
             <li><strong>Communications:</strong> Messages you send to our support team</li>
           </ul>
 
@@ -53,9 +55,11 @@ export default function PrivacyPolicyPage() {
             <li>Provide and improve our educational services</li>
             <li>Process payments and maintain your account</li>
             <li>Provide AI-powered resume feedback and interview evaluation</li>
-            <li>Track your learning progress</li>
+            <li>Generate personalized outreach emails based on your profile and background</li>
+            <li>Track your learning progress and outreach activity</li>
+            <li>Facilitate mentorship connections and community features</li>
             <li>Send transactional emails (receipts, account updates)</li>
-            <li>Respond to your inquiries and support requests</li>
+            <li>Respond to your inquiries and provide support</li>
             <li>Analyze usage patterns to improve our platform</li>
             <li>Prevent fraud and ensure security</li>
           </ul>
@@ -80,6 +84,7 @@ export default function PrivacyPolicyPage() {
           <h2 style={{ fontSize: 20, fontWeight: 600, marginBottom: 12 }}>5. Data Sharing</h2>
           <p style={{ marginBottom: 16 }}>We do not sell your personal information. We may share data with:</p>
           <ul style={{ marginLeft: 24 }}>
+            <li><strong>Internal Team:</strong> Our team members may access your profile and activity data to provide support, facilitate mentorship connections, and improve our services</li>
             <li><strong>Service Providers:</strong> Stripe (payments), Clerk (authentication), Anthropic (AI processing), cloud hosting providers</li>
             <li><strong>Legal Requirements:</strong> When required by law or to protect our rights</li>
             <li><strong>Business Transfers:</strong> In connection with a merger, acquisition, or sale of assets</li>
