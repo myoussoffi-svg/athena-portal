@@ -1501,9 +1501,9 @@ export default function PreviewPage() {
 
             <div className="video-embed">
               <iframe
-                src="https://www.youtube.com/embed/pm19_7lto7E"
+                src="https://player.vimeo.com/video/1164202703?dnt=1&byline=0&portrait=0&title=0"
                 title="LBO Overview and Intuition"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="autoplay; fullscreen; picture-in-picture"
                 allowFullScreen
               />
             </div>
