@@ -147,10 +147,39 @@ export default function AdminUsersPage() {
         </Link>
       </div>
 
-      <h1 style={{ fontSize: 24, fontWeight: 600, marginBottom: 8 }}>User Profiles</h1>
-      <p style={{ color: '#666', marginBottom: 32 }}>
-        View user profiles, outreach activity, and settings.
-      </p>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 8 }}>
+        <div>
+          <h1 style={{ fontSize: 24, fontWeight: 600, marginBottom: 8 }}>User Profiles</h1>
+          <p style={{ color: '#666', marginBottom: 0 }}>
+            View user profiles, outreach activity, and settings.
+          </p>
+        </div>
+        <a
+          href="/api/admin/users/export"
+          download
+          style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: 8,
+            padding: '10px 16px',
+            background: '#16a34a',
+            color: 'white',
+            borderRadius: 8,
+            textDecoration: 'none',
+            fontSize: 14,
+            fontWeight: 500,
+            whiteSpace: 'nowrap',
+          }}
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+          </svg>
+          Export to Excel
+        </a>
+      </div>
+      <div style={{ marginBottom: 24 }} />
 
       {/* Search */}
       <div style={{ marginBottom: 24 }}>
