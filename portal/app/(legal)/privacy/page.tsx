@@ -34,7 +34,7 @@ export default function PrivacyPolicyPage() {
             <li><strong>Payment Information:</strong> Billing address and payment details (processed securely by Stripe)</li>
             <li><strong>Resume Data:</strong> Resumes you upload for feedback (processed and then deleted; we do not store resume text)</li>
             <li><strong>Interview Recordings:</strong> Video/audio from interview practice sessions</li>
-            <li><strong>Outreach Activity:</strong> Contacts you add and emails you generate using the outreach tracker</li>
+            <li><strong>Outreach Activity:</strong> Contacts you add (including names, firms, roles, email addresses, and LinkedIn URLs of third parties) and emails you generate using the outreach tracker</li>
             <li><strong>Communications:</strong> Messages you send to our support team</li>
           </ul>
 
@@ -69,14 +69,22 @@ export default function PrivacyPolicyPage() {
           <h2 style={{ fontSize: 20, fontWeight: 600, marginBottom: 12 }}>4. Resume and Interview Data</h2>
           <p style={{ marginBottom: 16 }}>
             <strong>Resume Processing:</strong> When you upload a resume for feedback, we process
-            it using AI to generate feedback. We do NOT store the full text of your resume.
-            After processing, the original file is deleted. We retain only the AI-generated
-            feedback and non-identifying metadata.
+            it using AI to generate feedback. The resume file and any screenshots taken for
+            formatting analysis are deleted within 7 days of processing. We retain only the
+            AI-generated feedback and non-identifying metadata (page count, section scores).
+            We do NOT store the full text of your resume.
+          </p>
+          <p style={{ marginBottom: 16 }}>
+            <strong>Interview Simulator:</strong> By using the interview simulator, you consent
+            to video and audio recording of your practice sessions. Recordings are processed
+            using AI to generate transcripts, evaluation scores, and personalized feedback.
+            Video files are automatically deleted within 30 days. Transcripts, scores, and
+            feedback are retained to track your progress and for your future reference.
           </p>
           <p>
-            <strong>Interview Recordings:</strong> Practice interview videos are stored temporarily
-            for processing and feedback. Videos are automatically deleted after a retention period.
-            Transcripts and feedback may be retained for your reference.
+            <strong>AI Processing:</strong> Resume content and interview recordings are sent to
+            third-party AI providers (Anthropic) for analysis. These providers process the data
+            according to their privacy policies and do not use your content to train their models.
           </p>
         </section>
 
@@ -153,8 +161,10 @@ export default function PrivacyPolicyPage() {
           <ul style={{ marginLeft: 24 }}>
             <li><strong>Clerk:</strong> Authentication (<a href="https://clerk.com/privacy" style={{ color: '#1a1a1a', textDecoration: 'underline' }} target="_blank" rel="noopener noreferrer">Privacy Policy</a>)</li>
             <li><strong>Stripe:</strong> Payment processing (<a href="https://stripe.com/privacy" style={{ color: '#1a1a1a', textDecoration: 'underline' }} target="_blank" rel="noopener noreferrer">Privacy Policy</a>)</li>
-            <li><strong>Anthropic:</strong> AI processing for feedback</li>
-            <li><strong>Vimeo:</strong> Video hosting</li>
+            <li><strong>Anthropic:</strong> AI processing for resume feedback and interview evaluation (<a href="https://www.anthropic.com/privacy" style={{ color: '#1a1a1a', textDecoration: 'underline' }} target="_blank" rel="noopener noreferrer">Privacy Policy</a>)</li>
+            <li><strong>Cloudflare:</strong> Cloud storage for uploaded files</li>
+            <li><strong>Vimeo/YouTube:</strong> Educational video hosting</li>
+            <li><strong>Vercel:</strong> Application hosting</li>
           </ul>
         </section>
 
