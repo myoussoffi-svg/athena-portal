@@ -1,6 +1,9 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+// Force dynamic rendering to always read fresh content
+export const dynamic = 'force-dynamic';
+
 import {
   getTracks,
   getModulesForTrack,

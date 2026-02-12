@@ -3,11 +3,12 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   devIndicators: false,
   // Include content folder in serverless function bundles for all routes
+  // Use ../content because Vercel root is portal/ but content is at repo root
   outputFileTracingIncludes: {
-    '/track/[trackSlug]': ['./content/**/*'],
-    '/track/[trackSlug]/[moduleSlug]': ['./content/**/*'],
-    '/track/[trackSlug]/[moduleSlug]/[lessonSlug]': ['./content/**/*'],
-    '/api/(.*)': ['./content/**/*'],
+    '/track/[trackSlug]': ['../content/**/*'],
+    '/track/[trackSlug]/[moduleSlug]': ['../content/**/*'],
+    '/track/[trackSlug]/[moduleSlug]/[lessonSlug]': ['../content/**/*'],
+    '/api/(.*)': ['../content/**/*'],
   },
   // Security headers
   headers: async () => [
