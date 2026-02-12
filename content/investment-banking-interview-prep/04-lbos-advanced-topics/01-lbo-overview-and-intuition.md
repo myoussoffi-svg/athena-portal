@@ -3,9 +3,6 @@ id: lbo-overview-and-intuition
 title: LBO Overview and Intuition
 order: 1
 estimated_minutes: 30
-video:
-  provider: vimeo
-  id: "1164202703"
 ---
 
 # LBO Overview and Intuition

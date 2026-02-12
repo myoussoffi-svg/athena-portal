@@ -3,9 +3,6 @@ id: debt-structure-in-lbos
 title: Debt Structure in LBOs
 order: 4
 estimated_minutes: 40
-video:
-  provider: vimeo
-  id: "1164444147"
 ---
 
 # Debt Structure in LBOs

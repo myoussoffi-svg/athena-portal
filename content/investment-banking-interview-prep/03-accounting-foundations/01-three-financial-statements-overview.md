@@ -3,9 +3,6 @@ id: three-financial-statements-overview
 title: The Three Financial Statements Overview
 order: 1
 estimated_minutes: 25
-video:
-  provider: vimeo
-  id: "1164446680"
 ---
 
 # The Three Financial Statements Overview
