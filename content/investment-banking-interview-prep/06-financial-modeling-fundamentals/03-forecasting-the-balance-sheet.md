@@ -292,26 +292,3 @@ note: "Balance Check: $0 across all years (Assets = Liabilities + Equity)"
 
 **Not including a balance check**: Without this check, errors can go unnoticed and corrupt your entire model.
 
-## Video Placeholder
-
-**Video Title**: Building the Projected Balance Sheet
-
-**Outline**:
-- Balance sheet structure and the accounting equation
-- Working capital forecasting using days metrics (DSO, DIO, DPO)
-- PP&E and CapEx rollforward
-- Debt and equity forecasting
-- Making the balance sheet balance (cash plug vs. revolver)
-- Balance checks and error trapping
-
-**Suggested Length**: 22 minutes
-
-## Key Takeaways
-
-- Forecast working capital using days metrics: DSO for receivables, DIO for inventory, DPO for payables
-- PP&E rolls forward: Beginning + CapEx - Depreciation = Ending
-- Retained earnings connects the income statement to balance sheet: Beginning RE + Net Income - Dividends = Ending RE
-- Use cash or a revolver as the balancing plug to make Assets = Liabilities + Equity
-- Always include a balance check (should equal zero) and format it to highlight errors
-- Goodwill doesn't amortize; intangibles typically do
-- Make sure working capital changes flow through to the cash flow statement

@@ -156,25 +156,3 @@ Precedent transactions are most useful in:
 
 **Confusing transaction value with equity value**: Transaction value is enterprise value. Make sure you're using the right metrics.
 
-## Video Placeholder
-
-**Video Title**: Precedent Transaction Analysis for IB Interviews
-
-**Outline**:
-- What precedent transactions are and how they differ from trading comps
-- The four-step process: identify deals, gather data, calculate multiples, apply to target
-- Control premium: what it is and why it exists
-- When precedent transactions are most useful
-- Limitations: historical data, limited sample, unique deal dynamics
-- Common mistakes and how to avoid them
-
-**Suggested Length**: 12 minutes
-
-## Key Takeaways
-
-- Precedent transactions value a company based on prices paid in recent M&A deals for comparable companies
-- Precedent transactions reflect control premiums and typically yield higher valuations than trading comps
-- Select recent (2-3 years), comparable, and disclosed transactions
-- Common multiples: EV/Revenue, EV/EBITDA, control premium
-- Control premiums typically range from 20-40%
-- Precedent transactions are most useful in M&A contexts but are limited by historical data and unique deal dynamics

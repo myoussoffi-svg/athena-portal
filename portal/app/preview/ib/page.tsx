@@ -1277,7 +1277,7 @@ export default function PreviewPage() {
             <div className="preview-logo">ATHENA</div>
             <h1 className="preview-hero-title">See What&apos;s Inside</h1>
             <p className="preview-hero-subtitle">
-              The complete system for landing your investment banking offer. Written by bankers. Powered by AI. Built for results.
+              The complete system for landing your investment banking offer.
             </p>
           </div>
         </div>

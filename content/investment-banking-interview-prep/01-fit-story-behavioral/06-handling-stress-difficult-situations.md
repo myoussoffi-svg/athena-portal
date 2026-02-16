@@ -104,24 +104,3 @@ Avoid cliches like "I thrive under pressure" without evidence. Interviewers want
 
 **Failing to show what you learned**: If you describe a stressful situation but don't explain what you took away from it, the answer feels incomplete.
 
-## Video Placeholder
-
-**Video Title**: Answering Questions About Stress and Difficult Situations
-
-**Outline**:
-- Why interviewers ask about stress and conflict in IB interviews
-- Common question archetypes: tight deadlines, difficult people, failure or setbacks
-- Using STAR to structure answers about high-pressure situations
-- Examples of strong vs. weak answers
-- What not to say: blaming others, being vague, showing poor composure
-
-**Suggested Length**: 10 minutes
-
-## Key Takeaways
-
-- Questions about stress test whether you can handle the intensity of investment banking
-- Use the STAR framework to provide specific, structured examples
-- Strong answers show composure, problem-solving, and accountability
-- When discussing conflict, show empathy and focus on solutions
-- Avoid blaming others, being vague, or describing situations where you lost composure
-- Prepare examples of managing tight deadlines, difficult people, and setbacks

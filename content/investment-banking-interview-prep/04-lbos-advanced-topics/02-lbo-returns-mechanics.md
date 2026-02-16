@@ -130,24 +130,3 @@ An LBO is attractive when:
 
 **Assuming the exit multiple will always be higher than entry**: Multiple contraction (exit < entry multiple) can kill returns, even if EBITDA grows.
 
-## Video Placeholder
-
-**Video Title**: Calculating LBO Returns: MOIC, IRR, and Return Drivers
-
-**Outline**:
-- How PE firms measure returns: MOIC and IRR
-- Step-by-step LBO returns calculation example
-- Decomposing returns: EBITDA growth, debt paydown, leverage, multiple expansion
-- Sensitivity analysis: how returns change with exit multiple, EBITDA growth, and debt paydown
-- When is an LBO attractive?
-
-**Suggested Length**: 12 minutes
-
-## Key Takeaways
-
-- LBO returns are measured by MOIC (equity multiple) and IRR (annualized return)
-- MOIC = Ending Equity Value / Initial Equity Investment
-- Returns are driven by EBITDA growth, debt paydown, leverage, and multiple expansion
-- Ending Equity Value = Exit EV - Remaining Debt
-- LBO returns are highly sensitive to exit multiple, EBITDA growth, and leverage
-- PE firms target 20-30%+ IRR or 2.5-3.0× MOIC over 5 years

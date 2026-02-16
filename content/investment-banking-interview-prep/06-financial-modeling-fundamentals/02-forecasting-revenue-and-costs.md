@@ -265,26 +265,3 @@ result: "Net Income grows from $68M to $100M; EBIT Margin expands from 20.0% to 
 
 **Forgetting to stress test**: What happens if revenue growth is 2% instead of 6%? What if gross margin compresses 200 basis points? Run sensitivities to understand risk.
 
-## Video Placeholder
-
-**Video Title**: Building the Projected Income Statement
-
-**Outline**:
-- Revenue forecasting approaches (top-down, bottom-up, growth rate)
-- Analyzing historical revenue trends
-- Projecting COGS and gross margin
-- Fixed vs. variable cost behavior and operating leverage
-- Building from EBIT through net income
-- Common mistakes to avoid
-
-**Suggested Length**: 20 minutes
-
-## Key Takeaways
-
-- Revenue can be forecast top-down (market × share), bottom-up (drivers), or via growth rates
-- Analyze 3-5 years of history to understand trends before projecting
-- Variable costs scale with revenue; fixed costs create operating leverage as revenue grows
-- Project COGS using gross margin assumptions; project OpEx with fixed + variable components
-- EBIT margin typically expands as companies scale (operating leverage)
-- Interest expense links to debt balances; tax expense uses effective or statutory rate
-- Stress test your projections—small changes in assumptions can significantly affect outcomes

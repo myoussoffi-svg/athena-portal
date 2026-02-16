@@ -270,29 +270,3 @@ Initially, adding debt lowers WACC because debt is cheaper than equity (due to t
 
 Technology companies have intangible assets (hard to collateralize), high growth (need financial flexibility), and volatile cash flows (can't reliably service debt). Utilities have tangible assets, regulated stable cash flows, and limited growth opportunities—ideal characteristics for supporting debt.
 
-## Video Placeholder
-
-**Video Title**: Corporate Capital Structure and WACC Optimization
-
-**Outline**:
-- What capital structure is and why it matters
-- Modigliani-Miller and real-world frictions
-- The trade-off: tax shield vs. distress costs
-- How leverage affects WACC
-- Leverage and return amplification
-- Factors determining optimal capital structure
-- Industry norms and credit rating constraints
-- Practical financing decision example
-
-**Suggested Length**: 20 minutes
-
-## Key Takeaways
-
-- Capital structure is the mix of debt and equity financing
-- Optimal structure balances tax shield benefits against financial distress costs
-- WACC is minimized at the optimal capital structure
-- Leverage amplifies returns: higher expected ROE but also higher volatility
-- Industry matters: stable cash flows and tangible assets support more debt
-- Credit ratings constrain leverage (BBB typically requires <3.5× Debt/EBITDA)
-- Most companies target a specific credit rating and set leverage accordingly
-- There's no one-size-fits-all answer—optimal structure depends on company specifics

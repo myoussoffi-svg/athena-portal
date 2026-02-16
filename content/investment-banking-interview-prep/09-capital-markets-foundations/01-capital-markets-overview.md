@@ -218,27 +218,3 @@ Capital markets activity varies with economic cycles:
 
 **Current Awareness**: Know recent major deals, market trends, and rate environment for interviews.
 
-## Video Placeholder
-
-**Video Title**: Introduction to Capital Markets
-
-**Outline**:
-- What capital markets are and why they matter
-- Primary vs. secondary markets
-- Key participants: issuers, investors, intermediaries
-- Types of capital market instruments
-- The capital raising process
-- Investment bank's role in capital markets
-- Capital markets vs. M&A banking
-
-**Suggested Length**: 18 minutes
-
-## Key Takeaways
-
-- Capital markets channel savings into investments by connecting issuers (who need capital) with investors (who have capital)
-- Primary markets create new securities; secondary markets trade existing ones
-- Key participants: issuers (companies, governments), investors (institutions, retail), intermediaries (banks, exchanges)
-- Major instruments: equity (stocks), debt (bonds), hybrids, derivatives
-- Investment banks originate, underwrite, and distribute securities, serving as intermediaries
-- Capital markets activity is sensitive to economic cycles and market conditions
-- Understanding capital markets demonstrates commercial awareness in interviews

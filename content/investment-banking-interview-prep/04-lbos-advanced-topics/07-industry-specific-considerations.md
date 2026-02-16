@@ -147,28 +147,3 @@ Understanding industry-specific considerations shows that you can adapt valuatio
 
 **Comparing across industries without context**: A 15× P/E for a tech company means something different than 15× P/E for a utility.
 
-## Video Placeholder
-
-**Video Title**: Industry-Specific Valuation Considerations
-
-**Outline**:
-- Why valuation approaches differ across industries
-- TMT: EV/Revenue, EV/Subscribers, growth over profitability
-- Financials: P/B, P/TBV, ROE (no EBITDA)
-- Real estate: P/FFO, dividend yield, NAV
-- Healthcare: Pipeline value, regulatory risk, R&D
-- Energy: EV/Reserves, commodity price sensitivity
-- Retail and industrials: same-store sales, cyclicality
-- Common mistakes and how to adapt frameworks
-
-**Suggested Length**: 10 minutes
-
-## Key Takeaways
-
-- Valuation approaches and multiples vary significantly across industries
-- TMT: Use EV/Revenue for growth companies, EV/EBITDA for mature tech
-- Financials: Use P/B or P/TBV; EBITDA isn't applicable
-- Real estate: Use P/FFO, dividend yield, and NAV
-- Healthcare: Account for regulatory risk, pipeline value, and R&D intensity
-- Energy: Use EV/Reserves or EV/Production; sensitive to commodity prices
-- Always adjust for industry-specific risks and norms when valuing companies

@@ -246,28 +246,3 @@ Current yield = coupon / price, measuring only income return. YTM includes both 
 
 Duration measures weighted-average time to receive cash flows. Longer-maturity bonds have more cash flows in the distant future, making them more sensitive to rate changes. The present value of distant cash flows changes more when discount rates change.
 
-## Video Placeholder
-
-**Video Title**: Annuities, Perpetuities, and Bond Pricing
-
-**Outline**:
-- Annuity formulas (ordinary and due)
-- Perpetuities and growing perpetuities
-- Terminal value as a growing perpetuity
-- Bond pricing: PV of coupons plus principal
-- Yield to maturity and the price-yield relationship
-- Duration and interest rate sensitivity
-- Common interview questions
-
-**Suggested Length**: 22 minutes
-
-## Key Takeaways
-
-- Annuity PV = PMT × [(1 - (1+r)^(-n)) / r]
-- Perpetuity PV = PMT / r
-- Growing Perpetuity PV = PMT / (r - g), used for terminal value in DCF
-- Bond price = PV of coupons (annuity) + PV of principal
-- Premium bonds: coupon > yield, price > face; Discount: coupon < yield, price < face
-- Bond prices and yields move inversely
-- YTM is the discount rate that equates PV of cash flows to current price
-- Duration measures interest rate sensitivity: higher duration = more sensitive

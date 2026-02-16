@@ -262,27 +262,3 @@ Lenders want their money back faster to reduce risk. If the company outperforms,
 
 It's mixed. In the short term, sweeps reduce cash available for dividends, hurting returns. But faster debt paydown reduces interest expense and can enable earlier refinancing or dividend recaps, potentially improving long-term returns.
 
-## Video Placeholder
-
-**Video Title**: Cash Sweep Mechanics in LBO Models
-
-**Outline**:
-- What a cash sweep is and why it exists
-- Excess cash flow definition and sweep percentages
-- The debt repayment waterfall
-- Building cash sweep formulas in Excel
-- Impact on debt schedules and credit metrics
-- Cash sweep vs. dividend recapitalization
-- Common interview questions
-
-**Suggested Length**: 18 minutes
-
-## Key Takeaways
-
-- Cash sweeps automatically use excess cash flow to pay down debt
-- Sweep percentage varies with leverage: higher leverage = higher sweep (75% vs. 25%)
-- Excess Cash Flow = EBITDA - Cash Interest - Taxes - CapEx - Mandatory Amort - ΔNWC
-- Sweeps flow through a waterfall: revolver first, then term loans by seniority
-- Model sweep allocation using MIN functions to cap paydown at outstanding balance
-- Cash sweeps accelerate deleveraging, improving credit metrics faster
-- Once leverage improves, sponsors may prefer dividend recaps over further debt paydown

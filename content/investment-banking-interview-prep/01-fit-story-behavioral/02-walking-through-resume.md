@@ -71,24 +71,3 @@ The key is to show that your path makes sense and that you've thought critically
 
 **Not preparing for every item on your resume**: If it's on your resume, you must be able to discuss it. If you can't, remove it.
 
-## Video Placeholder
-
-**Video Title**: Mastering the Resume Walkthrough in IB Interviews
-
-**Outline**:
-- Structure for explaining any resume item: context, contribution, outcome
-- How to prepare for deep-dive questions on specific experiences
-- Handling gaps, transitions, and non-finance backgrounds
-- Common mistakes: vague language, overstating your role, failing to connect to banking
-- Live examples: walking through finance and non-finance experiences
-
-**Suggested Length**: 10 minutes
-
-## Key Takeaways
-
-- Interviewers will probe your resume deeply; you must be able to explain every item clearly
-- Use a structured approach: context, your specific contribution, and outcome or learning
-- Avoid vague language like "helped the team" and be specific about what you did
-- Prepare for deep dives on 1-2 resume items, especially technical or finance-related experiences
-- Gaps or transitions aren't disqualifying if you provide clear, honest explanations
-- Connect every experience to skills relevant to banking: analysis, deadlines, client work, attention to detail

@@ -303,27 +303,3 @@ Beta measures a stock's sensitivity to market movements. A beta of 1.5 means if 
 
 Diversification reduces portfolio risk because assets don't move perfectly together (correlation < 1). When one asset declines, another might rise or stay flat, reducing overall volatility. The math: portfolio variance includes a correlation term that reduces total variance when correlation is less than 1.
 
-## Video Placeholder
-
-**Video Title**: Statistics Essentials for Finance
-
-**Outline**:
-- Mean, median, mode and when to use each
-- Variance and standard deviation as risk measures
-- Normal distribution and probability ranges
-- Covariance, correlation, and diversification
-- Beta and the CAPM
-- Geometric vs. arithmetic mean for returns
-- Interview applications
-
-**Suggested Length**: 18 minutes
-
-## Key Takeaways
-
-- Mean = sum / count; Median = middle value (more robust to outliers)
-- Variance measures dispersion; Standard deviation = √variance (same units as data)
-- In finance, standard deviation of returns = volatility = risk
-- Correlation ranges from -1 to +1; lower correlation = better diversification
-- Beta measures market sensitivity: β > 1 means more volatile than market
-- For compound returns, use geometric mean (CAGR), not arithmetic mean
-- R² in regression shows how much variation is explained by the independent variable

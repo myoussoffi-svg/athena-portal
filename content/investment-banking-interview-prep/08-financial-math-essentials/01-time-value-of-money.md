@@ -277,28 +277,3 @@ At exactly 10%: PV of $110 = $110/1.10 = $100, so I'm indifferent.
 
 A higher discount rate represents higher opportunity cost or higher risk. If I can earn more elsewhere (higher opportunity cost), future cash flows become less valuable. If cash flows are riskier, I demand a higher return to compensate, which reduces what I'll pay today.
 
-## Video Placeholder
-
-**Video Title**: Time Value of Money: The Foundation of Finance
-
-**Outline**:
-- Why money today is worth more than money tomorrow
-- Future value and the power of compounding
-- Present value and discounting
-- NPV and investment decisions
-- Compounding frequency and effective annual rate
-- Rule of 72
-- Interview applications
-
-**Suggested Length**: 20 minutes
-
-## Key Takeaways
-
-- A dollar today is worth more than a dollar in the future due to opportunity cost, inflation, and risk
-- Future Value: FV = PV × (1 + r)^n (compounding)
-- Present Value: PV = FV / (1 + r)^n (discounting)
-- NPV = sum of all discounted cash flows including initial investment; accept if NPV > 0
-- Higher discount rates reduce present value
-- More frequent compounding increases effective return
-- EAR = (1 + r/m)^m - 1 converts to comparable annual rates
-- Rule of 72: years to double ≈ 72 / interest rate

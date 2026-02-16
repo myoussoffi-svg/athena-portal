@@ -173,26 +173,3 @@ Use 1.25 as the beta in your CAPM calculation, not the original 1.4.
 
 **Using levered betas without adjusting for capital structure**: When using comparable company betas, de-lever and re-lever to account for differences in leverage.
 
-## Video Placeholder
-
-**Video Title**: WACC: Components, Calculation, and Application in DCF
-
-**Outline**:
-- What WACC is and why it's the discount rate for unlevered cash flows
-- The WACC formula and each component: cost of equity, cost of debt, weights
-- Cost of equity: CAPM formula and intuition
-- After-tax cost of debt and the tax shield
-- Full WACC calculation example
-- Common mistakes: book vs. market values, forgetting the tax shield
-
-**Suggested Length**: 12 minutes
-
-## Key Takeaways
-
-- WACC is the weighted average cost of debt and equity, used as the discount rate in a DCF
-- WACC = (E/(E+D)) × Cost of Equity + (D/(E+D)) × Cost of Debt × (1 - Tax Rate)
-- Cost of Equity is calculated using CAPM: Rf + Beta × ERP
-- Cost of Debt is adjusted for the tax shield: Cost of Debt × (1 - Tax Rate)
-- Weights are based on market values of equity and debt, not book values
-- Debt is cheaper than equity due to the tax deductibility of interest
-- When using comparable company betas, de-lever to remove financial risk, then re-lever for the target's capital structure

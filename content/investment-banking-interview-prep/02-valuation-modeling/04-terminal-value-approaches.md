@@ -135,26 +135,3 @@ Bankers typically present **sensitivity tables** showing how EV changes across a
 
 **Assuming g = WACC**: If the growth rate equals WACC, the formula breaks. Growth must be lower than the discount rate.
 
-## Video Placeholder
-
-**Video Title**: Terminal Value: Perpetuity Growth and Exit Multiple Methods
-
-**Outline**:
-- Why terminal value is necessary and why it dominates DCF results
-- Perpetuity growth method: formula, assumptions, and example
-- Choosing a realistic perpetual growth rate
-- Exit multiple method: formula, selecting the multiple, example
-- When to use each method
-- Sensitivity of DCF to terminal value assumptions
-
-**Suggested Length**: 12 minutes
-
-## Key Takeaways
-
-- Terminal value represents the value of cash flows beyond the projection period and typically accounts for 60-80% of EV
-- Perpetuity growth method: TV = (Final Year UFCF × (1 + g)) / (WACC - g)
-- Perpetual growth rate (g) should be conservative, typically 2-3%, and must be less than WACC
-- Exit multiple method: TV = Final Year EBITDA × Exit Multiple
-- Exit multiple is often based on comparable company or transaction multiples
-- Terminal value must be discounted back to present value
-- DCF results are highly sensitive to terminal value assumptions; use sensitivity tables

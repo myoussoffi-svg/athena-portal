@@ -127,25 +127,3 @@ For interview purposes, focus on unlevered FCF, as it's most commonly used in va
 
 **Thinking EBITDA is cash flow**: EBITDA is a proxy but doesn't account for working capital changes, CapEx, or taxes. Free cash flow is the true measure.
 
-## Video Placeholder
-
-**Video Title**: Cash Flow Statement Deep Dive for IB Interviews
-
-**Outline**:
-- Purpose of the cash flow statement: reconciling net income with cash
-- Cash flow from operations: adjusting for non-cash items and working capital
-- Cash flow from investing: CapEx, acquisitions, asset sales
-- Cash flow from financing: debt, equity, dividends, buybacks
-- Why net income doesn't equal cash flow
-- Free cash flow: definition, calculation, and why it matters for valuation
-
-**Suggested Length**: 14 minutes
-
-## Key Takeaways
-
-- The cash flow statement reconciles net income with the change in cash on the balance sheet
-- CFO adjusts net income for non-cash items (D&A, stock-based comp) and working capital changes
-- CFI includes CapEx, acquisitions, and asset sales; typically negative for growing companies
-- CFF includes debt, equity, dividends, and buybacks; reflects capital structure decisions
-- Net income doesn't equal cash flow due to accrual accounting, non-cash expenses, and timing differences
-- Free cash flow (UFCF) = CFO - CapEx (simplified); it's the cash available for investors and is used in DCF valuation

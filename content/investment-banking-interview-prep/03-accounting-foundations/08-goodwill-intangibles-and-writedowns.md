@@ -203,26 +203,3 @@ Check the balance:
 
 **Not allocating purchase price correctly in M&A questions**: You need to first allocate to identifiable assets and liabilities at fair value, then the residual is goodwill.
 
-## Video Placeholder
-
-**Video Title**: Goodwill, Intangibles, and Impairments in IB Interviews
-
-**Outline**:
-- What goodwill is and how it's created in acquisitions
-- Goodwill vs. identifiable intangibles (amortization vs. impairment)
-- How goodwill impairment affects the three statements
-- Interview question: "Company A buys Company B; walk me through the impact"
-- Common mistakes: confusing goodwill with other intangibles, thinking impairment affects cash
-
-**Suggested Length**: 10 minutes
-
-## Key Takeaways
-
-- Goodwill = Purchase Price - Fair Value of Net Assets Acquired
-- Goodwill arises in M&A when a buyer pays more than the fair value of identifiable net assets
-- Goodwill isn't amortized; it's tested annually for impairment
-- Identifiable intangibles (patents, trademarks) are amortized over their useful life
-- Goodwill impairment is a non-cash charge that reduces net income and book value but not cash flow
-- In M&A questions, allocate the purchase price to identifiable assets and liabilities first, then record the residual as goodwill
-- Full consolidation (>50% ownership) requires adding 100% of target's assets, liabilities, revenues, and expenses
-- Non-Controlling Interest (NCI) represents minority shareholders' claim; appears in equity and reduces parent's net income

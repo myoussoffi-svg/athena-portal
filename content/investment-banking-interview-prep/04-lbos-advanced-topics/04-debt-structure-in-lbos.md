@@ -200,27 +200,3 @@ Total Equity: $300M (30%)
 
 **Thinking all debt amortizes**: Most LBO debt is bullet (TLB, bonds). Only TLA and sometimes revolver amortize.
 
-## Video Placeholder
-
-**Video Title**: Debt Structure in LBOs: The Debt Stack Explained
-
-**Outline**:
-- Why LBOs use multiple types of debt
-- The debt stack: revolver, TLA, TLB, high-yield bonds, subordinated debt
-- Secured vs. unsecured, senior vs. subordinated
-- Covenants: maintenance vs. incurrence, covenant-lite loans
-- Amortization vs. bullet repayment
-- Example LBO debt structure
-
-**Suggested Length**: 10 minutes
-
-## Key Takeaways
-
-- LBOs use multiple layers of debt (the "debt stack") to maximize leverage and optimize cost
-- Debt stack (senior to junior): Revolver, Term Loan A, Term Loan B, Senior Notes, Subordinated Debt
-- Senior secured debt (revolver, TLA, TLB) is backed by collateral and has lower interest rates
-- Unsecured debt (high-yield bonds, subordinated debt) has higher interest rates and no collateral
-- Covenants restrict borrower actions; covenant-lite loans have fewer restrictions
-- Some debt amortizes (TLA); most is bullet repayment (TLB, bonds)
-- PIK interest adds to principal instead of paying cash, preserving near-term cash flow
-- Mezzanine returns blend high coupons (cash + PIK) with equity upside through warrants

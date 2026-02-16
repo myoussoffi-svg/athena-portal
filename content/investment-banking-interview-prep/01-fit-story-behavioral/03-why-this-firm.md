@@ -84,24 +84,3 @@ Be prepared to answer honestly. Saying "I'm only recruiting for your bank" usual
 
 **Not speaking with current employees**: The easiest way to develop a credible answer is to speak with analysts or associates. If you haven't, you're at a disadvantage.
 
-## Video Placeholder
-
-**Video Title**: Crafting a Differentiated "Why This Firm" Answer
-
-**Outline**:
-- What interviewers are testing with "Why this firm?"
-- How to research firm-specific attributes: culture, deal flow, sector strength
-- Examples of strong vs. weak answers across different banks
-- How to differentiate your answers when recruiting at multiple firms
-- Handling follow-ups: "What other banks are you recruiting for?"
-
-**Suggested Length**: 10 minutes
-
-## Key Takeaways
-
-- "Why this firm?" tests whether you've done research and thought carefully about fit
-- Strong answers reference specific, verifiable attributes: culture, sector strength, employee conversations
-- Weak answers are generic and could apply to any bank
-- You need different answers for each firm; avoid recycling the same response
-- Prepare for follow-ups that test the depth of your interest
-- Speak with current employees to develop credible, specific insights

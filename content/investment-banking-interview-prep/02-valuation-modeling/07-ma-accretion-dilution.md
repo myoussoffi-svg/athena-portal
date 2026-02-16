@@ -260,28 +260,3 @@ The answer depends on the **cost of financing**:
 
 **Using the wrong share count**: In a stock deal, the acquirer's share count increases by the shares issued to the target's shareholders.
 
-## Video Placeholder
-
-**Video Title**: M&A Accretion/Dilution Analysis
-
-**Outline**:
-- What accretion and dilution mean and why they matter
-- Framework: standalone EPS vs. pro forma EPS
-- Example: all-cash deal (accounting for after-tax interest expense)
-- Example: all-stock deal (accounting for share dilution)
-- What drives accretion: P/E ratios, cost of financing, synergies
-- Interview question: "Is a deal more accretive with cash or stock?"
-
-**Suggested Length**: 14 minutes
-
-## Key Takeaways
-
-- Accretion/dilution measures the impact of an M&A deal on the acquirer's EPS
-- Accretive = pro forma EPS > standalone EPS; Dilutive = pro forma EPS < standalone EPS
-- In a cash deal, account for after-tax interest expense on debt
-- In a stock deal, account for dilution from new shares issued
-- If acquirer's P/E > target's P/E, the deal is more likely to be accretive
-- Accretion doesn't equal value creation; a deal can be accretive but still overpay
-- Synergies needed to break even = Dilution × Shares / (1 - Tax Rate)
-- Contribution analysis compares each company's share of revenue, EBITDA, and earnings to ownership split
-- Pro forma balance sheet shows the combined company post-close with all purchase accounting adjustments

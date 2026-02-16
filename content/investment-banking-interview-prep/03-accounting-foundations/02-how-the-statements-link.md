@@ -127,25 +127,3 @@ Over time, the equipment will be depreciated, which will flow through the income
 
 **Ignoring taxes**: In more complex scenarios, interviewers may ask you to account for taxes. If so, net income must be calculated after tax, and cash flow from operations must reflect the tax payment.
 
-## Video Placeholder
-
-**Video Title**: How the Three Financial Statements Link Together
-
-**Outline**:
-- The core linkages: net income, retained earnings, cash flow
-- Step-by-step walkthrough of how the statements connect
-- Adjusting for non-cash items (depreciation) and working capital changes
-- Example: "If revenue increases by $100, walk me through the impact"
-- Example: "If a company buys equipment with cash, what happens?"
-- Common mistakes and how to avoid them
-
-**Suggested Length**: 15 minutes
-
-## Key Takeaways
-
-- Net income flows to retained earnings on the balance sheet and is the starting point for the cash flow statement
-- Depreciation reduces net income and PP&E but is added back in cash flow from operations because it's non-cash
-- Changes in working capital (receivables, inventory, payables) reconcile accrual-based income with cash flow
-- CapEx appears in cash flow from investing and increases PP&E on the balance sheet
-- The net change in cash from the cash flow statement must equal the change in the cash account on the balance sheet
-- Practice walking through transactions step-by-step to ensure the balance sheet always balances

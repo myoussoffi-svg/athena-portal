@@ -138,25 +138,3 @@ If the balance sheet doesn't balance, you've made an error.
 
 **Ignoring the distinction between current and non-current**: Current items are short-term (within one year); non-current are long-term. This matters for liquidity analysis.
 
-## Video Placeholder
-
-**Video Title**: Balance Sheet Deep Dive for IB Interviews
-
-**Outline**:
-- Structure of the balance sheet: assets, liabilities, equity
-- Current vs. non-current: what's the difference and why it matters
-- Key line items: cash, receivables, inventory, PP&E, debt, retained earnings
-- Net working capital: definition and why it matters for cash flow
-- Net debt and enterprise value: how to calculate from the balance sheet
-- Practice question: "Walk me through a balance sheet"
-
-**Suggested Length**: 12 minutes
-
-## Key Takeaways
-
-- The balance sheet shows a company's financial position at a point in time: assets, liabilities, and equity
-- The fundamental equation: Assets = Liabilities + Shareholders' Equity must always hold
-- Current assets and liabilities are short-term (within one year); non-current are long-term
-- Net working capital (NWC) = Current Assets - Current Liabilities; changes in NWC affect cash flow
-- Net Debt = Total Debt - Cash; used to calculate enterprise value
-- Every transaction must keep the balance sheet balanced

@@ -311,28 +311,3 @@ result: "Higher price and more stock = more dilutive; lower price and more cash 
 note: "This shows the tradeoff between price and structure"
 ```
 
-## Video Placeholder
-
-**Video Title**: Setting Up Transaction Assumptions and Sources & Uses
-
-**Outline**:
-- Preparing standalone models for acquirer and target
-- Normalizing target financials
-- Transaction assumptions: price, premium, consideration mix
-- Building the sources and uses table
-- Financing structure decisions
-- Exchange ratio mechanics
-- Scenario analysis setup
-
-**Suggested Length**: 20 minutes
-
-## Key Takeaways
-
-- Standalone models for both companies are prerequisites—these show "no deal" performance
-- Normalize target financials by removing one-time items and owner-specific costs
-- Transaction assumptions include price, premium, consideration mix, financing terms, synergies, and fees
-- Sources and Uses table must balance: equity value + fees + refi = cash + debt + stock
-- Cash deals are more accretive but increase leverage; stock deals dilute but preserve balance sheet
-- Exchange ratio = Offer Price / Acquirer Price; determines new shares issued
-- Build scenario flexibility to compare all-cash, all-stock, and mixed structures
-- Premium analysis compares offer price to current price, 52-week high, and intrinsic value

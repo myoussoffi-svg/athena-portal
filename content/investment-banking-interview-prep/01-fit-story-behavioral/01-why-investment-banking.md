@@ -66,24 +66,3 @@ Your initial answer should be strong enough to withstand these follow-ups. If yo
 
 **Failing to prepare for "Why not consulting?" or "Why not private equity?"**: If your answer could apply to other competitive roles, be ready to explain why banking specifically.
 
-## Video Placeholder
-
-**Video Title**: Constructing Your "Why Investment Banking" and "Tell Me About Yourself" Narrative
-
-**Outline**:
-- Framework for structuring your professional story in 60-90 seconds
-- Examples of strong vs. weak "Why banking?" answers
-- How to connect past experiences to your interest in IB
-- Handling common follow-ups: "Why not consulting?" and "What deals have you followed?"
-- Live walkthrough: building an answer from scratch
-
-**Suggested Length**: 12 minutes
-
-## Key Takeaways
-
-- "Tell me about yourself" requires a structured 60-90 second narrative, not a resume recitation
-- "Why investment banking?" must reference specific aspects of the work, not generic career goals
-- Strong answers show research and connect your background to the role
-- Weak answers are vague, overly generic, or could apply to any finance job
-- Prepare for follow-up questions that test whether your interest is genuine and informed
-- Avoid overemphasizing exit opportunities or misrepresenting the role's demands

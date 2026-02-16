@@ -259,28 +259,3 @@ Identifiable intangibles can be specifically identified and valued—things like
 
 Fair value adjustments create differences between book basis and tax basis. For example, if you write up PP&E, book depreciation will be higher than tax depreciation. This means the company will pay more tax than the books suggest, creating a deferred tax liability. The DTL represents future taxes owed.
 
-## Video Placeholder
-
-**Video Title**: Purchase Price Allocation and Calculating Goodwill
-
-**Outline**:
-- What PPA is and why it matters
-- Fair value adjustments to tangible assets
-- Identifying and valuing intangible assets
-- Calculating goodwill as the residual
-- Deferred tax implications of write-ups
-- Impact on future income statement (amortization, depreciation)
-- Interview question walkthrough
-
-**Suggested Length**: 20 minutes
-
-## Key Takeaways
-
-- PPA allocates purchase price to identifiable assets (tangible + intangible) at fair value
-- Goodwill = Purchase Price - Fair Value of Net Identifiable Assets
-- Common fair value adjustments: inventory, PP&E, identified intangibles, deferred revenue
-- Intangibles recognized in PPA include customer relationships, technology, trade names
-- Fair value write-ups create deferred tax liabilities (DTL = Write-up × Tax Rate)
-- Goodwill is not amortized; identifiable intangibles with finite lives are amortized
-- PPA affects future earnings through amortization, additional depreciation, and inventory step-up
-- In interviews, know the goodwill calculation and difference between goodwill and other intangibles

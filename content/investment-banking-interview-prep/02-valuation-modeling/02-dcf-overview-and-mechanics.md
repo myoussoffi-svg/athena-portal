@@ -172,25 +172,3 @@ Equity Value = $1,689.5M - $300M = $1,389.5M
 
 **Confusing UFCF with cash flow from operations**: UFCF subtracts CapEx and working capital changes. CFO doesn't subtract CapEx.
 
-## Video Placeholder
-
-**Video Title**: DCF Valuation: Mechanics and Methodology
-
-**Outline**:
-- What a DCF is and why it's the most rigorous valuation method
-- The five-step framework: project cash flows, terminal value, discount to PV, sum to EV, bridge to equity value
-- How to calculate unlevered free cash flow (UFCF)
-- Discounting cash flows using WACC
-- Example walkthrough: from cash flow projections to implied share price
-
-**Suggested Length**: 15 minutes
-
-## Key Takeaways
-
-- DCF values a company based on the present value of projected future cash flows
-- Use unlevered free cash flow (UFCF) to value enterprise value (EV)
-- UFCF = EBIT × (1 - Tax Rate) + D&A - CapEx - Increase in NWC
-- Terminal value represents cash flows beyond the projection period and is a large component of total value
-- Discount cash flows and terminal value using WACC to arrive at EV
-- The mid-year convention assumes cash flows arrive mid-period, increasing present value by ~(1+WACC)^0.5
-- Subtract net debt from EV to get equity value and divide by shares outstanding for implied price

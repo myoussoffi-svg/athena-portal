@@ -299,29 +299,3 @@ Two reasons: (1) Debt has priority in bankruptcy, so investors accept lower retu
 
 If the company has volatile cash flows and can't reliably make debt payments. If the company is already highly leveraged and adding debt would risk credit ratings or covenants. If the company wants strategic investors who bring more than just capital. Or if the equity market is particularly receptive (high valuations).
 
-## Video Placeholder
-
-**Video Title**: Debt vs. Equity: The Issuer and Investor Decision
-
-**Outline**:
-- The fundamental debt vs. equity choice
-- Issuer advantages and disadvantages of each
-- The tax shield and why it matters
-- Investor perspectives on debt vs. equity
-- Risk-return spectrum across capital sources
-- Pecking order theory and signaling effects
-- Convertible securities as a hybrid
-- Practical example: funding an acquisition
-
-**Suggested Length**: 20 minutes
-
-## Key Takeaways
-
-- Issuers choose debt for tax benefits, no dilution, and lower cost; equity for flexibility and lower risk
-- The tax shield makes debt's after-tax cost significantly lower than pre-tax
-- Investors choose debt for income and safety; equity for growth potential
-- Risk-return spectrum: senior debt (lowest risk/return) → equity (highest risk/return)
-- Pecking order: companies prefer internal funds, then debt, then equity
-- Equity issuance often signals overvaluation; debt signals confidence
-- Convertibles blend debt protection with equity upside
-- Most major transactions use a mix of debt and equity

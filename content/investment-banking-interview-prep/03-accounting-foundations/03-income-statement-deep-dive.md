@@ -103,24 +103,3 @@ Bankers often calculate **adjusted EBITDA** or **normalized EBITDA** by removing
 
 **Ignoring non-recurring items**: If a company reports strong net income due to a one-time gain, that's not reflective of ongoing performance.
 
-## Video Placeholder
-
-**Video Title**: Income Statement Deep Dive for IB Interviews
-
-**Outline**:
-- Line-by-line walkthrough: revenue, COGS, gross profit, OpEx, EBIT, EBITDA, interest, taxes, net income
-- Why EBIT and EBITDA are used in valuation instead of net income
-- Common adjustments: non-recurring items, restructuring, asset sales
-- Gross margin vs. operating margin: what they measure and why they matter
-- Practice question: "Walk me through an income statement"
-
-**Suggested Length**: 12 minutes
-
-## Key Takeaways
-
-- The income statement shows profitability over a period, starting with revenue and ending with net income
-- Key metrics: Gross Profit (revenue - COGS), EBIT (operating income), EBITDA (EBIT + D&A), Net Income
-- EBIT and EBITDA are preferred in valuation because they're capital-structure neutral and isolate operating performance
-- EBITDA isn't the same as cash flow; it ignores working capital, CapEx, and taxes
-- Adjusted or normalized EBITDA removes one-time items to reflect sustainable profitability
-- Understand the difference between gross margin (profitability after COGS) and operating margin (profitability after OpEx)

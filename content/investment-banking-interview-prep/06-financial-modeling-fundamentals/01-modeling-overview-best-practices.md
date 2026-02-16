@@ -168,26 +168,3 @@ When building a model from scratch:
 
 The next lessons in this module walk through each of these steps in detail.
 
-## Video Placeholder
-
-**Video Title**: Financial Modeling Foundations: Architecture and Best Practices
-
-**Outline**:
-- What financial models do and why they matter in IB
-- The three pillars: accuracy, transparency, flexibility
-- Model architecture and tab structure
-- Formatting conventions (colors, numbers, layout)
-- How the three statements link together
-- Common mistakes and how to avoid them
-
-**Suggested Length**: 18 minutes
-
-## Key Takeaways
-
-- Financial models project company performance and enable scenario analysis for deal decisions
-- Good models are accurate (calculations correct), transparent (logic visible), and flexible (assumptions changeable)
-- Use color coding: blue for inputs, black for formulas, green for links
-- Time flows left to right; sections organized vertically with clear separation
-- Never hardcode numbers in formulas—always reference input cells
-- The three statements must link: income statement → balance sheet → cash flow statement → back to balance sheet
-- Simpler is better; add complexity only when it improves decision-making

@@ -253,29 +253,3 @@ Several approaches: (1) Find the price where deal accretion goes to zero in your
 
 Contribution analysis looks at fairness—comparing what each company brings versus ownership received. ROIC analysis looks at value creation—whether the return on the acquisition exceeds the acquirer's cost of capital. Both are important but answer different questions.
 
-## Video Placeholder
-
-**Video Title**: Value Creation Analysis: ROIC, AVP, and Maximum Price
-
-**Outline**:
-- Why accretion isn't enough—ROIC and value creation
-- Calculating acquisition ROIC
-- NPV of synergies vs. control premium
-- Building Analysis at Various Prices (AVP) tables
-- Using AVP in negotiations
-- Determining maximum offer price
-- Presenting value creation to boards
-- Interview questions
-
-**Suggested Length**: 20 minutes
-
-## Key Takeaways
-
-- Accretion/dilution measures EPS impact; ROIC measures value creation
-- Deal creates value when Acquisition ROIC > WACC
-- Acquisition ROIC = Incremental NOPAT / Purchase Price
-- NPV of Synergies vs. Premium shows who captures the value
-- If NPV(synergies) > premium paid, acquirer creates value
-- AVP tables show how metrics change across offer prices—essential for negotiations
-- Maximum offer price = where ROIC = WACC, or where accretion = 0, or standalone value + synergy NPV
-- Value bridge clearly shows how much value is created and who captures it

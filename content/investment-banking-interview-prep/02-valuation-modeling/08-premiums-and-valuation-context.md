@@ -130,26 +130,3 @@ Both methods are useful. DCF provides an intrinsic value based on cash flows; co
 
 **Confusing strategic value with market value**: Just because a strategic buyer might pay $1.2B doesn't mean the market will value the company at $1.2B.
 
-## Video Placeholder
-
-**Video Title**: Premiums, Discounts, and Valuation Context
-
-**Outline**:
-- What a control premium is and why buyers pay it
-- Minority discount and illiquidity discount
-- Strategic premium: why strategic buyers pay more than financial buyers
-- How trading comps, precedent transactions, and DCF reflect different premiums
-- Reconciling different valuation methods: why ranges differ
-- Interview question: "Why might a DCF differ from comps?"
-
-**Suggested Length**: 10 minutes
-
-## Key Takeaways
-
-- Control premium is the amount paid above market price to acquire control; typically 20-40%
-- Minority discount reflects the reduced value of a non-controlling stake
-- Illiquidity discount reflects the reduced value of assets that can't be easily sold (common for private companies)
-- Strategic premiums arise when buyers expect synergies
-- Trading comps reflect minority, liquid valuations; precedent transactions include control premiums
-- DCF can be calculated with or without synergies (standalone vs. control basis)
-- Different valuation methods yield different ranges; this is expected and should be reconciled in context

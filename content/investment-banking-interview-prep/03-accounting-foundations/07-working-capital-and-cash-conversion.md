@@ -140,24 +140,3 @@ This is why cash flow is more important than net income for assessing financial 
 
 **Thinking working capital is always bad**: Some working capital is necessary for operations. The question is whether it's efficient (low CCC) or inefficient (high CCC).
 
-## Video Placeholder
-
-**Video Title**: Working Capital and Cash Conversion for IB Interviews
-
-**Outline**:
-- What is net working capital and why it matters
-- How changes in AR, inventory, and AP affect cash flow
-- The cash conversion cycle: DIO, DSO, DPO
-- Interview question: "If AR increases by $50, walk me through the three statements"
-- Why a profitable company can run out of cash
-
-**Suggested Length**: 12 minutes
-
-## Key Takeaways
-
-- Net working capital (NWC) = Current Assets - Current Liabilities, or (AR + Inventory) - AP
-- Increase in NWC is a use of cash; decrease is a source of cash
-- Increase in AR or inventory -> subtract from CFO; increase in AP -> add to CFO
-- Cash conversion cycle (CCC) = DIO + DSO - DPO; shorter is generally better
-- Changes in NWC are a key component of free cash flow in valuation models
-- A profitable company can run out of cash if working capital grows too fast, CapEx is high, or debt must be repaid

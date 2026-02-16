@@ -118,24 +118,3 @@ EV is capital-structure neutral, which makes it easier to compare companies with
 
 **Confusing book value of debt with market value**: In theory, debt should be at market value. In practice, for most investment-grade debt, book value is a reasonable approximation.
 
-## Video Placeholder
-
-**Video Title**: Enterprise Value vs. Equity Value: The Foundation of Valuation
-
-**Outline**:
-- Definitions: Equity value (market cap) and enterprise value (total firm value)
-- The bridge formula: EV = Equity Value + Net Debt + Preferred + Minority - Investments
-- Why each item is added or subtracted
-- When to use EV multiples vs. equity multiples
-- Example calculation and common interview questions
-
-**Suggested Length**: 12 minutes
-
-## Key Takeaways
-
-- Equity value = share price × shares outstanding; represents value to equity holders only
-- Enterprise value = total value of the company's operations, available to all investors
-- EV = Equity Value + Net Debt (simplified); full formula includes preferred stock, minority interest, and investments
-- Net Debt = Total Debt - Cash; cash is subtracted because you receive it when acquiring the company
-- Use EV multiples (EV/EBITDA, EV/EBIT, EV/Revenue) for capital-structure-neutral comparisons
-- Use equity multiples (P/E, P/B) for metrics that represent equity holders only

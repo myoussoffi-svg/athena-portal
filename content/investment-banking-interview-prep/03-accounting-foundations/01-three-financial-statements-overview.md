@@ -89,23 +89,3 @@ Understanding these links is essential for interview questions like "Walk me thr
 
 **Not understanding what each statement measures**: The income statement measures profitability over time, the balance sheet shows position at a point in time, and the cash flow statement reconciles the two.
 
-## Video Placeholder
-
-**Video Title**: Understanding the Three Financial Statements
-
-**Outline**:
-- The purpose of each statement: income statement (profitability), balance sheet (position), cash flow (cash generation)
-- Key sections and line items on each statement
-- The fundamental accounting equation: Assets = Liabilities + Equity
-- How the statements relate: net income, retained earnings, depreciation, CapEx
-- Why interviewers test your knowledge of the three statements
-
-**Suggested Length**: 10 minutes
-
-## Key Takeaways
-
-- The income statement measures profitability over a period; the balance sheet shows financial position at a point in time; the cash flow statement shows cash movements
-- The income statement is accrual-based; the cash flow statement reconciles accrual accounting with actual cash
-- The balance sheet must always balance: Assets = Liabilities + Shareholders' Equity
-- The three statements are interconnected: net income flows to retained earnings and the cash flow statement, CapEx affects PP&E, and depreciation links all three
-- Fluency with these statements is foundational for modeling, valuation, and technical interview questions

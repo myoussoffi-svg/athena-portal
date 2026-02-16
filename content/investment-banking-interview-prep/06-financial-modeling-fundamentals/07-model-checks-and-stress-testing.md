@@ -296,28 +296,3 @@ Before finalizing a model:
 4. **Compare to prior versions**: If updating a model, compare outputs to catch errors
 5. **Have someone else review**: Fresh eyes catch mistakes you've become blind to
 
-## Video Placeholder
-
-**Video Title**: Model Checks, Sensitivities, and Stress Testing
-
-**Outline**:
-- Essential error checks (balance sheet, cash, debt)
-- Creating a check summary dashboard
-- Building one-way and two-way sensitivity tables
-- Key sensitivities for DCF, LBO, and M&A models
-- Scenario analysis with toggle selectors
-- Stress testing to find breaking points
-- Presenting outputs effectively
-
-**Suggested Length**: 18 minutes
-
-## Key Takeaways
-
-- Build error checks for balance sheet balance, cash reconciliation, debt limits, and circularity
-- Create a check summary that shows overall model health at a glance
-- Sensitivity tables show how outputs vary with one or two inputs—essential for any analysis
-- Key DCF sensitivities: WACC and terminal growth; key LBO sensitivities: entry/exit multiples and leverage
-- Scenario analysis changes multiple inputs simultaneously to model different futures
-- Use a scenario toggle (dropdown) to switch between base, upside, and downside cases
-- Stress tests identify breaking points—where covenants breach or returns become unacceptable
-- Always present sensitivities alongside point estimates; ranges are more informative than single numbers

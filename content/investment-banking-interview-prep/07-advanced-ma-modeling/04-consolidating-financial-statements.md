@@ -288,30 +288,3 @@ Pro Forma Assets = Pro Forma Liabilities + Pro Forma Equity
 
 If this doesn't balance, trace through your adjustments to find the error.
 
-## Video Placeholder
-
-**Video Title**: Consolidating Financial Statements in a Merger Model
-
-**Outline**:
-- Framework for consolidating balance sheets
-- Key adjustments: cash, debt, equity elimination, PPA
-- Building the pro forma balance sheet
-- Consolidating income statements with synergies and deal expenses
-- Calculating accretion/dilution from consolidated results
-- Cash flow statement consolidation
-- Handling minority interest
-- Balance checks
-
-**Suggested Length**: 22 minutes
-
-## Key Takeaways
-
-- Pro forma balance sheet = Acquirer + Target (at FV) + Deal Adjustments
-- Target's equity is eliminated and replaced by consideration paid + goodwill
-- Intercompany balances are eliminated in consolidation
-- Pro forma income statement adds synergies and subtracts deal-related expenses
-- Deal expenses include: intangible amortization, additional D&A, new interest, integration costs
-- Inventory step-up is a one-time COGS hit in Year 1
-- Calculate accretion/dilution using consolidated net income and new share count
-- If <100% acquired, consolidate 100% but subtract NCI's share of net income
-- Always verify pro forma balance sheet balances

@@ -119,24 +119,3 @@ You should have 3-5 strong examples that you can adapt to different questions.
 
 **Using hypotheticals**: If asked about a time you did something, use a real example. Saying "I would do X" instead of "I did X" suggests you haven't encountered the situation.
 
-## Video Placeholder
-
-**Video Title**: Mastering Strengths, Weaknesses, and Behavioral Questions
-
-**Outline**:
-- How to structure strengths with evidence and relevance to banking
-- The right way to discuss weaknesses: honesty + improvement plan
-- Introduction to the STAR framework for behavioral questions
-- Common behavioral archetypes and how to prepare 3-5 strong examples
-- Live walkthrough: answering "Tell me about a time you failed"
-
-**Suggested Length**: 14 minutes
-
-## Key Takeaways
-
-- Strengths must be specific, supported by examples, and relevant to banking
-- Weaknesses should be honest, real, and paired with a plan for improvement
-- Avoid fake weaknesses ("I'm a perfectionist") or disqualifying ones ("I'm bad with numbers")
-- Use the STAR framework (Situation, Task, Action, Result) for all behavioral questions
-- Prepare 3-5 strong examples that cover teamwork, leadership, failure, pressure, and initiative
-- Behavioral answers should be concise (60-90 seconds), specific, and show learning

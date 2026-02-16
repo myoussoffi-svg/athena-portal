@@ -94,24 +94,3 @@ You don't need to be an economist. You need to show that you pay attention.
 
 **Discussing a deal the interviewer worked on without knowing**: If you happen to mention a transaction the interviewer was involved in, be respectful and defer to their expertise if they correct or add context.
 
-## Video Placeholder
-
-**Video Title**: How to Discuss Deals and Demonstrate Market Awareness
-
-**Outline**:
-- What interviewers are testing when they ask about deals
-- How to choose 2-3 deals to prepare in depth
-- Structure for discussing a transaction: basics, rationale, what's interesting
-- Handling follow-ups: valuation, financing, risks, market reaction
-- Showing broader market awareness beyond individual deals
-
-**Suggested Length**: 12 minutes
-
-## Key Takeaways
-
-- Prepare to discuss 2-3 recent deals in depth, ideally relevant to the firm or sector
-- Know the basics: buyer, target, size, structure, and strategic rationale
-- Explain why the deal is interesting—don't just recite facts
-- Be honest about your level of knowledge; admit when you don't know details
-- Follow the market broadly by reading financial news regularly
-- Prepare for follow-up questions on valuation, financing, and risks

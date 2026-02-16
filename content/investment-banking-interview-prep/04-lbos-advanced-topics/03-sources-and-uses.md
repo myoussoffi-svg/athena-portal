@@ -135,25 +135,3 @@ For example, if management rolls over $20M of equity, the sponsor invests $20M l
 
 **Not balancing the table**: Sources must equal uses. If they don't, there's an error.
 
-## Video Placeholder
-
-**Video Title**: Sources and Uses in an LBO
-
-**Outline**:
-- What a sources and uses table is and why it's fundamental to LBO modeling
-- Uses side: purchase equity, refinance debt, transaction fees
-- Sources side: debt, sponsor equity, rollover equity
-- Example: constructing a sources and uses table
-- Why sources must equal uses
-- Rollover equity: what it is and why it matters
-
-**Suggested Length**: 10 minutes
-
-## Key Takeaways
-
-- Sources and uses shows how an LBO is financed (sources) and what the money is used for (uses)
-- Uses: purchase equity, refinance debt, transaction fees
-- Sources: debt (60-70%), sponsor equity (30-40%), rollover equity, other
-- Total sources must equal total uses
-- Rollover equity reduces the sponsor's cash requirement and aligns management's interests
-- Always include transaction fees in the uses side

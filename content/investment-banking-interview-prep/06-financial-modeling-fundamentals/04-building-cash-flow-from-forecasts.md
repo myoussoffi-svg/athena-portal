@@ -249,27 +249,3 @@ When these links are properly built, changing any assumption automatically updat
 
 **Not including all non-cash items**: Stock compensation, deferred taxes, and other non-cash charges must be added back.
 
-## Video Placeholder
-
-**Video Title**: Deriving the Cash Flow Statement from Income Statement and Balance Sheet
-
-**Outline**:
-- Why we derive (not forecast) the cash flow statement
-- The indirect method: net income to cash from operations
-- Working capital adjustments and the sign convention
-- Cash flow from investing: CapEx and acquisitions
-- Cash flow from financing: debt and equity activity
-- The cash reconciliation check
-- How the three statements link together
-
-**Suggested Length**: 20 minutes
-
-## Key Takeaways
-
-- The cash flow statement is derived from the income statement and balance sheet, not forecast directly
-- Start with net income, add back non-cash expenses (D&A, stock comp), adjust for working capital changes
-- Working capital rule: increase in asset = use of cash (subtract); increase in liability = source of cash (add)
-- CFO + CFI + CFF = Net Change in Cash
-- Ending Cash = Beginning Cash + Net Change in Cash
-- Ending cash must match the balance sheet cash line—this is a critical check
-- All three statements are interconnected; changing one assumption flows through to all

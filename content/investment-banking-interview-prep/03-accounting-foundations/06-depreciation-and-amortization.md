@@ -114,23 +114,3 @@ This creates **deferred tax liabilities** on the balance sheet because the compa
 
 **Not understanding deferred taxes**: If a company uses accelerated depreciation for taxes, it creates a deferred tax liability, which affects the balance sheet.
 
-## Video Placeholder
-
-**Video Title**: Depreciation and Amortization in IB Interviews
-
-**Outline**:
-- What D&A is and why it exists (matching principle)
-- How D&A affects the income statement, balance sheet, and cash flow statement
-- Straight-line vs. accelerated depreciation
-- Book vs. tax depreciation and deferred taxes
-- Interview question: "If depreciation increases by $10, what happens to the three statements?"
-
-**Suggested Length**: 10 minutes
-
-## Key Takeaways
-
-- Depreciation (tangible assets) and amortization (intangible assets) allocate the cost of long-lived assets over their useful life
-- D&A is a non-cash expense: it reduces net income but not cash flow
-- D&A reduces EBIT on the income statement, reduces asset book value on the balance sheet, and is added back in CFO on the cash flow statement
-- Straight-line depreciation is most common for financial reporting; accelerated depreciation is used for taxes
-- Higher depreciation reduces net income and book value of assets, but doesn't affect cash flow

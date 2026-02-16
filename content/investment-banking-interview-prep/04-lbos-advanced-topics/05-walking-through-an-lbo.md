@@ -218,24 +218,3 @@ That's the basic framework for walking through an LBO."
 
 **Being too detailed or too vague**: Find the right balance. Don't build a full model in your head, but don't skip key steps either.
 
-## Video Placeholder
-
-**Video Title**: Walking Through an LBO: The Complete Framework
-
-**Outline**:
-- The 7-step framework: entry valuation, sources and uses, projections, debt paydown, exit valuation, ending equity, returns
-- Example walkthrough from start to finish
-- Sample interview answer: concise, structured, clear
-- Common mistakes and how to avoid them
-- Tips for handling follow-up questions
-
-**Suggested Length**: 12 minutes
-
-## Key Takeaways
-
-- "Walk me through an LBO" is a common interview question that tests your understanding of LBO mechanics
-- Use a 7-step framework: entry valuation, sources and uses, projections, debt paydown, exit valuation, ending equity, returns
-- Key inputs: entry multiple, leverage (debt/equity split), EBITDA growth, debt paydown, exit multiple
-- Key outputs: MOIC (equity multiple) and IRR (annualized return)
-- Practice delivering a concise, structured answer in 2-3 minutes
-- Don't forget transaction fees, debt paydown, and the distinction between EV and equity value

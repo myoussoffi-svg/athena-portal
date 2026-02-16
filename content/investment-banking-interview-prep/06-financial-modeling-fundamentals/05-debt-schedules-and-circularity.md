@@ -259,28 +259,3 @@ Include checks in your debt schedule:
 =IF(OR(Rate < 0, Rate > 0.20), "CHECK", "OK")
 ```
 
-## Video Placeholder
-
-**Video Title**: Building Debt Schedules and Handling Circularity
-
-**Outline**:
-- Why debt schedules matter in financial models
-- Structure of a debt schedule: balances, amortization, interest
-- The circularity problem: interest → cash → debt → interest
-- Solutions: iterative calculations, circuit breaker, copy-paste macro
-- Modeling a revolving credit facility as the cash plug
-- Multiple debt tranches and the repayment waterfall
-- Linking debt schedules to the three statements
-
-**Suggested Length**: 22 minutes
-
-## Key Takeaways
-
-- Debt schedules track balances, repayments, and interest for each debt tranche
-- Interest expense = Average Balance × Interest Rate (average is more accurate than beginning)
-- Circularity occurs because interest affects cash, which affects debt, which affects interest
-- Enable iterative calculation in Excel or use a circuit breaker to handle circularity
-- The revolver often serves as the model's plug: draw when short on cash, repay when excess
-- Multiple debt tranches have different terms; model each separately and sum interest
-- Debt repayments follow a waterfall based on seniority and credit agreement requirements
-- Link debt schedule outputs to the income statement, balance sheet, and cash flow statement

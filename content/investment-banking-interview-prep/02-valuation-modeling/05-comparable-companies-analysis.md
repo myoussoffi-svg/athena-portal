@@ -142,25 +142,3 @@ You'd then subtract net debt to arrive at equity value.
 
 **Relying on comps alone**: Comps should be one of several valuation methods. Cross-check with DCF and precedent transactions.
 
-## Video Placeholder
-
-**Video Title**: Comparable Company Analysis for IB Interviews
-
-**Outline**:
-- What comps are and why they're used in valuation
-- The four-step process: select comps, gather data, calculate multiples, determine range
-- Criteria for selecting comparable companies
-- Key multiples: EV/Revenue, EV/EBITDA, P/E
-- Example: calculating a valuation range using comps
-- Advantages and limitations of comps
-
-**Suggested Length**: 12 minutes
-
-## Key Takeaways
-
-- Comps value a company based on how similar companies are trading in the public markets
-- Select 5-10 comparable companies based on industry, size, growth, and business model
-- Common multiples: EV/Revenue (growth cos), EV/EBITDA (most common), EV/EBIT, P/E
-- Apply the median or range of multiples to the target's metrics to estimate value
-- Comps are fast, market-based, and intuitive, but no two companies are identical
-- Use comps as one of several valuation methods, not in isolation

@@ -224,25 +224,3 @@ Over time, interest expense on the debt will appear on the income statement.
 
 **Not asking clarifying questions**: If a question is ambiguous, ask for clarification. It's better to ask than to answer the wrong question.
 
-## Video Placeholder
-
-**Video Title**: Advanced Technical Questions and Edge Cases for IB Interviews
-
-**Outline**:
-- Why interviewers ask advanced questions
-- Category 1: Valuation edge cases (negative EBITDA, negative net debt, acquisition reactions)
-- Category 2: Accounting nuances (write-downs, depreciation, goodwill)
-- Category 3: Leverage and capital structure (book vs. market value of debt, WACC sensitivity)
-- Category 4: "What if" scenarios (dividends, debt issuance, asset purchases)
-- How to approach ambiguous or unfamiliar questions
-
-**Suggested Length**: 14 minutes
-
-## Key Takeaways
-
-- Advanced questions test your ability to think critically and handle edge cases
-- Common topics: negative EBITDA, negative net debt, write-downs, WACC sensitivity, "what if" scenarios
-- Use first principles: walk through the impact on the three statements or valuation mechanics
-- If you don't know, reason through the problem logically rather than guessing
-- Ask clarifying questions if the question is ambiguous
-- Practice thinking on your feet and explaining your reasoning clearly

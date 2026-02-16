@@ -95,24 +95,3 @@ These questions help you learn while still sounding engaged and thoughtful.
 
 **Asking overly complex or theoretical questions**: This isn't the time to debate market trends or challenge the interviewer's views. Keep questions respectful and focused on learning.
 
-## Video Placeholder
-
-**Video Title**: Preparing Strong Questions for Investment Banking Interviewers
-
-**Outline**:
-- Why "Do you have questions for me?" isn't a formality
-- Types of questions to prepare: experience, role, development, firm strategy
-- How to tailor questions based on interviewer seniority
-- What not to ask: compensation, hours, obvious research questions
-- Using the Q&A to gather information for decision-making
-
-**Suggested Length**: 8 minutes
-
-## Key Takeaways
-
-- Prepare 4-6 thoughtful questions and select 2-3 based on time and interviewer role
-- Ask about the interviewer's experience, the group's deal focus, or mentorship and development
-- Tailor questions to the interviewer's seniority: junior interviewers for day-to-day, senior for strategy
-- Avoid asking about compensation, hours, or questions you could have answered with research
-- Use the Q&A to gather information that will help you evaluate offers
-- Never say you have no questions—it signals disinterest or poor preparation
