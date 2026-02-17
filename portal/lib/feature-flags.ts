@@ -19,10 +19,10 @@ interface CourseVisibility {
   advanced: boolean;
 }
 
-// Default visibility - only IB is visible for Phase 1
+// Default visibility
 const defaultVisibility: CourseVisibility = {
   ib: true,
-  pe: false,
+  pe: true,
   advanced: false,
 };
 

@@ -4,6 +4,10 @@ import { resumeFeedbackJsonSchema } from './schemas';
 import { calculateOverallScore } from './score-calculator';
 import type { PreAnalysisResult } from './pre-analyzer';
 import type { VisionAnalysisResult } from './vision-analyzer';
+import {
+  PE_RESUME_EVALUATOR_SYSTEM_PROMPT,
+  buildPEUserPrompt,
+} from './pe-evaluator-config';
 
 // Initialize Anthropic client
 function getAnthropicClient(): Anthropic {
@@ -214,15 +218,22 @@ Respond with ONLY the JSON object.`;
  * @param resumeText - Extracted text content from the resume
  * @param preAnalysis - Heuristic pre-analysis results
  * @param visionAnalysis - Optional visual formatting analysis from Claude Vision
+ * @param trackSlug - Course track slug to determine evaluation context (IB vs PE)
  */
 export async function evaluateResume(
   resumeText: string,
   preAnalysis: PreAnalysisResult,
-  visionAnalysis?: VisionAnalysisResult
+  visionAnalysis?: VisionAnalysisResult,
+  trackSlug?: string
 ): Promise<ResumeFeedbackJson> {
   const client = getAnthropicClient();
 
-  const userPrompt = buildUserPrompt(resumeText, preAnalysis, visionAnalysis);
+  // Use PE evaluator for PE track, IB evaluator for everything else
+  const isPE = trackSlug === 'private-equity-interview-prep';
+  const systemPrompt = isPE ? PE_RESUME_EVALUATOR_SYSTEM_PROMPT : RESUME_EVALUATOR_SYSTEM_PROMPT;
+  const userPrompt = isPE
+    ? buildPEUserPrompt(resumeText, preAnalysis)
+    : buildUserPrompt(resumeText, preAnalysis, visionAnalysis);
 
   const response = await client.messages.create({
     model: 'claude-sonnet-4-20250514',

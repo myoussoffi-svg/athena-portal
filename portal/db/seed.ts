@@ -12,9 +12,6 @@ import { promptVersions, evaluatorVersions, activeVersions } from './schema';
 // Load environment variables before importing db (which reads DATABASE_URL)
 config({ path: '.env.local' });
 
-// Dynamic import to ensure env vars are loaded first
-const { db } = await import('./index');
-
 const PROMPT_VERSION_ID = '2025-01-v1';
 const EVALUATOR_VERSION_ID = '2025-01-v1';
 
@@ -453,6 +450,9 @@ const outputSchema = {
 // ─────────────────────────────────────────────────────────────
 
 async function seed() {
+  // Dynamic import to ensure env vars are loaded first
+  const { db } = await import('./index');
+
   console.log('Seeding database...');
 
   // Insert prompt version
@@ -476,18 +476,19 @@ async function seed() {
     })
     .onConflictDoNothing();
 
-  // Insert or update active versions pointer
-  console.log('Setting active versions...');
+  // Insert or update active versions for IB track
+  const IB_TRACK_SLUG = 'investment-banking-interview-prep';
+  console.log('Setting active versions for track:', IB_TRACK_SLUG);
   await db
     .insert(activeVersions)
     .values({
-      id: 1,
+      trackSlug: IB_TRACK_SLUG,
       activePromptVersionId: PROMPT_VERSION_ID,
       activeEvaluatorVersionId: EVALUATOR_VERSION_ID,
       updatedBy: 'seed-script',
     })
     .onConflictDoUpdate({
-      target: activeVersions.id,
+      target: activeVersions.trackSlug,
       set: {
         activePromptVersionId: PROMPT_VERSION_ID,
         activeEvaluatorVersionId: EVALUATOR_VERSION_ID,

@@ -21,7 +21,7 @@ const moduleIcons: Record<string, string> = {
 const modulesWithQuiz = ['02-valuation-modeling', '03-accounting-foundations', '04-lbos-advanced-topics'];
 
 // Modules with case studies
-const modulesWithCaseStudies = ['02-valuation-modeling', '03-accounting-foundations', '04-lbos-advanced-topics'];
+const modulesWithCaseStudies = ['02-valuation-modeling', '03-accounting-foundations', '04-lbos-advanced-topics', '04-paper-lbo-tests'];
 
 export default async function ModulePage({
   params,

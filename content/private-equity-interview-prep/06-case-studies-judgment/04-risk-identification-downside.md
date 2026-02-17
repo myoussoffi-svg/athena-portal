@@ -13,7 +13,7 @@ Here is a truth that banking rarely teaches you: successful investing is not pri
 
 Private equity returns are fundamentally asymmetric. Your downside is capped at losing your entire investment - a 1x loss. But your upside has no theoretical limit. This asymmetry means that avoiding catastrophic losses matters more than maximizing any single winning investment.
 
-Consider a portfolio of ten investments. Nine generate 2.5x returns. One goes to zero. Your portfolio return is 2.15x - acceptable but not exceptional. Now imagine the same portfolio where you avoided the zero by passing on that deal. Your portfolio return jumps to 2.5x, a dramatic improvement.
+Consider a portfolio of ten investments. Nine generate 2.5x returns. One goes to zero. Your portfolio return is 2.25x - acceptable but not exceptional. Now imagine the same portfolio where you avoided the zero by passing on that deal. Your portfolio return jumps to 2.5x, a dramatic improvement.
 
 This is why risk identification deserves substantial attention in your case study. The interviewer is not asking you to find perfect investments - those do not exist. They are asking whether you can identify the investments that could destroy capital and avoid them.
 

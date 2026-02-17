@@ -23,14 +23,13 @@ const PRODUCTS = [
     grantedTrackSlugs: ['investment-banking-interview-prep'], // Track slug that this product grants access to
     isActive: true,
   },
-  // Future products (inactive for now)
   {
     slug: 'private-equity-interview-prep',
     name: 'Private Equity Interview Prep',
-    description: 'Complete preparation for private equity associate interviews. Covers LBO modeling, case studies, deal discussions, and behavioral questions.',
-    priceUsdCents: 34500, // $345.00
+    description: 'Rigorous preparation for private equity recruiting. Master LBO modeling under pressure, case study frameworks, investment judgment, and deal walkthroughs to pass PE interviews at top firms.',
+    priceUsdCents: 29500, // $295.00
     grantedTrackSlugs: ['private-equity-interview-prep'],
-    isActive: false, // Not available yet
+    isActive: true,
   },
 ];
 

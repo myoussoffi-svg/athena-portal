@@ -79,6 +79,8 @@ export function InterviewLanding({ trackSlug }: InterviewLandingProps) {
     try {
       const response = await fetch('/api/interview/initialize', {
         method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ trackSlug }),
       });
 
       if (!response.ok) {
@@ -312,7 +314,11 @@ export function InterviewLanding({ trackSlug }: InterviewLandingProps) {
           <div style={{ marginBottom: 20 }}>
             <h4 style={{ margin: '0 0 8px', fontSize: 14, fontWeight: 600 }}>Interview Format:</h4>
             <ul style={{ margin: 0, padding: '0 0 0 20px', fontSize: 13, color: 'rgba(10, 10, 10, 0.7)', lineHeight: 1.7 }}>
-              <li>14 questions (4 behavioral, 10 technical)</li>
+              {trackSlug === 'private-equity-interview-prep' ? (
+                <li>14 questions (4 behavioral/fit, 10 technical including LBO math and case study)</li>
+              ) : (
+                <li>14 questions (4 behavioral, 10 technical)</li>
+              )}
               <li>Your video will be recorded continuously</li>
               <li>The interview will be conducted in fullscreen mode</li>
               <li>You&apos;ll receive detailed feedback after processing</li>

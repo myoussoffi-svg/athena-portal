@@ -19,6 +19,7 @@ import { extractBlocks, segmentContent } from "@/lib/blocks";
 
 import { remark } from "remark";
 import html from "remark-html";
+import remarkGfm from "remark-gfm";
 
 type Params = { trackSlug: string; moduleSlug: string; lessonSlug: string };
 
@@ -54,7 +55,7 @@ function extractSection(md: string, headingRegex: RegExp) {
 }
 
 async function mdToHtml(md: string) {
-  const processed = await remark().use(html).process(md ?? "");
+  const processed = await remark().use(remarkGfm).use(html).process(md ?? "");
   return processed.toString();
 }
 
@@ -449,6 +450,45 @@ export default async function LessonPage({
           .athena-prose a:hover { text-decoration: underline; }
           .athena-prose input[type="checkbox"] { transform: translateY(1px); margin-right: 8px; }
           .athena-prose li > p { margin: 0; }
+
+          /* Table Styles */
+          .athena-prose table {
+            width: 100%;
+            margin: 24px 0;
+            border-collapse: collapse;
+            font-size: 14px;
+            border: 1px solid rgba(10, 10, 10, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+          }
+          .athena-prose thead {
+            background: rgba(65, 109, 137, 0.08);
+          }
+          .athena-prose th {
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 600;
+            color: var(--athena-fg);
+            border-bottom: 2px solid rgba(65, 109, 137, 0.2);
+          }
+          .athena-prose td {
+            padding: 10px 16px;
+            color: var(--athena-muted);
+            border-bottom: 1px solid rgba(10, 10, 10, 0.06);
+          }
+          .athena-prose tbody tr:last-child td {
+            border-bottom: none;
+          }
+          .athena-prose tbody tr:hover {
+            background: rgba(65, 109, 137, 0.03);
+          }
+          .athena-prose tbody tr:last-child {
+            font-weight: 600;
+          }
+          .athena-prose tbody tr:last-child td {
+            color: var(--athena-fg);
+            border-top: 1px solid rgba(10, 10, 10, 0.1);
+          }
 
           /* Enhanced Navigation Styles */
           .lesson-nav {

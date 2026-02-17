@@ -487,24 +487,45 @@ export default async function Page({
               <h2 className="track-section-title">What You&apos;ll Learn</h2>
               <span className="track-section-subtitle">Key skills covered</span>
             </div>
-            <div className="learn-grid">
-              <div className="learn-item">
-                <div className="learn-icon">📖</div>
-                <span className="learn-text">Master technical concepts tested in IB interviews</span>
+            {trackSlug === 'private-equity-interview-prep' ? (
+              <div className="learn-grid">
+                <div className="learn-item">
+                  <div className="learn-icon">📊</div>
+                  <span className="learn-text">Master LBO modeling and paper LBO mental math</span>
+                </div>
+                <div className="learn-item">
+                  <div className="learn-icon">💼</div>
+                  <span className="learn-text">Build frameworks for case studies and investment judgment</span>
+                </div>
+                <div className="learn-item">
+                  <div className="learn-icon">🎯</div>
+                  <span className="learn-text">Practice deal walkthroughs and PE-specific technicals</span>
+                </div>
+                <div className="learn-item">
+                  <div className="learn-icon">🏆</div>
+                  <span className="learn-text">Navigate on-cycle recruiting and headhunter dynamics</span>
+                </div>
               </div>
-              <div className="learn-item">
-                <div className="learn-icon">💡</div>
-                <span className="learn-text">Build frameworks for structuring your answers</span>
+            ) : (
+              <div className="learn-grid">
+                <div className="learn-item">
+                  <div className="learn-icon">📖</div>
+                  <span className="learn-text">Master technical concepts tested in IB interviews</span>
+                </div>
+                <div className="learn-item">
+                  <div className="learn-icon">💡</div>
+                  <span className="learn-text">Build frameworks for structuring your answers</span>
+                </div>
+                <div className="learn-item">
+                  <div className="learn-icon">🎯</div>
+                  <span className="learn-text">Practice with real interview questions and scenarios</span>
+                </div>
+                <div className="learn-item">
+                  <div className="learn-icon">🏆</div>
+                  <span className="learn-text">Gain confidence to perform under pressure</span>
+                </div>
               </div>
-              <div className="learn-item">
-                <div className="learn-icon">🎯</div>
-                <span className="learn-text">Practice with real interview questions and scenarios</span>
-              </div>
-              <div className="learn-item">
-                <div className="learn-icon">🏆</div>
-                <span className="learn-text">Gain confidence to perform under pressure</span>
-              </div>
-            </div>
+            )}
           </section>
 
           {/* Modules Section */}
@@ -580,7 +601,9 @@ export default async function Page({
                     <span className="practice-badge">AI-Powered</span>
                   </div>
                   <div className="practice-desc">
-                    Upload your resume and get detailed AI feedback tailored for Investment Banking analyst applications.
+                    {trackSlug === 'private-equity-interview-prep'
+                      ? 'Upload your resume and get detailed AI feedback tailored for PE recruiting—optimizing deal experience and technical skills.'
+                      : 'Upload your resume and get detailed AI feedback tailored for Investment Banking analyst applications.'}
                   </div>
                   <div className="practice-features">
                     <span className="practice-feature">
@@ -597,30 +620,33 @@ export default async function Page({
                 <span className="practice-arrow">→</span>
               </Link>
 
-              <Link href={`/track/${trackSlug}/outreach`} className="practice-card">
-                <div className="practice-icon">📧</div>
-                <div className="practice-content">
-                  <div className="practice-title-row">
-                    <span className="practice-title">Outreach Tracker</span>
-                    <span className="practice-badge">AI-Powered</span>
+              {/* Outreach Tracker - only for IB course (PE recruiting is headhunter-driven) */}
+              {trackSlug === 'investment-banking-interview-prep' && (
+                <Link href={`/track/${trackSlug}/outreach`} className="practice-card">
+                  <div className="practice-icon">📧</div>
+                  <div className="practice-content">
+                    <div className="practice-title-row">
+                      <span className="practice-title">Outreach Tracker</span>
+                      <span className="practice-badge">AI-Powered</span>
+                    </div>
+                    <div className="practice-desc">
+                      Track your networking contacts, manage follow-ups, and generate personalized outreach emails.
+                    </div>
+                    <div className="practice-features">
+                      <span className="practice-feature">
+                        <span className="practice-feature-icon">📋</span> Contact tracker
+                      </span>
+                      <span className="practice-feature">
+                        <span className="practice-feature-icon">⏰</span> Follow-up alerts
+                      </span>
+                      <span className="practice-feature">
+                        <span className="practice-feature-icon">✍️</span> Email generator
+                      </span>
+                    </div>
                   </div>
-                  <div className="practice-desc">
-                    Track your networking contacts, manage follow-ups, and generate personalized outreach emails.
-                  </div>
-                  <div className="practice-features">
-                    <span className="practice-feature">
-                      <span className="practice-feature-icon">📋</span> Contact tracker
-                    </span>
-                    <span className="practice-feature">
-                      <span className="practice-feature-icon">⏰</span> Follow-up alerts
-                    </span>
-                    <span className="practice-feature">
-                      <span className="practice-feature-icon">✍️</span> Email generator
-                    </span>
-                  </div>
-                </div>
-                <span className="practice-arrow">→</span>
-              </Link>
+                  <span className="practice-arrow">→</span>
+                </Link>
+              )}
             </div>
           </section>
         </div>

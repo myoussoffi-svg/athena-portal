@@ -13,7 +13,7 @@
       "idx": 1,
       "version": "7",
       "when": 1768852108379,
-      "tag": "0001_illegal_amazoness",
+      "tag": "0001_fix_module_slugs",
       "breakpoints": true
     },
     {
@@ -35,6 +35,13 @@
       "version": "7",
       "when": 1770425602231,
       "tag": "0004_grey_prima",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1771043553898,
+      "tag": "0005_add-track-slug-to-active-versions",
       "breakpoints": true
     }
   ]

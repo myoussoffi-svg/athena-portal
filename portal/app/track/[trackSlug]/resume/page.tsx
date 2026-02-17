@@ -20,5 +20,5 @@ export default async function ResumePageWrapper({ params }: PageProps) {
 
 export const metadata = {
   title: 'Resume Feedback | Athena',
-  description: 'Get AI-powered feedback on your Investment Banking resume',
+  description: 'Get AI-powered feedback on your resume for finance recruiting',
 };

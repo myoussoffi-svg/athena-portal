@@ -1,0 +1,681 @@
+{
+  "module": "deal-walkthroughs-fit",
+  "title": "Deal Walkthroughs & PE Fit Quiz Bank",
+  "questions": [
+    {
+      "id": "pe-fit-001",
+      "question": "When structuring a deal walkthrough for a PE interviewer, what is the BEST opening approach?",
+      "options": {
+        "A": "Start with detailed financial metrics to establish credibility",
+        "B": "Begin with the transaction outcome (e.g., 'Advised on a $500M sale to a strategic')",
+        "C": "Lead with your personal role and responsibilities",
+        "D": "Open with extensive industry background and market context"
+      },
+      "correct": "B",
+      "explanation": "PE interviewers want to quickly understand the deal's scope and relevance. Leading with the outcome (deal type, size, buyer type) gives them an immediate frame of reference. You can then layer in your role and the investment thesis. Starting with financials or background before they understand the deal type creates confusion.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "deal-walkthrough-best-practices"
+    },
+    {
+      "id": "pe-fit-002",
+      "question": "A PE interviewer asks you to walk through a deal. You worked on a sell-side M&A transaction. What should you emphasize MOST to resonate with a PE audience?",
+      "options": {
+        "A": "The process mechanics and timeline management",
+        "B": "The investment thesis that drove buyer interest and valuation",
+        "C": "The specific pages you built in the CIM",
+        "D": "The relationship dynamics with the client CFO"
+      },
+      "correct": "B",
+      "explanation": "PE professionals evaluate investments based on thesis and value creation potential. They want to hear you discuss why buyers found the asset attractive, what drove valuation, and what the growth story was. Process mechanics and CIM pages are banker-centric; PE wants to see you can think like an investor.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "deal-walkthrough-best-practices"
+    },
+    {
+      "id": "pe-fit-003",
+      "question": "What is the ideal length for an initial deal walkthrough in a PE interview?",
+      "options": {
+        "A": "30-60 seconds to show you can be concise",
+        "B": "2-3 minutes covering key elements with room for follow-ups",
+        "C": "5-7 minutes to demonstrate depth of knowledge",
+        "D": "As long as needed to cover all aspects thoroughly"
+      },
+      "correct": "B",
+      "explanation": "A 2-3 minute overview strikes the right balance. It demonstrates you can synthesize complex information while leaving room for the interviewer to probe areas of interest. Too short suggests superficial involvement; too long indicates poor judgment about what matters and monopolizes the conversation.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "deal-walkthrough-best-practices"
+    },
+    {
+      "id": "pe-fit-004",
+      "question": "When discussing your role in a deal, which framing is MOST effective for PE interviews?",
+      "options": {
+        "A": "'I built the model and ran all the sensitivity analyses'",
+        "B": "'I was responsible for the financial analysis workstream'",
+        "C": "'I identified that revenue synergies were overstated by 40% through customer overlap analysis, which reshaped the negotiation'",
+        "D": "'I worked closely with the MD on all client communications'"
+      },
+      "correct": "C",
+      "explanation": "PE values insight and impact over task completion. Option C shows analytical judgment that influenced the deal outcome. It demonstrates you weren't just executing but thinking critically about the investment. Generic role descriptions or task lists don't differentiate you or show PE-relevant thinking.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "deal-walkthrough-best-practices"
+    },
+    {
+      "id": "pe-fit-005",
+      "question": "You're walking through a deal where the transaction ultimately didn't close. How should you approach this?",
+      "options": {
+        "A": "Avoid discussing it and pivot to a completed transaction",
+        "B": "Focus on the process work you completed before termination",
+        "C": "Explain why it didn't close and what you learned about deal risk assessment",
+        "D": "Blame external factors like market conditions or regulatory issues"
+      },
+      "correct": "C",
+      "explanation": "Failed deals can be excellent learning examples. PE professionals deal with broken processes regularly and want to see mature reflection. Explaining why a deal failed (valuation gap, diligence findings, financing issues) and demonstrating learning shows sophistication. Avoiding the topic or deflecting blame suggests immaturity.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "deal-walkthrough-best-practices"
+    },
+    {
+      "id": "pe-fit-006",
+      "question": "When an interviewer asks 'What was the valuation?' during a deal walkthrough, what is the BEST response structure?",
+      "options": {
+        "A": "State the multiple and move on quickly",
+        "B": "Provide the multiple, explain what drove it relative to comps, and note any unique considerations",
+        "C": "Describe all the valuation methodologies you used",
+        "D": "Deflect by saying the terms were confidential"
+      },
+      "correct": "B",
+      "explanation": "Context makes valuation discussions valuable. Stating '8x EBITDA' means nothing without explaining whether that was a premium or discount, what drove it (growth profile, margins, strategic value), and any unique factors. This shows you understand valuation isn't just a number but a reflection of investment merit.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "deal-walkthrough-best-practices"
+    },
+    {
+      "id": "pe-fit-007",
+      "question": "You worked on a deal in a niche industry the PE firm doesn't invest in. How should you position the walkthrough?",
+      "options": {
+        "A": "Apologize that the industry isn't relevant and offer to discuss something else",
+        "B": "Focus on transferable analytical frameworks and investment thesis elements",
+        "C": "Spend extra time explaining the industry so they understand the context",
+        "D": "Quickly summarize and move to your 'Why PE' answer"
+      },
+      "correct": "B",
+      "explanation": "Every deal has transferable elements: growth drivers, margin analysis, competitive dynamics, diligence approaches, and valuation considerations. PE firms care about your analytical process and judgment, not just sector overlap. Emphasize how you evaluated the business and what made it attractive or unattractive.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "deal-walkthrough-best-practices"
+    },
+    {
+      "id": "pe-fit-008",
+      "question": "When discussing deal financials, what level of specificity demonstrates the right balance?",
+      "options": {
+        "A": "Round numbers only ('about $500M revenue') to show big-picture thinking",
+        "B": "Exact figures ('$487.3M revenue') to demonstrate attention to detail",
+        "C": "Key metrics with context ('$500M revenue growing mid-teens with 25% EBITDA margins')",
+        "D": "Ranges only to maintain confidentiality"
+      },
+      "correct": "C",
+      "explanation": "Providing key metrics with growth and margin context shows you understand what drives value. Excessive precision suggests you're reciting rather than synthesizing. Round numbers alone lack substance. The goal is demonstrating you internalized the business's financial profile and can discuss it intelligently.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "deal-walkthrough-best-practices"
+    },
+    {
+      "id": "pe-fit-009",
+      "question": "A PE interviewer asks about competitive dynamics in your deal. What response demonstrates PE-relevant thinking?",
+      "options": {
+        "A": "List the main competitors and their market shares",
+        "B": "Describe how competitive positioning affected the investment thesis and exit potential",
+        "C": "Explain which competitors were in the buyer universe",
+        "D": "Discuss the competitive analysis pages in the CIM"
+      },
+      "correct": "B",
+      "explanation": "PE cares about competitive dynamics as they relate to investment risk and return. Can the company defend margins? Is there a moat? How does positioning affect growth and exit multiples? Simply listing competitors or describing CIM content doesn't show investment judgment.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "deal-walkthrough-best-practices"
+    },
+    {
+      "id": "pe-fit-010",
+      "question": "You're asked to walk through a deal where you had limited involvement. What is the BEST approach?",
+      "options": {
+        "A": "Walk through it anyway, emphasizing the parts you did work on",
+        "B": "Acknowledge limited involvement and offer a different deal where you had more ownership",
+        "C": "Describe what you learned by observing the senior team",
+        "D": "Focus on the outcome and downplay role questions"
+      },
+      "correct": "B",
+      "explanation": "Honesty about your involvement level builds credibility. Offering an alternative deal shows self-awareness and confidence. Overstating involvement risks exposure during detailed follow-ups, damaging trust. PE values integrity and accurate self-assessment over inflated claims.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "deal-walkthrough-best-practices"
+    },
+    {
+      "id": "pe-fit-011",
+      "question": "When transitioning from deal overview to specific analysis during a walkthrough, what phrase best maintains engagement?",
+      "options": {
+        "A": "'Let me tell you about the model I built'",
+        "B": "'The key analytical question was whether their growth was sustainable, so I...'",
+        "C": "'I spent most of my time on the financial analysis'",
+        "D": "'The interesting part was the due diligence'"
+      },
+      "correct": "B",
+      "explanation": "Framing your work around a key investment question shows you understood the stakes, not just the tasks. It positions your analysis as purposeful problem-solving rather than generic execution. This mirrors how PE professionals think: identify the key questions, then do the work to answer them.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "deal-walkthrough-best-practices"
+    },
+    {
+      "id": "pe-fit-012",
+      "question": "An interviewer asks about risks in a deal you worked on. What response framework is MOST effective?",
+      "options": {
+        "A": "List all the risk factors from the CIM",
+        "B": "Identify the top 2-3 risks and explain how they were mitigated or priced",
+        "C": "Focus on risks that didn't materialize to show the deal worked out",
+        "D": "Emphasize that thorough diligence addressed all concerns"
+      },
+      "correct": "B",
+      "explanation": "PE investing is fundamentally about risk assessment and mitigation. Identifying key risks and explaining how they were addressed (through structure, pricing, or diligence) demonstrates investment judgment. Generic risk lists or claiming all risks were handled sounds naive or evasive.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "deal-walkthrough-best-practices"
+    },
+    {
+      "id": "pe-fit-013",
+      "question": "What is the MOST compelling opening for a 'Why PE' answer?",
+      "options": {
+        "A": "'I want to be on the principal side of transactions'",
+        "B": "'I've learned a lot in banking but want to see deals through the full lifecycle'",
+        "C": "'After evaluating companies for buyers, I want to be the one making investment decisions and driving value creation'",
+        "D": "'PE offers better hours and more interesting work'"
+      },
+      "correct": "C",
+      "explanation": "This answer connects banking experience to PE aspirations with specificity. It shows understanding of PE's core activities (investing, value creation) and positions banking as preparation, not something to escape. Generic 'principal side' language or complaints about banking signal poor judgment.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "why-pe-frameworks"
+    },
+    {
+      "id": "pe-fit-014",
+      "question": "When explaining 'Why PE,' how should you address the longer holding periods compared to banking?",
+      "options": {
+        "A": "Avoid mentioning it since it could seem like a negative",
+        "B": "Frame it as appealing because you want to see the impact of your work over time",
+        "C": "Acknowledge it's a tradeoff you're willing to accept",
+        "D": "Compare it favorably to the repetitive nature of banking"
+      },
+      "correct": "B",
+      "explanation": "The ownership period is a feature, not a bug. Framing it positively shows you understand PE's value creation model and are genuinely attracted to it. Treating it as a tradeoff or avoiding it suggests you haven't thought through what PE actually involves day-to-day.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "why-pe-frameworks"
+    },
+    {
+      "id": "pe-fit-015",
+      "question": "Which element makes a 'Why PE' answer feel authentic rather than rehearsed?",
+      "options": {
+        "A": "Mentioning specific PE professionals you've spoken with",
+        "B": "Connecting to a specific experience or realization that sparked your interest",
+        "C": "Using industry terminology correctly",
+        "D": "Expressing enthusiasm through energetic delivery"
+      },
+      "correct": "B",
+      "explanation": "A specific moment or experience (a deal that made you want to own the outcome, a portfolio company interaction that intrigued you) grounds your answer in reality. Generic statements about 'loving investing' or dropping names without substance feel manufactured. Authenticity comes from genuine reflection.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "why-pe-frameworks"
+    },
+    {
+      "id": "pe-fit-016",
+      "question": "How should you handle the implicit question 'Why are you leaving banking?' within your 'Why PE' answer?",
+      "options": {
+        "A": "Focus only on PE's positives without mentioning banking",
+        "B": "Be honest about banking's negatives while emphasizing PE's fit",
+        "C": "Frame banking as valuable preparation that naturally leads to PE as the next step",
+        "D": "Minimize banking experience to show you're ready to move on"
+      },
+      "correct": "C",
+      "explanation": "Position banking as a deliberate foundation, not something you're fleeing. PE firms want candidates who valued their banking experience and are now ready for the next stage, not burned-out analysts escaping. Criticizing banking or minimizing it raises concerns about your judgment and professionalism.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "why-pe-frameworks"
+    },
+    {
+      "id": "pe-fit-017",
+      "question": "When asked 'Why PE versus other buy-side roles?' what distinction matters MOST to emphasize?",
+      "options": {
+        "A": "PE has better compensation than hedge funds long-term",
+        "B": "PE's control orientation and ability to implement operational change",
+        "C": "PE has a clearer career path than other alternatives",
+        "D": "PE interviews are a natural fit for your banking background"
+      },
+      "correct": "B",
+      "explanation": "The control element differentiates PE from other investing roles. PE doesn't just pick stocks; it acquires companies, installs management, and drives operational improvement. Showing you want to influence outcomes through active ownership resonates with PE's identity. Compensation or career path answers seem transactional.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "why-pe-frameworks"
+    },
+    {
+      "id": "pe-fit-018",
+      "question": "What is the biggest mistake candidates make when answering 'Why PE'?",
+      "options": {
+        "A": "Being too specific about their long-term career goals",
+        "B": "Focusing on what they want to get from PE rather than what they can contribute",
+        "C": "Not mentioning operational value creation",
+        "D": "Sounding too enthusiastic"
+      },
+      "correct": "B",
+      "explanation": "Self-centered answers ('I want exposure to...' 'I want to learn...') miss the mark. PE firms hire people who will add value immediately. The best answers balance genuine interest with evidence you'll be a strong contributor. Frame your desires through the lens of contribution.",
+      "difficulty": "hard",
+      "type": "conceptual",
+      "topic": "why-pe-frameworks"
+    },
+    {
+      "id": "pe-fit-019",
+      "question": "How long should a 'Why PE' answer typically be?",
+      "options": {
+        "A": "30 seconds - short and punchy",
+        "B": "60-90 seconds - substantive but concise",
+        "C": "2-3 minutes - comprehensive explanation",
+        "D": "As long as needed to cover all your reasoning"
+      },
+      "correct": "B",
+      "explanation": "60-90 seconds allows you to hit key points (banking foundation, genuine interest in PE model, specific attraction to investing/ownership) without rambling. Too short seems dismissive of an important question; too long suggests you can't synthesize or are overcompensating for weak reasoning.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "why-pe-frameworks"
+    },
+    {
+      "id": "pe-fit-020",
+      "question": "If you have non-traditional experience (not pure M&A banking), how should you frame 'Why PE'?",
+      "options": {
+        "A": "Apologize for the non-traditional path and emphasize your willingness to learn",
+        "B": "Argue your experience is actually better preparation than traditional banking",
+        "C": "Connect your unique experiences to specific PE-relevant skills while acknowledging gaps",
+        "D": "Focus entirely on your passion for investing to overcome the experience gap"
+      },
+      "correct": "C",
+      "explanation": "Own your path while being honest about it. Perhaps consulting gave you operational perspective, or credit gave you downside focus. Connect these authentically to PE while acknowledging you'll need to ramp on traditional execution. Self-awareness and genuine fit matter more than a perfect resume.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "why-pe-frameworks"
+    },
+    {
+      "id": "pe-fit-021",
+      "question": "What is the MOST effective way to research a PE firm before an interview?",
+      "options": {
+        "A": "Memorize their recent deals from press releases",
+        "B": "Understand their investment strategy, recent deals, and how your experience aligns with their portfolio",
+        "C": "Read all their portfolio company websites thoroughly",
+        "D": "Focus on their fund size and returns"
+      },
+      "correct": "B",
+      "explanation": "Effective research connects their strategy to your fit. Understanding sectors they focus on, deal sizes they pursue, and their value creation approach lets you position yourself relevantly. Memorizing deals without understanding strategy, or surface-level facts about fund size, doesn't demonstrate genuine interest.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "why-this-firm"
+    },
+    {
+      "id": "pe-fit-022",
+      "question": "When asked 'Why our firm specifically?' what type of reason is MOST compelling?",
+      "options": {
+        "A": "Your firm has a great reputation and strong returns",
+        "B": "Your sector focus in healthcare aligns with my banking experience advising medical device companies",
+        "C": "I've heard great things about the culture from people who work here",
+        "D": "Your firm is the right size for the experience I'm seeking"
+      },
+      "correct": "B",
+      "explanation": "Specific, differentiated fit based on your experience is most compelling. It shows you've researched them and thought about mutual value creation. Reputation, culture hearsay, or size preferences are generic and could apply to many firms. Connect their strategy to your specific capabilities.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "why-this-firm"
+    },
+    {
+      "id": "pe-fit-023",
+      "question": "How should you handle 'Why this firm?' when you're genuinely interested in multiple PE firms?",
+      "options": {
+        "A": "Be honest that you're interviewing broadly and focus on what makes them attractive",
+        "B": "Claim they're your top choice even if it's not entirely true",
+        "C": "Pivot to discussing your interest in PE generally",
+        "D": "Focus on specific and genuine reasons this firm appeals to you"
+      },
+      "correct": "D",
+      "explanation": "You can have multiple genuine interests. Focus on specific, authentic reasons this particular firm appeals: their approach, sectors, culture elements, or deal types. You don't need to claim exclusivity, but you should have specific reasons for sitting in this interview versus any other.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "why-this-firm"
+    },
+    {
+      "id": "pe-fit-024",
+      "question": "What is the riskiest element to include in a 'Why this firm' answer?",
+      "options": {
+        "A": "Mentioning a recent deal they've announced",
+        "B": "Referencing conversations with current employees",
+        "C": "Discussing a portfolio company that's struggling",
+        "D": "Comparing them favorably to competitors"
+      },
+      "correct": "C",
+      "explanation": "Mentioning struggling investments risks seeming like you're highlighting failures or being oblivious to sensitivity. Even constructive framing ('I'd love to help turn around situations like X') can backfire. Reference successful investments or neutral strategy elements. Current deals and employee conversations are generally safe.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "why-this-firm"
+    },
+    {
+      "id": "pe-fit-025",
+      "question": "When researching a PE firm's portfolio, what insight is MOST valuable to surface in an interview?",
+      "options": {
+        "A": "The names and industries of their current portfolio companies",
+        "B": "A pattern in their investments that reveals their thesis and where your skills fit",
+        "C": "The returns they've generated on specific deals",
+        "D": "News about recent executive changes at portfolio companies"
+      },
+      "correct": "B",
+      "explanation": "Identifying patterns (sector focus, deal type preference, value creation approach) shows analytical thinking and genuine interest. Saying 'I noticed you've done multiple platform builds in industrial services, and my experience with add-on acquisitions would be relevant' is far more impressive than listing company names.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "why-this-firm"
+    },
+    {
+      "id": "pe-fit-026",
+      "question": "If you cannot find much differentiated information about a smaller PE firm, what is the BEST approach?",
+      "options": {
+        "A": "Acknowledge you couldn't find much and ask them to tell you more",
+        "B": "Focus on generic PE industry appeal in your answer",
+        "C": "Use the limited information you have and ask thoughtful questions that show genuine curiosity",
+        "D": "Assume they're similar to larger firms in the same space"
+      },
+      "correct": "C",
+      "explanation": "Use what you can find (deal announcements, portfolio company info, founder backgrounds) and demonstrate curiosity through questions. 'I read about your investment in X and was curious how you approached the value creation plan' shows effort and genuine interest. Admitting you found nothing or defaulting to generic answers suggests you didn't try hard enough.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "why-this-firm"
+    },
+    {
+      "id": "pe-fit-027",
+      "question": "What is the appropriate balance between flattery and substance in a 'Why this firm' answer?",
+      "options": {
+        "A": "Lead with genuine compliments about their success, then explain fit",
+        "B": "Avoid flattery entirely and focus only on objective fit factors",
+        "C": "Brief acknowledgment of what you admire, then quickly pivot to specific mutual fit",
+        "D": "Match the interviewer's tone - more flattering if they seem to expect it"
+      },
+      "correct": "C",
+      "explanation": "Brief, genuine acknowledgment ('I respect your approach to...') followed by substantive fit discussion works best. Excessive flattery feels insincere; no acknowledgment can seem cold. The goal is showing you've done homework and see specific alignment, not impressing them with compliments.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "why-this-firm"
+    },
+    {
+      "id": "pe-fit-028",
+      "question": "How should you reference conversations with firm employees in your 'Why this firm' answer?",
+      "options": {
+        "A": "Name-drop everyone you've spoken with to show thoroughness",
+        "B": "Reference specific insights you gained rather than just names",
+        "C": "Avoid mentioning conversations to prevent seeming like you're leveraging relationships",
+        "D": "Only mention conversations if the person suggested you do so"
+      },
+      "correct": "B",
+      "explanation": "Insights matter more than names. 'Speaking with Sarah, I learned your team emphasizes hands-on operating partner involvement, which appeals to me because...' shows you engaged meaningfully. Simply listing names without insights seems like networking theater. The substance of what you learned demonstrates genuine engagement.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "why-this-firm"
+    },
+    {
+      "id": "pe-fit-029",
+      "question": "When adapting a banking deal for a PE audience, what element should you ADD that wouldn't typically be emphasized in banking?",
+      "options": {
+        "A": "More detailed process timeline",
+        "B": "Your view on whether you would have invested in the company",
+        "C": "Additional color on client relationship management",
+        "D": "More specifics about the marketing process"
+      },
+      "correct": "B",
+      "explanation": "PE wants to see investment judgment. Adding your perspective on whether the asset was attractive, at what price you'd invest, and what risks concerned you transforms a banking deal into an investing conversation. Process details and relationship management are banker concerns, not investor concerns.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "banking-deals-for-pe"
+    },
+    {
+      "id": "pe-fit-030",
+      "question": "You worked on a capital markets transaction (IPO/debt raise). How do you make this relevant for PE?",
+      "options": {
+        "A": "Focus on the investor feedback and how it informed valuation",
+        "B": "Emphasize the technical execution of the transaction",
+        "C": "Explain that you're eager to do more M&A-focused work",
+        "D": "Highlight the relationship with the client CFO"
+      },
+      "correct": "A",
+      "explanation": "Investor feedback from capital markets reveals how the market values companies - directly relevant to PE. What did growth investors focus on? What drove valuation premiums or discounts? This shows you can extract investment-relevant insights from any transaction type, not just M&A.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "banking-deals-for-pe"
+    },
+    {
+      "id": "pe-fit-031",
+      "question": "What is the MOST common mistake when discussing banking deals in PE interviews?",
+      "options": {
+        "A": "Providing too much financial detail",
+        "B": "Describing your role as an executor rather than a thinker",
+        "C": "Spending too long on company background",
+        "D": "Not knowing the deal outcome"
+      },
+      "correct": "B",
+      "explanation": "Framing yourself as someone who 'built the model' or 'ran the process' rather than someone who analyzed investment merit is the biggest miss. PE hires thinkers, not task-completers. Every deal discussion should highlight judgment, insight, or investment perspective, not just execution quality.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "banking-deals-for-pe"
+    },
+    {
+      "id": "pe-fit-032",
+      "question": "When discussing a deal where the bank represented the seller, how should you frame buyer behavior for PE audiences?",
+      "options": {
+        "A": "Focus on how you maximized value for your client against the buyers",
+        "B": "Discuss what you observed about how different buyer types evaluated the asset",
+        "C": "Emphasize how you managed the competitive tension in the process",
+        "D": "Highlight how you prepared management for buyer meetings"
+      },
+      "correct": "B",
+      "explanation": "Your PE interviewer has been in those buyer shoes. Sharing what you observed about buyer evaluation approaches (how sponsors vs. strategics thought about value, what drove their interest or hesitation) shows you paid attention to the investor side of the table, not just your client's objectives.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "banking-deals-for-pe"
+    },
+    {
+      "id": "pe-fit-033",
+      "question": "How should you discuss a deal where valuation expectations were not met?",
+      "options": {
+        "A": "Focus on external factors that impacted valuation",
+        "B": "Explain what the analysis revealed about why valuation fell short",
+        "C": "Emphasize that the deal still closed successfully",
+        "D": "Pivot to a different deal where valuation exceeded expectations"
+      },
+      "correct": "B",
+      "explanation": "Analytical reflection on valuation gaps shows maturity. Was growth slower than positioned? Were margins deteriorating? Did diligence reveal risks? Understanding valuation disconnects demonstrates the kind of critical thinking PE values. Blaming externalities or pivoting away suggests you can't engage with difficult realities.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "banking-deals-for-pe"
+    },
+    {
+      "id": "pe-fit-034",
+      "question": "You worked on a strategic deal (corporate buyer). What aspect is MOST relevant to highlight for PE?",
+      "options": {
+        "A": "The integration planning process",
+        "B": "How synergies drove valuation above what a financial buyer could pay",
+        "C": "The strategic rationale from the buyer's perspective",
+        "D": "The timeline and execution of the transaction"
+      },
+      "correct": "B",
+      "explanation": "Understanding the synergy-driven valuation gap between strategic and financial buyers is directly relevant to PE. It shows you understand where PE can and can't compete on price, and what drives those dynamics. This is daily strategic consideration for PE professionals evaluating competitive processes.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "banking-deals-for-pe"
+    },
+    {
+      "id": "pe-fit-035",
+      "question": "When asked to discuss a deal, you have both a large high-profile deal and a smaller deal where you had more ownership. Which should you choose?",
+      "options": {
+        "A": "The large deal - it's more impressive and shows you work on significant transactions",
+        "B": "The smaller deal - depth of involvement matters more than headline size",
+        "C": "Mention both briefly and let the interviewer choose",
+        "D": "The large deal, but emphasize your specific contributions"
+      },
+      "correct": "B",
+      "explanation": "Depth beats prestige. PE interviewers want to probe your thinking, and you need to withstand detailed follow-ups. A deal where you owned the analysis and understood every assumption is far more defensible than a headline deal where you were one of many analysts. Choose where you can go deep.",
+      "difficulty": "easy",
+      "type": "judgmental",
+      "topic": "banking-deals-for-pe"
+    },
+    {
+      "id": "pe-fit-036",
+      "question": "How should you handle a question about a deal when you disagree with how it was positioned or executed?",
+      "options": {
+        "A": "Express your disagreement to show independent thinking",
+        "B": "Describe what happened factually without editorializing",
+        "C": "Share your perspective professionally while acknowledging the complexity of the situation",
+        "D": "Defend the approach taken even if you disagreed internally"
+      },
+      "correct": "C",
+      "explanation": "Thoughtful, professional disagreement shows intellectual honesty without being disloyal or arrogant. 'In hindsight, I might have positioned the growth story differently because...' demonstrates judgment. Pure criticism suggests poor team dynamics; pure defense suggests lack of independent thought.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "banking-deals-for-pe"
+    },
+    {
+      "id": "pe-fit-037",
+      "question": "When discussing due diligence findings from a deal, what framing is MOST effective?",
+      "options": {
+        "A": "List the key findings and their implications",
+        "B": "Explain how findings changed your view of the investment thesis",
+        "C": "Focus on the process of how diligence was conducted",
+        "D": "Highlight findings that confirmed the initial investment hypothesis"
+      },
+      "correct": "B",
+      "explanation": "Connecting findings to investment thesis shows you think like an investor. Did customer concentration change your view of revenue risk? Did working capital findings affect the returns profile? PE diligence is about informing investment decisions, not checking boxes. Show that connection.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "banking-deals-for-pe"
+    },
+    {
+      "id": "pe-fit-038",
+      "question": "You're asked about a restructuring or distressed deal. What angle is MOST relevant for PE?",
+      "options": {
+        "A": "The legal complexity and creditor negotiations",
+        "B": "What went wrong with the original investment thesis and what a new owner could do differently",
+        "C": "The timeline and process of the restructuring",
+        "D": "Your role in the financial analysis"
+      },
+      "correct": "B",
+      "explanation": "PE firms, especially those doing turnarounds, care about understanding what breaks businesses and what it takes to fix them. Analyzing why the original thesis failed and what a new playbook might look like demonstrates the kind of judgment relevant to distressed investing. Process mechanics are secondary.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "banking-deals-for-pe"
+    },
+    {
+      "id": "pe-fit-039",
+      "question": "When presenting investment judgment during a deal discussion, what question should you be prepared to answer?",
+      "options": {
+        "A": "'What was the IRR on this deal?'",
+        "B": "'At what price would you have passed on this investment?'",
+        "C": "'Who else was in the process?'",
+        "D": "'What did the management team think of the outcome?'"
+      },
+      "correct": "B",
+      "explanation": "This question tests investment judgment and discipline. Knowing where value breaks down shows you can evaluate investments critically. Can you articulate at what multiple the risk/reward becomes unattractive? This separates deal participants from investment thinkers.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "investment-judgment"
+    },
+    {
+      "id": "pe-fit-040",
+      "question": "What makes investment judgment 'PE-quality' versus typical banking analysis?",
+      "options": {
+        "A": "More detailed financial modeling",
+        "B": "Focus on downside scenarios and what could go wrong",
+        "C": "Better understanding of strategic buyer rationale",
+        "D": "Deeper industry research and competitive analysis"
+      },
+      "correct": "B",
+      "explanation": "PE is fundamentally about risking capital. While banking often focuses on upside and value maximization, PE judgment requires honest assessment of what could go wrong, how likely that is, and whether the return compensates for the risk. Downside focus is the hallmark of investor thinking.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "investment-judgment"
+    },
+    {
+      "id": "pe-fit-041",
+      "question": "When asked 'Would you have invested in this company?' what structure produces the strongest answer?",
+      "options": {
+        "A": "Yes/No with a brief explanation",
+        "B": "A balanced view of pros and cons leading to a definitive conclusion",
+        "C": "'It depends' with discussion of key variables",
+        "D": "Reference to what the actual buyers decided"
+      },
+      "correct": "B",
+      "explanation": "Strong investment judgment acknowledges complexity while reaching a conclusion. 'The recurring revenue base was attractive, but customer concentration and margin pressure made it a pass for me below X multiple' shows you can weigh factors and decide. Hedging with 'it depends' or avoiding a stance suggests weak conviction.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "investment-judgment"
+    },
+    {
+      "id": "pe-fit-042",
+      "question": "How do you demonstrate investment judgment when you worked on the sell-side and didn't see the buyer's full diligence?",
+      "options": {
+        "A": "Explain that sell-side visibility was limited",
+        "B": "Share what you would have diligenced further if you were the buyer",
+        "C": "Focus on the valuation outcome as validation",
+        "D": "Describe the information you prepared for buyers"
+      },
+      "correct": "B",
+      "explanation": "Identifying gaps and what you'd want to dig into further shows investor instinct even from the sell-side. 'If I were the buyer, I'd want to validate customer cohort economics and understand margin sustainability' demonstrates PE thinking regardless of which side of the table you sat on.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "investment-judgment"
+    },
+    {
+      "id": "pe-fit-043",
+      "question": "When discussing value creation opportunities in a deal context, what level of specificity is expected?",
+      "options": {
+        "A": "High-level categories (revenue growth, margin expansion, M&A)",
+        "B": "Specific, quantified initiatives with realistic implementation timelines",
+        "C": "Reference to what the buyer's value creation plan included",
+        "D": "Comparison to what similar portfolio companies have achieved"
+      },
+      "correct": "B",
+      "explanation": "PE values concrete, implementable ideas. 'There was opportunity to improve gross margin 300bps through supplier consolidation over 18 months' is far stronger than 'margin expansion opportunity.' Specificity shows you think like an operator, not just an observer.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "investment-judgment"
+    },
+    {
+      "id": "pe-fit-044",
+      "question": "What is the BEST way to demonstrate you can 'think like an owner' when discussing a deal?",
+      "options": {
+        "A": "Reference conversations you had with the management team",
+        "B": "Discuss what you would prioritize in the first 100 days post-close",
+        "C": "Explain the long-term strategic vision for the company",
+        "D": "Show detailed knowledge of the operating model"
+      },
+      "correct": "B",
+      "explanation": "The first 100 days question reveals operational thinking. It shows you understand that ownership means action: what decisions need to be made, what quick wins exist, what investments are required. This is the practical reality of PE, not just analyzing companies but running them.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "investment-judgment"
+    },
+    {
+      "id": "pe-fit-045",
+      "question": "When expressing a contrarian investment view in an interview, what approach is MOST effective?",
+      "options": {
+        "A": "State your view confidently and defend it strongly",
+        "B": "Present your view with supporting evidence while acknowledging the counterarguments",
+        "C": "Frame it tentatively to avoid seeming overconfident",
+        "D": "Only express contrarian views if directly asked"
+      },
+      "correct": "B",
+      "explanation": "Intellectual honesty means owning your view while respecting complexity. 'I would have passed because of customer concentration risk, though I acknowledge the recurring revenue profile was attractive to buyers' shows conviction with intellectual humility. Pure confidence seems arrogant; tentative views suggest weak thinking.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "investment-judgment"
+    }
+  ]
+}

@@ -374,13 +374,14 @@ export const evaluatorVersions = pgTable('evaluator_versions', {
 });
 
 // ─────────────────────────────────────────────────────────────
-// ACTIVE VERSIONS (Singleton table)
+// ACTIVE VERSIONS (Per-track configuration)
 // ─────────────────────────────────────────────────────────────
 
 export const activeVersions = pgTable(
   'active_versions',
   {
-    id: integer('id').primaryKey().default(1),
+    id: uuid('id').primaryKey().defaultRandom(),
+    trackSlug: text('track_slug').notNull().unique(), // e.g. 'investment-banking-interview-prep', 'private-equity-interview-prep'
     activePromptVersionId: text('active_prompt_version_id')
       .notNull()
       .references(() => promptVersions.id),
@@ -391,8 +392,7 @@ export const activeVersions = pgTable(
     updatedBy: text('updated_by').notNull(),
   },
   (table) => [
-    // Enforce singleton: only id=1 allowed
-    check('singleton_check', sql`${table.id} = 1`),
+    uniqueIndex('idx_active_versions_track').on(table.trackSlug),
   ]
 );
 

@@ -330,7 +330,7 @@ export const processResumeSubmission = inngest.createFunction(
   { id: 'process-resume-submission', retries: 2 },
   { event: 'resume/submitted' },
   async ({ event, step }) => {
-    const { feedbackId, userId, resumeObjectKey } = event.data;
+    const { feedbackId, userId, resumeObjectKey, trackSlug } = event.data;
 
     // Helper to update status and handle failures
     const updateStatus = async (
@@ -452,7 +452,8 @@ export const processResumeSubmission = inngest.createFunction(
         const result = await evaluateResume(
           extractionResult.text,
           preAnalysis,
-          visionAnalysis ?? undefined
+          visionAnalysis ?? undefined,
+          trackSlug
         );
 
         // Merge in formatting issues from pre-analysis

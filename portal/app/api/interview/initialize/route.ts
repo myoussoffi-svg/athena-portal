@@ -9,8 +9,21 @@ import { eq, and, inArray, sql } from 'drizzle-orm';
 import { generateUploadUrl } from '@/lib/r2';
 import { withErrorHandling, requireAuth, ApiError, Errors } from '@/lib/auth';
 
-export const POST = withErrorHandling(async () => {
+export const POST = withErrorHandling(async (request) => {
   const userId = await requireAuth();
+
+  // Get trackSlug from request body
+  let trackSlug: string;
+  try {
+    const body = await request.json();
+    trackSlug = body.trackSlug;
+    if (!trackSlug) {
+      throw new ApiError(400, 'BAD_REQUEST', 'trackSlug is required');
+    }
+  } catch (err) {
+    if (err instanceof ApiError) throw err;
+    throw new ApiError(400, 'BAD_REQUEST', 'Invalid request body');
+  }
 
   // Run initialization in a transaction
   const result = await db.transaction(async (tx) => {
@@ -73,11 +86,15 @@ export const POST = withErrorHandling(async () => {
 
     const attemptNumber = updatedLockout.totalAttempts;
 
-    // Get active versions
-    const [versions] = await tx.select().from(activeVersions).limit(1);
+    // Get active versions for this track
+    const [versions] = await tx
+      .select()
+      .from(activeVersions)
+      .where(eq(activeVersions.trackSlug, trackSlug))
+      .limit(1);
 
     if (!versions) {
-      throw Errors.internal('No active versions configured');
+      throw new ApiError(404, 'NOT_FOUND', `No interview configuration found for track: ${trackSlug}`);
     }
 
     // Create attempt record

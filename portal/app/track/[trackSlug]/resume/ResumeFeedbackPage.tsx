@@ -166,97 +166,99 @@ export function ResumeFeedbackPage({ trackSlug }: ResumeFeedbackPageProps) {
                 </h3>
                 <ol style={{ margin: 0, paddingLeft: 20, color: 'rgba(10, 10, 10, 0.6)', fontSize: 14, lineHeight: 1.7 }}>
                   <li>Upload your resume as a Word document (.docx)</li>
-                  <li>Our AI analyzes it against Investment Banking standards</li>
+                  <li>Our AI analyzes it against {trackSlug === 'private-equity-interview-prep' ? 'PE recruiting standards' : 'Investment Banking standards'}</li>
                   <li>Get a detailed score breakdown and actionable improvements</li>
                   <li>Copy improved bullets directly into your resume</li>
                 </ol>
               </div>
             </div>
 
-            {/* Example Resume Section */}
-            <div
-              style={{
-                padding: 24,
-                background: 'white',
-                border: '1px solid rgba(10, 10, 10, 0.1)',
-                borderRadius: 16,
-              }}
-            >
-              <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 16 }}>
-                <FileText size={20} style={{ color: '#416D89' }} />
-                <h3 style={{ fontSize: 16, fontWeight: 700, color: 'rgba(10, 10, 10, 0.9)', margin: 0 }}>
-                  Example Resume Template
-                </h3>
-              </div>
+            {/* Example Resume Section - only for IB (PE users already have banking resumes) */}
+            {trackSlug === 'investment-banking-interview-prep' && (
+              <div
+                style={{
+                  padding: 24,
+                  background: 'white',
+                  border: '1px solid rgba(10, 10, 10, 0.1)',
+                  borderRadius: 16,
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 16 }}>
+                  <FileText size={20} style={{ color: '#416D89' }} />
+                  <h3 style={{ fontSize: 16, fontWeight: 700, color: 'rgba(10, 10, 10, 0.9)', margin: 0 }}>
+                    Example Resume Template
+                  </h3>
+                </div>
 
-              <p style={{ fontSize: 14, color: 'rgba(10, 10, 10, 0.6)', marginBottom: 20, lineHeight: 1.6 }}>
-                Use this as a reference for formatting and structure. Our feedback focuses on making your
-                <strong> content stronger</strong> — download this template to see the formatting standard.
-              </p>
+                <p style={{ fontSize: 14, color: 'rgba(10, 10, 10, 0.6)', marginBottom: 20, lineHeight: 1.6 }}>
+                  Use this as a reference for formatting and structure. Our feedback focuses on making your
+                  <strong> content stronger</strong> — download this template to see the formatting standard.
+                </p>
 
-              <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
-                <a
-                  href="/athena-example-resume.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    gap: 8,
-                    padding: '10px 16px',
-                    background: 'rgba(65, 109, 137, 0.08)',
-                    border: '1px solid rgba(65, 109, 137, 0.2)',
-                    borderRadius: 8,
-                    fontSize: 14,
-                    fontWeight: 500,
-                    color: '#416D89',
-                    textDecoration: 'none',
-                    transition: 'all 0.15s ease',
-                  }}
-                  onMouseOver={(e) => {
-                    e.currentTarget.style.background = 'rgba(65, 109, 137, 0.12)';
-                    e.currentTarget.style.borderColor = 'rgba(65, 109, 137, 0.3)';
-                  }}
-                  onMouseOut={(e) => {
-                    e.currentTarget.style.background = 'rgba(65, 109, 137, 0.08)';
-                    e.currentTarget.style.borderColor = 'rgba(65, 109, 137, 0.2)';
-                  }}
-                >
-                  <Eye size={16} />
-                  View Example (PDF)
-                </a>
-                <a
-                  href="/athena-example-resume.docx"
-                  download
-                  style={{
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    gap: 8,
-                    padding: '10px 16px',
-                    background: 'linear-gradient(135deg, #416D89 0%, #4a7a96 100%)',
-                    border: 'none',
-                    borderRadius: 8,
-                    fontSize: 14,
-                    fontWeight: 600,
-                    color: 'white',
-                    textDecoration: 'none',
-                    boxShadow: '0 2px 8px rgba(65, 109, 137, 0.25)',
-                    transition: 'all 0.15s ease',
-                  }}
-                  onMouseOver={(e) => {
-                    e.currentTarget.style.transform = 'translateY(-1px)';
-                    e.currentTarget.style.boxShadow = '0 4px 12px rgba(65, 109, 137, 0.35)';
-                  }}
-                  onMouseOut={(e) => {
-                    e.currentTarget.style.transform = 'translateY(0)';
-                    e.currentTarget.style.boxShadow = '0 2px 8px rgba(65, 109, 137, 0.25)';
-                  }}
-                >
-                  <Download size={16} />
-                  Download Template (Word)
-                </a>
+                <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
+                  <a
+                    href="/athena-example-resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: 8,
+                      padding: '10px 16px',
+                      background: 'rgba(65, 109, 137, 0.08)',
+                      border: '1px solid rgba(65, 109, 137, 0.2)',
+                      borderRadius: 8,
+                      fontSize: 14,
+                      fontWeight: 500,
+                      color: '#416D89',
+                      textDecoration: 'none',
+                      transition: 'all 0.15s ease',
+                    }}
+                    onMouseOver={(e) => {
+                      e.currentTarget.style.background = 'rgba(65, 109, 137, 0.12)';
+                      e.currentTarget.style.borderColor = 'rgba(65, 109, 137, 0.3)';
+                    }}
+                    onMouseOut={(e) => {
+                      e.currentTarget.style.background = 'rgba(65, 109, 137, 0.08)';
+                      e.currentTarget.style.borderColor = 'rgba(65, 109, 137, 0.2)';
+                    }}
+                  >
+                    <Eye size={16} />
+                    View Example (PDF)
+                  </a>
+                  <a
+                    href="/athena-example-resume.docx"
+                    download
+                    style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: 8,
+                      padding: '10px 16px',
+                      background: 'linear-gradient(135deg, #416D89 0%, #4a7a96 100%)',
+                      border: 'none',
+                      borderRadius: 8,
+                      fontSize: 14,
+                      fontWeight: 600,
+                      color: 'white',
+                      textDecoration: 'none',
+                      boxShadow: '0 2px 8px rgba(65, 109, 137, 0.25)',
+                      transition: 'all 0.15s ease',
+                    }}
+                    onMouseOver={(e) => {
+                      e.currentTarget.style.transform = 'translateY(-1px)';
+                      e.currentTarget.style.boxShadow = '0 4px 12px rgba(65, 109, 137, 0.35)';
+                    }}
+                    onMouseOut={(e) => {
+                      e.currentTarget.style.transform = 'translateY(0)';
+                      e.currentTarget.style.boxShadow = '0 2px 8px rgba(65, 109, 137, 0.25)';
+                    }}
+                  >
+                    <Download size={16} />
+                    Download Template (Word)
+                  </a>
+                </div>
               </div>
-            </div>
+            )}
 
             {/* Uploader */}
             {!isQuotaExhausted ? (
