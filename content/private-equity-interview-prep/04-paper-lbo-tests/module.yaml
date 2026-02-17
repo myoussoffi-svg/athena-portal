@@ -1,0 +1,17 @@
+id: paper-lbo-tests
+title: Paper LBO & Modeling Tests
+description: Master paper LBOs and timed modeling tests. Learn mental math techniques, step-by-step frameworks, and time management strategies to excel under interview pressure.
+order: 4
+estimated_hours: 5
+lessons:
+  - 01-paper-lbo-fundamentals
+  - 02-paper-lbo-mental-math
+  - 03-paper-lbo-walkthrough
+  - 04-common-paper-lbo-variations
+  - 05-take-home-lbo-overview
+  - 06-extensive-lbo-test-walkthrough
+  - 07-time-management-modeling
+  - 08-common-modeling-mistakes
+
+case_studies:
+  - 09-paper-lbo-case-study

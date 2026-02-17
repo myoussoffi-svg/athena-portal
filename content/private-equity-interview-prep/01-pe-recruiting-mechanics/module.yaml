@@ -2,9 +2,19 @@ id: pe-recruiting-mechanics
 title: PE Recruiting Mechanics & Headhunters
 description: Understand how PE recruiting works, when it happens, and how to navigate headhunters, networking, and the interview process. Build a preparation strategy aligned with the compressed PE recruiting timeline.
 order: 1
-estimated_hours: 2
+estimated_hours: 4
 lessons:
-  - pe-recruiting-timeline-process
-  - working-with-headhunters
-  - networking-preparation-strategy
-  - interview-formats-expectations
+  - 01-introduction-pe-recruiting
+  - 02-overview-private-equity
+  - 03-paths-to-private-equity
+  - 04-on-cycle-recruiting-overview
+  - 05-on-cycle-recruiting-timeline
+  - 06-preparing-for-recruiting
+  - 07-dealing-with-headhunters
+  - 08-headhunter-process
+  - 09-headhunters-coverage
+  - 10-off-cycle-recruiting
+  - 11-finding-off-cycle-opportunities
+  - 12-evaluating-firms
+  - 13-what-is-mega-fund
+  - 14-typical-pe-interview

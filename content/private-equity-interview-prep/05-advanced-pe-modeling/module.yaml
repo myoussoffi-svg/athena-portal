@@ -1,0 +1,15 @@
+id: advanced-pe-modeling
+title: Advanced PE Modeling
+description: Advanced LBO structures and sophisticated deal mechanics. Cover roll-over equity, management incentives, complex debt structures, earnouts, and sector-specific modeling considerations.
+order: 5
+estimated_hours: 4
+lessons:
+  - 01-advanced-lbo-structures
+  - 02-rollover-equity-management
+  - 03-complex-debt-structures
+  - 04-earnouts-contingent
+  - 05-portfolio-add-ons
+  - 06-sector-specific-modeling
+  - 07-holdco-opco-structuring
+  - 08-leveraged-recapitalization-refinancing
+  - 09-distressed-debt-equity-swaps

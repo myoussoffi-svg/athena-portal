@@ -1,0 +1,13 @@
+id: case-studies-judgment
+title: Case Studies & Investment Judgment
+description: Master PE case study frameworks and investment analysis. Learn to evaluate companies, assess industries, identify risks, build investment theses, and defend recommendations under pressure. Develop the judgment to make sound investment calls.
+order: 6
+estimated_hours: 5
+lessons:
+  - 01-case-study-frameworks
+  - 02-industry-market-analysis
+  - 03-company-quality-diligence
+  - 04-risk-identification-downside
+  - 05-investment-thesis-construction
+  - 06-comparable-transactions
+  - 07-defending-recommendation

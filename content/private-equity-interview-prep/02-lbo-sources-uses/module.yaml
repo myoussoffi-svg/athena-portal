@@ -1,0 +1,22 @@
+id: lbo-sources-uses
+title: LBO Modeling - Sources & Uses / Financial Model
+description: Master the foundational components of LBO modeling including enterprise value calculations, sources and uses, 3-statement integration, and purchase accounting. Build the technical foundation for interview-grade LBO analysis.
+order: 2
+estimated_hours: 8
+lessons:
+  - 01-introduction-sources-uses
+  - 02-walking-through-lbo
+  - 03-public-company-ev-build
+  - 04-options-private-valuation
+  - 05-sources-uses-debt
+  - 06-sources-uses-equity
+  - 07-sources-uses-uses
+  - 08-three-statement-integration
+  - 09-operating-model
+  - 10-free-cash-flow-balance-sheet
+  - 11-net-working-capital
+  - 12-purchase-accounting
+  - 13-goodwill
+  - 14-excel-goodwill-walkthrough
+  - 15-goodwill-faq
+  - 16-closing-balance-sheet

@@ -1,0 +1,17 @@
+id: lbo-debt-returns
+title: LBO Modeling - Debt Schedule / Returns Analysis
+description: Deep dive into debt schedule mechanics, return calculations, and advanced LBO structures. Master IRR and MOIC calculations, sensitivity analysis, and sophisticated capital structures including PIK, preferred equity, and add-on acquisitions.
+order: 3
+estimated_hours: 6
+lessons:
+  - 01-introduction-debt-returns
+  - 02-debt-schedule-mechanics
+  - 03-revolver-modeling
+  - 04-debt-waterfall
+  - 05-pik-interest
+  - 06-internal-rate-return
+  - 07-multiple-of-money
+  - 08-returns-sensitivities
+  - 09-preferred-stock
+  - 10-dividend-recapitalization
+  - 11-add-on-acquisition
