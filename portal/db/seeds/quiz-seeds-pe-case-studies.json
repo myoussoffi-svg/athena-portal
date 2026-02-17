@@ -1,0 +1,981 @@
+{
+  "module": "case-studies-judgment",
+  "title": "Case Studies & Investment Judgment Quiz Bank",
+  "questions": [
+    {
+      "id": "pe-case-001",
+      "question": "You're evaluating a B2B SaaS company with 95% gross retention but only 85% net retention. What should be your PRIMARY concern?",
+      "options": {
+        "A": "Customer acquisition costs are too high",
+        "B": "The product lacks expansion potential within existing accounts",
+        "C": "The company is losing too many customers",
+        "D": "The pricing model is fundamentally broken"
+      },
+      "correct": "B",
+      "explanation": "95% gross retention means customers are staying (only 5% churn), so C is wrong. The gap between gross (95%) and net (85%) retention indicates existing customers aren't expanding - they're either not buying more seats, not upgrading, or are downsizing. This suggests limited upsell/cross-sell opportunity, which constrains organic growth and makes the growth story dependent on new logo acquisition.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Investment Thesis Construction"
+    },
+    {
+      "id": "pe-case-002",
+      "question": "A PE fund is evaluating a healthcare IT company. Revenue grew 40% last year, but the sales team doubled. What is the MOST important follow-up question?",
+      "options": {
+        "A": "What is the customer acquisition cost?",
+        "B": "What is the sales team's quota attainment and ramping efficiency?",
+        "C": "How much runway does the company have?",
+        "D": "What is the company's NPS score?"
+      },
+      "correct": "B",
+      "explanation": "If the sales team doubled but revenue only grew 40%, something is wrong with sales productivity. You need to understand if new reps are ramping slowly (fixable) or if quota attainment across the board is declining (concerning). This directly impacts the scalability thesis. A and D are relevant but secondary; C is a capitalization question not core to the business model.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Investment Thesis Construction"
+    },
+    {
+      "id": "pe-case-003",
+      "question": "You're building an investment thesis for a regional HVAC services roll-up. Which value creation lever is LEAST likely to materialize?",
+      "options": {
+        "A": "Procurement savings through centralized purchasing",
+        "B": "Revenue synergies from cross-selling across geographies",
+        "C": "Margin improvement through technician route optimization",
+        "D": "Multiple arbitrage from creating a scaled platform"
+      },
+      "correct": "B",
+      "explanation": "HVAC services are inherently local - customers hire based on proximity and local reputation. Cross-selling across geographies provides minimal value since an HVAC company in Dallas can't service customers in Atlanta. A, C, and D are proven roll-up playbooks: centralized procurement drives savings, route density improves margins, and scaled platforms command higher multiples than single-location operators.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "Investment Thesis Construction"
+    },
+    {
+      "id": "pe-case-004",
+      "question": "A target company has 70% of revenue from its top 3 customers. Management says long-term contracts mitigate concentration risk. What is the BEST counterargument?",
+      "options": {
+        "A": "Long-term contracts often have termination for convenience clauses",
+        "B": "The contracts may not be at market rates",
+        "C": "Customer concentration increases working capital needs",
+        "D": "Revenue recognition may be complex"
+      },
+      "correct": "A",
+      "explanation": "Most enterprise contracts include 'termination for convenience' clauses (typically 30-90 day notice), meaning the customer can exit without cause. A contract is only as good as its enforceability. B is a pricing concern not a concentration risk counter. C and D are operational issues, not direct rebuttals to the mitigation claim.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "Investment Thesis Construction"
+    },
+    {
+      "id": "pe-case-005",
+      "question": "Which investment thesis element is MOST important to prove first when evaluating a subscription business?",
+      "options": {
+        "A": "Total addressable market size",
+        "B": "Unit economics sustainability at scale",
+        "C": "Management team track record",
+        "D": "Competitive differentiation"
+      },
+      "correct": "B",
+      "explanation": "For subscription businesses, proving that you make money on each customer (LTV > CAC by 3x+, payback < 18 months) is foundational. Without positive unit economics, TAM is irrelevant - you'd lose money on every incremental customer. Competitive differentiation matters, but even differentiated products fail if unit economics don't work. Management matters but can be upgraded.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Investment Thesis Construction"
+    },
+    {
+      "id": "pe-case-006",
+      "question": "A software company shows improving gross margins (65% to 75% over 3 years) but flat EBITDA margins. What does this MOST likely indicate?",
+      "options": {
+        "A": "The company is investing in growth",
+        "B": "There is significant operating expense bloat",
+        "C": "Revenue quality is deteriorating",
+        "D": "The company has pricing power"
+      },
+      "correct": "A",
+      "explanation": "Rising gross margins with flat EBITDA margins typically means the company is reinvesting gross margin expansion into S&M or R&D - a growth investment posture. This is often the right strategy for a scaling software company. B is possible but 'bloat' implies waste rather than intentional investment. C contradicts the gross margin improvement. D is partially true but doesn't explain the EBITDA margin dynamic.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "Investment Thesis Construction"
+    },
+    {
+      "id": "pe-case-007",
+      "question": "You're evaluating two platform investments: Company A has a 'single-player' use case, Company B requires a network effect to deliver value. Which has a stronger investment thesis, all else equal?",
+      "options": {
+        "A": "Company A - less execution risk to initial value",
+        "B": "Company B - network effects create defensibility",
+        "C": "Neither is inherently stronger - depends on stage",
+        "D": "Company B - viral growth is more capital efficient"
+      },
+      "correct": "C",
+      "explanation": "Both models can be excellent investments. Single-player products are easier to launch (value from day one) but may face more competition. Network-effect businesses are harder to start but create moats once scaled. For early-stage, single-player often de-risks the investment. For growth-stage, proven network effects can justify higher multiples. Context matters enormously.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "Investment Thesis Construction"
+    },
+    {
+      "id": "pe-case-008",
+      "question": "A PE firm is evaluating a founder-led company where the founder owns 80% and wants to sell 100%. What is the MOST significant risk to the thesis?",
+      "options": {
+        "A": "The founder will take all the cash off the table",
+        "B": "The business may be over-dependent on founder relationships",
+        "C": "Valuation expectations will be unrealistic",
+        "D": "The founder won't cooperate during transition"
+      },
+      "correct": "B",
+      "explanation": "When a founder owns 80% and wants full liquidity, the fundamental question is: does the business work without them? Key customer relationships, supplier terms, employee loyalty, and institutional knowledge often rest with founders. This is the core investment risk. A is a deal structure issue, not a business risk. C and D are negotiation challenges, not thesis risks.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Investment Thesis Construction"
+    },
+    {
+      "id": "pe-case-009",
+      "question": "Which thesis 'leg' is MOST difficult to fix post-acquisition?",
+      "options": {
+        "A": "Suboptimal pricing strategy",
+        "B": "Weak financial reporting and controls",
+        "C": "Declining end market",
+        "D": "Underperforming sales team"
+      },
+      "correct": "C",
+      "explanation": "You can fix pricing (often quickly), improve reporting/controls (6-12 months), and upgrade the sales team (12-18 months). But you cannot fix a structurally declining end market - that's an external factor outside your control. Secular decline is a 'ride the wave down' situation. Everything else is operational execution that PE firms regularly address.",
+      "difficulty": "easy",
+      "type": "judgmental",
+      "topic": "Investment Thesis Construction"
+    },
+    {
+      "id": "pe-case-010",
+      "question": "A company generates $50M revenue with 60% from recurring sources and 40% from project-based work. What's the MOST compelling path to thesis construction?",
+      "options": {
+        "A": "Focus on growing the project-based revenue for upside",
+        "B": "Convert project-based revenue to recurring through productization",
+        "C": "Acquire companies with higher recurring revenue mix",
+        "D": "Raise prices on the recurring revenue base"
+      },
+      "correct": "B",
+      "explanation": "Converting project-based work to recurring (productizing services, introducing maintenance contracts, subscription models) creates multiple expansion through improved revenue quality. This is a proven PE playbook. A grows revenue but doesn't improve quality. C adds complexity and integration risk. D is a tactic, not a transformation thesis.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Investment Thesis Construction"
+    },
+    {
+      "id": "pe-case-011",
+      "question": "During commercial due diligence on a manufacturing company, you discover that 3 of the top 10 customers haven't reordered in 6 months. What should be your FIRST action?",
+      "options": {
+        "A": "Adjust the revenue forecast downward",
+        "B": "Request customer interviews with those 3 accounts",
+        "C": "Review historical ordering patterns for seasonality",
+        "D": "Ask management to explain the situation"
+      },
+      "correct": "C",
+      "explanation": "Before escalating or adjusting forecasts, check if this is normal. Many B2B manufacturing customers have lumpy ordering patterns (annual contracts, project-based purchases, seasonal demand). Review 2-3 years of order history first. If ordering is typically lumpy, this may be a non-issue. If these customers historically ordered monthly and stopped, then you escalate to B and D.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Due Diligence Priorities"
+    },
+    {
+      "id": "pe-case-012",
+      "question": "You're conducting QoE (Quality of Earnings) and find that 15% of EBITDA comes from 'cost savings initiatives not yet implemented.' How should this be treated?",
+      "options": {
+        "A": "Include it as management demonstrates a credible plan",
+        "B": "Exclude it entirely from your base case",
+        "C": "Include 50% as a risk-adjusted estimate",
+        "D": "Include it only if savings are from headcount reductions"
+      },
+      "correct": "B",
+      "explanation": "Unimplemented cost savings are not earnings - they're projections. QoE should reflect actual, sustainable earnings from the existing business. Future savings belong in your value creation plan and deal model upside cases, not in the baseline EBITDA you're underwriting. If management has a credible plan, that's thesis upside, not current earnings quality.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "Due Diligence Priorities"
+    },
+    {
+      "id": "pe-case-013",
+      "question": "A SaaS company claims 90% gross margins, but due diligence reveals significant costs are capitalized as R&D. What's the MOST important next step?",
+      "options": {
+        "A": "Recalculate gross margins with R&D expensed",
+        "B": "Understand what percentage of R&D is maintenance vs. new product",
+        "C": "Compare capitalization policy to industry peers",
+        "D": "Review the auditor's treatment of the capitalization"
+      },
+      "correct": "B",
+      "explanation": "The key insight is whether R&D spending maintains the existing product (should arguably be in cost structure) or creates new value (legitimately capitalizable). If 80% of R&D is maintenance/bug fixes/infrastructure, the 'true' margin profile is much worse. C provides context but doesn't answer the substantive question. A is mechanical; you need to understand what's being capitalized first.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "Due Diligence Priorities"
+    },
+    {
+      "id": "pe-case-014",
+      "question": "In legal due diligence for a healthcare services company, which finding would be MOST concerning?",
+      "options": {
+        "A": "Pending litigation from a former employee for wrongful termination",
+        "B": "A DOJ subpoena related to billing practices from 18 months ago with no resolution",
+        "C": "Expired state licenses in 2 of 15 states of operation",
+        "D": "Non-compete agreements that may not be enforceable"
+      },
+      "correct": "B",
+      "explanation": "DOJ subpoenas related to billing practices in healthcare can result in massive penalties, exclusion from federal programs (Medicare/Medicaid), and even criminal liability. An 18-month-old unresolved subpoena suggests an active investigation. A is routine HR litigation. C is likely administrative (renew the licenses). D is common and rarely material. B is existential risk.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "Due Diligence Priorities"
+    },
+    {
+      "id": "pe-case-015",
+      "question": "Management presents a customer cohort analysis showing 120% net dollar retention. What is the MOST critical diligence question?",
+      "options": {
+        "A": "How is 'cohort' defined - by contract start date or first payment?",
+        "B": "Are expansion revenues from price increases or volume growth?",
+        "C": "What does retention look like excluding the top 10 customers?",
+        "D": "Is this consistent with disclosed churn rates?"
+      },
+      "correct": "C",
+      "explanation": "Blended metrics can hide significant variance. If 120% NDR is driven by massive expansion in 2-3 large accounts while the long tail churns at 20%, the business is much riskier than the headline suggests. Concentration in expansion revenue is a red flag. A and D are good hygiene questions. B is interesting but secondary to understanding if NDR is broad-based or concentrated.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Due Diligence Priorities"
+    },
+    {
+      "id": "pe-case-016",
+      "question": "During IT due diligence, you discover the core platform runs on technology that's 15 years old with limited documentation. The system 'works fine.' What's the RIGHT way to think about this?",
+      "options": {
+        "A": "It's a deal-breaker - the technology risk is too high",
+        "B": "It's a value creation opportunity - budget for modernization",
+        "C": "It's neutral - if it works, don't fix it",
+        "D": "It requires deep technical diligence to assess rebuild cost and risk"
+      },
+      "correct": "D",
+      "explanation": "Legacy technology is neither automatically bad nor good - it requires expert assessment. Key questions: Can you hire people who know this stack? What's the rebuild cost? What breaks if the original developer leaves? Is it a security risk? After technical diligence, this might become a deal-breaker, a value creation opportunity, or a manageable risk. Don't prejudge without data.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Due Diligence Priorities"
+    },
+    {
+      "id": "pe-case-017",
+      "question": "A manufacturing company's inventory increased 40% while revenue grew 15%. What should due diligence prioritize?",
+      "options": {
+        "A": "Working capital normalization for the purchase price",
+        "B": "Obsolescence risk and inventory write-down history",
+        "C": "Whether this reflects strategic pre-buying or demand softening",
+        "D": "Days inventory outstanding trend versus peers"
+      },
+      "correct": "C",
+      "explanation": "Before mechanical adjustments (A) or historical analysis (B, D), understand WHY inventory spiked. If management strategically bought ahead of price increases or supply constraints, that's smart. If inventory grew because sales slowed and production didn't adjust, that's a demand signal. If it's channel stuffing, that's fraud. The 'why' drives everything else.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "Due Diligence Priorities"
+    },
+    {
+      "id": "pe-case-018",
+      "question": "Customer reference calls consistently praise the product but express concern about the company's financial stability. How should this inform your diligence?",
+      "options": {
+        "A": "Customers don't understand finance; focus on product satisfaction",
+        "B": "This validates the need for PE capital and operational support",
+        "C": "Investigate what triggered customer concerns about stability",
+        "D": "Discount the feedback as competitive FUD"
+      },
+      "correct": "C",
+      "explanation": "When multiple customers independently raise the same concern, something is driving that perception. Did the company miss deliverables? Lay off customer-facing staff? Have visible turnover? Change payment terms? Understanding the source tells you about both the business reality and reputational damage that may affect renewals. B might be true but doesn't address the diagnostic question.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Due Diligence Priorities"
+    },
+    {
+      "id": "pe-case-019",
+      "question": "Environmental due diligence reveals potential soil contamination at a manufacturing site, but testing would delay closing by 60 days. What's the BEST approach?",
+      "options": {
+        "A": "Close without testing and address issues post-acquisition",
+        "B": "Walk away - environmental liability is too unpredictable",
+        "C": "Negotiate an escrow or indemnity sized to worst-case remediation",
+        "D": "Complete Phase II testing before proceeding to closing"
+      },
+      "correct": "D",
+      "explanation": "Environmental contamination can create unlimited liability (CERCLA has no cap). Closing without testing (A) is reckless. Walking away (B) may be premature. Escrow/indemnity (C) is reasonable but how do you size it without testing? The 60-day delay is worth the certainty. If the seller won't wait, that itself is a red flag. Phase II testing is standard for manufacturing sites.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "Due Diligence Priorities"
+    },
+    {
+      "id": "pe-case-020",
+      "question": "Management claims EBITDA will grow 30% next year based on 'already contracted revenue.' What's the MOST important diligence request?",
+      "options": {
+        "A": "Copies of the contracts supporting the projection",
+        "B": "Historical accuracy of management's prior forecasts",
+        "C": "The bridge from current to projected EBITDA by driver",
+        "D": "Customer confirmation of contract terms"
+      },
+      "correct": "C",
+      "explanation": "Understanding the 'bridge' (volume vs. price vs. cost savings vs. new products) tells you what's actually driving the projection and where risk lies. Contracts (A) prove revenue exists but don't show margin or cost assumptions. Historical accuracy (B) is useful context. Customer confirmation (D) is valuable but narrow. The bridge reveals whether the 30% is achievable and where it could break.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Due Diligence Priorities"
+    },
+    {
+      "id": "pe-case-021",
+      "question": "You're evaluating a company that provides compliance software to financial institutions. The CEO says regulation will only increase, ensuring demand growth. What's the BIGGEST risk to this thesis?",
+      "options": {
+        "A": "A change in political administration that rolls back regulation",
+        "B": "Large incumbents building compliance tools in-house",
+        "C": "Regulatory changes requiring significant product rewrites",
+        "D": "Price compression as the market matures"
+      },
+      "correct": "C",
+      "explanation": "The irony of compliance software: it depends on regulation, but regulation changes. Major regulatory rewrites (think Dodd-Frank changes, GDPR, new frameworks) can obsolete existing products overnight, requiring massive R&D spend just to maintain relevance. You're running to stand still. A is a risk but regulations rarely disappear entirely. B and D are competitive pressures, not thesis-breakers.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "Risk Identification and Mitigation"
+    },
+    {
+      "id": "pe-case-022",
+      "question": "A company has 50% EBITDA margins, well above the industry average of 25%. What risk does this MOST likely create?",
+      "options": {
+        "A": "Unsustainable cost structure requiring investment",
+        "B": "Customer concentration driving favorable pricing",
+        "C": "Limited ability to expand margins post-acquisition",
+        "D": "Attracts competitive entry that compresses margins"
+      },
+      "correct": "D",
+      "explanation": "Abnormally high margins are a beacon for competition. Unless there's a durable moat (patents, network effects, regulatory licenses), competitors will enter and margins will compress toward industry norms. The value creation thesis cannot rely on margin expansion when margins are already at outlier levels. This is basic microeconomics - excess returns attract entry.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Risk Identification and Mitigation"
+    },
+    {
+      "id": "pe-case-023",
+      "question": "A staffing company generates 80% of revenue from placing temporary workers at one major tech company. The tech company is currently doing well and growing. What's the MOST significant risk?",
+      "options": {
+        "A": "The tech company could bring staffing in-house",
+        "B": "The tech company's business could decline",
+        "C": "Regulatory changes could affect temp worker classification",
+        "D": "The contract could be rebid to a lower-cost competitor"
+      },
+      "correct": "B",
+      "explanation": "With 80% concentration in one customer, you're essentially underwriting that customer's business. If the tech company has layoffs or a hiring freeze (common in tech cycles), your revenue collapses. The other risks exist but are secondary: in-sourcing (A) is rare for large-scale staffing; reclassification (C) affects the industry, not you specifically; rebidding (D) is a risk but less immediate than demand decline. You're making a bet on one company's fortunes.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Risk Identification and Mitigation"
+    },
+    {
+      "id": "pe-case-024",
+      "question": "You're underwriting a software company with 70% of revenue from government contracts. What risk is MOST often underestimated?",
+      "options": {
+        "A": "Contract non-renewal at recompete",
+        "B": "Budget sequestration or continuing resolutions affecting spend",
+        "C": "Long sales cycles requiring patient capital",
+        "D": "Clearance requirements limiting hiring pool"
+      },
+      "correct": "B",
+      "explanation": "Government shutdown, continuing resolutions (CRs), and sequestration can freeze or cut spending unpredictably. During CRs, agencies can't start new programs and often can't even renew existing contracts. This macro-fiscal risk is outside your control and can materially impact even well-performing contractors. A, C, and D are real but more predictable/manageable. B is the systemic risk.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "Risk Identification and Mitigation"
+    },
+    {
+      "id": "pe-case-025",
+      "question": "A company's revenue model is shifting from perpetual licenses to SaaS. In Year 1 of transition, what metric BEST indicates the transition is working?",
+      "options": {
+        "A": "Total revenue growth rate",
+        "B": "ARR growth and cohort retention rates",
+        "C": "Gross margin improvement",
+        "D": "Customer count growth"
+      },
+      "correct": "B",
+      "explanation": "During license-to-SaaS transitions, total revenue typically DECLINES (you're trading upfront payments for smaller recurring ones). Gross margins may initially decline (SaaS requires hosting/support infrastructure). What matters is: Are customers adopting SaaS (ARR growth)? Are they staying (retention)? This proves the transition creates sustainable recurring value, even if near-term financials look worse.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "Risk Identification and Mitigation"
+    },
+    {
+      "id": "pe-case-026",
+      "question": "A distribution company's competitive advantage is 'relationships with suppliers.' What's the BEST way to pressure-test this claim?",
+      "options": {
+        "A": "Reference calls with suppliers",
+        "B": "Review supplier concentration and contract terms",
+        "C": "Ask what happens when competitors offer suppliers more volume",
+        "D": "Analyze gross margin trends over time"
+      },
+      "correct": "C",
+      "explanation": "Relationships are only valuable if they survive pressure. The real question is: if a larger competitor offers your suppliers 2x the volume, do they stay with you? If the answer is 'we've been doing business for 20 years,' that's sentiment, not moat. If the answer is 'we have exclusive territories' or 'we provide services competitors can't match,' that's structural. This question reveals whether relationships are defensible.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "Risk Identification and Mitigation"
+    },
+    {
+      "id": "pe-case-027",
+      "question": "Post-LOI, you discover the CFO is planning to leave 30 days after close. What's the MOST important action?",
+      "options": {
+        "A": "Renegotiate the purchase price",
+        "B": "Require the CFO to sign a consulting agreement through transition",
+        "C": "Accelerate hiring a replacement CFO before close",
+        "D": "Understand why the CFO is leaving and what they know"
+      },
+      "correct": "D",
+      "explanation": "A departing CFO might be leaving for personal reasons, or they might be leaving because they see problems. Understanding WHY is critical. If they're fleeing because they disagree with projections, know about accounting issues, or don't believe in the business post-sale, that's material information. B and C are logistics. A is premature until you understand the underlying situation.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "Risk Identification and Mitigation"
+    },
+    {
+      "id": "pe-case-028",
+      "question": "A target company has a defined benefit pension plan that is 75% funded. What's the MOST important risk consideration?",
+      "options": {
+        "A": "The unfunded liability reduces equity value dollar-for-dollar",
+        "B": "Future contributions will reduce cash available for debt service",
+        "C": "Pension Benefit Guaranty Corporation (PBGC) has super-priority claims in bankruptcy",
+        "D": "Discount rate assumptions may understate the true liability"
+      },
+      "correct": "D",
+      "explanation": "Pension liabilities are highly sensitive to discount rate and mortality assumptions. A 1% change in discount rate can swing the liability by 10-15%. If the company uses aggressive assumptions, the '75% funded' figure is illusory - the real funding could be 60%. You need an actuary to stress-test assumptions. B and C are real but secondary to getting the liability size right. A is mechanical.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "Risk Identification and Mitigation"
+    },
+    {
+      "id": "pe-case-029",
+      "question": "You're evaluating a company where 100% of manufacturing is done by one contract manufacturer in China. What's the MOST effective risk mitigation?",
+      "options": {
+        "A": "Negotiate longer-term supply agreements",
+        "B": "Require the company to qualify a second manufacturer pre-close",
+        "C": "Purchase key tooling and maintain ownership",
+        "D": "Build inventory buffer to protect against disruption"
+      },
+      "correct": "C",
+      "explanation": "If the contract manufacturer owns the tooling, they own your business. Owning the tooling gives you optionality to move production if needed. Long-term agreements (A) are paper protections. Qualifying a second manufacturer (B) is ideal but takes 6-12+ months. Inventory buffers (D) are expensive and don't solve the structural dependency. Tooling ownership is the most practical immediate protection.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "Risk Identification and Mitigation"
+    },
+    {
+      "id": "pe-case-030",
+      "question": "A company derives 90% of leads from Google SEO. What type of risk is this?",
+      "options": {
+        "A": "Customer concentration risk",
+        "B": "Platform dependency risk",
+        "C": "Marketing channel risk",
+        "D": "Technology risk"
+      },
+      "correct": "B",
+      "explanation": "This is platform dependency - your lead flow depends on Google's algorithm, which you don't control. One algorithm update can destroy organic rankings overnight (this has happened repeatedly). It's related to but distinct from marketing channel risk (C), which implies optionality between channels. Platform dependency means a single third party controls your access to customers. Google is the 'single customer' in this framing.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "Risk Identification and Mitigation"
+    },
+    {
+      "id": "pe-case-031",
+      "question": "You're evaluating a consumer products company. Unit volume has been flat for 3 years, but revenue grew 10% through price increases. What's the PRIMARY implication for your investment thesis?",
+      "options": {
+        "A": "The company has strong pricing power - this is a positive signal",
+        "B": "Future growth will require volume growth, which may require investment",
+        "C": "The market is mature with limited expansion opportunity",
+        "D": "Category elasticity should be tested before assuming continued pricing power"
+      },
+      "correct": "D",
+      "explanation": "Three years of price increases without volume growth suggests either: (1) the company has genuine pricing power and should continue capturing price, or (2) price increases have already extracted available consumer surplus and further increases will trigger volume decline. Category elasticity analysis tells you which. B and C may be true but are not the primary analytical question. A assumes what needs to be tested.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Industry/Market Analysis"
+    },
+    {
+      "id": "pe-case-032",
+      "question": "A B2B software company operates in a market with 5 major competitors, each with 15-25% market share. What's the MOST likely competitive dynamic?",
+      "options": {
+        "A": "Price competition will compress margins for all players",
+        "B": "The market will consolidate toward 2-3 winners",
+        "C": "Fragmentation indicates high customer switching costs and niching",
+        "D": "First-mover advantage has failed to create a dominant player"
+      },
+      "correct": "C",
+      "explanation": "A stable oligopoly with balanced market shares typically indicates that customers have strong preferences that prevent any single player from dominating. This usually means: high switching costs (customers won't move), meaningful product differentiation (different products for different needs), or strong vertical/segment specialization. This is often a good market structure for PE - stable, defensible positions.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "Industry/Market Analysis"
+    },
+    {
+      "id": "pe-case-033",
+      "question": "An industry trade publication reports the market will grow from $5B to $15B by 2028. How should you treat this projection?",
+      "options": {
+        "A": "Use it as the base case - trade publications have industry expertise",
+        "B": "Ignore it - trade publications are promotional",
+        "C": "Decompose the growth into volume vs. price and validate each driver",
+        "D": "Discount it by 30% as a standard haircut for optimism"
+      },
+      "correct": "C",
+      "explanation": "Trade publication forecasts are often directionally right but magnitude wrong. The right approach is to understand WHY they expect 3x growth: Is it new customers? Higher penetration? Price increases? New applications? Then independently validate each driver. 'The market will be $15B' is not analytical. 'Volume grows 8% annually because of X, and price increases 3% annually because of Y' can be stress-tested.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Industry/Market Analysis"
+    },
+    {
+      "id": "pe-case-034",
+      "question": "You're analyzing a market where the top 3 players have 80% share and the remaining 20% is fragmented among 50+ small operators. What's the MOST attractive position?",
+      "options": {
+        "A": "Acquire one of the top 3 and defend market position",
+        "B": "Roll up the fragmented tail and create a fourth scale player",
+        "C": "Avoid the market - it's already consolidated",
+        "D": "Back a disruptive entrant with new technology"
+      },
+      "correct": "B",
+      "explanation": "The fragmented 20% often represents $1B+ in revenue served by small, sub-scale operators with operational inefficiencies. Rolling them up creates a fourth scale player that can compete on procurement, sales coverage, and operational efficiency. Top 3 acquisitions (A) are expensive and often scrutinized by regulators. C is too dismissive. D has high failure rates. The roll-up playbook is proven in this market structure.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "Industry/Market Analysis"
+    },
+    {
+      "id": "pe-case-035",
+      "question": "A market research report shows your target company in the 'Leaders' quadrant of an industry analyst report. How should this influence your analysis?",
+      "options": {
+        "A": "This validates the company's competitive position and market perception",
+        "B": "Analyst reports reflect current state, not future trajectory",
+        "C": "Leadership position suggests limited upside from market position improvement",
+        "D": "Analyst positioning is pay-to-play and shouldn't influence analysis"
+      },
+      "correct": "B",
+      "explanation": "Analyst quadrants (Gartner, Forrester, etc.) reflect current product completeness and market presence. They don't predict whether the company will maintain leadership. More importantly, they don't reflect financial performance, customer satisfaction depth, or operational efficiency. Being a 'Leader' today doesn't mean you'll be one in 3 years, and it doesn't mean you're the most profitable player.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "Industry/Market Analysis"
+    },
+    {
+      "id": "pe-case-036",
+      "question": "Your target company's largest customer is vertically integrating and building the capability in-house. What's the MOST important analysis?",
+      "options": {
+        "A": "Timeline for the customer to fully transition to in-house capabilities",
+        "B": "Whether other large customers are likely to follow",
+        "C": "The company's ability to replace the revenue with other customers",
+        "D": "Why the customer is vertically integrating and whether it's rational"
+      },
+      "correct": "D",
+      "explanation": "Understanding the 'why' determines whether this is a one-off (customer has unusual scale or strategic reasons) or a trend (your service is commoditized and accessible). If vertical integration is rational for this customer, it's probably rational for others. If it's unique to this customer's situation, the risk is contained. Only after understanding the 'why' can you assess B and C properly.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "Industry/Market Analysis"
+    },
+    {
+      "id": "pe-case-037",
+      "question": "You're analyzing a company in the payment processing industry. Which metric is MOST important to understand competitive position?",
+      "options": {
+        "A": "Revenue growth rate",
+        "B": "Transaction volume and average ticket size",
+        "C": "Take rate (revenue as % of transaction volume)",
+        "D": "Net Promoter Score among merchants"
+      },
+      "correct": "C",
+      "explanation": "In payments, take rate (basis points of each transaction) reveals pricing power and competitive position. High-volume, low take rate suggests commodity positioning (think Square vs. traditional processors). Take rate by segment (SMB vs. enterprise, card-present vs. card-not-present) tells you where the company competes. Volume without take rate context is meaningless; $100B in volume at 10bps is very different from $100B at 250bps.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "Industry/Market Analysis"
+    },
+    {
+      "id": "pe-case-038",
+      "question": "A company is the market leader in a shrinking market (5% annual decline). Under what conditions could this still be an attractive PE investment?",
+      "options": {
+        "A": "The company can acquire competitors at distressed prices and consolidate share",
+        "B": "The company can diversify into adjacent growing markets",
+        "C": "The company's specific segment is declining slower than the overall market",
+        "D": "All of the above could make it attractive"
+      },
+      "correct": "D",
+      "explanation": "Declining markets can generate excellent PE returns through: (1) Consolidation - buying distressed competitors cheaply and harvesting combined cash flows; (2) Adjacency expansion - leveraging existing capabilities into growing markets; (3) Segment positioning - some segments decline slower or even grow within overall declining markets. The 'declining industry' label doesn't automatically make an investment unattractive. The thesis just needs to address the decline.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "Industry/Market Analysis"
+    },
+    {
+      "id": "pe-case-039",
+      "question": "A company has negative working capital (customers pay upfront, suppliers paid on 60-day terms). What's the PRIMARY implication for the investment thesis?",
+      "options": {
+        "A": "The company can fund growth without external capital",
+        "B": "Valuation should reflect the working capital benefit",
+        "C": "Revenue growth generates cash; revenue decline destroys cash",
+        "D": "Supplier relationships are at risk if growth slows"
+      },
+      "correct": "C",
+      "explanation": "Negative working capital is a double-edged sword. When revenue grows, working capital becomes a source of cash (you collect from new customers before paying suppliers). When revenue declines, it reverses - you must pay suppliers while collections decline, consuming cash rapidly. This dynamic is critical for downside scenarios and covenant analysis. A and B are true but secondary to understanding the cash flow dynamic.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "Company Quality Assessment"
+    },
+    {
+      "id": "pe-case-040",
+      "question": "A founder-led company has 3 family members in senior management positions. What's the MOST important diligence question?",
+      "options": {
+        "A": "Are the family members qualified for their roles?",
+        "B": "What are the family members' employment agreements and comp levels?",
+        "C": "Will family members stay post-acquisition?",
+        "D": "How does the family dynamic affect non-family employee morale and advancement?"
+      },
+      "correct": "D",
+      "explanation": "Family businesses often have 'glass ceilings' that limit non-family advancement, affecting retention and culture. Top performers leave when they can't advance. This creates hidden organizational risk. A is obvious diligence. B is financial hygiene. C matters but can be negotiated. D reveals whether you have a healthy organization or one where talent is frustrated by family dynamics.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "Company Quality Assessment"
+    },
+    {
+      "id": "pe-case-041",
+      "question": "A company's R&D spending has declined from 15% of revenue to 8% of revenue over 5 years while maintaining revenue growth. What's the MOST likely explanation?",
+      "options": {
+        "A": "The company has become more R&D efficient",
+        "B": "The company is harvesting past innovation and underinvesting in the future",
+        "C": "The product has matured and requires less development",
+        "D": "All of these are plausible; more context is needed"
+      },
+      "correct": "D",
+      "explanation": "R&D intensity decline could be positive (efficiency gains, product maturity) or negative (underinvestment, future product degradation). Without understanding the competitive dynamics, product lifecycle stage, and what R&D has historically delivered, you can't assess which scenario applies. The right approach is to investigate, not assume. Mature products legitimately need less R&D; growth products being starved of R&D is concerning.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "Company Quality Assessment"
+    },
+    {
+      "id": "pe-case-042",
+      "question": "A company's employee Glassdoor rating dropped from 4.2 to 3.4 over 18 months. What's the MOST important follow-up?",
+      "options": {
+        "A": "Ignore it - Glassdoor reviews skew negative from disgruntled employees",
+        "B": "Review the specific themes in negative reviews for patterns",
+        "C": "Compare to competitors' Glassdoor trends over the same period",
+        "D": "Request employee engagement survey data from the company"
+      },
+      "correct": "B",
+      "explanation": "The level of a Glassdoor score matters less than the trend and themes. A 0.8-point decline indicates something changed. Reading recent reviews reveals whether it's leadership changes, compensation cuts, layoffs, cultural issues, or specific management problems. This helps you understand what's happening internally before you engage management on it. D is good but unlikely to be provided during initial diligence.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Company Quality Assessment"
+    },
+    {
+      "id": "pe-case-043",
+      "question": "A company reports 'adjusted EBITDA' that adds back stock-based compensation, one-time costs, and 'investment' spending. Adjusted EBITDA is $50M; GAAP net income is $5M. What's your FIRST step?",
+      "options": {
+        "A": "Calculate actual cash EBITDA using GAAP numbers",
+        "B": "Accept adjusted EBITDA if add-backs are disclosed and reasonable",
+        "C": "Reconstruct the bridge from GAAP net income to adjusted EBITDA",
+        "D": "Request the last 3 years of add-backs to assess patterns"
+      },
+      "correct": "C",
+      "explanation": "A $45M gap between adjusted EBITDA and GAAP net income is enormous. Before accepting or rejecting any metric, understand what's in that gap. The bridge tells you: How much is SBC (real cost)? How much is truly one-time? What's 'investment spending' and does it recur? Only by seeing the bridge can you form your own view of sustainable earnings. D is good follow-up but you need the current bridge first.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Company Quality Assessment"
+    },
+    {
+      "id": "pe-case-044",
+      "question": "A company's customer acquisition cost (CAC) payback is 18 months and improving. However, most customers are on monthly contracts. What's the key risk?",
+      "options": {
+        "A": "CAC payback is too long for PE holding periods",
+        "B": "Monthly contracts mean customers can churn before payback is achieved",
+        "C": "The company may be spending too much on customer acquisition",
+        "D": "LTV/CAC ratio may be overstated"
+      },
+      "correct": "B",
+      "explanation": "18-month CAC payback with monthly contracts means you need customers to stay 18 months just to recoup acquisition costs - but they can leave any month. If actual customer lifetime is 14 months, you lose money on every customer. The disconnect between payback period and contract term creates significant risk. You need cohort-level retention data to see if customers actually stay long enough to repay CAC.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "Company Quality Assessment"
+    },
+    {
+      "id": "pe-case-045",
+      "question": "A company has a Net Promoter Score (NPS) of 65, well above industry average of 35. However, revenue growth has lagged competitors. What MOST likely explains this disconnect?",
+      "options": {
+        "A": "The company excels at customer satisfaction but underinvests in sales/marketing",
+        "B": "NPS methodology may be flawed (biased sample, leading questions)",
+        "C": "The company has high retention but struggles with new customer acquisition",
+        "D": "Any of these could explain it; you need to investigate all three"
+      },
+      "correct": "D",
+      "explanation": "High NPS with low growth is a puzzle that could have multiple explanations. The company might be great at serving existing customers but bad at finding new ones (A, C). Or the NPS metric itself might be misleading (B). Without investigating each hypothesis, you can't know which applies. The smart approach is to test each: Review S&M spending and efficiency (A), audit NPS methodology (B), analyze growth between new vs. existing customers (C).",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Company Quality Assessment"
+    },
+    {
+      "id": "pe-case-046",
+      "question": "Two similar companies are for sale. Company A trades at 8x EBITDA with 100% recurring revenue. Company B trades at 10x EBITDA with 70% recurring, 30% services revenue. Which is MOST likely the better value?",
+      "options": {
+        "A": "Company A - lower multiple with better revenue quality",
+        "B": "Company B - services revenue provides implementation stickiness",
+        "C": "Cannot determine without understanding revenue growth rates",
+        "D": "Cannot determine without understanding margin profiles"
+      },
+      "correct": "C",
+      "explanation": "Recurring revenue quality justifies premium multiples, but growth matters enormously. If Company A is growing 5% and Company B is growing 25%, the multiple differential might be justified. Revenue quality explains some multiple differences, but growth rates explain more. A stagnant 100% recurring business may be worth less than a fast-growing mixed-revenue business. You need growth context to compare.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Valuation in PE Context"
+    },
+    {
+      "id": "pe-case-047",
+      "question": "You're valuing a company using comparable transactions. You have 8 comps ranging from 6x to 14x EBITDA. What's the BEST approach?",
+      "options": {
+        "A": "Use the median (10x) as your primary reference point",
+        "B": "Use the full range to bracket valuation outcomes",
+        "C": "Identify the 2-3 most comparable transactions and understand why they traded where they did",
+        "D": "Exclude the outliers and use the interquartile range"
+      },
+      "correct": "C",
+      "explanation": "A 6x to 14x range tells you the comps are either not comparable or have materially different characteristics. Blindly using a median or range is lazy analysis. Identify which transactions most closely match your target (size, growth, geography, buyer type, market conditions) and understand the context behind their multiples. Two well-understood comps are better than eight superficially compiled ones.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Valuation in PE Context"
+    },
+    {
+      "id": "pe-case-048",
+      "question": "A seller wants $100M for a company with $10M LTM EBITDA. Your analysis suggests a fair value of $80M. What's the MOST effective negotiating approach?",
+      "options": {
+        "A": "Offer $70M to create room for negotiation toward your target",
+        "B": "Walk away and wait for the seller to become more realistic",
+        "C": "Structure the deal with $80M base and $20M earnout tied to performance",
+        "D": "Share your valuation analysis to demonstrate the $100M is not supported"
+      },
+      "correct": "C",
+      "explanation": "Earnouts bridge valuation gaps by shifting risk. If the seller believes in $100M value, they should be willing to earn $20M based on performance. If they won't accept an earnout, they may not believe their own projections. This approach gets to 'yes' while protecting you from overpaying. A is negotiation tactics. B may lose the deal. D rarely changes seller expectations.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "Valuation in PE Context"
+    },
+    {
+      "id": "pe-case-049",
+      "question": "You're valuing a company that will require $15M of capital expenditure immediately post-close to fix deferred maintenance. How should this affect your offer price?",
+      "options": {
+        "A": "Reduce offer by $15M to offset required investment",
+        "B": "Reduce offer by the NPV of $15M (approximately $12-13M at PE discount rates)",
+        "C": "Treat it as part of total investment and reduce offer by $15M, potentially more",
+        "D": "Keep offer price unchanged but negotiate seller financing for the CapEx"
+      },
+      "correct": "C",
+      "explanation": "Deferred maintenance CapEx is worse than ordinary investment because it's 'catch-up' spending that produces no incremental value - it just prevents deterioration. Your purchase price should reflect: (1) the $15M outlay required, and (2) potentially more if there's execution risk or if the deferred maintenance suggests other hidden problems. This isn't normal growth CapEx that creates returns.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "Valuation in PE Context"
+    },
+    {
+      "id": "pe-case-050",
+      "question": "A company has two divisions: Division A with $30M EBITDA growing 20% annually, and Division B with $20M EBITDA declining 5% annually. How should you approach valuation?",
+      "options": {
+        "A": "Apply a blended multiple to the combined $50M EBITDA",
+        "B": "Use sum-of-the-parts valuation with appropriate multiple for each division",
+        "C": "Value based on Division A only and treat Division B as a potential divestiture",
+        "D": "B, but also model scenarios for Division B wind-down or sale"
+      },
+      "correct": "D",
+      "explanation": "Sum-of-the-parts (B) is the right framework, but a declining division creates optionality that should be explicitly modeled. Division B might be: (1) maintained as cash flow harvest, (2) sold to a strategic who values it more, or (3) wound down. Each scenario has different value implications. Simply applying multiples without modeling the strategic options undervalues the investment opportunity or misses downside scenarios.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "Valuation in PE Context"
+    },
+    {
+      "id": "pe-case-051",
+      "question": "You have 30 minutes to present a case study on a potential acquisition to the investment committee. After reading the CIM, how should you structure the FIRST five minutes of your presentation?",
+      "options": {
+        "A": "Start with the financial model and key assumptions to demonstrate analytical rigor",
+        "B": "Begin with a one-sentence deal verdict, then outline the company, the thesis, and the top 3 risks",
+        "C": "Open with a detailed overview of the company's history and product offering",
+        "D": "Lead with the industry analysis to establish the market context for the investment"
+      },
+      "correct": "B",
+      "explanation": "Senior investors want to know your conclusion immediately - 'do the deal' or 'kill the deal' - followed by the reasoning structure. Starting with a clear verdict and then laying out the company overview, thesis legs, and critical risks gives the committee a mental framework to evaluate everything that follows. Starting with the model (A) puts the cart before the horse. Company history (C) and industry analysis (D) are supporting detail, not the lead. IC members will stop listening if you bury the punchline.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "Case Study Frameworks"
+    },
+    {
+      "id": "pe-case-052",
+      "question": "During a timed PE case study, you realize halfway through that you won't have time to build a full LBO model AND complete your industry analysis. What is the BEST way to allocate your remaining time?",
+      "options": {
+        "A": "Finish the LBO model since quantitative output is what matters most in PE",
+        "B": "Complete the industry analysis and present a back-of-the-envelope returns estimate instead of a full model",
+        "C": "Prioritize the analysis that most directly supports or challenges the investment thesis you've identified",
+        "D": "Split your remaining time evenly between both to show breadth of analysis"
+      },
+      "correct": "C",
+      "explanation": "PE case studies test judgment, not spreadsheet speed. If your thesis hinges on whether the market is growing or shrinking, the industry analysis matters more than a precise IRR. If the thesis depends on leverage capacity and margin expansion math, the LBO model matters more. Prioritizing based on what's critical to the thesis demonstrates the analytical maturity that interviewers reward. A treats the case as a modeling test. B is a reasonable fallback but isn't always right. D produces two mediocre outputs instead of one strong one.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Case Study Frameworks"
+    },
+    {
+      "id": "pe-case-053",
+      "question": "You've completed a case study and your conclusion is 'kill the deal.' The interviewer asks: 'What would need to change for you to do this deal?' What is the STRONGEST type of response?",
+      "options": {
+        "A": "Identify the specific price at which the risk-reward becomes acceptable",
+        "B": "List the 2-3 diligence findings that would need to reverse your key concerns, and explain what evidence would satisfy you",
+        "C": "Explain that some deals are fundamentally uninvestable regardless of terms",
+        "D": "Suggest structural protections (earnouts, reps & warranties) that would mitigate the risks you identified"
+      },
+      "correct": "B",
+      "explanation": "This question tests intellectual flexibility and precision. The best answer identifies exactly what evidence would change your mind - for example, 'If customer diligence confirmed retention rates above 90% excluding the top account, that would resolve my concentration concern.' This shows your 'kill' recommendation is based on specific, testable concerns rather than vague discomfort. A is one-dimensional (reduces everything to price). C is intellectually rigid. D addresses risk transfer but doesn't address the underlying business concerns that drove your recommendation.",
+      "difficulty": "hard",
+      "type": "edge-case",
+      "topic": "Case Study Frameworks"
+    },
+    {
+      "id": "pe-case-054",
+      "question": "You're building a comparable transactions set for a veterinary clinic roll-up platform valued at $200M. Which transaction should you EXCLUDE from your comp set?",
+      "options": {
+        "A": "A $180M veterinary platform acquisition by a PE sponsor in a bilateral negotiation 18 months ago",
+        "B": "A $2B veterinary services platform acquired by a strategic buyer in a competitive auction last quarter",
+        "C": "A $150M dental practice roll-up acquired by a PE sponsor 12 months ago",
+        "D": "A $250M veterinary platform acquisition by a PE sponsor in a competitive auction 6 months ago"
+      },
+      "correct": "B",
+      "explanation": "The $2B strategic acquisition should be excluded because it differs on two critical dimensions: buyer type and scale. Strategic buyers pay premiums for synergies that financial buyers cannot replicate, and a $2B transaction is 10x your target's size, likely commanding a scale premium. A is a reasonable comp (similar size, same industry, financial buyer) even though it was bilateral. C is a useful cross-read from an adjacent healthcare services roll-up. D is strong despite being slightly larger. Always adjust for buyer type and process dynamics rather than blindly including every transaction in the sector.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Comparable Transactions Analysis"
+    },
+    {
+      "id": "pe-case-055",
+      "question": "A comparable transaction in your analysis was completed in a highly competitive auction with 12 bidders, resulting in a 14x EBITDA multiple. Your deal is a proprietary (non-auction) situation. How should you adjust?",
+      "options": {
+        "A": "Apply a standard 15-20% discount to reflect the absence of competitive tension",
+        "B": "Use the comp as-is because the business quality should drive valuation, not the process",
+        "C": "Analyze the comp's characteristics to estimate how much of the multiple reflects auction dynamics versus business fundamentals",
+        "D": "Exclude the comp entirely since auction processes produce artificially inflated multiples"
+      },
+      "correct": "C",
+      "explanation": "There is no universal 'auction premium' - it depends on the specific deal. A high-growth, high-quality asset might command 14x regardless of process, while a mediocre asset in a hot auction might trade 2-3 turns above its fundamental value. You need to assess: Was 14x in line with the target's growth and margin profile? How many bidders participated in the final round? Were there strategic bidders with synergies? This analytical decomposition is more rigorous than applying arbitrary discounts (A) or blanket exclusions (D). B ignores a real dynamic that can inflate multiples by 1-3 turns.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "Comparable Transactions Analysis"
+    },
+    {
+      "id": "pe-case-056",
+      "question": "When using precedent transactions to value a target, you notice that 3 of your 5 comps involved public-to-private take-privates. Your target is a private company being sold by its founder. What adjustment is MOST important?",
+      "options": {
+        "A": "No adjustment needed - the target's business quality is what matters",
+        "B": "Remove the take-private comps because they include a control premium over trading price that is irrelevant for a private sale",
+        "C": "Recognize that take-private multiples include a premium to the public trading price, but this premium reflects full control value which is also relevant for your private acquisition",
+        "D": "Adjust downward by the average control premium (typically 25-35%) observed in the take-privates"
+      },
+      "correct": "C",
+      "explanation": "Take-private transactions include a premium over the public trading price, but that premium compensates public shareholders for giving up liquidity and future upside - it represents the value of full control. When acquiring a private company, you're also acquiring full control, so the control value component IS relevant. The key distinction is that public-to-private premiums also include a liquidity premium (public shareholders demand compensation for losing liquid stock), which is less relevant for a private-to-private transaction. Removing the comps entirely (B) discards useful data. Subtracting the full control premium (D) double-adjusts since you're also buying control.",
+      "difficulty": "hard",
+      "type": "conceptual",
+      "topic": "Comparable Transactions Analysis"
+    },
+    {
+      "id": "pe-case-057",
+      "question": "You present your investment recommendation to the IC and a senior partner says: 'Your revenue growth assumption of 12% is aggressive - the company has never grown faster than 8%.' Your model assumes 12% because the company just launched a new product line. What is the BEST response?",
+      "options": {
+        "A": "Agree to reduce growth to 8% to match the historical range and rerun the model",
+        "B": "Defend the 12% by explaining the new product line's pipeline and pre-orders, then offer to show the deal at 8% growth as a downside case",
+        "C": "Point out that historical growth was constrained by the old product portfolio and that the new launch changes the growth profile fundamentally",
+        "D": "Acknowledge the concern and suggest additional diligence on the new product line before proceeding"
+      },
+      "correct": "B",
+      "explanation": "The strongest response does three things: (1) acknowledges the partner's concern is legitimate, (2) provides specific evidence for why the assumption is justified (pipeline data, pre-orders - not just narrative), and (3) demonstrates you've already thought about the downside by offering to present the bear case. C is defensible but risks sounding dismissive of the partner's challenge. A capitulates without defending your work. D punts the question rather than engaging with it. Senior partners want to see that you can defend assumptions with data while remaining intellectually honest about risk.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Defending Recommendations"
+    },
+    {
+      "id": "pe-case-058",
+      "question": "During an IC discussion, another deal team member presents data that directly contradicts one of your three thesis legs. Specifically, your thesis assumed minimal customer churn, but their customer survey shows 20% of accounts are considering switching providers. What should you do?",
+      "options": {
+        "A": "Challenge the survey methodology - small sample sizes and survey bias could be driving the result",
+        "B": "Acknowledge the finding, assess whether it invalidates the thesis or can be mitigated, and adjust your recommendation if warranted",
+        "C": "Maintain your original recommendation since customer surveys often overstate switching intent versus actual behavior",
+        "D": "Immediately downgrade your recommendation from 'do the deal' to 'kill the deal'"
+      },
+      "correct": "B",
+      "explanation": "Intellectual honesty under pressure is the hallmark of a trusted investment professional. When new data contradicts your thesis, the right response is to engage with it genuinely: Is the finding reliable? Does it invalidate the thesis or merely require an adjustment (lower growth assumption, different price)? Could the risk be mitigated post-close? Sometimes new data changes your view - and changing your mind based on evidence is a strength, not a weakness. A may be valid as one step but leads with defensiveness. C dismisses data to protect your conclusion. D overreacts without analysis.",
+      "difficulty": "hard",
+      "type": "edge-case",
+      "topic": "Defending Recommendations"
+    },
+    {
+      "id": "pe-case-059",
+      "question": "A Managing Director pushes back on your deal recommendation by saying: 'We lost money on the last two deals in this sector. Why is this one different?' What is the MOST effective way to address this?",
+      "options": {
+        "A": "Argue that each deal should be evaluated on its own merits, not penalized for prior losses",
+        "B": "Identify specifically why the prior deals failed and demonstrate that this investment either avoids those failure modes or has structural protections against them",
+        "C": "Propose more conservative deal terms (lower leverage, lower entry multiple) to reduce downside risk",
+        "D": "Suggest bringing in an external industry advisor to provide an independent perspective"
+      },
+      "correct": "B",
+      "explanation": "This question is really asking: 'Have you learned from our mistakes?' The most powerful response demonstrates that you studied the prior losses, understand the root causes (was it thesis, execution, or market timing?), and can articulate specifically how this deal differs. If Deal 1 failed because of customer concentration and Deal 2 failed because of technology disruption, explain why this target doesn't face those risks. A sounds dismissive of institutional experience. C addresses risk but doesn't answer the question. D deflects rather than engaging.",
+      "difficulty": "medium",
+      "type": "edge-case",
+      "topic": "Defending Recommendations"
+    },
+    {
+      "id": "pe-case-060",
+      "question": "Your fund has $2B under management with 12 portfolio companies. A new deal would represent a $250M equity check in the healthcare IT sector, where the fund already has two investments. The deal team is enthusiastic. What portfolio-level concern should the IC MOST carefully evaluate?",
+      "options": {
+        "A": "The $250M check size is too large relative to fund size",
+        "B": "Three healthcare IT investments create correlated sector risk that could impair the portfolio in a downturn",
+        "C": "The fund should diversify into sectors with no existing exposure",
+        "D": "The existing healthcare IT investments may compete with the new target"
+      },
+      "correct": "B",
+      "explanation": "A $250M check in a $2B fund is 12.5% - meaningful but within typical concentration limits (10-15% per deal for most PE funds). The real concern is that three investments in healthcare IT creates correlated exposure: a regulatory change (e.g., new data privacy rules), sector-wide reimbursement cuts, or a healthcare IT spending freeze would hit all three simultaneously. Portfolio theory requires thinking about covariance, not just individual deal quality. D is a potential issue but manageable through target market segmentation. C is too rigid - sector expertise can be an advantage.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Portfolio Construction Thinking"
+    },
+    {
+      "id": "pe-case-061",
+      "question": "A fund is in its fourth year (of a typical 5-year investment period) and has deployed 40% of committed capital across 6 deals. A strong deal emerges requiring a $300M equity check from a $3B fund. What portfolio construction tension does this create?",
+      "options": {
+        "A": "No tension - the fund has $1.8B of dry powder and should invest aggressively",
+        "B": "The fund must balance deploying capital before the investment period expires against the risk of rushing into deals and overpaying in a compressed timeframe",
+        "C": "The fund should return uncommitted capital to LPs rather than force-deploying",
+        "D": "The GP should request an extension of the investment period from the LP Advisory Committee"
+      },
+      "correct": "B",
+      "explanation": "With 60% of capital undeployed in Year 4, the fund faces 'deployment pressure' - the need to put capital to work before the investment period ends. This creates a dangerous incentive to lower standards and overpay. The IC must honestly assess whether they'd do this deal if they had 10 years to deploy, or whether urgency is influencing their enthusiasm. This is one of the most important behavioral biases in PE. A ignores the pressure dynamic. C is premature and damages GP reputation. D is possible but doesn't address the discipline question.",
+      "difficulty": "hard",
+      "type": "edge-case",
+      "topic": "Portfolio Construction Thinking"
+    },
+    {
+      "id": "pe-case-062",
+      "question": "A PE fund is evaluating two potential investments that both meet return thresholds. Deal A is a stable, cash-generative business likely to return 2.0x with high certainty. Deal B is a high-growth platform likely to return 3.5x but with significant execution risk. The fund currently has 10 portfolio companies, 8 of which are stable/low-growth profiles. Which deal is MOST likely to improve overall portfolio construction?",
+      "options": {
+        "A": "Deal A - certainty of returns protects the fund's overall performance",
+        "B": "Deal B - the fund needs upside exposure to deliver top-quartile returns",
+        "C": "Either deal - both meet return thresholds so it doesn't matter",
+        "D": "Deal A - adding another stable company reduces portfolio volatility for LPs"
+      },
+      "correct": "B",
+      "explanation": "Portfolio construction in PE requires balancing 'base hits' (reliable 2x returns) with 'home runs' (3x+ returns that drive top-quartile performance). With 8 of 10 existing companies in stable/low-growth profiles, the fund likely has sufficient downside protection but may lack the upside needed to differentiate from peers. Adding Deal B introduces return dispersion that, on a portfolio basis, increases the probability of top-quartile performance - which is what drives fundraising and carry. A and D add incremental safety to an already safe portfolio, potentially at the cost of return ambition.",
+      "difficulty": "easy",
+      "type": "formulaic",
+      "topic": "Portfolio Construction Thinking"
+    },
+    {
+      "id": "pe-case-063",
+      "question": "You've just closed an acquisition of a $100M-revenue industrial distribution company from a retiring founder. The first board meeting is in 2 weeks. What is the MOST important element to include in the 100-day plan?",
+      "options": {
+        "A": "Implement a new ERP system to replace the founder's spreadsheet-based tracking",
+        "B": "Identify and lock in the 5-10 key employees and customer relationships that are most at risk during the transition",
+        "C": "Launch a comprehensive procurement optimization initiative to capture quick-win cost savings",
+        "D": "Hire a new CEO to replace the retiring founder as quickly as possible"
+      },
+      "correct": "B",
+      "explanation": "The first 100 days after acquiring a founder-led business are about stabilization, not transformation. The greatest immediate risk is that key people leave and key customers defect during the uncertainty of ownership transition. Before you optimize anything, you must identify who and what holds the business together and ensure continuity. ERP implementation (A) is a 12-18 month project, not a 100-day priority. Procurement savings (C) are important but not urgent. Hiring a CEO (D) matters but rushing it leads to bad hires - an interim plan is fine for 100 days.",
+      "difficulty": "easy",
+      "type": "judgmental",
+      "topic": "Post-Investment Value Creation"
+    },
+    {
+      "id": "pe-case-064",
+      "question": "Post-acquisition, you're assessing the management team of a $75M-revenue specialty chemicals company. The VP of Operations has deep technical expertise and strong employee loyalty but struggles with data-driven decision-making and has never managed a P&L. What is the BEST approach?",
+      "options": {
+        "A": "Replace the VP with an experienced operator who has both technical and financial skills",
+        "B": "Keep the VP in role but hire a COO above them to provide the financial and strategic oversight",
+        "C": "Invest in executive coaching and a fractional CFO/analytics resource to supplement the VP's gaps while preserving their institutional knowledge",
+        "D": "Promote the VP to a Chief Technical Officer role and hire a new VP of Operations with P&L experience"
+      },
+      "correct": "C",
+      "explanation": "In specialty chemicals, the VP of Operations' technical knowledge and employee trust are difficult to replicate and critical to operational continuity. Replacing them (A) risks production disruptions and employee turnover. Layering a COO above them (B) may demoralize them and create unclear reporting lines. Promoting them sideways (D) can feel like a demotion and may not retain their operational influence. The most effective approach supplements their weaknesses with targeted resources (coaching, analytics support) while keeping their strengths fully engaged. This is the PE playbook for 'upgrade the team around the person, not instead of the person' - applicable when someone has irreplaceable domain expertise.",
+      "difficulty": "medium",
+      "type": "edge-case",
+      "topic": "Post-Investment Value Creation"
+    },
+    {
+      "id": "pe-case-065",
+      "question": "Six months after acquiring a multi-location services business, your operating partner identifies that labor costs are 800 basis points above the best-performing location across 18 of 20 sites. What is the MOST effective approach to capturing this operational improvement?",
+      "options": {
+        "A": "Implement immediate headcount reductions at underperforming sites to match the benchmark",
+        "B": "Roll out the best-performing location's practices across all sites simultaneously to capture savings quickly",
+        "C": "Analyze WHY the top locations outperform (scheduling, mix, training, local factors), pilot replicable practices at 3-4 sites, then scale what works",
+        "D": "Set labor cost targets for each site manager and tie their compensation to achieving the benchmark"
+      },
+      "correct": "C",
+      "explanation": "An 800 basis point gap is significant, but the top sites may outperform for reasons that aren't replicable everywhere (favorable local labor markets, different service mix, unique manager talent). Before scaling, you must understand root causes and test whether improvements transfer. Piloting at 3-4 sites provides proof of concept and surfaces implementation challenges before a full rollout. Immediate cuts (A) risk service quality degradation and employee morale. Simultaneous rollout (B) amplifies execution risk. Targets without playbooks (D) create pressure without providing the tools to improve. The pilot-then-scale approach is the operational improvement methodology that best-in-class PE operating partners use consistently.",
+      "difficulty": "hard",
+      "type": "edge-case",
+      "topic": "Post-Investment Value Creation"
+    }
+  ]
+}

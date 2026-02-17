@@ -1,0 +1,981 @@
+{
+  "module": "advanced-pe-modeling",
+  "title": "Advanced PE Modeling Quiz Bank",
+  "questions": [
+    {
+      "id": "pe-am-001",
+      "question": "A PE firm issues $100M of PIK debt at 12% annual rate. What is the accrued balance after 5 years?",
+      "options": {
+        "A": "$160M",
+        "B": "$176M",
+        "C": "$180M",
+        "D": "$172M"
+      },
+      "correct": "B",
+      "explanation": "PIK interest compounds: $100M × (1.12)^5 = $176.2M, approximately $176M. Each year the unpaid interest is added to the principal, so the balance grows exponentially rather than linearly. If it were simple interest, the balance would be $160M ($100M + 5 × $12M), which is a common wrong answer.",
+      "difficulty": "easy",
+      "type": "formulaic",
+      "topic": "PIK Debt"
+    },
+    {
+      "id": "pe-am-002",
+      "question": "A preferred equity investor holds $200M of preferred stock with a 2x liquidation preference. The company is sold for $350M. Assuming no participation rights beyond the preference, how much does the preferred holder receive?",
+      "options": {
+        "A": "$200M",
+        "B": "$350M",
+        "C": "$400M",
+        "D": "$300M"
+      },
+      "correct": "B",
+      "explanation": "The 2x liquidation preference entitles the preferred holder to $400M (2 × $200M). However, the total proceeds are only $350M. The preferred holder receives the full $350M, as their preference exceeds the available proceeds. Common equity receives nothing. The preferred cannot receive more than the total enterprise value available for distribution.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "Preferred Equity"
+    },
+    {
+      "id": "pe-am-003",
+      "question": "Why does PIK debt generally hurt the sponsor's IRR compared to cash-pay debt of the same rate, despite improving the portfolio company's free cash flow?",
+      "options": {
+        "A": "PIK debt increases the total enterprise value at exit",
+        "B": "PIK debt compounds and increases the debt balance paid from exit proceeds, reducing equity value at exit",
+        "C": "PIK debt has no impact on IRR because the rate is the same",
+        "D": "PIK debt triggers higher taxes due to phantom income recognition"
+      },
+      "correct": "B",
+      "explanation": "With cash-pay debt, interest payments reduce the debt balance over time (through amortization of the original principal). With PIK, the balance grows because unpaid interest accretes to principal. At exit, the larger debt balance is subtracted from enterprise value, leaving less equity value. While PIK preserves near-term cash flow (helpful for debt service coverage), the compounding effect reduces the sponsor's share of exit proceeds, lowering the equity MOIC and IRR.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "PIK Debt"
+    },
+    {
+      "id": "pe-am-004",
+      "question": "A preferred investor holds $50M of preferred equity with a 10% PIK dividend. After 4 years, what is the accrued liquidation preference?",
+      "options": {
+        "A": "$70.0M",
+        "B": "$73.2M",
+        "C": "$75.0M",
+        "D": "$72.0M"
+      },
+      "correct": "B",
+      "explanation": "PIK dividends compound annually: $50M × (1.10)^4 = $50M × 1.4641 = $73.2M. The key distinction from simple interest ($70M) is that each year's accrued dividend is added to the preference base, and subsequent dividends accrue on this larger base. This compounding mechanism is identical to PIK debt mechanics and significantly increases the preferred holder's claim over time.",
+      "difficulty": "easy",
+      "type": "formulaic",
+      "topic": "Preferred Equity with PIK"
+    },
+    {
+      "id": "pe-am-005",
+      "question": "A PE firm owns a portfolio company valued at $800M EV with $200M of existing debt. It executes a dividend recapitalization, raising $300M of new debt and distributing the proceeds to equity holders. What is the impact on the sponsor's IRR?",
+      "options": {
+        "A": "IRR increases because the sponsor recovers capital earlier, reducing time-weighted exposure",
+        "B": "IRR decreases because the company now has more debt and higher risk",
+        "C": "IRR is unchanged because total value created remains the same",
+        "D": "IRR increases only if the dividend exceeds the original equity check"
+      },
+      "correct": "A",
+      "explanation": "A dividend recapitalization accelerates cash returns to the sponsor, reducing the time capital is at risk. Since IRR is time-weighted, receiving cash earlier significantly boosts the return rate even if total dollar profit (MOIC) stays the same or slightly decreases. The MOIC may actually decline slightly due to higher interest expense, but the earlier cash inflow typically more than offsets this in IRR terms. This is one of the classic PE value creation levers.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "Dividend Recapitalization"
+    },
+    {
+      "id": "pe-am-006",
+      "question": "In a restructuring scenario, a company has $300M first lien debt, $200M second lien debt, and $100M unsecured bonds. The company's enterprise value in the restructuring is $420M. What recovery does the second lien receive?",
+      "options": {
+        "A": "40%",
+        "B": "50%",
+        "C": "60%",
+        "D": "70%"
+      },
+      "correct": "C",
+      "explanation": "The waterfall allocates value by priority: First lien receives $300M (100% recovery). Remaining value = $420M - $300M = $120M for second lien. Second lien recovery = $120M / $200M = 60%. Unsecured bonds recover 0% as there is no remaining value. This strict priority of claims (the 'absolute priority rule') is fundamental to distressed analysis and determines which tranche is the 'fulcrum security.'",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "Restructuring Waterfall"
+    },
+    {
+      "id": "pe-am-007",
+      "question": "An investor holds non-participating preferred stock representing 30% of the company on an as-converted basis, with a $50M liquidation preference. The company sells for $200M. What does the preferred holder receive?",
+      "options": {
+        "A": "$50M (takes the liquidation preference)",
+        "B": "$60M (converts to common for 30% share)",
+        "C": "$110M (preference plus 30% of remainder)",
+        "D": "$80M (preference plus pro-rata share of excess)"
+      },
+      "correct": "B",
+      "explanation": "Non-participating preferred gives the holder a choice: take the liquidation preference ($50M) OR convert to common stock (30% × $200M = $60M). The holder picks whichever is higher. Here, converting yields $60M vs. the $50M preference, so the holder converts. Note: if this were participating preferred, the holder would receive $50M + 30% × ($200M - $50M) = $50M + $45M = $95M. The non-participating feature is significantly more common-friendly at high exit values.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "Non-Participating Preferred"
+    },
+    {
+      "id": "pe-am-008",
+      "question": "In a management buyout, the CEO rolls over $10M of equity into a Newco valued at $500M total equity. The sponsor contributes $490M. Management also receives options with a strike price equal to the rollover valuation. Why is this strike price significant?",
+      "options": {
+        "A": "It ensures management only profits from incremental value creation above the acquisition price",
+        "B": "It guarantees management a minimum return regardless of exit value",
+        "C": "It is required by IRS Section 409A to avoid deferred compensation penalties",
+        "D": "Both A and C are correct"
+      },
+      "correct": "D",
+      "explanation": "Setting the option strike at fair market value (the acquisition price per share) serves two purposes. First, it aligns incentives: management only benefits from value creation above the entry price, ensuring they are motivated to grow the business. Second, Section 409A of the Internal Revenue Code requires that options be granted at or above FMV to avoid being treated as deferred compensation, which would trigger immediate taxation and a 20% penalty. This is why 409A valuations are a critical step in structuring management incentive plans.",
+      "difficulty": "hard",
+      "type": "conceptual",
+      "topic": "Management Rollover and Options"
+    },
+    {
+      "id": "pe-am-009",
+      "question": "Why would a PE sponsor choose to acquire a target using a Holdco/Opco structure rather than having the acquisition entity borrow directly?",
+      "options": {
+        "A": "It allows the sponsor to layer additional debt at the Holdco level above the Opco debt",
+        "B": "It simplifies the capital structure by consolidating all debt in one entity",
+        "C": "It eliminates the need for intercreditor agreements between lender groups",
+        "D": "It reduces the total amount of debt needed for the acquisition"
+      },
+      "correct": "A",
+      "explanation": "A Holdco/Opco structure creates a parent (Holdco) above the operating company (Opco). The sponsor can place senior secured debt at the Opco level and additional subordinated or holdco notes at the Holdco level, effectively layering more leverage on the equity. Holdco debt is structurally subordinated to Opco debt because Holdco's only asset is its equity in Opco, meaning Opco creditors are paid first. This structure is more complex (not simpler) and typically requires intercreditor arrangements, but it enables greater total leverage.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "Holdco/Opco Structures"
+    },
+    {
+      "id": "pe-am-010",
+      "question": "In a Holdco/Opco structure, Holdco debt is structurally subordinated to Opco debt. What does 'structural subordination' mean in practice?",
+      "options": {
+        "A": "Holdco lenders have a contractual agreement to be paid after Opco lenders",
+        "B": "Holdco creditors can only access Opco cash flows after Opco's own obligations are satisfied, because Holdco's only asset is its equity interest in Opco",
+        "C": "Holdco debt automatically converts to equity if Opco defaults",
+        "D": "Holdco lenders rank pari passu with Opco's unsecured creditors"
+      },
+      "correct": "B",
+      "explanation": "Structural subordination arises from the corporate structure itself, not from a contractual agreement. Holdco's sole asset is its equity in Opco. In a distress scenario, Opco's creditors have first claim on Opco's assets and cash flows. Only after all Opco obligations (debt, payables, etc.) are satisfied does any residual value flow up to Holdco as equity distributions, which Holdco can then use to service its own debt. This is different from contractual subordination, which is an explicit agreement between lenders within the same entity.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "Holdco/Opco Structures"
+    },
+    {
+      "id": "pe-am-011",
+      "question": "A PE-owned Opco generates $50M of free cash flow annually. Its Opco credit agreement contains a restricted payments covenant limiting dividends to the Holdco to 50% of cumulative net income since closing. Opco cumulative net income is $80M. How much can Opco dividend to Holdco?",
+      "options": {
+        "A": "$25M",
+        "B": "$40M",
+        "C": "$50M",
+        "D": "$80M"
+      },
+      "correct": "B",
+      "explanation": "The restricted payments covenant limits distributions from Opco to Holdco based on a basket—here, 50% of cumulative net income since closing. 50% × $80M = $40M maximum distribution. Even though Opco has $50M of free cash flow, the covenant limits the dividend to $40M. This is a critical concept in Holdco/Opco modeling: Holdco's ability to service its own debt depends entirely on distributions from Opco, which are constrained by Opco's credit agreement covenants.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "Holdco/Opco Structures"
+    },
+    {
+      "id": "pe-am-012",
+      "question": "In a Holdco/Opco structure, where should intercompany loans from Holdco to Opco sit in the priority waterfall relative to Opco's external debt?",
+      "options": {
+        "A": "Intercompany loans rank senior to all Opco debt because the parent company has superior claim",
+        "B": "Intercompany loans are typically subordinated to all external Opco debt per the intercreditor agreement",
+        "C": "Intercompany loans rank pari passu with Opco's first lien debt",
+        "D": "Intercompany loans are automatically eliminated in consolidation and have no priority claim"
+      },
+      "correct": "B",
+      "explanation": "Opco's external lenders will require that any intercompany loans from Holdco to Opco are contractually subordinated to their claims. This is typically mandated in the intercreditor or subordination agreement. While the loans do eliminate in consolidation for accounting purposes, they remain legally distinct claims in bankruptcy. External lenders would never accept intercompany debt ranking ahead of or alongside their secured claims—subordination is a standard protective provision.",
+      "difficulty": "hard",
+      "type": "conceptual",
+      "topic": "Holdco/Opco Structures"
+    },
+    {
+      "id": "pe-am-013",
+      "question": "Which of the following is a key tax advantage of a Holdco/Opco structure in the US?",
+      "options": {
+        "A": "Interest on Holdco debt is deductible against Opco's taxable income through a consolidated tax return",
+        "B": "Holdco debt interest is never tax-deductible regardless of filing status",
+        "C": "Opco can deduct dividends paid to Holdco as a business expense",
+        "D": "Holdco can claim depreciation on Opco's assets directly"
+      },
+      "correct": "A",
+      "explanation": "When Holdco and Opco file a consolidated tax return (possible when Holdco owns 80%+ of Opco), interest expense on Holdco debt can offset taxable income from Opco at the consolidated group level. This creates a tax shield on the Holdco debt, making the additional leverage layer tax-efficient. Without consolidated filing, the Holdco interest would only be deductible against Holdco's own income (typically just dividends from Opco), which can create tax inefficiency.",
+      "difficulty": "hard",
+      "type": "conceptual",
+      "topic": "Holdco/Opco Structures"
+    },
+    {
+      "id": "pe-am-014",
+      "question": "An Opco has $400M first lien term loan and $100M first lien revolver. In a Holdco/Opco structure, a sponsor wants to add $150M of additional debt. Where is this debt most likely placed?",
+      "options": {
+        "A": "As first lien debt at the Opco level, pari passu with existing term loan",
+        "B": "As second lien debt at the Opco level",
+        "C": "As unsecured holdco notes at the Holdco level",
+        "D": "Either B or C depending on covenant flexibility and market conditions"
+      },
+      "correct": "D",
+      "explanation": "The additional $150M could be placed as second lien debt at Opco (contractually subordinated to first lien but with a direct claim on Opco assets) or as holdco notes (structurally subordinated). The choice depends on: (1) whether the existing Opco credit agreement permits additional second lien debt, (2) market appetite and pricing for each tranche, and (3) the sponsor's preference for flexibility. Second lien at Opco typically prices tighter than holdco notes because it has a direct claim on Opco assets, but it may face more restrictive covenants.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "Holdco/Opco Structures"
+    },
+    {
+      "id": "pe-am-015",
+      "question": "What is a unitranche facility in leveraged finance?",
+      "options": {
+        "A": "A single loan facility that combines senior and subordinated debt into one tranche with a blended interest rate",
+        "B": "A revolving credit facility with a single draw period",
+        "C": "A term loan that can only be drawn in one single tranche at closing",
+        "D": "A loan that can be syndicated to only one institutional investor"
+      },
+      "correct": "A",
+      "explanation": "A unitranche facility blends what would traditionally be separate first lien and second lien tranches into a single loan with one set of documents and a blended interest rate. Behind the scenes, there may be an Agreement Among Lenders (AAL) that splits economics between the 'first-out' (lower risk, lower rate) and 'last-out' (higher risk, higher rate) tranches, but the borrower sees only one facility. Unitranche is popular in mid-market PE transactions because it simplifies execution, reduces documentation costs, and provides certainty of financing.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "Complex Debt Structures"
+    },
+    {
+      "id": "pe-am-016",
+      "question": "In a split-lien structure, how are the first lien term loan lenders and the first lien revolver lenders differentiated?",
+      "options": {
+        "A": "They share the same collateral pari passu with no priority distinction",
+        "B": "The revolver has first priority on liquid assets (cash, receivables, inventory) while the term loan has first priority on fixed assets (PP&E, IP)",
+        "C": "The term loan always has priority over the revolver on all collateral",
+        "D": "The revolver is unsecured while the term loan is secured"
+      },
+      "correct": "B",
+      "explanation": "A split-lien (or split-collateral) structure assigns different priority positions to the revolver and term loan on different asset classes. The revolver typically gets first lien on current assets (ABL-priority assets like cash, A/R, inventory) while the term loan gets first lien on fixed assets and other long-term collateral. Each tranche has a second lien on the other's primary collateral. This structure allows the revolver to function like an ABL facility while the term loan lenders are secured by the enterprise's long-term assets.",
+      "difficulty": "hard",
+      "type": "conceptual",
+      "topic": "Complex Debt Structures"
+    },
+    {
+      "id": "pe-am-017",
+      "question": "What is the purpose of an intercreditor agreement between first lien and second lien lenders?",
+      "options": {
+        "A": "To ensure second lien lenders receive equal treatment with first lien lenders in bankruptcy",
+        "B": "To govern the relative rights, remedies, and priorities between the two lender groups, including standstill periods and enforcement rights",
+        "C": "To allow second lien lenders to accelerate their debt before first lien lenders",
+        "D": "To eliminate the second lien in a restructuring automatically"
+      },
+      "correct": "B",
+      "explanation": "The intercreditor agreement (ICA) is the contract that governs the relationship between first and second lien creditors. Key provisions include: (1) payment subordination and turnover (second lien payments are blocked during a first lien default), (2) standstill periods (second lien cannot enforce remedies for a specified period, typically 90-180 days), (3) first lien gets to direct collateral enforcement actions, and (4) rules around DIP financing, adequate protection, and plan voting in bankruptcy. The ICA protects first lien priority while defining the limited rights second lien lenders retain.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "Complex Debt Structures"
+    },
+    {
+      "id": "pe-am-018",
+      "question": "A super senior revolving credit facility (RCF) sits in the capital structure of a European leveraged buyout. How does it rank relative to the senior secured term loan?",
+      "options": {
+        "A": "The RCF ranks junior to the term loan",
+        "B": "The RCF ranks pari passu with the term loan on all collateral",
+        "C": "The RCF has priority in enforcement proceeds over the term loan despite both being secured",
+        "D": "The RCF is unsecured and ranks below the term loan"
+      },
+      "correct": "C",
+      "explanation": "In European leveraged finance, a 'super senior' RCF ranks ahead of the senior secured term loan in enforcement proceeds, even though both are secured by the same collateral. The intercreditor agreement specifies that RCF lenders are paid first from enforcement proceeds up to the RCF cap, before term loan lenders receive anything. This structure incentivizes banks to provide revolving facilities because they have priority recovery. It is distinct from the US market where the revolver and term loan typically rank pari passu.",
+      "difficulty": "hard",
+      "type": "conceptual",
+      "topic": "Complex Debt Structures"
+    },
+    {
+      "id": "pe-am-019",
+      "question": "A PE sponsor closes a $500M LBO with a $100M delayed draw term loan (DDTL) that can be drawn within 18 months of closing. What is the primary purpose of this DDTL?",
+      "options": {
+        "A": "To provide a cheaper alternative to revolving credit",
+        "B": "To fund pre-identified acquisitions or capital expenditures post-closing without needing to return to the capital markets",
+        "C": "To refinance the existing term loan at a lower rate after closing",
+        "D": "To provide working capital support identical to a revolver"
+      },
+      "correct": "B",
+      "explanation": "A delayed draw term loan allows the borrower to draw committed financing within a specified window (typically 12-24 months post-closing) for designated purposes like tuck-in acquisitions or growth capex. Unlike a revolver, once drawn it does not revolve (cannot be repaid and redrawn). The advantage over returning to capital markets is certainty of financing, pre-negotiated terms, and speed of execution. The borrower typically pays a ticking fee (e.g., 50% of the applicable margin) on the undrawn commitment to compensate lenders.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "Complex Debt Structures"
+    },
+    {
+      "id": "pe-am-020",
+      "question": "An existing credit agreement has an incremental facility (accordion) provision permitting up to $75M of incremental first lien debt subject to a 4.5x first lien net leverage test. Current first lien debt is $300M and LTM EBITDA is $100M with $20M cash. Can the borrower incur the full $75M?",
+      "options": {
+        "A": "Yes, because pro forma first lien net leverage would be 3.55x",
+        "B": "No, because pro forma first lien net leverage would be 4.55x, exceeding the 4.5x cap",
+        "C": "Yes, because the test only applies to total leverage, not first lien leverage",
+        "D": "No, because incremental facilities require unanimous lender consent"
+      },
+      "correct": "A",
+      "explanation": "Pro forma first lien net debt = ($300M + $75M) - $20M cash = $355M. First lien net leverage = $355M / $100M = 3.55x, which is below the 4.5x cap. The borrower can incur the full $75M. Incremental facility provisions typically require only a leverage ratio test (incurrence-based, not maintenance-based) and standard conditions like no default. They generally do not require unanimous consent—the credit agreement pre-authorizes the borrowing if conditions are met. This is a key tool for PE-backed companies to fund bolt-on acquisitions.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "Complex Debt Structures"
+    },
+    {
+      "id": "pe-am-021",
+      "question": "What is the key difference between a 'covenant-lite' and a 'covenant-heavy' credit agreement?",
+      "options": {
+        "A": "Covenant-lite loans have no covenants at all, while covenant-heavy loans have many",
+        "B": "Covenant-lite loans lack maintenance covenants (tested periodically) but retain incurrence covenants (tested only when taking an action), while covenant-heavy loans have both",
+        "C": "Covenant-lite loans have lower interest rates because they have fewer protections",
+        "D": "Covenant-heavy loans are only used in investment-grade financing"
+      },
+      "correct": "B",
+      "explanation": "The critical distinction is between maintenance covenants (tested quarterly regardless of whether the borrower takes any action, e.g., maximum leverage ratio) and incurrence covenants (tested only when the borrower takes a specific action like incurring debt or making a restricted payment). Covenant-lite term loans eliminate maintenance covenants, removing the lender's ability to force a default based on deteriorating performance alone. The revolver may still contain a springing maintenance covenant. Cov-lite became dominant in the leveraged loan market post-2012, driven by strong demand from CLOs and institutional investors.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "Complex Debt Structures"
+    },
+    {
+      "id": "pe-am-022",
+      "question": "A PE firm acquires a platform for $400M and agrees to an earnout of up to $50M payable if the target achieves $60M EBITDA within two years post-close (vs. $50M at closing). What primary purpose does this earnout serve?",
+      "options": {
+        "A": "To reduce the buyer's tax liability on the acquisition",
+        "B": "To bridge a valuation gap between what the buyer is willing to pay today and the seller's expectations based on projected growth",
+        "C": "To defer all consideration to reduce the buyer's upfront cash outlay",
+        "D": "To guarantee the seller receives $450M total regardless of performance"
+      },
+      "correct": "B",
+      "explanation": "Earnouts bridge the gap between buyer and seller valuation expectations. If the seller believes the business will grow to $60M EBITDA and deserves a higher price, but the buyer only wants to pay on current performance, the earnout aligns incentives: the seller receives additional consideration only if growth materializes. It transfers performance risk to the seller for the incremental value. Earnouts are not guarantees—if EBITDA does not reach $60M, the seller receives less than the maximum $50M (or nothing, depending on the structure).",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "Earnouts"
+    },
+    {
+      "id": "pe-am-023",
+      "question": "How is an earnout liability typically treated in the buyer's financial statements under US GAAP?",
+      "options": {
+        "A": "Recorded as equity at fair value on the acquisition date",
+        "B": "Recorded as a contingent liability at fair value on the acquisition date, with subsequent changes in fair value recognized in the income statement",
+        "C": "Not recorded until the earnout is actually paid",
+        "D": "Recorded at the maximum possible earnout amount as a liability"
+      },
+      "correct": "B",
+      "explanation": "Under ASC 805 (Business Combinations), contingent consideration (including earnouts) is measured at fair value on the acquisition date and classified as a liability or equity. If classified as a liability (most common for cash-settled earnouts), it is remeasured to fair value each reporting period, with changes flowing through the income statement. This creates earnings volatility: if the business outperforms, the liability increases (a charge to earnings); if it underperforms, the liability decreases (a gain). This fair value remeasurement is a key modeling consideration.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "Earnouts"
+    },
+    {
+      "id": "pe-am-024",
+      "question": "A seller negotiated an earnout based on revenue targets rather than EBITDA targets. From the seller's perspective, why might revenue-based earnouts be preferable?",
+      "options": {
+        "A": "Revenue is easier for the buyer to manipulate than EBITDA",
+        "B": "Revenue is a top-line metric less susceptible to buyer manipulation through cost allocation, overhead charges, or accounting policy changes that affect profitability",
+        "C": "Revenue-based earnouts always result in higher payouts",
+        "D": "GAAP requires earnouts to be revenue-based"
+      },
+      "correct": "B",
+      "explanation": "Revenue is a cleaner, more objective metric that is harder for the buyer to manipulate post-acquisition. EBITDA can be reduced by the buyer through increased management fees, corporate overhead allocations, one-time restructuring charges, or changes in accounting policies—all of which reduce profitability without necessarily reflecting true business performance. Sellers prefer revenue-based earnouts for this reason. Buyers, conversely, prefer EBITDA-based earnouts because they want to pay only for profitable growth. Earnout disputes are among the most litigated post-closing issues in M&A.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Earnouts"
+    },
+    {
+      "id": "pe-am-025",
+      "question": "A PE buyer structures an earnout with a 'catch-up' provision. What does this mean?",
+      "options": {
+        "A": "If the seller misses Year 1 targets but hits Year 2 targets, they receive the full cumulative earnout",
+        "B": "The buyer can claw back earnout payments made in prior years",
+        "C": "The earnout period is extended if targets are missed in early years",
+        "D": "The seller receives accelerated payments if targets are exceeded"
+      },
+      "correct": "A",
+      "explanation": "A catch-up provision in an earnout allows the seller to earn the full cumulative earnout if aggregate targets are met over the measurement period, even if individual annual targets were missed. For example, if the Year 1 EBITDA target is $50M and Year 2 is $55M, and the company achieves $45M in Year 1 but $60M in Year 2, cumulative EBITDA of $105M meets the $105M total, so the full earnout is paid. This is seller-friendly because it smooths out timing variability. Without a catch-up, missing Year 1 would forfeit that year's earnout permanently.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "Earnouts"
+    },
+    {
+      "id": "pe-am-026",
+      "question": "In an LBO, the seller rolls over 20% of their equity ($40M) into the new entity alongside the PE sponsor's $160M equity check. If the rollover is structured at the same per-share valuation as the sponsor's entry, what is the key tax benefit to the seller?",
+      "options": {
+        "A": "The seller pays no taxes at all on the transaction",
+        "B": "The seller defers capital gains tax on the rolled-over portion, paying tax only on the $160M cash received",
+        "C": "The seller converts capital gains into ordinary income, reducing the tax rate",
+        "D": "The rollover eliminates the seller's cost basis in the new equity"
+      },
+      "correct": "B",
+      "explanation": "When a seller rolls equity into the buyer's new entity in a tax-deferred transaction (typically structured under Section 351 or as a partnership contribution), capital gains tax is deferred on the rolled portion. The seller only pays immediate tax on the cash consideration received. In this case, if total consideration is $200M, the seller pays tax on $160M now and defers tax on the $40M rollover until the next exit. This is a significant incentive for sellers to agree to rollover, as it reduces their immediate tax burden and demonstrates continued confidence in the business.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "Rollover Equity"
+    },
+    {
+      "id": "pe-am-027",
+      "question": "A PE fund acquires a company for 10x EBITDA ($100M EBITDA, $1B EV). Management rolls $50M of equity at the deal valuation. Post-close, the sponsor realizes the fair market value should have been 9x ($900M EV). What issue does this create for the rollover?",
+      "options": {
+        "A": "No issue—rollover valuation is always based on the deal price regardless of FMV",
+        "B": "Management may be deemed to have received a taxable benefit equal to the difference, as they rolled at an inflated valuation relative to FMV",
+        "C": "The sponsor must pay management the $50M difference",
+        "D": "The IRS requires the deal to be unwound"
+      },
+      "correct": "B",
+      "explanation": "If management rolls equity at a valuation above fair market value, the IRS may argue that management received excess value (a 'bargain' in the new entity) that constitutes compensation income rather than a tax-free rollover. For example, if the true FMV per share is lower, management gets more shares than they should for their $50M, creating imputed income. This is why Section 409A valuations and independent appraisals are critical in structuring rollovers. The rollover valuation must be defensible as fair market value to maintain tax-deferred treatment.",
+      "difficulty": "hard",
+      "type": "edge-case",
+      "topic": "Rollover Equity"
+    },
+    {
+      "id": "pe-am-028",
+      "question": "A PE sponsor offers management a 10% rollover at the deal equity value of $300M ($30M rollover). The company exits 4 years later at $900M equity value. Assuming no dilution, what is management's MOIC on their rollover investment?",
+      "options": {
+        "A": "2.0x",
+        "B": "3.0x",
+        "C": "4.0x",
+        "D": "10.0x"
+      },
+      "correct": "B",
+      "explanation": "Management rolled $30M for 10% of the equity. At exit, their 10% stake is worth 10% × $900M = $90M. MOIC = $90M / $30M = 3.0x. Note that management's MOIC equals the total equity MOIC ($900M / $300M = 3.0x) because they rolled at the same valuation as the sponsor's entry. If management had rolled at a discount (e.g., lower implied valuation), their MOIC would be higher than the sponsor's, which is sometimes used as an additional incentive but raises tax and governance concerns.",
+      "difficulty": "easy",
+      "type": "formulaic",
+      "topic": "Rollover Equity"
+    },
+    {
+      "id": "pe-am-029",
+      "question": "In a rollover transaction, what does it mean for management to roll equity 'at a different valuation' than the sponsor's entry price?",
+      "options": {
+        "A": "Management pays the same price per share but receives a different class of stock",
+        "B": "Management receives shares at a discount to the sponsor's entry price, resulting in a higher ownership percentage per dollar invested",
+        "C": "Management receives shares at a premium, resulting in lower ownership per dollar invested",
+        "D": "Both B and C are possible depending on the structure, but B is more common as a management incentive"
+      },
+      "correct": "D",
+      "explanation": "Rolling at a different valuation means the implied price per share differs for management versus the sponsor. Rolling at a discount (more common) means management gets more shares per dollar, sweetening their economics and serving as an incentive. Rolling at a premium is rare but could occur if management negotiates for preferred rights. However, rolling at a discount creates complications: the discount may be treated as compensation income (taxable as ordinary income), and the IRS scrutinizes such arrangements under Section 409A and Section 83. Proper structuring is essential to achieve the desired economics tax-efficiently.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "Rollover Equity"
+    },
+    {
+      "id": "pe-am-030",
+      "question": "In a management incentive plan (MIP), what is 'sweet equity'?",
+      "options": {
+        "A": "Equity granted to management at a significant discount to the sponsor's entry price, giving management a disproportionate share of upside",
+        "B": "Preferred equity with a high coupon rate allocated to management",
+        "C": "Equity that only vests if management achieves personal KPIs",
+        "D": "Equity issued to management as a signing bonus with no vesting"
+      },
+      "correct": "A",
+      "explanation": "Sweet equity refers to equity instruments (often a separate class of shares) issued to management at a nominal price or significant discount, giving them a disproportionately large share of equity upside relative to their cash investment. For example, management might invest $1M but receive 15% of the common equity alongside the sponsor's $200M for 85%. The 'sweetness' is that management's return on investment is magnified relative to the sponsor's. Sweet equity is common in European PE transactions and is typically structured as a separate share class (e.g., 'B shares' or 'management shares') to distinguish it from the sponsor's equity.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "Management Incentive Plans"
+    },
+    {
+      "id": "pe-am-031",
+      "question": "A PE firm allocates a 15% option pool to management with a 4-year vesting schedule (25% annual cliff). After 2.5 years, the CEO departs. What percentage of the total option pool has vested?",
+      "options": {
+        "A": "50% (2 full years of 25% annual cliff)",
+        "B": "62.5% (pro-rata for 2.5 years)",
+        "C": "75% (rounds up to 3 years)",
+        "D": "0% (must complete full 4 years)"
+      },
+      "correct": "A",
+      "explanation": "With a 25% annual cliff vesting schedule, options vest in annual increments. After 2 full years, 50% of options have vested (25% × 2). The additional 0.5 years does not vest any additional options because the next cliff is at Year 3. Unvested options (50%) are typically forfeited and returned to the option pool for reallocation. This is the standard cliff-vesting structure—it protects the sponsor from giving away equity to executives who leave early. Some plans include monthly vesting after the first annual cliff to provide smoother vesting.",
+      "difficulty": "easy",
+      "type": "formulaic",
+      "topic": "Management Incentive Plans"
+    },
+    {
+      "id": "pe-am-032",
+      "question": "A management incentive plan includes 'ratchet' provisions. The management team's equity share increases from 10% to 15% if the sponsor achieves a 3.0x MOIC, and to 20% if MOIC exceeds 4.0x. What is the purpose of this structure?",
+      "options": {
+        "A": "To reduce management's equity share if performance is poor",
+        "B": "To align management incentives with sponsor returns by increasing management's share of upside as total returns increase",
+        "C": "To cap the sponsor's return at predetermined levels",
+        "D": "To allow management to purchase additional shares at a fixed price"
+      },
+      "correct": "B",
+      "explanation": "Ratchets (or equity kickers) increase management's equity percentage as the sponsor achieves higher return hurdles. This creates powerful alignment: management works harder to maximize returns because their share of the pie grows disproportionately at higher exit values. At a 3.0x MOIC, management jumps from 10% to 15% (a 50% increase in their stake), and at 4.0x from 15% to 20%. This means the marginal dollar of value above each threshold is split more favorably for management. Ratchets are a key tool in European PE deal structuring and are increasingly common in US deals.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "Management Incentive Plans"
+    },
+    {
+      "id": "pe-am-033",
+      "question": "In an MIP waterfall, management holds options with a $10 strike price on 15% of fully diluted shares (1.5M options out of 10M total diluted shares). At exit, total equity value is $200M. What is management's net payout from exercising their options?",
+      "options": {
+        "A": "$15.0M",
+        "B": "$28.5M",
+        "C": "$30.0M",
+        "D": "$20.0M"
+      },
+      "correct": "A",
+      "explanation": "Equity value per fully diluted share = $200M / 10M = $20.00 per share. Management's 1.5M options have intrinsic value of ($20.00 - $10.00 strike) = $10.00 per option. Net payout = 1.5M × $10.00 = $15.0M. Equivalently, management pays $15M to exercise (1.5M × $10 strike) and receives shares worth $30M (1.5M × $20), for a net gain of $15M. This is the standard options waterfall calculation: the option holder only benefits from appreciation above the strike price, which is why strike price selection is critical in MIP design. The $30M figure (option C) would be the gross share value before subtracting the exercise cost—a common error.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "Management Incentive Plans"
+    },
+    {
+      "id": "pe-am-034",
+      "question": "A PE sponsor holds 85% of a portfolio company's equity and management holds 15% through a MIP. The sponsor wants to execute a dividend recapitalization. How does this dilute management's effective economics?",
+      "options": {
+        "A": "It does not dilute management—they receive 15% of the dividend",
+        "B": "If management holds options rather than actual shares, they do not participate in the dividend and the sponsor captures 100% of the recap proceeds",
+        "C": "Management's options are automatically adjusted to reflect the dividend",
+        "D": "The dividend recap is prohibited if management holds more than 10% of equity"
+      },
+      "correct": "B",
+      "explanation": "If management's 15% is held through stock options (not exercised shares), option holders typically do not receive dividends. The dividend recap distributes cash to equity holders (the sponsor's 85% actual shares), and management's options remain unexercised. This effectively transfers value from the company to the sponsor without benefiting management. Some option agreements include anti-dilution protections or dividend-equivalent rights, but these are not standard. This is a key reason sophisticated management teams negotiate for actual equity or dividend participation rights rather than plain vanilla options.",
+      "difficulty": "hard",
+      "type": "edge-case",
+      "topic": "Management Incentive Plans"
+    },
+    {
+      "id": "pe-am-035",
+      "question": "In a typical PE MIP, what is a 'hurdle rate' and how does it interact with the management carry?",
+      "options": {
+        "A": "The minimum IRR the fund must achieve before the GP receives carried interest—unrelated to MIPs",
+        "B": "A minimum return threshold that the sponsor must achieve on its equity before management's equity ratchet or promote kicks in",
+        "C": "The maximum return management can earn on their investment",
+        "D": "The interest rate on management's deferred compensation"
+      },
+      "correct": "B",
+      "explanation": "In a MIP context, the hurdle rate is the minimum return (expressed as IRR or MOIC) that the sponsor must achieve on its invested equity before management begins participating in enhanced economics (ratchets, promotes, or performance vesting). For example, management might hold 10% base equity but earn an additional 5% only after the sponsor achieves a 2.0x MOIC hurdle. This is analogous to (but distinct from) the GP/LP preferred return concept. It ensures management only earns outsized returns when the sponsor earns a satisfactory base return, aligning incentives and protecting sponsor economics.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "Management Incentive Plans"
+    },
+    {
+      "id": "pe-am-036",
+      "question": "A PE-backed company executes a leveraged recapitalization, replacing $100M of existing equity with $100M of new debt and distributing the proceeds to shareholders. All else equal, what happens to the company's WACC?",
+      "options": {
+        "A": "WACC decreases because debt is cheaper than equity due to the tax shield",
+        "B": "WACC increases because the higher leverage increases both the cost of debt and cost of equity",
+        "C": "WACC initially decreases due to the tax shield but may increase if leverage pushes past the optimal capital structure",
+        "D": "WACC is unaffected because total capital remains the same"
+      },
+      "correct": "C",
+      "explanation": "Per the trade-off theory of capital structure, adding debt initially reduces WACC because the after-tax cost of debt is lower than equity, creating a tax shield benefit. However, beyond the optimal leverage point, the increased financial distress costs and higher required returns on both debt and equity outweigh the tax benefit, causing WACC to rise. A leveraged recap that pushes leverage modestly higher may reduce WACC, but excessive leverage increases it. In practice, PE firms target leverage levels that balance the tax shield against distress costs and debt service coverage requirements.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "Leveraged Recapitalization"
+    },
+    {
+      "id": "pe-am-037",
+      "question": "A PE firm executes a leveraged recapitalization at its portfolio company, raising $150M of new debt. The sponsor takes a $120M dividend and uses $30M for a bolt-on acquisition. What is the primary risk to existing creditors?",
+      "options": {
+        "A": "The bolt-on acquisition will fail and destroy value",
+        "B": "The additional debt increases leverage and reduces the equity cushion protecting existing creditors, while $120M leaves the company as a dividend (no asset to show for it)",
+        "C": "The sponsor now owns a smaller percentage of the company",
+        "D": "The leveraged recap triggers a change of control provision"
+      },
+      "correct": "B",
+      "explanation": "The primary risk to existing creditors is that $120M of the new debt proceeds leave the business entirely as a dividend, providing no offsetting asset or productive use. The company's leverage increases, but $120M of the borrowed funds generated no new revenue-producing assets. This is why dividend recaps are controversial from a creditor perspective—they are a pure value transfer from creditors to equity. The $30M bolt-on at least adds an asset. Existing credit agreements often contain restricted payment covenants and incurrence tests specifically to limit a sponsor's ability to execute leveraged recaps.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Leveraged Recapitalization"
+    },
+    {
+      "id": "pe-am-038",
+      "question": "How does a leveraged recapitalization differ from a dividend recapitalization?",
+      "options": {
+        "A": "They are identical—both terms describe the same transaction",
+        "B": "A leveraged recap replaces equity with debt in the capital structure and may involve public companies; a dividend recap specifically refers to a PE-backed company raising debt to fund a shareholder distribution",
+        "C": "A dividend recap involves equity issuance while a leveraged recap involves debt issuance",
+        "D": "A leveraged recap is used only in distressed situations"
+      },
+      "correct": "B",
+      "explanation": "While often used interchangeably, there is a subtle distinction. A leveraged recapitalization broadly refers to any transaction that increases debt and reduces equity in the capital structure—it can involve public companies, anti-takeover defenses, or shareholder buybacks. A dividend recapitalization specifically refers to a PE-backed company borrowing money to pay a dividend to its sponsor. All dividend recaps are leveraged recaps, but not all leveraged recaps are dividend recaps. In PE interviews, the terms are often used synonymously, but understanding the broader context demonstrates sophistication.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "Leveraged Recapitalization"
+    },
+    {
+      "id": "pe-am-039",
+      "question": "A public company announces a leveraged recapitalization, borrowing $500M to repurchase shares at a 20% premium to the current stock price. What is the likely impact on the remaining shareholders?",
+      "options": {
+        "A": "Remaining shareholders benefit from higher EPS due to fewer shares outstanding, but face higher financial risk from increased leverage",
+        "B": "Remaining shareholders are unaffected because the recap is value-neutral",
+        "C": "Remaining shareholders lose value because the company overpaid for the shares",
+        "D": "Remaining shareholders benefit from reduced share count with no additional risk"
+      },
+      "correct": "A",
+      "explanation": "The leveraged recap has dual effects on remaining shareholders: (1) Positive—fewer shares outstanding means higher EPS and potentially higher per-share value, assuming operating performance is maintained. The debt tax shield also adds value. (2) Negative—the higher leverage increases financial risk, makes the equity more volatile, and increases the probability of financial distress. Whether the net effect is positive or negative depends on whether the company was previously under-leveraged (recap moves toward optimal structure) or adequately leveraged (recap creates excessive risk). The 20% premium paid is not necessarily value-destroying if the shares were undervalued.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Leveraged Recapitalization"
+    },
+    {
+      "id": "pe-am-040",
+      "question": "A PE-backed company wants to refinance its $400M term loan B (L+450, 1% floor) with a new term loan B at L+350, 0.75% floor. The existing debt has a 101 soft call protection for the first 6 months. If refinancing occurs within the call protection period, what is the total cost?",
+      "options": {
+        "A": "$400M × 1% = $4M call premium plus new loan OID and fees",
+        "B": "$400M × 4.5% = $18M representing one year of interest savings",
+        "C": "$400M × 3.5% = $14M representing the new spread",
+        "D": "No additional cost—soft call protection is unenforceable"
+      },
+      "correct": "A",
+      "explanation": "Soft call protection (also called a 'call premium' or 'repricing protection') requires the borrower to pay a premium—typically 1% (101) of the outstanding principal—if the loan is refinanced, repriced, or amended to a lower rate within a specified period (usually 6-12 months). Here, the cost is 1% × $400M = $4M, plus any OID (original issue discount) and arrangement fees on the new facility. This is distinct from a make-whole premium on bonds, which is typically much more expensive. The 101 soft call exists specifically to protect lenders from rapid repricing after committing capital.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "Refinancing"
+    },
+    {
+      "id": "pe-am-041",
+      "question": "What is a 'make-whole' premium in the context of high-yield bond call protection?",
+      "options": {
+        "A": "A fixed 1% premium on prepayment",
+        "B": "A payment to bondholders equal to the present value of all remaining coupon payments plus principal, discounted at the Treasury rate plus a small spread, designed to make bondholders 'whole' for lost future interest",
+        "C": "A penalty equal to one year's interest",
+        "D": "A fee paid to the underwriter for arranging the refinancing"
+      },
+      "correct": "B",
+      "explanation": "A make-whole premium compensates bondholders for the loss of future above-market coupon payments when bonds are called early. It is calculated as the present value of remaining scheduled payments (coupons + principal) discounted at the applicable Treasury yield plus a spread (typically 50 bps). Because Treasury rates are usually well below the bond's coupon, the make-whole amount can be substantial—often 10-20%+ of par. This effectively prevents early redemption during the make-whole period (typically the first 3-4 years). After the make-whole period, bonds become callable at a declining fixed premium schedule (e.g., half-coupon, then par).",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "Refinancing"
+    },
+    {
+      "id": "pe-am-042",
+      "question": "A PE-backed company's existing term loan has L+400 pricing. Market rates have tightened to L+300 for comparable credits. The company executes a 'repricing' transaction rather than a full refinancing. What is the difference?",
+      "options": {
+        "A": "A repricing changes the interest rate on the existing loan through an amendment, while a refinancing pays off the old loan and issues a new one",
+        "B": "A repricing changes the maturity date while a refinancing changes the rate",
+        "C": "There is no difference—repricing and refinancing are synonymous",
+        "D": "A repricing can only be done with bond debt, not term loans"
+      },
+      "correct": "A",
+      "explanation": "A repricing is an amendment to the existing credit agreement that reduces the interest rate spread without paying off and replacing the loan. It is cheaper than a full refinancing because it avoids new OID, arrangement fees, and the administrative cost of a new credit agreement. However, repricing triggers the same soft call protection as a refinancing. From a lender perspective, repricing is often unwelcome because it reduces their yield without providing any new economics. In a full refinancing, the old loan is repaid and a new loan is issued, potentially with different terms, maturity, covenants, and lender group.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "Refinancing"
+    },
+    {
+      "id": "pe-am-043",
+      "question": "A PE portfolio company refinances its debt to obtain covenant relief. Which of the following is the most likely scenario?",
+      "options": {
+        "A": "The company negotiates to remove all financial covenants entirely at no cost",
+        "B": "The company pays a higher spread and/or accepts tighter economic terms in exchange for more flexible maintenance covenant thresholds or a shift from maintenance to incurrence-only covenants",
+        "C": "Covenant relief is only available through Chapter 11 restructuring",
+        "D": "The company must issue equity to obtain covenant relief"
+      },
+      "correct": "B",
+      "explanation": "Covenant relief is typically obtained by amending the existing credit agreement or refinancing into a new facility. Lenders will agree to more flexible covenants (wider leverage thresholds, elimination of maintenance covenants, larger permitted baskets) in exchange for economic compensation—usually a higher interest rate spread, an amendment fee, or tighter economic restrictions elsewhere. In the current covenant-lite market, this often means moving from a maintenance-tested loan to an incurrence-only structure. Nothing is free in credit markets; flexibility has a price. This is a critical concept in PE portfolio management during periods of underperformance.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Refinancing"
+    },
+    {
+      "id": "pe-am-044",
+      "question": "What is the 'fulcrum security' in a distressed capital structure?",
+      "options": {
+        "A": "The most senior tranche of debt, which always recovers in full",
+        "B": "The tranche of debt or equity that is impaired—partially recovering in a restructuring—and whose holders typically receive the majority of equity in the reorganized entity",
+        "C": "The equity tranche that sits at the bottom of the capital structure",
+        "D": "The revolving credit facility because it provides liquidity"
+      },
+      "correct": "B",
+      "explanation": "The fulcrum security is the class of claims where the 'value breaks'—the tranche that is partially impaired in a restructuring. Senior claims above it recover 100%; junior claims below it recover 0%. The fulcrum holders are the most important constituency in a restructuring because they receive the residual value and typically convert into the majority of equity in the reorganized company. For example, if a company has $300M first lien (recovers 100%), $200M second lien (recovers 50%), and $100M equity (recovers 0%), the second lien is the fulcrum security. Distressed investors specifically target fulcrum securities because they have the most to gain from a restructuring.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "Distressed Debt-to-Equity Swaps"
+    },
+    {
+      "id": "pe-am-045",
+      "question": "In a Chapter 11 debt-for-equity swap, a company with $500M face value of unsecured bonds restructures. The reorganized entity is valued at $300M. The unsecured bondholders are the fulcrum security. If they receive 100% of the new equity, what is their recovery rate?",
+      "options": {
+        "A": "100% (they receive all the equity)",
+        "B": "60% (they receive $300M of value on $500M of claims)",
+        "C": "40% (they lose $200M)",
+        "D": "0% (unsecured creditors never recover in bankruptcy)"
+      },
+      "correct": "B",
+      "explanation": "Recovery rate is measured by the value received relative to the face amount of claims, not by the percentage of new equity received. The unsecured bondholders hold $500M in claims and receive 100% of the new equity valued at $300M. Recovery rate = $300M / $500M = 60%. The 'equitization' of their debt converts their $500M claim into $300M of equity value. While they own the entire reorganized entity, they still suffer a 40% haircut on their original investment. This is the fundamental mechanics of a debt-for-equity swap: creditors become the new owners, but at a loss to their original claim.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "Distressed Debt-to-Equity Swaps"
+    },
+    {
+      "id": "pe-am-046",
+      "question": "What is a 'cramdown' in Chapter 11 bankruptcy?",
+      "options": {
+        "A": "When the debtor voluntarily reduces its debt load",
+        "B": "When a bankruptcy court confirms a reorganization plan over the objection of one or more impaired classes, provided the plan meets specific statutory requirements including that it is 'fair and equitable'",
+        "C": "When creditors force the company to liquidate rather than reorganize",
+        "D": "When the DIP lender takes control of the company"
+      },
+      "correct": "B",
+      "explanation": "A cramdown occurs under Section 1129(b) of the Bankruptcy Code when the court confirms a plan despite rejection by one or more impaired classes. The plan must satisfy the 'fair and equitable' standard, which generally requires that senior claims are paid in full before junior claims receive anything (absolute priority rule) and that no class receives more than the full amount of its claim. The court can 'cram down' the plan on dissenting junior creditors if senior creditors are not paid in full. This is a powerful tool that allows restructurings to proceed even without unanimous creditor consent, preventing hold-out problems.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "Distressed Debt-to-Equity Swaps"
+    },
+    {
+      "id": "pe-am-047",
+      "question": "A distressed company has the following capital structure: $150M secured bank debt, $250M senior unsecured notes, $200M subordinated notes, and $100M equity. Enterprise value is estimated at $350M. Which security is the fulcrum, and what is its estimated recovery?",
+      "options": {
+        "A": "Secured bank debt at 100% recovery",
+        "B": "Senior unsecured notes at 80% recovery",
+        "C": "Subordinated notes at 25% recovery",
+        "D": "Equity at 0% recovery"
+      },
+      "correct": "B",
+      "explanation": "Waterfall: Secured bank debt receives $150M (100% recovery). Remaining value = $350M - $150M = $200M for senior unsecured notes. Senior unsecured recovery = $200M / $250M = 80%. Subordinated notes and equity receive $0. The senior unsecured notes are the fulcrum security because they are the partially impaired class. In a reorganization, these noteholders would likely receive the majority of new equity. A distressed investor buying these notes at 60 cents on the dollar and recovering 80 cents would earn a 33% return, which is the core strategy of distressed investing.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "Distressed Debt-to-Equity Swaps"
+    },
+    {
+      "id": "pe-am-048",
+      "question": "What are typical recovery rate ranges by seniority in US corporate bankruptcies (historical averages)?",
+      "options": {
+        "A": "Senior secured: 80-90%, Senior unsecured: 50-60%, Subordinated: 20-30%, Equity: 0-5%",
+        "B": "Senior secured: 60-70%, Senior unsecured: 40-50%, Subordinated: 30-40%, Equity: 10-20%",
+        "C": "All tranches recover approximately 50% on average",
+        "D": "Senior secured: 95-100%, Senior unsecured: 70-80%, Subordinated: 50-60%, Equity: 20-30%"
+      },
+      "correct": "A",
+      "explanation": "Historical studies (Moody's, S&P) show approximate average recovery rates of: First lien secured bank debt: 70-90% (varies by collateral quality), Senior unsecured bonds: 40-60%, Subordinated bonds: 20-35%, and Equity: typically 0-5% (often wiped out entirely). These are averages—actual recoveries vary widely based on asset quality, industry, economic cycle, and negotiation dynamics. In PE interview contexts, a reasonable shorthand is ~80% for senior secured, ~50% for unsecured, ~25% for sub debt, and ~0% for equity. These benchmarks are essential for distressed analysis and fulcrum security identification.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "Distressed Debt-to-Equity Swaps"
+    },
+    {
+      "id": "pe-am-049",
+      "question": "When modeling a SaaS LBO, which metric is most analogous to EBITDA for valuation and debt capacity purposes?",
+      "options": {
+        "A": "Gross profit",
+        "B": "Annual recurring revenue (ARR)",
+        "C": "Net revenue retention (NRR)",
+        "D": "Customer lifetime value (LTV)"
+      },
+      "correct": "B",
+      "explanation": "In SaaS LBOs, ARR (Annual Recurring Revenue) is the primary valuation metric because many high-growth SaaS companies are not yet EBITDA-positive. Lenders and sponsors underwrite to ARR multiples (e.g., 8-15x ARR for high-quality SaaS) rather than traditional EBITDA multiples. The predictability and recurring nature of subscription revenue provides the visibility needed to support leverage. Debt capacity is assessed based on ARR coverage ratios rather than EBITDA leverage ratios. While NRR and LTV are important quality metrics, they are not the primary valuation anchor the way ARR is in this context.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "Sector-Specific Modeling - SaaS"
+    },
+    {
+      "id": "pe-am-050",
+      "question": "The 'Rule of 40' is frequently referenced in SaaS company evaluation. What does it measure and how does it apply to PE underwriting?",
+      "options": {
+        "A": "A company should have at least 40 customers to be viable for PE investment",
+        "B": "The sum of revenue growth rate (%) and EBITDA/FCF margin (%) should exceed 40%, indicating a healthy balance of growth and profitability",
+        "C": "A SaaS company's customer churn should be below 40% annually",
+        "D": "40% of a SaaS company's revenue should come from enterprise customers"
+      },
+      "correct": "B",
+      "explanation": "The Rule of 40 states that a healthy SaaS company's revenue growth rate plus profitability margin (EBITDA or FCF margin) should exceed 40%. For example, a company growing 30% with 15% margins (sum = 45%) passes the test. This framework helps PE investors evaluate the growth-profitability tradeoff: a company can grow rapidly with low margins or grow slowly with high margins, but the combined metric should demonstrate overall business health. PE firms targeting SaaS companies often look for Rule of 40 compliance as a screening criterion, and a common PE playbook involves acquiring a high-growth, low-margin SaaS company and optimizing margins while maintaining reasonable growth.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "Sector-Specific Modeling - SaaS"
+    },
+    {
+      "id": "pe-am-051",
+      "question": "A PE firm is evaluating a healthcare services company that derives 70% of revenue from Medicare reimbursements. What is the single biggest modeling risk specific to this business?",
+      "options": {
+        "A": "The company has too many employees",
+        "B": "Reimbursement rate changes by CMS can materially reduce revenue with little ability for the company to offset through pricing power",
+        "C": "Healthcare companies cannot be leveraged",
+        "D": "The company's real estate costs are too high"
+      },
+      "correct": "B",
+      "explanation": "Reimbursement risk is the dominant concern when modeling healthcare services companies with significant government payor exposure. CMS (Centers for Medicare & Medicaid Services) sets reimbursement rates administratively, and rate cuts can materially reduce revenue without the company having any ability to raise prices in response. This creates a regulatory 'cliff risk' that must be stress-tested in the LBO model. Best practices include: (1) modeling base, downside, and severe reimbursement cut scenarios, (2) analyzing the company's payor mix diversification, (3) understanding the political/regulatory landscape for rate changes, and (4) building in margin sensitivity to reimbursement changes. Many PE-backed healthcare deals have been impaired by unexpected CMS rate cuts.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Sector-Specific Modeling - Healthcare"
+    },
+    {
+      "id": "pe-am-052",
+      "question": "When building an LBO model for an industrial/manufacturing company with significant cyclicality, how should the PE modeler adjust the base case assumptions?",
+      "options": {
+        "A": "Use peak-year EBITDA as the base case to show maximum returns",
+        "B": "Use through-the-cycle or mid-cycle EBITDA as the base case, and stress test with a downturn scenario that reflects typical cyclical trough performance",
+        "C": "Use trough EBITDA as the base case to be conservative",
+        "D": "Ignore cyclicality if the company has a strong backlog"
+      },
+      "correct": "B",
+      "explanation": "For cyclical businesses, using peak EBITDA is dangerous because it overstates normalized earnings and understates leverage. Using trough is overly conservative and may cause you to pass on good deals. Best practice is to use mid-cycle or through-the-cycle EBITDA for the base case, reflecting normalized earnings across the cycle. The downside case should model a realistic cyclical downturn to test debt service coverage and covenant compliance. Key considerations for industrials include: capex intensity (maintenance vs. growth), working capital cyclicality, raw material cost exposure, and the length and severity of industry cycles. Many PE investors were burned in 2008-2009 by buying cyclical industrials at peak multiples on peak EBITDA.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Sector-Specific Modeling - Industrials"
+    },
+    {
+      "id": "pe-am-053",
+      "question": "A financial services company being evaluated for an LBO has $50M of net income but is subject to minimum regulatory capital requirements of 10% of risk-weighted assets ($2B). How does this constraint affect the LBO model?",
+      "options": {
+        "A": "It has no impact—regulatory capital is an accounting concept only",
+        "B": "The company cannot distribute excess capital above the regulatory minimum as dividends, limiting the cash available for debt service and distributions to the sponsor",
+        "C": "The company must immediately raise $200M of new equity",
+        "D": "Regulatory capital requirements only apply to banks, not PE-owned financial services companies"
+      },
+      "correct": "B",
+      "explanation": "Regulatory capital requirements create a 'trapped capital' issue in financial services LBOs. The company must maintain minimum capital (10% × $2B = $200M), and any capital in excess of this minimum is the only amount available for dividends to the Holdco for debt service. If the company generates $50M of net income but needs to retain $30M to support RWA growth, only $20M can be distributed. This fundamentally limits leverage capacity and must be modeled explicitly. Traditional leverage ratios (Debt/EBITDA) are less relevant for financial services—instead, focus on return on equity, capital adequacy ratios, and the amount of distributable capital above regulatory minimums.",
+      "difficulty": "hard",
+      "type": "edge-case",
+      "topic": "Sector-Specific Modeling - Financial Services"
+    },
+    {
+      "id": "pe-am-054",
+      "question": "In a PE fund's GP/LP structure, what is the 'catch-up' provision in the distribution waterfall?",
+      "options": {
+        "A": "A provision allowing the GP to receive 100% of distributions after the preferred return hurdle is met, until the GP has received its full carried interest percentage of all cumulative profits",
+        "B": "A provision that allows LPs to recoup losses from prior investments",
+        "C": "A penalty the GP pays if the fund underperforms its benchmark",
+        "D": "A provision that accelerates LP distributions during the harvest period"
+      },
+      "correct": "A",
+      "explanation": "The catch-up is a critical component of the PE fund waterfall. After LPs receive their preferred return (typically 8%), the catch-up provision allocates 100% (or sometimes 80%) of subsequent distributions to the GP until the GP has received its carry percentage (usually 20%) of total cumulative profits. After the catch-up is complete, remaining distributions are split 80/20 (LP/GP). For example, if a fund returns $100M profit with an 8% preferred return hurdle, the waterfall is: (1) LPs receive 8% preferred return, (2) GP receives 100% catch-up until it has 20% of total profits ($20M), (3) remaining split 80/20. Without the catch-up, the GP would only receive carry on profits above the preferred return threshold.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "Waterfall/Distribution Mechanics"
+    },
+    {
+      "id": "pe-am-055",
+      "question": "What is the key difference between a European (whole-fund) waterfall and an American (deal-by-deal) waterfall?",
+      "options": {
+        "A": "European waterfalls pay carry on each deal as it is realized; American waterfalls wait until all capital is returned",
+        "B": "European waterfalls require all contributed capital plus the preferred return to be returned to LPs across the entire fund before the GP receives any carry; American waterfalls allow carry on a deal-by-deal basis as each investment is realized",
+        "C": "There is no difference—both terms refer to the same structure",
+        "D": "European waterfalls only apply to European PE funds"
+      },
+      "correct": "B",
+      "explanation": "In a European (whole-fund) waterfall, the GP receives no carried interest until LPs have received back all their contributed capital plus the preferred return across the entire fund. This is LP-friendly because the GP must return all capital before earning carry. In an American (deal-by-deal) waterfall, the GP can receive carry as each individual deal is realized, even if other deals in the fund are underwater. This is GP-friendly because it accelerates carry payments. Most US buyout funds use a modified American waterfall with escrow/clawback provisions. The distinction is a fundamental negotiation point in fund formation and significantly affects GP cash flows and LP returns.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "Waterfall/Distribution Mechanics"
+    },
+    {
+      "id": "pe-am-056",
+      "question": "A PE fund has a clawback provision in its LPA. Under what circumstances would it be triggered?",
+      "options": {
+        "A": "When the fund's early realizations produce carry for the GP, but later losses mean the GP has been overpaid relative to its entitled carry on total fund profits",
+        "B": "When LPs want to increase their commitment to the fund",
+        "C": "When the fund exceeds its target return and the GP must share excess returns",
+        "D": "When the GP wants to recall previously distributed capital from LPs"
+      },
+      "correct": "A",
+      "explanation": "A clawback (or giveback) provision requires the GP to return previously received carried interest if, at the end of the fund's life, the GP has been overpaid. This typically occurs in American waterfall funds where carry is paid deal-by-deal: early profitable exits generate carry, but later write-offs mean the GP's cumulative carry exceeds 20% of total fund profits. The GP must return the excess. For example, if a fund's early deals produce $50M of carry but total fund profits only warrant $30M of carry, the GP must return $20M. Clawback provisions are essential LP protections but can create significant cash flow obligations for GPs, which is why many GPs set aside carry reserves or escrow accounts.",
+      "difficulty": "hard",
+      "type": "conceptual",
+      "topic": "Waterfall/Distribution Mechanics"
+    },
+    {
+      "id": "pe-am-057",
+      "question": "A PE fund with a 20% carry and 8% preferred return invests $100M and exits for $200M after 3 years. Assuming a European waterfall with a 100% GP catch-up, how much carry does the GP receive?",
+      "options": {
+        "A": "$14.0M",
+        "B": "$20.0M",
+        "C": "$17.4M",
+        "D": "$25.0M"
+      },
+      "correct": "B",
+      "explanation": "Total proceeds = $200M. Total profit = $100M. The European waterfall works as follows: (1) Return of capital: LPs receive $100M back. (2) Preferred return: Using simple preferred return, LPs receive 8% × $100M × 3 years = $24M. (3) GP catch-up at 100%: The GP receives 100% of the next distributions until the GP's cumulative carry equals 20% of the total profit distributed so far. The catch-up amount = preferred return × (carry% / (1 - carry%)) = $24M × (20/80) = $6M. After the catch-up, total distributed profit = $24M + $6M = $30M, and GP has $6M which is 20% of $30M. (4) Remaining profit split 80/20: Remaining $70M ($100M - $24M - $6M) is split 80/20—LP gets $56M, GP gets $14M. Total GP carry = $6M + $14M = $20M, which equals exactly 20% of the $100M total profit. The catch-up mechanism ensures the GP receives its full 20% carry on all profits, not just profits above the preferred return.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "Waterfall/Distribution Mechanics"
+    },
+    {
+      "id": "pe-am-058",
+      "question": "In a PE distribution waterfall, what does 'distribution in kind' mean and when might it be problematic?",
+      "options": {
+        "A": "Distributing cash to LPs in a timely manner",
+        "B": "Distributing securities (e.g., shares of a portfolio company post-IPO) rather than cash to LPs, which can be problematic if the securities are illiquid or restricted",
+        "C": "Distributing profits equally among all LPs regardless of commitment size",
+        "D": "Distributing management fees back to LPs"
+      },
+      "correct": "B",
+      "explanation": "A distribution in kind means distributing non-cash assets (typically publicly traded shares after a portfolio company IPO) to LPs instead of selling the shares and distributing cash. This is problematic because: (1) LPs may not want or be able to hold the securities (some institutional LPs have restrictions on direct equity holdings), (2) large block distributions can depress the stock price, (3) shares may be subject to lockup restrictions and cannot be immediately sold, and (4) it creates valuation complications for carry calculations. LPAs typically require LP consent for distributions in kind and specify that they must be made at fair market value. The valuation used for carry calculation purposes can be contentious.",
+      "difficulty": "hard",
+      "type": "edge-case",
+      "topic": "Waterfall/Distribution Mechanics"
+    },
+    {
+      "id": "pe-am-059",
+      "question": "A PE-backed company has $200M first lien debt at L+400 and wants to execute an 'extend and amend' transaction to push the maturity out by 2 years. What does the company typically need to offer lenders to achieve this?",
+      "options": {
+        "A": "Nothing—lenders must agree to any maturity extension requested by the borrower",
+        "B": "A higher interest rate spread, an amendment fee (e.g., 25-50 bps), and potentially tighter covenants to compensate lenders for the extended duration risk",
+        "C": "Equity in the sponsor's fund",
+        "D": "A full cash prepayment of 50% of the outstanding balance"
+      },
+      "correct": "B",
+      "explanation": "An extend and amend (E&A) transaction is a negotiated amendment where lenders agree to push out the maturity date in exchange for improved economics. Typical compensation includes: (1) a spread increase (e.g., L+400 to L+450), (2) an upfront amendment fee (25-100 bps of the extended amount), and (3) potentially enhanced covenants or collateral. Not all lenders need to agree—typically a majority consent threshold (usually 50%+) is required, and non-consenting lenders may be left with the original terms (creating a 'bifurcated' facility). E&A is common when companies face near-term maturities but cannot access the refinancing market on attractive terms.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Refinancing"
+    },
+    {
+      "id": "pe-am-060",
+      "question": "A PE firm is acquiring a company for $600M and the seller wants $650M, citing a strong pipeline of signed-but-not-yet-recurring contracts worth $50M annually. How should the PE firm structure the earnout to address this?",
+      "options": {
+        "A": "Pay $650M upfront to win the deal",
+        "B": "Structure a $50M earnout payable if the pipeline converts and achieves $50M in recurring revenue within 12-18 months, with partial payouts for partial achievement",
+        "C": "Walk away from the deal entirely",
+        "D": "Ask the seller to guarantee the pipeline will convert or refund the purchase price"
+      },
+      "correct": "B",
+      "explanation": "This is a classic earnout use case: the seller values the pipeline at $50M, but the buyer is unwilling to pay for unrealized revenue. A well-structured earnout bridges this gap by tying the incremental $50M to the pipeline actually converting to recurring revenue. Key structuring elements: (1) clear metric definition (what counts as 'recurring revenue'), (2) measurement period (12-18 months is reasonable for pipeline conversion), (3) linear or tiered payout (partial payout for partial achievement incentivizes the seller even if 100% conversion doesn't occur), and (4) seller protections against buyer deliberately sabotaging pipeline conversion. This structure fairly transfers execution risk while giving the seller the opportunity to earn the full $650M valuation.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "Earnouts"
+    },
+    {
+      "id": "pe-am-061",
+      "question": "A portfolio company's LBO model shows an entry at 5.5x leverage (Debt/EBITDA). The company operates in a highly cyclical industrial sector. A senior lender pushes back on the leverage level. Which of the following is the most credible response?",
+      "options": {
+        "A": "Cyclical companies can support the same leverage as non-cyclical companies because they grow faster in upturns",
+        "B": "The model stress-tests a 25% EBITDA decline and shows the company maintains a minimum 1.2x fixed charge coverage ratio and does not breach covenants, supported by low capex needs and a strong cash cushion",
+        "C": "The sponsor will inject additional equity if the company's performance deteriorates",
+        "D": "5.5x is below the market average for leveraged loans, so it is conservative"
+      },
+      "correct": "B",
+      "explanation": "The credible response demonstrates that the borrower can withstand cyclical stress while maintaining adequate debt service coverage. Showing a specific downside scenario (25% EBITDA decline) with quantified impacts on coverage ratios and covenant compliance addresses the lender's core concern directly. Vague assurances about sponsor support (option C) are not bankable, and market average leverage (option D) is irrelevant to the specific risk profile of a cyclical business. PE sponsors should always model a realistic trough scenario for cyclical businesses and present it proactively to lenders to build confidence in the borrower's resilience.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "Sector-Specific Modeling - Industrials"
+    },
+    {
+      "id": "pe-am-062",
+      "question": "A PE-owned SaaS company has $80M ARR growing 30% YoY with 75% gross margins and -5% EBITDA margin. The company is considering taking on $200M of recurring revenue-based debt (2.5x ARR). What unique risk does this underwriting approach present?",
+      "options": {
+        "A": "No risk—ARR-based lending is safer than EBITDA-based lending",
+        "B": "If growth decelerates or churn increases, ARR may not convert to sufficient cash flow to service the debt, as the company is currently EBITDA-negative and debt service depends on future profitability improvements",
+        "C": "SaaS companies never default because of recurring revenue",
+        "D": "The risk is limited to currency fluctuation"
+      },
+      "correct": "B",
+      "explanation": "ARR-based lending assumes that recurring revenue will eventually convert to positive cash flow sufficient for debt service. The core risk is that the company is currently burning cash (-5% EBITDA margin) and the lending thesis depends on: (1) continued revenue growth, (2) operating leverage driving margin expansion, and (3) no significant increase in churn. If growth decelerates (e.g., from 30% to 10%), the company may never achieve sufficient profitability to cover interest payments. Unlike traditional EBITDA-based lending where current cash flow covers debt service, ARR-based lending is essentially lending against future profitability—a fundamentally different and riskier proposition. This risk was crystallized in 2022-2023 when several PE-backed SaaS companies struggled with debt service after growth decelerated.",
+      "difficulty": "hard",
+      "type": "edge-case",
+      "topic": "Sector-Specific Modeling - SaaS"
+    },
+    {
+      "id": "pe-am-063",
+      "question": "In a Holdco/Opco structure, the Opco's credit agreement contains a 'J. Crew' blocker provision. What does this prevent?",
+      "options": {
+        "A": "The Opco from making acquisitions without lender consent",
+        "B": "The borrower or sponsor from transferring valuable IP or other assets to an unrestricted subsidiary outside the credit group's collateral reach, effectively stripping collateral from lenders",
+        "C": "Management from receiving bonuses during a financial covenant breach",
+        "D": "The company from changing its business model to retail"
+      },
+      "correct": "B",
+      "explanation": "The 'J. Crew' blocker (named after J. Crew's controversial 2017 transaction) prevents the borrower from transferring valuable assets—particularly intellectual property—to unrestricted subsidiaries that sit outside the lender group's collateral package. In the J. Crew case, the company transferred its valuable brand IP to a subsidiary not pledged as collateral, then used that IP as collateral for new financing, effectively subordinating existing lenders. This exploit used permissive restricted subsidiary and investment covenant baskets. Modern credit agreements now include specific anti-J. Crew provisions preventing material IP or asset transfers to unrestricted subsidiaries. This is one of the most important recent developments in leveraged finance documentation.",
+      "difficulty": "hard",
+      "type": "edge-case",
+      "topic": "Holdco/Opco Structures"
+    },
+    {
+      "id": "pe-am-064",
+      "question": "When a PE firm models a leveraged recapitalization in Year 2 of a 5-year hold, how should the incremental debt from the recap be reflected in the exit equity bridge?",
+      "options": {
+        "A": "The recap debt is ignored at exit because it was used for a dividend",
+        "B": "The recap debt increases total debt at exit, reducing exit equity value, but the sponsor has already received the dividend proceeds—net effect on total MOIC depends on debt paydown between Year 2 and exit",
+        "C": "The recap debt is subtracted from the entry equity check to reduce the basis",
+        "D": "The recap debt is added to enterprise value at exit"
+      },
+      "correct": "B",
+      "explanation": "In the exit equity bridge: Exit EV - Total Net Debt (including recap debt still outstanding) = Exit Equity. The recap debt increases the debt balance, reducing exit equity. However, the sponsor already received the dividend in Year 2, which counts as a return of capital. Total MOIC calculation considers both the dividend received AND the exit equity proceeds, divided by the original equity check. If the company has paid down some or all of the recap debt by exit, the impact on exit equity is mitigated. The net effect: recap boosts IRR (earlier cash) but may slightly reduce MOIC (due to interest expense reducing cumulative cash flow and paydown capacity). This is a critical modeling exercise for PE associates.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "Leveraged Recapitalization"
+    },
+    {
+      "id": "pe-am-065",
+      "question": "A PE portfolio company has both a first lien term loan (L+350) and second lien notes (12% fixed). The company is performing well and wants to refinance both tranches into a single unitranche at L+500. Aside from call premiums, what is the key consideration in determining whether this refinancing creates value?",
+      "options": {
+        "A": "Whether the unitranche spread is lower than the weighted average cost of the existing first and second lien combined",
+        "B": "Whether the unitranche lender has a better reputation than the existing lenders",
+        "C": "Whether the unitranche documentation allows for more flexibility in restricted payments and investments, not just the interest rate comparison",
+        "D": "Both A and C—the analysis must consider the all-in cost saving AND the incremental flexibility gained from the new documentation"
+      },
+      "correct": "D",
+      "explanation": "Value creation from refinancing depends on both economics and flexibility. Economically, compare the blended cost: if the existing weighted average cost is L+350 (60% first lien) + 12% (40% second lien) ≈ 6.9% blended vs. L+500 ≈ 5.0% + base rate, the math depends on the rate environment. But equally important is documentation flexibility: unitranche agreements often provide greater covenant flexibility, larger permitted baskets for investments and restricted payments, and a simpler lender group (often a single direct lender) that is easier to negotiate with for future amendments. This flexibility can be more valuable than pure interest savings—for example, the ability to do a bolt-on acquisition or dividend recap that would be restricted under the existing two-tranche structure. Sophisticated PE associates evaluate both dimensions.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "Complex Debt Structures"
+    }
+  ]
+}

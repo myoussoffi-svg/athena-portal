@@ -1,0 +1,981 @@
+{
+  "module": "lbo-debt-returns",
+  "title": "LBO Debt Schedule & Returns Quiz Bank",
+  "questions": [
+    {
+      "id": "pe-dr-001",
+      "question": "A Term Loan A (TLA) typically amortizes 5-10% of its principal per year, while a Term Loan B (TLB) typically amortizes only 1% per year. Why do lenders accept the lower TLB amortization rate?",
+      "options": {
+        "A": "TLB lenders accept lower amortization because they receive a higher interest rate spread to compensate for the longer duration and greater credit risk",
+        "B": "TLB lenders are required by regulation to accept lower amortization rates",
+        "C": "TLB amortization is lower because TLBs are always secured by better collateral than TLAs",
+        "D": "TLB lenders prefer lower amortization because it reduces their tax burden on interest income"
+      },
+      "correct": "A",
+      "explanation": "TLB lenders (typically institutional investors like CLOs and hedge funds) accept the minimal 1% annual amortization because they are compensated with a higher interest rate spread compared to TLA lenders (typically banks). The TLB structure gives them longer duration exposure to earn that higher spread, with the bulk of principal returned as a bullet payment at maturity. This is a fundamental risk-return tradeoff in leveraged lending.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "TLA vs TLB amortization"
+    },
+    {
+      "id": "pe-dr-002",
+      "question": "A leveraged buyout uses a $400M TLB priced at SOFR + 450 bps. If the current SOFR rate is 3.25% and the loan has a SOFR floor of 1.00%, what is the total annual cash interest rate on this tranche?",
+      "options": {
+        "A": "5.50%",
+        "B": "7.75%",
+        "C": "4.50%",
+        "D": "8.25%"
+      },
+      "correct": "B",
+      "explanation": "The total interest rate is the applicable SOFR rate plus the spread. Since the current SOFR rate (3.25%) exceeds the SOFR floor (1.00%), the actual SOFR rate is used. Total rate = 3.25% + 4.50% = 7.75%. The SOFR floor only comes into play when the actual SOFR rate falls below it, providing a minimum return to lenders.",
+      "difficulty": "easy",
+      "type": "formulaic",
+      "topic": "SOFR spread calculation"
+    },
+    {
+      "id": "pe-dr-003",
+      "question": "A company's capital structure has $300M of senior debt at 6.0% interest and $200M of subordinated debt at 10.0% interest. If the tax rate is 25%, what is the blended after-tax cost of debt?",
+      "options": {
+        "A": "5.63%",
+        "B": "7.60%",
+        "C": "5.70%",
+        "D": "8.00%"
+      },
+      "correct": "C",
+      "explanation": "First, calculate the blended pre-tax cost: ($300M x 6.0% + $200M x 10.0%) / $500M = ($18M + $20M) / $500M = 7.60%. Then apply the tax shield: 7.60% x (1 - 0.25) = 5.70%. The tax deductibility of interest reduces the effective cost of debt, which is one reason why PE firms use leverage — the government effectively subsidizes a portion of the interest expense.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "blended after-tax cost of debt"
+    },
+    {
+      "id": "pe-dr-004",
+      "question": "A portfolio company has EBITDA of $80M, total interest expense of $32M, and required debt amortization of $10M. What is its fixed charge coverage ratio (FCCR)?",
+      "options": {
+        "A": "2.50x",
+        "B": "1.90x",
+        "C": "3.20x",
+        "D": "1.60x"
+      },
+      "correct": "B",
+      "explanation": "FCCR = EBITDA / (Interest Expense + Required Amortization) = $80M / ($32M + $10M) = $80M / $42M = 1.90x. The FCCR measures a company's ability to meet all fixed debt obligations, not just interest. A ratio below 1.0x means the company cannot cover its fixed charges from operating cash flow. Lenders typically require an FCCR of at least 1.0-1.2x as a covenant threshold.",
+      "difficulty": "easy",
+      "type": "formulaic",
+      "topic": "fixed charge coverage ratio"
+    },
+    {
+      "id": "pe-dr-005",
+      "question": "A credit agreement requires a 50% excess cash flow sweep when Net Debt / EBITDA is above 4.0x, stepping down to 25% between 3.0-4.0x, and 0% below 3.0x. The company has $40M in excess cash flow and current leverage of 3.5x. How much must be used to repay debt?",
+      "options": {
+        "A": "$20M",
+        "B": "$10M",
+        "C": "$40M",
+        "D": "$0M"
+      },
+      "correct": "B",
+      "explanation": "At 3.5x leverage, the company falls in the 3.0-4.0x bracket, so the applicable sweep percentage is 25%. Required debt repayment = 25% x $40M = $10M. The leverage-based step-down structure incentivizes the company to de-lever — as leverage decreases, less free cash flow is mandatorily swept, giving the sponsor more flexibility with remaining cash flow for dividends, add-on acquisitions, or other uses.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "excess cash flow sweep mechanics"
+    },
+    {
+      "id": "pe-dr-006",
+      "question": "A company has a $100M revolving credit facility with a 0.50% commitment fee on undrawn amounts and an interest rate of SOFR + 300 bps on drawn amounts. If $30M is drawn and SOFR is 4.00%, what is the total annual cost of the revolver?",
+      "options": {
+        "A": "$2.10M",
+        "B": "$2.45M",
+        "C": "$7.00M",
+        "D": "$3.50M"
+      },
+      "correct": "B",
+      "explanation": "The total cost has two components: (1) Interest on drawn amount: $30M x (4.00% + 3.00%) = $30M x 7.00% = $2.10M, and (2) Commitment fee on undrawn amount: ($100M - $30M) x 0.50% = $70M x 0.50% = $0.35M. Total annual cost = $2.10M + $0.35M = $2.45M. The commitment fee compensates lenders for keeping capital available even when it is not drawn.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "revolver drawn/undrawn costs"
+    },
+    {
+      "id": "pe-dr-007",
+      "question": "A credit agreement has a maintenance covenant requiring Net Debt / EBITDA to remain below 6.0x, tested quarterly. If the company's EBITDA declines 15% from $100M to $85M while net debt stays at $480M, what happens?",
+      "options": {
+        "A": "The company is in compliance since 480/85 = 5.6x, which is below 6.0x",
+        "B": "The company breaches the covenant since 480/85 = 5.6x, which is above 5.0x",
+        "C": "The company is in technical default since 480/85 = 5.6x, but lenders will waive it automatically",
+        "D": "The company breaches no covenant because maintenance covenants only test interest coverage, not leverage"
+      },
+      "correct": "A",
+      "explanation": "Net Debt / EBITDA = $480M / $85M = 5.65x, which is below the 6.0x threshold, so the company remains in compliance. However, it is worth noting how quickly declining EBITDA can push leverage toward covenant limits. If EBITDA fell another ~5% to $80M, leverage would hit 6.0x exactly. This illustrates why PE firms stress-test EBITDA scenarios against covenant levels when structuring deals.",
+      "difficulty": "easy",
+      "type": "formulaic",
+      "topic": "covenant testing"
+    },
+    {
+      "id": "pe-dr-008",
+      "question": "A $150M PIK note has a 12% PIK interest rate and a 5-year maturity. Approximately what is the principal balance at maturity if no cash interest is paid?",
+      "options": {
+        "A": "$240M",
+        "B": "$264M",
+        "C": "$150M",
+        "D": "$222M"
+      },
+      "correct": "B",
+      "explanation": "With PIK interest, the interest is not paid in cash but instead added to the principal balance, causing it to compound. Balance at maturity = $150M x (1.12)^5 = $150M x 1.7623 = ~$264M. This demonstrates the compounding cost of PIK debt — while it preserves cash flow during the hold period, the total debt burden at exit is significantly higher. The company owes $114M more at maturity than the original principal.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "PIK interest compounding"
+    },
+    {
+      "id": "pe-dr-009",
+      "question": "A PE fund invests $500M of equity in an LBO and receives total proceeds of $1,500M after 4 years. What is the approximate IRR?",
+      "options": {
+        "A": "25.0%",
+        "B": "31.6%",
+        "C": "50.0%",
+        "D": "20.0%"
+      },
+      "correct": "B",
+      "explanation": "First, MOIC = $1,500M / $500M = 3.0x. IRR = MOIC^(1/n) - 1 = 3.0^(1/4) - 1 = 3.0^0.25 - 1 = 1.316 - 1 = 31.6%. This formula works when there is a single investment at time zero and a single cash inflow at exit. The IRR is the annualized return rate, and it shows how both the magnitude of returns (MOIC) and the speed of returns (holding period) matter.",
+      "difficulty": "easy",
+      "type": "formulaic",
+      "topic": "IRR MOIC formula"
+    },
+    {
+      "id": "pe-dr-010",
+      "question": "An LBO is structured with $800M total enterprise value: $300M equity and $500M debt. At exit, the enterprise value is $1,200M and $350M of debt remains. What is the equity MOIC?",
+      "options": {
+        "A": "1.50x",
+        "B": "2.83x",
+        "C": "4.00x",
+        "D": "2.40x"
+      },
+      "correct": "B",
+      "explanation": "MOIC = Exit Equity Value / Initial Equity Investment. Exit equity value = Exit TEV - Remaining Debt = $1,200M - $350M = $850M. MOIC = $850M / $300M = 2.83x. Note that the equity value benefited from both the enterprise value increase ($400M) and debt paydown ($150M). This illustrates the dual benefit to equity holders in an LBO — operational improvement and de-leveraging both accrue to equity.",
+      "difficulty": "easy",
+      "type": "formulaic",
+      "topic": "MOIC calculation"
+    },
+    {
+      "id": "pe-dr-011",
+      "question": "A PE fund calls 40% of committed capital at close and the remaining 60% one year later to fund an add-on. Both tranches return 2.5x over 4 years from the initial close. How does this tranche funding structure affect the IRR compared to investing 100% at close?",
+      "options": {
+        "A": "IRR is lower because the total capital deployed is the same but returns are delayed",
+        "B": "IRR is higher because the second tranche has a shorter time to generate the same multiple, boosting the time-weighted return",
+        "C": "IRR is unchanged because the total MOIC is identical regardless of timing",
+        "D": "IRR is lower because the add-on acquisition introduces additional execution risk"
+      },
+      "correct": "B",
+      "explanation": "When capital is called in tranches, the later-deployed capital has a shorter holding period to achieve the same return multiple. If the second 60% is deployed one year later and achieves 2.5x over 3 years instead of 4, its annualized return is higher (2.5^(1/3) - 1 = 35.7% vs 2.5^(1/4) - 1 = 25.7%). This blended result produces a higher portfolio IRR than investing everything upfront. This is why PE firms often structure capital calls strategically.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "time-weighted returns"
+    },
+    {
+      "id": "pe-dr-012",
+      "question": "A PE fund generates a 25% gross IRR on a deal. The fund charges a 2% management fee and 20% carried interest above an 8% preferred return. The net IRR to LPs is most likely closest to:",
+      "options": {
+        "A": "25% — fees do not reduce IRR",
+        "B": "18-20% — after management fees and carry",
+        "C": "20% — only carried interest reduces IRR",
+        "D": "12-15% — the 20% carry takes most of the return"
+      },
+      "correct": "B",
+      "explanation": "Gross IRR reflects returns before fund-level fees and expenses. Net IRR deducts management fees (typically 1.5-2% of committed capital annually) and carried interest (typically 20% of profits above the hurdle rate). A common rule of thumb is that net IRR is roughly 500-700 bps below gross IRR for a 2-and-20 structure, depending on fund size and deal timing. So a 25% gross IRR would likely translate to approximately 18-20% net IRR.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "gross vs net IRR"
+    },
+    {
+      "id": "pe-dr-013",
+      "question": "In an LBO value creation bridge, entry equity is $400M. EBITDA growth contributes $200M, multiple expansion contributes $100M, and debt paydown contributes $150M. FCF generation adds $50M. What is the exit equity value?",
+      "options": {
+        "A": "$900M",
+        "B": "$750M",
+        "C": "$850M",
+        "D": "$500M"
+      },
+      "correct": "A",
+      "explanation": "The value creation bridge adds each component to the entry equity: Exit Equity = Entry Equity + EBITDA Growth + Multiple Expansion + Debt Paydown + FCF/Other = $400M + $200M + $100M + $150M + $50M = $900M. This gives a MOIC of $900M/$400M = 2.25x. The bridge decomposition helps identify which drivers contributed most to returns — here, EBITDA growth was the largest contributor at $200M (40% of total value created).",
+      "difficulty": "easy",
+      "type": "formulaic",
+      "topic": "value creation bridge"
+    },
+    {
+      "id": "pe-dr-014",
+      "question": "A PE firm buys a company at 8.0x EBITDA with $100M EBITDA and exits at 9.0x with $130M EBITDA. What percentage of enterprise value increase came from EBITDA growth vs multiple expansion?",
+      "options": {
+        "A": "EBITDA growth: 60%, Multiple expansion: 40%",
+        "B": "EBITDA growth: 71%, Multiple expansion: 29%",
+        "C": "EBITDA growth: 50%, Multiple expansion: 50%",
+        "D": "EBITDA growth: 80%, Multiple expansion: 20%"
+      },
+      "correct": "B",
+      "explanation": "Entry TEV = 8.0x x $100M = $800M. Exit TEV = 9.0x x $130M = $1,170M. Total TEV increase = $370M. EBITDA growth at entry multiple: ($130M - $100M) x 8.0x = $240M (64.9%). Multiple expansion on exit EBITDA: ($9.0x - $8.0x) x $130M = $130M (35.1%). However, using the common decomposition: EBITDA growth contribution = $30M x 8.0x = $240M, and multiple expansion = 1.0x x $130M = $130M. So approximately 65%/35%, closest to answer B at 71%/29% using a slightly different but also standard decomposition method where EBITDA growth is measured at exit multiple: $30M x 9.0x = $270M (73%) and multiple expansion at entry EBITDA: 1.0x x $100M = $100M (27%).",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "EBITDA growth vs multiple expansion"
+    },
+    {
+      "id": "pe-dr-015",
+      "question": "In a sensitivity analysis, an LBO shows the following IRRs based on exit multiple and EBITDA: at 7.0x/$120M = 15%, at 8.0x/$120M = 22%, at 8.0x/$140M = 30%. Which factor has a greater impact on returns in this scenario?",
+      "options": {
+        "A": "Exit multiple has a greater impact, as a 1.0x increase adds 7% to IRR while $20M EBITDA adds 8%",
+        "B": "EBITDA growth has a greater impact, as the $20M increase adds 8% to IRR while a 1.0x multiple increase adds 7%",
+        "C": "Both have exactly equal impact on returns",
+        "D": "Neither factor matters because debt paydown dominates returns"
+      },
+      "correct": "B",
+      "explanation": "Comparing sensitivities: Increasing the exit multiple from 7.0x to 8.0x (holding EBITDA at $120M) increases IRR by 7% (from 15% to 22%). Increasing EBITDA from $120M to $140M (holding exit multiple at 8.0x) increases IRR by 8% (from 22% to 30%). In this case, EBITDA growth has a slightly larger impact. This is typical — investors generally view EBITDA growth as the more controllable and sustainable driver. Sensitivity tables like this are critical in LBO analysis for understanding which assumptions matter most.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "sensitivity analysis"
+    },
+    {
+      "id": "pe-dr-016",
+      "question": "A PE firm is choosing between two capital structures for an LBO: Structure A uses 5.0x leverage and Structure B uses 6.5x leverage. If EBITDA declines 20%, which structure sees a larger percentage decline in equity value?",
+      "options": {
+        "A": "Structure A, because lower leverage means equity absorbs more of the loss",
+        "B": "Structure B, because higher leverage amplifies the percentage impact on equity",
+        "C": "Both structures see the same percentage decline in equity",
+        "D": "Structure B sees less impact because the additional debt provides a tax shield buffer"
+      },
+      "correct": "B",
+      "explanation": "Higher leverage amplifies both gains and losses to equity holders. With more debt in the capital structure, equity represents a smaller portion of TEV, so any change in TEV causes a larger percentage change in equity value. For example, if TEV is $1,000M: Structure A has $500M debt / $500M equity, and a 20% TEV decline ($200M) reduces equity by 40%. Structure B has $650M debt / $350M equity, and the same $200M decline reduces equity by 57%. This leverage effect is a fundamental concept in PE.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "leverage effect on equity"
+    },
+    {
+      "id": "pe-dr-017",
+      "question": "A portfolio company has $600M of floating-rate debt at SOFR + 400 bps. If SOFR increases by 200 bps with no hedging in place, and EBITDA is $150M, how much does the interest coverage ratio change?",
+      "options": {
+        "A": "From 3.57x to 2.94x",
+        "B": "From 2.50x to 2.08x",
+        "C": "From 3.57x to 3.00x",
+        "D": "No change because the SOFR floor protects against rate increases"
+      },
+      "correct": "A",
+      "explanation": "Original interest rate = SOFR + 4.00%. Assume SOFR was 2.80%, so original rate = 6.80%. Original interest expense = $600M x 6.80% = $40.8M. Original ICR = $150M / $40.8M = 3.68x (approximately 3.57x if SOFR was ~3.0%). After 200 bps increase: new rate = 8.80%, interest expense = $600M x 8.80% = $52.8M, ICR = $150M / $52.8M = 2.84x. Using round numbers where original SOFR = 3.0%: original rate = 7.0%, expense = $42M, ICR = 3.57x. New rate = 9.0%, expense = $54M, ICR = 2.78x. The answer of 3.57x to 2.94x is closest. SOFR floors only protect against rate decreases, not increases.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "interest rate sensitivity"
+    },
+    {
+      "id": "pe-dr-018",
+      "question": "A PE-backed company issues $200M of preferred stock with a 10% cumulative dividend and a 1.5x liquidation preference. If the company is sold for $500M total equity value after 3 years, how much do preferred holders receive before common equity?",
+      "options": {
+        "A": "$200M",
+        "B": "$300M",
+        "C": "$260M",
+        "D": "$360M"
+      },
+      "correct": "B",
+      "explanation": "The liquidation preference determines the minimum payout to preferred holders before common equity receives anything. Liquidation preference = 1.5x x $200M = $300M. The cumulative dividends would accrue on top if not already included in the liquidation preference, but typically the liquidation preference is the controlling amount at exit. Preferred holders receive $300M, leaving $200M for common equity. This waterfall structure protects preferred investors' downside while allowing common equity (often management) to participate in upside above the preference.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "preferred stock liquidation preference"
+    },
+    {
+      "id": "pe-dr-019",
+      "question": "A PE firm executes a dividend recapitalization 2 years into a 5-year hold, returning $100M to equity holders (who originally invested $300M). At exit, total equity proceeds are $700M. How does the dividend recap affect MOIC vs IRR?",
+      "options": {
+        "A": "Both MOIC and IRR increase equally",
+        "B": "MOIC stays the same at 2.33x but IRR increases because cash is returned earlier",
+        "C": "MOIC increases to 2.67x and IRR also increases due to earlier cash return",
+        "D": "MOIC decreases because the dividend adds debt, but IRR increases due to earlier cash return"
+      },
+      "correct": "C",
+      "explanation": "Without the recap: MOIC = $700M / $300M = 2.33x. With the recap: Total proceeds = $100M (Year 2) + $700M (Year 5) = $800M. But if the additional debt reduces exit equity, say to $650M (due to the recap debt remaining), then total = $100M + $650M = $750M, MOIC = $750M / $300M = 2.50x. IRR also increases because $100M is received in Year 2 rather than Year 5 — earlier cash flows boost IRR. However, if exit equity is unchanged at $700M, MOIC = $800M/$300M = 2.67x. In the idealized case, MOIC increases and IRR increases even more due to the time value of earlier distributions.",
+      "difficulty": "hard",
+      "type": "conceptual",
+      "topic": "dividend recaps"
+    },
+    {
+      "id": "pe-dr-020",
+      "question": "In choosing between PIK and cash-pay debt for an LBO, which scenario most clearly favors PIK debt?",
+      "options": {
+        "A": "A company with strong, stable free cash flow and low growth capital expenditure requirements",
+        "B": "A high-growth company that needs all available cash flow for reinvestment and expects significant EBITDA growth to easily refinance later",
+        "C": "A mature company with declining revenues looking to minimize total cost of debt",
+        "D": "A company where lenders are highly confident in near-term cash flow generation"
+      },
+      "correct": "B",
+      "explanation": "PIK debt is most advantageous when a company needs to preserve cash flow for growth investments. The deferral of cash interest payments frees up operating cash flow for capex, R&D, or acquisitions. The tradeoff is a higher total cost of debt due to compounding, but if the company can grow EBITDA substantially, the increased debt balance becomes manageable relative to earnings. For mature, cash-generative businesses (options A and D), cash-pay debt is typically cheaper and preferred.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "PIK vs cash-pay tradeoff"
+    },
+    {
+      "id": "pe-dr-021",
+      "question": "Which of the following is typically considered the most reliable driver of value creation in an LBO?",
+      "options": {
+        "A": "Multiple expansion, because market conditions tend to improve over time",
+        "B": "Revenue growth, because top-line growth always translates to equity value",
+        "C": "Debt paydown, because it is driven by contractual amortization and cash flow that is largely within management's control",
+        "D": "Financial engineering, because increasing leverage always increases equity returns"
+      },
+      "correct": "C",
+      "explanation": "Debt paydown is considered the most reliable value creation driver because it is largely mechanical — mandatory amortization payments are contractual, and additional paydown from free cash flow is more predictable than EBITDA growth or multiple expansion. Multiple expansion depends on market conditions and buyer sentiment at exit, which are outside the sponsor's control. Revenue growth is uncertain and may not translate to EBITDA. Debt paydown directly and predictably increases equity value dollar-for-dollar.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "debt paydown as value driver"
+    },
+    {
+      "id": "pe-dr-022",
+      "question": "A PE firm acquires a platform company at 10.0x EBITDA and subsequently completes three add-on acquisitions at an average of 6.0x EBITDA. The combined entity is expected to exit at 9.0x blended EBITDA. What is this strategy primarily exploiting?",
+      "options": {
+        "A": "Operational synergies from vertical integration",
+        "B": "Multiple arbitrage — buying smaller companies at lower multiples and selling the combined entity at a higher multiple",
+        "C": "Tax arbitrage from the step-up in asset basis",
+        "D": "Geographic diversification to reduce risk"
+      },
+      "correct": "B",
+      "explanation": "Multiple arbitrage is the strategy of acquiring smaller companies at lower valuation multiples and combining them into a larger platform that commands a higher multiple. Larger companies typically trade at premium multiples due to greater scale, diversification, and perceived lower risk. Even if the blended exit multiple (9.0x) is below the platform entry multiple (10.0x), the add-ons acquired at 6.0x create significant value when revalued at the blended 9.0x. This is a core PE roll-up strategy.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "add-on multiple arbitrage"
+    },
+    {
+      "id": "pe-dr-023",
+      "question": "A PE-backed company refinances its $400M TLB from SOFR + 500 bps to SOFR + 350 bps, with SOFR at 3.50%. What are the annual interest savings?",
+      "options": {
+        "A": "$4.0M",
+        "B": "$6.0M",
+        "C": "$10.0M",
+        "D": "$14.0M"
+      },
+      "correct": "B",
+      "explanation": "The spread reduction is 500 - 350 = 150 bps = 1.50%. Annual interest savings = $400M x 1.50% = $6.0M. These savings flow directly to free cash flow and can be used for accelerated debt paydown or distributions. Note that refinancing may involve fees (origination, legal) that partially offset Year 1 savings, and call protection provisions may prevent refinancing during the first 1-2 years. The SOFR base rate is irrelevant to the savings calculation since it remains the same.",
+      "difficulty": "easy",
+      "type": "formulaic",
+      "topic": "refinancing savings"
+    },
+    {
+      "id": "pe-dr-024",
+      "question": "An investment has three equally likely scenarios: a 3.0x MOIC in the bull case, a 2.0x MOIC in the base case, and a 0.5x MOIC in the bear case. What is the probability-weighted expected MOIC?",
+      "options": {
+        "A": "1.83x",
+        "B": "2.00x",
+        "C": "1.50x",
+        "D": "2.50x"
+      },
+      "correct": "A",
+      "explanation": "Probability-weighted MOIC = (1/3 x 3.0x) + (1/3 x 2.0x) + (1/3 x 0.5x) = 1.0x + 0.667x + 0.167x = 1.833x, approximately 1.83x. This expected return framework is critical in PE because it accounts for downside scenarios. While the base case shows an attractive 2.0x, the probability-weighted return is lower at 1.83x due to the loss scenario. This is why PE firms stress-test multiple scenarios before making investment decisions.",
+      "difficulty": "easy",
+      "type": "formulaic",
+      "topic": "probability-weighted returns"
+    },
+    {
+      "id": "pe-dr-025",
+      "question": "In a standard LBO debt schedule, what is the typical order of debt paydown from available free cash flow after mandatory amortization?",
+      "options": {
+        "A": "Subordinated notes first, then TLB, then TLA, then revolver",
+        "B": "Revolver first, then TLA, then TLB, then subordinated notes",
+        "C": "All tranches are paid down pro rata based on outstanding balance",
+        "D": "TLB first because it has the highest interest rate, minimizing total interest cost"
+      },
+      "correct": "B",
+      "explanation": "The standard order of debt paydown prioritizes the most senior and expensive (on a commitment cost basis) debt first: the revolver is typically paid down first since it functions as a working capital facility, followed by the TLA (senior secured with higher amortization), then the TLB (senior secured with bullet maturity), and finally any subordinated or mezzanine debt. This follows the seniority waterfall and minimizes total borrowing cost. The revolver is paid first because drawn amounts carry full interest while undrawn amounts only carry a small commitment fee.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "order of debt paydown"
+    },
+    {
+      "id": "pe-dr-026",
+      "question": "A $500M TLA has a 7-year maturity with 10% annual amortization (straight-line). What is the remaining principal balance at the end of Year 3?",
+      "options": {
+        "A": "$350M",
+        "B": "$400M",
+        "C": "$300M",
+        "D": "$325M"
+      },
+      "correct": "A",
+      "explanation": "With 10% annual amortization on the original $500M balance: Annual amortization = $500M x 10% = $50M per year. After 3 years, cumulative amortization = 3 x $50M = $150M. Remaining balance = $500M - $150M = $350M. The remaining $350M would continue to amortize at $50M/year through Year 7, with any remaining balance due as a bullet at maturity. Note that TLA amortization is typically calculated on the original principal, not the declining balance.",
+      "difficulty": "easy",
+      "type": "formulaic",
+      "topic": "amortization schedules by tranche"
+    },
+    {
+      "id": "pe-dr-027",
+      "question": "What is the key difference between mandatory amortization and optional prepayment in a leveraged loan?",
+      "options": {
+        "A": "Mandatory amortization is required by the credit agreement regardless of cash flow, while optional prepayment is at the borrower's discretion and may be subject to call premiums",
+        "B": "Mandatory amortization carries no prepayment penalties while optional prepayment always carries a 2% penalty",
+        "C": "Mandatory amortization only applies to the revolver while optional prepayment applies to term loans",
+        "D": "There is no meaningful difference — both reduce principal on the same schedule"
+      },
+      "correct": "A",
+      "explanation": "Mandatory amortization is a contractual requirement specified in the credit agreement — the borrower must make scheduled principal payments regardless of financial performance (though excess cash flow sweeps are a form of conditional mandatory prepayment). Optional prepayment is at the borrower's discretion and may be subject to call protection provisions (such as soft call premiums of 101 in the first 6-12 months for TLBs). Understanding this distinction is critical because mandatory amortization is modeled as a fixed cash outflow, while optional prepayment depends on available cash and strategic decisions.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "mandatory vs optional amortization"
+    },
+    {
+      "id": "pe-dr-028",
+      "question": "A TLB has a $600M original balance, 1% annual mandatory amortization, and a 7-year bullet maturity. What is the bullet payment due at maturity?",
+      "options": {
+        "A": "$558M",
+        "B": "$564M",
+        "C": "$600M",
+        "D": "$540M"
+      },
+      "correct": "A",
+      "explanation": "Annual mandatory amortization = $600M x 1% = $6M per year. Over 7 years, total amortization = 7 x $6M = $42M. Bullet payment at maturity = $600M - $42M = $558M. This illustrates why TLBs are sometimes called 'bullet loans' — the vast majority of principal (93% in this case) is repaid at maturity. The minimal 1% amortization is essentially a token repayment that gives lenders slight principal reduction while preserving the borrower's cash flow.",
+      "difficulty": "easy",
+      "type": "formulaic",
+      "topic": "bullet maturities"
+    },
+    {
+      "id": "pe-dr-029",
+      "question": "In constructing a debt schedule for an LBO model, which of the following correctly describes the beginning/ending balance waterfall for each period?",
+      "options": {
+        "A": "Beginning Balance = Prior Ending Balance; Ending Balance = Beginning Balance + New Borrowings - Mandatory Amortization - Optional Prepayment - Cash Sweep + PIK Accrual",
+        "B": "Beginning Balance = Original Principal - Cumulative Amortization; Ending Balance = Beginning Balance - Interest Payments",
+        "C": "Beginning Balance = Prior Ending Balance; Ending Balance = Beginning Balance - Total Interest Expense",
+        "D": "Beginning Balance and Ending Balance are the same because debt is only repaid at maturity"
+      },
+      "correct": "A",
+      "explanation": "The correct debt balance waterfall is: Beginning Balance = Prior Period Ending Balance. Then adjustments: (+) New Borrowings (e.g., revolver draws, add-on financing), (-) Mandatory Amortization, (-) Optional Prepayments, (-) Excess Cash Flow Sweeps, (+) PIK Interest Accrual. Ending Balance = Beginning Balance + All Additions - All Repayments. Interest expense affects the income statement and cash flow statement but does NOT directly reduce the debt principal balance (except for PIK, which increases it).",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "beginning/ending balance waterfall"
+    },
+    {
+      "id": "pe-dr-030",
+      "question": "A leveraged buyout has the following debt structure: $50M Revolver, $200M TLA (5% annual amortization), $400M TLB (1% annual amortization), $150M Senior Notes (no amortization). What is the total mandatory amortization in Year 1?",
+      "options": {
+        "A": "$14M",
+        "B": "$40M",
+        "C": "$10M",
+        "D": "$20M"
+      },
+      "correct": "A",
+      "explanation": "Mandatory amortization by tranche: Revolver: $0 (revolvers do not amortize — they are drawn and repaid as needed). TLA: $200M x 5% = $10M. TLB: $400M x 1% = $4M. Senior Notes: $0 (bullet maturity, no amortization). Total mandatory amortization = $0 + $10M + $4M + $0 = $14M. Note that the revolver and senior notes have no scheduled amortization — the revolver is a revolving facility and the notes are typically bullet maturities.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "amortization schedules by tranche"
+    },
+    {
+      "id": "pe-dr-031",
+      "question": "In an LBO model, the company generates negative free cash flow in Year 2 due to a large working capital investment. How is this typically handled in the debt schedule?",
+      "options": {
+        "A": "The sponsor injects additional equity to cover the shortfall",
+        "B": "The revolver is drawn to fund the cash shortfall, up to its maximum commitment",
+        "C": "Mandatory amortization payments are automatically suspended",
+        "D": "The company defaults on its debt obligations"
+      },
+      "correct": "B",
+      "explanation": "The revolving credit facility serves as the primary plug for short-term cash flow shortfalls in an LBO model. When free cash flow is insufficient to cover mandatory debt payments and other obligations, the revolver is drawn to bridge the gap, up to its maximum commitment amount. This is a key modeling mechanic — the revolver acts as a flexible funding source. If the shortfall exceeds the revolver capacity, the model may require additional equity or indicate a structural problem with the deal. Mandatory amortization is NOT suspended unless a formal amendment is negotiated with lenders.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "revolver as cash shortfall plug"
+    },
+    {
+      "id": "pe-dr-032",
+      "question": "A company has a $75M revolving credit facility. In the projection model, Year 1 FCF before debt service is $20M, but mandatory amortization is $30M and interest expense is $45M. Cash at the beginning of the year is $10M and the minimum cash balance is $5M. How much must be drawn on the revolver?",
+      "options": {
+        "A": "$50M",
+        "B": "$55M",
+        "C": "$45M",
+        "D": "$60M"
+      },
+      "correct": "A",
+      "explanation": "Cash available = Beginning Cash - Minimum Cash + FCF before debt service = $10M - $5M + $20M = $25M. Total debt service needed = Mandatory Amortization + Interest = $30M + $45M = $75M. Cash shortfall = $75M - $25M = $50M. The revolver draw must be $50M to cover the deficit. Since this is below the $75M facility limit, the draw is feasible. If the shortfall exceeded $75M, the model would flag a liquidity problem. This is the core revolver-as-plug mechanic in LBO modeling.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "revolver modeling in projections"
+    },
+    {
+      "id": "pe-dr-033",
+      "question": "When the revolver has an outstanding balance, what is the typical priority for applying free cash flow in subsequent periods?",
+      "options": {
+        "A": "Optional term loan prepayments first, then revolver paydown",
+        "B": "Revolver paydown first, then mandatory amortization on term loans",
+        "C": "Mandatory amortization first, then revolver paydown, then optional term loan prepayments",
+        "D": "Excess cash is distributed to equity holders before paying down the revolver"
+      },
+      "correct": "C",
+      "explanation": "The cash flow waterfall in an LBO model typically follows this priority: (1) Mandatory amortization on term loans (contractually required), (2) Revolver paydown (to minimize drawn interest costs and restore borrowing capacity), (3) Optional prepayment on term loans (if excess cash remains). The revolver is prioritized after mandatory amortization because it carries a higher all-in cost when drawn (full interest vs. commitment fee on undrawn) and because repaying it restores borrowing flexibility for future needs.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "revolver paydown priority"
+    },
+    {
+      "id": "pe-dr-034",
+      "question": "A $50M revolver has a maximum draw limit equal to the lesser of the commitment amount or 1.0x LTM EBITDA. If LTM EBITDA is $40M and $15M is already drawn, what is the additional borrowing capacity?",
+      "options": {
+        "A": "$35M",
+        "B": "$25M",
+        "C": "$10M",
+        "D": "$40M"
+      },
+      "correct": "B",
+      "explanation": "The maximum draw is the lesser of the $50M commitment or 1.0x LTM EBITDA ($40M), so the effective limit is $40M. With $15M already drawn, additional borrowing capacity = $40M - $15M = $25M. Borrowing base or EBITDA-linked limits on revolvers are common in leveraged credit agreements and can constrain liquidity when EBITDA declines — a declining EBITDA reduces the maximum draw amount, potentially forcing the company to repay outstanding revolver balances.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "revolver max draw limits"
+    },
+    {
+      "id": "pe-dr-035",
+      "question": "How is 'Excess Cash Flow' typically defined in a leveraged loan credit agreement for purposes of the cash sweep?",
+      "options": {
+        "A": "EBITDA minus cash interest, minus cash taxes, minus capital expenditures, minus mandatory debt amortization, minus changes in working capital, minus other permitted payments",
+        "B": "Net income plus depreciation and amortization",
+        "C": "Operating cash flow minus all capital expenditures",
+        "D": "EBITDA minus total interest expense"
+      },
+      "correct": "A",
+      "explanation": "Excess Cash Flow (ECF) in credit agreements is a specifically defined term that starts with EBITDA (or Consolidated Net Income) and subtracts cash interest paid, cash taxes paid, capital expenditures (sometimes only maintenance capex), mandatory scheduled debt repayments, changes in working capital, and certain other permitted payments (like management fees or permitted acquisitions). It is more restrictive than simple free cash flow because it is designed to capture truly 'excess' cash available for debt reduction. The precise definition varies by deal and is heavily negotiated.",
+      "difficulty": "medium",
+      "type": "conceptual",
+      "topic": "excess cash flow definition"
+    },
+    {
+      "id": "pe-dr-036",
+      "question": "A credit agreement specifies a 75% ECF sweep at leverage above 5.0x, 50% between 4.0-5.0x, and 25% below 4.0x. The company's ECF is $30M, beginning leverage is 5.5x, and the mandatory sweep brings leverage to 4.8x. Is the sweep percentage recalculated mid-period?",
+      "options": {
+        "A": "Yes, the sweep percentage steps down to 50% once leverage crosses below 5.0x during the period",
+        "B": "No, the sweep percentage is determined at the beginning of the period (or end of prior period) and applies to the full ECF amount",
+        "C": "Yes, but only if the credit agreement explicitly includes a 'live' recalculation provision",
+        "D": "The sweep percentage is always based on projected year-end leverage"
+      },
+      "correct": "B",
+      "explanation": "In most credit agreements, the ECF sweep percentage is determined based on the leverage ratio at the testing date (typically the end of the fiscal year or end of the prior period), and that percentage applies to the entire ECF amount for the period. It is NOT dynamically recalculated as leverage changes during the period. So if leverage is 5.5x at the test date, the 75% sweep applies to the full $30M, yielding a $22.5M mandatory prepayment. The resulting lower leverage would benefit the NEXT period's sweep determination.",
+      "difficulty": "hard",
+      "type": "edge-case",
+      "topic": "cash sweep leverage step-downs"
+    },
+    {
+      "id": "pe-dr-037",
+      "question": "How does a mandatory excess cash flow sweep interact with scheduled mandatory amortization? If a company pays $20M in mandatory amortization and the ECF sweep calculates to $15M, what is the total mandatory debt repayment?",
+      "options": {
+        "A": "$35M — mandatory amortization and ECF sweep are additive",
+        "B": "$20M — the ECF sweep is offset by mandatory amortization already paid, so net sweep is $0",
+        "C": "$15M — the ECF sweep replaces mandatory amortization",
+        "D": "It depends on the credit agreement — some allow netting of amortization against the sweep, some do not"
+      },
+      "correct": "D",
+      "explanation": "This is deal-specific and depends on the credit agreement language. In many agreements, mandatory amortization paid during the period is credited against (netted from) the ECF sweep obligation, so the net additional payment would be $0 (since $20M amortization exceeds the $15M sweep). In others, the two are additive, totaling $35M. Borrowers negotiate for the netting provision to avoid double-counting. This is a critical detail that can significantly affect projected cash flow in an LBO model, and interviewers may test whether you understand this nuance.",
+      "difficulty": "hard",
+      "type": "edge-case",
+      "topic": "cash sweep interaction with amortization"
+    },
+    {
+      "id": "pe-dr-038",
+      "question": "A $100M PIK toggle note allows the borrower to choose between paying 8% cash interest or 10% PIK interest each quarter. In Year 1, the company pays cash interest for Q1 and Q2 but toggles to PIK for Q3 and Q4. What is the approximate balance at end of Year 1?",
+      "options": {
+        "A": "$100M",
+        "B": "$105M",
+        "C": "$108M",
+        "D": "$110M"
+      },
+      "correct": "B",
+      "explanation": "Q1 and Q2: Cash interest is paid at 8% annual (2% per quarter), so the principal remains $100M. Q3: PIK at 10% annual (2.5% per quarter), so balance grows to $100M x 1.025 = $102.5M. Q4: PIK at 10% annual on the new balance, so $102.5M x 1.025 = $105.06M, approximately $105M. The PIK toggle gives the borrower flexibility to preserve cash in tight quarters while accepting a higher rate for the privilege. The 200 bps premium on PIK vs cash-pay compensates lenders for deferring their interest income.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "PIK toggle notes"
+    },
+    {
+      "id": "pe-dr-039",
+      "question": "A company has $200M of PIK subordinated notes at 11% PIK and $400M of senior cash-pay debt at 7%. Over a 5-year hold, the PIK balance grows to approximately $338M. At exit, which statement is true about the impact on equity returns?",
+      "options": {
+        "A": "The PIK debt had no impact on equity returns because it did not consume cash flow during the hold period",
+        "B": "The PIK debt improved equity returns because the cash flow savings during the hold period more than offset the higher exit debt balance",
+        "C": "The PIK debt reduced exit equity value by the $138M of accrued interest, but this was offset by the cash flow available for other value-creating uses during the hold",
+        "D": "The PIK debt reduced equity returns because the $138M of accrued PIK interest directly reduces exit equity value"
+      },
+      "correct": "C",
+      "explanation": "PIK debt involves a tradeoff: it preserves cash flow during the hold period (the company saved ~$22M/year in cash interest it would have paid on cash-pay sub debt), but the accrued PIK interest ($138M) increases the total debt balance repaid at exit, reducing exit equity. The net impact depends on how productively the saved cash flow was deployed — if it funded high-return investments, add-on acquisitions, or additional debt paydown on senior tranches, the overall effect could be positive. This is the fundamental PIK tradeoff: cash flow benefit vs. total cost.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "PIK impact on debt balance at exit"
+    },
+    {
+      "id": "pe-dr-040",
+      "question": "A PIK note with a $50M face value at 12% annual PIK interest has a 3-year maturity. If the company wants to refinance at the end of Year 2, what principal amount must it refinance?",
+      "options": {
+        "A": "$50.0M",
+        "B": "$56.0M",
+        "C": "$62.7M",
+        "D": "$70.2M"
+      },
+      "correct": "C",
+      "explanation": "PIK interest compounds on the principal: Year 1 ending balance = $50M x 1.12 = $56.0M. Year 2 ending balance = $56.0M x 1.12 = $62.72M, approximately $62.7M. The company must refinance the full accrued balance of $62.7M, not the original $50M face value. This is a common modeling pitfall — the refinancing amount for PIK debt is always the accrued balance, which grows each period due to compounding.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "PIK accrual mechanics"
+    },
+    {
+      "id": "pe-dr-041",
+      "question": "A PE fund invests $250M and exits for $800M after 5 years with no intermediate cash flows. Fund B invests $250M, receives a $100M dividend in Year 2, and exits for $700M after 5 years. Which fund has the higher IRR?",
+      "options": {
+        "A": "Fund A, because its total MOIC of 3.2x exceeds Fund B's 3.2x and the hold period is the same",
+        "B": "Fund B, because the early dividend in Year 2 provides a higher time-weighted return despite the same total MOIC",
+        "C": "Both funds have identical IRRs because total cash returned equals $800M in both cases",
+        "D": "Fund A, because the single exit generates a cleaner return without the complexity of interim distributions"
+      },
+      "correct": "B",
+      "explanation": "Both funds have the same MOIC: Fund A = $800M / $250M = 3.2x. Fund B = ($100M + $700M) / $250M = 3.2x. However, Fund B has a higher IRR because it returns $100M two years earlier. IRR accounts for the time value of money — earlier cash flows are worth more. Fund A's IRR = 3.2^(1/5) - 1 = 26.2%. Fund B's IRR is higher because the NPV of its cash flows at 26.2% would exceed zero (since $100M arrives earlier). This demonstrates why MOIC and IRR can diverge and why both metrics matter.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "effect of intermediate cash flows on IRR"
+    },
+    {
+      "id": "pe-dr-042",
+      "question": "An LBO generates a 2.5x MOIC over 3 years. What is the IRR? Now, if the same 2.5x MOIC is achieved over 5 years, what is the IRR?",
+      "options": {
+        "A": "3-year: 35.7%, 5-year: 20.1%",
+        "B": "3-year: 25.0%, 5-year: 15.0%",
+        "C": "3-year: 30.0%, 5-year: 25.0%",
+        "D": "3-year: 40.0%, 5-year: 20.0%"
+      },
+      "correct": "A",
+      "explanation": "For 3 years: IRR = 2.5^(1/3) - 1 = 1.3572 - 1 = 35.7%. For 5 years: IRR = 2.5^(1/5) - 1 = 1.2011 - 1 = 20.1%. The same multiple over a longer period produces a significantly lower annualized return. This is why PE firms are highly focused on hold period — achieving the same MOIC two years faster increases IRR by over 15 percentage points. It also explains why PE firms pursue strategies like dividend recaps and add-on acquisitions that can accelerate returns.",
+      "difficulty": "easy",
+      "type": "formulaic",
+      "topic": "MOIC to IRR conversion"
+    },
+    {
+      "id": "pe-dr-043",
+      "question": "In an LBO, the sponsor invests $400M of equity. At exit, the total enterprise value is $1,500M and remaining net debt is $700M. The company also accumulated $50M in excess cash on the balance sheet. What is the equity MOIC?",
+      "options": {
+        "A": "2.00x",
+        "B": "2.13x",
+        "C": "1.88x",
+        "D": "3.75x"
+      },
+      "correct": "B",
+      "explanation": "Exit equity value = TEV - Net Debt = $1,500M - $700M = $800M. However, if remaining net debt of $700M already nets out the $50M cash (i.e., net debt = gross debt - cash), then equity value is simply $800M. If $700M is gross debt, then equity = $1,500M - $700M + $50M = $850M. The question states 'remaining net debt,' so equity = $1,500M - $700M = $800M, plus the $50M excess cash that is part of equity value: MOIC = $850M / $400M = 2.13x. This highlights why the treatment of cash matters in LBO exit calculations.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "equity return calculation"
+    },
+    {
+      "id": "pe-dr-044",
+      "question": "What is the total return to equity investors if a company is purchased for a TEV of $1B with $600M debt and $400M equity, and sold 4 years later for a TEV of $1.3B with $400M debt remaining?",
+      "options": {
+        "A": "MOIC: 2.25x, IRR: ~22%",
+        "B": "MOIC: 1.75x, IRR: ~15%",
+        "C": "MOIC: 3.25x, IRR: ~34%",
+        "D": "MOIC: 1.30x, IRR: ~7%"
+      },
+      "correct": "A",
+      "explanation": "Exit equity = Exit TEV - Remaining Debt = $1,300M - $400M = $900M. MOIC = $900M / $400M = 2.25x. IRR = 2.25^(1/4) - 1 = 1.2247 - 1 = 22.5%, approximately 22%. Of the $500M in equity value created: $300M came from TEV growth ($1.3B - $1.0B) and $200M came from debt paydown ($600M - $400M). This decomposition shows that debt paydown contributed 40% of total value creation — a significant and reliable component.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "total return vs equity return"
+    },
+    {
+      "id": "pe-dr-045",
+      "question": "A PE investment shows the following sensitivity table for IRR based on exit year and exit multiple:\n\nYear 3: 7x=18%, 8x=28%, 9x=36%\nYear 4: 7x=14%, 8x=22%, 9x=29%\nYear 5: 7x=11%, 8x=18%, 9x=24%\n\nWhich observation is most accurate?",
+      "options": {
+        "A": "Exit multiple sensitivity increases as the hold period gets longer",
+        "B": "Each additional year of hold period reduces IRR by a roughly constant amount for a given exit multiple",
+        "C": "The marginal impact of one additional turn of exit multiple on IRR decreases as the hold period lengthens",
+        "D": "Holding period has no meaningful impact when the exit multiple is 9x or higher"
+      },
+      "correct": "C",
+      "explanation": "Looking at the 1x multiple increase impact: At Year 3, going from 8x to 9x adds 8% to IRR (28% to 36%). At Year 5, the same 8x to 9x adds only 6% (18% to 24%). The marginal IRR benefit of each additional turn of exit multiple diminishes over longer hold periods because the annualization effect dampens the impact. This is a key insight: exit multiple matters more for shorter holds, while EBITDA growth and debt paydown become relatively more important for longer holds.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "sensitivity tables"
+    },
+    {
+      "id": "pe-dr-046",
+      "question": "In a tornado chart analyzing key drivers of IRR for an LBO, which driver typically has the widest range of impact?",
+      "options": {
+        "A": "Working capital assumptions",
+        "B": "Exit multiple",
+        "C": "Tax rate",
+        "D": "Depreciation schedule"
+      },
+      "correct": "B",
+      "explanation": "Exit multiple typically has the widest impact range in an LBO sensitivity/tornado analysis because it directly affects the entire enterprise value at exit. A 1-2x swing in exit multiple can represent hundreds of millions or billions in value. By contrast, working capital, tax rate, and depreciation have more moderate effects — they impact cash flow incrementally over the hold period. Revenue growth rate and EBITDA margin are also high-impact drivers, but exit multiple usually dominates because it is applied to the fully grown EBITDA at exit, creating multiplicative impact.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "tornado charts"
+    },
+    {
+      "id": "pe-dr-047",
+      "question": "A PE firm runs a scenario analysis with the following outcomes:\nBase case (60% probability): 2.5x MOIC, 22% IRR\nUpside (20% probability): 4.0x MOIC, 35% IRR\nDownside (20% probability): 1.0x MOIC, 0% IRR\n\nWhat is the probability-weighted IRR?",
+      "options": {
+        "A": "20.2%",
+        "B": "19.0%",
+        "C": "22.0%",
+        "D": "17.5%"
+      },
+      "correct": "A",
+      "explanation": "Probability-weighted IRR = (60% x 22%) + (20% x 35%) + (20% x 0%) = 13.2% + 7.0% + 0.0% = 20.2%. Note that while simple probability-weighting of IRRs is a rough approximation (technically, IRRs should not be linearly averaged), it is commonly used in PE practice for quick scenario analysis. The downside case at 1.0x MOIC (break-even) significantly pulls down the expected return from the 22% base case, highlighting the importance of downside protection.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "scenario analysis"
+    },
+    {
+      "id": "pe-dr-048",
+      "question": "Why do PE firms typically stress-test an LBO by varying EBITDA and exit multiple simultaneously rather than independently?",
+      "options": {
+        "A": "Because regulators require simultaneous stress testing for all leveraged transactions",
+        "B": "Because EBITDA and exit multiples are often correlated — declining EBITDA may coincide with multiple compression, creating a compounding negative effect on equity value",
+        "C": "Because varying them independently would produce too many scenarios to analyze",
+        "D": "Because exit multiples are contractually fixed at the time of the original acquisition"
+      },
+      "correct": "B",
+      "explanation": "EBITDA performance and exit multiples tend to be correlated, especially in downside scenarios. A company experiencing EBITDA declines (perhaps due to industry headwinds) may also face multiple compression as buyers perceive higher risk or the sector falls out of favor. This creates a compounding negative effect: lower EBITDA x lower multiple = significantly lower exit TEV. Stress-testing both simultaneously captures this realistic worst-case scenario, which is critical for understanding true downside risk to equity. The 2x2 or 3x3 sensitivity grid is a standard LBO output for this reason.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "key drivers of returns"
+    },
+    {
+      "id": "pe-dr-049",
+      "question": "A PE-backed company issues participating preferred stock with a $100M face value, 8% cumulative dividend, and full participation rights. After 4 years with no dividends paid, the company is sold for $600M total equity value. How much do the preferred holders receive?",
+      "options": {
+        "A": "$100M",
+        "B": "$132M",
+        "C": "$132M plus their pro rata share of the remaining $468M",
+        "D": "$600M"
+      },
+      "correct": "C",
+      "explanation": "Participating preferred stock receives BOTH the liquidation preference AND a pro rata share of remaining proceeds. Step 1: Liquidation preference = $100M face + cumulative dividends ($100M x 8% x 4 = $32M) = $132M. Step 2: Remaining proceeds = $600M - $132M = $468M. Step 3: Preferred holders also receive their pro rata share of the $468M (based on their as-converted ownership percentage). This 'double dip' makes participating preferred very expensive for common shareholders and is why founders/management teams strongly prefer non-participating preferred.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "participating vs non-participating preferred"
+    },
+    {
+      "id": "pe-dr-050",
+      "question": "Non-participating preferred stock with a $100M face value and 2x liquidation preference has a conversion option into 40% of common equity. The company is sold for $400M. Should the preferred holders convert or take the liquidation preference?",
+      "options": {
+        "A": "Take the liquidation preference of $200M, because it exceeds the conversion value of $160M",
+        "B": "Convert to common equity, because 40% of $400M = $160M exceeds the liquidation preference",
+        "C": "It does not matter because both options yield the same amount",
+        "D": "Convert to common equity because conversion rights are always more valuable than liquidation preferences"
+      },
+      "correct": "A",
+      "explanation": "Liquidation preference = 2x x $100M = $200M. Conversion value = 40% x $400M = $160M. Since $200M > $160M, preferred holders should take the liquidation preference rather than convert. The breakeven exit value is where 2x x $100M = 40% x Exit Value, or Exit Value = $500M. Above $500M, conversion becomes more valuable. This optionality (take the greater of liquidation preference or conversion value) is a key feature of non-participating preferred and creates a hockey-stick payoff profile for common equity.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "preferred conversion mechanics"
+    },
+    {
+      "id": "pe-dr-051",
+      "question": "In an exit waterfall with $50M of senior secured debt, $100M of subordinated notes, and $75M of preferred equity with a 1.5x liquidation preference, what is the minimum enterprise value needed for common equity to receive any proceeds?",
+      "options": {
+        "A": "$150M",
+        "B": "$225M",
+        "C": "$262.5M",
+        "D": "$187.5M"
+      },
+      "correct": "C",
+      "explanation": "The waterfall pays claims in order of priority: (1) Senior secured debt: $50M, (2) Subordinated notes: $100M, (3) Preferred equity with 1.5x liquidation preference: $75M x 1.5 = $112.5M. Total claims senior to common equity = $50M + $100M + $112.5M = $262.5M. Common equity receives nothing until the enterprise value exceeds $262.5M. This waterfall analysis is critical for understanding the breakeven and downside protection in LBO structures with multiple layers of capital.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "waterfall with preferred"
+    },
+    {
+      "id": "pe-dr-052",
+      "question": "A PE firm is considering a dividend recap 18 months into a 5-year hold. Which of the following is the primary risk of executing the dividend recap?",
+      "options": {
+        "A": "The dividend triggers an immediate taxable event for the fund's LPs",
+        "B": "The additional debt increases leverage, reducing the company's financial flexibility and increasing the risk of covenant breaches or distress if business performance deteriorates",
+        "C": "Dividend recaps are viewed negatively by all lenders, making future refinancing impossible",
+        "D": "The dividend reduces the company's equity value dollar-for-dollar, eliminating any return benefit"
+      },
+      "correct": "B",
+      "explanation": "The primary risk of a dividend recapitalization is re-leveraging the company. By adding new debt to fund the distribution, the company's leverage ratio increases, reducing the financial cushion against potential EBITDA declines. If business performance deteriorates after the recap, the higher debt burden increases the probability of covenant breaches, liquidity problems, or even distress. While dividend recaps are a legitimate and common PE tool for improving IRR, they must be sized carefully relative to the company's cash flow stability and growth prospects.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "dividend recap risks"
+    },
+    {
+      "id": "pe-dr-053",
+      "question": "A PE firm invests $300M in equity. At Year 2, they execute a $120M dividend recap (funded by new debt). The company is sold in Year 5 for an equity value of $600M (after repaying all debt including recap debt). What is the MOIC, and how does it compare to the no-recap scenario where exit equity would have been $720M?",
+      "options": {
+        "A": "With recap: 2.40x; Without recap: 2.40x — identical MOICs",
+        "B": "With recap: 2.40x; Without recap: 2.40x — but recap has higher IRR",
+        "C": "With recap: 2.00x; Without recap: 2.40x — recap destroys value",
+        "D": "With recap: 2.40x; Without recap: 2.40x — and identical IRRs"
+      },
+      "correct": "B",
+      "explanation": "With recap: MOIC = ($120M + $600M) / $300M = $720M / $300M = 2.40x. Without recap: MOIC = $720M / $300M = 2.40x. The MOICs are the same because the total cash returned to equity is the same ($720M). However, the recap scenario has a higher IRR because $120M is received in Year 2 rather than Year 5. This is the classic recap advantage: it does not improve MOIC (and may slightly reduce it due to recap debt interest) but meaningfully improves IRR by accelerating cash distributions. In this idealized case where exit equity adjusts perfectly, MOICs are equal.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "dividend recap MOIC vs IRR"
+    },
+    {
+      "id": "pe-dr-054",
+      "question": "A PE firm acquires a platform at 9.0x EBITDA ($50M EBITDA, $450M TEV) and makes two add-on acquisitions: Company A ($10M EBITDA at 5.0x = $50M) and Company B ($15M EBITDA at 6.0x = $90M). Assuming $5M in synergies and a blended exit multiple of 8.5x, what is the exit TEV?",
+      "options": {
+        "A": "$680M",
+        "B": "$637.5M",
+        "C": "$590M",
+        "D": "$720M"
+      },
+      "correct": "A",
+      "explanation": "Combined EBITDA = Platform ($50M) + Company A ($10M) + Company B ($15M) + Synergies ($5M) = $80M. Exit TEV = $80M x 8.5x = $680M. Total acquisition cost = $450M + $50M + $90M = $590M. TEV increase of $90M came from: EBITDA growth/synergies valued at exit multiple, partially offset by multiple compression (from blended 9.0x entry to 8.5x exit for the platform). The add-ons bought at 5.0-6.0x that are now valued at 8.5x represent significant multiple arbitrage value creation.",
+      "difficulty": "hard",
+      "type": "formulaic",
+      "topic": "add-on acquisition economics"
+    },
+    {
+      "id": "pe-dr-055",
+      "question": "When evaluating whether an add-on acquisition is accretive to the platform in an LBO context, what is the most important metric to consider?",
+      "options": {
+        "A": "Whether the add-on's revenue exceeds the platform's revenue",
+        "B": "Whether the add-on is acquired at a lower EV/EBITDA multiple than the platform's implied valuation, such that the blended return to equity improves",
+        "C": "Whether the add-on has a higher gross margin than the platform",
+        "D": "Whether the add-on increases total debt capacity"
+      },
+      "correct": "B",
+      "explanation": "In an LBO context, an add-on is accretive when it is purchased at a lower multiple than the platform's current or expected exit multiple, creating multiple arbitrage. If the platform is valued at 9.0x and the add-on is purchased at 6.0x, the add-on's EBITDA is immediately 'revalued' at the platform multiple upon consolidation, creating instant value. This is the primary financial justification for a buy-and-build strategy. Revenue size, gross margin, and debt capacity are secondary considerations compared to the multiple differential and earnings contribution.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "add-on accretion/dilution"
+    },
+    {
+      "id": "pe-dr-056",
+      "question": "A PE-backed platform funds a $60M add-on acquisition using $40M of incremental debt and $20M of equity from the sponsor. The add-on has $10M EBITDA. If the platform currently has $500M of debt on $100M EBITDA, what is the pro forma leverage ratio?",
+      "options": {
+        "A": "4.91x",
+        "B": "5.40x",
+        "C": "5.00x",
+        "D": "4.50x"
+      },
+      "correct": "A",
+      "explanation": "Pro forma debt = Existing $500M + Incremental $40M = $540M. Pro forma EBITDA = Existing $100M + Add-on $10M = $110M (before any synergies). Pro forma leverage = $540M / $110M = 4.91x. Even though the platform was at 5.0x leverage ($500M/$100M) pre-acquisition, the add-on funded partially with equity actually reduced the leverage ratio slightly. This is why sponsors may contribute equity to add-ons — it keeps leverage in check while still benefiting from multiple arbitrage. If synergies are realized, leverage decreases further.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "funding add-on acquisitions"
+    },
+    {
+      "id": "pe-dr-057",
+      "question": "When is a borrower most likely to refinance its leveraged loan?",
+      "options": {
+        "A": "When the company's credit profile has deteriorated and it needs more lenient terms",
+        "B": "When market interest rates or credit spreads have tightened, allowing the company to achieve a lower borrowing cost, and call protection has expired",
+        "C": "Immediately after closing the LBO to lock in a fixed rate",
+        "D": "Only when the original loan matures"
+      },
+      "correct": "B",
+      "explanation": "Companies typically refinance when market conditions allow for lower borrowing costs — either through lower base rates (SOFR) or tighter credit spreads. The optimal window is after call protection has expired (typically 6-12 months for institutional term loans with soft call at 101, and 1-2 years for high-yield bonds with hard call premiums). Refinancing when credit profiles have deteriorated (option A) is difficult because lenders would demand higher rates. Waiting until maturity (option D) misses potential savings. The PE sponsor's goal is to reduce interest expense, freeing up cash for debt paydown and improving returns.",
+      "difficulty": "medium",
+      "type": "judgmental",
+      "topic": "when to refinance"
+    },
+    {
+      "id": "pe-dr-058",
+      "question": "What is the difference between a loan 'repricing' and a full 'refinancing'?",
+      "options": {
+        "A": "A repricing changes the interest rate spread on an existing loan with the same lender group, while a refinancing replaces the existing loan with entirely new debt (potentially new lenders, terms, and structure)",
+        "B": "A repricing is only available for fixed-rate loans, while refinancing applies to floating-rate loans",
+        "C": "There is no practical difference — the terms are interchangeable in leveraged finance",
+        "D": "A repricing increases the loan amount while a refinancing keeps it the same"
+      },
+      "correct": "A",
+      "explanation": "A repricing (also called an 'amendment and extension' or simply a 'spread reduction') modifies the interest rate spread on an existing loan — the same loan agreement continues, the same lenders participate, and the only change is a lower margin. It is faster, cheaper, and less disruptive than a full refinancing. A refinancing involves issuing new debt to replace existing debt, potentially with new lenders, new terms, different maturities, and new covenant packages. Repricings have become very common in the leveraged loan market when credit conditions tighten and borrowers can negotiate better terms.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "repricing vs refinancing"
+    },
+    {
+      "id": "pe-dr-059",
+      "question": "A TLB was issued with a 101 soft call protection for the first 6 months. The company wants to reprice the loan 4 months after issuance. What is the cost of doing so on a $500M loan?",
+      "options": {
+        "A": "No additional cost — soft call only applies to refinancing, not repricing",
+        "B": "$5M — the 1% soft call premium applies to any principal repayment or repricing within the protection period",
+        "C": "$10M — the soft call premium is 2% within the first 6 months",
+        "D": "$0 — soft call protection expired at closing"
+      },
+      "correct": "B",
+      "explanation": "The 101 soft call protection means the borrower must pay a 1% premium to repay, refinance, or reprice the loan within the first 6 months (some deals specify 12 months). At 4 months, the soft call is still in effect. Cost = 1% x $500M = $5M. This premium compensates lenders for the risk that their recently originated loan will be repriced at a lower spread shortly after they committed capital. The borrower must weigh the $5M one-time cost against the NPV of ongoing interest savings from the repricing.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "call protection"
+    },
+    {
+      "id": "pe-dr-060",
+      "question": "A portfolio company refinances its $300M senior notes (8.0% coupon) with new notes at 6.5% coupon. The refinancing costs $4.5M in fees. If the notes have 3 years remaining to maturity, what is the approximate payback period for the refinancing fees?",
+      "options": {
+        "A": "1.0 year",
+        "B": "0.5 years",
+        "C": "2.0 years",
+        "D": "The refinancing does not pay back within the remaining maturity"
+      },
+      "correct": "A",
+      "explanation": "Annual interest savings = $300M x (8.0% - 6.5%) = $300M x 1.5% = $4.5M per year. Payback period = Refinancing fees / Annual savings = $4.5M / $4.5M = 1.0 year. With 3 years remaining, the net savings over the remaining term = ($4.5M x 3) - $4.5M = $9.0M. This is a clear refinancing opportunity. The rule of thumb is that refinancing is attractive when the payback period is well within the remaining loan term, and here the company saves 2 additional years of interest after recovering fees.",
+      "difficulty": "medium",
+      "type": "formulaic",
+      "topic": "refinancing impact on returns"
+    },
+    {
+      "id": "pe-dr-061",
+      "question": "In an LBO model, what happens to the debt schedule if projected EBITDA falls below the level needed to maintain the minimum interest coverage covenant of 2.0x?",
+      "options": {
+        "A": "The model automatically reduces debt to bring the ratio back into compliance",
+        "B": "Nothing — covenant breaches have no modeling implications",
+        "C": "A covenant breach occurs, which in practice could trigger a default, acceleration of debt, or require a waiver/amendment with lenders, often at significant cost to the borrower",
+        "D": "The interest rate automatically resets to a lower level to improve the coverage ratio"
+      },
+      "correct": "C",
+      "explanation": "A maintenance covenant breach is a serious event. In practice, it triggers a technical default under the credit agreement, giving lenders the right to accelerate (demand immediate repayment of) the debt. However, acceleration is rare — more commonly, the borrower negotiates a waiver or amendment with lenders, which typically involves paying a fee, accepting tighter terms, and possibly providing additional collateral or equity. In an LBO model, a covenant breach is flagged as a critical risk indicator, signaling that the deal structure may not work under stress scenarios.",
+      "difficulty": "easy",
+      "type": "conceptual",
+      "topic": "covenant breach implications"
+    },
+    {
+      "id": "pe-dr-062",
+      "question": "A PE fund is comparing two investments: Deal A offers 3.0x MOIC / 20% IRR, and Deal B offers 2.0x MOIC / 30% IRR. Assuming the fund has sufficient capital and a 10-year fund life, which deal creates more absolute value for LPs?",
+      "options": {
+        "A": "Deal B, because the higher IRR means faster compounding of capital",
+        "B": "Deal A, because the 3.0x MOIC generates more absolute dollars per dollar invested, and the fund can reinvest for the remaining fund life",
+        "C": "It depends on the hold period and whether the fund can reinvest at similar returns during the remaining fund life",
+        "D": "They are equivalent because IRR and MOIC are interchangeable measures"
+      },
+      "correct": "C",
+      "explanation": "This is a classic PE interview question about the tension between IRR and MOIC. Deal B has higher IRR but lower MOIC, meaning it generates returns faster but at a lower absolute level. Deal A generates more absolute dollars but takes longer. The answer depends on the reinvestment assumption: if Deal B's capital can be reinvested at similar IRRs, it may generate more terminal wealth. But PE funds face 'reinvestment risk' — redeploying capital at the same returns is not guaranteed. This is why sophisticated LPs evaluate both metrics together.",
+      "difficulty": "hard",
+      "type": "judgmental",
+      "topic": "IRR vs MOIC tension"
+    },
+    {
+      "id": "pe-dr-063",
+      "question": "A TLB credit agreement includes a 'most favored nation' (MFN) clause with a 50 bps sunset provision. The original TLB was issued at SOFR + 400 bps. A new incremental TLB is issued at SOFR + 500 bps. What happens to the original TLB's pricing?",
+      "options": {
+        "A": "Nothing — the original TLB pricing is fixed and cannot change",
+        "B": "The original TLB's spread increases to SOFR + 450 bps (new spread minus the 50 bps sunset provision)",
+        "C": "The original TLB's spread increases to SOFR + 500 bps to match the new tranche exactly",
+        "D": "The new incremental TLB's spread is capped at SOFR + 450 bps to comply with MFN"
+      },
+      "correct": "B",
+      "explanation": "An MFN clause protects existing lenders by requiring that if new debt is issued at a wider spread, the existing debt's spread must be increased to match (or come within a specified threshold). The 50 bps sunset provision means the existing TLB spread must be brought within 50 bps of the new debt's spread. New spread = SOFR + 500 bps. Original spread adjusted = SOFR + 500 - 50 = SOFR + 450 bps. This increases the company's interest cost on the existing TLB and is a key structural provision that affects incremental debt capacity and cost in LBO models.",
+      "difficulty": "hard",
+      "type": "edge-case",
+      "topic": "MFN provisions in leveraged loans"
+    },
+    {
+      "id": "pe-dr-064",
+      "question": "In an LBO where the sponsor uses a 338(h)(10) election, how does the step-up in asset basis affect the debt schedule and returns?",
+      "options": {
+        "A": "It has no impact on the debt schedule or returns",
+        "B": "The increased depreciation and amortization from the asset step-up reduces taxable income, increasing after-tax cash flow available for debt service, thereby accelerating debt paydown and improving equity returns",
+        "C": "It increases the purchase price by the amount of the step-up, requiring more debt",
+        "D": "It eliminates the need for a debt schedule entirely because the tax savings replace debt financing"
+      },
+      "correct": "B",
+      "explanation": "A 338(h)(10) election allows the buyer to treat a stock purchase as an asset purchase for tax purposes, stepping up the tax basis of the target's assets to the purchase price. This creates additional depreciation and amortization deductions, which reduce taxable income and cash taxes paid. The higher after-tax cash flow can be used to repay debt faster, improving the equity return. In an LBO model, this shows up as lower cash taxes, higher free cash flow, faster de-leveraging, and ultimately higher exit equity value and IRR. The benefit can be substantial — often adding 100-300+ bps to IRR.",
+      "difficulty": "hard",
+      "type": "edge-case",
+      "topic": "tax step-up impact on returns"
+    },
+    {
+      "id": "pe-dr-065",
+      "question": "A PE firm is evaluating an LBO where the debt includes a $200M TLB at SOFR + 400 bps and a $100M second lien term loan at SOFR + 800 bps. The SOFR floor on the TLB is 1.00% and on the second lien is 2.00%. If SOFR drops to 0.50%, what are the effective all-in rates on each tranche?",
+      "options": {
+        "A": "TLB: 4.50%, Second Lien: 8.50%",
+        "B": "TLB: 5.00%, Second Lien: 10.00%",
+        "C": "TLB: 4.50%, Second Lien: 10.00%",
+        "D": "TLB: 5.00%, Second Lien: 8.50%"
+      },
+      "correct": "B",
+      "explanation": "When SOFR (0.50%) falls below the floor, the floor rate is used instead. TLB: Floor of 1.00% (since 0.50% < 1.00%) + 400 bps spread = 5.00%. Second Lien: Floor of 2.00% (since 0.50% < 2.00%) + 800 bps spread = 10.00%. The SOFR floors protect lenders' minimum returns in low-rate environments. Note the second lien has a higher floor AND higher spread, reflecting its greater credit risk (junior position in the capital structure). This is why floors are particularly important for lenders — they establish a minimum coupon that compensates for credit risk regardless of the rate environment.",
+      "difficulty": "medium",
+      "type": "edge-case",
+      "topic": "SOFR floors in low-rate environments"
+    }
+  ]
+}

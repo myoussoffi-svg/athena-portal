@@ -18,16 +18,34 @@ import { quizQuestions, quizAttempts } from './schema';
 
 // Quiz seed file paths
 const SEED_FILES = [
+  // IB course quizzes
   'lib/interview/knowledge-base/quiz-seeds-accounting.json',
   'lib/interview/knowledge-base/quiz-seeds-valuation.json',
   'lib/interview/knowledge-base/quiz-seeds-lbo.json',
+  // PE course quizzes
+  'db/seeds/quiz-seeds-pe-recruiting.json',
+  'db/seeds/quiz-seeds-pe-sources-uses.json',
+  'db/seeds/quiz-seeds-pe-debt-returns.json',
+  'db/seeds/quiz-seeds-pe-paper-lbo.json',
+  'db/seeds/quiz-seeds-pe-advanced-modeling.json',
+  'db/seeds/quiz-seeds-pe-case-studies.json',
+  'db/seeds/quiz-seeds-pe-fit-walkthrough.json',
 ];
 
 // Map JSON module names to database module slugs (with numeric prefixes)
 const MODULE_SLUG_MAP: Record<string, string> = {
+  // IB course modules
   'accounting-foundations': '02-accounting-foundations',
   'valuation-modeling': '03-valuation-modeling',
   'lbos-advanced-topics': '04-lbos-advanced-topics',
+  // PE course modules
+  'pe-recruiting-mechanics': '01-pe-recruiting-mechanics',
+  'lbo-sources-uses': '02-lbo-sources-uses',
+  'lbo-debt-returns': '03-lbo-debt-returns',
+  'paper-lbo-tests': '04-paper-lbo-tests',
+  'advanced-pe-modeling': '05-advanced-pe-modeling',
+  'case-studies-judgment': '06-case-studies-judgment',
+  'deal-walkthroughs-fit': '07-deal-walkthroughs-fit',
 };
 
 interface QuizSeedQuestion {
