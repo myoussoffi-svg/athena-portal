@@ -3,6 +3,9 @@ id: working-capital-and-cash-conversion
 title: Working Capital and Cash Conversion
 order: 7
 estimated_minutes: 30
+video:
+  provider: vimeo
+  id: "1165798414"
 ---
 
 # Working Capital and Cash Conversion

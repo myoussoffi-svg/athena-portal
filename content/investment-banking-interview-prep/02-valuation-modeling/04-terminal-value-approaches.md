@@ -3,6 +3,9 @@ id: terminal-value-approaches
 title: Terminal Value Approaches
 order: 4
 estimated_minutes: 30
+video:
+  provider: vimeo
+  id: "1165844249"
 ---
 
 # Terminal Value Approaches

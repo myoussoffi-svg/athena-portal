@@ -3,6 +3,9 @@ id: ma-accretion-dilution
 title: M&A Accretion/Dilution Analysis
 order: 7
 estimated_minutes: 50
+video:
+  provider: vimeo
+  id: "1165845313"
 ---
 
 # M&A Accretion/Dilution Analysis

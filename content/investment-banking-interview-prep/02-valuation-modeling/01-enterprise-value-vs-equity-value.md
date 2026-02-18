@@ -3,6 +3,9 @@ id: enterprise-value-vs-equity-value
 title: Enterprise Value vs. Equity Value
 order: 1
 estimated_minutes: 30
+video:
+  provider: vimeo
+  id: "1165800511"
 ---
 
 # Enterprise Value vs. Equity Value

@@ -3,6 +3,9 @@ id: balance-sheet-deep-dive
 title: Balance Sheet Deep Dive
 order: 4
 estimated_minutes: 30
+video:
+  provider: vimeo
+  id: "1165797722"
 ---
 
 # Balance Sheet Deep Dive

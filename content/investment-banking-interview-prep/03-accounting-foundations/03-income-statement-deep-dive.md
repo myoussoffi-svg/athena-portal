@@ -3,6 +3,9 @@ id: income-statement-deep-dive
 title: Income Statement Deep Dive
 order: 3
 estimated_minutes: 30
+video:
+  provider: vimeo
+  id: "1165797263"
 ---
 
 # Income Statement Deep Dive

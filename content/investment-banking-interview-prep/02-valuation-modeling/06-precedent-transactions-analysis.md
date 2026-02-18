@@ -3,6 +3,9 @@ id: precedent-transactions-analysis
 title: Precedent Transactions Analysis
 order: 6
 estimated_minutes: 30
+video:
+  provider: vimeo
+  id: "1165845035"
 ---
 
 # Precedent Transactions Analysis

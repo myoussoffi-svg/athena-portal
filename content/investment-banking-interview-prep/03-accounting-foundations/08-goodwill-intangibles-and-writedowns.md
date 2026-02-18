@@ -3,6 +3,9 @@ id: goodwill-intangibles-and-writedowns
 title: Goodwill, Intangibles, and Writedowns
 order: 8
 estimated_minutes: 40
+video:
+  provider: vimeo
+  id: "1165798907"
 ---
 
 # Goodwill, Intangibles, and Writedowns

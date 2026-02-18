@@ -3,6 +3,9 @@ id: how-the-statements-link
 title: How the Three Statements Link Together
 order: 2
 estimated_minutes: 35
+video:
+  provider: vimeo
+  id: "1165796095"
 ---
 
 # How the Three Statements Link Together

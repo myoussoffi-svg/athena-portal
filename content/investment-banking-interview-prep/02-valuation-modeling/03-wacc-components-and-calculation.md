@@ -3,6 +3,9 @@ id: wacc-components-and-calculation
 title: WACC Components and Calculation
 order: 3
 estimated_minutes: 40
+video:
+  provider: vimeo
+  id: "1165802420"
 ---
 
 # WACC Components and Calculation

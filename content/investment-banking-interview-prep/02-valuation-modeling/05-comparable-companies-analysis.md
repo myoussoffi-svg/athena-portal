@@ -3,6 +3,9 @@ id: comparable-companies-analysis
 title: Comparable Companies Analysis
 order: 5
 estimated_minutes: 30
+video:
+  provider: vimeo
+  id: "1165844585"
 ---
 
 # Comparable Companies Analysis

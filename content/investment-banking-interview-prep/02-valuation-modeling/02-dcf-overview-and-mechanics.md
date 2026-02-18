@@ -3,6 +3,9 @@ id: dcf-overview-and-mechanics
 title: DCF Overview and Mechanics
 order: 2
 estimated_minutes: 45
+video:
+  provider: vimeo
+  id: "1165801444"
 ---
 
 # DCF Overview and Mechanics

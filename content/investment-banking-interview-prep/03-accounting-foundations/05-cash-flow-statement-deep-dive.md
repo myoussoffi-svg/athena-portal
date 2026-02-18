@@ -3,6 +3,9 @@ id: cash-flow-statement-deep-dive
 title: Cash Flow Statement Deep Dive
 order: 5
 estimated_minutes: 30
+video:
+  provider: vimeo
+  id: "1165798141"
 ---
 
 # Cash Flow Statement Deep Dive

@@ -3,6 +3,9 @@ id: premiums-and-valuation-context
 title: Premiums and Valuation Context
 order: 8
 estimated_minutes: 25
+video:
+  provider: vimeo
+  id: "1165845664"
 ---
 
 # Premiums and Valuation Context
