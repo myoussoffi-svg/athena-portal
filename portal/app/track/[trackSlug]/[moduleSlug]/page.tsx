@@ -6,6 +6,7 @@ import { GlobalStyles } from "@/components/ui";
 import { ModuleLessonList } from "@/components/progress";
 import { QuizLauncher } from "@/components/quiz";
 import { CaseStudiesLauncher } from "@/components/case-studies";
+import { VideoWalkthroughSection } from "@/components/lesson/VideoWalkthroughSection";
 
 type Params = { trackSlug: string; moduleSlug: string };
 
@@ -332,6 +333,36 @@ export default async function ModulePage({
               </div>
             )}
           </section>
+
+          {/* Video Walkthroughs Section */}
+          {mod.videoWalkthroughs && mod.videoWalkthroughs.videos.length > 0 && (
+            <>
+              <div className="section-divider">
+                <div className="section-divider-line" />
+                <div className="section-divider-icon">🎬</div>
+                <div className="section-divider-line reverse" />
+              </div>
+              <section className="module-section">
+                <div className="module-section-header">
+                  <h2 className="module-section-title">{mod.videoWalkthroughs.title}</h2>
+                  <span className="module-section-subtitle">
+                    {mod.videoWalkthroughs.videos.length} videos
+                  </span>
+                </div>
+                {mod.videoWalkthroughs.description && (
+                  <p style={{
+                    margin: '0 0 24px',
+                    fontSize: 15,
+                    lineHeight: 1.6,
+                    color: 'rgba(10, 10, 10, 0.6)',
+                  }}>
+                    {mod.videoWalkthroughs.description}
+                  </p>
+                )}
+                <VideoWalkthroughSection videos={mod.videoWalkthroughs.videos} />
+              </section>
+            </>
+          )}
 
           {/* Section Divider - only show if there's a quiz */}
           {hasQuiz && (

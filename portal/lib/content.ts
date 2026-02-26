@@ -22,11 +22,24 @@ export type Track = {
   description?: string;
 };
 
+export type VideoWalkthroughItem = {
+  title: string;
+  vimeoId: string;
+  duration?: number;
+};
+
+export type VideoWalkthroughs = {
+  title: string;
+  description?: string;
+  videos: VideoWalkthroughItem[];
+};
+
 export type Module = {
   id: string;
   slug: string;
   title: string;
   description?: string;
+  videoWalkthroughs?: VideoWalkthroughs;
 };
 
 export type VideoProvider = 'youtube' | 'vimeo' | 'mux' | 'cloudflare';
@@ -171,13 +184,37 @@ export function getModulesForTrack(trackSlug: string): Module[] {
   const modules = moduleYamlPaths.map((yamlPath) => {
     const moduleDir = path.dirname(yamlPath);
     const slug = path.basename(moduleDir);
-    const data = readYamlFile<{ id?: string; title?: string; description?: string }>(yamlPath);
+    const data = readYamlFile<{
+      id?: string;
+      title?: string;
+      description?: string;
+      video_walkthroughs?: {
+        title?: string;
+        description?: string;
+        videos?: Array<{ title: string; vimeo_id: string; duration?: number }>;
+      };
+    }>(yamlPath);
+
+    const vw = data.video_walkthroughs;
+    const videoWalkthroughs: VideoWalkthroughs | undefined =
+      vw && vw.videos
+        ? {
+            title: vw.title ?? "Video Walkthroughs",
+            description: vw.description,
+            videos: vw.videos.map((v) => ({
+              title: v.title,
+              vimeoId: v.vimeo_id,
+              duration: v.duration,
+            })),
+          }
+        : undefined;
 
     return {
       id: data.id ?? slug,
       slug,
       title: data.title ?? slug,
       description: data.description ?? "",
+      videoWalkthroughs,
     };
   });
 

@@ -11,3 +11,26 @@ lessons:
   - 05-debt-schedules-and-circularity
   - 06-cash-sweep-mechanics
   - 07-model-checks-and-stress-testing
+
+video_walkthroughs:
+  title: Financial Modeling Video Walkthrough
+  description: Step-by-step video series walking through a complete three-statement financial model build from scratch.
+  videos:
+    - title: Introduction
+      vimeo_id: "1168319569"
+    - title: "Step 2: Financial Forecast (Projections)"
+      vimeo_id: "1168319909"
+    - title: "Step 3: Balance Sheet"
+      vimeo_id: "1168320186"
+    - title: "Step 4: Net Working Capital"
+      vimeo_id: "1168320599"
+    - title: "Step 5: Cash Flow"
+      vimeo_id: "1168320959"
+    - title: "Step 6: Debt Schedule"
+      vimeo_id: "1168321278"
+    - title: "Step 7: Optional Debt Repayments"
+      vimeo_id: "1168321736"
+    - title: "Step 8: Interest and Commitment Fees"
+      vimeo_id: "1168322137"
+    - title: "Step 9: Covenants"
+      vimeo_id: "1168322366"
