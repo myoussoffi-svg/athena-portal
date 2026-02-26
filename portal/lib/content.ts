@@ -26,6 +26,7 @@ export type VideoWalkthroughItem = {
   title: string;
   vimeoId: string;
   duration?: number;
+  template?: string;
 };
 
 export type VideoWalkthroughs = {
@@ -191,7 +192,7 @@ export function getModulesForTrack(trackSlug: string): Module[] {
       video_walkthroughs?: {
         title?: string;
         description?: string;
-        videos?: Array<{ title: string; vimeo_id: string; duration?: number }>;
+        videos?: Array<{ title: string; vimeo_id: string; duration?: number; template?: string }>;
       };
     }>(yamlPath);
 
@@ -205,6 +206,7 @@ export function getModulesForTrack(trackSlug: string): Module[] {
               title: v.title,
               vimeoId: v.vimeo_id,
               duration: v.duration,
+              template: v.template,
             })),
           }
         : undefined;

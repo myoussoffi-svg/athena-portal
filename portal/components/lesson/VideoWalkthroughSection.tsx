@@ -95,33 +95,66 @@ export function VideoWalkthroughSection({ videos }: VideoWalkthroughSectionProps
             </span>
           </button>
 
-          {/* Expanded video player */}
+          {/* Expanded video player + template download */}
           {activeIndex === i && (
             <div style={{
-              background: '#000',
               borderRadius: '0 0 12px 12px',
               overflow: 'hidden',
+              border: '1px solid rgba(65, 109, 137, 0.2)',
+              borderTop: 'none',
             }}>
-              <div style={{
-                position: 'relative',
-                paddingBottom: '56.25%',
-                height: 0,
-              }}>
-                <iframe
-                  src={`https://player.vimeo.com/video/${video.vimeoId}?dnt=1&byline=0&portrait=0&title=0`}
-                  style={{
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    width: '100%',
-                    height: '100%',
-                    border: 'none',
-                  }}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  title={video.title}
-                />
+              <div style={{ background: '#000' }}>
+                <div style={{
+                  position: 'relative',
+                  paddingBottom: '56.25%',
+                  height: 0,
+                }}>
+                  <iframe
+                    src={`https://player.vimeo.com/video/${video.vimeoId}?dnt=1&byline=0&portrait=0&title=0`}
+                    style={{
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      width: '100%',
+                      height: '100%',
+                      border: 'none',
+                    }}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    title={video.title}
+                  />
+                </div>
               </div>
+              {video.template && (
+                <div style={{
+                  padding: '12px 20px',
+                  background: 'rgba(65, 109, 137, 0.04)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: 10,
+                }}>
+                  <span style={{ fontSize: 16 }}>📎</span>
+                  <a
+                    href={video.template}
+                    download
+                    style={{
+                      fontSize: 14,
+                      fontWeight: 500,
+                      color: '#416D89',
+                      textDecoration: 'none',
+                    }}
+                  >
+                    Download Excel Template
+                  </a>
+                  <span style={{
+                    fontSize: 12,
+                    color: 'rgba(10, 10, 10, 0.35)',
+                    marginLeft: 'auto',
+                  }}>
+                    .xlsx
+                  </span>
+                </div>
+              )}
             </div>
           )}
         </div>

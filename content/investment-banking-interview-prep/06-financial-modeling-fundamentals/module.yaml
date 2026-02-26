@@ -18,19 +18,28 @@ video_walkthroughs:
   videos:
     - title: Introduction
       vimeo_id: "1168319569"
+      template: /templates/financial-modeling/model-step-1-template.xlsx
     - title: "Step 2: Financial Forecast (Projections)"
       vimeo_id: "1168319909"
+      template: /templates/financial-modeling/model-step-2-template.xlsx
     - title: "Step 3: Balance Sheet"
       vimeo_id: "1168320186"
+      template: /templates/financial-modeling/model-step-3-template.xlsx
     - title: "Step 4: Net Working Capital"
       vimeo_id: "1168320599"
+      template: /templates/financial-modeling/model-step-4-template.xlsx
     - title: "Step 5: Cash Flow"
       vimeo_id: "1168320959"
+      template: /templates/financial-modeling/model-step-5-template.xlsx
     - title: "Step 6: Debt Schedule"
       vimeo_id: "1168321278"
+      template: /templates/financial-modeling/model-step-6-template.xlsx
     - title: "Step 7: Optional Debt Repayments"
       vimeo_id: "1168321736"
+      template: /templates/financial-modeling/model-step-7-template.xlsx
     - title: "Step 8: Interest and Commitment Fees"
       vimeo_id: "1168322137"
+      template: /templates/financial-modeling/model-step-8-template.xlsx
     - title: "Step 9: Covenants"
       vimeo_id: "1168322366"
+      template: /templates/financial-modeling/model-step-9-template.xlsx
