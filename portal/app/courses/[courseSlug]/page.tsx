@@ -4,23 +4,8 @@ import { db } from '@/db';
 import { products } from '@/db/schema';
 import { eq, and } from 'drizzle-orm';
 import { isTrackVisible } from '@/lib/feature-flags';
+import { getModulesForTrack } from '@/lib/content';
 import { PurchaseButton } from './PurchaseButton';
-
-// Module data (static - not in database)
-const MODULE_DATA: Record<string, string[]> = {
-  'investment-banking-interview-prep': [
-    'Fit, Story & Behavioral',
-    'Accounting Foundations',
-    'Valuation Modeling',
-    'LBOs & Advanced Topics',
-  ],
-  'private-equity-interview-prep': [
-    'PE Fundamentals',
-    'Advanced LBO Modeling',
-    'Case Studies',
-    'Deal Discussions',
-  ],
-};
 
 // Feature list (static - could move to database later)
 const FEATURE_DATA: Record<string, string[]> = {
@@ -35,11 +20,14 @@ const FEATURE_DATA: Record<string, string[]> = {
     'Lifetime access with future updates',
   ],
   'private-equity-interview-prep': [
-    'Advanced LBO modeling',
-    'Case study walkthroughs',
-    'Deal discussion preparation',
-    'Portfolio company analysis',
-    'Lifetime access',
+    'Complete PE technical curriculum (recruiting, LBOs, debt, returns)',
+    'Paper LBO practice tests with worked solutions',
+    'Advanced PE modeling techniques',
+    'Case study walkthroughs with deal judgment training',
+    'Quiz banks to master PE-specific concepts',
+    'AI-powered mock interview simulator',
+    'Resume feedback tool with PE-specific insights',
+    'Lifetime access with future updates',
   ],
 };
 
@@ -67,7 +55,7 @@ export default async function CoursePage({ params }: CoursePageProps) {
     notFound();
   }
 
-  const modules = MODULE_DATA[courseSlug] || [];
+  const modules = getModulesForTrack(courseSlug);
   const features = FEATURE_DATA[courseSlug] || [];
   const priceUsd = product.priceUsdCents / 100;
 
@@ -360,10 +348,10 @@ export default async function CoursePage({ params }: CoursePageProps) {
                 <>
                   <h2 className="section-title">Curriculum</h2>
                   <div className="module-list">
-                    {modules.map((module, i) => (
-                      <div key={i} className="module-item">
+                    {modules.map((mod, i) => (
+                      <div key={mod.slug} className="module-item">
                         <span className="module-number">{i + 1}</span>
-                        <span className="module-name">{module}</span>
+                        <span className="module-name">{mod.title}</span>
                       </div>
                     ))}
                   </div>

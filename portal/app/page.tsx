@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { auth } from "@clerk/nextjs/server";
-import { getTracks } from "@/lib/content";
+import { getTracks, getModulesForTrack, getLessonsForModule } from "@/lib/content";
 import { isTrackVisible } from "@/lib/feature-flags";
 import { checkTrackAccess } from "@/lib/access-control";
 import { GlobalStyles, AthenaMark } from "@/components/ui";
@@ -8,21 +8,14 @@ import { GlobalStyles, AthenaMark } from "@/components/ui";
 // Force dynamic rendering since we check auth
 export const dynamic = 'force-dynamic';
 
-// Course metadata for display
-const courseInfo: Record<string, { description: string; stats: { lessons: string; modules: string } }> = {
-  'investment-banking-interview-prep': {
-    description: 'Master valuation, financial modeling, and behavioral interviews. This course covers everything from DCF and LBO fundamentals to advanced deal analysis and case study walkthroughs.',
-    stats: { lessons: '30+', modules: '4' }
-  },
-  'private-equity-interview-prep': {
-    description: 'Prepare for PE interviews with a focus on LBO modeling, deal evaluation, and portfolio company analysis. Learn what top PE firms look for in candidates.',
-    stats: { lessons: '25+', modules: '4' }
-  },
-  'advanced-private-equity-associate': {
-    description: 'Advanced training for PE associates featuring an interactive Deal Simulator. Work through realistic deal scenarios from sourcing to close.',
-    stats: { lessons: '20+', modules: '3' }
-  }
-};
+function getTrackStats(trackSlug: string) {
+  const modules = getModulesForTrack(trackSlug);
+  const lessonCount = modules.reduce(
+    (sum, m) => sum + getLessonsForModule(trackSlug, m.slug).length,
+    0
+  );
+  return { modules: modules.length, lessons: lessonCount };
+}
 
 export default async function HomePage() {
   const allTracks = getTracks();
@@ -336,6 +329,23 @@ export default async function HomePage() {
           opacity: 1;
           transform: translateX(4px);
         }
+        .other-track-enroll {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          background: #416D89;
+          color: white;
+          padding: 8px 16px;
+          border-radius: 6px;
+          font-size: 13px;
+          font-weight: 600;
+          text-decoration: none;
+          transition: background 0.2s ease;
+          flex-shrink: 0;
+        }
+        .other-track-enroll:hover {
+          background: #3a6179;
+        }
         .other-track-lock {
           color: rgba(10, 10, 10, 0.3);
           font-size: 18px;
@@ -424,20 +434,25 @@ export default async function HomePage() {
                   to solidify technicals. Includes a resume feedback tool, outreach tracker
                   for networking emails, and an AI-powered mock interview simulator.
                 </p>
-                <div className="featured-stats">
-                  <div className="featured-stat">
-                    <span className="featured-stat-value">30+</span>
-                    <span className="featured-stat-label">Lessons</span>
-                  </div>
-                  <div className="featured-stat">
-                    <span className="featured-stat-value">4</span>
-                    <span className="featured-stat-label">Modules</span>
-                  </div>
-                  <div className="featured-stat">
-                    <span className="featured-stat-value">AI</span>
-                    <span className="featured-stat-label">Interview Sim</span>
-                  </div>
-                </div>
+                {(() => {
+                  const stats = getTrackStats('investment-banking-interview-prep');
+                  return (
+                    <div className="featured-stats">
+                      <div className="featured-stat">
+                        <span className="featured-stat-value">{stats.lessons}</span>
+                        <span className="featured-stat-label">Lessons</span>
+                      </div>
+                      <div className="featured-stat">
+                        <span className="featured-stat-value">{stats.modules}</span>
+                        <span className="featured-stat-label">Modules</span>
+                      </div>
+                      <div className="featured-stat">
+                        <span className="featured-stat-value">AI</span>
+                        <span className="featured-stat-label">Interview Sim</span>
+                      </div>
+                    </div>
+                  );
+                })()}
                 <div className="featured-ctas">
                   <Link href="/preview/ib" className="featured-cta">
                     Learn More
@@ -462,13 +477,11 @@ export default async function HomePage() {
             <h3 className="other-tracks-title">More Courses</h3>
             <div className="other-tracks-grid">
               {otherTracks.map((t) => {
-                const info = courseInfo[t.slug];
 
                 if (t.isAvailable) {
                   return (
-                    <Link
+                    <div
                       key={t.slug}
-                      href={`/track/${t.slug}`}
                       className="other-track-card available"
                     >
                       <div className="other-track-icon">📊</div>
@@ -477,11 +490,13 @@ export default async function HomePage() {
                           <h4 className="other-track-title">{t.title}</h4>
                         </div>
                         <p className="other-track-desc">
-                          {info?.description || t.description || "Comprehensive interview preparation"}
+                          {t.description || "Comprehensive interview preparation"}
                         </p>
                       </div>
-                      <span className="other-track-arrow">→</span>
-                    </Link>
+                      <Link href={`/courses/${t.slug}`} className="other-track-enroll">
+                        Enroll Now
+                      </Link>
+                    </div>
                   );
                 }
 
@@ -498,7 +513,7 @@ export default async function HomePage() {
                         <span className="coming-soon-badge">Coming Soon</span>
                       </div>
                       <p className="other-track-desc">
-                        {info?.description || t.description || "Comprehensive interview preparation"}
+                        {t.description || "Comprehensive interview preparation"}
                       </p>
                     </div>
                     <span className="other-track-lock">🔒</span>
