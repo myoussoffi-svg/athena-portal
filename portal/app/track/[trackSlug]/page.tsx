@@ -647,6 +647,111 @@ export default async function Page({
                   <span className="practice-arrow">→</span>
                 </Link>
               )}
+
+              {/* PE-only interactive tools */}
+              {trackSlug === 'private-equity-interview-prep' && (
+                <>
+                  <Link href={`/track/${trackSlug}/paper-lbo`} className="practice-card">
+                    <div className="practice-icon">📝</div>
+                    <div className="practice-content">
+                      <div className="practice-title-row">
+                        <span className="practice-title">Paper LBO Practice</span>
+                        <span className="practice-badge">Timed</span>
+                      </div>
+                      <div className="practice-desc">
+                        Timed paper LBO exercises with auto-grading. Work through Sources &amp; Uses, debt paydown, and returns under pressure.
+                      </div>
+                      <div className="practice-features">
+                        <span className="practice-feature">
+                          <span className="practice-feature-icon">⏱</span> Timed exercises
+                        </span>
+                        <span className="practice-feature">
+                          <span className="practice-feature-icon">📊</span> Auto-graded
+                        </span>
+                        <span className="practice-feature">
+                          <span className="practice-feature-icon">📈</span> 6 scenarios
+                        </span>
+                      </div>
+                    </div>
+                    <span className="practice-arrow">→</span>
+                  </Link>
+
+                  <Link href={`/track/${trackSlug}/deal-judgment`} className="practice-card">
+                    <div className="practice-icon">🎯</div>
+                    <div className="practice-content">
+                      <div className="practice-title-row">
+                        <span className="practice-title">Deal Judgment Trainer</span>
+                        <span className="practice-badge">AI-Powered</span>
+                      </div>
+                      <div className="practice-desc">
+                        Evaluate investment teasers, make invest/pass decisions, and get AI-graded feedback on your PE judgment and thesis quality.
+                      </div>
+                      <div className="practice-features">
+                        <span className="practice-feature">
+                          <span className="practice-feature-icon">📋</span> 8 deal teasers
+                        </span>
+                        <span className="practice-feature">
+                          <span className="practice-feature-icon">🧠</span> Thesis grading
+                        </span>
+                        <span className="practice-feature">
+                          <span className="practice-feature-icon">📖</span> Model answers
+                        </span>
+                      </div>
+                    </div>
+                    <span className="practice-arrow">→</span>
+                  </Link>
+
+                  <Link href={`/track/${trackSlug}/lbo-playground`} className="practice-card">
+                    <div className="practice-icon">🧮</div>
+                    <div className="practice-content">
+                      <div className="practice-title-row">
+                        <span className="practice-title">LBO Sensitivity Playground</span>
+                        <span className="practice-badge">Interactive</span>
+                      </div>
+                      <div className="practice-desc">
+                        Interactive LBO calculator with real-time IRR and MOIC. Adjust entry multiples, leverage, growth, and exit assumptions to build intuition.
+                      </div>
+                      <div className="practice-features">
+                        <span className="practice-feature">
+                          <span className="practice-feature-icon">🔄</span> Real-time calc
+                        </span>
+                        <span className="practice-feature">
+                          <span className="practice-feature-icon">📊</span> Year-by-year
+                        </span>
+                        <span className="practice-feature">
+                          <span className="practice-feature-icon">🎛</span> 10 parameters
+                        </span>
+                      </div>
+                    </div>
+                    <span className="practice-arrow">→</span>
+                  </Link>
+
+                  <Link href={`/track/${trackSlug}/deal-coach`} className="practice-card">
+                    <div className="practice-icon">💼</div>
+                    <div className="practice-content">
+                      <div className="practice-title-row">
+                        <span className="practice-title">Deal Discussion Coach</span>
+                        <span className="practice-badge">AI-Powered</span>
+                      </div>
+                      <div className="practice-desc">
+                        Input your banking deal experience and get AI coaching on how to discuss it through a PE lens — with practice questions and frameworks.
+                      </div>
+                      <div className="practice-features">
+                        <span className="practice-feature">
+                          <span className="practice-feature-icon">🔄</span> PE reframing
+                        </span>
+                        <span className="practice-feature">
+                          <span className="practice-feature-icon">💬</span> Practice Q&amp;A
+                        </span>
+                        <span className="practice-feature">
+                          <span className="practice-feature-icon">📋</span> Key metrics
+                        </span>
+                      </div>
+                    </div>
+                    <span className="practice-arrow">→</span>
+                  </Link>
+                </>
+              )}
             </div>
           </section>
         </div>
