@@ -4,6 +4,7 @@ import { getTracks, getModulesForTrack, getLessonsForModule } from "@/lib/conten
 import { isTrackVisible } from "@/lib/feature-flags";
 import { checkTrackAccess } from "@/lib/access-control";
 import { GlobalStyles, AthenaMark } from "@/components/ui";
+import { WaitlistButton } from "@/components/WaitlistButton";
 
 // Force dynamic rendering since we check auth
 export const dynamic = 'force-dynamic';
@@ -512,9 +513,7 @@ export default async function HomePage() {
                     Learn More
                     <span className="featured-cta-arrow">→</span>
                   </Link>
-                  <Link href="/courses/private-equity-interview-prep" className="featured-cta secondary">
-                    Enroll Now — $295
-                  </Link>
+                  <WaitlistButton trackSlug="private-equity-interview-prep" />
                 </div>
               </div>
             </div>

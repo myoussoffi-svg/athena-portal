@@ -808,6 +808,24 @@ export const adminActions = pgTable(
 );
 
 // ─────────────────────────────────────────────────────────────
+// WAITLIST
+// ─────────────────────────────────────────────────────────────
+
+export const waitlist = pgTable(
+  'waitlist',
+  {
+    id: uuid('id').primaryKey().defaultRandom(),
+    name: text('name').notNull(),
+    email: text('email').notNull(),
+    trackSlug: text('track_slug').notNull(),
+    createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),
+  },
+  (table) => [
+    uniqueIndex('idx_waitlist_email_track').on(table.email, table.trackSlug),
+  ]
+);
+
+// ─────────────────────────────────────────────────────────────
 // TYPE EXPORTS
 // ─────────────────────────────────────────────────────────────
 
@@ -860,3 +878,6 @@ export type NewUserAchievement = typeof userAchievements.$inferInsert;
 
 export type OutreachWeeklyStats = typeof outreachWeeklyStats.$inferSelect;
 export type NewOutreachWeeklyStats = typeof outreachWeeklyStats.$inferInsert;
+
+export type Waitlist = typeof waitlist.$inferSelect;
+export type NewWaitlist = typeof waitlist.$inferInsert;
