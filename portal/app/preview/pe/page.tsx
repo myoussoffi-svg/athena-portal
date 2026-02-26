@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { WaitlistButton } from '@/components/WaitlistButton';
 
 export const metadata = {
   title: 'See What\'s Inside | Private Equity Interview Prep | Athena',
@@ -655,6 +656,66 @@ export default function PreviewPage() {
           color: rgba(10, 10, 10, 0.7);
         }
 
+        /* Interactive Tools Grid */
+        .tools-grid {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 16px;
+        }
+        .tool-card {
+          background: #FAFAFA;
+          border: 1px solid rgba(10, 10, 10, 0.06);
+          border-radius: 16px;
+          padding: 24px;
+          transition: all 0.15s;
+        }
+        .tool-card:hover {
+          border-color: rgba(30, 58, 95, 0.15);
+          background: rgba(30, 58, 95, 0.03);
+        }
+        .tool-icon {
+          width: 48px;
+          height: 48px;
+          background: linear-gradient(135deg, rgba(30, 58, 95, 0.1), rgba(30, 58, 95, 0.15));
+          border: 1px solid rgba(30, 58, 95, 0.2);
+          border-radius: 12px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 22px;
+          margin-bottom: 16px;
+        }
+        .tool-label {
+          font-size: 11px;
+          font-weight: 600;
+          color: #1e3a5f;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+          margin-bottom: 6px;
+        }
+        .tool-title {
+          font-size: 17px;
+          font-weight: 600;
+          color: #0A0A0A;
+          margin-bottom: 8px;
+        }
+        .tool-desc {
+          font-size: 14px;
+          line-height: 1.6;
+          color: rgba(10, 10, 10, 0.6);
+          margin: 0;
+        }
+        .tool-stat {
+          display: inline-block;
+          margin-top: 12px;
+          padding: 4px 10px;
+          background: rgba(30, 58, 95, 0.08);
+          border-radius: 6px;
+          font-size: 12px;
+          font-weight: 600;
+          color: #1e3a5f;
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
           .preview-hero {
@@ -693,6 +754,9 @@ export default function PreviewPage() {
             font-size: 26px;
           }
           .deal-features {
+            grid-template-columns: 1fr;
+          }
+          .tools-grid {
             grid-template-columns: 1fr;
           }
           .cta-section {
@@ -825,6 +889,57 @@ export default function PreviewPage() {
               <div className="author-note-icon">💡</div>
               <div className="author-note-text">
                 <strong>Mental math techniques included.</strong> Learn the Rule of 72, doubling shortcuts, and how to approximate IRRs without a calculator—exactly what interviewers expect.
+              </div>
+            </div>
+          </section>
+
+          {/* Section: Interactive Tools */}
+          <section className="preview-section">
+            <span className="section-badge">Hands-On</span>
+            <h2 className="section-title">4 Interactive Practice Tools</h2>
+            <p className="section-subtitle">
+              Go beyond reading. These built-in tools let you practice the exact skills PE interviews test—under realistic conditions.
+            </p>
+
+            <div className="tools-grid">
+              <div className="tool-card">
+                <div className="tool-icon">📊</div>
+                <div className="tool-label">Timed Practice</div>
+                <div className="tool-title">Paper LBO Practice</div>
+                <p className="tool-desc">
+                  Timed paper LBO exercises with auto-grading. Build Sources & Uses, debt schedules, and calculate returns under interview pressure.
+                </p>
+                <span className="tool-stat">6 scenarios</span>
+              </div>
+
+              <div className="tool-card">
+                <div className="tool-icon">⚖️</div>
+                <div className="tool-label">AI-Graded</div>
+                <div className="tool-title">Deal Judgment Trainer</div>
+                <p className="tool-desc">
+                  Evaluate investment teasers, make invest/pass decisions, and get AI feedback on your thesis quality and risk assessment.
+                </p>
+                <span className="tool-stat">8 deal teasers</span>
+              </div>
+
+              <div className="tool-card">
+                <div className="tool-icon">🔧</div>
+                <div className="tool-label">Interactive</div>
+                <div className="tool-title">LBO Sensitivity Playground</div>
+                <p className="tool-desc">
+                  Adjust entry multiples, leverage, growth, and exit assumptions in real time. Build intuition for how deal economics work.
+                </p>
+                <span className="tool-stat">10+ parameters</span>
+              </div>
+
+              <div className="tool-card">
+                <div className="tool-icon">🤖</div>
+                <div className="tool-label">AI-Powered</div>
+                <div className="tool-title">Deal Discussion Coach</div>
+                <p className="tool-desc">
+                  Input your banking deal experience and get AI coaching on how to discuss it through a PE lens with practice questions.
+                </p>
+                <span className="tool-stat">Personalized feedback</span>
               </div>
             </div>
           </section>
@@ -997,29 +1112,24 @@ export default function PreviewPage() {
 
           {/* CTA Section */}
           <section className="cta-section">
-            <div className="cta-price-note">One-time payment</div>
+            <div className="cta-price-note">Coming soon</div>
             <div className="cta-price">$295</div>
             <p className="cta-subtitle">Lifetime access. No subscriptions. All future updates included.</p>
 
-            <Link href="/courses/private-equity-interview-prep" className="cta-button">
-              Enroll Now
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M5 12h14M12 5l7 7-7 7" />
-              </svg>
-            </Link>
+            <WaitlistButton trackSlug="private-equity-interview-prep" />
 
             <div className="cta-features">
               <div className="cta-feature">
                 <span className="cta-feature-check">✓</span>
-                Instant access
-              </div>
-              <div className="cta-feature">
-                <span className="cta-feature-check">✓</span>
-                70+ lessons
+                71 lessons across 7 modules
               </div>
               <div className="cta-feature">
                 <span className="cta-feature-check">✓</span>
                 325+ quiz questions
+              </div>
+              <div className="cta-feature">
+                <span className="cta-feature-check">✓</span>
+                4 interactive practice tools
               </div>
               <div className="cta-feature">
                 <span className="cta-feature-check">✓</span>
