@@ -32,9 +32,12 @@ export default async function HomePage() {
   // Get the primary course (IB) - always available
   const primaryTrack = allTracks.find(t => t.slug === 'investment-banking-interview-prep');
 
-  // Get other tracks with their visibility status
+  // Get the PE course
+  const peTrack = allTracks.find(t => t.slug === 'private-equity-interview-prep');
+
+  // Get other tracks with their visibility status (exclude IB and PE since they're featured)
   const otherTracks = allTracks
-    .filter(t => t.slug !== 'investment-banking-interview-prep')
+    .filter(t => t.slug !== 'investment-banking-interview-prep' && t.slug !== 'private-equity-interview-prep')
     .map(t => ({
       ...t,
       isAvailable: isTrackVisible(t.slug)
@@ -468,6 +471,53 @@ export default async function HomePage() {
         ) : (
           <div className="empty-state">
             <p>No courses available at this time.</p>
+          </div>
+        )}
+
+        {/* PE Course */}
+        {peTrack && isTrackVisible('private-equity-interview-prep') && (
+          <div className="featured-section" style={{ marginTop: 0 }}>
+            <div className="featured-card">
+              <div className="featured-header">
+                <span className="featured-badge">New Course</span>
+                <h2 className="featured-title">{peTrack.title}</h2>
+              </div>
+              <div className="featured-body">
+                <p className="featured-desc">
+                  Rigorous preparation for private equity recruiting. Master LBO modeling
+                  under pressure, case study frameworks, investment judgment, and deal
+                  walkthroughs to pass PE interviews at top firms.
+                </p>
+                {(() => {
+                  const stats = getTrackStats('private-equity-interview-prep');
+                  return (
+                    <div className="featured-stats">
+                      <div className="featured-stat">
+                        <span className="featured-stat-value">{stats.lessons}</span>
+                        <span className="featured-stat-label">Lessons</span>
+                      </div>
+                      <div className="featured-stat">
+                        <span className="featured-stat-value">{stats.modules}</span>
+                        <span className="featured-stat-label">Modules</span>
+                      </div>
+                      <div className="featured-stat">
+                        <span className="featured-stat-value">AI</span>
+                        <span className="featured-stat-label">Interview Sim</span>
+                      </div>
+                    </div>
+                  );
+                })()}
+                <div className="featured-ctas">
+                  <Link href="/preview/pe" className="featured-cta">
+                    Learn More
+                    <span className="featured-cta-arrow">→</span>
+                  </Link>
+                  <Link href="/courses/private-equity-interview-prep" className="featured-cta secondary">
+                    Enroll Now — $295
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
         )}
 
