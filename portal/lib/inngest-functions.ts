@@ -294,21 +294,17 @@ export const processInterviewSubmission = inngest.createFunction(
       return updatedAttempt?.candidateId;
     });
 
-    // Step 6: Apply cooldown lock (24 hours between attempts)
-    await step.run('apply-cooldown', async () => {
+    // Step 6: Clear any previous lockout (cooldown removed)
+    await step.run('clear-lockout', async () => {
       if (!candidateId) return;
-
-      const cooldownHours = 24;
-      const lockedUntil = new Date(Date.now() + cooldownHours * 60 * 60 * 1000);
 
       await db
         .update(candidateLockouts)
         .set({
-          isLocked: true,
-          lockReason: 'cooldown',
-          lockedAt: new Date(),
-          lockedUntil,
-          // Clear any previous unlock state
+          isLocked: false,
+          lockReason: null,
+          lockedAt: null,
+          lockedUntil: null,
           unlockDecision: null,
           unlockRequestText: null,
           unlockRequestedAt: null,

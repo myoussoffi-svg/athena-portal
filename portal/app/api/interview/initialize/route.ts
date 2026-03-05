@@ -33,13 +33,8 @@ export const POST = withErrorHandling(async (request) => {
     });
 
     if (lockout?.isLocked) {
-      // Check if cooldown expired
-      if (
-        lockout.lockReason === 'cooldown' &&
-        lockout.lockedUntil &&
-        new Date() > lockout.lockedUntil
-      ) {
-        // Cooldown expired, unlock
+      // Cooldown locks are no longer enforced — auto-unlock
+      if (lockout.lockReason === 'cooldown') {
         await tx
           .update(candidateLockouts)
           .set({
@@ -50,7 +45,7 @@ export const POST = withErrorHandling(async (request) => {
           })
           .where(eq(candidateLockouts.candidateId, userId));
       } else {
-        // Still locked
+        // Still locked (abandoned or admin_hold)
         const unlockRequestAllowed =
           lockout.lockReason === 'abandoned' ||
           lockout.lockReason === 'admin_hold';
