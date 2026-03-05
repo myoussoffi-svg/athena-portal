@@ -18,7 +18,7 @@ estimated_minutes: 30
 
 ### The Operating Model as the Engine
 
-The operating model is where the investment thesis comes to life. It translates qualitative views about the business—market growth, operational improvements, pricing power—into quantitative projections that drive the entire LBO analysis. A poorly constructed operating model produces meaningless returns; a thoughtful operating model enables rigorous evaluation of an investment opportunity.
+The operating model is where the investment thesis comes to life. It translates qualitative views about the business (market growth, operational improvements, pricing power) into quantitative projections that drive the entire LBO analysis. A poorly constructed operating model produces meaningless returns; a thoughtful operating model enables rigorous evaluation of an investment opportunity.
 
 In private equity, the operating model serves multiple purposes. During diligence, it tests whether the investment thesis is achievable and quantifies the impact of value creation initiatives. Post-close, it becomes the basis for management incentives and performance tracking. In interviews, it demonstrates your ability to think critically about business drivers rather than simply manipulating spreadsheet formulas.
 
@@ -28,7 +28,7 @@ Revenue projections are the foundation of the operating model. There are several
 
 **Top-Down Approach:** Start with market size and growth, then estimate market share and share gains. This approach is useful for understanding the company's position within its industry but can obscure specific revenue drivers.
 
-**Bottom-Up Approach:** Build revenue from underlying drivers—units sold, price per unit, number of customers, revenue per customer. This approach provides granularity and highlights operational levers.
+**Bottom-Up Approach:** Build revenue from underlying drivers: units sold, price per unit, number of customers, revenue per customer. This approach provides granularity and highlights operational levers.
 
 **Segment-Level Analysis:** For diversified businesses, project each segment separately based on its specific drivers, then aggregate.
 
@@ -64,17 +64,17 @@ For the software company example:
 EBITDA Margin Year 1: 100% - 20% - 30% - 15% - 10% = 25%
 EBITDA Margin Year 5: 100% - 20% - 25% - 15% - 8% = 32%
 
-This margin expansion represents a key value creation lever—the private equity sponsor would work with management to achieve these cost efficiencies.
+This margin expansion represents a key value creation lever. The private equity sponsor would work with management to achieve these cost efficiencies.
 
 ### Operating Leverage
 
-Operating leverage describes how profits change relative to revenue changes. Companies with high fixed costs have high operating leverage—their EBITDA grows faster than revenue when revenue increases, but also falls faster when revenue declines.
+Operating leverage describes how profits change relative to revenue changes. Companies with high fixed costs have high operating leverage. Their EBITDA grows faster than revenue when revenue increases, but also falls faster when revenue declines.
 
 Understanding operating leverage is critical for LBO analysis because:
 
 **Upside Sensitivity:** High operating leverage amplifies returns when the business performs well. A company with 70% fixed costs might see EBITDA grow 20% when revenue grows 10%.
 
-**Downside Risk:** The same leverage works in reverse. If revenue declines 10%, EBITDA might decline 20%—potentially threatening debt service capacity.
+**Downside Risk:** The same leverage works in reverse. If revenue declines 10%, EBITDA might decline 20%, potentially threatening debt service capacity.
 
 Model the sensitivity explicitly:
 
@@ -83,13 +83,13 @@ Model the sensitivity explicitly:
 | +10% Revenue   | +14% EBITDA                 | +25% EBITDA                 |
 | -10% Revenue   | -14% EBITDA                 | -25% EBITDA                 |
 
-Private equity sponsors often prefer businesses with moderate operating leverage—enough to benefit from growth but not so much that downturns cause severe distress.
+Private equity sponsors often prefer businesses with moderate operating leverage, enough to benefit from growth but not so much that downturns cause severe distress.
 
 ### Synergies and Value Creation Initiatives
 
 Unlike public company models, LBO operating models explicitly incorporate value creation initiatives. These might include:
 
-**Revenue Synergies:** Cross-selling opportunities, geographic expansion, new product launches. Be conservative with revenue synergies—they are harder to achieve and take longer to materialize than cost synergies.
+**Revenue Synergies:** Cross-selling opportunities, geographic expansion, new product launches. Be conservative with revenue synergies, as they are harder to achieve and take longer to materialize than cost synergies.
 
 **Cost Synergies:** Procurement savings from scale, headcount reductions from automation, facility consolidation. Cost synergies are more reliable and can often be estimated with reasonable precision.
 
@@ -104,7 +104,7 @@ Model synergies separately from the base case so you can see their impact clearl
 | Org Restructuring | 0 | 2 | 4 | 4 | 4 |
 | **Pro Forma EBITDA** | **50** | **60** | **69** | **74** | **79** |
 
-This presentation shows that the pro forma case relies on $9 million of annual synergies by Year 3—a claim that can be validated through diligence.
+This presentation shows that the pro forma case relies on $9 million of annual synergies by Year 3, a claim that can be validated through diligence.
 
 ### Below the Line: D&A, Interest, and Taxes
 
@@ -166,9 +166,9 @@ I would run sensitivities on key drivers: -10% revenue, -200 bps margin, 10% hig
 
 ## Key Takeaways
 
-- The operating model translates investment thesis into quantitative projections—revenue growth, margin improvement, and operational initiatives
+- The operating model translates investment thesis into quantitative projections: revenue growth, margin improvement, and operational initiatives
 - Use bottom-up revenue builds (customers × ACV, units × price) to make assumptions explicit and testable
 - Model cost structure by type (variable, semi-variable, fixed) to capture operating leverage accurately
 - Present synergies and value creation initiatives separately from the base case to show their incremental impact
-- Operating leverage amplifies both upside and downside—high-fixed-cost businesses see larger EBITDA swings for given revenue changes
+- Operating leverage amplifies both upside and downside. High-fixed-cost businesses see larger EBITDA swings for given revenue changes
 - Exit EBITDA directly drives exit value (Exit EBITDA × Exit Multiple), making operating model accuracy essential for returns analysis

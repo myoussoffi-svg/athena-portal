@@ -18,7 +18,7 @@ estimated_minutes: 40
 
 ### The Core Concept
 
-A dollar today is worth more than a dollar tomorrow. This simple insight—the **time value of money (TVM)**—underpins all of finance.
+A dollar today is worth more than a dollar tomorrow. This simple insight, the **time value of money (TVM)**, underpins all of finance.
 
 Why is this true?
 
@@ -26,7 +26,7 @@ Why is this true?
 2. **Inflation**: Purchasing power erodes over time
 3. **Risk**: Future cash flows are uncertain
 
-Because of TVM, we can't simply add cash flows from different time periods. $100 received today and $100 received in 5 years are not equivalent—we must adjust for the timing difference.
+Because of TVM, we can't simply add cash flows from different time periods. $100 received today and $100 received in 5 years are not equivalent, and we must adjust for the timing difference.
 
 ### Future Value: Compounding
 

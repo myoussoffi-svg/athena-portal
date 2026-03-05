@@ -169,10 +169,10 @@ If success is not measurable, you cannot track progress.
 
 - The 100-day plan prioritizes stabilization (retain key employees, maintain customer relationships), quick wins (pricing, cost cuts), and foundational improvements (hiring, systems, strategy)
 - Prioritize initiatives using impact vs. effort framework: High impact, low effort initiatives go first; avoid low impact, high effort initiatives
-- Each initiative requires clear owner, milestone, deadline, and success metric—avoid vague ownership ("management team") or unmeasurable success
+- Each initiative requires clear owner, milestone, deadline, and success metric. Avoid vague ownership ("management team") or unmeasurable success
 - Communicate plan collaboratively to management in Week 1 post-close, track progress in weekly check-ins, and conduct 100-day review to assess achievements and recalibrate
 - Common pitfalls include too many initiatives (focus on 5–10 high-impact), unrealistic timelines, lack of prioritization, no ownership, and no measurable metrics
-- Balance ambition with realism—100-day plans are not comprehensive value creation roadmaps but focused first-phase priorities
+- Balance ambition with realism. 100-day plans are not comprehensive value creation roadmaps but focused first-phase priorities
 
 ## Synthesis
 - What would change your mind based on new data?

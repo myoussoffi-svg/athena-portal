@@ -18,7 +18,7 @@ estimated_minutes: 20
 
 ### Why Follow-Up Matters
 
-Most networking emails don't get responses on the first attempt. This isn't about your email quality—it's just how busy people are. Your message may have arrived during a live deal, gotten buried under 200 other emails, or been read on mobile with the intention to respond later and forgotten.
+Most networking emails don't get responses on the first attempt. This isn't about your email quality. It's just how busy people are. Your message may have arrived during a live deal, gotten buried under 200 other emails, or been read on mobile with the intention to respond later and forgotten.
 
 Following up isn't pushy. It's expected. A single polite follow-up can double your response rate.
 
@@ -34,7 +34,7 @@ Keep your follow-up shorter than your original email. Bump the thread (reply to 
 
 > Hi [First Name],
 >
-> Just wanted to bump this to the top of your inbox—I know things can get buried. Still happy to work around your schedule if you have 15 minutes in the coming weeks.
+> Just wanted to bump this to the top of your inbox. I know things can get buried. Still happy to work around your schedule if you have 15 minutes in the coming weeks.
 >
 > Thanks again,
 > [Your Name]
@@ -55,7 +55,7 @@ Keep your follow-up shorter than your original email. Bump the thread (reply to 
 
 > Hi [First Name],
 >
-> Circling back one more time—completely understand if now isn't a good time. If you're too busy, no need to reply. Otherwise, happy to find a time that works.
+> Circling back one more time. Completely understand if now isn't a good time. If you're too busy, no need to reply. Otherwise, happy to find a time that works.
 >
 > Best,
 > [Your Name]
@@ -81,7 +81,7 @@ Every networking call should be followed by a thank-you email within 24 hours. D
 
 - Reference something specific from the conversation
 - Show you were listening by mentioning a concrete takeaway
-- Keep it brief—3-4 sentences max
+- Keep it brief, 3-4 sentences max
 - Send within 24 hours while the conversation is fresh
 
 ### Maintaining Relationships Over Time
@@ -92,7 +92,7 @@ A single conversation is not a relationship. Relationships require multiple touc
 
 > Hi [First Name],
 >
-> Wanted to give you a quick update—I just submitted my application to [Bank] and wanted to thank you again for your advice on [topic]. [Optional: brief update on something relevant].
+> Wanted to give you a quick update. I just submitted my application to [Bank] and wanted to thank you again for your advice on [topic]. [Optional: brief update on something relevant].
 >
 > Hope things are going well on your end. Thanks again for your help.
 >
@@ -101,11 +101,11 @@ A single conversation is not a relationship. Relationships require multiple touc
 
 **Milestone updates**
 
-When something significant happens—you get an interview, receive an offer, or make a decision—let people who helped you know:
+When something significant happens (you get an interview, receive an offer, or make a decision), let people who helped you know:
 
 > Hi [First Name],
 >
-> Quick update: I just received an offer from [Bank]'s [Group] for this summer. Wanted to thank you for your help during recruiting—our conversation about [specific thing] was a big part of why I targeted this group.
+> Quick update: I just received an offer from [Bank]'s [Group] for this summer. Wanted to thank you for your help during recruiting. Our conversation about [specific thing] was a big part of why I targeted this group.
 >
 > Really appreciate your time. Hope to cross paths at [Bank] this summer.
 >
@@ -114,13 +114,13 @@ When something significant happens—you get an interview, receive an offer, or 
 
 ### What to Do When You Don't Hear Back
 
-After two follow-ups with no response, accept that this contact is not going to engage—at least not now. This is normal and not personal.
+After two follow-ups with no response, accept that this contact is not going to engage, at least not now. This is normal and not personal.
 
 **Do not:**
 - Send a third follow-up
 - Try contacting them through other channels
 - Express frustration or disappointment in any message
-- Write them off permanently—they may respond to future outreach months later
+- Write them off permanently. They may respond to future outreach months later
 
 **Do:**
 - Move on to other contacts at the same bank
@@ -180,7 +180,7 @@ result: "Follow these timing rules consistently to maximize response rates witho
 
 ## Key Takeaways
 
-- Following up is expected, not pushy—one polite follow-up can double your response rate
+- Following up is expected, not pushy. One polite follow-up can double your response rate
 - Keep follow-ups shorter than your original email and bump the existing thread
 - Maximum two follow-ups; after that, move on to other contacts
 - Send thank-you emails within 24 hours of every conversation with a specific reference to something discussed

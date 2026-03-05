@@ -4,7 +4,7 @@ subtitle: "Build an intrinsic valuation from scratch"
 type: case-study
 ---
 
-The discounted cash flow analysis is the cornerstone of intrinsic valuation. Unlike trading comps or precedent transactions, a DCF forces you to make explicit assumptions about a company's future—and defend them. Interviewers use DCF questions to test whether you understand valuation mechanics and can think critically about what drives a company's value.
+The discounted cash flow analysis is the cornerstone of intrinsic valuation. Unlike trading comps or precedent transactions, a DCF forces you to make explicit assumptions about a company's future, and defend them. Interviewers use DCF questions to test whether you understand valuation mechanics and can think critically about what drives a company's value.
 
 This case study walks through a complete DCF from projection to implied share price, using a realistic scenario you might encounter in an interview or on the job.
 
@@ -14,7 +14,7 @@ This case study walks through a complete DCF from projection to implied share pr
 
 You're working on a sell-side M&A engagement. The MD asks you to build a quick DCF for the client to establish a valuation baseline before marketing the company.
 
-**TechServices Inc. — DCF Valuation**
+**TechServices Inc. - DCF Valuation**
 
 **Company Overview:**
 - B2B software services company
@@ -288,8 +288,8 @@ Do you know *why* each step matters?
 
 Can you critique your own output?
 - "70% terminal value is high but reasonable for a stable growth company"
-- "11% WACC assumes market beta—this company might warrant a size premium"
-- "3% terminal growth is aggressive for a tech services company—I'd test 2-2.5%"
+- "11% WACC assumes market beta; this company might warrant a size premium"
+- "3% terminal growth is aggressive for a tech services company. I'd test 2-2.5%"
 
 ### 4. Sensitivity Awareness
 
@@ -305,6 +305,6 @@ What are the key value drivers?
 - DCF values a company based on projected free cash flows discounted to present value
 - UFCF = EBIT × (1 − Tax Rate) + D&A − CapEx − Δ NWC
 - WACC = weighted average of cost of equity (CAPM) and after-tax cost of debt
-- Terminal value typically represents 60-80% of DCF value—scrutinize these assumptions
+- Terminal value typically represents 60-80% of DCF value, so scrutinize these assumptions
 - Always sensitivity-test WACC and terminal growth rate
-- DCF provides intrinsic value; comps provide market value—they often differ
+- DCF provides intrinsic value; comps provide market value, and they often differ

@@ -110,7 +110,7 @@ note: "An intangible is identifiable if it arises from contractual/legal rights 
 
 ### Step 4: Calculate Goodwill
 
-Goodwill is the plug—what's left after allocating to identifiable assets:
+Goodwill is the plug: what's left after allocating to identifiable assets:
 
 **PPA Summary**
 
@@ -218,7 +218,7 @@ note: "This amortization expense reduces GAAP net income but is non-cash"
 The inventory write-up flows through COGS when inventory is sold (usually in the first quarter after close):
 
 - One-time COGS increase of $15M
-- Non-recurring—adjust for when calculating "normalized" earnings
+- Non-recurring, so adjust for this when calculating "normalized" earnings
 
 **PP&E Step-Up**
 
@@ -253,7 +253,7 @@ Goodwill equals purchase price minus the fair value of net identifiable assets. 
 
 **"What's the difference between goodwill and other intangibles?"**
 
-Identifiable intangibles can be specifically identified and valued—things like customer relationships, patents, or trade names. They're amortized over their useful lives. Goodwill is the residual after allocating to everything identifiable. It's not amortized but tested annually for impairment. Goodwill captures synergies, assembled workforce, and any premium paid.
+Identifiable intangibles can be specifically identified and valued, such as customer relationships, patents, or trade names. They're amortized over their useful lives. Goodwill is the residual after allocating to everything identifiable. It's not amortized but tested annually for impairment. Goodwill captures synergies, assembled workforce, and any premium paid.
 
 **"Why do fair value adjustments create deferred taxes?"**
 

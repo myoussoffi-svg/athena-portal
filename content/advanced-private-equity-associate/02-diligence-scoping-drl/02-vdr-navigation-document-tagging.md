@@ -106,7 +106,7 @@ Lower-priority documents (e.g., office lease summaries, historical board minutes
 
 ### Tagging and Annotation Systems
 
-As you review documents, you will identify findings that need to be surfaced later—either in memos, diligence summaries, or IC discussions. Do not rely on memory.
+As you review documents, you will identify findings that need to be surfaced later, whether in memos, diligence summaries, or IC discussions. Do not rely on memory.
 
 Develop a tagging system that allows you to mark documents or sections with labels such as:
 - **Positive**: Supports thesis or reveals upside opportunity
@@ -194,7 +194,7 @@ If multiple people are reviewing the VDR, coordinate to avoid duplicated effort.
 
 - VDR navigation is not about reading everything; it is about knowing where to look, what to prioritize, and how to structure findings for rapid recall
 - Conduct a systematic first pass by mapping the VDR structure against your DRL and flagging high-priority gaps immediately
-- Prioritize documents based on thesis validation, risk assessment, model inputs, and time sensitivity—defer lower-priority materials
+- Prioritize documents based on thesis validation, risk assessment, model inputs, and time sensitivity, and defer lower-priority materials
 - Use a tagging and annotation system to mark key findings (Positive, Risk, Model Input, Follow-Up, IC-Relevant) so you do not have to re-read documents later
 - Escalate missing Tier 1 documents within hours, not days, and track VDR updates daily to ensure you are working with the latest information
 - Maintain a local diligence repository that mirrors the VDR but adds analytical layers (summaries, model inputs, follow-up drafts) for faster access and offline work

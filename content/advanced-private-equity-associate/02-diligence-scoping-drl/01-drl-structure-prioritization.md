@@ -114,7 +114,7 @@ High-risk, high-impact, early-timing items should be at the top of the DRL and f
 ## 5) Manage scope and pushback
 Management teams will push back. This is expected.
 
-Your job is not to win every request — it is to **protect decision quality**.
+Your job is not to win every request. It is to **protect decision quality**.
 
 When you get pushback:
 - Clarify the decision the request supports.

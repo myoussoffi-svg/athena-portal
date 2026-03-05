@@ -21,7 +21,7 @@ video:
 
 ### Why the Three Statements Matter in Interviews
 
-The three financial statements—the income statement, balance sheet, and cash flow statement—are foundational to investment banking. You'll be asked to explain them, walk through how they link, and use them to answer valuation and modeling questions. Interviewers expect fluency with these concepts.
+The three financial statements (the income statement, balance sheet, and cash flow statement) are foundational to investment banking. You'll be asked to explain them, walk through how they link, and use them to answer valuation and modeling questions. Interviewers expect fluency with these concepts.
 
 A strong understanding of the statements shows that you can read financial information, understand a company's performance, and think through how transactions affect each statement.
 
@@ -36,7 +36,7 @@ A strong understanding of the statements shows that you can read financial infor
 - **Operating Expenses**: Selling, general, and administrative (SG&A) expenses, R&D, etc.
 - **Operating Income (EBIT)**: Gross profit minus operating expenses
 - **Interest and Taxes**: Interest expense on debt and income taxes
-- **Net Income**: The bottom line—what's left after all expenses
+- **Net Income**: The bottom line, what's left after all expenses
 
 The income statement is built on the accrual basis of accounting, meaning revenue is recognized when earned (not when cash is received) and expenses when incurred (not when cash is paid). This distinction matters when linking to the cash flow statement.
 

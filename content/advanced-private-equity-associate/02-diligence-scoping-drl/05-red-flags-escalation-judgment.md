@@ -37,7 +37,7 @@ This work determines whether the deal narrative survives scrutiny. Done well, it
 
 Private equity diligence is not about finding reasons to say no. It is about understanding risks, quantifying them, and determining whether they can be priced or mitigated. However, some risks are severe enough to warrant immediate escalation or deal termination.
 
-Associates are the first line of defense in identifying red flags. You are closest to the data, reviewing documents in detail that VPs and principals may only skim. Missing a red flag—or failing to escalate it promptly—can result in:
+Associates are the first line of defense in identifying red flags. You are closest to the data, reviewing documents in detail that VPs and principals may only skim. Missing a red flag, or failing to escalate it promptly, can result in:
 - Investing in a business with undisclosed liabilities
 - Overpaying for a company with deteriorating fundamentals
 - Post-close surprises that destroy value creation plans
@@ -198,7 +198,7 @@ Some red flags reflect normal business challenges (operational issues, competiti
 - Key data points are withheld or provided only after repeated requests
 - Financial projections are disconnected from reality with no credible assumptions
 
-If you suspect misrepresentation, document the specific instances and escalate immediately. Do not attempt to "give the benefit of the doubt" on credibility issues—this is a decision for your VP or principal.
+If you suspect misrepresentation, document the specific instances and escalate immediately. Do not attempt to "give the benefit of the doubt" on credibility issues. This is a decision for your VP or principal.
 
 ### Managing False Positives: When Red Flags Resolve
 
@@ -227,7 +227,7 @@ Accelerate your learning by:
 - Building a mental library of "what red flags looked like" across deals
 - Discussing ambiguous cases with peers or mentors to calibrate judgment
 
-Over time, you will develop intuition for what matters and what does not—and that judgment is one of the most valuable skills a PE associate can build.
+Over time, you will develop intuition for what matters and what does not, and that judgment is one of the most valuable skills a PE associate can build.
 
 ## Video Placeholder
 
@@ -245,9 +245,9 @@ Over time, you will develop intuition for what matters and what does not—and t
 
 ## Key Takeaways
 
-- Red flag identification is a core associate responsibility—missing or failing to escalate a material risk can lead to bad investments or post-close value destruction
-- Red flags fall into five categories: financial, commercial, operational, legal/compliance, and credibility/integrity—each requires different assessment and response
-- Evaluate severity by considering magnitude, likelihood, controllability, and timing—not every red flag kills a deal, but deal-breakers require immediate escalation
+- Red flag identification is a core associate responsibility. Missing or failing to escalate a material risk can lead to bad investments or post-close value destruction
+- Red flags fall into five categories: financial, commercial, operational, legal/compliance, and credibility/integrity, and each requires different assessment and response
+- Evaluate severity by considering magnitude, likelihood, controllability, and timing. Not every red flag kills a deal, but deal-breakers require immediate escalation
 - Follow a disciplined escalation protocol: verify the flag, assess severity, draft a clear message with implications and recommended next steps, and escalate promptly
 - Distinguish between operational challenges (manageable with transparency and action plans) and misrepresentation (credibility concerns that may be deal-breakers)
 - Document resolutions when red flags turn out to be false positives, and build judgment over time by reviewing post-mortems and seeking feedback on escalations

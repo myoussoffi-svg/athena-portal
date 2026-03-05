@@ -160,12 +160,12 @@ A downside case stress-tests key assumptions.
 
 ## Key Takeaways
 
-- IC approves deals with risks, not deals where risks are hidden or minimized—effective risk framing identifies, quantifies, and proposes credible mitigants for all material risks
+- IC approves deals with risks, not deals where risks are hidden or minimized. Effective risk framing identifies, quantifies, and proposes credible mitigants for all material risks
 - Categorize risks (commercial, financial, operational, legal/regulatory, macro) and document likelihood, impact, mitigant, and residual risk for each
 - Quantify risk impact in financial terms ($M EBITDA, % of enterprise value) to enable downside modeling and valuation adjustments
-- Credible mitigants have specific actions, assigned ownership, funded resources, and track records—aspirational mitigants are vague, unfunded, or unproven and will be rejected by IC
-- Build downside scenarios that stress-test key assumptions (revenue growth, margins, churn) and calculate resulting returns—if downside returns meet hurdles, deal has downside protection
-- Present risks to IC with professional, fact-based, solution-oriented tone—acknowledge risks, quantify them, present mitigants, and demonstrate downside is acceptable
+- Credible mitigants have specific actions, assigned ownership, funded resources, and track records. Aspirational mitigants are vague, unfunded, or unproven and will be rejected by IC
+- Build downside scenarios that stress-test key assumptions (revenue growth, margins, churn) and calculate resulting returns. If downside returns meet hurdles, deal has downside protection
+- Present risks to IC with professional, fact-based, solution-oriented tone. Acknowledge risks, quantify them, present mitigants, and demonstrate downside is acceptable
 
 ## Synthesis
 - What would change your mind based on new data?

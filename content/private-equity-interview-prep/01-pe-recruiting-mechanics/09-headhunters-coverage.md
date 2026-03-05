@@ -41,7 +41,7 @@ Amity Search Partners covers middle market and growth equity opportunities, with
 
 Dynamics Search Partners focuses on middle market and lower middle market PE, providing access to firms that may not work with the mega-fund headhunters.
 
-Numerous boutique firms and individual recruiters cover specific segments, industries, or geographic markets. If you are targeting a particular niche—healthcare PE, for example, or funds in a specific region—identifying specialized headhunters becomes important.
+Numerous boutique firms and individual recruiters cover specific segments, industries, or geographic markets. If you are targeting a particular niche (healthcare PE, for example, or funds in a specific region), identifying specialized headhunters becomes important.
 
 Growth equity recruiting has its own headhunter ecosystem, with some overlap with PE but also distinct players who focus on the growth equity space.
 
@@ -67,7 +67,7 @@ Headhunter competition can benefit candidates. When multiple recruiters cover si
 
 Relationships evolve over time. A headhunter who was dominant in placing associates at a particular firm five years ago may have lost that relationship. The landscape shifts, and current intelligence about who covers whom is valuable.
 
-What seniors observe is that candidates who navigate this complexity thoughtfully—understanding which relationships matter for their targets and prioritizing accordingly—achieve better outcomes than those who approach headhunters generically.
+What seniors observe is that candidates who navigate this complexity thoughtfully, understanding which relationships matter for their targets and prioritizing accordingly, achieve better outcomes than those who approach headhunters generically.
 
 ## Practical Guidance for Engagement
 

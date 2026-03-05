@@ -183,11 +183,11 @@ Seller claims buyer breached a condition precedent; refuses to close.
 
 ## Key Takeaways
 
-- Closing is the day ownership transfers, funds are wired, and documents are executed—typically 30–90 days after SPA signing
+- Closing is the day ownership transfers, funds are wired, and documents are executed, typically 30–90 days after SPA signing
 - Closing conditions precedent (reps remain true, no MAC, financing in place, regulatory approvals) must be satisfied before funds are released
 - Maintain comprehensive closing checklist tracking seller deliverables (resignations, corporate resolutions, IP assignments) and buyer deliverables (purchase price, financing docs)
 - Wire sequence must be coordinated simultaneously: Lender funds buyer, buyer wires to seller/escrow/payoffs/advisors, seller confirms receipt, documents execute
-- Initiate wires before bank cutoff (typically 2–3 PM) to avoid one-day closing delay—common issues include delayed lender funding, missing signatures, and wire errors
+- Initiate wires before bank cutoff (typically 2–3 PM) to avoid one-day closing delay. Common issues include delayed lender funding, missing signatures, and wire errors
 - Post-closing deliverables include distributing executed documents, filing UCC statements, recording title transfers, and finalizing working capital adjustments within 60–90 days
 
 ## Synthesis

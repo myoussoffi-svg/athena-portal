@@ -118,7 +118,7 @@ The mid-year convention increases present value by approximately (1 + WACC)^0.5,
 
 **Terminal Value and Mid-Year**: When applying mid-year convention to terminal value, the discount period is typically N - 0.5 (if terminal value is calculated at end of year N based on year N+1 cash flow) or the standard convention for exit multiples.
 
-**When to Use**: Most investment banking DCF models use the mid-year convention. However, be consistent—if you use mid-year for projected cash flows, apply the same logic to terminal value discounting.
+**When to Use**: Most investment banking DCF models use the mid-year convention. However, be consistent: if you use mid-year for projected cash flows, apply the same logic to terminal value discounting.
 
 ### Step 4: Sum to Get Enterprise Value
 

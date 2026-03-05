@@ -13,7 +13,7 @@ Preparation for PE recruiting is not something you can compress into a few weeks
 
 Effective PE recruiting preparation rests on three pillars: technical mastery, narrative development, and relationship cultivation. Each pillar requires sustained attention, and weakness in any area can undermine an otherwise strong candidacy.
 
-Technical mastery encompasses LBO modeling, valuation, accounting, and the ability to think critically about investments. This is the foundation—without it, you will not survive technical interviews regardless of how polished your other attributes may be.
+Technical mastery encompasses LBO modeling, valuation, accounting, and the ability to think critically about investments. This is the foundation. Without it, you will not survive technical interviews regardless of how polished your other attributes may be.
 
 Narrative development involves crafting compelling answers to core interview questions: why PE, why this firm, why you. Your narrative must be authentic, specific, and demonstrate genuine understanding of what PE work entails.
 
@@ -29,7 +29,7 @@ Beyond the mechanics, develop intuition about what drives LBO returns. How does 
 
 Valuation skills carry over from banking but require sharpening for PE contexts. Be prepared to discuss enterprise value versus equity value, comparable company analysis, precedent transactions, and DCF. Understand how these methods relate to LBO analysis and how PE firms think about valuation in an acquisition context.
 
-Accounting knowledge must be strong. PE interviews frequently probe accounting fundamentals—revenue recognition, working capital, deferred taxes, goodwill impairment. Weaknesses here suggest you may not have the foundation needed for rigorous diligence.
+Accounting knowledge must be strong. PE interviews frequently probe accounting fundamentals: revenue recognition, working capital, deferred taxes, goodwill impairment. Weaknesses here suggest you may not have the foundation needed for rigorous diligence.
 
 What seniors listen for in technical discussions is not rote memorization but fluent understanding. Can you explain concepts clearly? Can you handle variations and edge cases? Can you connect technical elements to investment implications?
 
@@ -43,11 +43,11 @@ The "why now" question addresses timing. Why are you recruiting at this point in
 
 The "why this firm" answer requires homework. Research the firms you are targeting. Understand their investment strategy, portfolio companies, team composition, and culture. Reference specific deals, speak to people at the firm if possible, and articulate genuine reasons for your interest. Generic answers that could apply to any firm signal lack of preparation.
 
-The "why you" narrative weaves together your experiences, skills, and attributes to explain why you are the right candidate. Draw on specific deal experiences, technical skills you have demonstrated, and qualities that make you effective in demanding environments. Be concrete—vague claims about work ethic or analytical ability are unconvincing without evidence.
+The "why you" narrative weaves together your experiences, skills, and attributes to explain why you are the right candidate. Draw on specific deal experiences, technical skills you have demonstrated, and qualities that make you effective in demanding environments. Be concrete. Vague claims about work ethic or analytical ability are unconvincing without evidence.
 
 ## Relationship Cultivation: Long-Term Investment
 
-Relationships in PE recruiting serve multiple purposes. They provide access—many opportunities flow through networks rather than formal channels. They provide information—insights about firm culture, interview processes, and what teams are looking for. They provide advocates—people who can vouch for you and push your candidacy internally.
+Relationships in PE recruiting serve multiple purposes. They provide access, as many opportunities flow through networks rather than formal channels. They provide information, including insights about firm culture, interview processes, and what teams are looking for. They provide advocates: people who can vouch for you and push your candidacy internally.
 
 Start building relationships early, before you need them. Reach out to PE professionals in your network: alumni, former colleagues, friends. Express genuine curiosity about their work rather than immediately asking for help with recruiting. These early conversations build rapport that becomes valuable later.
 
@@ -55,7 +55,7 @@ Headhunter relationships are also investments. A headhunter who knows you well w
 
 Banking colleagues provide another relationship channel. Senior bankers often have PE relationships and can make introductions. Strong performance and good relationships within your bank create opportunities for these connections.
 
-What seniors observe when evaluating candidates is whether relationships are genuine or transactional. PE is a relationship business—they are assessing whether you can build connections authentically. Relationships cultivated solely for recruiting purposes often feel hollow and fail to provide the support you need.
+What seniors observe when evaluating candidates is whether relationships are genuine or transactional. PE is a relationship business, and they are assessing whether you can build connections authentically. Relationships cultivated solely for recruiting purposes often feel hollow and fail to provide the support you need.
 
 ## Timing Your Preparation
 
@@ -71,4 +71,4 @@ Throughout this process, continue performing well in banking. Your work performa
 
 ## Key Takeaways
 
-PE preparation rests on technical mastery, narrative development, and relationship cultivation. Technical skills require depth, not just breadth—you must be able to execute under pressure. Narratives must be authentic and specific, reflecting genuine motivation and demonstrating firm-specific knowledge. Relationships built early, before you need them, provide access, information, and advocacy. Begin preparation immediately and intensify over time, recognizing that this is a months-long investment, not a short-term sprint.
+PE preparation rests on technical mastery, narrative development, and relationship cultivation. Technical skills require depth, not just breadth, and you must be able to execute under pressure. Narratives must be authentic and specific, reflecting genuine motivation and demonstrating firm-specific knowledge. Relationships built early, before you need them, provide access, information, and advocacy. Begin preparation immediately and intensify over time, recognizing that this is a months-long investment, not a short-term sprint.

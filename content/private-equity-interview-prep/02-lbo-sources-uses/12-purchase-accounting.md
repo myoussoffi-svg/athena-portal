@@ -20,7 +20,7 @@ estimated_minutes: 30
 
 When a private equity sponsor acquires a company, accounting rules require revaluing the target's assets and liabilities to fair value on the acquisition date. This process, governed by ASC 805 (Business Combinations), creates a new basis of accounting that reflects what the acquirer actually paid for each component of value.
 
-Purchase accounting matters for LBO modeling because it determines the opening balance sheet—the starting point for all projections. It affects depreciation and amortization going forward, which impacts taxable income and net income. And it creates goodwill, which appears prominently on the balance sheet and may be subject to impairment testing.
+Purchase accounting matters for LBO modeling because it determines the opening balance sheet, the starting point for all projections. It affects depreciation and amortization going forward, which impacts taxable income and net income. And it creates goodwill, which appears prominently on the balance sheet and may be subject to impairment testing.
 
 Understanding purchase accounting demonstrates technical sophistication. Many interview candidates can calculate IRR, but fewer can articulate how purchase accounting adjustments flow through the financial statements.
 
@@ -34,9 +34,9 @@ Or rearranged:
 
 **Goodwill = Purchase Price - Fair Value of Identifiable Net Assets**
 
-The acquirer must allocate the purchase price to each identifiable asset and liability at its fair value. Whatever remains after this allocation is goodwill—the residual premium paid beyond the fair value of what was acquired.
+The acquirer must allocate the purchase price to each identifiable asset and liability at its fair value. Whatever remains after this allocation is goodwill, the residual premium paid beyond the fair value of what was acquired.
 
-"Identifiable" means the asset or liability can be separated from the business (sold, licensed, transferred) or arises from contractual or legal rights. Goodwill, by contrast, is not separable—it represents synergies, assembled workforce, going concern value, and other intangible benefits of the acquisition.
+"Identifiable" means the asset or liability can be separated from the business (sold, licensed, transferred) or arises from contractual or legal rights. Goodwill, by contrast, is not separable. It represents synergies, assembled workforce, going concern value, and other intangible benefits of the acquisition.
 
 ### Step 1: Identify Existing Assets and Liabilities
 
@@ -76,7 +76,7 @@ Each asset and liability is adjusted to fair value. Common adjustments include:
 - Backlog and contracts
 - Non-compete agreements
 
-**Deferred Revenue:** If the target has deferred revenue (customer prepayments for future services), fair value may differ from book value. The fair value of assumed liabilities reflects only the cost to fulfill the obligation plus a reasonable margin—not the full revenue amount. This often creates a "haircut" to deferred revenue, which affects post-acquisition revenue recognition.
+**Deferred Revenue:** If the target has deferred revenue (customer prepayments for future services), fair value may differ from book value. The fair value of assumed liabilities reflects only the cost to fulfill the obligation plus a reasonable margin, not the full revenue amount. This often creates a "haircut" to deferred revenue, which affects post-acquisition revenue recognition.
 
 **Debt:** If the target has below-market debt (issued when rates were lower), it is recorded at fair value, which may be lower than face value. If debt is above-market, fair value exceeds face value.
 
@@ -185,4 +185,4 @@ Inventory write-ups, PP&E revaluations, and most importantly, recognition of int
 - Common adjustments include inventory write-ups, PP&E revaluations, and recognition of customer relationships, technology, and trade names
 - Fair value adjustments create deferred tax liabilities (when FV > tax basis) or assets (when tax basis > FV)
 - New intangible assets create amortization expense that reduces taxable income and net income but does not affect cash flow
-- The deferred revenue haircut reduces post-acquisition revenue recognition—a common issue in subscription businesses
+- The deferred revenue haircut reduces post-acquisition revenue recognition, a common issue in subscription businesses

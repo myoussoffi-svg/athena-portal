@@ -23,7 +23,7 @@ video:
 
 **Precedent transaction analysis (precedent transactions or transaction comps)** values a company based on the prices paid in recent M&A transactions involving comparable companies.
 
-Unlike trading comps, which reflect minority stake valuations based on public market trading, precedent transactions reflect **control premiums**—the additional amount buyers pay to acquire 100% of a company and gain control.
+Unlike trading comps, which reflect minority stake valuations based on public market trading, precedent transactions reflect **control premiums**, the additional amount buyers pay to acquire 100% of a company and gain control.
 
 Precedent transactions are commonly used in M&A contexts to establish a valuation range and justify offer prices.
 

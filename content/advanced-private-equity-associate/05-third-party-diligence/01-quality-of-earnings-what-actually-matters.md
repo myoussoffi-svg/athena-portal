@@ -303,7 +303,7 @@ Management response: "The rent is market; we have a third-party appraisal."
 
 ## Key Takeaways
 
-- QofE assesses the sustainability and quality of earnings, not just GAAP compliance—it protects valuation by identifying non-recurring or low-quality EBITDA
+- QofE assesses the sustainability and quality of earnings, not just GAAP compliance. It protects valuation by identifying non-recurring or low-quality EBITDA
 - Focus on material adjustments (>5% of EBITDA), directional patterns (multiple deductions suggest risk), and controversial items (management likely to dispute)
 - Watch for red flags including aggressive revenue recognition, excessive add-backs, working capital manipulation, undisclosed liabilities, and management disputes of all findings
 - Scope the QofE engagement by flagging known issues, prioritizing focus areas based on thesis, and confirming timeline aligns with IC schedule

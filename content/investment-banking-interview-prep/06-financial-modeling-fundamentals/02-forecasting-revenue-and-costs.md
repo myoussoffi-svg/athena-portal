@@ -18,7 +18,7 @@ estimated_minutes: 40
 
 ### The Goal of Forecasting
 
-Forecasting isn't about predicting the future perfectly—it's about building a reasonable base case and understanding how changes in assumptions affect outcomes. A good forecast is:
+Forecasting isn't about predicting the future perfectly. It's about building a reasonable base case and understanding how changes in assumptions affect outcomes. A good forecast is:
 
 - **Grounded in historical performance**: Past results inform future expectations
 - **Consistent with industry dynamics**: Growth rates and margins should make sense for the sector
@@ -106,10 +106,10 @@ steps:
   - "Year 4 Revenue: $572M x 1.05 = $601M (5.0% growth)"
   - "Year 5 Revenue: $601M x 1.04 = $625M (4.0% growth)"
 result: "Year 5 Revenue = $625M"
-note: "Growth decelerates over time—common for maturing businesses."
+note: "Growth decelerates over time, which is common for maturing businesses."
 ```
 
-Notice growth decelerates over time—common for maturing businesses.
+Notice growth decelerates over time, which is common for maturing businesses.
 
 ### Cost Forecasting: Fixed vs. Variable
 

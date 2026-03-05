@@ -121,7 +121,7 @@ If a mezzanine lender invests $50M with 10% cash + 4% PIK + warrants worth $10M 
 - Total return: $25M cash + $61M principal + $10M = $96M on $50M invested
 - MOIC: 1.9×, IRR: ~14%
 
-This blended return (between debt and equity) is why mezzanine is called "mezz"—it sits in the middle of the capital structure.
+This blended return (between debt and equity) is why mezzanine is called "mezz," because it sits in the middle of the capital structure.
 
 ### Secured vs. Unsecured
 

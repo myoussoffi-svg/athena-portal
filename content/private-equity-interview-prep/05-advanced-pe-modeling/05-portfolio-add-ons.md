@@ -18,7 +18,7 @@ estimated_minutes: 40
 
 ### The Value Creation Power of Add-ons
 
-Buy-and-build strategies have become central to private equity value creation. Rather than simply improving a single company's operations, sponsors acquire a "platform" and then make smaller "add-on" acquisitions to build scale, expand capabilities, and achieve consolidation economics. Understanding how to model add-ons—and how they transform returns—is essential knowledge.
+Buy-and-build strategies have become central to private equity value creation. Rather than simply improving a single company's operations, sponsors acquire a "platform" and then make smaller "add-on" acquisitions to build scale, expand capabilities, and achieve consolidation economics. Understanding how to model add-ons, and how they transform returns, is essential knowledge.
 
 When a partner tells you to "add the tuck-in to the model and show me how it affects returns," you need to execute precisely and explain the drivers clearly.
 
@@ -26,7 +26,7 @@ When a partner tells you to "add the tuck-in to the model and show me how it aff
 
 The strategy begins with a platform acquisition: a company with strong management, scalable infrastructure, and positioning in a fragmented market. The platform might have $50 million of EBITDA and trade at 10x, but smaller competitors with $5-15 million of EBITDA might transact at 6-7x because they lack scale, management depth, or buyer interest.
 
-The arbitrage is straightforward. If the platform acquires a $10 million EBITDA company at 6x ($60 million), the combined $60 million EBITDA entity is worth $600 million at the platform's 10x multiple—even with zero synergies. The add-on's multiple effectively expands from 6x to 10x simply by being part of the larger platform.
+The arbitrage is straightforward. If the platform acquires a $10 million EBITDA company at 6x ($60 million), the combined $60 million EBITDA entity is worth $600 million at the platform's 10x multiple, even with zero synergies. The add-on's multiple effectively expands from 6x to 10x simply by being part of the larger platform.
 
 This multiple arbitrage is compelling, but modeling it correctly requires careful treatment of timing, financing, and synergies.
 
@@ -54,7 +54,7 @@ Synergies create additional value beyond the sum of standalone businesses. Your 
 
 **Integration costs** must offset synergy benefits. Achieving $5 million of annual cost synergies might require $10 million of one-time integration spending for severance, systems conversion, and facility consolidation. Your model should capture both the costs and the timing of synergy realization.
 
-Continuing the example: if the add-on generates $3 million of annual cost synergies (15% synergy capture on $20 million of combined overhead), consolidated EBITDA becomes $63 million by Year 3. At a 10x exit multiple, that is $630 million of enterprise value versus $600 million without synergies—a $30 million value uplift against $3 million of ongoing synergy benefit.
+Continuing the example: if the add-on generates $3 million of annual cost synergies (15% synergy capture on $20 million of combined overhead), consolidated EBITDA becomes $63 million by Year 3. At a 10x exit multiple, that is $630 million of enterprise value versus $600 million without synergies, a $30 million value uplift against $3 million of ongoing synergy benefit.
 
 ### Roll-up Economics and Returns Impact
 
@@ -102,6 +102,6 @@ Your model must reflect the financing mix for each add-on and its impact on cons
 
 - Add-on acquisitions create value through multiple arbitrage, synergies, and scale benefits, potentially transforming platform returns
 - Model add-ons with full sources and uses, partial-period contributions, and explicit synergy timing and integration costs
-- Synergies should be modeled conservatively—cost synergies are more reliable than revenue synergies, and integration costs must be captured
+- Synergies should be modeled conservatively. Cost synergies are more reliable than revenue synergies, and integration costs must be captured
 - Roll-up strategies compound value creation but also compound execution risk; stress test integration delays and synergy shortfalls
-- Financing add-ons through DDTLs, incremental facilities, or platform cash flow affects leverage and returns differently—model each source appropriately
+- Financing add-ons through DDTLs, incremental facilities, or platform cash flow affects leverage and returns differently, so model each source appropriately

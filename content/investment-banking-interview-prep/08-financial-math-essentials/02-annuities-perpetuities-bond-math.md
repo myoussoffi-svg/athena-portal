@@ -65,7 +65,7 @@ The (1 + r) adjustment accounts for one extra period of compounding/discounting.
 
 ### Perpetuities
 
-A **perpetuity** is an annuity that continues forever—payments never stop.
+A **perpetuity** is an annuity that continues forever. Payments never stop.
 
 **Present Value of a Perpetuity**:
 
@@ -169,7 +169,7 @@ The first term is the PV of the coupon annuity; the second is the PV of the prin
 
 **YTM** is the discount rate that makes the present value of a bond's cash flows equal to its current price. It represents the total return if held to maturity.
 
-There's no closed-form solution—YTM must be solved iteratively or using a financial calculator.
+There's no closed-form solution; YTM must be solved iteratively or using a financial calculator.
 
 **Example**: Bond priced at $950, 5% coupon, 5 years to maturity, $1,000 face value
 

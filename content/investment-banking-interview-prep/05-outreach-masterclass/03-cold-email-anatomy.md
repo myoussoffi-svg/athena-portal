@@ -54,7 +54,7 @@ Who you are and why you're reaching out. Keep it tight.
 
 **3. The ask (1 sentence)**
 
-What you want—typically a 15-20 minute phone call.
+What you want: typically a 15-20 minute phone call.
 
 **4. Easy out (1 sentence)**
 
@@ -89,7 +89,7 @@ Total length: 5-7 sentences. If your email is longer than this, cut it.
 
 - Generic subject line
 - Opens with "My name is..." (wastes the first sentence)
-- Too long—takes 30 seconds to read
+- Too long, takes 30 seconds to read
 - No specific connection mentioned
 - Vague about what they actually want
 - Excessive gratitude sounds desperate
@@ -104,7 +104,7 @@ Total length: 5-7 sentences. If your email is longer than this, cut it.
 >
 > Would you have 15-20 minutes for a quick call in the next few weeks? I'd love to hear about your experience in the group and any advice for someone going through recruiting.
 >
-> Totally understand if your schedule doesn't allow—I know things get busy. Either way, thanks for reading this.
+> Totally understand if your schedule doesn't allow. I know things get busy. Either way, thanks for reading this.
 >
 > Best,
 > Alex Thompson
@@ -131,7 +131,7 @@ Total length: 5-7 sentences. If your email is longer than this, cut it.
 >
 > Would you have 15-20 minutes in the next couple weeks for a quick call? I'd appreciate any perspective on your experience in [Group] and the recruiting process.
 >
-> Completely understand if you're too busy—I know how demanding the job is. Thanks either way.
+> Completely understand if you're too busy. I know how demanding the job is. Thanks either way.
 >
 > Best,
 > [Your Name]
@@ -143,7 +143,7 @@ Total length: 5-7 sentences. If your email is longer than this, cut it.
 >
 > Hi [First Name],
 >
-> [Referrer Name] suggested I reach out—we spoke last week about their experience at [Bank], and they mentioned you'd be a great person to talk to about [specific topic].
+> [Referrer Name] suggested I reach out. We spoke last week about their experience at [Bank], and they mentioned you'd be a great person to talk to about [specific topic].
 >
 > I'm a [year] at [University] recruiting for IB and am especially interested in [relevant area]. Would you have 15 minutes for a quick call?
 >
@@ -169,13 +169,13 @@ Total length: 5-7 sentences. If your email is longer than this, cut it.
 
 **Template 4: Pure cold outreach (no shared connection)**
 
-Sometimes you won't have any obvious commonality with a contact—no shared school, hometown, or mutual connection. That's fine. You can still reach out effectively by focusing on genuine interest in their specific group or background.
+Sometimes you won't have any obvious commonality with a contact: no shared school, hometown, or mutual connection. That's fine. You can still reach out effectively by focusing on genuine interest in their specific group or background.
 
 > Subject: [Your University] Junior - Question About [Bank] [Group]
 >
 > Hi [First Name],
 >
-> I came across your profile while researching [Group] at [Bank] and noticed your background in [something specific from their LinkedIn—previous company, deal experience, or career path]. I'm a [year] at [University] recruiting for IB summer positions and am particularly interested in [relevant sector or group].
+> I came across your profile while researching [Group] at [Bank] and noticed your background in [something specific from their LinkedIn, such as a previous company, deal experience, or career path]. I'm a [year] at [University] recruiting for IB summer positions and am particularly interested in [relevant sector or group].
 >
 > Would you have 15-20 minutes for a quick call? I'd appreciate hearing about your experience in [Group] and any perspective on recruiting.
 >
@@ -194,9 +194,9 @@ Sometimes you won't have any obvious commonality with a contact—no shared scho
 
 ### A Note on Commonality
 
-The templates above emphasize shared connections—alumni networks, referrals, hometown, etc.—because these increase response rates. A shared background gives the recipient a reason to help you beyond pure goodwill.
+The templates above emphasize shared connections (alumni networks, referrals, hometown, etc.) because these increase response rates. A shared background gives the recipient a reason to help you beyond pure goodwill.
 
-However, **commonality is preferred, not required.** Don't avoid reaching out to someone just because you can't find a shared connection. A well-crafted cold email to someone with no obvious link to you will still get responses—just at a lower rate than warm outreach.
+However, **commonality is preferred, not required.** Don't avoid reaching out to someone just because you can't find a shared connection. A well-crafted cold email to someone with no obvious link to you will still get responses, just at a lower rate than warm outreach.
 
 The math still works: if your alumni emails get 20% response rates and pure cold emails get 10%, sending cold emails is still worthwhile. You're not limited to people who share your background. Cast a wide net, prioritize warm connections when possible, and don't let the absence of commonality stop you from reaching out.
 
@@ -238,12 +238,12 @@ Use a professional email address. firstname.lastname@ or firstnamelastname@ are 
 
 - Most responses come within 48-72 hours
 - If no response after one week, you can follow up
-- Some people respond weeks later—this is normal
+- Some people respond weeks later. This is normal
 
 ## Key Takeaways
 
 - Your email has one job: get a response that leads to a conversation
-- Keep emails to 5-7 sentences—open with your connection, state your background briefly, make a clear ask
+- Keep emails to 5-7 sentences: open with your connection, state your background briefly, make a clear ask
 - Subject lines should be specific: include your school, your ask, and something relevant to them
 - Use the "easy out" to reduce pressure and increase response rates
 - Avoid resume dumps, excessive flattery, vague asks, and desperate tones

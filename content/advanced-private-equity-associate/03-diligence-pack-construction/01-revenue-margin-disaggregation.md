@@ -260,9 +260,9 @@ These metrics provide deeper insight into sustainability and scalability of each
 - Disaggregated revenue and margin analysis reveals underlying business drivers, risk concentrations, and sustainability of performance that consolidated financials obscure
 - Select disaggregation dimensions (product, customer, geography, channel) based on the investment thesis and operational reality of the business
 - Request granular data in the DRL and structure it systematically into summary tables showing revenue, growth rates, margins, and contribution to total performance
-- Build margin bridges to explain period-over-period changes by isolating volume, price, mix, and cost effects—this determines whether margin expansion is sustainable
+- Build margin bridges to explain period-over-period changes by isolating volume, price, mix, and cost effects. This determines whether margin expansion is sustainable
 - Identify and resolve data quality issues (inconsistent definitions, reconciliation gaps, missing periods) that undermine analysis credibility
-- Link every disaggregation insight to thesis validation, risk quantification, or value creation opportunities—analysis must inform investment decisions, not just describe data
+- Link every disaggregation insight to thesis validation, risk quantification, or value creation opportunities. Analysis must inform investment decisions, not just describe data
 - Structure outputs (executive summary, tables, charts, margin bridges, key findings) that enable IC members to understand business composition without re-analyzing raw data
 
 ## Synthesis

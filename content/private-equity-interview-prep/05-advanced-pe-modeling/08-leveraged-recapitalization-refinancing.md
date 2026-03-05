@@ -19,7 +19,7 @@ estimated_minutes: 35
 
 ### Beyond the Dividend Recap
 
-You have already seen how dividend recapitalizations work: raise incremental debt, pay a special dividend, boost IRR through early cash return. But dividend recaps are only one form of leveraged recapitalization. A full leveraged refinancing replaces the entire existing debt structure with new facilities—different tranches, different rates, different amortization, different covenants. This is a fundamentally more complex transaction and a more powerful tool in the sponsor's capital structure playbook.
+You have already seen how dividend recapitalizations work: raise incremental debt, pay a special dividend, boost IRR through early cash return. But dividend recaps are only one form of leveraged recapitalization. A full leveraged refinancing replaces the entire existing debt structure with new facilities: different tranches, different rates, different amortization, different covenants. This is a fundamentally more complex transaction and a more powerful tool in the sponsor's capital structure playbook.
 
 Understanding the difference matters because your model changes significantly. A dividend recap adds a new debt tranche on top of existing facilities. A refinancing tears out the old facilities entirely and replaces them, potentially altering every line of your debt schedule from the refinancing date forward.
 
@@ -35,17 +35,17 @@ Refinancings are driven by a combination of market conditions and strategic obje
 
 **Incremental capacity**: The improved credit profile supports higher total leverage. The sponsor refinances the existing $500 million at better terms and raises an additional $100 million, either for a dividend, an add-on acquisition, or growth investment.
 
-**Covenant relief**: The existing credit agreement may have restrictive covenants that limit the company's ability to execute its value creation plan. Refinancing into a covenant-lite structure provides operational flexibility—particularly relevant if the sponsor plans acquisitions or significant capital expenditure.
+**Covenant relief**: The existing credit agreement may have restrictive covenants that limit the company's ability to execute its value creation plan. Refinancing into a covenant-lite structure provides operational flexibility, particularly relevant if the sponsor plans acquisitions or significant capital expenditure.
 
 ### Modeling a Full Refinancing
 
 When you model a refinancing, you must handle several transitions simultaneously.
 
-**Step 1 — Retire the old debt**: On the refinancing date, all existing facilities are repaid in full. Calculate any prepayment penalties or call premiums. A typical first lien term loan might have 1-2% call protection in the first year, declining to par thereafter. Second lien and mezzanine often carry higher and longer call protection—2% in year one, 1% in year two, callable at par in year three. These penalties are real cash costs that reduce the net benefit of refinancing.
+**Step 1 - Retire the old debt**: On the refinancing date, all existing facilities are repaid in full. Calculate any prepayment penalties or call premiums. A typical first lien term loan might have 1-2% call protection in the first year, declining to par thereafter. Second lien and mezzanine often carry higher and longer call protection (2% in year one, 1% in year two, callable at par in year three). These penalties are real cash costs that reduce the net benefit of refinancing.
 
-**Step 2 — Issue new facilities**: Model the new debt structure from the refinancing date forward. New tranches will have different principal amounts, interest rates, amortization schedules, and maturity dates. Include OID and arrangement fees on the new facilities. These are typically 1-3% of committed amounts and represent upfront costs that must be factored into the break-even analysis.
+**Step 2 - Issue new facilities**: Model the new debt structure from the refinancing date forward. New tranches will have different principal amounts, interest rates, amortization schedules, and maturity dates. Include OID and arrangement fees on the new facilities. These are typically 1-3% of committed amounts and represent upfront costs that must be factored into the break-even analysis.
 
-**Step 3 — Calculate the net cash impact**: The refinancing may be cash-neutral (new debt equals old debt), cash-generative (new debt exceeds old debt, with excess used for a dividend or investment), or cash-consumptive (new debt is less than old debt plus fees and penalties, requiring a cash contribution).
+**Step 3 - Calculate the net cash impact**: The refinancing may be cash-neutral (new debt equals old debt), cash-generative (new debt exceeds old debt, with excess used for a dividend or investment), or cash-consumptive (new debt is less than old debt plus fees and penalties, requiring a cash contribution).
 
 New debt proceeds: $600M
 Less: Repayment of old debt: ($500M)
@@ -54,13 +54,13 @@ Less: OID on new debt (2%): ($12M)
 Less: Arrangement fees: ($6M)
 Net excess cash: $77M (available for dividend or reinvestment)
 
-**Step 4 — Update projections**: From the refinancing date forward, your model reflects the new debt terms. Interest expense changes, amortization schedules change, covenant tests reference the new agreement. Everything before the refinancing date remains unchanged.
+**Step 4 - Update projections**: From the refinancing date forward, your model reflects the new debt terms. Interest expense changes, amortization schedules change, covenant tests reference the new agreement. Everything before the refinancing date remains unchanged.
 
-**Step 5 — Adjust the returns calculation**: IRR now reflects the initial equity investment, any interim cash receipts (including a dividend from refinancing excess), and exit proceeds calculated using the new debt balances. If the refinancing generates a dividend, model it as a positive cash flow to equity in the refinancing period.
+**Step 5 - Adjust the returns calculation**: IRR now reflects the initial equity investment, any interim cash receipts (including a dividend from refinancing excess), and exit proceeds calculated using the new debt balances. If the refinancing generates a dividend, model it as a positive cash flow to equity in the refinancing period.
 
 ### Amortization Schedule Transitions
 
-One of the trickiest modeling aspects is the amortization schedule transition. The old debt had its own amortization—perhaps 1% per annum mandatory repayment plus a cash sweep. The new debt may have different terms.
+One of the trickiest modeling aspects is the amortization schedule transition. The old debt had its own amortization, perhaps 1% per annum mandatory repayment plus a cash sweep. The new debt may have different terms.
 
 Common structures for refinancing facilities:
 
@@ -79,7 +79,7 @@ Your model should use switches or flags to toggle between pre-refinancing and po
 
 ### Repricing vs. Refinancing
 
-A repricing is a simpler cousin of a refinancing. Rather than replacing the entire facility, the borrower negotiates a lower spread on the existing term loan. The principal, maturity, and covenants remain unchanged—only the interest rate drops.
+A repricing is a simpler cousin of a refinancing. Rather than replacing the entire facility, the borrower negotiates a lower spread on the existing term loan. The principal, maturity, and covenants remain unchanged. Only the interest rate drops.
 
 Repricings are common when credit markets tighten and borrowers have leverage to demand better terms. The mechanics are simple: the lender agrees to a spread reduction (or the borrower threatens to refinance with a competitor), and the going-forward interest expense decreases. There is typically a small fee (25-50 basis points) but no OID or significant transaction costs.
 
@@ -94,13 +94,13 @@ Not every refinancing makes economic sense. The savings from lower rates must ex
 **Transaction costs**: Call premium + OID + arrangement fees + legal/advisory
 **Break-even period**: Transaction costs ÷ annual interest savings
 
-If total savings exceed transaction costs, the refinancing creates value. But consider the hold period—if you plan to exit in 12 months, refinancing costs may not be recovered.
+If total savings exceed transaction costs, the refinancing creates value. But consider the hold period. If you plan to exit in 12 months, refinancing costs may not be recovered.
 
 **Example**: $500M term loan, spread reduction of 100bps, 3 years to exit.
 - Annual savings: $5M
 - Total savings: $15M
 - Costs: $5M call premium + $10M OID + $3M fees = $18M
-- Net value: ($3M) — the refinancing destroys value because the hold period is too short
+- Net value: ($3M) - the refinancing destroys value because the hold period is too short
 
 Change the exit to 5 years and total savings reach $25M against $18M of costs. Now it makes sense.
 
@@ -127,13 +127,13 @@ This is the full leveraged recapitalization. In your model, it combines all the 
 
 **"What is the difference between a repricing and a refinancing?"**
 
-"A repricing adjusts the interest rate on an existing facility without changing principal, maturity, or covenants. It is simpler and cheaper—typically just a small fee. A refinancing replaces the entire facility with new terms, which may include different sizing, structure, and covenants. Refinancing involves call premiums, new OID, and higher transaction costs, but offers more flexibility to restructure the capital stack."
+"A repricing adjusts the interest rate on an existing facility without changing principal, maturity, or covenants. It is simpler and cheaper, typically just a small fee. A refinancing replaces the entire facility with new terms, which may include different sizing, structure, and covenants. Refinancing involves call premiums, new OID, and higher transaction costs, but offers more flexibility to restructure the capital stack."
 
 ## Key Takeaways
 
 - Leveraged refinancings replace the entire debt structure, unlike dividend recaps which layer incremental debt on top
 - Model refinancings as a transition: retire old debt with call premiums, issue new facilities with OID and fees, switch amortization schedules from the refinancing date forward
 - Break-even analysis compares total interest savings over the remaining hold period against all-in transaction costs
-- Repricings are simpler—just a spread reduction on existing facilities with minimal cost
+- Repricings are simpler: just a spread reduction on existing facilities with minimal cost
 - The most powerful recapitalizations combine refinancing (better terms) with incremental leverage (dividend extraction)
 - Timing matters: refinancings create more value with longer remaining hold periods and larger spread reductions

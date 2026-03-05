@@ -18,7 +18,7 @@ estimated_minutes: 25
 
 ### What Goodwill Represents
 
-Goodwill is the most misunderstood line item on corporate balance sheets. It is not simply "overpaying" for an acquisition. It represents real value that cannot be assigned to specific identifiable assets—the value of the business as a going concern beyond the sum of its parts.
+Goodwill is the most misunderstood line item on corporate balance sheets. It is not simply "overpaying" for an acquisition. It represents real value that cannot be assigned to specific identifiable assets: the value of the business as a going concern beyond the sum of its parts.
 
 When a private equity sponsor pays $1 billion for a company whose identifiable net assets are worth $600 million at fair value, the $400 million difference is goodwill. This premium captures:
 
@@ -30,7 +30,7 @@ When a private equity sponsor pays $1 billion for a company whose identifiable n
 
 **Going Concern Value:** The value of having an operating business versus starting from scratch.
 
-In LBO transactions, goodwill also reflects the control premium—the additional amount paid for 100% ownership and control rights versus a minority stake.
+In LBO transactions, goodwill also reflects the control premium, the additional amount paid for 100% ownership and control rights versus a minority stake.
 
 ### Calculating Goodwill
 
@@ -124,7 +124,7 @@ Understanding the distinction between goodwill and other intangible assets is im
 - Clearly described in purchase price allocation
 
 **Goodwill:**
-- Not separable—represents residual value
+- Not separable; represents residual value
 - Not amortized (under GAAP for public companies)
 - Not tax-amortizable in stock purchases
 - Captures synergies, workforce, going concern value
@@ -147,7 +147,7 @@ Goodwill affects LBO analysis in several ways:
 
 ### Negative Goodwill (Bargain Purchase)
 
-Rarely, the fair value of identifiable net assets exceeds the purchase price. This occurs when a company is acquired at a discount—perhaps in distressed circumstances. The result is negative goodwill, or a "bargain purchase gain."
+Rarely, the fair value of identifiable net assets exceeds the purchase price. This occurs when a company is acquired at a discount, perhaps in distressed circumstances. The result is negative goodwill, or a "bargain purchase gain."
 
 Under ASC 805, the acquirer must:
 1. Re-examine all assets and liabilities to ensure fair values are correct
@@ -166,7 +166,7 @@ Goodwill represents the premium paid beyond the fair value of identifiable net a
 First, goodwill is a major balance sheet item that affects book equity and covenant calculations based on tangible net worth. Second, goodwill impairment, while non-cash, signals that the investment is worth less than what was paid. Third, understanding the goodwill calculation helps us think through the purchase price allocation and what we are really paying for.
 
 "What is the difference between goodwill and identifiable intangibles?"
-Identifiable intangibles (customer relationships, technology, trade names) are separately identifiable and typically amortized over their useful lives. Goodwill is the residual—it cannot be separated from the business and is not amortized under US GAAP, though it is tested for impairment annually.
+Identifiable intangibles (customer relationships, technology, trade names) are separately identifiable and typically amortized over their useful lives. Goodwill is the residual. It cannot be separated from the business and is not amortized under US GAAP, though it is tested for impairment annually.
 
 "Is goodwill tax-deductible?"
 In stock purchases (typical LBO structure), goodwill is not tax-deductible because the target's tax basis carries over. In asset purchases, goodwill is amortizable over 15 years under Section 197. This is one reason some sponsors prefer asset purchases when structurally feasible.

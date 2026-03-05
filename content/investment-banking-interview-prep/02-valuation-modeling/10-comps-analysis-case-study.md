@@ -4,7 +4,7 @@ subtitle: "Build a trading comps table and value a company like a banker"
 type: case-study
 ---
 
-Comparable companies analysis—"trading comps"—is the most common valuation methodology in investment banking. Unlike a DCF, which requires forecasting cash flows years into the future, comps let the market tell you what similar companies are worth today. The logic is simple: if Company A trades at 10x EBITDA and your target looks similar, your target should trade around 10x too.
+Comparable companies analysis ("trading comps") is the most common valuation methodology in investment banking. Unlike a DCF, which requires forecasting cash flows years into the future, comps let the market tell you what similar companies are worth today. The logic is simple: if Company A trades at 10x EBITDA and your target looks similar, your target should trade around 10x too.
 
 But "similar" is where the art comes in. This case study walks through building a real comps analysis, selecting peers thoughtfully, and defending your valuation in an interview.
 
@@ -65,7 +65,7 @@ challenge: |
   - Geographic focus
 
   Which companies would you include? Which would you exclude and why?
-hint: Think about size differential. If a company is 100x larger than your target, does it really trade the same way? Also consider business mix—is CBIZ really a pure-play IT services company?
+hint: Think about size differential. If a company is 100x larger than your target, does it really trade the same way? Also consider business mix: is CBIZ really a pure-play IT services company?
 solution: |
   **Selection Criteria:**
 
@@ -89,19 +89,19 @@ solution: |
   given:
     - "TargetCo: $150M revenue, 20% margin, 8% growth"
   steps:
-    - "Cognizant: Borderline — Too large ($19B vs. $150M), but relevant industry"
-    - "EPAM Systems: Include — IT services, reasonable size differential, good growth"
-    - "Globant: Include — Digital services, high growth, relevant business"
-    - "Perficient: Best comp — Mid-market IT services, similar size and margins"
-    - "Grid Dynamics: Include — Closest in size, IT services focus"
-    - "CBIZ: Borderline — More diversified (accounting, insurance), less pure-play IT"
+    - "Cognizant: Borderline - Too large ($19B vs. $150M), but relevant industry"
+    - "EPAM Systems: Include - IT services, reasonable size differential, good growth"
+    - "Globant: Include - Digital services, high growth, relevant business"
+    - "Perficient: Best comp - Mid-market IT services, similar size and margins"
+    - "Grid Dynamics: Include - Closest in size, IT services focus"
+    - "CBIZ: Borderline - More diversified (accounting, insurance), less pure-play IT"
   result: "Selected Peer Set: EPAM, Globant, Perficient, Grid Dynamics"
   note: "Exclude Cognizant (too large, distorts averages) and CBIZ (different business mix)"
   ```
 
   We exclude Cognizant (too large, distorts averages) and CBIZ (different business mix). In practice, you might include them in a broader set and show both.
 
-  **Interview tip:** Always be ready to defend your peer selection. "Why did you exclude Cognizant?" — "At $19B revenue versus our target's $150M, the size differential is over 100x. Larger companies typically trade at premiums due to liquidity and diversification, which would inflate our valuation."
+  **Interview tip:** Always be ready to defend your peer selection. "Why did you exclude Cognizant?" "At $19B revenue versus our target's $150M, the size differential is over 100x. Larger companies typically trade at premiums due to liquidity and diversification, which would inflate our valuation."
 ```
 
 ```accordion-step
@@ -141,8 +141,8 @@ solution: |
     - "EV/Revenue multiples: 2.3x, 2.7x, 3.0x, 3.6x"
     - "EV/EBITDA multiples: 15.3x, 17.0x, 18.9x, 23.8x"
   steps:
-    - "EV/Revenue — Mean: 2.9x, Median: 2.9x, Low: 2.3x, High: 3.6x"
-    - "EV/EBITDA — Mean: 18.8x, Median: 18.0x, Low: 15.3x, High: 23.8x"
+    - "EV/Revenue - Mean: 2.9x, Median: 2.9x, Low: 2.3x, High: 3.6x"
+    - "EV/EBITDA - Mean: 18.8x, Median: 18.0x, Low: 15.3x, High: 23.8x"
   result: "Median EV/Revenue = 2.9x, Median EV/EBITDA = 18.0x"
   ```
 
@@ -176,9 +176,9 @@ solution: |
   **Where does TargetCo fit?**
   - 8% growth is **below all comps** (suggests discount)
   - 20% margin is **best-in-class** (suggests premium)
-  - Smallest by far (could go either way—size discount or scarcity premium)
+  - Smallest by far (could go either way: size discount or scarcity premium)
 
-  **The judgment call:** TargetCo has lower growth than all comps but better margins. A reasonable approach is to apply a multiple below the median—perhaps 14-16x EBITDA—reflecting the growth differential while crediting the margins.
+  **The judgment call:** TargetCo has lower growth than all comps but better margins. A reasonable approach is to apply a multiple below the median, perhaps 14-16x EBITDA, reflecting the growth differential while crediting the margins.
 
   **This is what separates good analysts from great ones:** You don't just pick the median. You understand why the median is what it is, and adjust thoughtfully for your target's specific profile.
 ```
@@ -250,7 +250,7 @@ challenge: |
   4. How this might compare to other methodologies (DCF, precedents)
 
   Write this as you would say it in a meeting.
-hint: Lead with the answer, then support it. MDs don't want you to walk through your entire process—they want the punchline first, then the reasoning.
+hint: Lead with the answer, then support it. MDs don't want you to walk through your entire process. They want the punchline first, then the reasoning.
 solution: |
   **Valuation Summary: TargetCo**
 
@@ -336,7 +336,7 @@ note: "Be consistent across all companies in your peer set"
 ```accordion-step
 id: variation-a-negative-ebitda
 stepNumber: 6
-title: Practice Variation A — Negative EBITDA Company
+title: Practice Variation A: Negative EBITDA Company
 challenge: |
   Your target is a high-growth SaaS company with negative EBITDA. How do you run comps?
 
@@ -344,7 +344,7 @@ challenge: |
   - What multiples can you use instead of EV/EBITDA?
   - What metrics matter most for unprofitable companies?
   - How do you find appropriate peers?
-hint: Revenue-based multiples become primary. Think about what else investors look at for high-growth software companies—ARR, net retention, gross margin.
+hint: Revenue-based multiples become primary. Think about what else investors look at for high-growth software companies: ARR, net retention, gross margin.
 solution: |
   **Use revenue multiples instead:**
   - EV / Revenue is primary
@@ -367,7 +367,7 @@ solution: |
 ```accordion-step
 id: variation-b-no-public-comps
 stepNumber: 7
-title: Practice Variation B — No Good Public Comps
+title: Practice Variation B: No Good Public Comps
 challenge: |
   Your target is in a niche industry with no directly comparable public companies. What do you do?
 
@@ -378,7 +378,7 @@ solution: |
 
   1. **Broader peer set:** Use adjacent industries with similar characteristics (growth, margins, cyclicality)
 
-  2. **Precedent transactions:** M&A deals for private companies in the space—often more relevant than trading comps
+  2. **Precedent transactions:** M&A deals for private companies in the space, often more relevant than trading comps
 
   3. **Sum-of-the-parts:** If the target has multiple segments, comp each segment separately
 
@@ -386,13 +386,13 @@ solution: |
 
   5. **Lean on DCF:** When comps are scarce, intrinsic valuation becomes more important
 
-  **Interview answer:** "I'd widen the peer set to include companies with similar business characteristics even if not identical industries—similar growth, margins, and end-market exposure. I'd also heavily weight precedent transactions, which are often more relevant for private companies in niche sectors."
+  **Interview answer:** "I'd widen the peer set to include companies with similar business characteristics even if not identical industries: similar growth, margins, and end-market exposure. I'd also heavily weight precedent transactions, which are often more relevant for private companies in niche sectors."
 ```
 
 ```accordion-step
 id: variation-c-control-premium
 stepNumber: 8
-title: Practice Variation C — Adjusting for Control Premium
+title: Practice Variation C: Adjusting for Control Premium
 challenge: |
   You're advising on an acquisition. Should you apply a control premium to trading comps? Why or why not?
 
@@ -437,7 +437,7 @@ Comps have weaknesses. Acknowledge them:
 - Market sentiment affects all multiples (rising tide lifts all boats)
 - No two companies are truly identical
 - Public company multiples may not apply to private companies
-- Point-in-time snapshot—multiples change daily
+- Point-in-time snapshot; multiples change daily
 
 ### 4. Connecting to Other Methodologies
 
@@ -450,9 +450,9 @@ You should be able to reconcile: "The DCF implied $480M, right in the middle of 
 ## Key Takeaways
 
 - Comps value a company based on how the market values similar companies today
-- Peer selection is critical—defend your choices based on business model, size, growth, and margins
+- Peer selection is critical, so defend your choices based on business model, size, growth, and margins
 - EV/EBITDA is the primary multiple for profitable companies; use EV/Revenue for high-growth or unprofitable
-- Multiples vary based on growth, margins, market position, and sentiment—understand why
+- Multiples vary based on growth, margins, market position, and sentiment, so understand why
 - Trading comps reflect minority values; add control premium for acquisition analysis
 - Always triangulate with other methodologies (DCF, precedents) for a complete picture
-- Present ranges, not point estimates—valuation is inherently imprecise
+- Present ranges, not point estimates, because valuation is inherently imprecise

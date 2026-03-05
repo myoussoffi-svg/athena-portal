@@ -293,11 +293,11 @@ If yes to all, your synthesis is IC-ready.
 
 - Synthesize 200+ pages of advisor reports into one-page summaries per advisor and a 2–3 page integrated findings memo that decision-makers can digest quickly
 - Translate technical advisor language (accounting standards, tax code, legal terms) into business implications that inform valuation, risk, and deal structure
-- Integrate findings across advisors to tell a cohesive story rather than presenting siloed summaries—connect QofE, market, legal, and tax findings
+- Integrate findings across advisors to tell a cohesive story rather than presenting siloed summaries. Connect QofE, market, legal, and tax findings
 - Surface conflicts when advisors disagree (e.g., QofE says revenue is sustainable but market study flags customer churn risk) and facilitate resolution through follow-up discussions
 - Watch for red flags including advisors hedging conclusions, overly positive reports with no risks, narrow scope that misses material issues, or findings that conflict with VDR data
 - Prepare IC backup slides with a cross-advisor summary table showing key findings, EBITDA/valuation impact, and risk levels for each workstream
-- Stand your ground when advisors push back on your synthesis if the characterization is fair and accurate—do not let advisors sanitize findings to avoid discomfort
+- Stand your ground when advisors push back on your synthesis if the characterization is fair and accurate. Do not let advisors sanitize findings to avoid discomfort
 
 ## Synthesis
 - What would change your mind based on new data?

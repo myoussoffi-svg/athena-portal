@@ -22,9 +22,9 @@ video:
 
 ### Why Terminal Value Matters
 
-In a DCF, we project cash flows for a finite period—typically 5 to 10 years. But companies don't stop generating cash after year 5. The **terminal value (TV)** represents the present value of all cash flows beyond the projection period.
+In a DCF, we project cash flows for a finite period, typically 5 to 10 years. But companies don't stop generating cash after year 5. The **terminal value (TV)** represents the present value of all cash flows beyond the projection period.
 
-Terminal value typically accounts for **60-80% of total enterprise value** in a DCF. This makes terminal value assumptions—growth rates or exit multiples—critical drivers of valuation.
+Terminal value typically accounts for **60-80% of total enterprise value** in a DCF. This makes terminal value assumptions (growth rates or exit multiples) critical drivers of valuation.
 
 Small changes in terminal assumptions can have outsized effects on value, which is why DCF results are often presented with sensitivity tables.
 

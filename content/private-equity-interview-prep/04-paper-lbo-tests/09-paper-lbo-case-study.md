@@ -4,7 +4,7 @@ subtitle: "A PE-level walkthrough with multi-tranche debt, management rollover, 
 type: case-study
 ---
 
-Paper LBOs in private equity interviews are significantly harder than the simplified versions you see in banking interviews. PE interviewers expect you to handle multi-tranche debt with different terms, management rollover equity, a full FCF waterfall (with taxes, capex, and working capital), and—critically—an investment recommendation. They're testing whether you think like an investor, not just someone who can push numbers through a formula.
+Paper LBOs in private equity interviews are significantly harder than the simplified versions you see in banking interviews. PE interviewers expect you to handle multi-tranche debt with different terms, management rollover equity, a full FCF waterfall (with taxes, capex, and working capital), and, critically, an investment recommendation. They're testing whether you think like an investor, not just someone who can push numbers through a formula.
 
 This case study walks through a realistic PE interview scenario at the complexity level you should expect in first-round interviews at middle-market and upper-middle-market funds. Work through each step before revealing the solution.
 
@@ -14,7 +14,7 @@ This case study walks through a realistic PE interview scenario at the complexit
 
 You're interviewing at a middle-market PE fund. The partner hands you a sheet of paper:
 
-**PrecisionParts Co. — National Industrial Fastener & Component Distributor**
+**PrecisionParts Co. - National Industrial Fastener & Component Distributor**
 
 **Company Financials:**
 - Revenue: $225 million
@@ -26,8 +26,8 @@ You're interviewing at a middle-market PE fund. The partner hands you a sheet of
 **Deal Terms:**
 - Entry Multiple: 8.5x EBITDA (Enterprise Value = $382.5 million)
 - Transaction Fees: $7.5 million
-- Senior Debt: 4.0x EBITDA — 6% interest rate, 5% annual amortization
-- Subordinated Debt: 1.5x EBITDA — 10% interest rate, bullet (no amortization)
+- Senior Debt: 4.0x EBITDA - 6% interest rate, 5% annual amortization
+- Subordinated Debt: 1.5x EBITDA - 10% interest rate, bullet (no amortization)
 - Management Rollover: $15 million
 - Sponsor Equity: plug to balance
 
@@ -51,7 +51,7 @@ id: step-1-sources-uses
 stepNumber: 1
 title: Build the Sources & Uses
 challenge: |
-  Start with the foundation. In a PE paper LBO, the sources & uses table is more complex than in a banking version—you need to account for transaction fees, management rollover, and multiple debt tranches.
+  Start with the foundation. In a PE paper LBO, the sources & uses table is more complex than in a banking version. You need to account for transaction fees, management rollover, and multiple debt tranches.
 
   Given:
   - Enterprise Value: $382.5M (8.5x × $45M)
@@ -85,7 +85,7 @@ solution: |
 
   Total equity check: $127.5M sponsor + $15.0M rollover = $142.5M total equity. Sponsor owns $127.5M / $142.5M = **89.5%** of the equity. This matters at exit.
 
-  **Interview tip:** State the sponsor ownership percentage immediately. It shows you understand that management rollover dilutes the sponsor's share—a detail that separates PE candidates from banking candidates.
+  **Interview tip:** State the sponsor ownership percentage immediately. It shows you understand that management rollover dilutes the sponsor's share, a detail that separates PE candidates from banking candidates.
 ```
 
 ```accordion-step
@@ -151,7 +151,7 @@ solution: |
 
   - Interest expense is substantial ($17.6M total), which is typical for a leveraged deal. That's 37% of EBITDA consumed by interest alone.
   - The D&A add-back and capex nearly offset ($8M vs $10M), contributing a net $2M drag.
-  - Working capital is negligible at $0.1M (1% × $11.25M incremental revenue). In a paper LBO, you could reasonably ignore this—but mention it to show thoroughness.
+  - Working capital is negligible at $0.1M (1% × $11.25M incremental revenue). In a paper LBO, you could reasonably ignore this, but mention it to show thoroughness.
   - **$14.2M of FCF is available for debt repayment.** This is the cash the business generates after all operating costs, taxes, and reinvestment.
 ```
 
@@ -165,7 +165,7 @@ challenge: |
   1. **Mandatory amortization:** 5% of the $180M senior debt = $9M per year
   2. **Cash sweep:** Any remaining FCF after mandatory payments goes to additional senior debt paydown
 
-  The subordinated debt is a bullet—no principal payments until maturity.
+  The subordinated debt is a bullet, with no principal payments until maturity.
 
   Estimate the total debt paid down over the 5-year hold and the remaining debt at exit.
 hint: Year 1 FCF is ~$14M (all goes to senior paydown). FCF grows each year as EBITDA rises and interest declines. Estimate average annual FCF and multiply by 5, or track mandatory vs. discretionary separately.
@@ -201,16 +201,16 @@ challenge: |
   Apply the exit multiple to Year 5 EBITDA.
 
   - Year 5 EBITDA: ~$57M
-  - Exit Multiple: 8.5x (same as entry—no multiple expansion)
+  - Exit Multiple: 8.5x (same as entry, no multiple expansion)
 
   What is the Exit Enterprise Value?
 hint: Exit EV = Exit Multiple × Exit EBITDA. Note the absence of multiple expansion.
 solution: |
   **Exit EV = 8.5x × $57M = ~$485M**
 
-  This compares to the entry EV of $382.5M—an increase of roughly $102M, driven entirely by EBITDA growth.
+  This compares to the entry EV of $382.5M, an increase of roughly $102M, driven entirely by EBITDA growth.
 
-  **No multiple expansion is a conservative assumption.** In reality, if the sponsor executes well (bolt-on acquisitions, operational improvements, customer diversification), there's a case for modest expansion. But assuming flat multiples is the right default in a paper LBO—it shows discipline and lets your interviewer probe your upside thinking separately.
+  **No multiple expansion is a conservative assumption.** In reality, if the sponsor executes well (bolt-on acquisitions, operational improvements, customer diversification), there's a case for modest expansion. But assuming flat multiples is the right default in a paper LBO. It shows discipline and lets your interviewer probe your upside thinking separately.
 ```
 
 ```accordion-step
@@ -239,7 +239,7 @@ solution: |
 
   Sponsor Exit Equity = $332M × 89.5% = **~$297M**
 
-  (Management receives ~$35M on their $15M rollover—a 2.3x return that keeps them aligned.)
+  (Management receives ~$35M on their $15M rollover, a 2.3x return that keeps them aligned.)
 
   **Step 3: Sponsor MOIC**
 
@@ -265,7 +265,7 @@ id: step-7-value-bridge
 stepNumber: 7
 title: Decompose the Value Creation
 challenge: |
-  The best PE candidates don't just calculate a return—they explain where it comes from. Break down the equity value creation into the three classic LBO drivers:
+  The best PE candidates don't just calculate a return. They explain where it comes from. Break down the equity value creation into the three classic LBO drivers:
 
   - Entry Equity: $142.5M (total, including rollover)
   - Exit Equity: ~$332M
@@ -294,7 +294,7 @@ solution: |
 
   **The insight:** Returns are split roughly **55% from EBITDA growth and 45% from debt paydown**. This is a balanced return profile. Deals overly dependent on debt paydown are fragile (what if FCF disappoints?). Deals dependent solely on growth need the thesis to work perfectly.
 
-  **What separates top candidates:** After giving the numbers, add commentary: "I'd want to understand whether there are levers to accelerate EBITDA growth—pricing power, operational efficiency, or bolt-on acquisitions—because organic growth alone at 5% produces an acceptable but not exceptional return."
+  **What separates top candidates:** After giving the numbers, add commentary: "I'd want to understand whether there are levers to accelerate EBITDA growth (pricing power, operational efficiency, or bolt-on acquisitions) because organic growth alone at 5% produces an acceptable but not exceptional return."
 ```
 
 ---
@@ -321,13 +321,13 @@ solution: |
 
   **3. Competitive and Margin Pressure**
 
-  Distribution is a competitive, low-moat business. Amazon Business and larger national distributors (Grainger, Fastenal) are pushing into the space. The 20% EBITDA margin assumption needs scrutiny—is it defensible, or will pricing pressure erode it?
+  Distribution is a competitive, low-moat business. Amazon Business and larger national distributors (Grainger, Fastenal) are pushing into the space. The 20% EBITDA margin assumption needs scrutiny. Is it defensible, or will pricing pressure erode it?
 
   **4. Limited Organic Growth Upside**
 
   5% EBITDA growth is modest and essentially tracks GDP plus inflation for industrial distribution. The base case produces an 18% IRR with no margin for error. If growth disappoints (say, 3% instead of 5%), returns compress to ~15-16%, which is below most fund hurdles.
 
-  **Interview tip:** Always connect risks back to the model. Don't just say "it's cyclical"—quantify what happens to returns if EBITDA drops 15%. That's the level of thinking PE interviewers expect.
+  **Interview tip:** Always connect risks back to the model. Don't just say "it's cyclical." Quantify what happens to returns if EBITDA drops 15%. That's the level of thinking PE interviewers expect.
 ```
 
 ```accordion-step
@@ -335,12 +335,12 @@ id: step-9-recommendation
 stepNumber: 9
 title: Make Your Investment Recommendation
 challenge: |
-  Based on your analysis—~2.3x / ~18% IRR with the risk profile above—would you recommend this investment to the fund's investment committee?
+  Based on your analysis (~2.3x / ~18% IRR with the risk profile above), would you recommend this investment to the fund's investment committee?
 
   Give a clear yes or no, with supporting reasoning.
-hint: Frame your answer around risk-adjusted returns vs. the fund's hurdle rate. Consider what would need to go right (and wrong) for this deal. There's no single correct answer—interviewers care about the quality of your reasoning.
+hint: Frame your answer around risk-adjusted returns vs. the fund's hurdle rate. Consider what would need to go right (and wrong) for this deal. There's no single correct answer. Interviewers care about the quality of your reasoning.
 solution: |
-  **Recommendation: Conditional yes — invest, but with a clear value creation plan.**
+  **Recommendation: Conditional yes - invest, but with a clear value creation plan.**
 
   **Why yes:**
 
@@ -350,7 +350,7 @@ solution: |
 
   **Why it's conditional:**
 
-  - At 8.5x entry, we're paying a fair price, not a bargain. Returns are highly sensitive to entry multiple—every half-turn costs roughly 1-2% of IRR.
+  - At 8.5x entry, we're paying a fair price, not a bargain. Returns are highly sensitive to entry multiple, and every half-turn costs roughly 1-2% of IRR.
   - The base case alone doesn't clear a 20% net IRR hurdle. We need at least one of: (a) one or two accretive bolt-on acquisitions, (b) modest margin improvement through operational initiatives, or (c) slight multiple expansion at exit from a larger, more diversified platform.
   - Downside protection requires confirming low customer concentration and defensible competitive positioning.
 
@@ -364,7 +364,7 @@ solution: |
 ```accordion-step
 id: variation-a-bolt-on
 stepNumber: 10
-title: Variation A — Bolt-On Acquisition in Year 2
+title: Variation A - Bolt-On Acquisition in Year 2
 challenge: |
   The sponsor identifies a bolt-on acquisition at the beginning of Year 2:
 
@@ -393,13 +393,13 @@ solution: |
   - MOIC: $323M / $127.5M = **~2.5x** (vs. 2.3x base)
   - IRR: **~20%** (vs. 18% base)
 
-  **Why this matters:** The sponsor bought $5M of EBITDA at 6.0x ($30M) but it exits at 8.5x ($42.5M)—instant **$12.5M of multiple arbitrage**. Plus 3 years of compounding growth on that acquired EBITDA. This is why PE firms love fragmented industries: the bolt-on playbook can add 200-400bps of IRR with modest execution risk.
+  **Why this matters:** The sponsor bought $5M of EBITDA at 6.0x ($30M) but it exits at 8.5x ($42.5M), creating instant **$12.5M of multiple arbitrage**. Plus 3 years of compounding growth on that acquired EBITDA. This is why PE firms love fragmented industries: the bolt-on playbook can add 200-400bps of IRR with modest execution risk.
 ```
 
 ```accordion-step
 id: variation-b-margin-expansion
 stepNumber: 11
-title: Variation B — 200bps Margin Expansion
+title: Variation B - 200bps Margin Expansion
 challenge: |
   Instead of flat margins, the sponsor implements operational improvements that expand EBITDA margins from 20% to 22% by Year 5 (gradual improvement across the hold).
 
@@ -419,13 +419,13 @@ solution: |
   - MOIC: $352M / $127.5M = **~2.8x** (vs. 2.3x base)
   - IRR: **~22%** (vs. 18% base)
 
-  **The insight:** 200bps of margin improvement adds roughly **0.5x to the MOIC and 400bps to the IRR**. This is why PE operating partners obsess over procurement savings, SG&A rationalization, and pricing optimization. Margin expansion is the highest-conviction lever because it's within management's control—unlike revenue growth or exit multiples.
+  **The insight:** 200bps of margin improvement adds roughly **0.5x to the MOIC and 400bps to the IRR**. This is why PE operating partners obsess over procurement savings, SG&A rationalization, and pricing optimization. Margin expansion is the highest-conviction lever because it's within management's control, unlike revenue growth or exit multiples.
 ```
 
 ```accordion-step
 id: variation-c-no-rollover
 stepNumber: 12
-title: Variation C — No Management Rollover
+title: Variation C - No Management Rollover
 challenge: |
   Remove the $15M management rollover. The sponsor funds all equity.
 
@@ -437,7 +437,7 @@ solution: |
 
   - Sponsor equity: $390M − $180M − $67.5M = **$142.5M** (vs. $127.5M with rollover)
   - Sponsor owns **100%** of equity
-  - Exit equity: ~$332M (same as base—operations are unchanged)
+  - Exit equity: ~$332M (same as base; operations are unchanged)
   - Sponsor gets all $332M
 
   - MOIC: $332M / $142.5M = **~2.3x** (virtually identical to base case)
@@ -451,13 +451,13 @@ solution: |
   - **Signal value:** A CEO unwilling to roll equity raises a red flag. It may signal low confidence in the go-forward plan. Conversely, a meaningful rollover (say, $15M on a CEO with $20M net worth) signals deep conviction.
   - **Governance cost:** Without equity alignment, the sponsor may need heavier board oversight, more aggressive management incentive plans (option pools, phantom equity), and closer operational monitoring.
 
-  **The bottom line:** Rollover isn't about the math—it's about management alignment. This is one of the most PE-specific concepts in a paper LBO.
+  **The bottom line:** Rollover isn't about the math. It's about management alignment. This is one of the most PE-specific concepts in a paper LBO.
 ```
 
 ```accordion-step
 id: variation-d-max-multiple
 stepNumber: 13
-title: Variation D — Maximum Entry Multiple for 25% IRR
+title: Variation D - Maximum Entry Multiple for 25% IRR
 challenge: |
   The fund's hurdle rate is 25% IRR (approximately 3.0x MOIC over 5 years).
 
@@ -471,8 +471,8 @@ solution: |
   Let entry multiple = X. Then:
   - EV = $45M × X
   - Total Uses = $45M × X + $7.5M (fees)
-  - Senior debt: $180M (4.0x × $45M—fixed)
-  - Sub debt: $67.5M (1.5x × $45M—fixed)
+  - Senior debt: $180M (4.0x × $45M, fixed)
+  - Sub debt: $67.5M (1.5x × $45M, fixed)
   - Rollover: $15M
   - Sponsor equity = $45M × X + $7.5M − $180M − $67.5M − $15M = **$45X − $255M**
 
@@ -507,7 +507,7 @@ solution: |
   - Sponsor exit: $332M × 86.5% = $287M
   - MOIC: $287M / $96M = **3.0x ✓** → IRR: **~25% ✓**
 
-  **The takeaway:** To hit a 25% IRR, the fund can pay at most ~7.8x—**almost a full turn below the 8.5x asking price**. This shows how sensitive PE returns are to entry price. Every half-turn of entry multiple costs approximately 150-200bps of IRR. This is why entry price discipline is the single most important driver of PE returns.
+  **The takeaway:** To hit a 25% IRR, the fund can pay at most ~7.8x, **almost a full turn below the 8.5x asking price**. This shows how sensitive PE returns are to entry price. Every half-turn of entry multiple costs approximately 150-200bps of IRR. This is why entry price discipline is the single most important driver of PE returns.
 ```
 
 ---
@@ -516,7 +516,7 @@ solution: |
 
 ### 1. FCF Waterfall Fluency
 
-PE interviewers expect you to walk from EBITDA to FCF without hesitation. The waterfall—EBITDA → EBIT → EBT → Net Income → FCF—should be automatic. Candidates who skip taxes, forget the D&A add-back, or ignore working capital reveal that they haven't internalized how cash actually flows through a leveraged business.
+PE interviewers expect you to walk from EBITDA to FCF without hesitation. The waterfall (EBITDA to EBIT to EBT to Net Income to FCF) should be automatic. Candidates who skip taxes, forget the D&A add-back, or ignore working capital reveal that they haven't internalized how cash actually flows through a leveraged business.
 
 ### 2. Investment Judgment, Not Just Math
 
@@ -524,7 +524,7 @@ The math is table stakes. What differentiates candidates is the ability to say "
 
 ### 3. Value Creation Decomposition
 
-After presenting the return, immediately break it into EBITDA growth, debt paydown, and multiple expansion without being asked. Then offer a view on which lever has the most upside and which carries the most risk. This is how investment professionals think—it shows you understand the mechanics, not just the formula.
+After presenting the return, immediately break it into EBITDA growth, debt paydown, and multiple expansion without being asked. Then offer a view on which lever has the most upside and which carries the most risk. This is how investment professionals think. It shows you understand the mechanics, not just the formula.
 
 ---
 
@@ -532,8 +532,8 @@ After presenting the return, immediately break it into EBITDA growth, debt paydo
 
 - PE paper LBOs test investor thinking, not just arithmetic. Always end with a recommendation.
 - The FCF waterfall matters: taxes, interest on multiple tranches, capex, and working capital are real cash costs that reduce the money available for debt paydown.
-- Management rollover is about alignment, not math. The return per dollar is the same—what changes is incentive structure and governance.
+- Management rollover is about alignment, not math. The return per dollar is the same; what changes is incentive structure and governance.
 - Entry price discipline is the strongest lever. A full turn of entry multiple swings IRR by 300-400bps in a typical deal.
 - Always decompose returns into EBITDA growth, debt paydown, and multiple expansion. Then identify where the upside and risk sit.
 - Bolt-on acquisitions and margin improvement are the most actionable levers. A base case with only organic growth and no multiple expansion should produce at least a fund-hurdle return, with these levers providing the upside.
-- Practice until the Sources & Uses → FCF → debt paydown → exit equity → MOIC/IRR chain is automatic. Then add the judgment layer—risks, recommendation, and variations—which is what actually wins offers.
+- Practice until the Sources & Uses → FCF → debt paydown → exit equity → MOIC/IRR chain is automatic. Then add the judgment layer (risks, recommendation, and variations), which is what actually wins offers.

@@ -158,7 +158,7 @@ Operating partner reports to VP; meets with CEO biweekly; presents findings at q
 - Involve operating partners when management has capability gaps, specialized initiatives require domain expertise, rapid growth demands scaling playbooks, or underperformance needs turnaround support
 - Associates coordinate projects, provide data and analysis, bridge communication between operating partners and investment teams, and track implementation progress
 - Manage tensions by positioning operating partners as resources (not replacements), facilitating data-driven discussions on conflicting recommendations, and prioritizing initiatives to avoid overwhelming management
-- Structure engagements with clear objectives, scope, time commitment, success metrics, and governance—associates draft scopes, track deliverables, and manage budgets
+- Structure engagements with clear objectives, scope, time commitment, success metrics, and governance. Associates draft scopes, track deliverables, and manage budgets
 - Operating partners add most value when properly scoped, management is receptive, and associates ensure recommendations are executed rather than shelved
 
 ## Synthesis

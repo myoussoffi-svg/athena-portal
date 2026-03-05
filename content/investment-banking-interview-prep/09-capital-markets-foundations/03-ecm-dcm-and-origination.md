@@ -45,7 +45,7 @@ title: "ECM Main Products"
 given:
   - "Category: Product and Description"
 steps:
-  - "IPO: Initial Public Offering — first sale of shares to public"
+  - "IPO: Initial Public Offering -first sale of shares to public"
   - "Follow-On: Additional share sale by already-public company"
   - "Convertible: Bond that converts to equity under certain conditions"
   - "Block Trade: Large secondary sale, often overnight"
@@ -108,12 +108,12 @@ title: "DCM Main Products"
 given:
   - "Category: Product, Description, Typical Issuer"
 steps:
-  - "Investment-Grade Bonds: High credit quality (BBB- or above) — Large corporations"
-  - "High-Yield Bonds: Below investment grade (BB+ or below) — Leveraged companies, LBOs"
-  - "Leveraged Loans: Bank debt for leveraged borrowers — PE portfolio companies"
-  - "Commercial Paper: Short-term unsecured debt — Large corps for working capital"
-  - "Municipal Bonds: Debt issued by governments — Cities, states, agencies"
-  - "Structured Products: ABS, MBS, CLOs — Financial institutions"
+  - "Investment-Grade Bonds: High credit quality (BBB- or above) -Large corporations"
+  - "High-Yield Bonds: Below investment grade (BB+ or below) -Leveraged companies, LBOs"
+  - "Leveraged Loans: Bank debt for leveraged borrowers -PE portfolio companies"
+  - "Commercial Paper: Short-term unsecured debt -Large corps for working capital"
+  - "Municipal Bonds: Debt issued by governments -Cities, states, agencies"
+  - "Structured Products: ABS, MBS, CLOs -Financial institutions"
 result: "DCM products span from investment-grade bonds to structured products, serving diverse issuer needs"
 ```
 

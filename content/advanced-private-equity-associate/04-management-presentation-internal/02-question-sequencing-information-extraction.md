@@ -46,7 +46,7 @@ Poor sequencing creates:
 
 Effective sequencing builds trust, establishes shared context, and creates space for management to be transparent about challenges.
 
-Associates must master sequencing to maximize extraction during limited time windows. Management presentations are not recurring—if you miss the opportunity to ask the right follow-up, you may not get another chance before IC.
+Associates must master sequencing to maximize extraction during limited time windows. Management presentations are not recurring. If you miss the opportunity to ask the right follow-up, you may not get another chance before IC.
 
 ### The Funnel Approach: Broad to Narrow, Context to Detail
 
@@ -118,7 +118,7 @@ Management often defaults to qualitative or vague language. Your job is to conve
 |----------------|----------------------------|
 | "Churn is low" | "What is your gross revenue retention rate? How does that compare to industry benchmarks?" |
 | "We have strong customer relationships" | "What is the average tenure of your top 10 customers? Have any of them reduced spend in the past year?" |
-| "Margins are improving" | "What was gross margin in FY21, FY22, and FY23? What drove the improvement—price, volume, or cost reduction?" |
+| "Margins are improving" | "What was gross margin in FY21, FY22, and FY23? What drove the improvement: price, volume, or cost reduction?" |
 | "Sales efficiency is good" | "What is your CAC payback period? What is the average quota attainment for your sales team?" |
 | "We are investing in product" | "What is R&D spend as a percentage of revenue? How many engineers are allocated to new product development vs. maintenance?" |
 | "The market is growing" | "What is the TAM growth rate? What is your market share, and how has it trended?" |
@@ -151,7 +151,7 @@ A: "Well, churn is a complex topic. Some customers reduce spend, others expand. 
 
 **Diagnosis**: Evasive. They are avoiding giving the number.
 
-**Response**: "I understand churn can be nuanced. For the purposes of our analysis, can you provide the gross revenue retention rate—revenue retained from the prior year cohort excluding upsells?"
+**Response**: "I understand churn can be nuanced. For the purposes of our analysis, can you provide the gross revenue retention rate, meaning revenue retained from the prior year cohort excluding upsells?"
 
 **2. Lack of knowledge (genuine uncertainty)**
 
@@ -181,7 +181,7 @@ A: "That is primarily macroeconomic headwinds. We are very confident that once t
 
 **Diagnosis**: Spin. Management is attributing underperformance entirely to external factors without accountability.
 
-**Response**: "I understand macro has been challenging. Are there any internal factors—sales execution, product-market fit, competitive dynamics—that have also contributed?"
+**Response**: "I understand macro has been challenging. Are there any internal factors (sales execution, product-market fit, competitive dynamics) that have also contributed?"
 
 ### Note-Taking Systems: Capturing Verbatim and Context
 
@@ -293,12 +293,12 @@ Example: CEO is dismissive, hostile, or unwilling to engage with reasonable ques
 
 ## Key Takeaways
 
-- Sequence questions as a funnel from broad context-setting to narrow quantification to probing challenges—this builds trust and allows management to be transparent before being pressed on difficult topics
+- Sequence questions as a funnel from broad context-setting to narrow quantification to probing challenges. This builds trust and allows management to be transparent before being pressed on difficult topics
 - Decide whether to follow up immediately (for thesis-critical or contradictory answers) or defer (for minor details or time constraints) to maintain agenda flow and productivity
 - Convert vague qualitative responses into quantifiable answers by asking "Can you quantify that?" or "What does [strong/low/good] mean numerically?"
-- Diagnose whether incomplete answers reflect evasiveness (intentional withholding), lack of knowledge (genuine uncertainty), or spin (over-optimism)—adjust approach accordingly
+- Diagnose whether incomplete answers reflect evasiveness (intentional withholding), lack of knowledge (genuine uncertainty), or spin (over-optimism), and adjust approach accordingly
 - Use structured note-taking to capture verbatim answers, quantitative data, follow-up commitments, and observations about tone and credibility
-- Redirect deflection tactics politely but firmly—if management answers a different question, run out the clock, or defer to absent colleagues, bring the conversation back to the original question
+- Redirect deflection tactics politely but firmly. If management answers a different question, run out the clock, or defer to absent colleagues, bring the conversation back to the original question
 - Identify patterns across responses (e.g., weak bench strength, lack of accountability, weak financial controls) and escalate credibility concerns, contradictions, or evasiveness to your VP immediately
 
 ## Synthesis

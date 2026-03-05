@@ -19,9 +19,9 @@ estimated_minutes: 45
 
 ### When the Capital Structure Breaks
 
-Everything you have learned about LBO modeling assumes the deal works—EBITDA grows, debt is repaid, equity value compounds. But sometimes the investment thesis breaks down. Revenue declines, margins compress, and the company cannot service its debt. When the enterprise value falls below total debt, equity is effectively worthless, and the existing capital structure must be reorganized.
+Everything you have learned about LBO modeling assumes the deal works: EBITDA grows, debt is repaid, equity value compounds. But sometimes the investment thesis breaks down. Revenue declines, margins compress, and the company cannot service its debt. When the enterprise value falls below total debt, equity is effectively worthless, and the existing capital structure must be reorganized.
 
-This is where distressed private equity enters. Rather than buying equity in a healthy company, distressed investors acquire debt at a discount and convert it into equity ownership through a restructuring process. The fundamental skill is the same—valuing a business and structuring capital—but the context is inverted. Instead of leveraging up, you are deleveraging. Instead of modeling growth, you are modeling survival.
+This is where distressed private equity enters. Rather than buying equity in a healthy company, distressed investors acquire debt at a discount and convert it into equity ownership through a restructuring process. The fundamental skill is the same (valuing a business and structuring capital), but the context is inverted. Instead of leveraging up, you are deleveraging. Instead of modeling growth, you are modeling survival.
 
 Understanding restructuring mechanics is increasingly relevant in PE interviews, particularly at firms with credit or special situations strategies. Even traditional buyout shops encounter distressed situations in their own portfolios.
 
@@ -52,17 +52,17 @@ The **absolute priority rule** governs these allocations: senior creditors must 
 
 ### Establishing Debt Capacity of the Distressed Business
 
-Before you can structure a swap, you must determine how much debt the reorganized company can actually support. This is the single most important analytical step—it sets the boundary between debt that stays as debt and debt that converts to equity.
+Before you can structure a swap, you must determine how much debt the reorganized company can actually support. This is the single most important analytical step, because it sets the boundary between debt that stays as debt and debt that converts to equity.
 
 The framework mirrors healthy company debt capacity analysis but with a critical difference: you must use sustainable, not peak, earnings.
 
-**Step 1 — Normalize EBITDA**: Strip out one-time charges, restructuring costs, and any unsustainable revenue. What is the company's run-rate EBITDA under realistic operating assumptions? Be conservative—the business just failed under its previous capital structure.
+**Step 1 - Normalize EBITDA**: Strip out one-time charges, restructuring costs, and any unsustainable revenue. What is the company's run-rate EBITDA under realistic operating assumptions? Be conservative. The business just failed under its previous capital structure.
 
-**Step 2 — Set sustainable leverage**: Distressed businesses emerging from restructuring typically carry 2.0-4.0x leverage, well below the 5.0-6.5x common in performing LBOs. Lenders and creditors want a cushion. If normalized EBITDA is $60 million, sustainable debt capacity might be $150-200 million (2.5-3.3x).
+**Step 2 - Set sustainable leverage**: Distressed businesses emerging from restructuring typically carry 2.0-4.0x leverage, well below the 5.0-6.5x common in performing LBOs. Lenders and creditors want a cushion. If normalized EBITDA is $60 million, sustainable debt capacity might be $150-200 million (2.5-3.3x).
 
-**Step 3 — Determine the "fulcrum security"**: The fulcrum security is the most senior class of debt that is impaired—meaning it will not be repaid in full. Everything above the fulcrum recovers 100%. Everything below recovers partially or not at all. Identifying the fulcrum security tells you who ends up owning the reorganized company.
+**Step 3 - Determine the "fulcrum security"**: The fulcrum security is the most senior class of debt that is impaired, meaning it will not be repaid in full. Everything above the fulcrum recovers 100%. Everything below recovers partially or not at all. Identifying the fulcrum security tells you who ends up owning the reorganized company.
 
-Using the example above: senior secured at $350 million recovers in full (through a mix of retained debt and equity). Unsecured at $250 million is the fulcrum—it receives whatever residual value exists after senior claims. Old equity is out of the money entirely.
+Using the example above: senior secured at $350 million recovers in full (through a mix of retained debt and equity). Unsecured at $250 million is the fulcrum, and it receives whatever residual value exists after senior claims. Old equity is out of the money entirely.
 
 ### Modeling Multiple Scenarios
 
@@ -74,7 +74,7 @@ Distressed analysis always requires scenario modeling because the outcome depend
 
 **Downside case**: Revenue continues to decline, cost cuts partially offset but margins remain depressed. EBITDA stabilizes at $45 million. The company supports only $120 million of debt, and a second restructuring may be necessary.
 
-For each scenario, calculate the recovery for each creditor class and the resulting equity ownership split. The negotiation between creditor classes centers on which scenario is most realistic—senior creditors argue downside to maximize their recovery share, while junior creditors argue upside to claim more equity.
+For each scenario, calculate the recovery for each creditor class and the resulting equity ownership split. The negotiation between creditor classes centers on which scenario is most realistic. Senior creditors argue downside to maximize their recovery share, while junior creditors argue upside to claim more equity.
 
 ### Structuring the Debt Write-Down
 
@@ -107,7 +107,7 @@ Every restructuring negotiation involves comparing the proposed plan against the
 | Old Equity Recovery | $0 (0%) | $0 (0%) |
 | Timeline | 3-6 months | 12-18 months |
 
-The swap delivers better recovery for every creditor class and resolves faster. This comparison is the analytical backbone of any restructuring proposal—you must demonstrate that the plan of reorganization delivers superior or equivalent recovery compared to alternatives.
+The swap delivers better recovery for every creditor class and resolves faster. This comparison is the analytical backbone of any restructuring proposal. You must demonstrate that the plan of reorganization delivers superior or equivalent recovery compared to alternatives.
 
 ### New Money Injections
 
@@ -125,7 +125,7 @@ Modeling new money requires careful attention to dilution. If the post-restructu
 
 ### Old Money vs. New Money Returns
 
-Distressed debt investors may play both sides—buying existing debt at a discount ("old money") and injecting new capital ("new money"). Analyzing returns for each position separately is essential.
+Distressed debt investors may play both sides, buying existing debt at a discount ("old money") and injecting new capital ("new money"). Analyzing returns for each position separately is essential.
 
 **Old money example**: An investor buys $100 million face value of unsecured debt at $0.20 on the dollar, paying $20 million. In the restructuring, that $100 million claim converts to 10% equity ownership (worth $20 million on day one). If the company's equity doubles over three years, the investor's 10% stake is worth $40 million.
 
@@ -141,7 +141,7 @@ Distressed debt investors may play both sides—buying existing debt at a discou
 - Blended MOIC: 1.84x
 - Blended IRR: 22.5%
 
-Note the blended returns are lower than the old money standalone because new money was invested at a higher effective valuation. Distressed investors track these returns separately—old money returns justify the credit research, while new money returns must clear the fund's equity hurdle rate independently.
+Note the blended returns are lower than the old money standalone because new money was invested at a higher effective valuation. Distressed investors track these returns separately. Old money returns justify the credit research, while new money returns must clear the fund's equity hurdle rate independently.
 
 ### The Restructuring Timeline
 
@@ -161,22 +161,22 @@ For return modeling purposes, the "entry" date for new money is typically at pla
 
 **"A portfolio company's EBITDA has declined and it can no longer service its debt. Walk me through the restructuring options."**
 
-"First, I would establish the company's sustainable debt capacity based on normalized EBITDA and conservative leverage targets—probably 2.5-3.5x for a business emerging from distress. The difference between current debt and sustainable debt capacity must be converted to equity. I would identify the fulcrum security, model recovery scenarios for each creditor class under both a restructuring and a liquidation, and demonstrate that the proposed plan delivers superior recovery. The negotiation centers on which operating scenario is realistic and how to allocate equity between impaired creditor classes."
+"First, I would establish the company's sustainable debt capacity based on normalized EBITDA and conservative leverage targets, probably 2.5-3.5x for a business emerging from distress. The difference between current debt and sustainable debt capacity must be converted to equity. I would identify the fulcrum security, model recovery scenarios for each creditor class under both a restructuring and a liquidation, and demonstrate that the proposed plan delivers superior recovery. The negotiation centers on which operating scenario is realistic and how to allocate equity between impaired creditor classes."
 
 **"How would you structure a debt-to-equity swap?"**
 
-"Start from sustainable debt capacity—say $200 million on $60 million of EBITDA. The remaining $400 million of debt must convert. Senior secured creditors retain the new debt and receive equity for the remainder. Junior creditors receive equity based on residual value after senior claims. The equity split is negotiated, but anchored by the absolute priority rule. I would build a waterfall model that allocates enterprise value through the capital structure and calculates each class's recovery percentage, then compare that to liquidation recoveries to validate the plan."
+"Start from sustainable debt capacity, say $200 million on $60 million of EBITDA. The remaining $400 million of debt must convert. Senior secured creditors retain the new debt and receive equity for the remainder. Junior creditors receive equity based on residual value after senior claims. The equity split is negotiated, but anchored by the absolute priority rule. I would build a waterfall model that allocates enterprise value through the capital structure and calculates each class's recovery percentage, then compare that to liquidation recoveries to validate the plan."
 
 **"An investor is considering buying distressed debt at 40 cents on the dollar. How do you evaluate the return?"**
 
-"The return depends on what that debt converts to in the restructuring. If $100 million face value of senior debt at $0.40 converts to $100 million of new debt at par (100% recovery for seniors), the investor doubles their money immediately—2.5x MOIC. If the same debt converts to 50% debt retention and 50% equity, the return depends on the equity value trajectory. I would model the post-restructuring equity value under base, upside, and downside scenarios and calculate the IRR across each, factoring in the expected timeline from purchase to emergence."
+"The return depends on what that debt converts to in the restructuring. If $100 million face value of senior debt at $0.40 converts to $100 million of new debt at par (100% recovery for seniors), the investor doubles their money immediately, a 2.5x MOIC. If the same debt converts to 50% debt retention and 50% equity, the return depends on the equity value trajectory. I would model the post-restructuring equity value under base, upside, and downside scenarios and calculate the IRR across each, factoring in the expected timeline from purchase to emergence."
 
 ## Key Takeaways
 
 - Debt-to-equity swaps resolve unsustainable capital structures by converting impaired debt claims into equity ownership of the reorganized company
-- The fulcrum security is the most senior impaired class—identifying it tells you who will own the reorganized equity
+- The fulcrum security is the most senior impaired class. Identifying it tells you who will own the reorganized equity
 - Sustainable debt capacity of the distressed business determines the boundary between retained debt and converted equity
 - Always compare restructuring recovery against liquidation recovery to validate the proposed plan
 - New money injections demand super-senior priority and anti-dilution protections, diluting existing creditor-turned-equity-holders
-- Distressed debt investors track old money and new money returns separately—old money benefits from the purchase discount, new money must clear equity hurdle rates independently
-- Scenario analysis is non-negotiable in distressed modeling—recovery percentages shift dramatically across base, upside, and downside cases
+- Distressed debt investors track old money and new money returns separately. Old money benefits from the purchase discount, new money must clear equity hurdle rates independently
+- Scenario analysis is non-negotiable in distressed modeling. Recovery percentages shift dramatically across base, upside, and downside cases

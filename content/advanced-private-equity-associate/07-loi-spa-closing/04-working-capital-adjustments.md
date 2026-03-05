@@ -140,7 +140,7 @@ Buyer: "Peg should reflect full year to avoid seasonal timing manipulation."
 
 - Working capital adjustments ensure buyer receives the business with normalized operating capital (AR, inventory, AP, accrued expenses) at closing
 - Set the working capital peg by calculating historical average over 12–24 months, adjusting for seasonality, and agreeing in the SPA
-- True-up mechanism provides dollar-for-dollar purchase price adjustments if closing working capital differs from the peg—shortfalls reduce proceeds to seller, excess increases proceeds
+- True-up mechanism provides dollar-for-dollar purchase price adjustments if closing working capital differs from the peg. Shortfalls reduce proceeds to seller, excess increases proceeds
 - Define working capital components explicitly in SPA to avoid disputes about what is included (deferred revenue, prepaid expenses, etc.)
 - Protect against seller manipulation (delayed vendor payments, accelerated collections) by excluding uncollectible AR, setting minimum component levels, and requiring ordinary course operations pre-close
 - Finalize working capital adjustments 60–90 days post-close based on closing balance sheet with SPA-defined dispute resolution (third-party accounting arbitration if disagreement)

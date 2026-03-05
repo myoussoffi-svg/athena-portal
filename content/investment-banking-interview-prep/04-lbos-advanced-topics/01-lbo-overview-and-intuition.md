@@ -55,7 +55,7 @@ LBO returns come from four sources:
 **1. Leverage (Debt Paydown)**:
 - As the company generates cash flow, it pays down debt
 - At exit, less debt means more equity value
-- Debt paydown is a "forced" return—it happens as long as the company generates cash
+- Debt paydown is a "forced" return that happens as long as the company generates cash
 
 **2. EBITDA Growth**:
 - If the company's EBITDA increases (through revenue growth, margin improvement, or cost cuts), the company is worth more at exit

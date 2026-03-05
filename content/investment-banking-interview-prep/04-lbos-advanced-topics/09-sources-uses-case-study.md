@@ -4,7 +4,7 @@ subtitle: "Build the foundation of every LBO and M&A transaction"
 type: case-study
 ---
 
-The Sources & Uses table is the first thing you build in any LBO model or acquisition analysis. It answers a simple question: where does the money come from, and where does it go? Getting this right is non-negotiable—if your sources don't equal your uses, your entire model is broken.
+The Sources & Uses table is the first thing you build in any LBO model or acquisition analysis. It answers a simple question: where does the money come from, and where does it go? Getting this right is non-negotiable. If your sources don't equal your uses, your entire model is broken.
 
 This case study walks through building a Sources & Uses table from scratch, including the transaction fees and adjustments that trip up junior bankers.
 
@@ -276,12 +276,12 @@ solution: |
 ```accordion-step
 id: variation-a-higher-leverage
 stepNumber: 7
-title: Variation A — Higher Leverage
+title: Variation A: Higher Leverage
 challenge: |
   Same deal, but debt markets are aggressive. Senior debt is now 4.0x and sub debt is 2.0x.
 
   What's the new equity check?
-hint: Total leverage increases from 4.5x to 6.0x. More debt means less equity—but also higher financing fees.
+hint: Total leverage increases from 4.5x to 6.0x. More debt means less equity, but also higher financing fees.
 solution: |
   **New debt:**
   - Senior: 4.0x × $80M = $320M
@@ -307,7 +307,7 @@ solution: |
 ```accordion-step
 id: variation-b-no-existing-debt
 stepNumber: 8
-title: Variation B — No Existing Debt
+title: Variation B: No Existing Debt
 challenge: |
   Target has no existing debt and $40M of cash. Same $500M EV, same financing terms as original (4.5x leverage).
 
@@ -333,7 +333,7 @@ solution: |
 ```accordion-step
 id: variation-c-management-rollover
 stepNumber: 9
-title: Variation C — Management Rollover
+title: Variation C: Management Rollover
 challenge: |
   Same as base case, but **management rolls over $20M of existing equity** into the new deal.
 
@@ -365,7 +365,7 @@ solution: |
 ```accordion-step
 id: variation-d-seller-note
 stepNumber: 10
-title: Variation D — Seller Note
+title: Variation D: Seller Note
 challenge: |
   The seller agrees to receive part of the purchase price as a note (deferred payment).
 
@@ -393,7 +393,7 @@ solution: |
 ```accordion-step
 id: variation-e-calculate-missing
 stepNumber: 11
-title: Variation E — Working Backwards
+title: Variation E: Working Backwards
 challenge: |
   You know:
   - EV = $400M
@@ -416,7 +416,7 @@ solution: |
   $430M = $412M − Cash
   ```
 
-  Wait, that gives negative cash. Let me reconsider—cash *reduces* Uses:
+  Wait, that gives negative cash. Let me reconsider. Cash *reduces* Uses:
 
   ```
   Uses = EV + Fees − Cash
@@ -481,7 +481,7 @@ Sometimes the deal requires leaving minimum operating cash (e.g., $10M) on the b
 
 ### 1. You Understand the Logic
 
-"Sources and Uses is about balancing the checkbook. Every dollar that goes out has to come from somewhere. The Uses are what we need to pay for—the company, the existing debt, the bankers. The Sources are where that money comes from—new debt and equity."
+"Sources and Uses is about balancing the checkbook. Every dollar that goes out has to come from somewhere. The Uses are what we need to pay for: the company, the existing debt, the bankers. The Sources are where that money comes from: new debt and equity."
 
 ### 2. You Don't Forget Fees
 
@@ -489,7 +489,7 @@ Transaction fees are easy to overlook but material. In a $500M deal, fees can be
 
 ### 3. You Handle Cash Correctly
 
-"The target's cash stays with the business. We're acquiring it as an asset. So it reduces our effective purchase price—it's money we get back."
+"The target's cash stays with the business. We're acquiring it as an asset. So it reduces our effective purchase price. It's money we get back."
 
 ### 4. You Can Calculate the Equity Check
 
@@ -511,14 +511,14 @@ The equity check is the punchline. Interviewers want to see you arrive at: "Afte
 
 **On judgment:**
 - "The equity check seems high. What could you adjust?"
-- "Debt markets tighten—how does that affect the deal?"
+- "Debt markets tighten. How does that affect the deal?"
 - "Why would a sponsor want to minimize the equity check?"
 
 ---
 
 ## Key Takeaways
 
-- Sources must equal Uses—this is the fundamental check of any transaction model
+- Sources must equal Uses. This is the fundamental check of any transaction model
 - Uses include: purchase price (EV), debt refinancing, and all transaction fees
 - Sources include: new debt tranches, sponsor equity, and sometimes rollover equity or seller notes
 - Target's existing cash typically reduces Uses (you acquire it as an asset)
@@ -531,7 +531,7 @@ The equity check is the punchline. Interviewers want to see you arrive at: "Afte
 ## Quick Reference Checklist
 
 **Uses:**
-- Purchase price (Enterprise Value or Equity Value—be clear which)
+- Purchase price (Enterprise Value or Equity Value; be clear which)
 - Refinance existing debt (if applicable)
 - Financing fees (% of debt raised)
 - M&A advisory fees (% of EV)

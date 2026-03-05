@@ -13,7 +13,7 @@ The term "mega-fund" appears constantly in PE recruiting discussions, often with
 
 A mega-fund is typically defined by assets under management, with the threshold commonly placed at ten billion dollars or more in flagship fund size. The firms most frequently cited as mega-funds include Blackstone, KKR, Apollo, Carlyle, TPG, Bain Capital, Thoma Bravo, and several others of similar scale.
 
-These firms manage enormous pools of capital across multiple strategies—buyouts, credit, real estate, infrastructure, and more. Their flagship buyout funds deploy billions in individual transactions, acquiring some of the largest companies that go private. The scale of operations is unlike anything at smaller firms.
+These firms manage enormous pools of capital across multiple strategies: buyouts, credit, real estate, infrastructure, and more. Their flagship buyout funds deploy billions in individual transactions, acquiring some of the largest companies that go private. The scale of operations is unlike anything at smaller firms.
 
 What seniors want you to understand is that the mega-fund category is somewhat fluid. New entrants join as funds grow, and the threshold for what constitutes "mega" increases over time. The label matters less than understanding what the characteristics of these firms imply for your experience and career.
 
@@ -45,7 +45,7 @@ Lower middle market and small-cap PE involve even smaller transactions, often ac
 
 Growth equity occupies a different position, taking minority stakes in growing companies rather than controlling buyouts. Firms like General Atlantic, Summit Partners, and TA Associates pursue this strategy.
 
-Each category involves different deal sizes, team structures, work experiences, and career implications. The mega-fund versus middle market distinction is not simply about prestige—it reflects genuinely different types of work.
+Each category involves different deal sizes, team structures, work experiences, and career implications. The mega-fund versus middle market distinction is not simply about prestige; it reflects genuinely different types of work.
 
 ## The Mega-Fund Experience
 
@@ -67,13 +67,13 @@ Culture varies significantly. Despite the common "mega-fund" label, culture vari
 
 Mega-fund experience has specific implications for subsequent career paths.
 
-Optionality is maximized. Mega-fund associates have access to a wide range of subsequent opportunities—business school, other PE firms, portfolio companies, hedge funds, corporate leadership.
+Optionality is maximized. Mega-fund associates have access to a wide range of subsequent opportunities: business school, other PE firms, portfolio companies, hedge funds, corporate leadership.
 
 The brand signals capability. Future employers interpret mega-fund experience as evidence that you passed a rigorous filter and performed in a demanding environment.
 
 Specialization may define your path. The industry expertise you develop at a mega-fund often shapes subsequent roles. If you become a healthcare investor at Blackstone, healthcare investing is likely your ongoing focus.
 
-Staying long-term is difficult. Few associates become partners at mega-funds. The path typically involves departure after two years, business school, and return at a more senior level—or departure to other opportunities.
+Staying long-term is difficult. Few associates become partners at mega-funds. The path typically involves departure after two years, business school, and return at a more senior level, or departure to other opportunities.
 
 ## Is Mega-Fund Right for You?
 
@@ -87,7 +87,7 @@ Consider cultural fit. The environment at different mega-funds varies, and the e
 
 Consider competition. Mega-fund recruiting is intensely competitive. Broadening your targets to include middle market and other firm types increases your probability of landing a PE role.
 
-What seniors advise is that you should pursue mega-funds if you have genuine reasons, not simply because they are the most prestigious option. Prestige is not a career strategy. Understanding what you want and pursuing opportunities that deliver it—whether at mega-funds or elsewhere—is a career strategy.
+What seniors advise is that you should pursue mega-funds if you have genuine reasons, not simply because they are the most prestigious option. Prestige is not a career strategy. Understanding what you want and pursuing opportunities that deliver it, whether at mega-funds or elsewhere, is a career strategy.
 
 ## Key Takeaways
 

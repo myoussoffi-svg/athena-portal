@@ -7,7 +7,7 @@ estimated_minutes: 16
 
 # The Headhunter Process
 
-Understanding how headhunters operate—their workflow, incentives, and the mechanics of how they manage candidates—allows you to navigate the process more effectively. This lesson takes you behind the scenes of headhunter operations to illuminate what happens after your initial conversation.
+Understanding how headhunters operate, including their workflow, incentives, and the mechanics of how they manage candidates, allows you to navigate the process more effectively. This lesson takes you behind the scenes of headhunter operations to illuminate what happens after your initial conversation.
 
 ## How Headhunters Source Candidates
 
@@ -15,7 +15,7 @@ Headhunters build candidate pools through multiple channels. Understanding these
 
 Bank relationships provide the most direct source. Headhunters maintain connections with HR departments and senior bankers at target firms. They receive lists of analysts, hear about strong performers through informal channels, and track class composition at elite banks. If you are at a target bank, you are likely already in headhunter databases.
 
-Alumni networks are another key source. Headhunters often have educational backgrounds similar to their candidates—they attended the same business schools, worked at similar firms. They tap these networks for referrals and candidate identification.
+Alumni networks are another key source. Headhunters often have educational backgrounds similar to their candidates. They attended the same business schools, worked at similar firms. They tap these networks for referrals and candidate identification.
 
 Referrals from PE professionals matter significantly. When a principal at a PE firm mentions a banking analyst who impressed them, headhunters pay attention. These warm leads are particularly valuable because they come with implicit endorsement.
 
@@ -33,13 +33,13 @@ Deeper evaluation occurs through conversations. Headhunters assess your communic
 
 Technical evaluation varies by headhunter. Some administer preliminary tests or ask technical questions during conversations. Others rely on the interview process to assess technical skills. Regardless, headhunters want confidence that you will perform well technically before presenting you to clients.
 
-The screening process is ongoing, not one-time. Your interactions throughout the recruiting process—responsiveness, professionalism, interview performance—inform headhunter assessments. Poor behavior at any point can diminish enthusiasm for your candidacy.
+The screening process is ongoing, not one-time. Your interactions throughout the recruiting process (responsiveness, professionalism, interview performance) inform headhunter assessments. Poor behavior at any point can diminish enthusiasm for your candidacy.
 
 ## How Candidates Are Presented to Firms
 
 When a PE firm engages a headhunter for a search, the recruiter presents a slate of qualified candidates. Understanding how this presentation works illuminates what makes you stand out.
 
-Presentations typically include resumes, brief summaries of candidate backgrounds, and headhunter assessments. The headhunter's endorsement matters—they are vouching for candidate quality. Strong headhunter relationships translate to stronger presentations.
+Presentations typically include resumes, brief summaries of candidate backgrounds, and headhunter assessments. The headhunter's endorsement matters, as they are vouching for candidate quality. Strong headhunter relationships translate to stronger presentations.
 
 Positioning varies by candidate. Headhunters highlight different attributes depending on what the firm is seeking. If a firm wants sector expertise, candidates with relevant coverage experience are emphasized. If the firm values modeling excellence, technical skills are highlighted.
 

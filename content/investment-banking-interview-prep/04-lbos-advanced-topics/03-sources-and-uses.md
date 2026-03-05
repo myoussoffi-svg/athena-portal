@@ -113,7 +113,7 @@ The sources and uses table must balance because every dollar used must come from
 
 **Sample Answer**:
 
-"On the uses side, we're paying for the target's equity, refinancing its existing debt, and covering transaction fees. On the sources side, we're financing the deal with a mix of debt—typically 60-70% of the total—and sponsor equity, which makes up the remaining 30-40%. In some cases, management may roll over part of their equity, which reduces the sponsor's cash requirement. The total sources must equal total uses."
+"On the uses side, we're paying for the target's equity, refinancing its existing debt, and covering transaction fees. On the sources side, we're financing the deal with a mix of debt (typically 60-70% of the total) and sponsor equity, which makes up the remaining 30-40%. In some cases, management may roll over part of their equity, which reduces the sponsor's cash requirement. The total sources must equal total uses."
 
 ### Rollover Equity: Why It Matters
 

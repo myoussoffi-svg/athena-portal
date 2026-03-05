@@ -172,7 +172,7 @@ Diligence findings in one area often have implications for others. Your synthesi
 
 **Synthesis**: Declining NPS may reflect lack of product leadership and roadmap execution. Retention risk is elevated until a strong VP of Product is hired. This should be flagged as a key hire in the 100-day plan.
 
-Associates must actively look for these connections and surface them in synthesis outputs. Do not assume your VP will connect the dots—make it explicit.
+Associates must actively look for these connections and surface them in synthesis outputs. Do not assume your VP will connect the dots. Make it explicit.
 
 ### Crafting the Executive Summary: Distilling Insights to One Page
 
@@ -314,11 +314,11 @@ If the answer to any of these is no, refine your synthesis before submitting.
 
 - Synthesis transforms data and analysis into decision-ready outputs that enable VPs and IC members to make informed investment decisions without re-reading raw data
 - Tailor outputs by audience: detailed functional memos for VPs, concise IC materials for partners, actionable value creation roadmaps for portfolio teams
-- Build functional memos with executive summaries, detailed analysis by topic, risk matrices, open items, and appendices—ensure each memo can stand alone but links to related findings
+- Build functional memos with executive summaries, detailed analysis by topic, risk matrices, open items, and appendices. Ensure each memo can stand alone but links to related findings
 - Connect findings across workstreams explicitly (commercial, financial, operational, organizational) to reveal cross-functional risks or opportunities that may not be obvious in isolated analysis
 - Craft executive summaries that distill the essence of analysis to one page, enabling readers to grasp key findings, risks, and recommendations in minutes
-- Quantify risks by estimating financial impact, assessing likelihood, and proposing mitigants—IC members need to understand not just that risks exist, but what they could cost
-- Link every finding to thesis validation, valuation adjustment, or value creation opportunity—diligence insights must inform investment decisions, not just describe the business
+- Quantify risks by estimating financial impact, assessing likelihood, and proposing mitigants. IC members need to understand not just that risks exist, but what they could cost
+- Link every finding to thesis validation, valuation adjustment, or value creation opportunity. Diligence insights must inform investment decisions, not just describe the business
 - Conduct a final IC-readiness check: Can the exec summary stand alone? Are conclusions data-supported? Are risks quantified? Are open items flagged? Is the recommendation clear?
 
 ## Synthesis

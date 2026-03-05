@@ -73,7 +73,7 @@ Taxes are calculated based on pre-tax income and the applicable tax rate. The ef
 **Net Income**:
 Net Income = EBT - Taxes
 
-Net income is the "bottom line"—what's left for shareholders after all expenses, interest, and taxes. It flows to retained earnings on the balance sheet.
+Net income is the "bottom line": what's left for shareholders after all expenses, interest, and taxes. It flows to retained earnings on the balance sheet.
 
 ### Why EBIT and EBITDA Matter More Than Net Income in Valuation
 

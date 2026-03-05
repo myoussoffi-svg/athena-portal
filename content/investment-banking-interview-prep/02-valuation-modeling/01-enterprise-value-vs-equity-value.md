@@ -27,7 +27,7 @@ Confusing EV and equity value is a common mistake that signals weak technical pr
 
 ### Equity Value (Market Capitalization)
 
-**Equity Value** represents the market value of a company's equity—what it would cost to buy all of the company's shares.
+**Equity Value** represents the market value of a company's equity: what it would cost to buy all of the company's shares.
 
 **Formula**:
 

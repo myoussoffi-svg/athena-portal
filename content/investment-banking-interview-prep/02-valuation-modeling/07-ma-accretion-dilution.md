@@ -197,7 +197,7 @@ note: "If target shareholders receive 25% ownership but contribute 29-33% of ear
 
 If the target's shareholders receive 25% of the combined company's equity but contribute 29-33% of earnings, they may be "undervalued" in the deal terms. This analysis supports negotiation on exchange ratios.
 
-**Interview Application**: "The target contributes 30% of combined EBITDA but is receiving 20% ownership—this suggests the target's shareholders are getting a below-fair deal, or the acquirer is paying a low premium."
+**Interview Application**: "The target contributes 30% of combined EBITDA but is receiving 20% ownership. This suggests the target's shareholders are getting a below-fair deal, or the acquirer is paying a low premium."
 
 ### Pro Forma Balance Sheet
 

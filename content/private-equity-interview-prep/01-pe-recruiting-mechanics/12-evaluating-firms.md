@@ -7,7 +7,7 @@ estimated_minutes: 17
 
 # Evaluating PE Firms
 
-As you navigate PE recruiting, you will encounter opportunities at different firms with varying characteristics, cultures, and career implications. Knowing how to evaluate these opportunities thoughtfully—rather than defaulting to brand recognition or compensation—is essential for making decisions you will not regret.
+As you navigate PE recruiting, you will encounter opportunities at different firms with varying characteristics, cultures, and career implications. Knowing how to evaluate these opportunities thoughtfully, rather than defaulting to brand recognition or compensation, is essential for making decisions you will not regret.
 
 ## Why Evaluation Matters
 
@@ -19,7 +19,7 @@ What seniors advise is that you should not wait until offers arrive to think abo
 
 ## Framework for Evaluation
 
-Effective firm evaluation considers multiple dimensions. No single factor determines whether a firm is right for you—the interaction of these factors with your own priorities and situation creates fit.
+Effective firm evaluation considers multiple dimensions. No single factor determines whether a firm is right for you. The interaction of these factors with your own priorities and situation creates fit.
 
 Investment strategy and focus. What does the firm invest in? Buyouts, growth equity, distressed situations? Which industries do they focus on? What deal sizes are typical? Understanding the firm's investment approach tells you what your daily work will involve and what skills you will develop.
 
@@ -47,7 +47,7 @@ Headhunters can provide insight but remember their incentives. They benefit from
 
 Portfolio company contacts offer a different perspective. How does the firm interact with its companies? Are they supportive partners or demanding overseers? This reveals culture in action.
 
-Public information—press coverage, deal announcements, performance data where available—supplements personal sources.
+Public information (press coverage, deal announcements, performance data where available) supplements personal sources.
 
 When gathering information, ask specific questions. "What is the culture like?" yields vague answers. "What happens when a deal goes poorly?" or "How are staffing decisions made?" surfaces concrete information.
 
@@ -97,4 +97,4 @@ Accept uncertainty. You will not have perfect information. You will not know wit
 
 ## Key Takeaways
 
-Evaluating PE firms requires considering investment strategy, firm structure, culture, career trajectory, learning opportunities, compensation, and work-life integration. Gather information from current and former employees, PE professionals, and portfolio company contacts. Culture is revealed in how firms handle stress and difficulty, not in pleasant interview interactions. Filter evaluation through your specific priorities—what matters to one candidate may not matter to you. Prepare evaluation criteria early so you can decide effectively under the time pressure of actual offers.
+Evaluating PE firms requires considering investment strategy, firm structure, culture, career trajectory, learning opportunities, compensation, and work-life integration. Gather information from current and former employees, PE professionals, and portfolio company contacts. Culture is revealed in how firms handle stress and difficulty, not in pleasant interview interactions. Filter evaluation through your specific priorities, because what matters to one candidate may not matter to you. Prepare evaluation criteria early so you can decide effectively under the time pressure of actual offers.

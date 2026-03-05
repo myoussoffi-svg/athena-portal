@@ -192,9 +192,9 @@ IRR is the annualized return over 5 years. For a 2.94× return over 5 years, IRR
 
 First, I'd determine the entry valuation. Let's say the company has $100 million in EBITDA, and we're acquiring it at a 10× multiple, so the entry enterprise value is $1 billion.
 
-Next, I'd build the sources and uses. On the uses side, we're purchasing the equity and paying transaction fees—let's assume $30 million in fees. On the sources side, we'll finance the deal with 70% debt ($700 million) and 30% equity ($330 million from the sponsor). So total uses are $1.03 billion, and total sources are $1.03 billion.
+Next, I'd build the sources and uses. On the uses side, we're purchasing the equity and paying transaction fees. Let's assume $30 million in fees. On the sources side, we'll finance the deal with 70% debt ($700 million) and 30% equity ($330 million from the sponsor). So total uses are $1.03 billion, and total sources are $1.03 billion.
 
-Then I'd project the business over a 5-year hold. Assume EBITDA grows at 8% per year, so by Year 5, EBITDA is about $147 million. I'd also project free cash flow—let's say the company generates $40 million per year in cash available to pay down debt.
+Then I'd project the business over a 5-year hold. Assume EBITDA grows at 8% per year, so by Year 5, EBITDA is about $147 million. I'd also project free cash flow. Let's say the company generates $40 million per year in cash available to pay down debt.
 
 Over 5 years, we pay down $200 million of debt, so the remaining debt at exit is $500 million.
 

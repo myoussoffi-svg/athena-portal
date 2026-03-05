@@ -18,13 +18,13 @@ estimated_minutes: 25
 
 ### Options in Acquisition Contexts
 
-When a private equity firm acquires a company—public or private—it must account for the dilutive impact of stock options and other equity compensation. The treatment differs meaningfully between a going-concern valuation and an acquisition scenario, and understanding this distinction is critical for accurate LBO modeling.
+When a private equity firm acquires a company, whether public or private, it must account for the dilutive impact of stock options and other equity compensation. The treatment differs meaningfully between a going-concern valuation and an acquisition scenario, and understanding this distinction is critical for accurate LBO modeling.
 
 In a going-concern analysis (trading comparables, for instance), the treasury stock method assumes the company would repurchase shares with proceeds from option exercises at the current market price. This makes sense because the company would continue operating and could execute such repurchases.
 
 In an acquisition scenario, the analysis changes. The target company will not continue repurchasing shares post-acquisition because it will cease to exist as an independent public entity. The acquirer effectively "takes out" all option holders at the offer price, paying the intrinsic value (offer price minus strike price) in cash.
 
-This has direct implications for Sources and Uses. The cash paid to option holders becomes an additional use of funds—a cost of acquiring the business beyond the basic equity purchase price.
+This has direct implications for Sources and Uses. The cash paid to option holders becomes an additional use of funds, a cost of acquiring the business beyond the basic equity purchase price.
 
 ### The Acquisition Method for Options
 

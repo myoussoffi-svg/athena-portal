@@ -324,7 +324,7 @@ Tax and legal diligence advisors are separate from deal counsel, but findings mu
 - Focus legal diligence review on material contracts (top customers, suppliers, leases, debt) for termination rights, change of control provisions, and pricing terms
 - Escalate red flags including undisclosed litigation, IP ownership issues, regulatory non-compliance, sales tax exposure, or aggressive tax positions to your VP and deal counsel
 - Coordinate tax and legal findings with deal counsel to ensure material issues are addressed through reps, warranties, indemnities, escrows, or conditions to closing
-- Tax and legal diligence are not back-office tasks—they directly affect valuation, deal structure, risk allocation, and fund returns
+- Tax and legal diligence are not back-office tasks. They directly affect valuation, deal structure, risk allocation, and fund returns
 
 ## Synthesis
 - What would change your mind based on new data?

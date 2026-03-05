@@ -18,7 +18,7 @@ estimated_minutes: 30
 
 ### The Interview Question You Must Master
 
-"Walk me through an LBO" is perhaps the most common technical question in private equity interviews. It appears in virtually every process, from mega-funds to lower middle market firms. Your ability to answer this question fluently—without hesitation, with appropriate technical depth, and with clear logical progression—signals whether you truly understand the mechanics or have merely memorized surface-level concepts.
+"Walk me through an LBO" is perhaps the most common technical question in private equity interviews. It appears in virtually every process, from mega-funds to lower middle market firms. Your ability to answer this question fluently, without hesitation, with appropriate technical depth, and with clear logical progression, signals whether you truly understand the mechanics or have merely memorized surface-level concepts.
 
 The challenge is that an LBO model contains dozens of interconnected calculations. You cannot simply list components randomly. You must demonstrate that you understand the logical flow: what comes first, what depends on what, and how everything connects to produce the ultimate output of sponsor returns.
 
@@ -26,11 +26,11 @@ The challenge is that an LBO model contains dozens of interconnected calculation
 
 Every LBO begins with determining what you are paying for the company. This requires calculating enterprise value and equity value.
 
-For a public company, you start with the offer price per share multiplied by diluted shares outstanding. This gives you the equity value—what you are paying to acquire all shareholder claims. You then add net debt (total debt minus cash) to arrive at enterprise value. The offer price typically includes a premium to the current trading price, often 20-40% for control transactions.
+For a public company, you start with the offer price per share multiplied by diluted shares outstanding. This gives you the equity value, which is what you are paying to acquire all shareholder claims. You then add net debt (total debt minus cash) to arrive at enterprise value. The offer price typically includes a premium to the current trading price, often 20-40% for control transactions.
 
 For a private company, the starting point is usually an EBITDA multiple. If the target generates $100 million of EBITDA and the agreed purchase multiple is 10x, the enterprise value is $1 billion. You then subtract net debt to determine the equity purchase price.
 
-This calculation matters because every subsequent number in the model flows from the purchase price. The debt capacity, the equity check, the goodwill—all are derivatives of this initial valuation.
+This calculation matters because every subsequent number in the model flows from the purchase price. The debt capacity, the equity check, the goodwill: all are derivatives of this initial valuation.
 
 ### Step 2: Structure the Financing (Sources and Uses)
 
@@ -40,7 +40,7 @@ Uses include the equity purchase price, refinancing of existing debt (if require
 
 Sources include the various debt tranches and the equity contribution. A typical structure might include senior secured term loans, a revolving credit facility (often undrawn at close), and potentially subordinated debt or mezzanine financing. The mix depends on the company's cash flow characteristics, the lending environment, and the sponsor's risk tolerance.
 
-The equity contribution is calculated as the residual: Total Uses minus Total Debt equals Sponsor Equity. This is why equity is called the "plug"—it absorbs whatever the debt markets will not fund.
+The equity contribution is calculated as the residual: Total Uses minus Total Debt equals Sponsor Equity. This is why equity is called the "plug," as it absorbs whatever the debt markets will not fund.
 
 A critical concept here is leverage capacity. Lenders typically underwrite to debt-to-EBITDA multiples (often 4-6x for senior debt) and interest coverage ratios. If the target has $100 million of EBITDA and lenders will extend 5x leverage, maximum senior debt is $500 million. This constraint shapes the entire capital structure.
 
@@ -99,7 +99,7 @@ Returns are calculated by comparing the equity investment to equity proceeds. Th
 
 **MOIC (Multiple of Invested Capital)** is simply proceeds divided by investment. $1.1 billion divided by $400 million equals 2.75x MOIC.
 
-Both metrics matter. IRR captures time value—a 2.0x return in three years is more attractive than 2.0x in seven years. MOIC captures absolute value creation regardless of timing. PE firms typically target 20%+ IRR and 2.0-3.0x MOIC.
+Both metrics matter. IRR captures time value: a 2.0x return in three years is more attractive than 2.0x in seven years. MOIC captures absolute value creation regardless of timing. PE firms typically target 20%+ IRR and 2.0-3.0x MOIC.
 
 ### The Complete Verbal Walkthrough
 
@@ -107,7 +107,7 @@ When asked to walk through an LBO in an interview, structure your response as fo
 
 "An LBO begins with determining the purchase price. For a public company, I'd calculate equity value from the offer price times diluted shares, then add net debt to get enterprise value. For a private company, I'd apply an EBITDA multiple to derive enterprise value.
 
-Next, I'd build the Sources and Uses. Uses include the equity purchase price, any debt refinancing, and transaction fees. Sources include the debt financing—typically senior secured term loans, potentially subordinated debt—and the sponsor equity contribution, which is the plug.
+Next, I'd build the Sources and Uses. Uses include the equity purchase price, any debt refinancing, and transaction fees. Sources include the debt financing (typically senior secured term loans, potentially subordinated debt) and the sponsor equity contribution, which is the plug.
 
 I'd then build an operating model projecting revenue, EBITDA, and working capital over the five-year holding period. From the operating model, I'd calculate free cash flow: EBITDA minus cash interest, cash taxes, capex, and changes in working capital.
 

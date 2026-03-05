@@ -18,7 +18,7 @@ estimated_minutes: 30
 
 ### Why Integration Matters in LBO Models
 
-An LBO model is fundamentally a three-statement model with additional complexity. The income statement, balance sheet, and cash flow statement must link together seamlessly. Every projection must flow correctly through all three statements. When integration breaks, the model produces incorrect outputs—and in interviews or on the job, broken models destroy credibility.
+An LBO model is fundamentally a three-statement model with additional complexity. The income statement, balance sheet, and cash flow statement must link together seamlessly. Every projection must flow correctly through all three statements. When integration breaks, the model produces incorrect outputs, and in interviews or on the job, broken models destroy credibility.
 
 The challenge in LBO models is the additional layers of complexity. Purchase accounting adjustments create new assets (goodwill) and modify existing assets (write-ups). The debt schedule interacts with both the income statement (interest expense) and balance sheet (debt balances). These interactions create circular references that require careful handling.
 
@@ -71,7 +71,7 @@ Apply purchase accounting adjustments to the pre-acquisition balance sheet. Writ
 Project revenue, operating expenses, and EBITDA over the holding period. These projections drive everything else.
 
 **Step 5: Income Statement**
-Build the projected income statement from revenue through net income. Leave interest expense blank initially—it will come from the debt schedule.
+Build the projected income statement from revenue through net income. Leave interest expense blank initially, as it will come from the debt schedule.
 
 **Step 6: Balance Sheet**
 Project balance sheet accounts. Working capital flows from revenue assumptions. PP&E flows from capex and depreciation. Debt comes from the debt schedule.
@@ -80,7 +80,7 @@ Project balance sheet accounts. Working capital flows from revenue assumptions. 
 Now build the debt schedule, which requires EBITDA and free cash flow inputs. The debt schedule produces interest expense, which flows back to the income statement, and ending debt balances, which flow to the balance sheet.
 
 **Step 8: Cash Flow Statement**
-Calculate cash flows from the income statement and balance sheet changes. The cash flow statement should balance—ending cash should match the balance sheet.
+Calculate cash flows from the income statement and balance sheet changes. The cash flow statement should balance, and ending cash should match the balance sheet.
 
 **Step 9: Returns Analysis**
 Calculate entry equity, exit proceeds, and returns. This requires the debt schedule (for exit net debt) and the operating model (for exit EBITDA).
@@ -117,7 +117,7 @@ Several specific linkages require attention:
 
 ### Balancing the Model
 
-A properly integrated model balances—the balance sheet balances and the cash flow statement reconciles to the balance sheet cash change. Checking that your model balances is essential.
+A properly integrated model balances. The balance sheet balances and the cash flow statement reconciles to the balance sheet cash change. Checking that your model balances is essential.
 
 **Balance Sheet Check:** Assets must equal Liabilities plus Equity. Include a check row that calculates the difference and flags any imbalance.
 
@@ -145,7 +145,7 @@ Depreciation increases, operating expenses increase, pre-tax income decreases by
 "Why does an LBO model have circular references?"
 Interest expense depends on debt, debt depends on cash flow, and cash flow depends on interest expense. This circularity requires iterative calculation or other resolution methods.
 
-Demonstrating comfort with these mechanics shows you can build models that actually work—not just fill in templates.
+Demonstrating comfort with these mechanics shows you can build models that actually work, not just fill in templates.
 
 ## Video Placeholder
 

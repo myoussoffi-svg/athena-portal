@@ -49,7 +49,7 @@ Outstanding item tracking is the early warning system that prevents these failur
 - Maintain credibility with management by demonstrating organization and follow-through
 - Ensure nothing falls through the cracks during high-intensity deal periods
 
-Associates who lack disciplined tracking systems become the bottleneck—either by failing to follow up on critical items or by creating chaos through repeated, disorganized requests.
+Associates who lack disciplined tracking systems become the bottleneck, either by failing to follow up on critical items or by creating chaos through repeated, disorganized requests.
 
 ### Building a Comprehensive Tracking System
 
@@ -218,10 +218,10 @@ Regardless of tool, the principles remain the same: real-time updates, clear cat
 
 ## Key Takeaways
 
-- Outstanding item tracking is the early warning system that prevents diligence bottlenecks and last-minute scrambles—lack of discipline here makes you the blocker
+- Outstanding item tracking is the early warning system that prevents diligence bottlenecks and last-minute scrambles. Lack of discipline here makes you the blocker
 - Build a comprehensive tracker that captures item description, priority tier, requestor, owner, expected delivery date, status, follow-up log, and blocker flags
 - Categorize items by impact (blocking, time-sensitive, flexible, nice-to-have) and escalate Tier 1 delays within 24–48 hours of missed deadlines
-- Structure follow-up communications to be specific, batched, and action-oriented—avoid vague requests or repeated individual emails
+- Structure follow-up communications to be specific, batched, and action-oriented. Avoid vague requests or repeated individual emails
 - Track partial deliveries explicitly, clarify gaps, and assess whether you can proceed or require full data before continuing
 - Monitor patterns in delays (financial data avoidance, disorganized responses, contradictions) as signals of deeper risks or credibility issues
 

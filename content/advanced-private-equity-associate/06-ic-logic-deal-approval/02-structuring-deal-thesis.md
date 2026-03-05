@@ -145,12 +145,12 @@ The thesis must be supported by diligence.
 
 ## Key Takeaways
 
-- A compelling thesis is specific, quantified, defensible, and actionable—it explains why this deal is attractive now, why your firm can win, and how value will be created
+- A compelling thesis is specific, quantified, defensible, and actionable. It explains why this deal is attractive now, why your firm can win, and how value will be created
 - Core components include the opportunity (why now), edge (why us), value creation plan (how we win with quantified levers), and exit strategy (how we realize value)
 - Pass the two-sentence clarity test: If you cannot state the thesis concisely, it is not clear enough for IC or execution
 - Avoid pitfalls including descriptive statements without plans, reliance on market beta without alpha creation, and too many value creation levers without prioritization
-- Link the thesis directly to diligence findings—every value creation claim must be supported by QofE, market study, customer data, or operational benchmarks
-- If diligence contradicts the thesis, revise the thesis or pass on the deal—do not force-fit a thesis to justify a desired investment
+- Link the thesis directly to diligence findings. Every value creation claim must be supported by QofE, market study, customer data, or operational benchmarks
+- If diligence contradicts the thesis, revise the thesis or pass on the deal. Do not force-fit a thesis to justify a desired investment
 
 ## Synthesis
 - What would change your mind based on new data?

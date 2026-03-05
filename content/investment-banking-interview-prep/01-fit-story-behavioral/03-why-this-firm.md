@@ -32,7 +32,7 @@ Effective answers reference specific, verifiable attributes of the firm that ali
 
 **Geographic presence or client base**: If you're interested in international deals or working with a certain client segment (e.g., sponsor coverage, corporate clients), and the firm has a strong presence there, that's relevant.
 
-**Training or development programs**: Some banks have formal analyst training programs or rotations. If that appeals to you, mention it—but only if you've researched what those programs involve.
+**Training or development programs**: Some banks have formal analyst training programs or rotations. If that appeals to you, mention it, but only if you've researched what those programs involve.
 
 **Conversations with employees**: If you've spoken with analysts or associates and came away impressed by their experiences, reference those conversations specifically. This is credible and shows initiative.
 

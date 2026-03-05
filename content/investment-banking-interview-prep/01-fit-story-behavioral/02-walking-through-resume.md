@@ -67,7 +67,7 @@ The key is to show that your path makes sense and that you've thought critically
 
 **Overstating your role**: If you were an intern who updated a model, don't claim you "led the valuation analysis." Interviewers will catch exaggerations.
 
-**Failing to connect experiences to banking**: If you worked in consulting or operations, explain what transferable skills you developed—analytical thinking, client communication, working under pressure.
+**Failing to connect experiences to banking**: If you worked in consulting or operations, explain what transferable skills you developed: analytical thinking, client communication, working under pressure.
 
 **Not preparing for every item on your resume**: If it's on your resume, you must be able to discuss it. If you can't, remove it.
 

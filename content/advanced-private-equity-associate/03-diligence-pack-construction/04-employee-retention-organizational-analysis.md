@@ -134,7 +134,7 @@ Key person risk arises when performance or institutional knowledge is concentrat
 
 3. **Operational-critical roles**: Who runs the factory or supply chain? Who manages vendor relationships?
 
-4. **Leadership-critical roles**: CEO, CFO, CTO, CRO—whose departure would destabilize the organization?
+4. **Leadership-critical roles**: CEO, CFO, CTO, CRO. Whose departure would destabilize the organization?
 
 **Assessing key person risk severity**:
 
@@ -179,13 +179,13 @@ Compare target company compensation to:
 
 3. **Equity**: What % of employees have equity? Are grants meaningful or token amounts?
 
-4. **Benefits**: Health insurance, 401k match, PTO—are they competitive?
+4. **Benefits**: Health insurance, 401k match, PTO: are they competitive?
 
 **Red flags in compensation**:
 
 - **Below-market comp**: Base salaries 10–20% below market median signal retention risk, especially in tight labor markets
 - **No equity for key employees**: In growth-stage companies, lack of equity limits retention and alignment
-- **Inconsistent comp philosophy**: Some roles overpaid, others underpaid—suggests lack of disciplined comp structure
+- **Inconsistent comp philosophy**: Some roles overpaid, others underpaid, which suggests lack of disciplined comp structure
 - **High cash burn on comp**: Total comp as % of revenue is above industry norms, suggesting inefficiency
 
 **Assessing retention risk based on comp**:
@@ -196,7 +196,7 @@ Compare target company compensation to:
 | Lead Engineer | $150K | $160K | -6% | Yes (1% equity) | Low |
 | CFO | $200K | $200K | 0% | Yes (2% equity) | Low |
 
-In this example, VP Sales is underpaid with no equity—high risk of departure if approached by competitors or after change of control.
+In this example, VP Sales is underpaid with no equity, creating high risk of departure if approached by competitors or after change of control.
 
 ### Equity Ownership and Vesting Schedules
 
@@ -306,7 +306,7 @@ Your organizational section should include:
 
 ## Key Takeaways
 
-- Organizational health determines whether value creation plans are executable—strong financials with weak teams create high risk of post-close underperformance
+- Organizational health determines whether value creation plans are executable. Strong financials with weak teams create high risk of post-close underperformance
 - Analyze turnover by function, tenure, and voluntary vs. involuntary to diagnose retention risks; benchmark against industry norms and escalate elevated turnover in critical roles
 - Identify key person risk by assessing who owns critical customer relationships, institutional knowledge, or product expertise; mitigate through retention agreements, equity rollovers, or succession planning
 - Benchmark compensation against market data to assess retention risk; below-market comp with no equity signals high attrition risk, especially for top performers

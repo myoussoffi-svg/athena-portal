@@ -129,7 +129,7 @@ During diligence, associates respond within hours. Post-close, response time may
 
 **Challenge 2: Management requests exceed associate bandwidth**
 
-CFO asks associate to build monthly forecast model, update comp benchmarking, and help recruit VP of Sales—all in same week.
+CFO asks associate to build monthly forecast model, update comp benchmarking, and help recruit VP of Sales, all in same week.
 
 **Solution**: Prioritize requests. Escalate to VP if workload is unsustainable. Consider hiring finance consultant for tactical support.
 

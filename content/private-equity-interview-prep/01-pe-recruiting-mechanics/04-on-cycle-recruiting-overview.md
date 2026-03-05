@@ -7,7 +7,7 @@ estimated_minutes: 17
 
 # On-Cycle Recruiting Overview
 
-On-cycle recruiting is the primary mechanism through which mega-funds and upper middle market PE firms fill their analyst and associate classes. Understanding how this process operates—not just the timeline, but the underlying dynamics—gives you a significant advantage over candidates who approach it passively.
+On-cycle recruiting is the primary mechanism through which mega-funds and upper middle market PE firms fill their analyst and associate classes. Understanding how this process operates, not just the timeline but the underlying dynamics, gives you a significant advantage over candidates who approach it passively.
 
 ## What On-Cycle Actually Means
 
@@ -23,7 +23,7 @@ On-cycle recruiting is almost entirely headhunter-driven. PE firms engage a smal
 
 The process begins with headhunter outreach. Recruiters contact candidates they have identified through their networks, referrals, and proprietary research. If you are at an elite bank in a strong group, outreach may come to you. If your profile is less visible, you may need to initiate contact.
 
-Initial conversations with headhunters assess your interest in PE, your timeline, and your preliminary preferences regarding fund type, size, and geography. These conversations are evaluative—headhunters are forming impressions that will determine which firms see your profile.
+Initial conversations with headhunters assess your interest in PE, your timeline, and your preliminary preferences regarding fund type, size, and geography. These conversations are evaluative. Headhunters are forming impressions that will determine which firms see your profile.
 
 Once you are in a headhunter's candidate pool, you wait for the cycle to begin. This wait can be nerve-wracking because timing is unpredictable. In some years, firms move in late summer. In others, the process begins in early fall or even winter. Market conditions, competition among firms, and idiosyncratic factors drive timing variation.
 
@@ -39,7 +39,7 @@ Understanding this dynamic helps you prepare appropriately. You do not have the 
 
 ## The Role of Signaling
 
-On-cycle recruiting is heavily influenced by signaling—the implicit and explicit communications that indicate candidate quality and interest. Your bank, your group, your deal experience, and your referrals all send signals to headhunters and firms.
+On-cycle recruiting is heavily influenced by signaling: the implicit and explicit communications that indicate candidate quality and interest. Your bank, your group, your deal experience, and your referrals all send signals to headhunters and firms.
 
 Strong signals include working at a highly-regarded bank, having closed transaction experience, receiving referrals from PE professionals who can vouch for you, and demonstrating genuine, informed interest in specific firms. Weak signals include vague expressions of PE interest without supporting evidence, lack of deal experience, or inability to articulate why PE and why now.
 
@@ -59,7 +59,7 @@ Understanding these patterns helps you calibrate your strategy. If mega-funds ar
 
 ## Preparing for On-Cycle Reality
 
-Effective preparation for on-cycle recruiting begins months before headhunter outreach. Technical skills must be sharp—you cannot cram LBO modeling in the forty-eight hours before an interview. Your deal experience narrative must be polished, with specific examples ready to discuss in depth. Your "why PE" and "why this firm" answers must be genuine and compelling.
+Effective preparation for on-cycle recruiting begins months before headhunter outreach. Technical skills must be sharp. You cannot cram LBO modeling in the forty-eight hours before an interview. Your deal experience narrative must be polished, with specific examples ready to discuss in depth. Your "why PE" and "why this firm" answers must be genuine and compelling.
 
 You should also prepare mentally for the process. Accept that timing will be unpredictable. Accept that decisions will be rushed. Accept that you will not have perfect information when making choices. This acceptance allows you to act effectively rather than being paralyzed by the process.
 

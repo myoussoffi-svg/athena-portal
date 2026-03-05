@@ -12,7 +12,7 @@
 - Connect KPIs directly to underwriting assumptions and diligence follow-ups.
 
 ## Why this matters in a real deal
-Most diligence packs include too many KPIs — and still miss the ones that matter. IC is not impressed by volume. They are looking for clarity: which metrics explain performance, which predict outcomes, and which introduce risk.
+Most diligence packs include too many KPIs, and still miss the ones that matter. IC is not impressed by volume. They are looking for clarity: which metrics explain performance, which predict outcomes, and which introduce risk.
 
 Weak KPI selection leads to false confidence. Strong KPI interpretation exposes fragility early, when it can still be addressed.
 
@@ -99,7 +99,7 @@ Segmentation should answer a question:
 - Where does it scale?
 - Where is risk concentrated?
 
-Do not segment for completeness — segment to isolate drivers.
+Do not segment for completeness. Segment to isolate drivers.
 
 ---
 
@@ -137,7 +137,7 @@ This signals judgment, not weakness.
 When discussing KPIs, IC wants clarity, not narration.
 
 Be prepared to answer:
-- Which metric matters most — and why?
+- Which metric matters most, and why?
 - What worries you in the data?
 - What must improve for the upside case to work?
 - What breaks first in a downside scenario?

@@ -266,7 +266,7 @@ Do not wait for the formal checkpoint if the decision is obvious. Escalate to yo
 - Combat deal momentum bias by institutionalizing the checkpoint, inviting dissent, conducting pre-mortems, and benchmarking against alternative opportunities
 - Consider structural solutions (earnouts, escrows, rollover equity) to address quantifiable risks, but pass if risks are existential or returns do not meet hurdles even with adjustments
 - Facilitate the internal decision discussion by presenting facts neutrally, framing the decision, inviting perspectives, and documenting outcomes and conditions for proceeding
-- Pass immediately if fraud, regulatory issues, thesis invalidation, or management non-cooperation are discovered—do not wait for the formal checkpoint when the decision is obvious
+- Pass immediately if fraud, regulatory issues, thesis invalidation, or management non-cooperation are discovered. Do not wait for the formal checkpoint when the decision is obvious
 
 ## Synthesis
 - What would change your mind based on new data?

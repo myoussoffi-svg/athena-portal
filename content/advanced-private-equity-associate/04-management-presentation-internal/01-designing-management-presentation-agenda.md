@@ -115,7 +115,7 @@ Effective questions:
 Examples:
 - “What would cause this growth plan to fail?”
 - “Which customer segment would you deprioritize first in a downturn?”
-- “What decision did you make that turned out to be wrong — and why?”
+- “What decision did you make that turned out to be wrong, and why?”
 
 Avoid questions that can be answered with slides or memorized talking points.
 
@@ -139,13 +139,13 @@ A well-designed agenda communicates:
 - seriousness
 - decision discipline
 
-It changes how management responds — often leading to more candid, less polished answers.
+It changes how management responds, often leading to more candid, less polished answers.
 
 ---
 
 ## What goes into the internal debrief
 After the meeting, be prepared to discuss:
-- What changed in your conviction — and why?
+- What changed in your conviction, and why?
 - Which answers increased or reduced risk?
 - Where management credibility was strongest or weakest?
 - What new diligence is required as a result?
@@ -156,7 +156,7 @@ The agenda should make this debrief straightforward.
 
 ## Synthesis
 - Which agenda section matters most for go/no-go?
-- What question are you most uncomfortable asking — and why?
+- What question are you most uncomfortable asking, and why?
 - What answer would materially change valuation or structure?
 
 ## Video Placeholder

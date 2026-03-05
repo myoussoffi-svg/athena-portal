@@ -57,7 +57,7 @@ These work well if you have some market knowledge and want to show you're thinki
 
 The best questions depend on who you're speaking with:
 
-**Junior interviewer (analyst or associate)**: Ask about their experience, day-to-day work, staffing, or training. Avoid asking them strategic questions about the firm's direction—they may not have visibility into that.
+**Junior interviewer (analyst or associate)**: Ask about their experience, day-to-day work, staffing, or training. Avoid asking them strategic questions about the firm's direction, as they may not have visibility into that.
 
 **Senior interviewer (VP, director, or MD)**: You can ask about the group's focus, deal pipeline, culture, or strategic positioning. Avoid asking overly granular questions about analyst logistics.
 

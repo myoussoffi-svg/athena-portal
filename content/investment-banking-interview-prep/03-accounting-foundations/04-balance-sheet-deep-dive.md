@@ -23,7 +23,7 @@ video:
 
 The balance sheet is essential for understanding a company's financial position, calculating enterprise value, and analyzing leverage. Interviewers will test your knowledge of balance sheet structure, your ability to interpret line items, and your understanding of how transactions flow through the balance sheet.
 
-You also need to be fluent with concepts like working capital, net debt, and the distinction between enterprise value and equity value—all of which rely on the balance sheet.
+You also need to be fluent with concepts like working capital, net debt, and the distinction between enterprise value and equity value, all of which rely on the balance sheet.
 
 ### Structure of the Balance Sheet
 

@@ -20,7 +20,7 @@ estimated_minutes: 45
 
 The days of simple senior secured term loans and high-yield bonds have given way to increasingly sophisticated debt structures. Direct lenders, credit funds, and specialized mezzanine providers compete with traditional banks, creating financing options that did not exist a decade ago. As a PE associate, you will evaluate these alternatives and model their impact on deal economics.
 
-Understanding these structures is not optional—the debt financing strategy fundamentally shapes the returns profile of every leveraged transaction.
+Understanding these structures is not optional. The debt financing strategy fundamentally shapes the returns profile of every leveraged transaction.
 
 ### Unitranche Facilities
 
@@ -30,11 +30,11 @@ The appeal is simplicity and speed. Rather than negotiating with multiple lender
 
 From a modeling perspective, unitranche is straightforward: one debt tranche, one interest rate, one amortization schedule. However, you should understand the implicit economics. The lender is effectively providing both senior and junior capital at a blended rate. If you could finance separately at SOFR plus 400 for senior and SOFR plus 900 for mezz, a SOFR plus 650 unitranche reflects roughly 60% senior and 40% junior economics.
 
-Unitranche facilities often include **delayed draw term loans** (DDTLs)—committed but undrawn capacity for acquisitions or capital expenditures. You pay a commitment fee on the undrawn portion, typically 50-100 basis points, and draw as needed. Your model should reflect DDTL draws in add-on scenarios.
+Unitranche facilities often include **delayed draw term loans** (DDTLs), which are committed but undrawn capacity for acquisitions or capital expenditures. You pay a commitment fee on the undrawn portion, typically 50-100 basis points, and draw as needed. Your model should reflect DDTL draws in add-on scenarios.
 
 ### Second Lien Term Loans
 
-Second lien debt is secured by the same collateral as first lien but with subordinate priority. In a bankruptcy or liquidation, first lien holders are paid in full before second lien receives anything. This structural subordination commands a premium—second lien typically prices 300-500 basis points above first lien.
+Second lien debt is secured by the same collateral as first lien but with subordinate priority. In a bankruptcy or liquidation, first lien holders are paid in full before second lien receives anything. This structural subordination commands a premium, and second lien typically prices 300-500 basis points above first lien.
 
 Second lien creates incremental leverage capacity without moving to unsecured debt. A business that can support 4.0x first lien might accommodate an additional 1.5x of second lien, bringing total secured leverage to 5.5x at a blended cost well below unsecured alternatives.
 
@@ -44,9 +44,9 @@ The **intercreditor agreement** between first and second lien holders governs th
 
 Mezzanine debt sits between senior secured debt and equity in the capital structure. It is typically unsecured, often includes **PIK interest** components, and may carry **equity warrants** or conversion features. All-in returns to mezzanine providers often target 15-20%, combining current cash interest, PIK accrual, and equity participation.
 
-Consider a mezzanine tranche with 8% cash interest, 6% PIK, and warrants for 3% of equity. The cash pay costs $8 million annually on a $100 million tranche. The PIK accrues, growing the principal balance—after five years, you owe $134 million of principal. The warrants participate in equity upside, adding to lender returns if the deal performs.
+Consider a mezzanine tranche with 8% cash interest, 6% PIK, and warrants for 3% of equity. The cash pay costs $8 million annually on a $100 million tranche. The PIK accrues, growing the principal balance. After five years, you owe $134 million of principal. The warrants participate in equity upside, adding to lender returns if the deal performs.
 
-**PIK toggle** features allow borrowers to elect PIK treatment when cash flow is constrained, converting to cash pay when operations improve. This flexibility comes at a cost—PIK rates typically exceed cash pay rates by 100-200 basis points.
+**PIK toggle** features allow borrowers to elect PIK treatment when cash flow is constrained, converting to cash pay when operations improve. This flexibility comes at a cost: PIK rates typically exceed cash pay rates by 100-200 basis points.
 
 Your model must track the accreting mezzanine balance and include warrant dilution in the equity waterfall. Mezzanine repayment priority comes after senior debt but before equity, affecting cash available for distributions.
 
@@ -56,7 +56,7 @@ Debt agreements include **covenants** that restrict borrower actions or require 
 
 **Maintenance covenants** require ongoing compliance with metrics like leverage ratios or fixed charge coverage. Breach triggers default, even if the company is current on payments. Traditional bank debt emphasizes maintenance covenants.
 
-**Incurrence covenants** only apply when taking specified actions—raising additional debt, paying dividends, or making acquisitions. Covenant-lite (cov-lite) loans rely primarily on incurrence covenants, providing flexibility as long as the company avoids triggering events.
+**Incurrence covenants** only apply when taking specified actions, such as raising additional debt, paying dividends, or making acquisitions. Covenant-lite (cov-lite) loans rely primarily on incurrence covenants, providing flexibility as long as the company avoids triggering events.
 
 For modeling purposes, build covenant compliance tests into your projections. If your base case approaches covenant thresholds, you have limited margin for underperformance before technical default becomes a concern.
 
@@ -85,5 +85,5 @@ Your model should sensitivity test leverage levels to ensure the debt service is
 - Unitranche facilities blend senior and junior economics into a single tranche, offering execution simplicity at an intermediate cost of capital
 - Second lien debt expands leverage capacity through collateral subordination, typically pricing 300-500 basis points above first lien
 - Mezzanine debt combines cash pay interest, PIK accrual, and potential equity participation, targeting 15-20% all-in returns
-- Covenant structures determine financial flexibility—maintenance covenants require ongoing compliance while incurrence covenants only apply when taking specified actions
+- Covenant structures determine financial flexibility. Maintenance covenants require ongoing compliance while incurrence covenants only apply when taking specified actions
 - Calculate true all-in cost by incorporating OID, fees, and prepayment penalties alongside stated interest rates

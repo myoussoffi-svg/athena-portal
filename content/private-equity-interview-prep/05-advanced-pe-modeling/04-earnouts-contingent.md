@@ -18,11 +18,11 @@ estimated_minutes: 35
 
 ### Bridging the Valuation Gap
 
-Buyers and sellers frequently disagree on value. The seller believes their company is worth $500 million based on projected growth. The buyer, skeptical of those projections, offers $400 million based on current performance. This gap can kill a deal—unless both parties agree to share the risk through contingent consideration.
+Buyers and sellers frequently disagree on value. The seller believes their company is worth $500 million based on projected growth. The buyer, skeptical of those projections, offers $400 million based on current performance. This gap can kill a deal, unless both parties agree to share the risk through contingent consideration.
 
 Earnouts make a portion of the purchase price contingent on future performance. The buyer pays $400 million upfront, with an additional $100 million payable if the company achieves specified EBITDA targets over the next two years. The seller gets their full valuation if projections materialize. The buyer limits downside if projections prove optimistic.
 
-As an associate, you will model earnout scenarios to understand how they affect returns under various outcomes—and you will need to explain these dynamics clearly.
+As an associate, you will model earnout scenarios to understand how they affect returns under various outcomes, and you will need to explain these dynamics clearly.
 
 ### Common Earnout Structures
 
@@ -30,7 +30,7 @@ Earnouts tie payments to measurable milestones, typically financial metrics or o
 
 **Revenue-based earnouts** trigger payments when revenue hits specified thresholds. A software company acquisition might include $20 million payable if Year 1 revenue exceeds $80 million, with another $20 million if Year 2 revenue exceeds $100 million. Revenue is relatively objective and hard to manipulate, making it a common choice.
 
-**EBITDA-based earnouts** tie payments to profitability. This aligns incentives around profitable growth rather than top-line expansion at any cost. However, EBITDA calculations become contentious—does the earnout adjust for one-time costs? How are synergies treated? Who controls cost allocation? Sophisticated agreements define "Earnout EBITDA" precisely.
+**EBITDA-based earnouts** tie payments to profitability. This aligns incentives around profitable growth rather than top-line expansion at any cost. However, EBITDA calculations become contentious: does the earnout adjust for one-time costs? How are synergies treated? Who controls cost allocation? Sophisticated agreements define "Earnout EBITDA" precisely.
 
 **Milestone-based earnouts** pay upon achieving specific operational goals: regulatory approval, customer contract execution, product launch, or technology development. Life sciences and technology deals frequently use milestone payments tied to clinical trial results or commercial milestones.
 
@@ -65,7 +65,7 @@ From a returns perspective, treat earnouts as part of total consideration. Your 
 
 ### Structural Protections and Dispute Resolution
 
-Earnouts create inherent conflicts. The buyer controls the business post-acquisition and can influence whether earnout thresholds are achieved—potentially manipulating results to avoid payment. Sellers seek structural protections against this risk.
+Earnouts create inherent conflicts. The buyer controls the business post-acquisition and can influence whether earnout thresholds are achieved, potentially manipulating results to avoid payment. Sellers seek structural protections against this risk.
 
 **Operating covenants** require the buyer to operate the business in a manner consistent with historical practice and conducive to achieving earnout targets. The buyer cannot gut the sales force or slash marketing if those actions undermine earnout achievement.
 
@@ -73,7 +73,7 @@ Earnouts create inherent conflicts. The buyer controls the business post-acquisi
 
 **Acceleration provisions** pay earnouts immediately if the buyer sells the business before the earnout period ends. This prevents buyers from flipping companies quickly while arguing earnout conditions were never triggered.
 
-**Dispute resolution mechanisms** establish procedures for disagreements, from negotiation to arbitration. Litigation over earnouts is costly and slow—well-drafted agreements minimize this risk.
+**Dispute resolution mechanisms** establish procedures for disagreements, from negotiation to arbitration. Litigation over earnouts is costly and slow, so well-drafted agreements minimize this risk.
 
 ### When Earnouts Make Sense
 

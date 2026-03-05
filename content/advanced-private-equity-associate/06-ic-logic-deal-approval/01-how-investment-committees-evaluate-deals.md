@@ -276,11 +276,11 @@ IC meetings result in one of four outcomes:
 
 - IC is the governing body that approves investments; most funds require unanimous or supermajority approval, and deals typically get 60–90 minutes for presentation and discussion
 - IC evaluates deals based on hierarchy: Thesis clarity and conviction (most important), risk identification and mitigation, returns and valuation discipline, diligence rigor, and team quality
-- IC decisions include approved, approved with conditions, more work required, or pass—associates must prepare materials that address potential objections preemptively
+- IC decisions include approved, approved with conditions, more work required, or pass. Associates must prepare materials that address potential objections preemptively
 - IC members look for clarity, data-driven conclusions, balanced perspectives on risk, conviction without arrogance, and preparedness for challenging questions
 - Address IC objections by showing data (valuation benchmarking, downside modeling), proposing credible mitigants (escrows, management changes, value creation plans), and being honest about uncertainties
 - Associates prepare IC memos/presentations, backup materials, conduct mock ICs, draft Q&A documents, and attend IC as observers to take notes and track follow-ups
-- Success at IC requires rigorous preparation, honest risk framing, and demonstrable conviction in the thesis—avoid minimizing risks or relying on aspirational mitigants
+- Success at IC requires rigorous preparation, honest risk framing, and demonstrable conviction in the thesis. Avoid minimizing risks or relying on aspirational mitigants
 
 ## Synthesis
 - What would change your mind based on new data?

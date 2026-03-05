@@ -33,7 +33,7 @@ The cash flow statement reconciles **net income** (from the income statement) wi
 - How much cash was invested in the business
 - How much cash was raised or returned through financing activities
 
-The three sections—operating, investing, and financing—sum to the **net change in cash**.
+The three sections (operating, investing, and financing) sum to the **net change in cash**.
 
 ### Cash Flow from Operations (CFO)
 
@@ -94,7 +94,7 @@ This must equal the difference between the cash balance at the beginning and end
 
 ### Why Net Income Doesn't Equal Cash Flow
 
-Net income is based on accrual accounting, which recognizes revenue when earned and expenses when incurred—not when cash changes hands. The cash flow statement adjusts for:
+Net income is based on accrual accounting, which recognizes revenue when earned and expenses when incurred, not when cash changes hands. The cash flow statement adjusts for:
 
 - **Non-cash expenses** like depreciation
 - **Timing differences** in receivables, inventory, and payables

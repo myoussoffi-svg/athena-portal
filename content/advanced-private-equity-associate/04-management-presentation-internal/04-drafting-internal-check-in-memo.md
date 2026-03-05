@@ -296,11 +296,11 @@ The associate typically drafts the check-in memo, but the VP will review and edi
 
 - The internal check-in memo is a mid-diligence decision gate that summarizes status, assesses risks, and recommends whether to proceed, restructure, pause, or pass
 - Structure the memo concisely (3–5 pages) with executive summary, diligence status, thesis validation, key findings by workstream, risk summary, and clear recommendation
-- Write directly and honestly—this is an internal document; avoid hedging, spin, or ambiguity that obscures critical issues
+- Write directly and honestly. This is an internal document; avoid hedging, spin, or ambiguity that obscures critical issues
 - Assess whether the thesis is intact, challenged, or invalidated based on diligence findings and communicate this clearly in the thesis validation section
 - Categorize risks as high, medium, or low severity and quantify their impact wherever possible (e.g., revenue at risk, EBITDA impact)
 - Provide a clear recommendation (proceed, proceed with conditions, restructure, pause, pass) with supporting rationale and explicit next steps
-- Avoid common mistakes: being too long, burying the lede, failing to quantify risks, or leaving the recommendation ambiguous—principals need clarity to make decisions
+- Avoid common mistakes: being too long, burying the lede, failing to quantify risks, or leaving the recommendation ambiguous. Principals need clarity to make decisions
 
 ## Synthesis
 - What would change your mind based on new data?

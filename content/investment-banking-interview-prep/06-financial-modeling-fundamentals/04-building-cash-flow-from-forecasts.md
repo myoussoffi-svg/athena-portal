@@ -18,7 +18,7 @@ estimated_minutes: 40
 
 ### Why Build Cash Flow from Forecasts?
 
-In a three-statement model, you don't forecast the cash flow statement directly. Instead, you **derive** it from the income statement and balance sheet changes. This ensures the statements are fully integrated—any change in assumptions automatically flows through all three statements.
+In a three-statement model, you don't forecast the cash flow statement directly. Instead, you **derive** it from the income statement and balance sheet changes. This ensures the statements are fully integrated, so any change in assumptions automatically flows through all three statements.
 
 The cash flow statement answers: "Where did cash come from, and where did it go?"
 

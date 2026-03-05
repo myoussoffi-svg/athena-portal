@@ -18,7 +18,7 @@ estimated_minutes: 45
 
 ### Balance Sheet Forecasting Overview
 
-The balance sheet captures a company's financial position at a point in time. Unlike the income statement (which shows flows over a period), the balance sheet shows stocks—the accumulated balances of assets, liabilities, and equity.
+The balance sheet captures a company's financial position at a point in time. Unlike the income statement (which shows flows over a period), the balance sheet shows stocks: the accumulated balances of assets, liabilities, and equity.
 
 Forecasting the balance sheet requires understanding what drives each line item and how it connects to the income statement and cash flow statement.
 
@@ -61,7 +61,7 @@ This equation must always hold. If it doesn't, your model has an error.
 
 Working capital accounts (receivables, inventory, payables) are typically forecast using **days-based metrics** that tie to revenue or COGS.
 
-**Days Sales Outstanding (DSO)** — Accounts Receivable
+**Days Sales Outstanding (DSO)** - Accounts Receivable
 
 DSO measures how many days of revenue are tied up in receivables.
 
@@ -74,7 +74,7 @@ Accounts Receivable = (DSO / 365) × Revenue
 **Example**: If DSO is 45 days and projected revenue is $500M:
 AR = (45 / 365) × $500M = $61.6M
 
-**Days Inventory Outstanding (DIO)** — Inventory
+**Days Inventory Outstanding (DIO)** - Inventory
 
 DIO measures how many days of COGS are held in inventory.
 
@@ -84,7 +84,7 @@ To forecast:
 
 Inventory = (DIO / 365) × COGS
 
-**Days Payable Outstanding (DPO)** — Accounts Payable
+**Days Payable Outstanding (DPO)** - Accounts Payable
 
 DPO measures how many days the company takes to pay suppliers.
 
@@ -288,7 +288,7 @@ note: "Balance Check: $0 across all years (Assets = Liabilities + Equity)"
 
 **Not linking CapEx to PP&E**: If you forecast CapEx on the cash flow statement, it must also appear in the PP&E rollforward.
 
-**Inconsistent working capital assumptions**: If DSO suddenly jumps from 40 to 60 days, that's a red flag—make sure changes are intentional and justified.
+**Inconsistent working capital assumptions**: If DSO suddenly jumps from 40 to 60 days, that's a red flag. Make sure changes are intentional and justified.
 
 **Not including a balance check**: Without this check, errors can go unnoticed and corrupt your entire model.
 

@@ -175,12 +175,12 @@ IC expects to see three cases:
 
 ## Key Takeaways
 
-- Valuation in PE anchors on EBITDA multiples benchmarked against public comps and precedent transactions—justify premiums with differentiation (growth, margins, moat)
+- Valuation in PE anchors on EBITDA multiples benchmarked against public comps and precedent transactions. Justify premiums with differentiation (growth, margins, moat)
 - Use conservative exit multiple assumptions (flat or declining) to force value creation through EBITDA growth rather than relying on multiple expansion or arbitrage
 - Attribute returns to specific drivers (EBITDA growth, multiple expansion, debt paydown) with >70% from operational improvements and <30% from multiple or leverage
-- Present three scenarios (base, upside, downside) showing returns under different assumptions—IC assesses whether base is achievable and downside meets hurdles
+- Present three scenarios (base, upside, downside) showing returns under different assumptions. IC assesses whether base is achievable and downside meets hurdles
 - Defend valuation with data (EV/Revenue, growth vs. comps, precedent transactions) and strategic rationale (platform value, buy-and-build, professionalization)
-- If valuation cannot be defended, acknowledge it and offer to walk or renegotiate—do not force-fit justifications that IC will reject
+- If valuation cannot be defended, acknowledge it and offer to walk or renegotiate. Do not force-fit justifications that IC will reject
 
 ## Synthesis
 - What would change your mind based on new data?

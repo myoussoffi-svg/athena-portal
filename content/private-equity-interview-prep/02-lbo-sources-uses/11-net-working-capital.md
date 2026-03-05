@@ -28,7 +28,7 @@ Or more specifically:
 
 **NWC = Accounts Receivable + Inventory + Prepaid Expenses + Other Current Assets - Accounts Payable - Accrued Expenses - Deferred Revenue - Other Current Liabilities**
 
-Note that cash and debt are excluded—these are financing items, not operating items. Similarly, the current portion of long-term debt is excluded from working capital calculations.
+Note that cash and debt are excluded, as these are financing items, not operating items. Similarly, the current portion of long-term debt is excluded from working capital calculations.
 
 ### Why Working Capital Matters in LBOs
 
@@ -36,7 +36,7 @@ Working capital impacts LBOs in two critical ways:
 
 **At Transaction Close:** The purchase agreement typically includes a net working capital adjustment. If the target's working capital at closing differs from an agreed target level, the purchase price adjusts accordingly. Higher working capital means the buyer pays more; lower working capital means the buyer pays less.
 
-**During the Holding Period:** Changes in working capital consume or release cash. As revenue grows, working capital typically grows proportionally—receivables and inventory increase, requiring cash investment. This cash requirement reduces free cash flow available for debt paydown.
+**During the Holding Period:** Changes in working capital consume or release cash. As revenue grows, working capital typically grows proportionally. Receivables and inventory increase, requiring cash investment. This cash requirement reduces free cash flow available for debt paydown.
 
 A company that requires significant working capital investment to grow is less attractive as an LBO candidate than one that generates working capital as it grows. This is why businesses with negative working capital cycles (receiving cash before paying suppliers, like subscription businesses) are particularly attractive.
 
@@ -81,7 +81,7 @@ Lower CCC is better for LBOs because less cash is tied up in operations. Sponsor
 **Reducing DIO:** Improve inventory management, just-in-time practices, SKU rationalization
 **Increasing DPO:** Negotiate longer payment terms with suppliers, use supply chain financing
 
-A 10-day improvement in CCC for a company with $400 million revenue frees up approximately $11 million of cash—real value creation.
+A 10-day improvement in CCC for a company with $400 million revenue frees up approximately $11 million of cash, representing real value creation.
 
 ### Working Capital Build vs. Release
 
@@ -136,7 +136,7 @@ For LBO modeling, consider:
 
 ### Negative Working Capital
 
-Some businesses operate with negative working capital—current operating liabilities exceed current operating assets. This occurs when:
+Some businesses operate with negative working capital, where current operating liabilities exceed current operating assets. This occurs when:
 
 - Customers pay upfront (subscriptions, deposits)
 - Payment terms with suppliers are extended
@@ -159,7 +159,7 @@ The $3 million decrease in NWC (it becomes more negative) is a cash inflow, adde
 Working capital questions appear frequently in technical interviews:
 
 "Walk me through how working capital affects free cash flow."
-When working capital increases—say, receivables grow because revenue grows—cash is consumed. The increase in receivables means you have sold goods but not yet collected cash. This cash is tied up in working capital rather than available for debt paydown. So an increase in NWC is subtracted in the free cash flow calculation.
+When working capital increases (say, receivables grow because revenue grows), cash is consumed. The increase in receivables means you have sold goods but not yet collected cash. This cash is tied up in working capital rather than available for debt paydown. So an increase in NWC is subtracted in the free cash flow calculation.
 
 "What is the cash conversion cycle and why does it matter?"
 CCC equals DSO plus DIO minus DPO. It measures how long cash is tied up in operations. Lower CCC means less cash is required to fund the business, which means more free cash flow and higher debt capacity. Improving CCC is a common value creation lever for PE sponsors.
@@ -189,6 +189,6 @@ Because growth generates cash rather than consuming it. As revenue grows, custom
 - Net Working Capital = Current Operating Assets - Current Operating Liabilities (excluding cash and debt)
 - Changes in working capital directly impact free cash flow: increases consume cash, decreases release cash
 - Model working capital using days (DSO, DIO, DPO) or percentage of revenue approaches based on data availability
-- The cash conversion cycle (DSO + DIO - DPO) measures days of cash tied up in operations—lower is better
+- The cash conversion cycle (DSO + DIO - DPO) measures days of cash tied up in operations, and lower is better
 - Purchase agreements include NWC adjustments: buyer pays more if closing NWC exceeds target, pays less if below
 - Businesses with negative working capital generate cash as they grow, making them particularly attractive LBO candidates

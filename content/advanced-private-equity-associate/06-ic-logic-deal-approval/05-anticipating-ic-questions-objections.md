@@ -212,9 +212,9 @@ IC may approve with follow-up items or request additional work.
 
 - Anticipate standard IC questions (Why is this a good deal? What is the key risk? Why this price? What if base case fails? Why us, why now?) and prepare concise, thesis-aligned answers
 - For each key risk, anticipate specific follow-up questions and prepare data-driven responses with supporting evidence (contract terms, customer conversations, QofE findings)
-- Prepare answers with data, not opinions—cite specific sources (QofE, management, customer interviews, market study) and quantify impacts wherever possible
+- Prepare answers with data, not opinions. Cite specific sources (QofE, management, customer interviews, market study) and quantify impacts wherever possible
 - Conduct mock IC sessions 1–2 weeks before IC to stress-test presentation, identify weak points, and refine Q&A document
-- Handle "I don't know" with honesty and offers to follow up—IC respects transparency over guessing or deflection
+- Handle "I don't know" with honesty and offers to follow up. IC respects transparency over guessing or deflection
 - Recognize signals of skepticism (repeated questions on risks, defensive body language) vs. curiosity (clarifying questions, engagement with upside) and adjust tone accordingly
 - Track all follow-ups after IC and circulate summary within 24 hours with questions, answers, action items, owners, and timelines
 

@@ -197,9 +197,9 @@ Both parties sign
 
 ## Key Takeaways
 
-- LOI is a mostly non-binding agreement outlining purchase price, structure, exclusivity, and timeline—certain provisions (exclusivity, confidentiality, expenses, governing law) are binding
+- LOI is a mostly non-binding agreement outlining purchase price, structure, exclusivity, and timeline. Certain provisions (exclusivity, confidentiality, expenses, governing law) are binding
 - Key negotiation points include purchase price (anchor at low end of IC range), exclusivity period (60–90 days standard), working capital/net debt adjustments, and deal structure (asset vs. stock)
-- Exclusivity is binding and protects buyer's diligence investment—justify longer periods with business complexity or regulatory needs, offer carve-outs if seller resists
+- Exclusivity is binding and protects buyer's diligence investment. Justify longer periods with business complexity or regulatory needs, offer carve-outs if seller resists
 - Ensure working capital and net debt are defined clearly in the LOI to avoid disputes during closing adjustments
 - Associate reviews LOI for consistency with IC terms, completeness, and clear definitions before VP approval and sending to seller
 - Escalate material seller pushback (price reductions, short exclusivity, unmeasurable earnouts, structure conflicts) to your VP immediately

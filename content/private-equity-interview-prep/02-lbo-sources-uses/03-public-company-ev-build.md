@@ -18,11 +18,11 @@ estimated_minutes: 25
 
 ### Why Enterprise Value Calculations Matter in LBOs
 
-When a private equity firm acquires a public company, the offer price per share is what shareholders see. But the true cost of the acquisition—what the sponsor actually pays—is the enterprise value. Understanding how to bridge from equity value to enterprise value is fundamental to structuring an LBO.
+When a private equity firm acquires a public company, the offer price per share is what shareholders see. But the true cost of the acquisition, what the sponsor actually pays, is the enterprise value. Understanding how to bridge from equity value to enterprise value is fundamental to structuring an LBO.
 
 The enterprise value represents the total claim on the company's operating assets. It includes what you pay to shareholders (equity value) plus what you assume from creditors (debt), adjusted for cash and other items. Getting this calculation wrong means getting the entire transaction economics wrong.
 
-In interviews, enterprise value questions test whether you understand the conceptual distinction between equity holders and all capital providers. They also test your attention to detail—the treatment of convertible securities, minority interests, and debt-like items trips up many candidates.
+In interviews, enterprise value questions test whether you understand the conceptual distinction between equity holders and all capital providers. They also test your attention to detail. The treatment of convertible securities, minority interests, and debt-like items trips up many candidates.
 
 ### The Core Enterprise Value Formula
 
@@ -52,7 +52,7 @@ For example: 1 million options with $20 strike price, current stock price $50.
 
 **Restricted Stock Units (RSUs)**: RSUs are fully dilutive because no exercise price is paid. Each RSU converts to one share upon vesting. Include unvested RSUs that are expected to vest based on time or performance conditions.
 
-**Convertible Securities**: Convertible bonds or preferred stock may convert to common equity. Apply the if-converted method—assume full conversion and calculate the resulting shares. The conversion ratio determines how many shares each bond or preferred share becomes.
+**Convertible Securities**: Convertible bonds or preferred stock may convert to common equity. Apply the if-converted method: assume full conversion and calculate the resulting shares. The conversion ratio determines how many shares each bond or preferred share becomes.
 
 For convertibles, you must also adjust the enterprise value bridge. If you include the shares from conversion, you must exclude the convertible debt from net debt (since it has been treated as equity).
 
@@ -79,7 +79,7 @@ Each adjustment requires judgment. The principle is that enterprise value should
 
 ### Treatment of Specific Items
 
-**Minority Interest**: When the target company consolidates a subsidiary it does not fully own, the financial statements include 100% of that subsidiary's operations. But the target only owns its percentage share. Minority interest represents the outside ownership claim. Adding minority interest to enterprise value ensures consistency—since EBITDA includes 100% of the subsidiary's earnings, enterprise value must include 100% of its value.
+**Minority Interest**: When the target company consolidates a subsidiary it does not fully own, the financial statements include 100% of that subsidiary's operations. But the target only owns its percentage share. Minority interest represents the outside ownership claim. Adding minority interest to enterprise value ensures consistency, since EBITDA includes 100% of the subsidiary's earnings, enterprise value must include 100% of its value.
 
 **Convertible Debt**: This requires careful treatment to avoid double-counting. If you treat the convertible as equity (including converted shares in diluted shares), exclude it from debt. If you treat it as debt (including it in net debt), exclude the converted shares. Choose one approach and apply it consistently.
 

@@ -207,12 +207,12 @@ This matrix enables the VP and IC to see how findings connect and how risks are 
 
 ## Key Takeaways
 
-- Risks often emerge at the intersection of workstreams (QofE, market, legal, tax) rather than within a single advisor's scope—advisors work in silos and do not connect the dots
+- Risks often emerge at the intersection of workstreams (QofE, market, legal, tax) rather than within a single advisor's scope. Advisors work in silos and do not connect the dots
 - Map findings by risk category (revenue, margin, growth, execution) rather than by advisor to identify reinforcing or contradictory patterns
 - Look for reinforcing patterns where multiple findings amplify a single risk (e.g., margin compression from QofE + competitive pricing from market study + locked supplier contracts from legal)
 - Quantify aggregate impact of cross-workstream risks to inform downside modeling and valuation haircuts
-- Probe when advisors minimize issues or claim findings are outside their scope—escalate unresolved risks to your VP and ensure they are addressed
-- Synthesize findings into integrated narratives for IC rather than presenting siloed workstream summaries—connect the dots and tell a coherent risk story
+- Probe when advisors minimize issues or claim findings are outside their scope. Escalate unresolved risks to your VP and ensure they are addressed
+- Synthesize findings into integrated narratives for IC rather than presenting siloed workstream summaries. Connect the dots and tell a coherent risk story
 - Build a cross-workstream risk matrix that shows how findings from different advisors interact, aggregate severity, and proposed mitigants
 
 ## Synthesis

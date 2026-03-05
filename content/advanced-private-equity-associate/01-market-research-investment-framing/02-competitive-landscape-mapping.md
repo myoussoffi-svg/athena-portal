@@ -12,7 +12,7 @@
 - Convert the landscape into underwriting risks and diligence priorities.
 
 ## Why this matters in a real deal
-Weak competitive analysis leads to weak underwriting. If you misidentify who the company truly competes against, you will misunderstand pricing power, customer churn risk, and margin sustainability. IC does not care how many logos you collected — they care whether you correctly identified the players that determine outcomes.
+Weak competitive analysis leads to weak underwriting. If you misidentify who the company truly competes against, you will misunderstand pricing power, customer churn risk, and margin sustainability. IC does not care how many logos you collected. They care whether you correctly identified the players that determine outcomes.
 
 This work directly affects valuation, growth assumptions, and the credibility of the investment thesis. Competitive landscape errors tend to surface late, when they are expensive to fix.
 
@@ -100,7 +100,7 @@ This informs:
 ---
 
 ## 5) Translate the landscape into underwriting logic
-This is the most important step — and the most commonly skipped.
+This is the most important step, and the most commonly skipped.
 
 Convert insights into statements like:
 - “Pricing growth assumes limited competitive response from Segment X.”

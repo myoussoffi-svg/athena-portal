@@ -26,7 +26,7 @@ This lesson addresses the most common goodwill questions in FAQ format, providin
 
 **Q: What is goodwill?**
 
-Goodwill represents the premium paid in an acquisition beyond the fair value of identifiable net assets. It captures value that cannot be assigned to specific assets—synergies, assembled workforce, strategic positioning, and going concern value. Mathematically, Goodwill = Purchase Price - Fair Value of Identifiable Net Assets.
+Goodwill represents the premium paid in an acquisition beyond the fair value of identifiable net assets. It captures value that cannot be assigned to specific assets: synergies, assembled workforce, strategic positioning, and going concern value. Mathematically, Goodwill = Purchase Price - Fair Value of Identifiable Net Assets.
 
 **Q: How is goodwill calculated?**
 
@@ -34,7 +34,7 @@ Start with the equity purchase price paid to shareholders. Add any contingent co
 
 **Q: Is goodwill an asset?**
 
-Yes, goodwill is recorded as an intangible asset on the balance sheet. However, it differs from other intangibles in that it is not separable from the business—you cannot sell goodwill independently. It exists only in the context of the acquired business as a whole.
+Yes, goodwill is recorded as an intangible asset on the balance sheet. However, it differs from other intangibles in that it is not separable from the business. You cannot sell goodwill independently. It exists only in the context of the acquired business as a whole.
 
 **Q: Is goodwill amortized?**
 
@@ -42,7 +42,7 @@ Under current US GAAP (ASC 350), goodwill is not amortized for public companies.
 
 **Q: What is goodwill impairment?**
 
-Impairment occurs when the fair value of a reporting unit falls below its carrying value (including goodwill). The company must write down goodwill to eliminate the excess carrying value. This impairment is recognized as an expense in the income statement, reducing net income. Impairment is non-cash—it does not affect operating cash flows—but signals that the acquired business is worth less than originally paid.
+Impairment occurs when the fair value of a reporting unit falls below its carrying value (including goodwill). The company must write down goodwill to eliminate the excess carrying value. This impairment is recognized as an expense in the income statement, reducing net income. Impairment is non-cash (it does not affect operating cash flows) but signals that the acquired business is worth less than originally paid.
 
 ### Purchase Price Allocation Questions
 
@@ -63,7 +63,7 @@ Each of these has a determinable fair value and useful life, making them eligibl
 
 **Q: Why does it matter whether value is allocated to goodwill versus identifiable intangibles?**
 
-The key difference is tax treatment. In an asset purchase, both goodwill and identifiable intangibles are tax-deductible over 15 years under Section 197. In a stock purchase (the typical LBO structure), the acquirer inherits the target's existing tax basis—new goodwill is not tax-deductible.
+The key difference is tax treatment. In an asset purchase, both goodwill and identifiable intangibles are tax-deductible over 15 years under Section 197. In a stock purchase (the typical LBO structure), the acquirer inherits the target's existing tax basis, and new goodwill is not tax-deductible.
 
 From a GAAP perspective, identifiable intangibles with finite lives are amortized, creating expense that reduces reported net income. Goodwill is not amortized, so it does not create ongoing expense (though it may be impaired). Higher intangibles mean more amortization but also more tax shields if the purchase qualifies for Section 197 treatment.
 
@@ -79,11 +79,11 @@ Under current US GAAP, goodwill does not directly affect the income statement un
 
 **Q: Does goodwill affect cash flow?**
 
-Goodwill does not affect operating cash flows. It is a non-cash item that exists only as a balance sheet entry. If goodwill is impaired, the impairment charge is added back to net income in the operating section of the cash flow statement (like depreciation) because it is non-cash. The initial creation of goodwill is an allocation of cash already spent in the acquisition—it does not represent a separate cash outflow.
+Goodwill does not affect operating cash flows. It is a non-cash item that exists only as a balance sheet entry. If goodwill is impaired, the impairment charge is added back to net income in the operating section of the cash flow statement (like depreciation) because it is non-cash. The initial creation of goodwill is an allocation of cash already spent in the acquisition. It does not represent a separate cash outflow.
 
 **Q: Does goodwill affect returns in an LBO?**
 
-Goodwill does not directly affect IRR or MOIC. Returns are driven by entry equity, exit equity proceeds, and the time between them. These are determined by operating cash flows, debt paydown, and exit valuation—none of which depend on the goodwill balance. However, understanding goodwill is important for covenant compliance (tangible net worth tests) and for understanding what you paid for.
+Goodwill does not directly affect IRR or MOIC. Returns are driven by entry equity, exit equity proceeds, and the time between them. These are determined by operating cash flows, debt paydown, and exit valuation, none of which depend on the goodwill balance. However, understanding goodwill is important for covenant compliance (tangible net worth tests) and for understanding what you paid for.
 
 ### Technical Edge Cases
 
@@ -93,7 +93,7 @@ Negative goodwill, or a bargain purchase gain, occurs when the fair value of net
 
 **Q: How do you treat goodwill in an asset purchase vs. stock purchase?**
 
-In both cases, goodwill is calculated the same way—as the excess of purchase price over fair value of net assets. The key difference is tax treatment. In an asset purchase, goodwill is tax-deductible (amortized over 15 years). In a stock purchase, the acquirer inherits the target's tax basis, and new goodwill is not tax-deductible.
+In both cases, goodwill is calculated the same way, as the excess of purchase price over fair value of net assets. The key difference is tax treatment. In an asset purchase, goodwill is tax-deductible (amortized over 15 years). In a stock purchase, the acquirer inherits the target's tax basis, and new goodwill is not tax-deductible.
 
 **Q: What happens to goodwill when a company is sold?**
 
@@ -139,6 +139,6 @@ Contingent consideration (earn-outs) is recorded at fair value at the acquisitio
 - Goodwill = Purchase Price - Fair Value of Identifiable Net Assets; it represents synergies, workforce, and strategic value that cannot be assigned to specific assets
 - Under US GAAP, goodwill is not amortized but tested annually for impairment; identifiable intangibles are amortized over their useful lives
 - Allocating value to identifiable intangibles rather than goodwill creates amortization expense but may provide tax benefits in asset purchases
-- Goodwill does not affect operating cash flows or LBO returns directly—it is a balance sheet allocation of cash already spent
+- Goodwill does not affect operating cash flows or LBO returns directly. It is a balance sheet allocation of cash already spent
 - In stock purchases (typical LBO), goodwill is not tax-deductible; in asset purchases, it is deductible over 15 years under Section 197
-- Negative goodwill (bargain purchase) occurs when fair value of net assets exceeds purchase price—it is recognized as an immediate gain after reexamining valuations
+- Negative goodwill (bargain purchase) occurs when fair value of net assets exceeds purchase price. It is recognized as an immediate gain after reexamining valuations

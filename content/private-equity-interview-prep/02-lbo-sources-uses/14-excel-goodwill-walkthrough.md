@@ -248,7 +248,7 @@ Balance Check: =IF(ABS(TotalAssets-TotalLiabEquity)<0.01,"OK","ERROR")
 
 In interviews, you may be asked to calculate goodwill on paper or whiteboard. The verbal walkthrough should follow this logical flow:
 
-"Goodwill equals total consideration minus the fair value of identifiable net assets. I would start with the equity purchase price, add any capitalized fees, and that gives me total consideration. Then I would take the historical book equity, add fair value adjustments for inventory, PP&E, and identified intangibles—things like customer relationships and technology. I would subtract the deferred tax liability created by these adjustments. The result is fair value of net assets. Goodwill is the difference between consideration and fair value of net assets."
+"Goodwill equals total consideration minus the fair value of identifiable net assets. I would start with the equity purchase price, add any capitalized fees, and that gives me total consideration. Then I would take the historical book equity, add fair value adjustments for inventory, PP&E, and identified intangibles, things like customer relationships and technology. I would subtract the deferred tax liability created by these adjustments. The result is fair value of net assets. Goodwill is the difference between consideration and fair value of net assets."
 
 This demonstrates both conceptual understanding and mechanical competence.
 

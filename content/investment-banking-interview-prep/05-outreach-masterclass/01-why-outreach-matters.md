@@ -20,7 +20,7 @@ estimated_minutes: 20
 
 Investment banking recruiting isn't a meritocracy based purely on credentials. Two candidates with identical resumes, GPAs, and technical skills will have dramatically different outcomes based on one variable: who knows them inside the bank.
 
-This isn't cynicism—it's how the process actually works. Banks receive thousands of applications for a handful of spots. Recruiters and hiring managers can't evaluate every candidate thoroughly. They rely on internal signals: "Has anyone here spoken with this person? Does anyone vouch for them?"
+This isn't cynicism. It's how the process actually works. Banks receive thousands of applications for a handful of spots. Recruiters and hiring managers can't evaluate every candidate thoroughly. They rely on internal signals: "Has anyone here spoken with this person? Does anyone vouch for them?"
 
 Outreach creates those signals. A candidate who has had three informational calls with analysts and associates at a bank is a known quantity. A candidate who applied cold is a stranger.
 
@@ -30,7 +30,7 @@ Effective outreach produces four concrete outcomes:
 
 **1. Name recognition in the applicant pool**
 
-When your resume lands on a recruiter's desk, you want someone at the bank to say, "I've talked to this person—they're solid." This single sentence can move you from the reject pile to the interview pile.
+When your resume lands on a recruiter's desk, you want someone at the bank to say, "I've talked to this person. They're solid." This single sentence can move you from the reject pile to the interview pile.
 
 **2. Information that improves your application**
 
@@ -85,4 +85,4 @@ Effective outreach requires a specific mindset:
 - Outreach produces four outcomes: name recognition, information, referrals, and interview prep
 - Expect 10-20% response rates on cold emails; plan for 100-200 emails across your target banks
 - Start outreach 2-4 months before applications open for maximum impact
-- You're asking for a conversation, not a job—this is a reasonable professional request
+- You're asking for a conversation, not a job, and this is a reasonable professional request

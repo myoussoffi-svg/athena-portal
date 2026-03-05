@@ -252,7 +252,7 @@ The sweep reduces leverage by 0.5× faster, potentially unlocking refinancing or
 
 **"Walk me through how a cash sweep works."**
 
-A cash sweep uses excess cash flow to automatically pay down debt. After the company covers operating costs, taxes, interest, mandatory debt payments, and CapEx, remaining cash flows to debt reduction based on a percentage (often 50-75% when leverage is high). The sweep typically pays down debt in order of seniority—revolver first, then term loans.
+A cash sweep uses excess cash flow to automatically pay down debt. After the company covers operating costs, taxes, interest, mandatory debt payments, and CapEx, remaining cash flows to debt reduction based on a percentage (often 50-75% when leverage is high). The sweep typically pays down debt in order of seniority: revolver first, then term loans.
 
 **"Why do lenders require cash sweeps?"**
 

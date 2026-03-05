@@ -92,7 +92,7 @@ Do not assume that documents in the VDR are error-free or consistent. Part of sy
 
 ### Quantitative Synthesis: Trend Analysis and Ratio Testing
 
-Quantitative data (financials, KPIs, operational metrics) should be synthesized into trends, ratios, and benchmarks—not just regurgitated as tables.
+Quantitative data (financials, KPIs, operational metrics) should be synthesized into trends, ratios, and benchmarks, not just regurgitated as tables.
 
 **Trend analysis**:
 Rather than stating "Revenue was $40M in FY21, $45M in FY22, and $48M in FY23," synthesize as:
@@ -208,7 +208,7 @@ This iterative approach ensures that by the time you reach IC, your synthesis is
 
 ## Key Takeaways
 
-- Synthesis is about extracting insights and implications, not cataloging what you read—VPs want to know what the data reveals, not just that you reviewed it
+- Synthesis is about extracting insights and implications, not cataloging what you read. VPs want to know what the data reveals, not just that you reviewed it
 - Establish the key questions you are trying to answer before diving into documents, ensuring every synthesis effort is thesis-driven
 - Cross-reference data across multiple sources to confirm consistency or identify conflicts, and always determine which source is authoritative
 - Synthesize quantitative data into trends, ratios, and variance analysis that reveal operational health and inform modeling assumptions

@@ -22,7 +22,7 @@ estimated_minutes: 30
 
 ### Structuring "Tell Me About Yourself"
 
-This question isn't an invitation to recite your entire resume. It's a request for a concise, coherent narrative—typically 60 to 90 seconds—that explains who you are professionally, what you've done, and why you're sitting in this interview.
+This question isn't an invitation to recite your entire resume. It's a request for a concise, coherent narrative, typically 60 to 90 seconds, that explains who you are professionally, what you've done, and why you're sitting in this interview.
 
 A strong structure follows this pattern:
 

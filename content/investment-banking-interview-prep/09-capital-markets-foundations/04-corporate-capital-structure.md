@@ -49,7 +49,7 @@ Value of Tax Shield = Debt × Tax Rate (simplified, perpetual debt)
 - Tax rate: 25%
 - Tax Shield Value ≈ $500M × 25% = $125M
 
-This suggests adding debt increases company value—up to a point.
+This suggests adding debt increases company value, up to a point.
 
 ### Costs of Financial Distress
 
@@ -139,7 +139,7 @@ steps:
   - "Good Scenario: EBIT = $150M, Interest = $30M, Pre-Tax = $120M, Net Income = $90M, ROE = 18.0%"
   - "Expected Scenario: EBIT = $100M, Interest = $30M, Pre-Tax = $70M, Net Income = $53M, ROE = 10.5%"
   - "Bad Scenario: EBIT = $50M, Interest = $30M, Pre-Tax = $20M, Net Income = $15M, ROE = 3.0%"
-result: "ROE ranges from 3.0% to 18.0% — leverage amplifies both upside and downside"
+result: "ROE ranges from 3.0% to 18.0% -leverage amplifies both upside and downside"
 note: "Assumes $500M equity, $500M debt"
 ```
 
@@ -194,12 +194,12 @@ title: "Industry Capital Structure Norms"
 given:
   - "Category: Industry, Typical D/E, Rationale"
 steps:
-  - "Utilities: 1.0-1.5x D/E — Stable cash flows, regulated"
-  - "REITs: 0.5-1.0x D/E — Hard assets, predictable income"
-  - "Industrials: 0.3-0.6x D/E — Cyclical, moderate leverage"
-  - "Technology: 0-0.2x D/E — High growth, intangible assets"
-  - "Pharmaceuticals: 0.1-0.3x D/E — R&D intensive, uncertain outcomes"
-result: "Utilities carry the most debt; technology the least — driven by cash flow stability and asset tangibility"
+  - "Utilities: 1.0-1.5x D/E -Stable cash flows, regulated"
+  - "REITs: 0.5-1.0x D/E -Hard assets, predictable income"
+  - "Industrials: 0.3-0.6x D/E -Cyclical, moderate leverage"
+  - "Technology: 0-0.2x D/E -High growth, intangible assets"
+  - "Pharmaceuticals: 0.1-0.3x D/E -R&D intensive, uncertain outcomes"
+result: "Utilities carry the most debt; technology the least -driven by cash flow stability and asset tangibility"
 ```
 
 ### Credit Ratings and Capital Structure
@@ -211,12 +211,12 @@ title: "Credit Ratings and Leverage Levels"
 given:
   - "Category: Rating, D/EBITDA, Description"
 steps:
-  - "AAA/AA: <1.0x D/EBITDA — Minimal debt, maximum flexibility"
-  - "A: 1.0-2.0x D/EBITDA — Low leverage, strong credit"
-  - "BBB: 2.0-3.5x D/EBITDA — Investment grade floor"
-  - "BB: 3.5-5.0x D/EBITDA — High yield, higher cost"
-  - "B: 5.0-7.0x D/EBITDA — Leveraged, significant risk"
-  - "CCC: >7.0x D/EBITDA — Distressed"
+  - "AAA/AA: <1.0x D/EBITDA -Minimal debt, maximum flexibility"
+  - "A: 1.0-2.0x D/EBITDA -Low leverage, strong credit"
+  - "BBB: 2.0-3.5x D/EBITDA -Investment grade floor"
+  - "BB: 3.5-5.0x D/EBITDA -High yield, higher cost"
+  - "B: 5.0-7.0x D/EBITDA -Leveraged, significant risk"
+  - "CCC: >7.0x D/EBITDA -Distressed"
 result: "Companies often target BBB rating (2.0-3.5x D/EBITDA) as the investment grade floor"
 ```
 
@@ -260,7 +260,7 @@ Companies often target a specific rating (commonly BBB) and set leverage to main
 
 **"What's the optimal capital structure?"**
 
-The optimal capital structure maximizes firm value by balancing the tax benefits of debt against the costs of financial distress. It's where WACC is minimized. The optimal level depends on the company's industry, asset tangibility, cash flow stability, and growth prospects. There's no single right answer—it varies by company.
+The optimal capital structure maximizes firm value by balancing the tax benefits of debt against the costs of financial distress. It's where WACC is minimized. The optimal level depends on the company's industry, asset tangibility, cash flow stability, and growth prospects. There's no single right answer; it varies by company.
 
 **"How does leverage affect WACC?"**
 
@@ -268,5 +268,5 @@ Initially, adding debt lowers WACC because debt is cheaper than equity (due to t
 
 **"Why do technology companies have less debt than utilities?"**
 
-Technology companies have intangible assets (hard to collateralize), high growth (need financial flexibility), and volatile cash flows (can't reliably service debt). Utilities have tangible assets, regulated stable cash flows, and limited growth opportunities—ideal characteristics for supporting debt.
+Technology companies have intangible assets (hard to collateralize), high growth (need financial flexibility), and volatile cash flows (can't reliably service debt). Utilities have tangible assets, regulated stable cash flows, and limited growth opportunities, which are ideal characteristics for supporting debt.
 

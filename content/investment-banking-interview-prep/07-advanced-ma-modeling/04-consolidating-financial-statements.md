@@ -96,24 +96,24 @@ result: "PPA adjustments add new intangibles, goodwill, and DTL to the combined 
 title: "Pro Forma Balance Sheet at Close"
 given:
   - "ASSETS:"
-  - "  Cash — Acquirer: $500M | Target (Book): $50M | FV Adj: — | Deal Adj: ($2,200M)* | Pro Forma: ($1,650M)**"
-  - "  Receivables — Acquirer: $800M | Target (Book): $200M | FV Adj: — | Deal Adj: — | Pro Forma: $1,000M"
-  - "  Inventory — Acquirer: $400M | Target (Book): $100M | FV Adj: +$15M | Deal Adj: — | Pro Forma: $515M"
-  - "  PP&E — Acquirer: $1,500M | Target (Book): $200M | FV Adj: +$50M | Deal Adj: — | Pro Forma: $1,750M"
-  - "  Intangibles — Acquirer: $100M | Target (Book): $0 | FV Adj: +$575M | Deal Adj: — | Pro Forma: $675M"
-  - "  Goodwill — Acquirer: $200M | Target (Book): $0 | FV Adj: — | Deal Adj: +$4,075M | Pro Forma: $4,275M"
-  - "  Total Assets — Acquirer: $3,500M | Target (Book): $550M | FV Adj: +$640M | Deal Adj: +$1,875M | Pro Forma: $6,565M"
+  - "  Cash - Acquirer: $500M | Target (Book): $50M | FV Adj: - | Deal Adj: ($2,200M)* | Pro Forma: ($1,650M)**"
+  - "  Receivables - Acquirer: $800M | Target (Book): $200M | FV Adj: - | Deal Adj: - | Pro Forma: $1,000M"
+  - "  Inventory - Acquirer: $400M | Target (Book): $100M | FV Adj: +$15M | Deal Adj: - | Pro Forma: $515M"
+  - "  PP&E - Acquirer: $1,500M | Target (Book): $200M | FV Adj: +$50M | Deal Adj: - | Pro Forma: $1,750M"
+  - "  Intangibles - Acquirer: $100M | Target (Book): $0 | FV Adj: +$575M | Deal Adj: - | Pro Forma: $675M"
+  - "  Goodwill - Acquirer: $200M | Target (Book): $0 | FV Adj: - | Deal Adj: +$4,075M | Pro Forma: $4,275M"
+  - "  Total Assets - Acquirer: $3,500M | Target (Book): $550M | FV Adj: +$640M | Deal Adj: +$1,875M | Pro Forma: $6,565M"
 steps:
   - "LIABILITIES:"
-  - "  Payables — Acquirer: $300M | Target (Book): $75M | FV Adj: — | Deal Adj: — | Pro Forma: $375M"
-  - "  Debt — Acquirer: $800M | Target (Book): $500M | FV Adj: — | Deal Adj: +$2,000M | Pro Forma: $3,300M"
-  - "  Deferred Tax — Acquirer: $150M | Target (Book): $0 | FV Adj: +$160M | Deal Adj: — | Pro Forma: $310M"
-  - "  Total Liabilities — Acquirer: $1,250M | Target (Book): $575M | FV Adj: +$160M | Deal Adj: +$2,000M | Pro Forma: $3,985M"
+  - "  Payables - Acquirer: $300M | Target (Book): $75M | FV Adj: - | Deal Adj: - | Pro Forma: $375M"
+  - "  Debt - Acquirer: $800M | Target (Book): $500M | FV Adj: - | Deal Adj: +$2,000M | Pro Forma: $3,300M"
+  - "  Deferred Tax - Acquirer: $150M | Target (Book): $0 | FV Adj: +$160M | Deal Adj: - | Pro Forma: $310M"
+  - "  Total Liabilities - Acquirer: $1,250M | Target (Book): $575M | FV Adj: +$160M | Deal Adj: +$2,000M | Pro Forma: $3,985M"
   - "EQUITY:"
-  - "  Common Stock/APIC — Acquirer: $1,000M | Target (Book): $200M | FV Adj: — | Deal Adj: +$2,050M*** | Pro Forma: $3,050M"
-  - "  Retained Earnings — Acquirer: $1,250M | Target (Book): ($225M) | FV Adj: +$480M | Deal Adj: ($125M)**** | Pro Forma: $1,530M"
-  - "  Total Equity — Acquirer: $2,250M | Target (Book): ($25M) | FV Adj: +$480M | Deal Adj: +$1,925M | Pro Forma: $2,580M"
-result: "Total L+E — Acquirer: $3,500M | Target (Book): $550M | FV Adj: +$640M | Deal Adj: +$1,875M | Pro Forma: $6,565M"
+  - "  Common Stock/APIC - Acquirer: $1,000M | Target (Book): $200M | FV Adj: - | Deal Adj: +$2,050M*** | Pro Forma: $3,050M"
+  - "  Retained Earnings - Acquirer: $1,250M | Target (Book): ($225M) | FV Adj: +$480M | Deal Adj: ($125M)**** | Pro Forma: $1,530M"
+  - "  Total Equity - Acquirer: $2,250M | Target (Book): ($25M) | FV Adj: +$480M | Deal Adj: +$1,925M | Pro Forma: $2,580M"
+result: "Total L+E - Acquirer: $3,500M | Target (Book): $550M | FV Adj: +$640M | Deal Adj: +$1,875M | Pro Forma: $6,565M"
 note: "*Cash used: $2,250M cash consideration - $50M target cash acquired + $50M fees. **Would draw on revolver or show negative; adjusted via financing. ***New shares issued ($2,250M) - eliminate target equity ($200M). ****Eliminate target RE ($225M) - transaction fees expensed ($100M) + FV adj."
 ```
 
@@ -142,7 +142,7 @@ If acquirer and target had business relationships before the deal, eliminate the
 
 **Intercompany Receivables/Payables**:
 If Acquirer had $10M receivable from Target, and Target had $10M payable to Acquirer:
-- Eliminate both—they net to zero within the combined company
+- Eliminate both. They net to zero within the combined company
 
 **Intercompany Revenue/Expense**:
 If Acquirer sold $50M of goods to Target:
@@ -206,17 +206,17 @@ note: "Foregone interest income on cash used for the deal should also be account
 ```calculation
 title: "Pro Forma Consolidated Income Statement"
 given:
-  - "Revenue — Acquirer: $5,000M | Target: $1,000M | Synergies: +$50M | Deal Adj: — | Pro Forma: $6,050M"
-  - "COGS — Acquirer: ($3,000M) | Target: ($600M) | Synergies: +$50M | Deal Adj: ($15M)* | Pro Forma: ($3,565M)"
-  - "Gross Profit — Acquirer: $2,000M | Target: $400M | Synergies: +$100M | Deal Adj: ($15M) | Pro Forma: $2,485M"
-  - "SG&A — Acquirer: ($800M) | Target: ($200M) | Synergies: +$100M | Deal Adj: — | Pro Forma: ($900M)"
-  - "D&A — Acquirer: ($200M) | Target: ($50M) | Synergies: — | Deal Adj: ($48M)** | Pro Forma: ($298M)"
+  - "Revenue - Acquirer: $5,000M | Target: $1,000M | Synergies: +$50M | Deal Adj: - | Pro Forma: $6,050M"
+  - "COGS - Acquirer: ($3,000M) | Target: ($600M) | Synergies: +$50M | Deal Adj: ($15M)* | Pro Forma: ($3,565M)"
+  - "Gross Profit - Acquirer: $2,000M | Target: $400M | Synergies: +$100M | Deal Adj: ($15M) | Pro Forma: $2,485M"
+  - "SG&A - Acquirer: ($800M) | Target: ($200M) | Synergies: +$100M | Deal Adj: - | Pro Forma: ($900M)"
+  - "D&A - Acquirer: ($200M) | Target: ($50M) | Synergies: - | Deal Adj: ($48M)** | Pro Forma: ($298M)"
 steps:
-  - "EBIT — Acquirer: $1,000M | Target: $150M | Synergies: +$200M | Deal Adj: ($63M) | Pro Forma: $1,287M"
-  - "Interest Expense — Acquirer: ($50M) | Target: ($30M) | Synergies: — | Deal Adj: ($140M)*** | Pro Forma: ($220M)"
-  - "Pre-Tax Income — Acquirer: $950M | Target: $120M | Synergies: +$200M | Deal Adj: ($203M) | Pro Forma: $1,067M"
-  - "Tax (25%) — Acquirer: ($238M) | Target: ($30M) | Synergies: ($50M) | Deal Adj: +$51M | Pro Forma: ($267M)"
-result: "Net Income — Acquirer: $713M | Target: $90M | Synergies: +$150M | Deal Adj: ($152M) | Pro Forma: $800M"
+  - "EBIT - Acquirer: $1,000M | Target: $150M | Synergies: +$200M | Deal Adj: ($63M) | Pro Forma: $1,287M"
+  - "Interest Expense - Acquirer: ($50M) | Target: ($30M) | Synergies: - | Deal Adj: ($140M)*** | Pro Forma: ($220M)"
+  - "Pre-Tax Income - Acquirer: $950M | Target: $120M | Synergies: +$200M | Deal Adj: ($203M) | Pro Forma: $1,067M"
+  - "Tax (25%) - Acquirer: ($238M) | Target: ($30M) | Synergies: ($50M) | Deal Adj: +$51M | Pro Forma: ($267M)"
+result: "Net Income - Acquirer: $713M | Target: $90M | Synergies: +$150M | Deal Adj: ($152M) | Pro Forma: $800M"
 note: "*Inventory step-up (Year 1 only). **Intangible amort ($43M) + additional PP&E depreciation ($5M). ***Interest on $2B new debt at 7%."
 ```
 
@@ -236,7 +236,7 @@ steps:
   - "Pro Forma Shares = 200M + 60M = 260M"
   - "Pro Forma EPS = $800M / 260M = $3.08"
   - "Accretion/(Dilution) = ($3.08 - $3.57) / $3.57"
-result: "Accretion/(Dilution) = (13.7%) — Deal is dilutive"
+result: "Accretion/(Dilution) = (13.7%) - Deal is dilutive"
 note: "Despite $150M of net synergies, the deal is dilutive due to shares issued and new interest expense"
 ```
 

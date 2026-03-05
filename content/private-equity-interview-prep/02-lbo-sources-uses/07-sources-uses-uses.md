@@ -105,7 +105,7 @@ Raising debt financing involves fees separate from the transaction advisory fees
 
 Financing fees are capitalized and amortized over the life of the debt under GAAP. They appear as an asset (deferred financing costs) or as a contra-liability (reduction in debt balance) on the balance sheet.
 
-In Sources and Uses, financing fees appear in Uses. Importantly, the debt amount in Sources should be the face value (not net proceeds) when OID is shown separately in Uses. Alternatively, you can show debt at net proceeds and exclude OID from Uses—just be consistent.
+In Sources and Uses, financing fees appear in Uses. Importantly, the debt amount in Sources should be the face value (not net proceeds) when OID is shown separately in Uses. Alternatively, you can show debt at net proceeds and exclude OID from Uses. Just be consistent.
 
 ### Other Uses
 
@@ -181,7 +181,7 @@ Understanding how Uses flows to the balance sheet is essential for purchase acco
 ## Key Takeaways
 
 - Uses includes equity purchase price, debt refinancing, transaction fees (2-4% of EV), financing fees, and other items
-- Debt refinancing appears in both Sources (new debt) and Uses (repaying existing debt)—only incremental debt adds to capacity
+- Debt refinancing appears in both Sources (new debt) and Uses (repaying existing debt), and only incremental debt adds to capacity
 - Transaction fees (advisory, legal, accounting) are cash outflows at closing regardless of whether they are capitalized or expensed for accounting purposes
 - Financing fees (arrangement fees, OID) are capitalized and amortized over the debt life but represent closing cash needs
 - The complete Uses calculation determines the required equity contribution and must capture every cash requirement at closing

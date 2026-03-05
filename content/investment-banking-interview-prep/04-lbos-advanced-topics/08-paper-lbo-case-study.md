@@ -4,7 +4,7 @@ subtitle: "Master the napkin math that wins interviews"
 type: case-study
 ---
 
-The paper LBO is the single most common technical exercise in investment banking and private equity interviews. Unlike a full Excel model, you're expected to work through this on paper or a whiteboard in 5-10 minutes. Interviewers aren't testing your ability to build complex models—they're testing whether you understand LBO mechanics intuitively.
+The paper LBO is the single most common technical exercise in investment banking and private equity interviews. Unlike a full Excel model, you're expected to work through this on paper or a whiteboard in 5-10 minutes. Interviewers aren't testing your ability to build complex models. They're testing whether you understand LBO mechanics intuitively.
 
 This case study walks through the exact approach senior bankers expect, with multiple scenarios to practice.
 
@@ -27,7 +27,7 @@ You're in a first-round interview at a middle-market PE fund. The interviewer sl
 
 **Question:** What is the approximate IRR to the equity sponsor?
 
-Take a moment before reading further. Work through this yourself—it's the only way to build the intuition.
+Take a moment before reading further. Work through this yourself. It's the only way to build the intuition.
 
 ---
 
@@ -101,7 +101,7 @@ solution: |
 
   Exit EV = 10.0x × $63.8M = **$638M**
 
-  (Using $64M gives $640M—both are acceptable in interviews)
+  (Using $64M gives $640M; both are acceptable in interviews)
 ```
 
 ```accordion-step
@@ -141,7 +141,7 @@ solution: |
 
   **Debt at exit:** $250M − $200M = **~$50M remaining**
 
-  **Interview tip:** State your simplifying assumptions out loud. "I'm going to assume roughly $40M of annual debt paydown given declining interest expense—does that work for a quick estimate?" This shows you understand the mechanics even when approximating.
+  **Interview tip:** State your simplifying assumptions out loud. "I'm going to assume roughly $40M of annual debt paydown given declining interest expense. Does that work for a quick estimate?" This shows you understand the mechanics even when approximating.
 ```
 
 ```accordion-step
@@ -241,7 +241,7 @@ solution: |
 ```accordion-step
 id: variation-a-higher-leverage
 stepNumber: 8
-title: Variation A — Higher Leverage
+title: Variation A: Higher Leverage
 challenge: |
   Same setup, but **Debt / EBITDA is 6.0x** instead of 5.0x.
 
@@ -268,7 +268,7 @@ solution: |
 ```accordion-step
 id: variation-b-no-growth
 stepNumber: 9
-title: Variation B — No Growth
+title: Variation B: No Growth
 challenge: |
   Same base case setup, but **EBITDA is flat at $50M** for all 5 years.
 
@@ -288,7 +288,7 @@ solution: |
 ```accordion-step
 id: variation-c-multiple-compression
 stepNumber: 10
-title: Variation C — Multiple Compression
+title: Variation C: Multiple Compression
 challenge: |
   Same base case, but **exit multiple compresses to 8.0x** (vs. 10.0x entry).
 
@@ -307,7 +307,7 @@ solution: |
 ```accordion-step
 id: variation-d-working-backwards
 stepNumber: 11
-title: Variation D — Working Backwards
+title: Variation D: Working Backwards
 challenge: |
   Using the base case, what **exit multiple** would you need to achieve a **25% IRR** (approximately 3.0x MoM)?
 hint: Work backwards from target return. 3.0x × $250M entry equity = $750M exit equity needed. Add back remaining debt to get required exit EV. Divide by exit EBITDA.
@@ -318,7 +318,7 @@ solution: |
 
   **Required exit multiple:** $800M / $63.8M = **12.5x**
 
-  **Takeaway:** You'd need 25% multiple expansion from 10.0x to 12.5x. That's aggressive—interviewers will probe whether that's realistic for the industry.
+  **Takeaway:** You'd need 25% multiple expansion from 10.0x to 12.5x. That's aggressive, and interviewers will probe whether that's realistic for the industry.
 ```
 
 ---
@@ -350,7 +350,7 @@ Interviewers may push on whether this is a "good" deal:
 
 ## Key Takeaways
 
-- Paper LBOs test intuition, not precision—round numbers and state assumptions
+- Paper LBOs test intuition, not precision, so round numbers and state assumptions
 - Always break down returns into EBITDA growth, debt paydown, and multiple expansion
 - Higher leverage amplifies returns but increases risk
 - Multiple compression is the silent killer of PE returns

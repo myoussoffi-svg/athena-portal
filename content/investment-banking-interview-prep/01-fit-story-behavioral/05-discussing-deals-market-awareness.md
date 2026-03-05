@@ -51,7 +51,7 @@ Keep your answer to 60-90 seconds unless the interviewer asks for more detail.
 
 **Example**:
 
-"I've been following Microsoft's acquisition of Activision Blizzard, which closed in 2023 for $69 billion. It's interesting because it's one of the largest tech M&A deals in history and faced significant regulatory scrutiny in the U.S. and Europe. The strategic rationale was clear—Microsoft wanted to expand its gaming portfolio and compete with Sony and other console makers. The deal took over a year to close due to antitrust concerns, which created uncertainty around the valuation. It also highlighted how much regulatory risk has become a factor in large tech deals."
+"I've been following Microsoft's acquisition of Activision Blizzard, which closed in 2023 for $69 billion. It's interesting because it's one of the largest tech M&A deals in history and faced significant regulatory scrutiny in the U.S. and Europe. The strategic rationale was clear: Microsoft wanted to expand its gaming portfolio and compete with Sony and other console makers. The deal took over a year to close due to antitrust concerns, which created uncertainty around the valuation. It also highlighted how much regulatory risk has become a factor in large tech deals."
 
 This answer is clear, shows understanding, and opens the door for follow-up questions without overreaching.
 

@@ -37,7 +37,7 @@ This work determines whether the deal narrative survives scrutiny. Done well, it
 
 ### Why Customer Analysis is Critical to PE Diligence
 
-Revenue is only valuable if it is retained. A business with $100M in revenue and 30% annual churn is fundamentally different from one with $100M in revenue and 5% churn—even if current-year financials look identical.
+Revenue is only valuable if it is retained. A business with $100M in revenue and 30% annual churn is fundamentally different from one with $100M in revenue and 5% churn, even if current-year financials look identical.
 
 Customer concentration and cohort analysis answer critical questions:
 - How much revenue is at risk if the top customers leave?
@@ -115,7 +115,7 @@ Cohort analysis tracks groups of customers acquired in the same period over time
 **Interpreting cohort performance**:
 
 - **Positive signal**: Newer cohorts (2021, 2022) have higher Year 0 revenue than older cohorts, and retention rates are stable or improving
-- **Negative signal**: 2022 cohort has 92% Year 1 retention, down from 112% for 2021 cohort—suggests product-market fit is weakening or customer quality is declining
+- **Negative signal**: 2022 cohort has 92% Year 1 retention, down from 112% for 2021 cohort, which suggests product-market fit is weakening or customer quality is declining
 - **Red flag**: If Year 1 retention drops below 80–85%, the business is losing customers faster than it can replace them, creating a growth treadmill
 
 **Gross vs. Net Revenue Retention**:
@@ -200,7 +200,7 @@ Revenue Churn = (Revenue Lost from Churned Customers / Starting Revenue) × 100
 **Why both matter**:
 
 - If logo churn is 15% but revenue churn is 5%, small customers are churning while large customers are retained. This may be acceptable if the business focuses on enterprise.
-- If logo churn is 5% but revenue churn is 20%, large customers are churning—this is a severe risk.
+- If logo churn is 5% but revenue churn is 20%, large customers are churning. This is a severe risk.
 
 **Analyzing churn by segment**:
 
@@ -294,11 +294,11 @@ These metrics inform whether future growth will come from new customer acquisiti
 
 - Customer concentration analysis quantifies revenue at risk and determines whether concentration is manageable (contractual protection, tenure, switching costs) or a deal-breaker
 - Cohort analysis reveals whether the business is improving at retaining and growing customers over time, or whether newer cohorts are underperforming older ones
-- Calculate LTV/CAC ratios and payback periods to assess unit economics sustainability—best-in-class targets are LTV/CAC >3 and payback <12 months
+- Calculate LTV/CAC ratios and payback periods to assess unit economics sustainability. Best-in-class targets are LTV/CAC >3 and payback <12 months
 - Distinguish between logo churn (customer count loss) and revenue churn (dollar loss) and analyze churn by segment to identify concentration of retention risk
 - Red flags include accelerating churn in recent cohorts, negative cohort retention, deteriorating LTV/CAC ratios, and concentration within cohorts masking individual customer risk
 - Structure outputs to quantify downside scenarios (e.g., top customer churn impact), assess retention sustainability, and identify value creation opportunities through churn reduction
-- Link customer analysis to valuation assumptions and IC risk discussions—retention rates and customer economics must be defensible and supported by data, not optimistic projections
+- Link customer analysis to valuation assumptions and IC risk discussions. Retention rates and customer economics must be defensible and supported by data, not optimistic projections
 
 ## Synthesis
 - What would change your mind based on new data?

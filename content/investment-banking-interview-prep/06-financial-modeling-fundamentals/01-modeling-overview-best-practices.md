@@ -20,7 +20,7 @@ estimated_minutes: 35
 
 A **financial model** is a spreadsheet-based tool that projects a company's financial performance into the future. In investment banking, models serve as the analytical foundation for valuation, deal structuring, and strategic decision-making.
 
-The most common type is the **three-statement model**, which integrates projections of the income statement, balance sheet, and cash flow statement. These three statements must balance and link together—changes in one flow through to the others.
+The most common type is the **three-statement model**, which integrates projections of the income statement, balance sheet, and cash flow statement. These three statements must balance and link together, and changes in one flow through to the others.
 
 ### Why Financial Modeling Matters
 
@@ -68,20 +68,20 @@ Professional models follow a consistent structure:
 
 **Vertical Organization**: Each section of the model has its own area. Common sections include:
 
-1. **Assumptions / Drivers** — Key inputs that drive the model
-2. **Income Statement** — Revenue through net income
-3. **Balance Sheet** — Assets, liabilities, equity
-4. **Cash Flow Statement** — Operating, investing, financing activities
-5. **Supporting Schedules** — Debt, depreciation, working capital details
-6. **Outputs** — Valuation, returns, credit metrics
+1. **Assumptions / Drivers** - Key inputs that drive the model
+2. **Income Statement** - Revenue through net income
+3. **Balance Sheet** - Assets, liabilities, equity
+4. **Cash Flow Statement** - Operating, investing, financing activities
+5. **Supporting Schedules** - Debt, depreciation, working capital details
+6. **Outputs** - Valuation, returns, credit metrics
 
 **Tab Structure**: Complex models use multiple tabs:
 
-- **Cover / TOC** — Model overview and navigation
-- **Assumptions** — All key inputs in one place
-- **IS / BS / CF** — The three core statements
-- **Schedules** — Supporting calculations (debt, D&A, etc.)
-- **Valuation / Output** — DCF, returns, sensitivity tables
+- **Cover / TOC** - Model overview and navigation
+- **Assumptions** - All key inputs in one place
+- **IS / BS / CF** - The three core statements
+- **Schedules** - Supporting calculations (debt, D&A, etc.)
+- **Valuation / Output** - DCF, returns, sensitivity tables
 
 ### Formatting Conventions
 
@@ -101,7 +101,7 @@ steps:
 result: "Use consistent color coding to make models readable and auditable"
 ```
 
-**Why Colors Matter**: When reviewing a model, you need to instantly identify which cells are assumptions (can be changed) versus calculations (driven by other cells). Blue means "this is an input I can modify." Black means "this is calculated—find the driver elsewhere."
+**Why Colors Matter**: When reviewing a model, you need to instantly identify which cells are assumptions (can be changed) versus calculations (driven by other cells). Blue means "this is an input I can modify." Black means "this is calculated; find the driver elsewhere."
 
 **Number Formatting**:
 
@@ -128,7 +128,7 @@ Good: =B5 * (1 + $C$2)  where C2 contains 3%
 
 **Circular references without control**: Circular references (where A depends on B which depends on A) are sometimes necessary (e.g., interest expense depends on debt, which depends on cash, which depends on interest). But they must be controlled with iteration settings and a circuit breaker.
 
-**Inconsistent formulas across rows**: If row 10 calculates revenue growth, every cell in row 10 should use the same formula structure. Don't have some cells using different logic—this creates errors when copying formulas.
+**Inconsistent formulas across rows**: If row 10 calculates revenue growth, every cell in row 10 should use the same formula structure. Don't have some cells using different logic, as this creates errors when copying formulas.
 
 **Over-complexity**: The best models are as simple as possible while capturing the necessary detail. Don't add complexity that doesn't improve decision-making.
 

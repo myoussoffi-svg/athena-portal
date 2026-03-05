@@ -79,7 +79,7 @@ For each strategic priority management articulates, ask:
 **Assessment**: Strategy is aligned with a known risk. Questions to probe:
 - "What specific initiatives are planned to reduce churn? What is the expected impact?"
 - "What investment in customer success is budgeted for the next 12 months?"
-- "How are you diagnosing root causes of churn—product issues, pricing, competitive pressure?"
+- "How are you diagnosing root causes of churn: product issues, pricing, competitive pressure?"
 
 **Conclusion for IC**: Management has correctly identified retention as a priority. Credibility depends on whether they have a concrete action plan with resources allocated.
 
@@ -249,7 +249,7 @@ Flag this misalignment in your IC memo as a cultural or strategic risk.
 - Test whether management's strategic priorities are supported by diligence findings, address known risks, and represent the highest-impact areas to focus on
 - Identify strategic blind spots where management ignores critical issues (e.g., focusing on growth while margins compress, or product while GTM execution fails)
 - Distinguish between aspirational strategy (vague, no timelines, no resources) and operational strategy (specific initiatives, owners, budgets, milestones)
-- Test resource allocation by asking whether initiatives are funded with budget, headcount, management time, and external resources—unfunded priorities are not real
+- Test resource allocation by asking whether initiatives are funded with budget, headcount, management time, and external resources. Unfunded priorities are not real
 - Probe strategic pivots or narrative changes to understand whether they reflect data-driven learning or lack of conviction and execution discipline
 - Link management's strategy to your firm's value creation plan and flag misalignments as cultural or strategic risks that require post-close management
 - Escalate to your VP when strategy is misaligned with diligence reality, under-resourced, or reflects blind spots that threaten value creation

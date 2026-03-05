@@ -22,7 +22,7 @@ In every LBO, the equity contribution is calculated as a residual. After determi
 
 Total Uses - Total Debt = Sponsor Equity Contribution
 
-This simple equation has profound implications. The equity check is not chosen arbitrarily—it is determined by the intersection of purchase price, available debt capacity, and transaction costs. When debt markets tighten and leverage multiples compress, equity requirements increase. When debt markets are favorable, sponsors can acquire companies with smaller equity checks.
+This simple equation has profound implications. The equity check is not chosen arbitrarily; it is determined by the intersection of purchase price, available debt capacity, and transaction costs. When debt markets tighten and leverage multiples compress, equity requirements increase. When debt markets are favorable, sponsors can acquire companies with smaller equity checks.
 
 The size of the equity contribution directly affects returns. IRR is highly sensitive to the initial investment amount. All else equal, a smaller equity check produces higher returns because the denominator in the return calculation is smaller.
 
@@ -73,7 +73,7 @@ Returns diverge when economics differ:
 
 **Preferred Return Structures:** The sponsor might structure a preferred return or priority distribution that must be satisfied before management participates. This protects sponsor downside at the expense of management upside.
 
-Understanding these dynamics is important for accurately calculating the returns that matter—sponsor returns—which drive fund performance.
+Understanding these dynamics is important for accurately calculating the returns that matter, sponsor returns, which drive fund performance.
 
 ### Co-Investment Structures
 
@@ -149,7 +149,7 @@ These questions test whether you understand the mechanics and can reason through
 
 ## Key Takeaways
 
-- Equity contribution is calculated as Total Uses minus Total Debt—it is the residual "plug" in Sources and Uses
+- Equity contribution is calculated as Total Uses minus Total Debt. It is the residual "plug" in Sources and Uses
 - Smaller equity checks produce higher IRRs because the denominator in the return calculation decreases
 - Rollover equity reduces cash Uses and correspondingly reduces required sponsor equity
 - Sponsor returns may differ from total equity returns when management has preferential economics (sweet equity, catch-up provisions)

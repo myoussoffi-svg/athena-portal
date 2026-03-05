@@ -57,7 +57,7 @@ result: "Cost synergies ramp faster than revenue synergies"
 
 **Why the Difference?**
 
-Cost synergies can be actioned quickly (layoffs, facility closures). Revenue synergies require integration, sales training, and customer adoption—they take longer.
+Cost synergies can be actioned quickly (layoffs, facility closures). Revenue synergies require integration, sales training, and customer adoption, so they take longer.
 
 ### Modeling Cost Synergies
 

@@ -140,7 +140,7 @@ Sometimes included as binding provision:
 - Most LOI provisions (price, structure, timeline) are non-binding; key binding provisions are exclusivity, confidentiality, expense allocation, and governing law
 - Exclusivity prevents seller from shopping the deal for 60–90 days and is enforceable through litigation or injunction, though reputational damage is the primary deterrent
 - Confidentiality protects buyer's access to sensitive business information and survives deal termination for 1–2 years with exceptions for public information or legal requirements
-- Expense allocation is typically "each party bears own costs"—resist seller requests for reimbursement unless buyer walks for non-diligence reasons
+- Expense allocation is typically "each party bears own costs." Resist seller requests for reimbursement unless buyer walks for non-diligence reasons
 - Negotiate narrow non-solicitation provisions (senior employees only) and ensure governing law reflects buyer's preferred jurisdiction
 - Understand enforcement mechanisms for binding provisions and escalate any potential breaches to your VP and deal counsel immediately
 

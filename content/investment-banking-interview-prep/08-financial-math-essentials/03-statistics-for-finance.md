@@ -211,7 +211,7 @@ Where:
 - σ = standard deviation of each asset
 - ρ = correlation between assets
 
-When ρ < 1, portfolio variance is less than weighted average of individual variances—this is diversification.
+When ρ < 1, portfolio variance is less than weighted average of individual variances. This is diversification.
 
 ### Beta
 
@@ -289,7 +289,7 @@ The geometric mean correctly captures the actual compound return.
 
 **"What's the difference between mean and median? When would you use each?"**
 
-Mean is the arithmetic average; median is the middle value. Use median when data has outliers—it's more robust. In trading comps, median EV/EBITDA is often preferred because one outlier company doesn't skew the result.
+Mean is the arithmetic average; median is the middle value. Use median when data has outliers, as it's more robust. In trading comps, median EV/EBITDA is often preferred because one outlier company doesn't skew the result.
 
 **"What is standard deviation and what does it measure?"**
 

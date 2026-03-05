@@ -22,7 +22,7 @@ In leveraged buyouts, free cash flow is the critical metric. A company that gene
 
 Free cash flow determines the answer to the fundamental LBO question: how much debt can this business support? Strong free cash flow enables higher leverage, which enables larger transactions with smaller equity checks and higher potential returns. Weak free cash flow constrains leverage, requiring more equity and compressing returns.
 
-Understanding free cash flow at a granular level—what drives it, what constrains it, how it fluctuates—is essential for LBO analysis.
+Understanding free cash flow at a granular level, including what drives it, what constrains it, and how it fluctuates, is essential for LBO analysis.
 
 ### Free Cash Flow Calculation
 
@@ -79,7 +79,7 @@ Capital expenditures require thoughtful modeling because they directly impact ca
 
 **Capex Intensity:** Calculate capex as a percentage of revenue to understand the company's investment requirements. Compare to peers and historical patterns.
 
-**Cyclicality:** Some capex is deferrable in downturns. However, sustained under-investment eventually impairs the business. Model capex conservatively—sponsors often underestimate capex needs.
+**Cyclicality:** Some capex is deferrable in downturns. However, sustained under-investment eventually impairs the business. Model capex conservatively, as sponsors often underestimate capex needs.
 
 **Asset Life and Depreciation:** Capex adds to the PP&E balance and is depreciated over its useful life. Ensure capex assumptions are consistent with depreciation assumptions.
 
@@ -143,7 +143,7 @@ The connection between free cash flow and debt paydown is direct:
 
 If free cash flow exceeds mandatory amortization, excess cash can prepay debt (typically the most expensive tranche first). If free cash flow is insufficient, the company must draw on its revolver or, in severe cases, seek covenant relief.
 
-Many LBO debt structures include mandatory cash sweeps—a specified percentage (often 50-75%) of excess cash flow must go toward debt repayment. Model this by applying the sweep percentage to available cash above minimum cash requirements.
+Many LBO debt structures include mandatory cash sweeps, where a specified percentage (often 50-75%) of excess cash flow must go toward debt repayment. Model this by applying the sweep percentage to available cash above minimum cash requirements.
 
 **Example:**
 - Free Cash Flow: $50M
@@ -208,7 +208,7 @@ Higher cash conversion supports more leverage, which means smaller equity checks
 ## Key Takeaways
 
 - Free Cash Flow = EBITDA - Cash Interest - Cash Taxes - Capex - Increase in Working Capital
-- Cash conversion (FCF/EBITDA) varies from 30-80% depending on capital intensity and working capital needs—this directly impacts leverage capacity
+- Cash conversion (FCF/EBITDA) varies from 30-80% depending on capital intensity and working capital needs, and this directly impacts leverage capacity
 - Capital expenditures include maintenance (non-discretionary) and growth (discretionary) components; distinguish these in modeling
 - The projected balance sheet flows from opening purchase accounting through annual changes in working capital, PP&E, debt, and retained earnings
 - Free cash flow after mandatory amortization is available for optional debt prepayment, often subject to cash sweep provisions

@@ -26,7 +26,7 @@ When someone responds positively to your email, your goal is to get a call on th
 >
 > Thanks so much for getting back to me. I really appreciate it.
 >
-> I'm flexible on timing—would any of these work for a 15-20 minute call?
+> I'm flexible on timing. Would any of these work for a 15-20 minute call?
 > - Tuesday 10/15: 7-8 AM or 6-8 PM
 > - Wednesday 10/16: 7-9 AM or 5-7 PM
 > - Thursday 10/17: 6-8 PM
@@ -86,7 +86,7 @@ Good opening: "Thanks for making time. I'm a junior at Michigan recruiting for I
 **The middle of the call:**
 
 - Ask your prepared questions but let the conversation flow naturally
-- Listen more than you talk—aim for 70% them, 30% you
+- Listen more than you talk. Aim for 70% them, 30% you
 - Take notes on key points (they'll be useful for your thank-you and future outreach)
 - Ask follow-up questions based on what they say
 
@@ -94,8 +94,8 @@ Good opening: "Thanks for making time. I'm a junior at Michigan recruiting for I
 
 - "What's the work-life balance like?" (shows wrong priorities)
 - "How much do analysts make?" (research this yourself)
-- "Will you refer me?" (too direct—see below for how to ask)
-- "What should I know for interviews?" (too generic—be more specific)
+- "Will you refer me?" (too direct; see below for how to ask)
+- "What should I know for interviews?" (too generic; be more specific)
 
 **The last 3 minutes:**
 
@@ -109,7 +109,7 @@ Referrals don't happen automatically. You need to create the opening and make it
 
 **When to ask:**
 
-At the end of a call that went well—not via email before you've spoken, and not during the first few minutes of a conversation.
+At the end of a call that went well, not via email before you've spoken, and not during the first few minutes of a conversation.
 
 **How to ask for introductions to others:**
 
@@ -123,14 +123,14 @@ Some people prefer to make warm intros; others prefer you email directly. Let th
 
 **How to ask about formal referrals:**
 
-At banks with formal referral programs, employees can submit candidates directly to recruiting. This is different from an introduction—it's an endorsement.
+At banks with formal referral programs, employees can submit candidates directly to recruiting. This is different from an introduction; it's an endorsement.
 
 Only ask for this after:
 - You've had a substantive conversation
 - They seem genuinely positive about you
 - You've demonstrated you're a serious candidate
 
-> "I really appreciate all your advice. When applications open, would you be open to submitting a referral on my behalf? I understand if you'd rather wait to see how things develop—just wanted to ask."
+> "I really appreciate all your advice. When applications open, would you be open to submitting a referral on my behalf? I understand if you'd rather wait to see how things develop. Just wanted to ask."
 
 **If they say no or hesitate:**
 
@@ -138,7 +138,7 @@ Don't push. Say "Totally understand" and move on. Asking once is fine; asking tw
 
 ### Converting Contacts into Advocates
 
-The goal isn't just to collect conversations—it's to find people who will actively support you. Here's how to turn a contact into an advocate:
+The goal isn't just to collect conversations. It's to find people who will actively support you. Here's how to turn a contact into an advocate:
 
 **1. Be memorable for the right reasons**
 
@@ -175,19 +175,19 @@ If your networking leads to an interview, your contacts become even more valuabl
 
 **After the interview:**
 
-> "Hi [First Name], just finished my first round at [Bank]. Went well—thanks again for your advice on [specific thing]. I'll keep you posted on next steps."
+> "Hi [First Name], just finished my first round at [Bank]. Went well. Thanks again for your advice on [specific thing]. I'll keep you posted on next steps."
 
 **If you get the offer:**
 
-> "Great news—I received an offer from [Bank] and I'm planning to accept. Couldn't have done it without your help. Thank you."
+> "Great news: I received an offer from [Bank] and I'm planning to accept. Couldn't have done it without your help. Thank you."
 
-This closes the loop and shows you're someone who follows through—which matters for your reputation down the line.
+This closes the loop and shows you're someone who follows through, which matters for your reputation down the line.
 
 ## Key Takeaways
 
-- When someone responds positively, propose specific times immediately—don't let the thread die
+- When someone responds positively, propose specific times immediately. Don't let the thread die
 - Prepare for every call: research the person, prepare 5-7 questions, have your talking points ready
 - Listen more than you talk (70/30 split) and take notes
 - Ask for introductions at the end of successful calls: "Is there anyone else you'd recommend I speak with?"
 - Only ask for formal referrals after you've had a substantive conversation and they're clearly positive
-- Keep contacts updated on your progress—people want to know their help led to something
+- Keep contacts updated on your progress. People want to know their help led to something

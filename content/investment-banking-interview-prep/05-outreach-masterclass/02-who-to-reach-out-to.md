@@ -42,7 +42,7 @@ Not all contacts are equally valuable or equally accessible. Understanding this 
 - People you found through LinkedIn searches with no obvious connection to you
 - Contacts at banks where you have exhausted warmer options
 
-**Important:** These tiers describe response rate likelihood, not whether you should reach out. A 10% response rate on pure cold emails still yields conversations. Don't limit yourself to people you share a connection with—prioritize warm outreach, but reach out broadly.
+**Important:** These tiers describe response rate likelihood, not whether you should reach out. A 10% response rate on pure cold emails still yields conversations. Don't limit yourself to people you share a connection with. Prioritize warm outreach, but reach out broadly.
 
 ### Prioritizing Within Banks
 
@@ -62,7 +62,7 @@ These contacts are harder to reach but valuable for understanding group culture 
 
 **4. MDs and senior bankers**
 
-Don't cold email MDs unless you have a direct connection. Their time is extremely limited, and unsolicited outreach from candidates is rarely welcomed. If you have a warm introduction, these conversations can be valuable—but they're not necessary for recruiting success.
+Don't cold email MDs unless you have a direct connection. Their time is extremely limited, and unsolicited outreach from candidates is rarely welcomed. If you have a warm introduction, these conversations can be valuable, but they're not necessary for recruiting success.
 
 ### How to Find Contacts
 
@@ -112,7 +112,7 @@ For each target bank, aim to identify:
 
 ### Email Address Formats
 
-Most banks follow predictable formats—either `firstname.lastname@domain` or `firstinitiallastname@domain`. Bulge brackets mostly use `firstname.lastname@`, while many middle market banks use `firstinitiallastname@`. See the Finding and Verifying Emails lesson for the full breakdown by bank.
+Most banks follow predictable formats, either `firstname.lastname@domain` or `firstinitiallastname@domain`. Bulge brackets mostly use `firstname.lastname@`, while many middle market banks use `firstinitiallastname@`. See the Finding and Verifying Emails lesson for the full breakdown by bank.
 
 ### What If You Have No Connections?
 
@@ -141,8 +141,8 @@ If your school has limited banking alumni or you lack warm connections:
 
 ## Key Takeaways
 
-- Prioritize warm connections (alumni, mutual contacts) over cold outreach—but don't limit yourself to warm connections only
-- Within banks, start with analysts and associates—they're most accessible and relevant
+- Prioritize warm connections (alumni, mutual contacts) over cold outreach, but don't limit yourself to warm connections only
+- Within banks, start with analysts and associates, as they're most accessible and relevant
 - Build a tracking spreadsheet with 5-10 contacts per target bank before you begin
 - Use predictable email formats and LinkedIn to find contact information
-- If you lack connections, expand your definition of commonality, attend every event possible, and still reach out cold—a 10% response rate is better than 0%
+- If you lack connections, expand your definition of commonality, attend every event possible, and still reach out cold. A 10% response rate is better than 0%

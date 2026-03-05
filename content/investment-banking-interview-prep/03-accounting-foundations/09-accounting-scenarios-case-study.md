@@ -32,7 +32,7 @@ Before diving into specific scenarios, internalize this framework. Every account
 ```accordion-step
 id: scenario-1-depreciation
 stepNumber: 1
-title: Scenario 1 — Depreciation Increases by $10
+title: Scenario 1: Depreciation Increases by $10
 challenge: |
   **"Walk me through a $10 increase in depreciation."**
 
@@ -91,19 +91,19 @@ solution: |
 
   **Balance check:** Assets down $7.50, Equity down $7.50. ✓
 
-  **The insight interviewers want:** Depreciation is a non-cash expense that provides a tax shield. The cash benefit equals D&A × Tax Rate. This is why companies care about depreciation schedules—accelerated depreciation front-loads tax savings.
+  **The insight interviewers want:** Depreciation is a non-cash expense that provides a tax shield. The cash benefit equals D&A × Tax Rate. This is why companies care about depreciation schedules: accelerated depreciation front-loads tax savings.
 ```
 
 ```accordion-step
 id: scenario-2-inventory-writedown
 stepNumber: 2
-title: Scenario 2 — Inventory Write-Down of $10
+title: Scenario 2: Inventory Write-Down of $10
 challenge: |
   **"A company writes down inventory by $10. Walk me through the impact."**
 
   Assume a 25% tax rate.
 
-  An inventory write-down means the inventory is worth less than what the company paid for it—perhaps it's obsolete or damaged.
+  An inventory write-down means the inventory is worth less than what the company paid for it, perhaps because it's obsolete or damaged.
 
   Work through all three statements.
 hint: Like depreciation, this is a non-cash expense (no cash leaves the building when you write down inventory). The pattern should look similar.
@@ -150,17 +150,17 @@ solution: |
 
   **Balance check:** Assets down $7.50, Equity down $7.50. ✓
 
-  **Key insight:** This flows identically to depreciation—both are non-cash expenses that reduce asset values and provide tax shields. The pattern is the same: Net Income down by expense × (1 − tax rate), cash up by expense × tax rate.
+  **Key insight:** This flows identically to depreciation. Both are non-cash expenses that reduce asset values and provide tax shields. The pattern is the same: Net Income down by expense × (1 − tax rate), cash up by expense × tax rate.
 ```
 
 ```accordion-step
 id: scenario-3-prepayment
 stepNumber: 3
-title: Scenario 3 — Customer Prepays $100
+title: Scenario 3: Customer Prepays $100
 challenge: |
   **"A customer prepays $100 for services to be delivered next year. Walk me through the impact today."**
 
-  No tax impact yet—revenue isn't recognized.
+  No tax impact yet because revenue isn't recognized.
 
   This tests understanding of accrual accounting and deferred revenue.
 hint: Cash came in, but you haven't earned the revenue yet. What liability do you create? What happens to the Income Statement?
@@ -216,7 +216,7 @@ solution: |
 ```accordion-step
 id: scenario-4-debt-equipment
 stepNumber: 4
-title: Scenario 4 — Issue $50 Debt to Buy Equipment
+title: Scenario 4: Issue $50 Debt to Buy Equipment
 challenge: |
   **"A company borrows $50 and uses it to buy equipment. Walk me through the statements."**
 
@@ -236,7 +236,7 @@ solution: |
   result: "Net Income = $0"
   ```
 
-  No P&L impact at the time of transaction—no revenue, no expense yet.
+  No P&L impact at the time of transaction. There is no revenue or expense yet.
 
   **Cash Flow Statement:**
 
@@ -280,14 +280,14 @@ solution: |
 ```accordion-step
 id: scenario-5-bad-debt
 stepNumber: 5
-title: Scenario 5 — $20 of A/R Goes Bad
+title: Scenario 5: $20 of A/R Goes Bad
 challenge: |
   **"A customer who owed you $20 declares bankruptcy and won't pay. Walk me through the impact."**
 
   Assume a 25% tax rate.
 
   This is a bad debt expense / A/R write-off scenario.
-hint: The A/R was never going to become cash. Writing it off is a non-cash expense (you're not sending money anywhere). But wait—if it's non-cash, why does cash go up?
+hint: The A/R was never going to become cash. Writing it off is a non-cash expense (you're not sending money anywhere). But wait: if it's non-cash, why does cash go up?
 solution: |
   **Income Statement:**
 
@@ -331,20 +331,20 @@ solution: |
 
   **Balance check:** Assets down $15, Equity down $15. ✓
 
-  **Why does cash go up?** It seems counterintuitive, but the A/R was already counted as an asset. Writing it off reduces the A/R asset and creates a tax deduction. You "save" 25% × $20 = $5 in taxes. You never actually receive cash from writing off A/R—it's an accounting adjustment that provides a tax benefit.
+  **Why does cash go up?** It seems counterintuitive, but the A/R was already counted as an asset. Writing it off reduces the A/R asset and creates a tax deduction. You "save" 25% × $20 = $5 in taxes. You never actually receive cash from writing off A/R; it's an accounting adjustment that provides a tax benefit.
 ```
 
 ```accordion-step
 id: scenario-6-sbc
 stepNumber: 6
-title: Scenario 6 — Stock-Based Compensation of $15
+title: Scenario 6: Stock-Based Compensation of $15
 challenge: |
   **"A company grants $15 of stock-based compensation to employees. Walk me through the statements."**
 
   Assume a 25% tax rate.
 
   SBC is a non-cash expense that's heavily tested because it's a real cost that many people misunderstand.
-hint: No cash leaves the company when you grant options or RSUs. But equity does change—you're issuing stock (or the right to stock) to employees.
+hint: No cash leaves the company when you grant options or RSUs. But equity does change, since you're issuing stock (or the right to stock) to employees.
 solution: |
   **Income Statement:**
 
@@ -370,7 +370,7 @@ solution: |
   result: "Net Change in Cash = +$3.75"
   ```
 
-  SBC is non-cash—no money leaves the company when you grant options or RSUs. Add it back.
+  SBC is non-cash, so no money leaves the company when you grant options or RSUs. Add it back.
 
   **Balance Sheet:**
 
@@ -387,7 +387,7 @@ solution: |
 
   **Balance check:** Assets up $3.75, Equity up $3.75. ✓
 
-  **Why this matters:** Many tech companies add back SBC to calculate "Adjusted EBITDA." This is controversial because SBC is a real expense—it dilutes existing shareholders. When analyzing a company, always check if SBC is material and whether management is using aggressive add-backs to inflate earnings.
+  **Why this matters:** Many tech companies add back SBC to calculate "Adjusted EBITDA." This is controversial because SBC is a real expense that dilutes existing shareholders. When analyzing a company, always check if SBC is material and whether management is using aggressive add-backs to inflate earnings.
 ```
 
 ---
@@ -419,7 +419,7 @@ result: "Pattern: Non-cash expenses follow Net Income = -Expense x (1 - Tax Rate
 ```accordion-step
 id: rapid-1-depreciation-decrease
 stepNumber: 7
-title: Rapid-Fire Q1 — Depreciation Decreases by $5
+title: Rapid-Fire Q1: Depreciation Decreases by $5
 challenge: |
   Depreciation **decreases** by $5. Assume 25% tax rate.
 
@@ -447,7 +447,7 @@ solution: |
 ```accordion-step
 id: rapid-2-ar-collection
 stepNumber: 8
-title: Rapid-Fire Q2 — Collect $30 Cash for A/R
+title: Rapid-Fire Q2: Collect $30 Cash for A/R
 challenge: |
   Company receives $30 cash for services already delivered last month (the revenue was already in A/R).
 
@@ -458,13 +458,13 @@ solution: |
   - **Cash Flow Statement:** +$30 (decrease in A/R is source of cash)
   - **Balance Sheet:** Cash +$30, A/R −$30, Net Assets $0
 
-  No P&L impact—this is just collecting what was already earned.
+  No P&L impact. This is just collecting what was already earned.
 ```
 
 ```accordion-step
 id: rapid-3-ap-payment
 stepNumber: 9
-title: Rapid-Fire Q3 — Pay $40 to Supplier (A/P)
+title: Rapid-Fire Q3: Pay $40 to Supplier (A/P)
 challenge: |
   Company pays $40 to supplier for inventory received last month (was in A/P).
 
@@ -481,7 +481,7 @@ solution: |
 ```accordion-step
 id: rapid-4-buyback
 stepNumber: 10
-title: Rapid-Fire Q4 — Stock Buyback of $25
+title: Rapid-Fire Q4: Stock Buyback of $25
 challenge: |
   Company buys back $25 of its own stock.
 
@@ -498,12 +498,12 @@ solution: |
 ```accordion-step
 id: rapid-5-dividend
 stepNumber: 11
-title: Rapid-Fire Q5 — Pay $10 Dividend
+title: Rapid-Fire Q5: Pay $10 Dividend
 challenge: |
   Company pays $10 dividend.
 
   Walk through the statements.
-hint: Dividends are not expenses—they're distributions of earnings to shareholders.
+hint: Dividends are not expenses. They're distributions of earnings to shareholders.
 solution: |
   - **Income Statement:** $0 (dividends are not expenses)
   - **Cash Flow Statement:** −$10 in Financing section
@@ -515,7 +515,7 @@ solution: |
 ```accordion-step
 id: rapid-6-goodwill-impairment
 stepNumber: 12
-title: Rapid-Fire Q6 — Goodwill Impairment of $50
+title: Rapid-Fire Q6: Goodwill Impairment of $50
 challenge: |
   Company records a goodwill impairment of $50. Assume 25% tax rate.
 
@@ -557,7 +557,7 @@ solution: |
 - Every transaction must keep the Balance Sheet in balance (A = L + E)
 - Non-cash expenses (D&A, write-downs, SBC) reduce Net Income but don't use cash
 - The tax shield on non-cash expenses increases cash by: Expense × Tax Rate
-- Deferred revenue is cash received before it's earned—a liability, not revenue
+- Deferred revenue is cash received before it's earned, a liability, not revenue
 - Working capital changes (A/R, A/P, Inventory) affect cash timing, not profitability
 - Always state your tax rate assumption before walking through the math
 

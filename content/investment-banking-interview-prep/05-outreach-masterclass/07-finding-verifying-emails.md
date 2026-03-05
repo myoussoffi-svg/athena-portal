@@ -20,8 +20,8 @@ estimated_minutes: 15
 
 Banks use two main formats:
 
-- **first.last@domain** — e.g., `john.smith@gs.com`
-- **firstinitiallast@domain** — e.g., `jsmith@williamblair.com`
+- **first.last@domain** - e.g., `john.smith@gs.com`
+- **firstinitiallast@domain** - e.g., `jsmith@williamblair.com`
 
 Some banks also use variations like `firstlast@` (no period) or legacy formats for longer-tenured employees. When in doubt, try `first.last@` first, then `firstinitiallast@` if that bounces.
 
@@ -98,7 +98,7 @@ People don't always go by their full legal name. Here's what to try:
 
 **For nicknames vs. legal names:**
 - If LinkedIn shows "Mike Smith" but you suspect legal name is Michael: try both `mike.smith@` and `michael.smith@`
-- Check their LinkedIn URL—it sometimes reveals the format they use
+- Check their LinkedIn URL, which sometimes reveals the format they use
 
 **For international names:**
 - Names with accents are typically stripped: José → jose
@@ -153,7 +153,7 @@ Search: `"@gs.com" email format` or `site:gs.com email`
 
 **3. Send a test email to yourself**
 
-If you have a friend at the bank, ask them to confirm the format. Otherwise, the worst case for a guessed email is a bounce—not a black mark against you.
+If you have a friend at the bank, ask them to confirm the format. Otherwise, the worst case for a guessed email is a bounce, not a black mark against you.
 
 ### Paid Databases
 
@@ -193,7 +193,7 @@ The most efficient approach combines multiple free sources:
 
 **Step 3: Verify before sending**
 - Run addresses through Hunter.io or similar
-- If unverified, send anyway—bounces are not harmful
+- If unverified, send anyway. Bounces are not harmful
 
 **Step 4: Track everything**
 - Record which emails bounced
@@ -202,18 +202,18 @@ The most efficient approach combines multiple free sources:
 
 ### What to Do When an Email Bounces
 
-A bounced email is not a problem—it is information:
+A bounced email is not a problem; it is information:
 
 1. Check the bounce message for clues (wrong domain? mailbox full? address does not exist?)
 2. Try an alternate format (firstname.middleinitial.lastname, firstinitiallastname, etc.)
 3. If multiple formats fail, try LinkedIn messaging or find another contact at the same bank
-4. Move on—some people are simply hard to reach via email
+4. Move on. Some people are simply hard to reach via email
 
 Do not email someone multiple times at different addresses in rapid succession. Try one variation, wait for the bounce, then try another.
 
 ## Key Takeaways
 
-- Most banks use firstname.lastname@domain.com—memorize the domain for your target banks
+- Most banks use firstname.lastname@domain.com, so memorize the domain for your target banks
 - Free verification tools like Hunter.io can confirm email formats before you send
 - Paid databases like ZoomInfo and Apollo exist but are not necessary for IB recruiting
 - When emails bounce, try common variations (nicknames, hyphenation, initials)

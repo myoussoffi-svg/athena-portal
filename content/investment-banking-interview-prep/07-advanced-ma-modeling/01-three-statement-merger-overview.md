@@ -156,13 +156,13 @@ Build accretion/dilution, credit metrics, and sensitivity tables.
 ```calculation
 title: "Key Differences: Simple Analysis vs. Full Merger Model"
 given:
-  - "Aspect: Statements — Simple Analysis: Income statement only | Full Merger Model: All three statements"
-  - "Aspect: Balance sheet — Simple Analysis: Ignored | Full Merger Model: Fully integrated"
-  - "Aspect: Debt capacity — Simple Analysis: Assumed | Full Merger Model: Calculated from cash flows"
+  - "Aspect: Statements - Simple Analysis: Income statement only | Full Merger Model: All three statements"
+  - "Aspect: Balance sheet - Simple Analysis: Ignored | Full Merger Model: Fully integrated"
+  - "Aspect: Debt capacity - Simple Analysis: Assumed | Full Merger Model: Calculated from cash flows"
 steps:
-  - "Aspect: Credit metrics — Simple Analysis: Not modeled | Full Merger Model: Debt/EBITDA, Coverage"
-  - "Aspect: Synergies — Simple Analysis: Single estimate | Full Merger Model: Phased over time"
-  - "Aspect: Time horizon — Simple Analysis: Year 1 only | Full Merger Model: Multi-year projection"
+  - "Aspect: Credit metrics - Simple Analysis: Not modeled | Full Merger Model: Debt/EBITDA, Coverage"
+  - "Aspect: Synergies - Simple Analysis: Single estimate | Full Merger Model: Phased over time"
+  - "Aspect: Time horizon - Simple Analysis: Year 1 only | Full Merger Model: Multi-year projection"
 result: "Full merger models provide comprehensive deal analysis across all financial dimensions"
 ```
 
@@ -180,19 +180,19 @@ result: "Full merger models provide comprehensive deal analysis across all finan
 
 Typical merger model organization:
 
-1. **Cover / Summary** — Key outputs, scenario selector
-2. **Assumptions** — All transaction inputs
-3. **Sources & Uses** — Funding structure
-4. **PPA & Goodwill** — Purchase price allocation
-5. **Acquirer Model** — Standalone financials
-6. **Target Model** — Standalone financials
-7. **Pro Forma Adjustments** — Deal adjustments by statement
-8. **Combined IS** — Consolidated income statement
-9. **Combined BS** — Consolidated balance sheet
-10. **Combined CF** — Consolidated cash flow
-11. **Credit Analysis** — Leverage and coverage ratios
-12. **Accretion/Dilution** — EPS analysis
-13. **Sensitivities** — Data tables
+1. **Cover / Summary** - Key outputs, scenario selector
+2. **Assumptions** - All transaction inputs
+3. **Sources & Uses** - Funding structure
+4. **PPA & Goodwill** - Purchase price allocation
+5. **Acquirer Model** - Standalone financials
+6. **Target Model** - Standalone financials
+7. **Pro Forma Adjustments** - Deal adjustments by statement
+8. **Combined IS** - Consolidated income statement
+9. **Combined BS** - Consolidated balance sheet
+10. **Combined CF** - Consolidated cash flow
+11. **Credit Analysis** - Leverage and coverage ratios
+12. **Accretion/Dilution** - EPS analysis
+13. **Sensitivities** - Data tables
 
 ### Interview Context
 

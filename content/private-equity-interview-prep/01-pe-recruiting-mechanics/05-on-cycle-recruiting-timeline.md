@@ -21,9 +21,9 @@ What seniors want you to understand is that timeline variation is normal. Some y
 
 Your first six months in banking should include deliberate preparation for PE recruiting, even though interviews are months away. This phase focuses on skill-building and relationship development.
 
-Technical preparation begins immediately. LBO modeling skills should be developed during quiet periods, using online resources, courses, or materials from peers. The goal is foundational competence—not interview readiness, but the ability to build on that foundation when preparation intensifies.
+Technical preparation begins immediately. LBO modeling skills should be developed during quiet periods, using online resources, courses, or materials from peers. The goal is foundational competence, not interview readiness, but the ability to build on that foundation when preparation intensifies.
 
-Relationship building also starts early. Identify PE professionals in your network—alumni from your school, former colleagues, friends in the industry. Begin reaching out with genuine curiosity rather than recruiting intent. These relationships, cultivated before you need them, become valuable when the cycle approaches.
+Relationship building also starts early. Identify PE professionals in your network: alumni from your school, former colleagues, friends in the industry. Begin reaching out with genuine curiosity rather than recruiting intent. These relationships, cultivated before you need them, become valuable when the cycle approaches.
 
 Deal experience accumulates naturally through your work. Seek staffing on transactions likely to close, volunteer for additional responsibility, and document your contributions for later discussion.
 
@@ -41,27 +41,27 @@ During this phase, continue strengthening your technical skills. Modeling tests 
 
 ## Phase Three: The Cycle Launches (Variable Timing)
 
-The cycle's launch is often sudden. One firm decides to move, headhunters begin scheduling interviews, and within days the process is fully underway. You may have limited warning—sometimes just twenty-four to forty-eight hours before your first interview.
+The cycle's launch is often sudden. One firm decides to move, headhunters begin scheduling interviews, and within days the process is fully underway. You may have limited warning, sometimes just twenty-four to forty-eight hours before your first interview.
 
 When the cycle launches, everything accelerates. First-round interviews, typically including modeling tests and fit conversations, occur within the first few days. Strong performers advance quickly to second rounds, which involve case studies and meetings with senior professionals.
 
 The compressed timeline means you may have multiple interviews scheduled simultaneously or in rapid succession. Firms are aware that you are seeing other opportunities; they expect it. Your task is to perform well in each setting while managing logistics.
 
-What seniors listen for during interviews is composure under pressure. The compressed timeline is partly a filter—candidates who cannot handle the stress of rapid-fire interviews raise questions about their ability to handle PE deal execution.
+What seniors listen for during interviews is composure under pressure. The compressed timeline is partly a filter. Candidates who cannot handle the stress of rapid-fire interviews raise questions about their ability to handle PE deal execution.
 
 ## Phase Four: Offers and Decisions (48-96 Hours)
 
-Once interviews conclude, offers often follow within hours. The most sought-after candidates receive multiple offers, sometimes on the same day. Exploding offers are common—you may have forty-eight to ninety-six hours to make a decision.
+Once interviews conclude, offers often follow within hours. The most sought-after candidates receive multiple offers, sometimes on the same day. Exploding offers are common, and you may have forty-eight to ninety-six hours to make a decision.
 
 This decision window is intentionally short. Firms want to lock in candidates before competitors can make counter-offers. The result is that you must make significant career decisions with incomplete information, often without the ability to visit additional firms or conduct further diligence.
 
-Prepare for this reality in advance. Know what matters most to you in a PE role—deal type, firm culture, team dynamics, learning environment, long-term career path. With clear priorities, you can evaluate offers quickly even when time is limited.
+Prepare for this reality in advance. Know what matters most to you in a PE role: deal type, firm culture, team dynamics, learning environment, long-term career path. With clear priorities, you can evaluate offers quickly even when time is limited.
 
 ## Navigating Uncertainty
 
 The most challenging aspect of the on-cycle timeline is its unpredictability. You might prepare intensely for months only to wait longer than expected. Alternatively, the cycle might kick off earlier than anticipated, catching you mid-preparation.
 
-Build flexibility into your approach. Maintain interview readiness continuously rather than targeting a specific date. Accept that the timing is outside your control and focus on what you can influence—your skills, your relationships, your mental preparation.
+Build flexibility into your approach. Maintain interview readiness continuously rather than targeting a specific date. Accept that the timing is outside your control and focus on what you can influence: your skills, your relationships, your mental preparation.
 
 Also recognize that not all firms move simultaneously. Even within on-cycle, there are waves. If you miss early opportunities, later ones may emerge. Some firms recruit in secondary waves after their initial targets decline offers or renege.
 
@@ -73,7 +73,7 @@ Upper middle market firms generally track mega-fund timing but may start slightl
 
 Middle market firms show wider variation. Some participate in on-cycle; others recruit off-cycle entirely. Growth equity and sector-focused funds are similarly diverse.
 
-Understanding these patterns helps you sequence your recruiting strategy. If mega-funds are your priority, prepare for the earliest possible timeline. If you are targeting middle market or specialized firms, you may have more flexibility—but should still be prepared early in case opportunities arise.
+Understanding these patterns helps you sequence your recruiting strategy. If mega-funds are your priority, prepare for the earliest possible timeline. If you are targeting middle market or specialized firms, you may have more flexibility, but should still be prepared early in case opportunities arise.
 
 ## Key Takeaways
 

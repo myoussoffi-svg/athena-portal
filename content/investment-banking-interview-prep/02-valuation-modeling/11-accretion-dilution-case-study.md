@@ -6,7 +6,7 @@ type: case-study
 
 When a public company announces an acquisition, one of the first questions analysts ask is: "Is this deal accretive or dilutive?" In plain terms, will the combined company's earnings per share go up or down after the transaction? This analysis is a staple of M&A advisory work and a guaranteed interview topic.
 
-The mechanics are straightforward, but the judgment around what drives accretion—and whether it even matters—separates good candidates from great ones.
+The mechanics are straightforward, but the judgment around what drives accretion, and whether it even matters, separates good candidates from great ones.
 
 ---
 
@@ -164,7 +164,7 @@ Here's the intuition that separates strong candidates:
 ```accordion-step
 id: step-6-pe-rule
 stepNumber: 6
-title: The P/E Rule — Quick Accretion Test
+title: The P/E Rule: Quick Accretion Test
 challenge: |
   There's a shortcut to determine accretion/dilution without running the full calculation.
 
@@ -173,7 +173,7 @@ challenge: |
   - Target implied P/E: 12.0x (paying $300M for $25M of earnings)
 
   What's the rule? Why does it work?
-hint: Think about what P/E represents—how much investors pay for $1 of earnings. If you pay MORE per dollar of earnings than your own stock commands, what happens?
+hint: Think about what P/E represents: how much investors pay for $1 of earnings. If you pay MORE per dollar of earnings than your own stock commands, what happens?
 solution: |
   **The P/E Rule:**
   - If Acquirer P/E > Target P/E → Deal is **accretive**
@@ -361,7 +361,7 @@ solution: |
 ```accordion-step
 id: variation-a-accretive-stock
 stepNumber: 10
-title: Practice Variation A — Accretive Stock Deal
+title: Practice Variation A: Accretive Stock Deal
 challenge: |
   **Acquirer:** P/E of 20x, 50M shares, $40 stock price, $100M Net Income
   **Target:** $50M purchase price, $5M Net Income
@@ -392,14 +392,14 @@ solution: |
 ```accordion-step
 id: variation-b-target-debt
 stepNumber: 11
-title: Practice Variation B — Target Has Debt
+title: Practice Variation B: Target Has Debt
 challenge: |
   Same as original scenario, but **Target has $50M of debt at 6% interest.**
 
   The acquirer will pay $300M for equity and assume the $50M debt. How does this change the analysis?
 hint: The target's existing interest expense is already reflected in its Net Income. Think about what happens if the acquirer refinances at a different rate.
 solution: |
-  **Key insight:** The target's existing debt service is already reflected in its Net Income. When the acquirer assumes the debt, no incremental interest expense is added—it's already baked in.
+  **Key insight:** The target's existing debt service is already reflected in its Net Income. When the acquirer assumes the debt, no incremental interest expense is added. It's already baked in.
 
   The $50M debt appears on the acquirer's balance sheet, but the P&L impact is already in the target's $25M NI.
 
@@ -426,7 +426,7 @@ solution: |
 ```accordion-step
 id: variation-c-target-cash
 stepNumber: 12
-title: Practice Variation C — Target Has Cash
+title: Practice Variation C: Target Has Cash
 challenge: |
   **Target has $40M of cash on its balance sheet.** Purchase price is still $300M equity value.
 
@@ -461,7 +461,7 @@ solution: |
 ```accordion-step
 id: variation-d-working-backwards
 stepNumber: 13
-title: Practice Variation D — Working Backwards
+title: Practice Variation D: Working Backwards
 challenge: |
   The board says the deal must be at least **5% accretive**. What's the maximum price TechCorp can pay (100% stock, no synergies)?
 hint: Target EPS = $5.00 × 1.05 = $5.25. Set up the equation: $5.25 = (Acquirer NI + Target NI) / (Acquirer Shares + Shares Issued) and solve for purchase price.
@@ -486,7 +486,7 @@ solution: |
   P = $0
   ```
 
-  This means for 5% accretion with these numbers and no synergies, you'd need to pay essentially nothing—which is unrealistic.
+  This means for 5% accretion with these numbers and no synergies, you'd need to pay essentially nothing, which is unrealistic.
 
   **Reality check:** A 5% accretive deal with stock requires either:
   1. Paying a much lower P/E than your own
@@ -505,8 +505,8 @@ solution: |
 Interviewers often ask about goodwill and intangibles. Here's what you need to know:
 
 **When an acquirer pays more than book value, the excess becomes:**
-1. **Identifiable intangibles** (customer relationships, technology, brand) — amortized over useful life
-2. **Goodwill** (the residual) — not amortized, but tested for impairment
+1. **Identifiable intangibles** (customer relationships, technology, brand), amortized over useful life
+2. **Goodwill** (the residual), not amortized, but tested for impairment
 
 **Impact on accretion/dilution:**
 - Amortization of intangibles is a real GAAP expense that reduces Net Income
@@ -533,7 +533,7 @@ This would make our deal even more dilutive: another ~$0.11 EPS headwind.
 
 ### 1. The P/E Intuition
 
-Don't just calculate—explain the logic:
+Don't just calculate. Explain the logic:
 
 "This deal is dilutive because we're paying 12x for the target's earnings while our stock only trades at 10x. We're effectively paying more per dollar of earnings than our own investors pay for ours. For this to work, we'd need synergies or we'd need to believe the target's earnings will grow faster than ours."
 
@@ -547,7 +547,7 @@ Show you understand the cash vs. stock decision:
 
 This is the advanced insight:
 
-"Accretion/dilution is a short-term metric that can be misleading. A deal that's 5% dilutive in Year 1 but creates significant strategic value—new markets, technology, or long-term synergies—could be far more valuable than an accretive deal buying a declining business. The market often rewards dilutive deals if the strategy is sound."
+"Accretion/dilution is a short-term metric that can be misleading. A deal that's 5% dilutive in Year 1 but creates significant strategic value (new markets, technology, or long-term synergies) could be far more valuable than an accretive deal buying a declining business. The market often rewards dilutive deals if the strategy is sound."
 
 ### 4. Real-World Complications
 
@@ -564,7 +564,7 @@ Be ready for these:
 - Accretion/dilution measures whether pro forma EPS is higher or lower than standalone EPS
 - Quick rule: If Acquirer P/E > Target P/E, stock deal is accretive (and vice versa)
 - Cash deals are typically more accretive than stock deals when interest rates are low
-- Synergies can flip a dilutive deal to accretive—calculate the breakeven amount
+- Synergies can flip a dilutive deal to accretive, so calculate the breakeven amount
 - Accretion isn't everything: a strategically sound but dilutive deal can create value
 - Amortization of intangibles creates additional ongoing dilution in GAAP earnings
 - Always be ready to explain the intuition, not just run the numbers

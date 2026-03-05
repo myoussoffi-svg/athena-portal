@@ -157,12 +157,12 @@ Each KPI ties to a specific initiative. If KPI does not improve, revisit the ini
 
 ## Key Takeaways
 
-- KPI reporting tracks metrics; value creation improves them—associates must push beyond reporting to drive actionable initiatives when performance deteriorates
+- KPI reporting tracks metrics; value creation improves them. Associates must push beyond reporting to drive actionable initiatives when performance deteriorates
 - Reporting is sufficient when business is on track, issues are flagged early with corrective plans, or operating partners are leading value creation
 - Intervention is required when KPIs deteriorate without management response, initiatives stall, or management measures but does not act
 - Link each KPI to a specific value creation lever (e.g., new customer acquisition → hire more sales reps; churn → implement customer success program)
-- Avoid over-reporting by standardizing templates, limiting dashboards to 10–15 core metrics, and rotating deep-dives—reporting should inform decisions, not replace execution
-- Structure dashboards with executive summary, financials, commercial/operational KPIs, and value creation progress—keep concise and actionable
+- Avoid over-reporting by standardizing templates, limiting dashboards to 10–15 core metrics, and rotating deep-dives. Reporting should inform decisions, not replace execution
+- Structure dashboards with executive summary, financials, commercial/operational KPIs, and value creation progress. Keep concise and actionable
 
 ## Synthesis
 - What would change your mind based on new data?

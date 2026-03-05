@@ -209,21 +209,21 @@ title: "Risk-Return Spectrum Across Capital Sources"
 given:
   - "Category: Instrument, Risk to Investor, Expected Return"
 steps:
-  - "Senior Secured Debt: Lowest risk — 4-6% return"
-  - "Senior Unsecured Debt: Low risk — 5-7% return"
-  - "Subordinated Debt: Medium risk — 7-10% return"
-  - "Mezzanine/Preferred: Medium-High risk — 10-15% return"
-  - "Common Equity: Highest risk — 15-25%+ return"
-result: "Higher risk demands higher return — equity is 'more expensive' than debt from the issuer's perspective"
+  - "Senior Secured Debt: Lowest risk -4-6% return"
+  - "Senior Unsecured Debt: Low risk -5-7% return"
+  - "Subordinated Debt: Medium risk -7-10% return"
+  - "Mezzanine/Preferred: Medium-High risk -10-15% return"
+  - "Common Equity: Highest risk -15-25%+ return"
+result: "Higher risk demands higher return -equity is 'more expensive' than debt from the issuer's perspective"
 ```
 
 ### The Pecking Order Theory
 
 Research suggests companies have a **pecking order** of financing preferences:
 
-1. **Internal funds** (retained earnings) — No transaction costs, no information asymmetry
-2. **Debt** — Lower information costs than equity, tax-advantaged
-3. **Equity** — Last resort, signals potential overvaluation
+1. **Internal funds** (retained earnings) -No transaction costs, no information asymmetry
+2. **Debt** -Lower information costs than equity, tax-advantaged
+3. **Equity** -Last resort, signals potential overvaluation
 
 Companies prefer using cash first, then debt, and issue equity only when necessary.
 

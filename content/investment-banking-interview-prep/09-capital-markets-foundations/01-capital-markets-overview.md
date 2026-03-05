@@ -50,36 +50,36 @@ In the secondary market, proceeds go to selling investors (not the company).
 
 ### Key Market Participants
 
-**Issuers** — Entities that raise capital
+**Issuers** -Entities that raise capital
 
 ```calculation
 title: "Issuers: Entities That Raise Capital"
 given:
   - "Category: Type, Examples, Securities Issued"
 steps:
-  - "Corporations: Apple, ExxonMobil, Startups — Stocks, Bonds"
-  - "Governments: US Treasury, Municipalities — Treasury Bonds, Munis"
-  - "Financial Institutions: Banks, Insurance Companies — Bank Debt, Preferred Stock"
-  - "SPVs/Structured Vehicles: Mortgage pools, CLOs — Asset-Backed Securities"
+  - "Corporations: Apple, ExxonMobil, Startups -Stocks, Bonds"
+  - "Governments: US Treasury, Municipalities -Treasury Bonds, Munis"
+  - "Financial Institutions: Banks, Insurance Companies -Bank Debt, Preferred Stock"
+  - "SPVs/Structured Vehicles: Mortgage pools, CLOs -Asset-Backed Securities"
 result: "Issuers range from corporations to governments to structured vehicles, each issuing distinct security types"
 ```
 
-**Investors** — Entities that provide capital
+**Investors** -Entities that provide capital
 
 ```calculation
 title: "Investors: Entities That Provide Capital"
 given:
   - "Category: Type, Characteristics, Focus"
 steps:
-  - "Institutional Investors: Large pools of capital, professional management — Pension funds, mutual funds, insurance companies"
-  - "Asset Managers: Manage money for clients — Fidelity, BlackRock, hedge funds"
-  - "Sovereign Wealth Funds: Government-owned investment pools — Norway SWF, Singapore GIC"
-  - "Retail Investors: Individual investors — 401(k) participants, day traders"
-  - "Banks: Both investors and intermediaries — Hold bonds, make loans"
+  - "Institutional Investors: Large pools of capital, professional management -Pension funds, mutual funds, insurance companies"
+  - "Asset Managers: Manage money for clients -Fidelity, BlackRock, hedge funds"
+  - "Sovereign Wealth Funds: Government-owned investment pools -Norway SWF, Singapore GIC"
+  - "Retail Investors: Individual investors -401(k) participants, day traders"
+  - "Banks: Both investors and intermediaries -Hold bonds, make loans"
 result: "Investor base spans from large institutional pools to individual retail participants"
 ```
 
-**Intermediaries** — Facilitate transactions
+**Intermediaries** -Facilitate transactions
 
 ```calculation
 title: "Intermediaries: Facilitate Transactions"

@@ -181,10 +181,10 @@ Credibility is lost quickly and rebuilt slowly. Be patient.
 
 ## Key Takeaways
 
-- Credibility with management is essential for post-close influence—associates have no formal authority; effectiveness depends on trust and respect
+- Credibility with management is essential for post-close influence. Associates have no formal authority; effectiveness depends on trust and respect
 - Build credibility through competence (deep business understanding), responsiveness (deliver on commitments), and adding value (insights, problem-solving) not process burden (unclear data requests, excessive reporting)
-- Respect management expertise by asking questions and proposing hypotheses rather than issuing directives—"Have you considered..." is better than "You should..."
-- Navigate difficult conversations (underperformance, tough decisions) with firm but collaborative tone—acknowledge issues, request context, use data to inform solutions
+- Respect management expertise by asking questions and proposing hypotheses rather than issuing directives. "Have you considered..." is better than "You should..."
+- Navigate difficult conversations (underperformance, tough decisions) with firm but collaborative tone. Acknowledge issues, request context, use data to inform solutions
 - Earn buy-in for difficult initiatives by understanding resistance, acknowledging valid concerns, using data to inform tradeoffs, and giving CEO agency to propose alternatives
 - Rebuild lost credibility by diagnosing issues, owning mistakes, demonstrating competence on next interaction, and rebuilding trust incrementally over time
 

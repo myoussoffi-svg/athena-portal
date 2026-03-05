@@ -20,7 +20,7 @@ estimated_minutes: 20
 
 Effective IB networking requires reaching out to 100-200 people across your target banks. You can't write each email from scratch, but generic mass emails get ignored.
 
-The solution is systematized personalization—building processes that let you scale while keeping the quality that actually gets responses.
+The solution is systematized personalization: building processes that let you scale while keeping the quality that actually gets responses.
 
 ### Building Your Outreach System
 
@@ -139,7 +139,7 @@ The fastest way to kill a relationship is to send an email that says "Hi [FIRST_
 
 **2. Losing track of who you've contacted**
 
-Reaching out to someone who already ignored you, or emailing the same person twice, signals disorganization. Your tracker is your source of truth—update it religiously.
+Reaching out to someone who already ignored you, or emailing the same person twice, signals disorganization. Your tracker is your source of truth. Update it religiously.
 
 **3. Depersonalization creep**
 
@@ -170,7 +170,7 @@ After 2-3 weeks of outreach, review your data:
 
 **If calls aren't leading to referrals:**
 - Are the conversations substantive? Prepare better questions
-- Are you asking for referrals? Many people won't offer—you have to ask
+- Are you asking for referrals? Many people won't offer; you have to ask
 - Are you following up after calls? The thank-you email matters
 
 ### Sample Weekly Schedule
@@ -208,5 +208,5 @@ IB recruiting can span 3-6 months. To maintain quality over this period:
 - Establish daily (30-45 min) and weekly (60-90 min) routines to maintain consistency
 - Track everything: response rates, call conversions, relationship status
 - Avoid copy-paste errors, depersonalization, and neglecting existing relationships
-- Pace yourself for 3-6 months of recruiting—5 emails per day is sustainable
+- Pace yourself for 3-6 months of recruiting. Five emails per day is sustainable
 - Adapt based on results: review metrics every 2-3 weeks and adjust your approach

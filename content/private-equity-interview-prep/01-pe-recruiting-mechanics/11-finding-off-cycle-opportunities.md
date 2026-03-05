@@ -19,7 +19,7 @@ Off-cycle is fragmented and often invisible. A fund seeking to fill a single pos
 
 The result is an information asymmetry that favors candidates with strong networks and proactive approaches. Those who wait passively for off-cycle opportunities to appear will see far fewer than those who actively seek them.
 
-What seniors observe is that the best off-cycle candidates are entrepreneurs in their job search. They do not rely on others to surface opportunities—they actively create visibility and pursue leads.
+What seniors observe is that the best off-cycle candidates are entrepreneurs in their job search. They do not rely on others to surface opportunities. They actively create visibility and pursue leads.
 
 ## Networking as Primary Discovery Channel
 
@@ -31,7 +31,7 @@ Banking colleagues provide another valuable network. Senior bankers with PE rela
 
 Alumni networks connect you to PE professionals who share your educational background. These connections often involve willingness to help that goes beyond what strangers would offer.
 
-The key to network-based discovery is consistent engagement. You cannot call people only when you need something. Ongoing relationship maintenance—checking in periodically, offering value where you can, staying connected genuinely—creates the foundation for information sharing.
+The key to network-based discovery is consistent engagement. You cannot call people only when you need something. Ongoing relationship maintenance (checking in periodically, offering value where you can, staying connected genuinely) creates the foundation for information sharing.
 
 ## Headhunter Channels for Off-Cycle
 
@@ -49,9 +49,9 @@ Off-cycle recruiting is more receptive to direct candidate outreach than on-cycl
 
 Research precedes outreach. Before contacting a firm, understand their investment strategy, recent deals, team composition, and any other relevant information. Generic outreach is obvious and ineffective.
 
-Identify the right contact. Reaching out to a partner with whom you have no connection is unlikely to succeed. Instead, identify someone at the firm with whom you share a connection—alumni, mutual acquaintances, industry overlap—and reach out to them.
+Identify the right contact. Reaching out to a partner with whom you have no connection is unlikely to succeed. Instead, identify someone at the firm with whom you share a connection (alumni, mutual acquaintances, industry overlap) and reach out to them.
 
-Craft thoughtful, personalized messages. Your outreach should demonstrate genuine knowledge of the firm, clear reasoning for your interest, and something that distinguishes you. This is not a form letter—it is a targeted professional communication.
+Craft thoughtful, personalized messages. Your outreach should demonstrate genuine knowledge of the firm, clear reasoning for your interest, and something that distinguishes you. This is not a form letter; it is a targeted professional communication.
 
 Follow up appropriately. One follow-up after a reasonable interval is professional. Multiple aggressive follow-ups create negative impressions.
 
@@ -81,7 +81,7 @@ Building relationships before you need them positions you for opportunities when
 
 Demonstrating capability through your work creates reputation that precedes you. PE professionals hear about strong analysts through industry networks. Excellent performance in banking builds awareness that surfaces off-cycle opportunities.
 
-What seniors understand is that the most effective candidates do not simply find opportunities—they create conditions where opportunities find them.
+What seniors understand is that the most effective candidates do not simply find opportunities. They create conditions where opportunities find them.
 
 ## Maintaining Momentum
 
@@ -91,10 +91,10 @@ Set regular activity goals. Commit to a certain number of outreach messages, net
 
 Track your progress. Maintain records of contacts made, conversations held, and opportunities pursued. This tracking reveals patterns and sustains motivation.
 
-Celebrate small wins. Each new relationship, each productive conversation, each lead surfaced represents progress—even if it does not immediately yield an offer.
+Celebrate small wins. Each new relationship, each productive conversation, each lead surfaced represents progress, even if it does not immediately yield an offer.
 
 Recognize that patience is necessary. Off-cycle success often comes after months of effort. Persistence through periods of limited visible progress is essential.
 
 ## Key Takeaways
 
-Off-cycle opportunities require proactive discovery—they do not surface automatically. Networking is the primary channel, with PE professionals, banking colleagues, and alumni providing valuable information and introductions. Headhunters remain relevant for off-cycle, particularly specialists in middle market and off-cycle searches. Direct outreach to firms can be effective when well-researched and personalized. Public channels supplement but cannot replace relationship-based discovery. Creating value through expertise and relationship building positions you for opportunities over time.
+Off-cycle opportunities require proactive discovery. They do not surface automatically. Networking is the primary channel, with PE professionals, banking colleagues, and alumni providing valuable information and introductions. Headhunters remain relevant for off-cycle, particularly specialists in middle market and off-cycle searches. Direct outreach to firms can be effective when well-researched and personalized. Public channels supplement but cannot replace relationship-based discovery. Creating value through expertise and relationship building positions you for opportunities over time.

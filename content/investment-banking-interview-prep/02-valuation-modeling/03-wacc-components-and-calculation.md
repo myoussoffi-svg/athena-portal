@@ -22,7 +22,7 @@ video:
 
 ### What Is WACC?
 
-**WACC (Weighted Average Cost of Capital)** is the blended cost of a company's financing sources—debt and equity—weighted by their proportions in the capital structure. It represents the return required by all investors (both debt and equity holders) and is used as the discount rate in a DCF to value enterprise value.
+**WACC (Weighted Average Cost of Capital)** is the blended cost of a company's financing sources (debt and equity) weighted by their proportions in the capital structure. It represents the return required by all investors (both debt and equity holders) and is used as the discount rate in a DCF to value enterprise value.
 
 **Intuition**: If a company is financed 70% by equity (which costs 12%) and 30% by debt (which costs 6% after tax), the overall cost of capital is somewhere between 6% and 12%, weighted by the mix.
 

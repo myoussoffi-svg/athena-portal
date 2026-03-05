@@ -164,7 +164,7 @@ note: "Higher offer prices reduce accretion, ROIC, and increase leverage"
 
 **For Buyers**:
 - "At $44, the deal is accretive by Year 2 and ROIC exceeds our cost of capital"
-- "Above $48, the deal never becomes accretive—that's our walk-away price"
+- "Above $48, the deal never becomes accretive. That's our walk-away price"
 
 **For Sellers**:
 - "Similar transactions traded at 25× EBITDA, which implies $44-46"
@@ -201,7 +201,7 @@ Maximum price = Target's standalone value + NPV of synergies
 $3,600M (standalone) + $1,686M (synergy NPV) = $5,286M
 ```
 
-At this price, all synergy value goes to target shareholders—acquirer breaks even.
+At this price, all synergy value goes to target shareholders, and the acquirer breaks even.
 
 ### Presenting Value Creation Analysis
 
@@ -251,5 +251,5 @@ Several approaches: (1) Find the price where deal accretion goes to zero in your
 
 **"What's the difference between contribution analysis and ROIC analysis?"**
 
-Contribution analysis looks at fairness—comparing what each company brings versus ownership received. ROIC analysis looks at value creation—whether the return on the acquisition exceeds the acquirer's cost of capital. Both are important but answer different questions.
+Contribution analysis looks at fairness, comparing what each company brings versus ownership received. ROIC analysis looks at value creation: whether the return on the acquisition exceeds the acquirer's cost of capital. Both are important but answer different questions.
 

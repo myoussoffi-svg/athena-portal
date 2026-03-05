@@ -18,7 +18,7 @@ estimated_minutes: 30
 
 ### The Closing Balance Sheet as Foundation
 
-The closing balance sheet—also called the opening balance sheet or Day 1 balance sheet—represents the financial position of the acquired company immediately after the LBO transaction closes. Every projection in the LBO model begins from this starting point. If the closing balance sheet is incorrect, every subsequent calculation—debt balances, cash flows, returns—will be wrong.
+The closing balance sheet (also called the opening balance sheet or Day 1 balance sheet) represents the financial position of the acquired company immediately after the LBO transaction closes. Every projection in the LBO model begins from this starting point. If the closing balance sheet is incorrect, every subsequent calculation (debt balances, cash flows, returns) will be wrong.
 
 Building the closing balance sheet requires synthesizing inputs from multiple model sections: the target's historical financials, Sources and Uses, purchase accounting adjustments, and goodwill calculations. This lesson provides a comprehensive framework for constructing and verifying the closing balance sheet.
 
@@ -297,7 +297,7 @@ In interviews, you may be asked to construct or explain the closing balance shee
 
 "Walk me through how you build the closing balance sheet in an LBO."
 
-"I start with the target's historical balance sheet. I remove the existing capital structure—the debt being refinanced and the equity being cashed out. Then I apply purchase accounting adjustments: fair value write-ups for assets like inventory and PP&E, recognition of intangible assets like customer relationships and technology, and the resulting deferred tax liability. I add the new capital structure from Sources and Uses—the new debt tranches and the sponsor equity. Finally, I calculate goodwill as the purchase price minus the fair value of identifiable net assets and record it as an asset. The balance sheet must balance: total assets equal total liabilities plus the new equity."
+"I start with the target's historical balance sheet. I remove the existing capital structure: the debt being refinanced and the equity being cashed out. Then I apply purchase accounting adjustments: fair value write-ups for assets like inventory and PP&E, recognition of intangible assets like customer relationships and technology, and the resulting deferred tax liability. I add the new capital structure from Sources and Uses: the new debt tranches and the sponsor equity. Finally, I calculate goodwill as the purchase price minus the fair value of identifiable net assets and record it as an asset. The balance sheet must balance: total assets equal total liabilities plus the new equity."
 
 This response demonstrates systematic thinking and comprehensive understanding of the mechanics.
 
@@ -318,9 +318,9 @@ This response demonstrates systematic thinking and comprehensive understanding o
 
 ## Key Takeaways
 
-- The closing balance sheet represents the company's financial position immediately after the LBO closes—it is the foundation for all projections
+- The closing balance sheet represents the company's financial position immediately after the LBO closes. It is the foundation for all projections
 - Construction follows a logical sequence: historical balance sheet, remove old capital structure, apply purchase accounting, add new capital structure, record goodwill
 - Purchase accounting adjustments include asset write-ups, new intangible assets, and deferred tax liabilities; goodwill is the residual that makes the balance sheet balance
 - Verify integrity through systematic checks: balance sheet equation, Sources = Uses, goodwill ties to PPA, debt ties to Sources, equity ties to Sources
 - Common issues include imbalances (usually missing adjustments or DTL errors), cash discrepancies, and debt presentation questions
-- The closing balance sheet directly links to all projected balance sheets—Year 0 balances roll forward through each projection period
+- The closing balance sheet directly links to all projected balance sheets. Year 0 balances roll forward through each projection period

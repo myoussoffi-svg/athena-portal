@@ -18,7 +18,7 @@ estimated_minutes: 20
 
 ### Why Sources and Uses Matters
 
-Every leveraged buyout begins with a single question: how much money do we need, and where is it coming from? The Sources and Uses framework answers this question with precision. It is not merely an accounting exercise—it is the architectural foundation upon which the entire LBO model is constructed.
+Every leveraged buyout begins with a single question: how much money do we need, and where is it coming from? The Sources and Uses framework answers this question with precision. It is not merely an accounting exercise; it is the architectural foundation upon which the entire LBO model is constructed.
 
 When you sit down to build an LBO model, Sources and Uses is where you start. Before you can project cash flows, before you can calculate returns, before you can assess debt paydown schedules, you must first establish the opening position. How much equity is the sponsor contributing? What debt instruments are being employed? What exactly are we paying for? These questions define the transaction economics that flow through every subsequent calculation.
 
@@ -26,7 +26,7 @@ The reason interviewers focus heavily on Sources and Uses is because it tests wh
 
 ### The Fundamental Equation
 
-At its core, Sources and Uses embodies a simple accounting identity: Total Sources must equal Total Uses. This is not optional—it is mathematically required. Every dollar spent in the transaction must come from somewhere.
+At its core, Sources and Uses embodies a simple accounting identity: Total Sources must equal Total Uses. This is not optional; it is mathematically required. Every dollar spent in the transaction must come from somewhere.
 
 **Sources = Uses**
 
@@ -40,7 +40,7 @@ Sources represent where the money comes from to fund the acquisition. In a typic
 
 **Debt financing** constitutes the leveraged portion of the capital structure. This may include senior secured term loans, subordinated debt, mezzanine financing, or high-yield bonds. Each instrument carries different costs, covenants, and repayment terms. The mix of debt instruments is a critical structuring decision that affects both returns and risk.
 
-**Equity contribution** represents the sponsor's investment. This is the check the private equity firm writes to close the transaction. The equity contribution is the residual after debt financing—whatever the debt markets will not fund, the sponsor must cover. This is why equity is often called the "plug" in Sources and Uses.
+**Equity contribution** represents the sponsor's investment. This is the check the private equity firm writes to close the transaction. The equity contribution is the residual after debt financing. Whatever the debt markets will not fund, the sponsor must cover. This is why equity is often called the "plug" in Sources and Uses.
 
 **Rollover equity** occurs when existing shareholders retain an ownership stake rather than cashing out entirely. Management teams frequently roll over equity to maintain alignment with the new owners. Rollover equity reduces the cash needed from other sources but creates complexity in calculating true sponsor returns.
 
@@ -50,11 +50,11 @@ Sources represent where the money comes from to fund the acquisition. In a typic
 
 Uses represent what the money is spent on. In a typical LBO, uses include:
 
-**Purchase of equity** is the primary use—the amount paid to acquire all outstanding shares of the target company. For public companies, this is calculated from the offer price and shares outstanding. For private companies, this is typically the negotiated enterprise value adjusted for net debt.
+**Purchase of equity** is the primary use: the amount paid to acquire all outstanding shares of the target company. For public companies, this is calculated from the offer price and shares outstanding. For private companies, this is typically the negotiated enterprise value adjusted for net debt.
 
 **Refinancing of existing debt** is often required in LBO transactions. Lenders to the target company may have change-of-control provisions that trigger repayment upon acquisition. Even without such provisions, the sponsor typically refinances existing debt to optimize the capital structure.
 
-**Transaction fees and expenses** include advisory fees (investment banking, legal, accounting), financing fees (arrangement fees, commitment fees), and other closing costs. These fees can be substantial—often 2-4% of transaction value—and must be funded at closing.
+**Transaction fees and expenses** include advisory fees (investment banking, legal, accounting), financing fees (arrangement fees, commitment fees), and other closing costs. These fees can be substantial, often 2-4% of transaction value, and must be funded at closing.
 
 **Debt issuance costs and OID** (Original Issue Discount) represent the costs of raising debt financing. These are technically assets that are amortized over the life of the debt, but the cash outflow occurs at closing.
 
@@ -99,4 +99,4 @@ When you can explain these relationships fluently, you demonstrate that you unde
 - Sources include debt financing, equity contribution, rollover equity, and excess balance sheet cash
 - Uses include purchase of equity, refinancing of existing debt, transaction fees, and debt issuance costs
 - Sources and Uses directly feeds the debt schedule, equity returns analysis, goodwill calculation, and opening balance sheet
-- Demonstrating conceptual understanding of why Sources and Uses matters—not just mechanical competence—is what distinguishes strong interview candidates
+- Demonstrating conceptual understanding of why Sources and Uses matters, not just mechanical competence, is what distinguishes strong interview candidates

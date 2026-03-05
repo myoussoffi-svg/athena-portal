@@ -43,7 +43,7 @@ These control rights are valuable, so buyers pay more than the minority trading 
 
 ### Minority Discount
 
-The inverse of a control premium is a **minority discount**—the reduction in value when valuing a minority (non-controlling) stake.
+The inverse of a control premium is a **minority discount**, the reduction in value when valuing a minority (non-controlling) stake.
 
 For example, if a company is worth $1,000M on a control basis, a 10% minority stake might be worth less than $100M due to the lack of control.
 

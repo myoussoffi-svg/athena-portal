@@ -133,7 +133,7 @@ Start with customer unit economics (e.g., "10,000 potential customers × $100K a
 **Red flag example**:
 
 Market study says: "TAM is $20B."
-Your check: Company revenue is $30M. That implies 0.15% market share. If true, there is massive headroom. But if the TAM definition is too broad (e.g., includes adjacent markets the company does not serve), the real TAM may be $500M and market share is 6%—very different implication for growth potential.
+Your check: Company revenue is $30M. That implies 0.15% market share. If true, there is massive headroom. But if the TAM definition is too broad (e.g., includes adjacent markets the company does not serve), the real TAM may be $500M and market share is 6%, a very different implication for growth potential.
 
 ### Assessing Competitive Positioning Claims
 
@@ -284,9 +284,9 @@ VDR shows: Revenue growth is slower than market growth (implying share loss).
 
 ## Key Takeaways
 
-- Market diligence validates management's claims about market size, growth, and positioning—commission it when market dynamics are critical to the thesis or claims are unsubstantiated
+- Market diligence validates management's claims about market size, growth, and positioning. Commission it when market dynamics are critical to the thesis or claims are unsubstantiated
 - Sanity-check TAM/SAM/SOM by asking whether definitions are realistic vs. aspirational, whether top-down and bottom-up approaches align, and whether market share implies are credible
-- Assess competitive positioning by comparing market study findings to customer interviews and management's narrative—look for evidence that supports leadership claims
+- Assess competitive positioning by comparing market study findings to customer interviews and management's narrative. Look for evidence that supports leadership claims
 - Extract retention risk signals, differentiation validation, and pricing power insights from customer interviews; watch for cherry-picked interview samples
 - Evaluate growth projections by understanding the basis (industry reports, trends, expert interviews), testing reasonableness, and comparing market growth to company growth
 - Identify weaknesses including over-reliance on secondary sources, limited primary research, generic trends without company-specific application, and bullish bias

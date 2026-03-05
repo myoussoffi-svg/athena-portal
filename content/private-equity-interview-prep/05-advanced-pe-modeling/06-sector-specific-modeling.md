@@ -18,9 +18,9 @@ estimated_minutes: 40
 
 ### Why Sector Matters
 
-A software company, a healthcare services provider, and an industrial manufacturer might all generate $50 million of EBITDA—but they are fundamentally different businesses with different risk profiles, growth trajectories, and value drivers. The same LBO structure that works brilliantly for recurring revenue software would be inappropriate for a cyclical industrial business.
+A software company, a healthcare services provider, and an industrial manufacturer might all generate $50 million of EBITDA, but they are fundamentally different businesses with different risk profiles, growth trajectories, and value drivers. The same LBO structure that works brilliantly for recurring revenue software would be inappropriate for a cyclical industrial business.
 
-As you advance from generalist banking to specialized PE roles, sector expertise becomes a differentiator. Understanding how to model different business types—and articulating why those differences matter—demonstrates the sophistication that firms seek in associates.
+As you advance from generalist banking to specialized PE roles, sector expertise becomes a differentiator. Understanding how to model different business types, and articulating why those differences matter, demonstrates the sophistication that firms seek in associates.
 
 ### Software and Technology
 
@@ -32,7 +32,7 @@ Software businesses have become the most sought-after PE targets because of thei
 
 **Customer acquisition economics** matter enormously. Track CAC (customer acquisition cost), LTV (lifetime value), and the LTV/CAC ratio. Payback periods on customer acquisition spending affect cash flow timing and investment requirements.
 
-**Deferred revenue** creates a unique working capital dynamic. Software companies often collect annual subscriptions upfront, recording cash immediately but recognizing revenue over twelve months. This creates negative working capital—the company funds operations with customer prepayments. Your model should reflect this cash timing advantage.
+**Deferred revenue** creates a unique working capital dynamic. Software companies often collect annual subscriptions upfront, recording cash immediately but recognizing revenue over twelve months. This creates negative working capital, meaning the company funds operations with customer prepayments. Your model should reflect this cash timing advantage.
 
 Valuation methodologies emphasize revenue multiples, particularly for high-growth companies where EBITDA is depressed by growth investments. A SaaS company might trade at 10x ARR despite modest EBITDA margins because the recurring revenue base will generate significant EBITDA as growth slows and the company optimizes for profitability.
 
@@ -42,7 +42,7 @@ Healthcare combines recession-resistant demand with complex regulatory dynamics 
 
 **Reimbursement and payer mix** determine unit economics. Revenue comes from government payers (Medicare, Medicaid), commercial insurers, and self-pay patients. Government reimbursement rates are set administratively and can change, creating regulatory risk. Commercial rates are negotiated and depend on provider leverage. Your model should sensitivity test reimbursement rate changes.
 
-**Same-store versus new-unit growth** matters for multi-site healthcare businesses. An urgent care platform might grow 15% annually through new clinic openings, but same-store growth of 3-4% indicates underlying market dynamics. Model these growth components separately—new units require capital investment and ramp time.
+**Same-store versus new-unit growth** matters for multi-site healthcare businesses. An urgent care platform might grow 15% annually through new clinic openings, but same-store growth of 3-4% indicates underlying market dynamics. Model these growth components separately, because new units require capital investment and ramp time.
 
 **Capacity utilization** drives margins in asset-heavy healthcare businesses. A surgery center with 60% utilization has very different economics than one at 85% utilization. Fixed costs are absorbed across more procedures as utilization increases, dramatically expanding margins.
 
@@ -54,11 +54,11 @@ Healthcare combines recession-resistant demand with complex regulatory dynamics 
 
 Industrial businesses present different modeling challenges: capital intensity, cyclicality, and operational complexity. Success requires understanding these dynamics.
 
-**Cyclicality** is the defining characteristic of most industrial businesses. Revenue correlates with economic cycles, and margins compress in downturns as fixed costs are spread across lower volumes. Your model must stress test downturn scenarios—what happens if revenue declines 20% while maintaining fixed costs? Can the company service its debt through a cycle?
+**Cyclicality** is the defining characteristic of most industrial businesses. Revenue correlates with economic cycles, and margins compress in downturns as fixed costs are spread across lower volumes. Your model must stress test downturn scenarios: what happens if revenue declines 20% while maintaining fixed costs? Can the company service its debt through a cycle?
 
 **Capacity and capital expenditure** require careful modeling. Manufacturing businesses require significant maintenance capex to sustain operations, plus growth capex to expand capacity. Distinguish between these in your projections. A company might generate $50 million of EBITDA but require $20 million of maintenance capex, yielding only $30 million of sustainable free cash flow.
 
-**Working capital intensity** is typically higher in industrial businesses. Inventory cycles can extend for months, and receivables collection from industrial customers takes time. Your model should reflect realistic working capital assumptions—a company with 90-day inventory, 60-day receivables, and 45-day payables has meaningful working capital requirements as revenue grows.
+**Working capital intensity** is typically higher in industrial businesses. Inventory cycles can extend for months, and receivables collection from industrial customers takes time. Your model should reflect realistic working capital assumptions. A company with 90-day inventory, 60-day receivables, and 45-day payables has meaningful working capital requirements as revenue grows.
 
 **Commodity and input cost exposure** creates margin volatility. If raw materials represent 40% of revenue and prices spike, can the company pass through costs to customers? Contracts with price adjustment clauses, hedging programs, and competitive position all affect margin stability.
 
@@ -93,5 +93,5 @@ This sector fluency signals that you can contribute meaningfully from day one, e
 - Software businesses require focus on recurring revenue metrics (ARR, NRR), customer acquisition economics, and deferred revenue working capital benefits
 - Healthcare modeling must capture reimbursement dynamics, payer mix sensitivity, capacity utilization, and same-store versus new-unit growth
 - Industrial businesses demand cycle-aware stress testing, careful capex treatment, working capital intensity assumptions, and commodity exposure analysis
-- Different sectors warrant different valuation approaches, leverage levels, and value creation strategies—one-size-fits-all LBO modeling misses critical dynamics
+- Different sectors warrant different valuation approaches, leverage levels, and value creation strategies. One-size-fits-all LBO modeling misses critical dynamics
 - Demonstrating sector-specific knowledge in interviews signals readiness to contribute substantively to deal teams focused on particular industries
