@@ -17,6 +17,7 @@ const isPublicRoute = createRouteMatcher([
   '/api/clerk/webhook(.*)',
   '/api/og',
   '/api/icon',
+  '/api/health',
 ]);
 
 // Protected API routes that always require authentication
