@@ -44,12 +44,18 @@ export default async function CoursePage({ params }: CoursePageProps) {
   }
 
   // Fetch product from database
-  const product = await db.query.products.findFirst({
-    where: and(
-      eq(products.slug, courseSlug),
-      eq(products.isActive, true)
-    ),
-  });
+  let product: typeof products.$inferSelect | undefined;
+  try {
+    product = await db.query.products.findFirst({
+      where: and(
+        eq(products.slug, courseSlug),
+        eq(products.isActive, true)
+      ),
+    });
+  } catch (err) {
+    console.error('[CoursePage] product lookup failed:', err);
+    return <CourseUnavailablePage />;
+  }
 
   if (!product) {
     notFound();
@@ -393,12 +399,58 @@ export default async function CoursePage({ params }: CoursePageProps) {
   );
 }
 
+// Fallback shown when the DB is unreachable. Keeps the route from 500ing.
+function CourseUnavailablePage() {
+  return (
+    <div style={{
+      minHeight: '80vh',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: '48px 24px',
+      background: '#FAFAFA',
+      fontFamily: 'Inter, system-ui, sans-serif',
+    }}>
+      <div style={{ maxWidth: 500, textAlign: 'center' }}>
+        <h1 style={{ fontSize: 28, fontWeight: 700, marginBottom: 16, color: '#0A0A0A' }}>
+          Temporarily unavailable
+        </h1>
+        <p style={{ fontSize: 16, lineHeight: 1.7, color: 'rgba(10, 10, 10, 0.6)', marginBottom: 32 }}>
+          We&apos;re having trouble loading this course page right now. Please try again in a moment.
+        </p>
+        <Link
+          href="/"
+          style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: 8,
+            background: '#416D89',
+            color: 'white',
+            padding: '14px 28px',
+            borderRadius: 8,
+            fontSize: 15,
+            fontWeight: 600,
+            textDecoration: 'none',
+          }}
+        >
+          ← Back to courses
+        </Link>
+      </div>
+    </div>
+  );
+}
+
 // Coming Soon page for hidden courses
 async function ComingSoonPage({ courseSlug }: { courseSlug: string }) {
   // Try to get product info even if hidden (for name/description)
-  const product = await db.query.products.findFirst({
-    where: eq(products.slug, courseSlug),
-  });
+  let product: typeof products.$inferSelect | undefined;
+  try {
+    product = await db.query.products.findFirst({
+      where: eq(products.slug, courseSlug),
+    });
+  } catch (err) {
+    console.error('[ComingSoonPage] product lookup failed:', err);
+  }
 
   const name = product?.name || 'Course';
   const description = product?.description || 'This course is coming soon.';
