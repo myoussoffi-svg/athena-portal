@@ -21,13 +21,13 @@ import { RESUME_QUOTA_LIMIT } from './resume/schemas';
 
 /**
  * Detect and mark abandoned attempts.
- * Runs every 10 minutes.
+ * Runs hourly.
  * Marks attempts stuck in 'in_progress' for >1 hour as abandoned.
  * This clears the unique-index blocker, allowing new attempts after unlock.
  */
 export const detectAbandonedAttempts = inngest.createFunction(
   { id: 'detect-abandoned-attempts' },
-  { cron: '*/10 * * * *' },
+  { cron: '0 * * * *' },
   async ({ step }) => {
     // Find attempts stuck in 'in_progress' for >1 hour
     const staleAttempts = await step.run('find-stale-attempts', async () => {
