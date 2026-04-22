@@ -26,8 +26,12 @@ export default async function HomePage() {
   let hasAccess = false;
 
   if (userId) {
-    const accessResult = await checkTrackAccess(userId, 'investment-banking-interview-prep');
-    hasAccess = accessResult.hasAccess;
+    try {
+      const accessResult = await checkTrackAccess(userId, 'investment-banking-interview-prep');
+      hasAccess = accessResult.hasAccess;
+    } catch (err) {
+      console.error('[HomePage] checkTrackAccess failed:', err);
+    }
   }
 
   // Get the primary course (IB) - always available
