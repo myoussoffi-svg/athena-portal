@@ -5,6 +5,8 @@ const nextConfig: NextConfig = {
   // Include content folder in serverless function bundles for all routes
   // Use ../content because Vercel root is portal/ but content is at repo root
   outputFileTracingIncludes: {
+    '/': ['../content/**/*'],
+    '/courses/[courseSlug]': ['../content/**/*'],
     '/track/[trackSlug]': ['../content/**/*'],
     '/track/[trackSlug]/[moduleSlug]': ['../content/**/*'],
     '/track/[trackSlug]/[moduleSlug]/[lessonSlug]': ['../content/**/*'],
