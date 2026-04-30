@@ -7,3 +7,4 @@ content_backup_*/
 .env.local
 
 .env.local
+.vercel
