@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { db } from '@/db';
 import { waitlist } from '@/db/schema';
+import { sendWaitlistNotificationEmail } from '@/lib/email';
 import { z } from 'zod';
 
 const WaitlistSchema = z.object({
@@ -23,12 +24,25 @@ export async function POST(request: NextRequest) {
   const { name, email, trackSlug } = parsed.data;
 
   try {
-    await db
+    const normalizedEmail = email.toLowerCase();
+    const inserted = await db
       .insert(waitlist)
-      .values({ name, email: email.toLowerCase(), trackSlug })
+      .values({ name, email: normalizedEmail, trackSlug })
       .onConflictDoNothing({
         target: [waitlist.email, waitlist.trackSlug],
+      })
+      .returning({ id: waitlist.id });
+
+    if (inserted.length > 0) {
+      const notify = await sendWaitlistNotificationEmail({
+        name,
+        email: normalizedEmail,
+        trackSlug,
       });
+      if (!notify.success) {
+        console.error('Waitlist notification email failed:', notify.error);
+      }
+    }
 
     return NextResponse.json({ success: true });
   } catch (error) {

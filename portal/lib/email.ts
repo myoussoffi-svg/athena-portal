@@ -201,6 +201,45 @@ Athena Recruiting and Training
 }
 
 /**
+ * Notify the team that someone joined a waitlist
+ */
+export async function sendWaitlistNotificationEmail(data: {
+  name: string;
+  email: string;
+  trackSlug: string;
+}): Promise<SendEmailResult> {
+  const resend = getResendClient();
+  const to = 'montana@athena.pe';
+
+  try {
+    const { data: result, error } = await resend.emails.send({
+      from: FROM_EMAIL,
+      to,
+      replyTo: data.email,
+      subject: `New waitlist signup: ${data.name} (${data.trackSlug})`,
+      text: `New waitlist signup
+
+Name:  ${data.name}
+Email: ${data.email}
+Track: ${data.trackSlug}
+When:  ${new Date().toISOString()}
+`,
+    });
+
+    if (error) {
+      console.error('Resend error:', error);
+      return { success: false, error: error.message };
+    }
+
+    return { success: true, messageId: result?.id };
+  } catch (error) {
+    const message = error instanceof Error ? error.message : 'Unknown error';
+    console.error('Email send error:', error);
+    return { success: false, error: message };
+  }
+}
+
+/**
  * Send refund confirmation email
  */
 export async function sendRefundConfirmationEmail(
