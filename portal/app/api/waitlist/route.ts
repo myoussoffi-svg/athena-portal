@@ -34,13 +34,18 @@ export async function POST(request: NextRequest) {
       .returning({ id: waitlist.id });
 
     if (inserted.length > 0) {
-      const notify = await sendWaitlistNotificationEmail({
-        name,
-        email: normalizedEmail,
-        trackSlug,
-      });
-      if (!notify.success) {
-        console.error('Waitlist notification email failed:', notify.error);
+      try {
+        const notify = await sendWaitlistNotificationEmail({
+          name,
+          email: normalizedEmail,
+          trackSlug,
+        });
+        if (!notify.success) {
+          console.error('Waitlist notification email failed:', notify.error);
+        }
+      } catch (notifyError) {
+        // Never let notification failures break a successful signup
+        console.error('Waitlist notification threw:', notifyError);
       }
     }
 

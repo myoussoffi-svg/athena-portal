@@ -208,10 +208,10 @@ export async function sendWaitlistNotificationEmail(data: {
   email: string;
   trackSlug: string;
 }): Promise<SendEmailResult> {
-  const resend = getResendClient();
   const to = 'montana@athena.pe';
 
   try {
+    const resend = getResendClient();
     const { data: result, error } = await resend.emails.send({
       from: FROM_EMAIL,
       to,
