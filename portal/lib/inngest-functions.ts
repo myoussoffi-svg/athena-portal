@@ -72,7 +72,7 @@ export const detectAbandonedAttempts = inngest.createFunction(
                 isLocked: true,
                 lockReason: 'abandoned',
                 lockedAt: new Date(),
-                abandonedAttempts: sql`abandoned_attempts + 1`,
+                abandonedAttempts: sql`${candidateLockouts.abandonedAttempts} + 1`,
                 // Clear any previous unlock decision
                 unlockDecision: null,
                 unlockRequestText: null,
