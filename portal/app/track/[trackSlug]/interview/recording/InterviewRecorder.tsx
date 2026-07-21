@@ -238,8 +238,9 @@ export function InterviewRecorder() {
         });
 
         if (!response.ok) {
-          const data = await response.json();
-          throw new Error(data.message || 'Failed to submit interview');
+          // submit returns the standardized envelope: { error: { code, message, details } }
+          const data = await response.json().catch(() => null);
+          throw new Error(data?.error?.message || 'Failed to submit interview');
         }
 
         // Clear session and navigate to results

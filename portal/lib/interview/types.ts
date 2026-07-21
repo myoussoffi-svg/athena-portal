@@ -23,17 +23,26 @@ export interface InitializeResponse {
   evaluatorVersionId: string;
 }
 
-// Initialize API error responses
+// Standardized API error envelope returned by ApiError.toResponse() (see lib/auth.ts):
+//   { error: { code, message, details? } }
+export interface ApiErrorEnvelope {
+  error: {
+    code: string;
+    message: string;
+    details?: Record<string, unknown>;
+  };
+}
+
+// Parsed contents of error.details when code === 'LOCKED'
 export interface LockedError {
-  error: 'LOCKED';
   reason: 'cooldown' | 'abandoned' | 'admin_hold';
   unlockRequestAllowed: boolean;
   requestPending: boolean;
   lockedUntil?: string; // ISO-8601 timestamp for cooldown expiration
 }
 
+// Parsed contents of error.details when code === 'IN_PROGRESS'
 export interface InProgressError {
-  error: 'IN_PROGRESS';
   existingAttemptId: string;
 }
 

@@ -8,8 +8,8 @@ import {
   isMobileDevice,
   useMediaRecorder,
   type InitializeResponse,
+  type ApiErrorEnvelope,
   type LockedError,
-  type InProgressError,
   type InterviewSession,
 } from '@/lib/interview';
 import { ui } from '@/components/ui';
@@ -84,26 +84,32 @@ export function InterviewLanding({ trackSlug }: InterviewLandingProps) {
       });
 
       if (!response.ok) {
-        const data = await response.json();
+        // initialize returns the standardized envelope: { error: { code, message, details } }
+        const data = (await response.json().catch(() => null)) as ApiErrorEnvelope | null;
+        const code = data?.error?.code;
+        const message = data?.error?.message;
+        const details = data?.error?.details ?? {};
 
         if (response.status === 401) {
           router.push('/sign-in');
           return;
         }
 
-        if (response.status === 403 && data.error === 'LOCKED') {
-          setLockoutData(data as LockedError);
+        if (response.status === 403 && code === 'LOCKED') {
+          setLockoutData(details as unknown as LockedError);
           setPhase('locked');
           return;
         }
 
-        if (response.status === 409 && data.error === 'IN_PROGRESS') {
-          setExistingAttemptId((data as InProgressError).existingAttemptId);
+        if (response.status === 409 && code === 'IN_PROGRESS') {
+          setExistingAttemptId(
+            (details as { existingAttemptId?: string }).existingAttemptId ?? null
+          );
           setPhase('ready');
           return;
         }
 
-        throw new Error(data.message || 'Failed to initialize interview');
+        throw new Error(message || 'Failed to initialize interview');
       }
 
       const initData: InitializeResponse = await response.json();
